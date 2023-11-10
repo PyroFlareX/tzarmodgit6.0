@@ -205,7 +205,7 @@ country_event = {
 	hidden = yes
 	trigger = {
 				SOV = {
-				surrender_progress > 0.89
+				surrender_progress > 0.87
 				}
 				}
 		
