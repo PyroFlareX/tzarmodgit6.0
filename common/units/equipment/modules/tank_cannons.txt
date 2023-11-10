@@ -390,7 +390,7 @@ equipment_modules = {
 			build_cost_ic = 9
 			maximum_speed = -0.3
 			reliability = -0.25
-			breakthrough = 7
+			#breakthrough = 7
 		}
 		
 		

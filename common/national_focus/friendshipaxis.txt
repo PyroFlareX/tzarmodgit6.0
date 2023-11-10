@@ -128,7 +128,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -182,7 +182,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -700,7 +700,7 @@ joint_focus = {
 		
 		relative_position_id = AXIS_anti_bosh_war
 
-		cost = 10
+		cost = 14
 
 		ai_will_do = {
 			

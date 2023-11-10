@@ -13,7 +13,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+		
 		}
 
 		joint_trigger = {
@@ -64,7 +64,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -118,7 +118,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 		
 		joint_trigger = {
@@ -169,7 +169,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 		
 		visible = {
@@ -230,7 +230,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -281,7 +281,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -355,7 +355,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -496,7 +496,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 
 		joint_trigger = {
@@ -557,7 +557,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		select_effect = {
@@ -736,7 +736,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -787,7 +787,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -845,7 +845,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -896,7 +896,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -1043,7 +1043,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -1094,7 +1094,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -1149,7 +1149,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -1200,7 +1200,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -1260,7 +1260,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -1347,7 +1347,7 @@ joint_focus = {
 		cost = 1
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -1400,7 +1400,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -1563,7 +1563,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			
 		}
 
 		joint_trigger = {
@@ -1688,7 +1688,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 
 		joint_trigger = {
@@ -1750,7 +1750,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 
 		joint_trigger = {
