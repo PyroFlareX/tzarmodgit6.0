@@ -1,0 +1,306 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "superevents"
+		position = { x = 0 y = 0}	
+		size = { width = 1000 height= 893 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "background"		
+			quadTextureSprite ="GFX_supereventsbg"
+		}
+		#iconType ={ #pre-integrated
+		#	name ="superevents_overlay"
+		#	spriteType = "GFX_supereventsoverlay"
+		#	position = { x= 56 y = 525 }
+		#	Orientation = "UPPER_LEFT"
+		#	alwaystransparent = yes
+		#}
+		iconType = {
+			name = "supereventsbg_test"		
+			quadTextureSprite ="GFX_supereventsbg_test"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		###
+		iconType = {
+			name = "superevents_spanish_civilwar"		
+			quadTextureSprite ="GFX_superevents_spanish_civilwar"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_sinojap_war"		
+			quadTextureSprite ="GFX_superevents_sinojap_war"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_world_war_ii"		
+			quadTextureSprite ="GFX_superevents_world_war_ii"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_winter_war"		
+			quadTextureSprite ="GFX_superevents_winter_war"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_gersov_war"		
+			quadTextureSprite ="GFX_superevents_gersov_war"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_pacific_war"		
+			quadTextureSprite ="GFX_superevents_pacific_war"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_fall_france"		
+			quadTextureSprite ="GFX_superevents_fall_france"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_fall_uk"		
+			quadTextureSprite ="GFX_superevents_fall_uk"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		
+		}
+		iconType = {
+			name = "superevents_fall_usa"		
+			quadTextureSprite ="GFX_superevents_fall_usa"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_fall_germany"		
+			quadTextureSprite ="GFX_superevents_fall_germany"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_fall_italy"		
+			quadTextureSprite ="GFX_superevents_fall_italy"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_fall_japan"		
+			quadTextureSprite ="GFX_superevents_fall_japan"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_fall_soviet"		
+			quadTextureSprite ="GFX_superevents_fall_soviet"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_fall_china"		
+			quadTextureSprite ="GFX_superevents_fall_china"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_unification_china_cpc"
+			quadTextureSprite ="GFX_superevents_unification_china_cpc"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_unification_china_kmt"
+			quadTextureSprite ="GFX_superevents_unification_china_kmt"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_unification_china_warlord"
+			quadTextureSprite ="GFX_superevents_unification_china_warlord"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_sinosov_war"
+			quadTextureSprite ="GFX_superevents_sinosov_war"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_greater_german_reich_himmler"
+			quadTextureSprite ="GFX_superevents_greater_german_reich_himmler"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_greater_german_reich_hitler"
+			quadTextureSprite ="GFX_superevents_greater_german_reich_hitler"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_kaiserreich_ii"
+			quadTextureSprite ="GFX_superevents_kaiserreich_ii"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_kaiserreich_iii"
+			quadTextureSprite ="GFX_superevents_kaiserreich_iii"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_victoria"
+			quadTextureSprite ="GFX_superevents_victoria"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_eastwest_war"
+			quadTextureSprite ="GFX_superevents_eastwest_war"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_radicals_uk"
+			quadTextureSprite ="GFX_superevents_radicals_uk"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_us_civilwar"
+			quadTextureSprite ="GFX_superevents_us_civilwar"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_unification_usa_communism"
+			quadTextureSprite ="GFX_superevents_unification_usa_communism"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_unification_usa_fascism"
+			quadTextureSprite ="GFX_superevents_unification_usa_fascism"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_trotsky"
+			quadTextureSprite ="GFX_superevents_trotsky"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_czech"
+			quadTextureSprite ="GFX_superevents_czech"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_bm_axis"
+			quadTextureSprite ="GFX_superevents_bm_axis"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "superevents_french_empire"
+			quadTextureSprite ="GFX_superevents_french_empire"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_french_communism"
+			quadTextureSprite ="GFX_superevents_french_communism"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_anarchy"
+			quadTextureSprite ="GFX_superevents_anarchy"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_carlist"
+			quadTextureSprite ="GFX_superevents_carlist"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "superevents_unification_rome"
+			quadTextureSprite ="GFX_superevents_unification_rome"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		
+		buttonType ={
+			name ="superevents_button"
+			spriteType = "GFX_supereventsbutton"
+			position = { x= 225 y = 766 }
+			Orientation = "UPPER_LEFT"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+		}
+		
+		instantTextboxType = {
+			name = "superevents_title"
+			position = { x = 0 y = 78 }
+			font = "hoi_36header"
+			format = CENTER
+			borderSize = {x = 0 y = 0}
+			text = "[GetSupereventsTitle]"
+			maxWidth = 1000
+			maxHeight = 893
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "superevents_quote"
+			position = { x = 125 y = 535 }
+			font = "hoi_18mbs"
+			format = RIGHT
+			borderSize = {x = 0 y = 0}
+			text = "[GetSupereventsBody]"
+			maxWidth = 800
+			maxHeight = 893
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "superevents_remark"
+			position = { x = 250 y = 785 }
+			font = "hoi_30header"
+			format = CENTER
+			borderSize = {x = 0 y = 0}
+			text = "[GetSupereventsRemark]"
+			maxWidth = 500
+			maxHeight = 893
+			fixedsize = yes
+		}
+		
+		#instantTextboxType = {
+		#	name = "superevents_title"
+		#	position = { x = 0 y = 78 }
+		#	font = "hoi_36header"
+		#	format = CENTER
+		#	borderSize = {x = 0 y = 0}
+		#	text = "[get_superevents_title]"
+		#	maxWidth = 1000
+		#	maxHeight = 893
+		#}
+	}
+}

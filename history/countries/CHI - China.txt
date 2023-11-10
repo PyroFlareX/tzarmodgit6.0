@@ -1,0 +1,35 @@
+﻿capital = 613 # Nanjing
+
+oob = "CHI_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "CHI_1936_naval_mtg"
+	else = {
+		set_naval_oob = "CHI_1936_naval_legacy"
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "CHI_1936_air_bba"
+	else = {
+		set_air_oob = "CHI_1936_air_legacy"
+		set_technology = {
+			iw_small_airframe = 1
+				basic_medium_airframe = 1
+					aa_lmg = 1
+		}
+	}
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+add ideas =  CHI_war_of_resistance_2 
+recruit_character = CHI_chiang_kaishek

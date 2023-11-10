@@ -1,0 +1,43 @@
+
+state = {
+	id=154
+	name="STATE_154"
+	manpower = 2735383
+
+	state_category = megalopolis
+	
+	resources={
+		tungsten=32
+	}
+	
+	history = {
+		owner = HUN
+		1936.1.1.13 = {
+			owner = ROM
+			add_core_of = ROM 
+		}
+		1936.1.1.15 = {
+			owner = HUN
+			add_core_of = HUN 
+		}
+		1936.1.1.16 = {
+			owner = HUN 
+		}
+		buildings = {
+			infrastructure = 3 #was: 6
+			industrial_complex = 5
+			arms_factory = 1
+			air_base = 2
+		}
+		victory_points = {
+			11659 1 
+		}
+		add_core_of = HUN
+	}
+
+	provinces={
+		679 699 730 3730 6670 6700 6735 9656 9706 11625 11644 11646 11659 
+	}
+
+	local_supplies=12.0 
+}
