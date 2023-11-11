@@ -3,6 +3,12 @@
 @tier3 = 10
 
 leader_traits = {
+
+	overweight = {
+		random = no
+		supply_consumption_factor = 0.05
+	}
+
 	hierarch_minister_of_justice = {
 		random = no
 		sprite = 13
