@@ -138,7 +138,7 @@ NDefines.NMilitary.SLOWEST_SPEED = 4 -- Was 3 before 3 speed changes
 NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.50 -- amphibious landing penalty
 
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.03	--air global damage modifier
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER =	0.025 	--global damage modifier 
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER =	0.0125 	--global damage modifier 
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.25 --(0.25)
 
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.35 	--effect on defense due to enemy air superiority

@@ -8,10 +8,12 @@ War_economy = {
 
 		cost = 100	
 		visible = {
+			AND = {
 				GER = {
 					has_completed_focus = GER_four_year_plan 
 				}
 				date<1939.8.1
+			}
 		}
 		days_remove = 100
 

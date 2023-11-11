@@ -264,7 +264,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -1 y = 4 }
+			position = { x = -1 y = 5 }
 		}
 
 		ai_will_do = {
@@ -338,7 +338,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -1 y = 8 }
+			position = { x = -1 y = 7 }
 		}
 
 		ai_will_do = {
@@ -498,15 +498,15 @@ technologies = {
 		}
 
 		on_research_complete = {
+
 			if = { #Italian templates
 				limit = {
-					original_tag = ITA
-					OR = {
-						has_completed_focus = ITA_end_fiat_ansaldo_duopoly
-						has_completed_focus = ITA_modernize_ansaldo_facilities
-					}
+					original_tag = SOV
 				}
-				ITA_add_improved_medium_tank_templates = yes
+				complete_mio_trait = {
+					trait = SOV_mio_trait_a32_tz
+					show_modifiers = no
+				}
 			}
 		}
 
@@ -582,10 +582,12 @@ technologies = {
 		on_research_complete = {
 			if = { #Italian templates
 				limit = {
-					original_tag = ITA
-					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
+					original_tag = SOV
 				}
-				ITA_add_advanced_medium_tank_templates = yes
+				complete_mio_trait = {
+					trait = SOV_mio_trait_simplification_tz
+					show_modifiers = yes
+				}
 			}
 		}
 
@@ -1416,6 +1418,7 @@ mio_cat_tech_light_armor_and_modules
 		}
 
 		categories = {
+			
 		tank_modules
 mio_cat_tech_light_armor_and_modules
 		generic

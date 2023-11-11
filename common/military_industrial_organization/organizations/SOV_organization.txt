@@ -74,64 +74,321 @@
 
 
 SOV_morozov_design_bureau_organization = {
-	include = generic_mobile_tank_organization
+	
 	icon = GFX_idea_morozov_design_bureau
 	
 	allowed = {	
 		OR = {
-			tag = SOV
-			AND = {
-				tag = MEX 
-				has_dlc = "Man the Guns"
-			}
-			AND = {
-				OR = {
-					is_literally_china = yes
-					tag = MAN
-					tag = MEN
-				} 
-				has_dlc = "Waking the Tiger"
-			}
-			NOR_AAT = yes
+			tag = SOV 
 		}
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = SOV } }
-			}
-			FROM = { NOT = { has_war_with = SOV } }
+		
+	}
+	equipment_type = { mio_cat_eq_all_medium_tank }
+	research_categories = { mio_cat_tech_medium_armor_and_modules tank_modules armor}
+
+	tree_header_text = {
+		text = "Medium Tank Development"
+		x = 3
+	}
+
+	initial_trait = {
+		name = "Soviet Tank Designs"
+		
+		limit_to_equipment_type = { 
+			armor
+		}
+		
+		equipment_bonus = {
+			armor_value = 0.025
+			maximum_speed =0.1
+		}
+	}
+	trait = {
+		token = SOV_mio_trait_a32_tz
+		name = SOV_mio_trait_a32_tz_nm
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = GFX_generic_mio_department_icon_tank_general_conversion
+		special_trait_background = yes
+
+		position = { x=3 y=0 }
+		
+		visible = {
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
-		IF = {
-			limit = {
-				FROM = { tag = MEX }
-			}
-			FROM = { is_in_faction_with = SOV }
+		available = { #Two FROM blocs to provide two different check marks in the UI
+		always = no
 		}
-		ELSE_IF = {
-			limit = {
-				FROM = {
-					OR = {
-						is_literally_china = yes
-						tag = MAN
-						tag = MEN
-					}
-				} 
-			}
-			FROM = { has_completed_focus = CHI_hire_soviet_designer }
+
+		on_complete = {
+			
 		}
-		ELSE_IF = {
-			limit = {
-				FROM = { original_tag = NOR }
-			}
-			FROM = { has_completed_focus = NOR_invite_soviet_designers }
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		equipment_bonus = {
+			armor_value = 0.05
+		}
+	}
+	trait = {
+		token = SOV_mio_trait_better_wielding_tz
+		name = "Improved wielding"
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = GFX_generic_mio_department_icon_tank_general_armor
+		special_trait_background = yes
+
+		relative_position_id = SOV_mio_trait_a32_tz
+		
+		all_parents = { SOV_mio_trait_a32_tz }
+
+		position = { x= -1 y=1 }
+		
+		visible = {
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
+		}
+
+		available = { #Two FROM blocs to provide two different check marks in the UI
+		}
+
+		on_complete = {
+		}
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		equipment_bonus = {
+			armor_value = 0.075
+		}
+	}
+	trait = {
+		token = SOV_mio_trait_better_mobility_tz
+		name = "Improved mobility"
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = GFX_generic_mio_department_icon_tank_general_production
+		special_trait_background = yes
+
+		relative_position_id = SOV_mio_trait_a32_tz
+		
+		all_parents = { SOV_mio_trait_a32_tz }
+
+		position = { x= 1 y=1 }
+		
+		visible = {
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
+		}
+
+		available = { #Two FROM blocs to provide two different check marks in the UI
+		}
+
+		on_complete = {
+		}
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		equipment_bonus = {
+			maximum_speed = 0.1
+		}
+	}
+	trait = {
+		token = SOV_mio_trait_initial_t34_units_tz
+		name = "First T34's"
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = GFX_generic_mio_department_icon_tank_general_quality
+		special_trait_background = yes
+
+		relative_position_id = SOV_mio_trait_a32_tz
+		
+		all_parents = { SOV_mio_trait_better_mobility_tz SOV_mio_trait_better_wielding_tz }
+
+		position = { x= 0 y=2 }
+		
+		visible = {
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
+		}
+
+		available = { #Two FROM blocs to provide two different check marks in the UI
+		
+		}
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			hard_attack = 0.025
+			soft_attack = 0.025
+			reliability = -0.05
+		}
+	}
+	trait = {
+		token = SOV_mio_trait_76mm_tz
+		name = "76mm cannons"
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_weapons
+		special_trait_background = yes
+
+		relative_position_id = SOV_mio_trait_initial_t34_units_tz
+		
+		all_parents = { SOV_mio_trait_initial_t34_units_tz }
+
+		position = { x= -2 y=1 }
+		
+		visible = {
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
+		}
+
+		available = { #Two FROM blocs to provide two different check marks in the UI
+		}
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			hard_attack = 0.05
+			soft_attack = 0.05
+			reliability = -0.1
+		}
+	}
+	trait = {
+		token = SOV_mio_trait_mass_production_tz
+		name = "Simplification of Cannon Design"
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+		special_trait_background = yes
+
+		relative_position_id = SOV_mio_trait_initial_t34_units_tz
+		
+		all_parents = { SOV_mio_trait_initial_t34_units_tz }
+
+		position = { x= 0 y=1 }
+		
+		visible = {
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
+		}
+
+		available = { #Two FROM blocs to provide two different check marks in the UI
+		}
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		on_complete = {
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.075
+		}
+	}
+	trait = {
+		token = SOV_mio_trait_improved_engineering_tz
+		name = "Begining of mass production"
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = GFX_generic_mio_trait_icon_reliability
+		special_trait_background = yes
+
+		relative_position_id = SOV_mio_trait_initial_t34_units_tz
+		
+		all_parents = { SOV_mio_trait_initial_t34_units_tz }
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		position = { x= 2 y=1 }
+		
+		visible = {
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
+		}
+
+		available = { #Two FROM blocs to provide two different check marks in the UI
+		}
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			reliability = 0.05
+		}
+	}
+	trait = {
+		token = SOV_mio_trait_simplification_tz
+		name = "Development of t34/85"
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		relative_position_id = SOV_mio_trait_initial_t34_units_tz
+		
+		all_parents = { SOV_mio_trait_improved_engineering_tz SOV_mio_trait_mass_production_tz SOV_mio_trait_76mm_tz}
+
+		position = { x= 0 y=2 }
+		
+		visible = {
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
+		}
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		available = { #Two FROM blocs to provide two different check marks in the UI
+			date>1942.3.1
+		}
+
+		on_complete = {
+		}
+
+		production_bonus = {
+			production_cost_factor = -0.1
+		}
+		equipment_bonus = {
+			hard_attack = 0.05
+			soft_attack = 0.05
+			reliability = 0.05
+		}
+	}
+	trait = {
+		token = SOV_mio_trait_t3485_tz
+		name = "Cannon Improvments"
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = GFX_generic_mio_trait_icon_ap_attack
+		special_trait_background = yes
+
+		relative_position_id = SOV_mio_trait_simplification_tz
+		
+		all_parents = { SOV_mio_trait_simplification_tz }
+
+		position = { x= -1 y=1 }
+		
+		visible = {
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
+		}
+
+		available = { #Two FROM blocs to provide two different check marks in the UI
+		}
+
+		on_complete = {
+		}
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		equipment_bonus = {
+			hard_attack = 0.025
+			soft_attack = 0.025
+			reliability = -0.1
+		}
+	}
+	trait = {
+		token = SOV_mio_trait_armor_tz
+		name = "Armor Improvments"
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = GFX_generic_mio_trait_icon_armor_value
+		special_trait_background = yes
+
+		relative_position_id = SOV_mio_trait_simplification_tz
+		
+		all_parents = { SOV_mio_trait_simplification_tz }
+
+		position = { x= 1 y=1 }
+		
+		visible = {
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
+		}
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		available = { #Two FROM blocs to provide two different check marks in the UI
+		}
+
+		on_complete = {
+		}
+
+		equipment_bonus = {
+			armor_value = 0.05
 		}
 	}
 
-	add_trait = { 
+	trait = {
 		token = SOV_mio_trait_merge_plant_no_174
 		name = SOV_merge_tank_plant
 		#icon = GFX_generic_mio_department_icon_facilities
@@ -141,15 +398,18 @@ SOV_morozov_design_bureau_organization = {
 		position = { x=@tank_1_X y=@tank_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
-
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
 		available = { #Two FROM blocs to provide two different check marks in the UI
 			FROM = {
 				has_full_control_of_state = 195 #LENINGRAD
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -165,7 +425,7 @@ SOV_morozov_design_bureau_organization = {
 		}
 	}
 
-	add_trait = { 
+	trait = { 
 		token = SOV_mio_trait_merge_plant_no_112
 		name = SOV_merge_tank_plant_2
 		#icon = GFX_generic_mio_department_icon_facilities
@@ -175,15 +435,18 @@ SOV_morozov_design_bureau_organization = {
 		position = { x=@tank_2_X y=@tank_2_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
-
+		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
 		available = {
 			FROM = {
 				has_full_control_of_state = 252 #GORKY
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -199,7 +462,7 @@ SOV_morozov_design_bureau_organization = {
 		}
 	}
 
-	add_trait = { 
+	trait = { 
 		token = SOV_mio_trait_merge_ural_heavy_machine_building_plant
 		name = SOV_merge_tank_plant_3
 		#icon = GFX_generic_mio_department_icon_facilities
@@ -209,7 +472,7 @@ SOV_morozov_design_bureau_organization = {
 		position = { x=@tank_3_X y=@tank_3_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -218,6 +481,9 @@ SOV_morozov_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -239,7 +505,7 @@ SOV_astrov_design_bureau_organization = {
 	icon = GFX_idea_astrov_design_bureau
 	
 	allowed = {	
-		original_tag = SOV
+		#original_tag = SOV
 	}
 
 	add_trait = { 
@@ -252,16 +518,11 @@ SOV_astrov_design_bureau_organization = {
 		position = { x=@tank_1_X y=@tank_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = { #Two FROM blocs to provide two different check marks in the UI
-			FROM = {
-				has_full_control_of_state = 195 #LENINGRAD
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_tank_and_materiel_plants
-			}
+			
 		}
 
 		on_complete = {
@@ -286,7 +547,7 @@ SOV_astrov_design_bureau_organization = {
 		position = { x=@tank_2_X y=@tank_2_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -296,6 +557,10 @@ SOV_astrov_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
+			}
+			
 		}
 
 		on_complete = {
@@ -320,7 +585,7 @@ SOV_astrov_design_bureau_organization = {
 		position = { x=@tank_3_X y=@tank_3_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -329,6 +594,9 @@ SOV_astrov_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -350,9 +618,7 @@ SOV_okmo_organization = {
 	icon = GFX_idea_okmo
 	
 	allowed = {	
-		OR = {
-			tag = SOV 
-		}
+		always = no
 	}
 
 	available = {
@@ -393,16 +659,11 @@ SOV_okmo_organization = {
 		position = { x=@tank_1_X y=@tank_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = { #Two FROM blocs to provide two different check marks in the UI
-			FROM = {
-				has_full_control_of_state = 195 #LENINGRAD
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_tank_and_materiel_plants
-			}
+			
 		}
 
 		on_complete = {
@@ -427,7 +688,7 @@ SOV_okmo_organization = {
 		position = { x=@tank_2_X y=@tank_2_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -436,6 +697,9 @@ SOV_okmo_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -461,7 +725,7 @@ SOV_okmo_organization = {
 		position = { x=@tank_3_X y=@tank_3_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -470,6 +734,9 @@ SOV_okmo_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -527,16 +794,11 @@ SOV_mytishchy_machine_building_plant_organization = {
 		position = { x=@tank_1_X y=@tank_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = { #Two FROM blocs to provide two different check marks in the UI
-			FROM = {
-				has_full_control_of_state = 195 #LENINGRAD
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_tank_and_materiel_plants
-			}
+			
 		}
 
 		on_complete = {
@@ -561,7 +823,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 		position = { x=@tank_2_X y=@tank_2_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -570,6 +832,9 @@ SOV_mytishchy_machine_building_plant_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -595,7 +860,7 @@ SOV_mytishchy_machine_building_plant_organization = {
 		position = { x=@tank_3_X y=@tank_3_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -604,6 +869,9 @@ SOV_mytishchy_machine_building_plant_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -644,16 +912,11 @@ SOV_kirov_organization = {
 		position = { x=@tank_1_X y=@tank_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = { #Two FROM blocs to provide two different check marks in the UI
-			FROM = {
-				has_full_control_of_state = 195 #LENINGRAD
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_tank_and_materiel_plants
-			}
+			
 		}
 
 		on_complete = {
@@ -678,7 +941,7 @@ SOV_kirov_organization = {
 		position = { x=@tank_2_X y=@tank_2_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -687,6 +950,9 @@ SOV_kirov_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -712,7 +978,7 @@ SOV_kirov_organization = {
 		position = { x=@tank_3_X y=@tank_3_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -721,6 +987,9 @@ SOV_kirov_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -797,7 +1066,7 @@ SOV_nevskoye_design_bureau_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -848,7 +1117,7 @@ SOV_nevskoye_design_bureau_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -899,7 +1168,7 @@ SOV_nevskoye_design_bureau_organization = {
 		position = { x=@ship_2_X y=@ship_2_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -969,7 +1238,7 @@ SOV_rubin_design_bureau_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -1020,7 +1289,7 @@ SOV_rubin_design_bureau_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -1073,7 +1342,7 @@ SOV_rubin_design_bureau_organization = {
 		mutually_exclusive = { SOV_mio_trait_merge_plant_no_190 }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -1106,7 +1375,7 @@ SOV_rubin_design_bureau_organization = {
 		mutually_exclusive = { SOV_mio_trait_merge_plant_no_363 }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -1175,7 +1444,7 @@ SOV_black_sea_shipyard_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -1226,7 +1495,7 @@ SOV_black_sea_shipyard_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -1279,7 +1548,7 @@ SOV_black_sea_shipyard_organization = {
 		mutually_exclusive = { SOV_mio_trait_merge_plant_no_340 }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -1312,7 +1581,7 @@ SOV_black_sea_shipyard_organization = {
 		mutually_exclusive = { SOV_mio_trait_merge_leninskaya_kuznitsa_plant }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -1376,7 +1645,7 @@ SOV_sevastopol_marine_plant_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -1427,7 +1696,7 @@ SOV_sevastopol_marine_plant_organization = {
 		position = { x=@ship_1_X y=@ship_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -1478,7 +1747,7 @@ SOV_sevastopol_marine_plant_organization = {
 		position = { x=@ship_2_X y=@ship_2_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -1551,7 +1820,7 @@ SOV_mig_design_bureau_organization = {
 		position = { x=@aircraft_1_X y=@aircraft_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -1585,7 +1854,7 @@ SOV_mig_design_bureau_organization = {
 		position = { x=@aircraft_2_X y=@aircraft_2_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -1624,7 +1893,7 @@ SOV_mig_design_bureau_organization = {
 		position = { x=@aircraft_3_X y=@aircraft_3_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -1709,7 +1978,7 @@ SOV_ilyushin_design_bureau_organization = {
 		position = { x=@aircraft_1_X y=@aircraft_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 		
 		available = {
@@ -1743,7 +2012,7 @@ SOV_ilyushin_design_bureau_organization = {
 		position = { x=@aircraft_2_X y=@aircraft_2_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 		
 		available = {
@@ -1782,7 +2051,7 @@ SOV_ilyushin_design_bureau_organization = {
 		position = { x=@aircraft_3_X y=@aircraft_3_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 		
 		available = {
@@ -1833,7 +2102,7 @@ SOV_yakovlev_design_bureau_organization = {
 		position = { x=@aircraft_1_X y=@aircraft_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 		
 		available = {
@@ -1867,7 +2136,7 @@ SOV_yakovlev_design_bureau_organization = {
 		position = { x=@aircraft_2_X y=@aircraft_2_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 		
 		available = {
@@ -1906,7 +2175,7 @@ SOV_yakovlev_design_bureau_organization = {
 		position = { x=@aircraft_3_X y=@aircraft_3_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 		
 		available = {
@@ -2020,7 +2289,7 @@ SOV_tupolev_design_bureau_organization = {
 		position = { x=@aircraft_1_X y=@aircraft_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -2054,7 +2323,7 @@ SOV_tupolev_design_bureau_organization = {
 		position = { x=@aircraft_2_X y=@aircraft_2_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -2093,7 +2362,7 @@ SOV_tupolev_design_bureau_organization = {
 		position = { x=@aircraft_3_X y=@aircraft_3_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -2182,7 +2451,7 @@ SOV_grabin_design_bureau_organization = {
 		position = { x=@materiel_1_X y=@materiel_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -2191,6 +2460,9 @@ SOV_grabin_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 			#Only exists in this MIO
 		}
@@ -2210,7 +2482,7 @@ SOV_grabin_design_bureau_organization = {
 		position = { x=@materiel_2_X y=@materiel_2_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -2219,6 +2491,9 @@ SOV_grabin_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -2244,7 +2519,7 @@ SOV_grabin_design_bureau_organization = {
 		position = { x=@materiel_3_X y=@materiel_3_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -2253,6 +2528,9 @@ SOV_grabin_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -2318,7 +2596,7 @@ SOV_tula_arms_plant_organization = {
 		position = { x=@materiel_1_X y=@materiel_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -2327,6 +2605,9 @@ SOV_tula_arms_plant_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 			#Only exists in this MIO
 		}
@@ -2346,7 +2627,7 @@ SOV_tula_arms_plant_organization = {
 		position = { x=@materiel_2_X y=@materiel_2_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -2355,6 +2636,9 @@ SOV_tula_arms_plant_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -2380,7 +2664,7 @@ SOV_tula_arms_plant_organization = {
 		position = { x=@materiel_3_X y=@materiel_3_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -2389,6 +2673,9 @@ SOV_tula_arms_plant_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -2453,7 +2740,7 @@ SOV_gaz_organization = {
 		position = { x=@materiel_1_X y=1 }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -2462,6 +2749,9 @@ SOV_gaz_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -2482,7 +2772,7 @@ SOV_gaz_organization = {
 		position = { x=@materiel_1_X y=@materiel_1_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -2491,6 +2781,9 @@ SOV_gaz_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 			#Only exists in this MIO
 		}
@@ -2510,7 +2803,7 @@ SOV_gaz_organization = {
 		position = { x=@materiel_2_X y=@materiel_2_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -2519,6 +2812,9 @@ SOV_gaz_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -2544,7 +2840,7 @@ SOV_gaz_organization = {
 		position = { x=@materiel_3_X y=@materiel_3_Y }
 		
 		visible = {
-			FROM = { original_tag = SOV }
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
 		available = {
@@ -2553,6 +2849,9 @@ SOV_gaz_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
