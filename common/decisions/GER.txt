@@ -1358,7 +1358,6 @@ operations = {
 		timeout_effect = {
 			add_war_support = -0.075
 			add_stability = -0.075
-			GER_economy_down = yes
 		}
 
 		ai_will_do = {
@@ -1390,7 +1389,6 @@ operations = {
 		complete_effect = {
 			add_war_support = 0.075
 			add_stability = 0.075
-			GER_economy_up = yes
 		}
 
 		timeout_effect = {
@@ -1492,7 +1490,6 @@ operations = {
 		complete_effect = {
 			add_war_support = 0.075
 			add_stability = 0.075
-			GER_economy_up = yes
 		}
 
 		timeout_effect = {
