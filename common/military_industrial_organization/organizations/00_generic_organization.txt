@@ -1050,7 +1050,7 @@ generic_heavy_tank_organization = {
 		
 		equipment_bonus = {
 			armor_value = 0.05
-			reliability = -0.1
+			#reliability = -0.1
 		}
 	}
 
