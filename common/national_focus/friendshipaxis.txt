@@ -765,7 +765,9 @@ joint_focus = {
 		y = 1
 		
 		relative_position_id = AXIS_anti_bosh_war
-
+		available = {
+			always = no
+		}
 		cost = 14
 
 		ai_will_do = {

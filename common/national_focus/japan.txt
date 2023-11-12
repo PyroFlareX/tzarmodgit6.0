@@ -290,7 +290,11 @@ focus_tree = {
 				remove_idea = JAP_war_with_chi1
 				add_idea = JAP_war_with_chi2
 			}
-
+			hidden_effect = {SWE = {
+				annex_country = {
+					target = CHI
+				}
+			}}
 			hidden_effect = { CHI = { set_equipment_fraction = 0.00 } }
 			
 			army_experience = 250

@@ -18,7 +18,6 @@ leader_traits = {
 		resistance_decay = 0.05
 		custom_modifier_tooltip = ITA_hierarch_bop_tt
 	}
-``	
 	the_young_magnate = {
 		random = no
 		#production_speed_industrial_complex_factor = 0.1

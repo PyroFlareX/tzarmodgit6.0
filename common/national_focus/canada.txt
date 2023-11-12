@@ -2157,6 +2157,14 @@ focus_tree = {
 					technology = improved_heavy_tank_chassis
 					technology = advanced_light_tank_chassis
 			}
+			add_tech_bonus = {
+				name = CAN_the_valentine
+				bonus = 1
+				uses = 1
+					technology = advanced_medium_tank_chassis
+					technology = advanced_heavy_tank_chassis
+					technology = advanced_light_tank_chassis
+			}
 			
 		}
 	}

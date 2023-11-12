@@ -3274,7 +3274,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = SOV_superior_war_machines
-				bonus = 0.75
+				bonus = 1.5
 				uses = 2
 				category = armor
 			}

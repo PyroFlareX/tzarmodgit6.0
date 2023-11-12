@@ -670,7 +670,9 @@ joint_focus = {
 		ai_will_do = {
 			factor = -100
 		}
-		
+		available = {
+			always = no
+		}
 		select_effect = {
 			10 = { set_demilitarized_zone = yes }
 		}
