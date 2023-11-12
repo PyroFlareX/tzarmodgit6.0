@@ -718,53 +718,6 @@ if = {
 	}
 	
 	focus = {
-		id = FRA_czech_arms_purchases
-		icon = GFX_focus_war_production
-		x = 0
-		y = 1
-		relative_position_id = FRA_begin_rearmament
-		prerequisite = { focus = FRA_begin_rearmament }
-		cost = 1
-
-		available = {
-			
-		}
-		
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-					add_equipment_subsidy = {
-						cic = 2000
-						equipment_type = light_tank_chassis
-						seller_tags = { CZE } 
-					}
-					add_equipment_subsidy = {
-						cic = 5000
-						equipment_type = artillery_equipment
-						seller_tags = { CZE } 
-					}
-					add_equipment_subsidy = {
-						cic = 2000
-						equipment_type = anti_air_equipment
-						seller_tags = { CZE } 
-					}
-					add_equipment_subsidy = {
-						cic = 5000
-						equipment_type = anti_tank_equipment
-						seller_tags = { CZE } 
-					}		
-					add_equipment_subsidy = {
-						cic = 5000
-						equipment_type = infantry_equipment
-						seller_tags = { CZE } 
-					}	
-		}
-	}
-	
-	focus = {
 		id = FRA_defensive_focus
 		icon = GFX_focus_SWI_fortify_border_with_france
 

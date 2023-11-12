@@ -1665,31 +1665,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ROM_gun_ic
-					add_equipment_subsidy = {
-						cic = 5000
-						equipment_type = infantry_equipment
-						seller_tags = { CZE } 
-					}	
-					add_equipment_subsidy = {
-						cic = 5000
-						equipment_type = light_tank_chassis
-						seller_tags = { CZE } 
-					}
-					add_equipment_subsidy = {
-						cic = 2000
-						equipment_type = artillery_equipment
-						seller_tags = { CZE } 
-					}
-					add_equipment_subsidy = {
-						cic = 2000
-						equipment_type = anti_air_equipment
-						seller_tags = { CZE } 
-					}
-					add_equipment_subsidy = {
-						cic = 2000
-						equipment_type = anti_tank_equipment
-						seller_tags = { CZE } 
-					}			
 		}
 	} 
 

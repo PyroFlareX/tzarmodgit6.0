@@ -13,7 +13,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-		
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -50,6 +50,117 @@ joint_focus = {
 }
 
 joint_focus = {
+		id = ALLIED_market
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = ALLIED_cum }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 0
+		y = 1
+		
+		relative_position_id = ALLIED_cum
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+	
+			hidden_effect = {
+				TUR = {
+					add_opinion_modifier = { target = ENG modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = AST modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = NZL modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = RAJ modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = SAF modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = CAN modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = FRA modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = FRF modifier = long_term_trade_partner }
+				}
+		
+				CHI = {
+					add_opinion_modifier = { target = ENG modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = AST modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = NZL modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = RAJ modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = SAF modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = CAN modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = FRA modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = FRF modifier = long_term_trade_partner }
+				}
+				
+				POR = {
+					add_opinion_modifier = { target = ENG modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = AST modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = NZL modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = RAJ modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = SAF modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = CAN modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = FRA modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = FRF modifier = long_term_trade_partner }
+				}
+				
+				SWE = {
+					add_opinion_modifier = { target = ENG modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = AST modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = NZL modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = RAJ modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = SAF modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = CAN modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = FRA modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = FRF modifier = long_term_trade_partner }
+				}
+				
+				POL = {
+					add_opinion_modifier = { target = ENG modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = AST modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = NZL modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = RAJ modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = SAF modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = CAN modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = FRA modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = FRF modifier = long_term_trade_partner }
+				}
+			}
+		}
+
+		completion_reward_joint_member = {
+				add_opinion_modifier = { target = TUR modifier = long_term_trade_partner }
+				add_opinion_modifier = { target = CHI modifier = long_term_trade_partner }
+				add_opinion_modifier = { target = POR modifier = long_term_trade_partner }
+				add_opinion_modifier = { target = POL modifier = long_term_trade_partner }
+				add_opinion_modifier = { target = SWE modifier = long_term_trade_partner }
+		}
+}
+
+joint_focus = {
 		id = governments_in_exile_aid
 		icon = GFX_goal_continuous_increase_nu
 		prerequisite = { focus = ALLIED_cum }
@@ -64,7 +175,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -118,7 +229,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 		
 		joint_trigger = {
@@ -169,7 +280,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 		
 		visible = {
@@ -230,7 +341,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -281,7 +392,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -355,7 +466,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -496,7 +607,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 0
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -557,7 +668,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 0
+			factor = -100
 		}
 		
 		select_effect = {
@@ -736,7 +847,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -787,7 +898,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -845,7 +956,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -896,7 +1007,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -1043,7 +1154,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -1094,7 +1205,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -1149,7 +1260,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -1200,7 +1311,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -1260,7 +1371,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -1347,7 +1458,7 @@ joint_focus = {
 		cost = 1
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -1400,7 +1511,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -1563,7 +1674,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -1688,7 +1799,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 0
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -1750,7 +1861,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 0
+			factor = -100
 		}
 
 		joint_trigger = {

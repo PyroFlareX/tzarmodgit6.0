@@ -1068,7 +1068,8 @@ ALLIED_switerzland:0 "Switzerland"
 ALLIED_switerzland_desc:0 "The odds are against Switzerland they are outnumbered, outgunned and under-prepared for what came."
 ALLIED_spirit_of_saint_bernard:0 "Spirit of Saint Bernard"
 ALIIED_spirit_of_saint_bernard_desc:0 "Since time immemorial the Swiss prided themselves for their medical tradition and willingness to help people in need. The Great Saint Bernard Hospice and the Red Cross organization are testament to that."
-
+ALLIED_market:0 "International Arms Trade"
+ALLIED_market_desc:0 "In exchange for military modernization insights the following nations have agreed to trade with us."
 GER_seized_gold:0 "Swiss Gold Seized"
 GER_seized_gold_desc:0 "No where to hide. The Swiss Gold Resereves are ours now."
 
@@ -1098,6 +1099,9 @@ AXIS_finland_continuewar:0 "Finnish Continuation War"
 AXIS_finland_continuewar_desc:0 ""
 AXIS_arm_finland:0 "Support Finland"
 AXIS_arm_finalnd_desc:0 ""
+AXIS_bosporus:0 "Turkish Trade Agreement"
+AXIS_bosporus_desc:0 ""
+
 ITA_modify_regio_esercito_dynamic_modifier_ns_intro:0 "Modify §YRegio Esercito§! by"
 
  ITA_regio_esercito_name_default:0 "$ITA_regio_esercito_dynamic_modifier$"

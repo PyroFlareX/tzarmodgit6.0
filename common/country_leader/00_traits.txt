@@ -18,7 +18,16 @@ leader_traits = {
 		resistance_decay = 0.05
 		custom_modifier_tooltip = ITA_hierarch_bop_tt
 	}
-
+``	
+	the_young_magnate = {
+		random = no
+		#production_speed_industrial_complex_factor = 0.1
+		#production_speed_rail_way_factor = 0.1
+		#production_speed_synthetic_refinery_factor = 0.1
+		trade_opinion_factor = 0.25
+		democratic_acceptance = 70
+	}
+	
 	################################
 	## SOVIET UNION LEADER TRAITS ##
 	################################
@@ -3546,7 +3555,7 @@ tank_refurbishment_plant = { #NSB
 			factor = 1
 		}
 	}
-
+	
 	anti_communist = {
 		random = no
 		communism_acceptance = -50

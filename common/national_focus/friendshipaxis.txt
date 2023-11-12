@@ -77,7 +77,7 @@ joint_focus = {
 		}
 		
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -114,6 +114,72 @@ joint_focus = {
 }
 
 joint_focus = {
+		id = AXIS_bosporus
+		icon = GFX_focus_generic_befriend_turkey
+		prerequisite = { focus = AXIS_cum }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 0
+		y = 1
+		
+		relative_position_id = AXIS_cum
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			give_resource_rights = { receiver = ROOT state = 347 }
+			#341 = { set_demilitarized_zone = no }
+			#797 = { set_demilitarized_zone = no }
+			hidden_effect = {		
+				TUR = {
+					add_opinion_modifier = { target = GER modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = ITA modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = ROM modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = YUG modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = BUL modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = HUN modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = SPR modifier = long_term_trade_partner }
+					add_opinion_modifier = { target = CZE modifier = long_term_trade_partner }
+				}
+			}
+			
+		}
+
+		completion_reward_joint_member = {
+				add_opinion_modifier = { target = TUR modifier = long_term_trade_partner }
+		}
+}
+
+joint_focus = {
 		id = AXIS_global_fascism
 		icon = GFX_focus_ITA_generic_fascist_workers
 		prerequisite = { focus = AXIS_cum }
@@ -128,7 +194,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -182,7 +248,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -382,7 +448,7 @@ joint_focus = {
 		cost = 6
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -453,7 +519,7 @@ joint_focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -507,7 +573,7 @@ joint_focus = {
 		cost = 7
 
 		ai_will_do = {
-			factor = 1
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -613,7 +679,7 @@ joint_focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = -100
 		}
 
 		joint_trigger = {
@@ -703,7 +769,7 @@ joint_focus = {
 		cost = 14
 
 		ai_will_do = {
-			
+			factor = -100
 		}
 		
 		select_effect = {
