@@ -127,6 +127,14 @@ GDU_infantry_offensive_idea:0 "Infantry Offensives Operations"
 GDU_org_operation_idea:0 "Army Reorganization"
 GDU_air_land_battle_operation_idea:0 "Combined Arms Operations"
 
+
+USA_landon_ll_to_eng:0 "Fund the [ENG.GetFlag] British Defense Industry"
+USA_landon_ll_category:0 "Loan to the [ENG.GetFactionName]"
+USA_landon_ll_to_target_army:0 "Fund [FROM.GetAdjective] Weapons Manufacturers"
+USA_landon_ll_to_target_navy:0 "Fund [FROM.GetAdjective] Ship Builders"
+USA_roosevelt_ll_category:0 "Lend-Lease the [ENG.GetFactionName]"
+USA_roosevelt_ll_to_target_inf:0 "Equip a [FROM.GetAdjective] Infantry Corps"
+USA_roosevelt_ll_to_target_armor:0 "Equip a [FROM.GetAdjective] Armor Division"
 Atlantic_Wall_Garrison_1:0 "Atlantic Wall"
 Prepare_Overlord:0 "Prepare Operation Overlord"
 

@@ -42,6 +42,20 @@ characters={
 			id=-1
 		}
 	}
+	USA_alf_landon={
+		name="Alf Landon"
+		portraits={
+			civilian={
+				large="gfx/leaders/USA/portrait_USA_alf_landon.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ staunch_constitutionalist }
+			expire = "1965.1.1"
+			id=-1
+		}
+	}
 	USA_george_s_patton={
 		name="George S. Patton"
 		advisor={
@@ -1053,7 +1067,7 @@ characters={
 				# 	has_government  = communism 
 				# }
 				available  = {
-					has_completed_focus  = USA_reach_out_to_the_ware_group 
+					has_completed_focus  = USA_the_new_american_generations 
 				}
 				traits  = {
 					economist 
@@ -1194,7 +1208,7 @@ characters={
 				# 	has_government  = communism 
 				# }
 				available  = {
-					has_completed_focus  = USA_reach_out_to_the_ware_group 
+					has_completed_focus  = USA_the_new_american_generations 
 				}
 				traits  = {
 					editor 
@@ -1399,7 +1413,7 @@ characters={
 				# 	has_government  = communism 
 				# }
 				available  = {
-					has_completed_focus  = USA_reach_out_to_the_ware_group 
+					has_completed_focus  = USA_the_new_american_generations 
 				}
 				traits  = {
 					captain_of_industry 

@@ -1,7 +1,152 @@
 foreign_politics = { 
 
+
+USA_landon_ll_to_eng = {
+		icon =generic_industry
+		allowed = { original_tag = USA } 
+		available = {
+			#NOT = { has_country_flag = landon_supporting_minor }	
+			has_completed_focus = USA_lend_lease_act
+			num_of_civilian_factories_available_for_projects > 54
+			}
+		fire_only_once = no
+		cost = 0
+		days_re_enable = 0
+		days_remove = 30
+		on_map_mode = map_and_decisions_view 
+		modifier = { civilian_factory_use = 40 } #44 is 80% of 55
+		remove_effect = {
+			ENG = { random_core_state = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1  instant_build = yes } }  }
+			ENG = { random_core_state = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1  instant_build = yes } }  }		
+			ENG = { random_core_state = { limit = {   is_coastal = yes } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1  instant_build = yes } } }
+		}
+	}
+USA_landon_ll_to_target_army = {
+		icon =generic_industry
+		allowed = { original_tag = USA } 
+		target_trigger = {
+			FROM = { is_in_faction_with = ENG }
+		}
+		available = {
+			#NOT = { has_country_flag = landon_supporting_minor }	
+			has_completed_focus = USA_lend_lease_act
+			num_of_civilian_factories_available_for_projects > 19
+			}
+		fire_only_once = no
+		cost = 0
+		days_re_enable = 0
+		days_remove = 30
+		on_map_mode = map_and_decisions_view 
+		modifier = { civilian_factory_use = 14 }
+		complete_effect = {
+			set_country_flag = { flag = landon_supporting_minor_army days = 30 }
+		}	
+		remove_effect = {
+		if = { limit = { NOT = { OR = { tag = NOR tag = HOL tag = GRE tag = FRA } } }
+			FROM = { random_core_state = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1  instant_build = yes } }  }
+			}
+			else = { 
+			FROM = { random_state = { limit = {  NOT ={ OR = { is_core_of = FRA is_core_of = GRE is_core_of = HOL is_core_of = NOR} }   }add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1  instant_build = yes } }  }
+			}
+		}
+	}
+	USA_landon_ll_to_target_navy = {
+		icon = generic_merge_plant_ship
+		allowed = { original_tag = USA } 
+		target_trigger = {
+			FROM = { is_in_faction_with = ENG }
+		}
+		available = {	
+			#NOT = { has_country_flag = landon_supporting_minor }
+			has_completed_focus = USA_lend_lease_act
+			num_of_civilian_factories_available_for_projects > 14
+			}
+		fire_only_once = no
+		cost = 0
+		days_re_enable = 0
+		days_remove = 30
+		on_map_mode = map_and_decisions_view 
+		modifier = { civilian_factory_use = 10 }
+		complete_effect = {
+			set_country_flag ={ flag =  landon_supporting_minor_dock days = 30 }
+		}	
+		remove_effect = {
+			FROM = { random_core_state = { limit = { NOT = { is_core_of = FRA }  is_coastal = yes } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1  instant_build = yes } } }
+		}
+	}
 	
-	
+
+
+USA_roosevelt_ll_to_target_inf  = {
+		icon =generic_prepare_civil_war
+		allowed = { original_tag = USA } 
+		target_trigger = {
+			FROM = { is_in_faction_with = ENG }
+		}
+		available = {
+			NOT = { has_country_flag = roosevelt_supporting_minor }	
+			has_completed_focus = USA_lend_lease_act
+			}
+		fire_only_once = no
+		cost = 0
+		days_re_enable = 0
+		days_remove = 60
+		on_map_mode = map_and_decisions_view 
+		complete_effect = {
+			set_country_flag = { flag = roosevelt_supporting_minor days = 30 }
+		}	
+		remove_effect = {
+			send_equipment = {   equipment = infantry_equipment amount = 6000  target = FROM }
+			send_equipment = {   equipment = artillery_equipment amount = 400  target = FROM }
+			send_equipment = {   equipment = anti_tank_equipment amount = 400 target = FROM }
+			send_equipment = {   equipment = anti_air_equipment amount = 200  target = FROM }
+			send_equipment = {   equipment = support_equipment amount = 400  target = FROM }
+			send_equipment = {   equipment = motorized_equipment amount = 100  target = FROM }
+		}
+	}
+USA_roosevelt_ll_to_target_armor  = {
+		icon =generic_prepare_civil_war
+		allowed = { original_tag = USA } 
+		target_trigger = {
+			FROM = { is_in_faction_with = ENG }
+		}
+		available = {
+			NOT = { has_country_flag = roosevelt_supporting_minor }	
+			has_completed_focus = USA_lend_lease_act
+			}
+		fire_only_once = no
+		cost = 0
+		days_re_enable = 0
+		days_remove = 60
+		on_map_mode = map_and_decisions_view 
+		complete_effect = {
+			set_country_flag = { flag = roosevelt_supporting_minor days = 30 }
+		}	
+		remove_effect = {
+		if = { limit ={ FROM = { has_tech = improved_medium_tank_chassis } }
+			send_equipment = {   equipment = medium_tank_chassis amount = 800  target = FROM }
+			send_equipment = {   equipment = medium_tank_aa_chassis amount = 80  target = FROM }
+			send_equipment = {   equipment = mech_chassis amount = 500  target = FROM }			
+		}
+		else_if = { limit ={ FROM = { has_tech = improved_light_tank_chassis } }
+			send_equipment = {   equipment = light_tank_chassis amount = 1000  target = FROM }
+			send_equipment = {   equipment = light_tank_aa_chassis amount = 100  target = FROM }	
+			send_equipment = {   equipment = mech_chassis amount = 500  target = FROM }				
+		}
+			else_if = { limit ={ FROM = { has_tech = improved_heavy_tank_chassis } }
+			send_equipment = {   equipment = heavy_tank_chassis amount = 600  target = FROM }
+			send_equipment = {   equipment = heavy_tank_aa_chassis amount = 60  target = FROM }
+			send_equipment = {   equipment = mech_chassis amount = 500  target = FROM }	
+		}
+		else = { 
+			send_equipment = {   equipment = mech_chassis amount = 2000  target = FROM }	
+		}
+			send_equipment = {   equipment = support_equipment amount = 400  target = FROM }
+			send_equipment = {   equipment = motorized_equipment amount = 100  target = FROM }
+		}
+	}
+
+
 	
 	USA_Lend_Lease_UK = {
 
