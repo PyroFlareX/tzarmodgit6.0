@@ -41,6 +41,7 @@ scripted_gui = {
 						if={limit={check_variable={Root.selected_cheatz=3}} set_country_flag = host}
 						if={limit={check_variable={Root.selected_cheatz=4}} add_timed_idea = {idea = production_fixer days = 2} }
 						if={limit={check_variable={Root.selected_cheatz=5}} add_country_leader_trait = overweight }
+						if={limit={check_variable={Root.selected_cheatz=6}} un_raffi_germany = yes}
 						#if={limit={check_variable={Root.selected_cheat=13}} add_timed_idea = {idea = production_fixer days = 2} }
 						}
 					}
@@ -52,6 +53,7 @@ scripted_gui = {
 					cheater3_click={set_variable={Root.selected_cheatz=3} ROOT={clr_country_flag=cheating_tz}}
 					cheater4_click={set_variable={Root.selected_cheatz=4} ROOT={clr_country_flag=cheating_tz}}
 					cheater5_click={set_variable={Root.selected_cheatz=5} ROOT={clr_country_flag=cheating_tz}}
+					cheater6_click={set_variable={Root.selected_cheatz=6} ROOT={clr_country_flag=cheating_tz}}
 				}
 				properties = {
 					toogle_mark={ frame = mark_status }
@@ -68,6 +70,8 @@ scripted_gui = {
 				cheater4_text_visible={ROOT={has_country_flag=cheating_tz}}
 				cheater5_visible={ROOT={has_country_flag=cheating_tz}}
 				cheater5_text_visible={ROOT={has_country_flag=cheating_tz}}
+				cheater6_visible={ROOT={has_country_flag=cheating_tz}}
+				cheater6_text_visible={ROOT={has_country_flag=cheating_tz}}
 				#cheat13_visible={ROOT={has_country_flag=cheating_tz}}
 				#cheat13_text_visible={ROOT={has_country_flag=cheating_tz}}
 			}

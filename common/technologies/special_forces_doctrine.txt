@@ -92,8 +92,8 @@ technologies = {
 		rangers_support = {
 			acclimatization_cold_climate_gain_factor = 0.25
 			snow = {
-				attack = 0.15
-				defence = 0.20
+				attack = 0.075
+				defence = 0.075
 				movement = 0.15
 			}
 		}
@@ -137,8 +137,8 @@ technologies = {
 		
 		rangers_support = {
 			mountain = {
-				attack = 0.1
-				defence = 0.10
+				attack = 0.05
+				defence = 0.05
 				movement = 0.10
 			}
 		}
@@ -1503,8 +1503,8 @@ technologies = {
 			}
 			recon = {
 				plains = {
-					attack = 0.20
-					defence = 0.10
+					attack = 0.05
+					defence = 0.05
 					movement = 0.10
 				}
 			}
@@ -1553,9 +1553,9 @@ technologies = {
 				recon = {
 					acclimatization_hot_climate_gain_factor = 0.25
 					desert = {
-						attack = 0.15
-						defence = 0.20
-						movement = 0.15
+						attack = 0.05
+						defence = 0.05
+						movement = 0.1
 					}
 				}
 
