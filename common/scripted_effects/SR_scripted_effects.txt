@@ -27,6 +27,14 @@ set_technology = {
                     nuclear_reactor = 1
                 }
 }
+un_raffi_germany = {
+set_technology = {
+                    nukes = 0
+                }
+				set_technology = {
+                    nuclear_reactor = 0
+                }
+}
 generic_bonus_1 = {
 	add_tech_bonus = { 
 	name = "Generic 100 Bonus" bonus = 1 uses = 1
