@@ -445,7 +445,7 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for d
 		0.8, -- PATROL		
 		0.0, -- STRIKE FORCE 
 		0.2, -- CONVOY RAIDING
-		0.6, -- CONVOY ESCORT
+		0.5, -- CONVOY ESCORT
 		0.0, -- MINES PLANTING	
 		0.0, -- MINES SWEEPING	
 		0.0, -- TRAIN
@@ -464,7 +464,7 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 		0.8, -- PATROL		
 		0.0, -- STRIKE FORCE 
 		0.5, -- CONVOY RAIDING
-		0.6, -- CONVOY ESCORT
+		0.5, -- CONVOY ESCORT
 		0.3, -- MINES PLANTING	
 		0.3, -- MINES SWEEPING	
 		0.0, -- TRAIN
@@ -655,10 +655,10 @@ NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 0.8  -
 NDefines.NNavy.SPOTTING_SPEED_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 0.05 -- same as SPOTTING_SPEED_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval invasion convoys
 
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.5							-- supremacy of a ship is calculated using its IC, manpower and a base define
-NDefines.NNavy.SUPREMACY_PER_SHIP_PER_IC = 0.05
+NDefines.NNavy.SUPREMACY_PER_SHIP_PER_IC = 0.09
 NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 0.02
 
-NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.6
+NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.55
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 12
 NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 72
 
