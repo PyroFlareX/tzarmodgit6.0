@@ -1804,7 +1804,6 @@ mio_cat_tech_light_armor_and_modules
 		categories = {
 			tank_modules
 mio_cat_tech_light_armor_and_modules
-			electronics
 			armor
 		}
 	}	
@@ -1836,7 +1835,6 @@ mio_cat_tech_light_armor_and_modules
 			tank_modules
 mio_cat_tech_light_armor_and_modules
 			armor
-			electronics
 		}
 	}	
 	radio_tech_3 = {
@@ -1895,7 +1893,6 @@ mio_cat_tech_light_armor_and_modules
 		categories = {
 			tank_modules
 mio_cat_tech_light_armor_and_modules
-			electronics
 			armor
 		}
 	}

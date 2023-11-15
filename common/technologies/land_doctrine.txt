@@ -2622,7 +2622,11 @@ technologies = {
 
 
 		allow = { 
-		 tag = SOV
+			OR = {
+				tag = SOV
+				tag = MON
+				tag = RAJ
+			}
 		}
 
 
