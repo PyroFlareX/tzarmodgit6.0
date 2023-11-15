@@ -2760,7 +2760,7 @@ characters={
 					base = 500
 					modifier = {
 						factor = 7 
-						has_intelligence_agency = yes						
+												
 					}
 				}
 				

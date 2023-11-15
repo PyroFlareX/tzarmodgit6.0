@@ -793,7 +793,7 @@ defined_text = {
 	name = GetAgencyRequirement
 	text = {
 		trigger = {
-			has_intelligence_agency = yes
+			
 		}
 		localization_key = SOV_behead_the_snake_lar_has_agency
 	}

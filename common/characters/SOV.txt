@@ -1924,7 +1924,7 @@ SOV_arseniy_golovko={
 			}
 		}
 
-		allowed_civil_war = {
+		allowed_civil_war = {f
 			OR = {
 				has_completed_focus = SOV_the_plan_for_the_coup #Goes to right oppo if aligned via Plan for the Coup
 				AND = { #If not aligned by Right oppo, then stays with Stalin
@@ -1944,7 +1944,7 @@ SOV_arseniy_golovko={
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_genrikh_yagoda
-			can_be_fired = no
+			can_be_fired = yes
 			allowed = {
 				original_tag = SOV
 			}
@@ -1955,14 +1955,6 @@ SOV_arseniy_golovko={
 			}
 			traits = {
 				head_of_the_nkvd_yagoda_initial
-			}
-			on_add = {
-				ROOT = { add_to_variable = { SOV_paranoia_weekly_modifiers_amount = 1 } }
-				ROOT = { SOV_paranoia_modifier_update_gui_tooltip = yes }
-			}
-			on_remove = {
-				ROOT = { subtract_from_variable = { SOV_paranoia_weekly_modifiers_amount = 1 } }
-				ROOT = { SOV_paranoia_modifier_update_gui_tooltip = yes }
 			}
 		}
 	}
@@ -2053,6 +2045,7 @@ SOV_arseniy_golovko={
 				}
 				available = {
 					NOT = { has_idea = SOV_nikolay_yezhov }
+					NOT = {has_completed_focus = SOV_the_left_opposition}
 					NOT = { has_idea = SOV_genrikh_yagoda }
 					NOT = { is_country_leader = yes }
 				}
@@ -2151,7 +2144,7 @@ SOV_arseniy_golovko={
 				}
 			}
 			available = {
-				has_intelligence_agency = yes
+				
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag
@@ -2271,14 +2264,8 @@ SOV_arseniy_golovko={
 			}
 			available = {
 				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
+					has_completed_focus = SOV_reigniting_the_revolutionary_spirit
 				}
-				OR = {
-					has_completed_focus = SOV_integrate_smirnovs_bloc
-					has_completed_focus = SOV_return_democracy_to_the_party
-				}
-				is_country_leader = no
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag
@@ -2846,7 +2833,7 @@ SOV_arseniy_golovko={
 				}
 			}
 			available = {
-				has_completed_focus = SOV_align_the_zinovyevites
+				has_completed_focus = SOV_return_democracy_to_the_party
 				OR = {
 					has_global_flag = SOV_soviet_civil_war
 					has_global_flag = SOV_soviet_civil_war_over
@@ -2909,23 +2896,8 @@ SOV_arseniy_golovko={
 				}
 			}
 			available = {
-				has_completed_focus = SOV_align_the_zinovyevites
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_imprisoned_flag
-					}
-					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				has_completed_focus = SOV_return_democracy_to_the_party
+				
 			}
 			traits = {
 				appeasing_technocrat 
@@ -2971,23 +2943,8 @@ SOV_arseniy_golovko={
 				}
 			}
 			available = {
-				has_completed_focus = SOV_liberate_ryutin
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_imprisoned_flag
-					}
-					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
+				has_completed_focus = SOV_return_democracy_to_the_party
+				
 			}
 			traits = {
 				anti_stalinist_propagandist 

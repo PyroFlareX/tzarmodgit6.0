@@ -1115,7 +1115,7 @@ ideas = {
 	# 	# eng_stewart_menzies = {
 		
 	# 	# 	available = {
-	# 	# 		has_intelligence_agency = yes
+	# 	# 		
 	# 	# 	}
 			
 	# 	# 	allowed = {
@@ -1168,7 +1168,7 @@ ideas = {
 	# 	# 	picture = eng_alan_turing
 		
 	# 	# 	available = {
-	# 	# 		has_intelligence_agency = yes
+	# 	# 		
 	# 	# 		has_done_agency_upgrade = upgrade_form_department
 	# 	# 	}
 	# 	# 	ai_will_do = {

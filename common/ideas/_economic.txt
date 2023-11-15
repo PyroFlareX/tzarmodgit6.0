@@ -60,7 +60,7 @@ ideas = {
 			available = {
 				NOT = {	tag = USA } 
 			}
-
+			
 			cost = 150
 			removal_cost = -1
 			
@@ -97,6 +97,9 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}	
+			}
+			allowed = {
+				NOT = {tag = SOV}
 			}
 
 			
@@ -156,6 +159,9 @@ ideas = {
 					}
 				}
 			}
+			allowed = {
+				NOT = {tag = SOV}
+			}
 
 			cost = 150
 			removal_cost = -1
@@ -184,7 +190,9 @@ ideas = {
 		}
 		
 		war_economy = {
-			
+			allowed = {
+				NOT = {tag = SOV}
+			}
 			
 			available = {
 				NOT = {	tag = USA } 
@@ -232,7 +240,9 @@ ideas = {
 		
 		tot_economic_mobilisation = {
 			
-			
+			allowed = {
+				NOT = {tag = SOV}
+			}
 			# available = {
 			# 	has_war = yes
 			# 	has_war_support > 0.8
@@ -305,7 +315,9 @@ ideas = {
 			available = {
 				NOT = {	tag = SOV } 
 			}
-						
+				allowed = {
+				NOT = {tag = SOV}
+			}		
 			cost = 150
 			removal_cost = -1
 			
@@ -354,7 +366,9 @@ ideas = {
 			NOT = {	tag = CHI }
 			NOT = {	tag = SOV } 
 			}
-			
+			allowed = {
+				NOT = {tag = SOV}
+			}
 			
 			cost = 150
 			removal_cost = -1
@@ -399,7 +413,9 @@ ideas = {
 				NOT = {	tag = CHI  } 
 				NOT = { tag = SOV }
 			}
-		
+			allowed = {
+				NOT = {tag = SOV}
+			}
 			cost = 150
 			removal_cost = -1
 			
@@ -429,9 +445,11 @@ ideas = {
 					has_government = communism
 				}
 				NOT = {	tag = CHI  } 
-				#NOT = { tag = SOV }
+				NOT = { tag = SOV }
 			}
-			
+			allowed = {
+				NOT = {tag = SOV}
+			}
 			cost = 150
 			removal_cost = -1
 			

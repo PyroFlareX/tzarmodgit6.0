@@ -992,7 +992,7 @@ characters={
 				has_dlc = "La Resistance"
 			}
 			available = {
-				has_intelligence_agency = yes
+				
 				ITA_government_is_really_fascist = yes
 			}
 			traits = {

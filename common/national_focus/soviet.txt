@@ -2451,7 +2451,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = SOV_expand_shipbuilding_plants
-		cost = 5
+		cost = 1
 
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
@@ -2477,7 +2477,7 @@ focus_tree = {
 		x = 4
 		y = 2
 		relative_position_id = SOV_expand_the_red_fleet
-		cost = 5
+		cost = 1
 
 		available = {
 
@@ -2534,9 +2534,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SOV_pc_of_the_ussr_navy
-		cost = 5
-
-		mutually_exclusive = { focus = SOV_submarine_warfare }
+		cost = 1
 
 		available = {
 
@@ -2587,9 +2585,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_pc_of_the_ussr_navy
-		cost = 5
-
-		mutually_exclusive = { focus = SOV_surface_warfare }
+		cost = 1
 
 		available = {
 
@@ -2641,7 +2637,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_surface_warfare
-		cost = 5
+		cost = 1
 
 		available = {
 			if = {
@@ -2762,7 +2758,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_surface_warfare
-		cost = 5
+		cost = 1
 
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
@@ -2880,7 +2876,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_submarine_warfare
-		cost = 5
+		cost = 1
 
 		available = {
 
@@ -2912,7 +2908,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_submarine_warfare
-		cost = 5
+		cost = 1
 
 		available = {
 
@@ -3090,7 +3086,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = SOV_expand_shipbuilding_plants
-		cost = 5
+		cost = 1
 
 		available = {
 		}
@@ -3121,7 +3117,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_advanced_maneuvers
-		cost = 5
+		cost = 1
 
 		available = {
 
@@ -3608,10 +3604,9 @@ focus_tree = {
 	focus = {
 		id = SOV_leningrad_polytechnical_institute
 		icon = GFX_focus_research
-		prerequisite = { focus = SOV_the_means_to_wage_war }
-		prerequisite = { focus = SOV_military_engineering_university }
+		prerequisite = { focus = SOV_pc_of_mechanical_engineering focus = SOV_military_engineering_university}
 		x = 2
-		y = 2
+		y = 0
 		relative_position_id = SOV_the_means_to_wage_war
 		cost = 5
 		dynamic = yes 
@@ -3629,10 +3624,10 @@ focus_tree = {
 	focus = {
 		id = SOV_soviet_atomic_bomb_project
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = SOV_leningrad_polytechnical_institute }
+		prerequisite = { focus = SOV_lessons_of_war }
 		x = 0
 		y = 2
-		relative_position_id = SOV_leningrad_polytechnical_institute
+		relative_position_id = SOV_lessons_of_war
 		cost = 2
 
 		available = {
@@ -3680,11 +3675,10 @@ focus_tree = {
 	focus = {
 		id = SOV_the_road_of_life
 		icon = GFX_focus_SOV_the_road_of_life
-		prerequisite = { focus = SOV_leningrad_polytechnical_institute }
-		prerequisite = { focus = SOV_move_industry_to_the_urals }
-		x = 1
+		prerequisite = { focus = SOV_winter_offensive }
+		x = -3
 		y = 1
-		relative_position_id = SOV_leningrad_polytechnical_institute
+		relative_position_id = SOV_winter_offensive
 		cost = 5
 
 		available = {
@@ -4998,9 +4992,7 @@ focus_tree = {
 		cost = 2
 
 		available = {
-			NOT = {
-				has_idea = SOV_desperate_measures_ns
-			}
+			date>1943.1.1
 			has_completed_focus = SOV_military_reorganization
 		}
 		
@@ -5012,6 +5004,10 @@ focus_tree = {
 			custom_effect_tooltip = SOV_the_modern_war_in_the_skies_ns_tt
 			custom_effect_tooltip = "Penalty from Officer Corp Purged Reduced
 		"
+		hidden_effect = {
+				if = { limit = { has_idea = ivan_konev } remove_ideas = ivan_konev }
+				add_ideas = konstantin_rokossovsky
+			}
 		add_to_variable = { SOV_soviet_airforce_air_cas_present_factor = 0.1 }
 			custom_effect_tooltip = SOV_ground_support_ns_tt
 
@@ -5066,9 +5062,9 @@ focus_tree = {
 		text = "Operation Bagration"
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		prerequisite = { focus = SOV_lessons_of_war }
-		x = 0
-		y = 10
-		relative_position_id = SOV_desperate_measures
+		x = 1
+		y = 1
+		relative_position_id = SOV_lessons_of_war
 		cost = 2
 
 		available = {
@@ -5112,10 +5108,10 @@ focus_tree = {
 		id = SOV_uranus
 		text = "Operation Uranus"
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
-		prerequisite = { focus = SOV_lessons_of_war }
-		x = 1
-		y = 9
-		relative_position_id = SOV_desperate_measures
+		prerequisite = { focus = SOV_winter_offensive }
+		x = 3
+		y = 1
+		relative_position_id = SOV_winter_offensive
 		cost = 2
 
 		available = {
@@ -5773,92 +5769,12 @@ focus_tree = {
 			set_country_flag = SOV_second_moscow_trial_flag #Used to unlock the next purge focus
 
 			add_political_power = 25
-
+			if = { limit = { has_idea = SOV_genrikh_yagoda } remove_ideas = SOV_genrikh_yagoda }
+			add_ideas = SOV_nikolay_yezhov
 			SOV_paranoia_high_increase_effect = yes
 
-			#HISTORICAL
-			#Radek
-			if = {
-				limit = {
-					has_character = SOV_karl_radek
-				}
-				SOV_karl_radek = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#NOT-SO-HISTORICAL
-			#Smilga
-			if = {
-				limit = {
-					has_character = SOV_ivar_smilga
-				}
-				SOV_ivar_smilga = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#Preobrazhensky
-			if = {
-				limit = {
-					has_character = SOV_yevgeny_preobrazhensky
-				}
-				SOV_yevgeny_preobrazhensky = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#Ryutin
-			if = {
-				limit = {
-					has_character = SOV_martemyan_ryutin
-				}
-				SOV_martemyan_ryutin = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#Ustryalov
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				if = {
-					limit = {
-						has_character = SOV_nikolay_ustryalov
-					}
-					SOV_nikolay_ustryalov = {
-						set_character_flag = SOV_targeted_for_purge_flag
-					}
-				}
-				else = {
-					SOV_add_random_character_to_purge_targets_effect = yes
-				}
-			}
-
 			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
-			hidden_effect = {
-				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
-				SOV_trigger_great_purge_moscow_trial_effect = yes #SECOND MOSCOW TRIAL -> Left Opposition
-			}
-			custom_effect_tooltip = SOV_trigger_second_moscow_trial_tt
-
-			hidden_effect = {
-				swap_ruler_traits = {
-					remove = stalin_political_paranoia
-					add = stalin_political_paranoia_advanced
-				}
-				add_to_variable = { SOV_paranoia_weekly_modifiers_amount = 1 }
-				SOV_paranoia_modifier_update_gui_tooltip = yes
-			}		
+			custom_effect_tooltip = SOV_trigger_second_moscow_trial_tt		
 			custom_effect_tooltip = SOV_increase_weekly_paranoia_in_trait_tt
 		}
 	}
@@ -6051,6 +5967,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			if = { limit = { has_idea = SOV_nikolay_yezhov } remove_ideas = SOV_nikolay_yezhov }
+			add_ideas = SOV_lavrenty_beriya
 			clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
 			set_country_flag = { flag = SOV_paranoia_random_purge_cooldown_from_focus_flag days = 15 } #Used to prevent random purges from popping up while this is active
 			set_country_flag = SOV_third_moscow_trial_flag #Used to unlock the next purge focus
@@ -6788,6 +6706,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
 		completion_reward = {
+			if = { limit = { has_idea = SOV_genrikh_yagoda } remove_ideas = SOV_genrikh_yagoda }
+			add_ideas = SOV_nikolay_yezhov
 			SOV_paranoia_medium_increase_effect = yes 
 			add_political_power = 50
 			custom_effect_tooltip = SOV_integrate_smirnovs_bloc_tt

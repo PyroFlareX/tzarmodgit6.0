@@ -893,7 +893,7 @@ ideas = {
 			italy_mario_roatta = {
 		
 			available = {
-				has_intelligence_agency = yes
+				
 			}
 			
 			allowed = {

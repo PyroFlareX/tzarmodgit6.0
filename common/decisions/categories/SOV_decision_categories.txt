@@ -84,7 +84,7 @@ SOV_paranoia_system = {
 	scripted_gui = sov_paranoia_system_ui
 
 	allowed = {
-		original_tag = SOV
+		always = no
 	}
 
 	visible = {
@@ -156,7 +156,7 @@ SOV_propaganda_campaigns = {
  	icon = SOV_merge_designers
 
  	allowed = {
- 		original_tag = SOV
+ 		always = no
 	}
 
  	visible = {
