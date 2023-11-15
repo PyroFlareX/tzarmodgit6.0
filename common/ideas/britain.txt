@@ -150,8 +150,8 @@ ideas = {
 			}
 			
 			modifier = {
-				army_core_attack_factor	= 0.2
-				army_core_defence_factor = 0.2
+				army_core_attack_factor	= 0.3
+				army_core_defence_factor = 0.3
 				surrender_limit = 0.15
 			}	
 		}

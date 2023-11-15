@@ -851,7 +851,6 @@ add_ideas = {
 	trotskyite_plot_nsb
 	SOV_politicized_military
 	autarky_generic
-	SOV_genrikh_yagoda #NKVD Chief (political advisor)
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }

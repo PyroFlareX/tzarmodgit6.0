@@ -19,7 +19,7 @@ equipments = {
 		maximum_speed = 4.5
 
 		#Defensive Abilities
-		defense = 14
+		defense = 15
 		breakthrough = 12.5
 		hardness = 0
 		armor_value = 0
@@ -55,7 +55,7 @@ equipments = {
 		priority = 50
 		visual_level = 1
 
-		defense = 16.5
+		defense = 18
 		breakthrough = 12.5
 		soft_attack = 31
 		
@@ -74,7 +74,7 @@ equipments = {
 		priority = 50
 		visual_level = 2
 		
-		defense = 18
+		defense = 20
 		breakthrough = 18
 		soft_attack = 38.5
 		
@@ -111,7 +111,7 @@ equipments = {
 		armor_value = 0
 
 		#Offensive Abilities
-		soft_attack = 41
+		soft_attack = 39
 		ap_attack = 2
 		air_attack = 0
 		
@@ -141,7 +141,7 @@ equipments = {
 		
 		defense = 6.5
 		breakthrough = 29
-		soft_attack = 48
+		soft_attack = 45
 		
 		build_cost_ic = 6.5
 		resources = {

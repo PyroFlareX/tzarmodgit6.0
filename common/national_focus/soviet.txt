@@ -3201,7 +3201,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			has_completed_focus = SOV_the_bloc_of_rights_and_trotskyites
+			date>1938.1.1
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
