@@ -1584,9 +1584,9 @@ mio_cat_tech_light_armor_and_modules
 
 		enable_equipment_modules = {
 			apcr_ammo	
+			hesh_ammo
 			squeezebore_adaptor
 			secondary_turret_hmg
-			
 		}
 
 		research_cost = 0.5
@@ -1609,13 +1609,12 @@ mio_cat_tech_light_armor_and_modules
 	}
 	shit_guns = {
 
-		enable_equipment_modules = {
-			hesh_ammo	
+		enable_equipment_modules = {	
 			dozer_blade
 			auto_loader
-			hvap_ammo
 			secondary_turret_small_cannon
 			tank_auto_cannon_3 
+			hvap_ammo
 		}
 
 		research_cost = 1
