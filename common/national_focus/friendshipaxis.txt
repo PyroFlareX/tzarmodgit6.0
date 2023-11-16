@@ -148,7 +148,7 @@ joint_focus = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
+			
 		}
 
 		completion_reward = {
@@ -156,7 +156,16 @@ joint_focus = {
 		}
 
 		completion_reward_joint_originator = {
-			give_resource_rights = { receiver = ROOT state = 347 }
+			random_owned_controlled_state = {
+				add_resource = {
+					type = steel
+					amount = 11
+				}
+				add_resource = {
+					type = chromium
+					amount = 23
+				}
+			}
 			#341 = { set_demilitarized_zone = no }
 			#797 = { set_demilitarized_zone = no }
 			hidden_effect = {		
@@ -171,9 +180,7 @@ joint_focus = {
 					add_opinion_modifier = { target = CZE modifier = long_term_trade_partner }
 				}
 			}
-			
 		}
-
 		completion_reward_joint_member = {
 				add_opinion_modifier = { target = TUR modifier = long_term_trade_partner }
 		}

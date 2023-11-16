@@ -1,6 +1,27 @@
 ideas = {
     country = {
 		
+	POL_polish_shock_battallions = {
+
+		allowed = {
+			always = no
+		}
+
+		removal_cost = -1
+
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = 0.025
+			#defense_bonus_against = 0.025
+		}
+
+		picture = chi_army_corruption3
+
+		modifier = {
+			#special_forces_cap = 0.05
+			#special_forces_training_time_factor = -0.1
+		}
+	}
 		CHI_war_of_resistance_2 = {
 
 			name = CHI_war_of_resistance

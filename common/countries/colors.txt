@@ -1,4 +1,8 @@
 #reload countrycolors
+PRA = {
+	color = rgb { 171  114  99 }
+}
+
 IRQ = {
 	color = rgb { 178  114  99 }
 }

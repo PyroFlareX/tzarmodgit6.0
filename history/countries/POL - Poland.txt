@@ -9,7 +9,7 @@ if = {
 	}
 }
 
-add_ideas = {  JAP_superior_will }
+add_ideas = POL_militarism_focus
 add_ideas = POL_ideological_fanaticism
 
 set_research_slots = 0

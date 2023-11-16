@@ -334,7 +334,7 @@ joint_focus = {
 		dynamic = yes 
 		
 		x = 0
-		y = 1
+		y = 3
 		
 		relative_position_id = governments_in_exile_aid
 
@@ -378,13 +378,13 @@ joint_focus = {
 }
 
 joint_focus = {
-		id = ALLIED_poland_resistance
-		icon = GFX_focus_POL_reach_out_to_underground_state
+		id = ALLIED_polishgov_exile
+		icon = GFX_focus_POL_prepare_for_the_inevitable
 		prerequisite = { focus = ALLIED_poland }
 		#mutually_exclusive = { focus =  }
 		dynamic = yes 
 		
-		x = 0
+		x = -2
 		y = 1
 		
 		relative_position_id = ALLIED_poland
@@ -416,52 +416,92 @@ joint_focus = {
 		}
 
 		completion_reward = {
-			10 = {
-				damage_building = {
-					type = industrial_complex
-					damage = 0.08
-				}
-			}
-			90 = {
-				damage_building = {
-					type = industrial_complex
-					damage = 0.08
-				}
-			}
-			88 = {
-				damage_building = {
-					type = industrial_complex
-					damage = 0.08
-				}
-			}
-			87 = {
-				damage_building = {
-					type = industrial_complex
-					damage = 0.08
-				}
-			}
+			
 		}
 
 		completion_reward_joint_originator = {
-			
+			add_ideas = POL_polish_shock_battallions
 		}
 
 		completion_reward_joint_member = {
-			
+			add_ideas = POL_polish_shock_battallions
 		}
 }
+
+
+joint_focus = {
+		id = ALLIED_poland_wojak
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		prerequisite = { focus = ALLIED_polishgov_exile }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 1
+		y = 1
+		
+		relative_position_id = ALLIED_polishgov_exile
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			 create_corps_commander = {
+			 	name = "Wojtek"
+			 	gfx = "GFX_portrait_POL_wojtek"
+			 	traits = { commando war_hero bearer_of_artillery organizer logistics_wizard }
+			 	skill = 7
+			 	attack_skill = 2
+			 	defense_skill = 5
+			 	planning_skill = 1
+				logistics_skill = 10
+			}
+			add_ideas = { allied_wojtek }
+		}
+
+		completion_reward_joint_member = {
+			add_ideas = { allied_wojtek }
+		}
+}
+
 
 joint_focus = {
 		id = ALLIED_poland_tank
 		icon = GFX_focus_POL_expand_polish_intelligence
-		prerequisite = { focus = ALLIED_poland }
+		prerequisite = { focus = ALLIED_polishgov_exile }
 		#mutually_exclusive = { focus =  }
 		dynamic = yes 
 		
 		x = -1
-		y = 2
+		y = 1
 		
-		relative_position_id = ALLIED_poland
+		relative_position_id = ALLIED_polishgov_exile
 
 		cost = 5
 
@@ -593,14 +633,14 @@ joint_focus = {
 }
 
 joint_focus = {
-		id = ALLIED_poland_wojak
-		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		id = ALLIED_support_polish_redarmy
+		icon = GFX_focus_POL_prepare_for_the_inevitable
 		prerequisite = { focus = ALLIED_poland }
 		#mutually_exclusive = { focus =  }
 		dynamic = yes 
 		
-		x = 1
-		y = 2
+		x = 2
+		y = 1
 		
 		relative_position_id = ALLIED_poland
 
@@ -615,7 +655,9 @@ joint_focus = {
 		}
 
 		available = {
-			
+			GER {
+				has_war_with = SOV
+			}
 		}
 		
 		bypass = {
@@ -635,56 +677,52 @@ joint_focus = {
 		}
 
 		completion_reward_joint_originator = {
-			 create_corps_commander = {
-			 	name = "Wojtek"
-			 	gfx = "GFX_portrait_POL_wojtek"
-			 	traits = { commando war_hero bearer_of_artillery organizer logistics_wizard }
-			 	skill = 7
-			 	attack_skill = 2
-			 	defense_skill = 5
-			 	planning_skill = 1
-				logistics_skill = 10
+			PRA = {
+				transfer_state = 262
+				add_manpower = 300000
+				diplomatic_relation = {   country = SOV relation = military_access  active = yes  }
 			}
-			add_ideas = { allied_wojtek }
+			ROOT = {
+				set_autonomy = {
+						target = PRA
+						autonomy_state = autonomy_puppet
+				}
+				diplomatic_relation = {   country = SOV relation = military_access  active = yes  }
+			}
+			build_railway = {
+			path = { 3338 9041 6105 6016 9099 154 }
+			}
 		}
 
 		completion_reward_joint_member = {
-			add_ideas = { allied_wojtek }
+			
 		}
 }
 
 joint_focus = {
-		id = ALLIED_poland_warsaw
-		icon = GFX_focus_POL_ban_nazi_party
-		prerequisite = { focus = ALLIED_poland_resistance }
+		id = ALLIED_sponsor_polish_redarmy
+		icon = GFX_focus_generic_polish_deal
+		prerequisite = { focus = ALLIED_support_polish_redarmy }
 		#mutually_exclusive = { focus =  }
 		dynamic = yes 
 		
 		x = 0
-		y = 2
+		y = 1
 		
-		relative_position_id = ALLIED_poland_resistance
+		relative_position_id = ALLIED_support_polish_redarmy
 
 		cost = 10
 
 		ai_will_do = {
 			factor = -100
 		}
-		available = {
-			always = no
-		}
-		select_effect = {
-			10 = { set_demilitarized_zone = yes }
-		}
-		
+
 		joint_trigger = {
   			
 		}
 
 		available = {
-			has_tech = mechanised_infantry
-			has_equipment = { support_equipment > 499 }
-			has_equipment = { transport_plane_equipment > 29 }
+			
 		}
 		
 		bypass = {
@@ -704,129 +742,9 @@ joint_focus = {
 		}
 
 		completion_reward_joint_originator = {
-			10 = { set_demilitarized_zone = no }
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = -500
+			PRA = {
+				add_manpower = 200000
 			}
-			add_equipment_to_stockpile = {
-				type = transport_plane_equipment
-				amount = -30
-			}
-			ROOT = { transfer_state = 10 }
-			10 = { set_compliance = 100 }
-			hidden_effect = {
-				news_event = { hours = 6 id = news.1003 }
-				division_template = {
-					name = "Home Army" 			
-					division_names_group = POL_INF_01
-					is_locked = yes								
-					regiments = {
-						irregular_infantry = { x = 0 y = 0 }
-						irregular_infantry = { x = 0 y = 1 }
-						irregular_infantry = { x = 0 y = 2 }
-						irregular_infantry = { x = 0 y = 3 }
-						irregular_infantry = { x = 1 y = 0 }
-						irregular_infantry = { x = 1 y = 1 }
-						irregular_infantry = { x = 1 y = 2 }
-						irregular_infantry = { x = 1 y = 3 }
-						irregular_infantry = { x = 2 y = 0 }
-						irregular_infantry = { x = 2 y = 1 }
-						irregular_infantry = { x = 2 y = 2 }
-						irregular_infantry = { x = 3 y = 0 }
-						irregular_infantry = { x = 3 y = 1 }
-						irregular_infantry = { x = 3 y = 2 }
-						artillery_brigade = { x = 4 y = 0 }
-						artillery_brigade = { x = 4 y = 1 }
-						artillery_brigade = { x = 4 y = 2 }
-						artillery_brigade = { x = 4 y = 3 }
-					}
-					support = {
-						engineer = { x = 0 y = 0 }
-						recon =  { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = { x = 0 y = 3 }
-						signal_company = { x = 0 y = 4}
-					}
-				}
-				division_template = {
-					name = "Home Army Stolen Mech" 			
-					division_names_group = POL_INF_01
-					is_locked = yes								
-					regiments = {
-						mechanized = { x = 0 y = 0 }
-						mechanized = { x = 0 y = 1 }
-						mechanized = { x = 0 y = 2 }
-						mechanized = { x = 0 y = 3 }
-						mechanized = { x = 1 y = 0 }
-						mechanized = { x = 1 y = 1 }
-						mechanized = { x = 1 y = 2 }
-						mechanized = { x = 1 y = 3 }
-						mechanized = { x = 2 y = 0 }
-						mechanized = { x = 2 y = 1 }
-						mechanized = { x = 2 y = 2 }
-						mechanized = { x = 3 y = 0 }
-						mechanized = { x = 3 y = 1 }
-						mechanized = { x = 3 y = 2 }
-						mech_arty = { x = 4 y = 0 }
-						mech_arty = { x = 4 y = 1 }
-						mech_arty = { x = 4 y = 2 }
-						mech_arty = { x = 4 y = 3 }
-					}
-					support = {
-						engineer = { x = 0 y = 0 }
-						recon =  { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = { x = 0 y = 3 }
-						signal_company = { x = 0 y = 4}
-					}
-				}
-			
-			}
-		
-			10 = {
-				create_unit = {
-						division = "name = \"Home Army\" division_template = \"Home Army\" start_experience_factor = 0.75" 
-						owner = ROOT
-				}
-				create_unit = {
-						division = "name = \"Home Army\" division_template = \"Home Army\" start_experience_factor = 0.60" 
-						owner = ROOT
-				}
-				create_unit = {
-						division = "name = \"Home Army\" division_template = \"Home Army\" start_experience_factor = 0.60" 
-						owner = ROOT
-				}
-				create_unit = {
-						division = "name = \"Home Army\" division_template = \"Home Army\" start_experience_factor = 0.60" 
-						owner = ROOT
-				}
-				create_unit = {
-						division = "name = \"Home Army\" division_template = \"Home Army\" start_experience_factor = 0.60" 
-						owner = ROOT
-				}
-				create_unit = {
-						division = "name = \"Home Army\" division_template = \"Home Army\" start_experience_factor = 0.60" 
-						owner = ROOT
-				}
-				create_unit = {
-						division = "name = \"Home Army\" division_template = \"Home Army\" start_experience_factor = 0.60" 
-						owner = ROOT
-				}
-				create_unit = {
-						division = "name = \"Home Army\" division_template = \"Home Army\" start_experience_factor = 0.60" 
-						owner = ROOT
-				}
-				create_unit = {
-						division = "name = \"Home Army Stolen Mech\" division_template = \"Home Army Stolen Mech\" start_experience_factor = 0.60" 
-						owner = ROOT
-				}
-				create_unit = {
-						division = "name = \"Home Army\" division_template = \"Home Army\" start_experience_factor = 0.60" 
-						owner = ROOT
-				}
-			}
-		
 		}
 
 		completion_reward_joint_member = {
@@ -1653,131 +1571,6 @@ joint_focus = {
 			
 			
 			
-			}
-		}
-
-		completion_reward_joint_member = {
-			
-		}
-}
-
-joint_focus = {
-		id = ALLIED_sponsor_polish_redarmy
-		icon = GFX_focus_generic_polish_deal
-		prerequisite = { focus = ALLIED_soviet_sponsorships }
-		#mutually_exclusive = { focus =  }
-		dynamic = yes 
-		
-		x = 2
-		y = 1
-		
-		relative_position_id = ALLIED_soviet_sponsorships
-
-		cost = 10
-
-		ai_will_do = {
-			factor = -100
-		}
-
-		joint_trigger = {
-  			
-		}
-
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			
-		}
-
-		completion_reward_joint_originator = {
-			SOV = {
-				division_template = {
-					name = "Anders Army" 			
-					division_names_group = POL_INF_01							
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 0 y = 3 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 1 y = 3 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-						infantry = { x = 3 y = 0 }
-						infantry = { x = 3 y = 1 }
-						anti_air_brigade = { x = 3 y = 2 }
-						artillery_brigade = { x = 4 y = 0 }
-						artillery_brigade = { x = 4 y = 1 }
-						artillery_brigade = { x = 4 y = 2 }
-						artillery_brigade = { x = 4 y = 3 }
-					}
-					support = {
-						engineer = { x = 0 y = 0 }
-						recon =  { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = { x = 0 y = 3 }
-						signal_company = { x = 0 y = 4}
-					}
-				}
-			}	
-			214 = {
-				create_unit = {
-					division = "name = \"Anders Army\" division_template = \"Anders Army\" start_experience_factor = 0.50" 
-					owner = SOV
-				}	
-				create_unit = {
-					division = "name = \"Anders Army\" division_template = \"Anders Army\" start_experience_factor = 0.50" 
-					owner = SOV
-				}
-				create_unit = {
-					division = "name = \"Anders Army\" division_template = \"Anders Army\" start_experience_factor = 0.50" 
-					owner = SOV
-				}
-				create_unit = {
-					division = "name = \"Anders Army\" division_template = \"Anders Army\" start_experience_factor = 0.50" 
-					owner = SOV
-				}
-				create_unit = {
-					division = "name = \"Anders Army\" division_template = \"Anders Army\" start_experience_factor = 0.50" 
-					owner = SOV
-				}
-				create_unit = {
-					division = "name = \"Anders Army\" division_template = \"Anders Army\" start_experience_factor = 0.50" 
-					owner = SOV
-				}
-				create_unit = {
-					division = "name = \"Anders Army\" division_template = \"Anders Army\" start_experience_factor = 0.50" 
-					owner = SOV
-				}
-				create_unit = {
-					division = "name = \"Anders Army\" division_template = \"Anders Army\" start_experience_factor = 0.50" 
-					owner = SOV
-				}
-				create_unit = {
-					division = "name = \"Anders Army\" division_template = \"Anders Army\" start_experience_factor = 0.50" 
-					owner = SOV
-				}
-				create_unit = {
-					division = "name = \"Anders Army\" division_template = \"Anders Army\" start_experience_factor = 0.50" 
-					owner = SOV
-				}
 			}
 		}
 
