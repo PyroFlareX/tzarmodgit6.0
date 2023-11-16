@@ -1,0 +1,242 @@
+on_actions = {
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+			effect = {
+			
+					if = {
+				limit = {
+					divisions_in_state = { state = FROM.FROM size > 0 }
+					FROM.FROM = { 
+						NOT = { has_state_flag = already_sabotaged_flag }
+					}
+					FROM = {
+						original_tag = POL
+						#has_completed_focus = POL_sabotage_polish_industry
+					}
+				}
+				FROM.FROM = { 
+					set_state_flag = poland_state_withdrawn
+					state_event = { id = poland.23 trigger_for = controller }
+				}
+			}
+		
+		}
+
+		#SOVIET - If Death to Invaders Propaganda Campaign is active, manage the appropriate state modifier
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = SOV_propaganda_death_to_invaders_active_flag
+					FROM.FROM = { is_core_of = SOV }
+				}
+				if = { #If SOV is new controller, remove state modifier
+					limit = {
+						ROOT = { tag = SOV }
+						FROM.FROM = { has_dynamic_modifier = { modifier = SOV_invaders_must_die } }
+					}
+					FROM.FROM = { remove_dynamic_modifier = { modifier = SOV_invaders_must_die } }
+				}
+				else_if = { #If SOV lost the state, add state modifier
+					limit = {
+						FROM = { tag = SOV }
+						ROOT = { has_war_with = SOV }
+					}
+					FROM.FROM = { add_dynamic_modifier = { modifier = SOV_invaders_must_die } }
+				}
+			}
+		}
+		
+		#SOVIET - Clean other state modifiers when Soviets lose control over the state
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { is_core_of = SOV }
+					ROOT = { NOT = { tag = SOV } }
+				}
+				if = { #SOV_defend_moscow
+					limit = {
+						FROM.FROM = { has_dynamic_modifier = { modifier = SOV_defend_moscow } }
+					}
+					FROM.FROM = { remove_dynamic_modifier = { modifier = SOV_defend_moscow } }
+				}
+				if = { #SOV_increased_metals_production
+					limit = {
+						FROM.FROM = { has_dynamic_modifier = { modifier = SOV_increased_metals_production } }
+					}
+					FROM.FROM = { remove_dynamic_modifier = { modifier = SOV_increased_metals_production } }
+				}
+				if = { #SOV_seraya_loshad_battery
+					limit = {
+						FROM.FROM = { has_dynamic_modifier = { modifier = SOV_seraya_loshad_battery } }
+					}
+					FROM.FROM = { remove_dynamic_modifier = { modifier = SOV_seraya_loshad_battery } }
+				}
+				if = { #SOV_krasnaya_gorka_battery
+					limit = {
+						FROM.FROM = { has_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery } }
+					}
+					FROM.FROM = { remove_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery } }
+				}
+				if = { #SOV_armored_battery_35
+					limit = {
+						FROM.FROM = { has_dynamic_modifier = { modifier = SOV_armored_battery_35 } }
+					}
+					FROM.FROM = { remove_dynamic_modifier = { modifier = SOV_armored_battery_35 } }
+				}
+				if = { #SOV_factory_worker_militias_raised
+					limit = {
+						FROM.FROM = { has_dynamic_modifier = { modifier = SOV_factory_worker_militias_raised } }
+					}
+					FROM.FROM = { remove_dynamic_modifier = { modifier = SOV_factory_worker_militias_raised } }
+				}
+				if = { #SOV_civilian_labor_in_defense
+					limit = {
+						FROM.FROM = { has_dynamic_modifier = { modifier = SOV_civilian_labor_in_defense } }
+					}
+					FROM.FROM = { remove_dynamic_modifier = { modifier = SOV_civilian_labor_in_defense } }
+				}
+			}
+		}
+
+
+	}
+
+	
+	#ROOT = attacking side
+	#FROM = defending side
+	#fired when two countries end up at war with each other (on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first)
+	on_war_relation_added = { # ---> Fires in 2nd place (1st is on_declare_war) -> This one is triggered ALWAYS 
+		#SOVIET - If Soviet has "Long Live to Peace" propaganda campaign active, bad shit happens if they enter a war
+		effect = {
+			if = { #SOV is attacker - bad SOV gets properly punished
+				limit = {
+					ROOT = { original_tag = SOV }
+					SOV = {
+						has_country_flag = SOV_propaganda_peace_active_flag
+						NOT = { has_country_flag = SOV_punished_for_breaking_flag }
+					}
+				}
+				country_event = { id = NSB_soviet_propaganda_capmaign_events.2 hours = 4 random_hours = 2 }
+			}
+			else_if = { #SOV is defender - SOV gets mild punishment // #TODO_Manu: This is not triggering when someone declares on SOV
+				limit = {
+					FROM = { original_tag = SOV }
+					SOV = {
+						has_country_flag = SOV_propaganda_peace_active_flag
+						NOT = { has_country_flag = SOV_punished_for_breaking_flag }
+					}
+				}
+				country_event = { id = NSB_soviet_propaganda_capmaign_events.3 hours = 4 random_hours = 2 }
+			}
+		}	
+	}
+
+	on_weekly_SOV = {
+		effect ={ #Weekly Paranoia modifiers
+			if = { #If other modifiers affect Paranoia, then use the same flag with different values, which will work as a multiplier
+				limit = {
+					has_country_flag = SOV_paranoia_system_active_flag
+					has_country_flag = SOV_paranoia_modifier_active_flag #Stalin's Paranoid leader trait
+				}
+				SOV_paranoia_modifier_increase_effect = yes
+			}
+		}
+
+		effect = { #Randomly Triggered Purges
+			if = {
+				limit = {
+					NOT = { has_country_flag = SOV_civil_war_triggered_flag } # check if Civil war has been triggered first TODO_THOMAS: remove if not using paranoia
+					has_country_flag = SOV_paranoia_system_active_flag
+				}
+				set_temp_variable = { SOV_temp_paranoia_days = SOV_medium_paranoia_days }
+				add_to_temp_variable = { SOV_temp_paranoia_days = SOV_high_paranoia_days }
+				log = "Total Paranoia days = [?SOV_temp_paranoia_days]"
+
+				if = {
+					limit = {
+						check_variable = { SOV_temp_paranoia_days > 3 }
+						NOT = { has_country_flag = SOV_paranoia_conducting_inspection_flag } #Don't trigger a random purge if one is already going to be triggered from decision
+						# SOV_paranoia_is_finishing_purge_focus = no #Don't trigger a random purge if one is already going to be triggered from focus
+						NOT = { has_country_flag = SOV_paranoia_random_purge_cooldown_from_focus_flag } #Wait 15 days after a purge has been triggered from focus
+						NOT = { has_country_flag = SOV_paranoia_random_purge_cooldown_from_decision_flag } #Wait 15 days after a purge has been triggered from decision
+					}
+					random_list = {
+						100 = { # Nothing Happens
+							modifier = {
+								factor = 5
+								check_variable = { SOV_paranoia_weekly_bucket < 400 }
+							}
+							modifier = {
+								factor = 0.75
+								check_variable = { SOV_paranoia_weekly_bucket > 500 }
+							}
+							log = "Lucky you: No random purge this week"
+						}
+
+						100 = { # Regular Purge
+							modifier = {
+								factor = 0
+								check_variable = { SOV_medium_paranoia_days = 0 }
+							}
+							modifier = {
+								factor = 1.5
+								check_variable = { SOV_paranoia_weekly_bucket > 400 }
+							}
+							modifier = {
+								factor = 2
+								check_variable = { SOV_medium_paranoia_days > SOV_high_paranoia_days }
+							}
+							SOV_manage_a_regular_purge_effect = yes
+						}
+
+						100 = { #Great Purge
+							modifier = {
+								factor = 0
+								check_variable = { SOV_high_paranoia_days = 0 }
+							}
+							modifier = {
+								factor = 0.5
+								check_variable = { SOV_high_paranoia_days < 3 }
+							}
+							modifier = {
+								factor = 2
+								check_variable = { SOV_high_paranoia_days > SOV_medium_paranoia_days }
+							}
+							modifier = {
+								factor = 1.5
+								check_variable = { SOV_paranoia_weekly_bucket > 400 }
+							}
+
+							SOV_manage_a_great_purge_effect = yes
+						}
+					}
+				}
+
+				#CLEAN STUFF FOR NEXT WEEK
+				set_variable = { SOV_medium_paranoia_days = 0 }
+				set_variable = { SOV_high_paranoia_days = 0 }
+				set_variable = { SOV_paranoia_weekly_bucket = 0 }
+			}
+		}
+	}
+
+	on_daily_SOV = {
+		effect = {
+				add_to_variable = { SOV_paranoia_weekly_bucket = SOV_paranoia }
+				if = { #MEDIUM PARANOIA LEVEL
+					limit = {
+						SOV_paranoia_is_medium_level = yes
+					}
+					add_to_variable = { SOV_medium_paranoia_days = 1 } #Used to randomize having a Great or a Regular purge (so that every day kinda counts)
+				}
+				else_if = { #HIGH PARANOIA LEVEL
+					limit = {
+						SOV_paranoia_is_high_level = yes
+					}
+					add_to_variable = { SOV_high_paranoia_days = 1 } #Used to randomize having a Great or a Regular purge (so that every day kinda counts)
+				}
+		}
+	}
+
+}
+

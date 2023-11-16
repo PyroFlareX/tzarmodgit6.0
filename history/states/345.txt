@@ -1,0 +1,32 @@
+state={
+	id=345
+	name="STATE_895"
+	provinces={
+		3868 6889 11901 13252 
+	}
+	state_category = town 
+
+
+	history = {
+		owner = YUG
+		1936.1.1.15 = {
+			owner = SWE 
+		}
+		1936.1.1.16 = {
+			owner = YUG 
+		}
+		victory_points = { #Fiume (Rijeka)
+			3868 1 
+		}
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+		}
+		add_core_of = ITA
+
+		
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
