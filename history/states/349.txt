@@ -1,0 +1,27 @@
+
+state={
+	id=349
+	name="Dongola"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 3
+			air_base = 5
+
+		}
+		victory_points = {
+			12836 50 
+		}
+		add_core_of = SWE
+
+	}
+
+	provinces={
+		3870 4138 4961 4993 6956 8020 10760 10900 11746 12836 12879 
+	}
+	manpower=6454865
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}
