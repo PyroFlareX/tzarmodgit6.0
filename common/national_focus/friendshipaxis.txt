@@ -504,6 +504,9 @@ joint_focus = {
 				}
 				news_event = { id = news.1000 }
 			}
+			GER = {
+				add_to_faction = IRQ
+			}
 		}
 
 		completion_reward_joint_member = {

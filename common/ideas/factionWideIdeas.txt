@@ -1,27 +1,49 @@
 ideas = {
     country = {
 		
-	POL_polish_shock_battallions = {
+		ALLIED_nortaship = {
 
-		allowed = {
-			always = no
+			picture = generic_coastal_defense_ships2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_destroyer_combat_factor = 0.5
+				spotting_chance = 0.05
+				convoy_retreat_speed = 0.05
+			}
 		}
+		
+		POL_polish_shock_battallions = {
 
-		removal_cost = -1
+			allowed = {
+				always = no
+			}
 
-		targeted_modifier = {
-			tag = GER
-			attack_bonus_against = 0.025
-			#defense_bonus_against = 0.025
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.025
+				#defense_bonus_against = 0.025
+			}
+
+			picture = chi_army_corruption3
+
+			modifier = {
+				#special_forces_cap = 0.05
+				#special_forces_training_time_factor = -0.1
+			}
 		}
-
-		picture = chi_army_corruption3
-
-		modifier = {
-			#special_forces_cap = 0.05
-			#special_forces_training_time_factor = -0.1
-		}
-	}
+		
 		CHI_war_of_resistance_2 = {
 
 			name = CHI_war_of_resistance

@@ -226,7 +226,7 @@ joint_focus = {
 		
 		relative_position_id = governments_in_exile_aid
 
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = -100
@@ -277,7 +277,7 @@ joint_focus = {
 		
 		relative_position_id = ALLIED_switerzland
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = -100
@@ -805,7 +805,7 @@ joint_focus = {
 
 joint_focus = {
 		id = ALLIED_norway_merchantfleet
-		icon = GFX_goal_continuous_naval_production
+		icon = GFX_focus_NOR_nortraship
 		prerequisite = { focus = ALLIED_norway }
 		#mutually_exclusive = { focus =  }
 		dynamic = yes 
@@ -851,6 +851,7 @@ joint_focus = {
 				amount = 100
 				producer = ROOT
 			}
+			add_ideas = ALLIED_nortaship
 		}
 
 		completion_reward_joint_member = {
@@ -859,6 +860,7 @@ joint_focus = {
 				amount = 50
 				producer = ROOT
 			}
+			add_ideas = ALLIED_nortaship
 		}
 }
 joint_focus = {
