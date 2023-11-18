@@ -111,13 +111,13 @@ mini_sr = {
 	group = "HORST_GROUPKEY"					
 	icon = "GFX_trait_adaptable"
 	default = {
-		name = "DISABLE_MINI_SR"
-		text = "Disable Mini SR"
+		name = "ENABLE_MINI_SR"
+		text = "Enable Mini SR"
 		desc = "This will have all Commonwealth and Axis players expected to be filled, and cannot be annexed until later."	
 	}
 	option = {	
-		name = "ENABLE_MINI_SR"
-		text = "Enable Mini SR"
+		name = "DISABLE_MINI_SR"
+		text = "Disable Mini SR "
 		desc = "This will allow the major nations to annex their minors from the start"
 	}
 }

@@ -1,5 +1,6 @@
 ﻿capital = 9
 add_to_tech_sharing_group = axis_research 
+oob = "slo_1936"
 set_technology = {
 	basic_light_tank_chassis = 1
 	improved_light_tank_chassis = 1
