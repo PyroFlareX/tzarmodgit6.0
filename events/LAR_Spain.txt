@@ -34,8 +34,6 @@ country_event = {
 	option = { # Option for Nationalists - Franco
 		name = lar_spain.2.a
 		custom_effect_tooltip = nationalists_chosen
-
-		SPR_the_fire_rises = yes 
 	}
 }
 

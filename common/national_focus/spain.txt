@@ -39,7 +39,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			
 			hidden_effect = {
+				SPR_the_fire_rises = yes 
 				SPR = { country_event = { id = lar_spain.2 }}
 			}
 			

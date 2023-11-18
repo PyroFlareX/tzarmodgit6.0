@@ -333,7 +333,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "combat_stats"
-				position = { x = 181 y = 55 }
+				position = { x = 190 y = 55 }
 				size = { width = 172 height = 244 }
 				clipping = yes
 				
@@ -356,7 +356,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 					name = "combat_stats_label"
-					position = { x = 187 y = 34 }
+					position = { x = 200 y = 34 }
 					font = "hoi4_typewriter22"
 					text = "DESIGNER_COMBAT_STATS_LABEL"
 					maxWidth = 165
@@ -367,7 +367,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "equipment_stats"
-				position = { x = 353 y = 55 }
+				position = { x = 380 y = 55 }
 				size = { width = 198 height = 244 }
 				clipping = yes
 				scroll_wheel_factor = 20
@@ -393,7 +393,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "equipment_stats_label"
-				position = { x = 362 y = 34 }
+				position = { x = 390 y = 34 }
 				font = "hoi4_typewriter22"
 				text = "DESIGNER_EQUIPMENT_STATS_LABEL"
 				maxWidth = 165
