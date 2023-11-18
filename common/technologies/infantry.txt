@@ -1848,13 +1848,7 @@ technologies = {
 	
 	motorised_infantry = {
 		enable_equipment_modules = {
-			simple_design
-			extra_repair_kits	
-			no_turret_sad
-			open_top_turret
-			small_machine_gun
-			tracks_mech
-			wheels_mech
+			tank_wheeled_suspension
 		}
 
 		enable_subunits = {
