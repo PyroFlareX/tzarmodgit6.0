@@ -1025,6 +1025,7 @@ marine_commando  = {
 		max_organisation = 30 #reg infantry 60
 		default_morale = 0.3
 		manpower = 1000
+		soft_attack = -0.1
 
 		#Misc Abilities
 		training_time = 80 #reg infantry 90
