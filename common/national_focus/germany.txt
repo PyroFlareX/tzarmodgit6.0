@@ -2074,7 +2074,7 @@ CZE = {
 							ENG = { add_to_faction = USA
 								# add_to_faction = MEX add_to_faction = BRA
 							}
-							if = { limit = { GER = { is_ai = no } } POL = { load_oob = "POL_spawn" } }
+							# if = { limit = { GER = { is_ai = no } } POL = { load_oob = "POL_spawn" } }
 			}
 			# SOV = {
 			# 	give_resource_rights = { receiver = GER state = 229 }
@@ -2127,6 +2127,9 @@ CZE = {
 			GER = { 	add_state_core = 188 transfer_state = 188 }
 			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
 			LAT = {	country_event = { id = baltic.4 }	}	
+			hidden_effect = {
+				if = { limit = { GER = { is_ai = no } } POL = { load_oob = "POL_spawn" } }
+			}
 		}
 	}
 
