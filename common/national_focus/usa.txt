@@ -234,7 +234,7 @@ focus = {
 focus = {
 		id = USA_invest_in_midvest
 		icon = GFX_focus_generic_industry_3
-		x = +2
+		x = 2
 		y = 1
 		cost = 5
 		
@@ -1220,7 +1220,7 @@ focus = {
 	}
 focus = {
 		id = USA_arsenal_of_democracy
-		x = 0
+		x = 1
 		icon = GFX_focus_USA_shield_with_guns
 		y = 1
 		cost = 5
@@ -1304,7 +1304,7 @@ focus = {
 focus = {
 		id = USA_USACE_projects
 		icon = GFX_goal_generic_production
-		x = 0
+		x = 1
 		y = 1
 		cost = 5
 		
@@ -1655,7 +1655,6 @@ focus = {
 		prerequisite = {  focus = USA_cash_and_carry  }
 		relative_position_id= USA_cash_and_carry
 		completion_reward = {
-			add_relation_modifier = { target = ENG modifier = lend_lease  
 			add_tech_bonus = {
 				name = USA_extraction_of_rare_metals
 				bonus = 1.0
@@ -2009,7 +2008,7 @@ focus = {
  	focus = {
 		id = USA_war_plans_division
 		icon = GFX_goal_generic_position_armies
-		x = 8	
+		x = 12	
 		y = 10
 
 		cost = 5
@@ -2025,7 +2024,7 @@ focus = {
 		focus = {
 		id = USA_war_plan_gray
 		icon = GFX_goal_generic_more_territorial_claims
-		x = 0
+		x = -2
 		y = 1
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
@@ -2087,7 +2086,7 @@ focus = {
 		prerequisite = {
 			focus = USA_war_plans_division
 		}
-		x = 10
+		x =0
 		y = 1
 		completion_reward = {
 			add_political_power = 150
@@ -2749,8 +2748,8 @@ focus = {
 	focus = {
 		id = USA_intervention_in_europe
 		icon = GFX_goal_generic_territory_or_war
-		x = -2
-		y = 1
+		x = -4
+		y = 2
 		prerequisite = { focus = USA_war_plans_division } 
 		relative_position_id = USA_war_plans_division 
 		cost = 5
@@ -2814,7 +2813,7 @@ focus = {
 			GER = { has_war_with = SOV }
 			
 		}
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = USA_war_plans_division
 		cost = 5
