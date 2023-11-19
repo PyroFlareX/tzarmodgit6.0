@@ -1,0 +1,23 @@
+state={
+	id=897
+	name="STATE_897"
+	provinces={
+		3530 3574 3692 6542 6568 6712 11640 
+	}
+		manpower = 5109333
+	state_category = large_city
+
+	history={
+		owner = GER
+		victory_points = {
+			3530 2
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		set_demilitarized_zone = yes
+		add_core_of = GER
+		}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

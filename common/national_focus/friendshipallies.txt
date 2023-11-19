@@ -678,7 +678,7 @@ joint_focus = {
 
 		completion_reward_joint_originator = {
 			PRA = {
-				transfer_state = 262
+				transfer_state = 898
 				add_manpower = 300000
 				diplomatic_relation = {   country = SOV relation = military_access  active = yes  }
 			}

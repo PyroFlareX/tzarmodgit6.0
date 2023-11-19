@@ -733,6 +733,9 @@ technologies = {
 		anti_air = {
 			air_attack = 0.08
 		}
+		mech_anti_air = {
+			air_attack = 0.08
+		}
 		anti_air_brigade = {
 			air_attack = 0.08
 		}
@@ -816,6 +819,9 @@ technologies = {
 		anti_air = {
 			air_attack = 0.08
 		}
+		mech_anti_air = {
+			air_attack = 0.08
+		}
 		anti_air_brigade = {
 			air_attack = 0.08
 		}
@@ -859,6 +865,9 @@ technologies = {
 		anti_air = {
 			air_attack = 0.08
 		}
+		mech_anti_air = {
+			air_attack = 0.08
+		}
 		anti_air_brigade = {
 			air_attack = 0.08
 		}
@@ -900,6 +909,9 @@ technologies = {
 	antiair4 = {
 
 		anti_air = {
+			air_attack = 0.08
+		}
+		mech_anti_air = {
 			air_attack = 0.08
 		}
 		anti_air_brigade = {
