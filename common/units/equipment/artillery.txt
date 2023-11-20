@@ -177,13 +177,13 @@ equipments = {
 		armor_value = 0
 
 		#Offensive Abilities
-		soft_attack = 54
+		soft_attack = 50
 		ap_attack = 5
 		air_attack = 0
 		
 		#Space taken in convoy
 		lend_lease_cost = 4
-		build_cost_ic = 10
+		build_cost_ic = 17
 		resources = {
 			chromium = 1
 			steel = 1
