@@ -259,8 +259,12 @@ on_actions = {
 			}
             ###axis
 			if = {
-				limit = { original_tag = GER NOT = { has_global_flag = axis_lost } }
+				limit = { original_tag = GER NOT = { has_global_flag = axis_lost } NOT = {has_global_flag = sov_cap_lol}}
 				axis_defeat = yes
+			}
+			if = {
+				limit = { original_tag = GER NOT = { has_global_flag = axis_lost }}
+				axis_defeat_without_sov = yes
 			}
             ### jap
 			if = {

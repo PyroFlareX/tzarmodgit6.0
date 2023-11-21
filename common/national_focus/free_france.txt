@@ -29,6 +29,14 @@ focus_tree = {
 		}
 
 		completion_reward = {	
+			set_technology = {
+				improved_medium_tank_chassis = 1
+				heavy_guns2 = 1
+				shit_guns = 1
+				radio_tech_2 = 1
+				mechanised_infantry2 = 1
+				improved_infantry_weapons = 1
+			}
 			add_political_power = 300
 			add_stability = 0.25
 			add_equipment_to_stockpile = { type = train_equipment_1 amount = 150 }
@@ -53,7 +61,7 @@ focus_tree = {
 
 			create_equipment_variant = {
 				name = "Improved Medium Tank Chassis"
-				type = medium_tank_aa_chassis	
+				type = medium_tank_chassis_2	
 				parent_version = 0
 				allow_without_tech = yes
 				modules = {
@@ -82,7 +90,7 @@ focus_tree = {
 					main_armament_slot = tank_anti_air_cannon_2
 					turret_type_slot = tank_medium_two_man_tank_turret
 					suspension_type_slot = tank_horstmann_suspension
-					armor_type_slot = tank_riveted_armor
+					armor_type_slot = tank_cast_armor
 					engine_type_slot = tank_gasoline_engine
 					special_type_slot_1 = tank_radio_2
 					special_type_slot_2 = secondary_turret_small_cannon
@@ -91,8 +99,8 @@ focus_tree = {
 					special_type_slot_9 = apcr_ammo_2
 				}
 				upgrades={
-					tank_nsb_engine_upgrade=12
-					tank_nsb_armor_upgrade=8
+					tank_nsb_engine_upgrade=14
+					tank_nsb_armor_upgrade=14
 				}
 			}
 			add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 600 }

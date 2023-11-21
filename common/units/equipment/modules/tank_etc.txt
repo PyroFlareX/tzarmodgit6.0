@@ -194,7 +194,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			soft_attack = 0.12
+			soft_attack = 0.07
 		}
 	}
 
