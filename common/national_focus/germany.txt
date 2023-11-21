@@ -4031,7 +4031,7 @@ CZE = {
 						limit = {
 							has_completed_focus = GER_four_year_plan	
 						}
-						activate_mission = GER_economic_strain2
+						#activate_mission = GER_economic_strain2
 					}
 					every_country = {
 						limit = {
@@ -5139,7 +5139,7 @@ CZE = {
 						has_global_flag = GDU_dday_started
 						}
 					}
-					x = 27
+					x = 25
 					y = 8
 				
 			
