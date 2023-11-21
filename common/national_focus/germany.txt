@@ -280,8 +280,8 @@ focus_tree = {
 			has_completed_focus = GER_four_year_plan
 			date>1942.1.1
 		}
-		x = 3
-		y = 1
+		x = 2
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -382,10 +382,11 @@ focus_tree = {
 	focus = {
 		id = GER_seized_gold
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		prerequisite = { focus = GER_Goring5 }
-		x = 0
+		prerequisite = { focus = GER_fall_gelb }
+		text = "Seize Swiss Gold"
+		x = 3
 		y = 1
-		relative_position_id = GER_Goring5
+		relative_position_id = GER_fall_gelb
 
 		cost = 5
 
@@ -2261,7 +2262,7 @@ CZE = {
 			has_war_with = ENG
 		}
 		
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = GER_danzig_or_war
 		cost = 1
@@ -3090,7 +3091,7 @@ CZE = {
 
 	focus = {
 		id = GER_improve_national_spirit
-		prerequisite = { focus = GER_danzig_or_war }
+		prerequisite = { focus = GER_fall_gelb }
 		icon = GFX_focus_generic_fascist_propaganda
 		available = {
 			custom_trigger_tooltip = {
@@ -3129,9 +3130,9 @@ CZE = {
 			}
 		}
 		cancel_if_invalid = no
-		x = -2
+		x = -3
 		y = 1
-		relative_position_id = GER_danzig_or_war 
+		relative_position_id = GER_fall_gelb 
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -3629,7 +3630,7 @@ CZE = {
 					Date < 1940.6.1
 					NOT={ EFR = { owns_state = 26 } }
 				}
-				x = -5
+				x = -4
 				y = 1
 		
 				relative_position_id = GER_danzig_or_war
@@ -3746,12 +3747,15 @@ CZE = {
 					id = GER_anti_comitern_pact
 					icon = GFX_focus_generic_full_social_mobilization
 					prerequisite = { focus = GER_danzig_or_war  }
+					cancel = {
+					NOT = { country_exists = SOV }
+					}
 					x = 0
-					y = 1
+					y = 4
 					relative_position_id = GER_danzig_or_war
 					cost = 1
 					available = {
-						date > 1941.5.25					
+						date > 1940.11.1					
 					}
 					ai_will_do = {
 						factor = 1
@@ -3759,13 +3763,138 @@ CZE = {
 					select_effect = {
 						country_event = { id = srevents.11 days = 1 }
 						SOV = { country_event = { id = srevents.11 days = 1 } }
-					}s
+					}
 					completion_reward = {
 						add_war_support = 0.05
 						SOV = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
 					
 						
 						}
+					}
+					focus = {
+					id = GER_prepare_railways
+					text = "Supply Preparations"
+					icon = GFX_focus_generic_railroad
+					prerequisite = { focus = GER_anti_comitern_pact  }
+					cancel = {
+					NOT = { country_exists = SOV }
+				}
+					x = -2
+					y = 1
+					relative_position_id = GER_anti_comitern_pact
+					cost = 3.6
+					ai_will_do = {
+						factor = 1
+					}
+					select_effect = {
+						add_timed_idea = {
+							idea = preparing_ger
+							days = 25
+						}
+					}
+					completion_reward = {
+						build_railway = {
+							level = 4
+							start_province = 11853
+							target_province = 6332
+							#path = { 11853 9858 11505 3207 6282 6341 6334 9334 9361 11372 11343 9263 362 3380 6402 6332 }
+						}
+						build_railway = {
+							level = 4
+							start_province = 11853
+							target_province = 3544
+							#path = { 11853 9858 11505 3207 6282 6341 6334 9334 9361 11372 11343 9263 362 3380 6402 6332 }
+						}
+						build_railway = {
+							level = 4
+							start_province = 362
+							target_province = 6580
+							#path = { 11853 9858 11505 3207 6282 6341 6334 9334 9361 11372 11343 9263 362 3380 6402 6332 }
+						}
+					}
+					}
+					focus = {
+					id = GER_prepare_army
+					icon = GFX_focus_FIN_parmis_devils
+					text = "Preparation of Reserves"
+					prerequisite = { focus = GER_anti_comitern_pact  }
+					available = {
+						date<1941.6.1
+					}
+					cancel = {
+					NOT = { country_exists = SOV }
+					}
+					x = 0
+					y = 1
+					relative_position_id = GER_anti_comitern_pact
+					cost = 3.6
+					ai_will_do = {
+						factor = 1
+					}
+					select_effect = {
+						add_timed_idea = {
+							idea = preparing_ger
+							days = 25
+						}
+					}
+					completion_reward = {
+						add_timed_idea = {
+							idea = preparing_army_ger
+							days = 100
+						}
+
+						}
+					}
+					focus = {
+					id = GER_prepare_airbases
+					icon = GFX_focus_generic_cas_aircraft
+					text = "Preparation of Airbases"
+					prerequisite = { focus = GER_anti_comitern_pact  }
+					x = 2
+					y = 1
+					relative_position_id = GER_anti_comitern_pact
+					cost = 3.6
+					available = {					
+					}
+					ai_will_do = {
+						factor = 1
+					}
+					select_effect = {
+						add_timed_idea = {
+							idea = preparing_ger
+							days = 25
+						}
+					}
+					completion_reward = {
+						763 = {
+							add_building_construction = {
+								type = air_base
+								level = 10
+								instant_build = yes
+							}
+						}
+						10 = {
+							add_building_construction = {
+								type = air_base
+								level = 10
+								instant_build = yes
+							}
+						}
+						79 = {
+							add_building_construction = {
+								type = air_base
+								level = 10
+								instant_build = yes
+							}
+						}
+						5 = {
+							add_building_construction = {
+								type = air_base
+								level = 10
+								instant_build = yes
+							}
+						}
+					}
 					}
 
 					focus = { 
@@ -3877,7 +4006,7 @@ CZE = {
 			focus = {
 				id = GER_ussr_war_goal
 				icon = GFX_focus_barb
-				prerequisite = { focus = GER_anti_comitern_pact }
+				prerequisite = { focus = GER_prepare_army focus = GER_prepare_railways focus = GER_prepare_airbases}
 				will_lead_to_war_with = SOV
 		
 				cancel = {
@@ -3886,7 +4015,7 @@ CZE = {
 				x = 0
 				y = 2
 		
-				available = { date > 1941.6.1 }
+				available = { date > 1941.6.10 }
 		
 				relative_position_id = GER_anti_comitern_pact
 				cost = 2
@@ -3899,13 +4028,11 @@ CZE = {
 		
 				completion_reward = {
 					if = {
-				limit = {
-					has_completed_focus = GER_four_year_plan
-						
+						limit = {
+							has_completed_focus = GER_four_year_plan	
+						}
+						activate_mission = GER_economic_strain2
 					}
-				
-				activate_mission = GER_economic_strain2
-			}
 					every_country = {
 						limit = {
 							AND = {
@@ -5012,8 +5139,8 @@ CZE = {
 						has_global_flag = GDU_dday_started
 						}
 					}
-					x = 18
-					y = 12
+					x = 27
+					y = 8
 				
 			
 					cost = 0
@@ -5031,14 +5158,15 @@ CZE = {
 					id = GER_endsieg_focus2
 					prerequisite = { focus = GER_endsieg_focus1 }
 					icon = GFX_focus_generic_women_in_military
+					relative_position_id = GER_endsieg_focus1
 					available = {
 					OR = {
 						surrender_progress > 0.1
 						has_global_flag = GDU_dday_started
 						}
 					}
-					x = 20
-					y = 13
+					x = 2
+					y = 1
 				
 			
 					cost = 2
@@ -5056,14 +5184,15 @@ CZE = {
 					id = GER_endsieg_focus3
 					prerequisite = { focus = GER_endsieg_focus1 }
 					icon = GFX_focus_focus_fra_maquis
+					relative_position_id = GER_endsieg_focus1
 					available = {
 					OR = {
 						surrender_progress > 0.1
 						has_global_flag = GDU_dday_started
 						}
 					}
-					x = 16
-					y = 13
+					x = -2
+					y = 1
 				
 			
 					cost = 2
@@ -5085,14 +5214,15 @@ CZE = {
 					id = GER_endsieg_focus4
 					prerequisite = { focus = GER_endsieg_focus1 }
 					icon = GFX_goal_generic_oil_refinery
+					relative_position_id = GER_endsieg_focus1
 					available = {
 					OR = {
 						surrender_progress > 0.1
 						has_global_flag = GDU_dday_started
 						}
 					}
-					x = 18
-					y = 13
+					x = 0
+					y = 1
 				
 			
 					cost = 2
@@ -5110,14 +5240,15 @@ CZE = {
 					id = GER_endsieg_focus5
 					prerequisite = { focus = GER_endsieg_focus1 }
 					icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+					relative_position_id = GER_endsieg_focus1
 					available = {
 					OR = {
 						surrender_progress > 0.1
 						has_global_flag = GDU_dday_started
 						}
 					}
-					x = 19
-					y = 14
+					x = 1
+					y = 2
 				
 			
 					cost = 2
@@ -5135,14 +5266,15 @@ CZE = {
 					id = GER_endsieg_focus6
 					prerequisite = { focus = GER_endsieg_focus1 }
 					icon = GFX_focus_generic_rubber
+					relative_position_id = GER_endsieg_focus1
 					available = {
 					OR = {
 						surrender_progress > 0.1
 						has_global_flag = GDU_dday_started
 						}
 					}
-					x = 17
-					y = 14
+					x = -1
+					y = 2
 				
 			
 					cost = 2

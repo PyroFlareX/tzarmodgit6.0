@@ -267,7 +267,7 @@ focus_tree = {
 	focus = {
 		id = SOV_finish_the_five_year_plan
 
-		icon = GFX_focus_generic_industry_1
+		icon = GFX_focus_generic_modernize_industry
 		prerequisite = { focus = SOV_infrastructure_effort_nsb }
 		prerequisite = { focus = SOV_heavy_industry }
 		x = 1
@@ -406,7 +406,7 @@ focus_tree = {
 	focus = {
 		id = SOV_third_five_year_plan
 
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_focus_generic_communist_industry
 		prerequisite = { focus = SOV_finish_the_five_year_plan }
 		x = 0
 		y = 1
@@ -634,7 +634,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SOV_third_five_year_plan
-		cost = 2
+		cost = 4
 
 		mutually_exclusive = { focus = SOV_reorganize_the_pc_of_heavy_industry}
 
@@ -696,7 +696,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = SOV_shift_to_armaments_production
-		cost = 3
+		cost = 4
 
 		available = {
 			SOV_third_five_year_plan_available = yes
@@ -1356,80 +1356,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
-			if = {
-				limit = {
-					any_country = {
-						SOV_is_valid_academy_of_sciences_target = yes
-					}
-				}
-				if = { #ALT IDEOLOGY
-					limit = {
-						NOT = { has_government = communism }
-					}
-					add_to_tech_sharing_group = SOV_imperial_academies_of_sciences_joint_program
-					every_country = {
-						limit = {
-							SOV_is_valid_academy_of_sciences_target = yes
-						}
-						add_to_tech_sharing_group = SOV_imperial_academies_of_sciences_joint_program
-					}
-				}
-				else = { #DEFAULT COMMUNISM
-					add_to_tech_sharing_group = SOV_soviet_academies_of_sciences_joint_program
-					every_country = {
-						limit = {
-							SOV_is_valid_academy_of_sciences_target = yes
-						}
-						add_to_tech_sharing_group = SOV_soviet_academies_of_sciences_joint_program
-					}
-				}
-			}
-			if = { #ALT IDEOLOGY
-				limit = {
-					NOT = { has_government = communism }
-				}
-				hidden_effect = {
-					add_dynamic_modifier = { modifier = SOV_ussr_academy_of_sciences_dynamic_modifier_alt }
-				}
-				effect_tooltip = { add_ideas = SOV_national_academy_of_sciences_alt_fake }
-			}
-			else = { #DEFAULT COMMUNISM
-				hidden_effect = {
-					add_dynamic_modifier = { modifier = SOV_ussr_academy_of_sciences_dynamic_modifier }
-				}
-				effect_tooltip = { add_ideas = SOV_national_academy_of_sciences_fake }
-			}
 		}
 	}
 
-	focus = {
-		id = SOV_national_academies_of_sciences
-
-		icon = GFX_focus_research2
-		prerequisite = { focus = SOV_the_ussr_academy_of_sciences }
-		x = 0
-		y = 3
-		relative_position_id = SOV_the_ussr_academy_of_sciences
-		cost = 5
-
-		available = {
-			always = no
-		}
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-
-		completion_reward = {
-			if = { 
-				limit = { #DEFAULT COMMUNISM
-					has_government = communism
-				}
-				custom_effect_tooltip = SOV_national_academies_of_sciences_tt
-			}
-			else = { #ALT IDEOLOGY
-				custom_effect_tooltip = SOV_national_academies_of_sciences_alt_tt
-			}
-		}
-	}
 
 
 
@@ -1593,8 +1522,8 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = SOV_the_ussr_academy_of_sciences }
 		prerequisite = { focus = SOV_merge_aircraft_plants }
-		x = 0
-		y = 2
+		x = -1
+		y = 1
 		relative_position_id = SOV_merge_aircraft_plants
 		cost = 5
 
@@ -3611,7 +3540,7 @@ focus_tree = {
 		cost = 5
 		dynamic = yes 
 		available = {
-
+			date>1941.10.1
 		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -4755,7 +4684,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Siberian_troops
 		text = "Siberian Reinforcments"
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_focus_SOV_builder_of_the_red_army
 		prerequisite = { focus = SOV_desperate_measures }
 		x = 0
 		y = 3
@@ -4848,7 +4777,7 @@ focus_tree = {
 	focus = {
 		id = SOV_mongolian_horses
 		text = "Aid to Our Allies"
-		icon = GFX_focus_SOV_builder_of_the_red_army
+		icon = GFX_focus_SWI_issue_war_bonds
 		prerequisite = { focus = SOV_Siberian_troops }
 		x = 1
 		y = 4
@@ -4876,10 +4805,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_siberian_generals
-		icon = GFX_focus_generic_military_dictatorship
+		id = SOV_last_stand
+		icon = GFX_focus_generic_workers_and_farmers_rise
 		prerequisite = { focus = SOV_Siberian_troops }
-		text = "Desperate Defense"
+		text = "Last Stand"
 		x = -1
 		y = 4
 		relative_position_id = SOV_desperate_measures
@@ -5000,7 +4929,7 @@ focus_tree = {
 	focus = {
 		id = SOV_lessons_of_war
 		text = "Lessons of War"
-		icon = GFX_focus_SOV_mobilization_plan
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
 		prerequisite = { focus = SOV_winter_offensive }
 		x = 0
 		y = 8
@@ -8027,7 +7956,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_positive_heroism
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_SWE_undermine_fascism
 		prerequisite = { focus = SOV_expand_the_agitprop }
 		x = -2
 		y = 1
@@ -8095,7 +8024,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_collectivist_propaganda
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
 		prerequisite = { focus = SOV_expand_the_agitprop }
 		x = 0
 		y = 1
