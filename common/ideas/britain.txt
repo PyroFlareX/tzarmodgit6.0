@@ -2,6 +2,28 @@ ideas = {
 
 	country = {
 		
+		ENG_imperial_conscription_idea = {
+
+			name = ENG_imperial_conscription
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				non_core_manpower = 0.20
+			}
+
+			picture = eng_imperial_conscription
+			
+			removal_cost = -1	
+
+		}
+		
 		ENG_operation_cumpass = {
 
 			allowed = {
