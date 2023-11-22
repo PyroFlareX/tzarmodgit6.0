@@ -421,13 +421,13 @@ sub_units = {
 		supply_consumption = 0.17
 		
 		forest = {
-			attack = -0.1
+			attack = -0.35
 			defence = -0.05
 			movement = -0.1
 		}
 
 		hills = {
-			attack = -0.05
+			attack = -0.3
 			defence = -0.05
 			movement = -0.05
 		}
@@ -469,7 +469,7 @@ sub_units = {
 		}
 
 		amphibious = {
-			attack = -0.4
+			attack = -0.8
 		}
 		deep_desert = {
 			attack = -0.05

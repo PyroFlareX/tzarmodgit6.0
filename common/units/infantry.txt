@@ -1021,9 +1021,9 @@ marine_commando  = {
 		combat_width = 2
 		
 		#Size Definition
-		max_strength = 20
-		max_organisation = 30 #reg infantry 60
-		default_morale = 0.3
+		max_strength = 15
+		max_organisation = 40 #reg infantry 60
+		default_morale = 0.2
 		manpower = 1000
 		soft_attack = -0.1
 
