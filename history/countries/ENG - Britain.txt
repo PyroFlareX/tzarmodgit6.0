@@ -142,7 +142,6 @@ add_ideas = {
 	ENG_the_war_to_end_all_wars
 	george_v
 	limited_conscription
-	ENG_imperial_conscription_idea
 }
 	
 
@@ -353,7 +352,7 @@ add_to_faction = CAN
 add_to_faction = AST
 add_to_faction = NZL
 add_to_faction = SAF
-#add_to_faction = RAJ
+add_to_faction = RAJ
 add_to_faction = NOR		
 
 # Order matters - here Chamberlain becomes starting leader
