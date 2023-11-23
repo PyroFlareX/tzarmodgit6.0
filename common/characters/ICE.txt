@@ -937,20 +937,84 @@ characters={
 		}
 		
 		corps_commander= {
-			traits = { }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { trickster infantry_officer trait_engineer infantry_officer organizer infantry_leader invader }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 6
 			legacy_id=0
 			visible = {
-				has_government = fascism
+				
+			}
+		}
+	}
+	
+	ICE_bear = {
+		name = "Bear"
+		portraits = {
+			
+			army = {
+				large = GFX_portrait_POL_wojtek
+				small = GFX_portrait_POL_wojtek
+			}
+
+		}
+		
+		corps_commander= {
+			traits = { trickster panzer_leader  }
+			skill = 6
+			attack_skill = 7
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 6
+			legacy_id=0
+			visible = {
+				
+			}
+		}
+	}
+	
+	ICE_prince_olav={ # Prince
+		name=ICE_prince_olav
+		portraits={
+			civilian={
+				large=GFX_portrait_NOR_prince_olav
+			}
+			army={
+				large=GFX_portrait_NOR_prince_olav
+			}
+		}
+		navy_leader={
+		
+			traits={ navy_media_personality bold blockade_runner fleet_protector fly_swatter }
+			skill=5
+			attack_skill=6
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=5
+			legacy_id=-1
+			
+		}		
+	}
+		
+	ICE_erik_with ={
+		name = ICE_erik_with
+		portraits={
+			army={
+				large = GFX_portrait_DEN_erik_with
+				small=GFX_portrait_DEN_erik_with_small
 			}
 		}
 		
+		field_marshal = {
+			traits = { unyielding_defender politically_connected organizer infantry_leader }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
 	}
-
-
-
 }

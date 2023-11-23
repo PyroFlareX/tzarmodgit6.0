@@ -120,10 +120,7 @@ IF = {
 	}
 }
 # Characters
-IF = {
-	limit = {
-		has_dlc = "Arms Against Tyranny"
-	}
+
 	recruit_character = ICE_hermann_jonasson
 	#recruit_character = ICE_gisli_sigurbjornsson
 	#recruit_character = ICE_brynjolfur_bjarnason
@@ -148,7 +145,10 @@ IF = {
 	recruit_character = ICE_bjorn_sveinsson_bjornsson
 	recruit_character = ICE_king_knud	
 	#recruit_character = ICE_werner_gerlach
-}
+	recruit_character = ICE_prince_olav
+	recruit_character = ICE_erik_with
+	recruit_character = ICE_bear
+
 1939.1.1 = {
 	IF = {
 		limit = {
