@@ -86,7 +86,7 @@ SOV_morozov_design_bureau_organization = {
 	available = {
 		
 	}
-	equipment_type = { mio_cat_eq_all_medium_tank armor  }
+	equipment_type = { armor  }
 	research_categories = { mio_cat_tech_medium_armor_and_modules tank_modules armor}
 
 	tree_header_text = {
@@ -125,7 +125,7 @@ SOV_morozov_design_bureau_organization = {
 		on_complete = {
 			
 		}
-		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		limit_to_equipment_type = { armor }
 		equipment_bonus = {
 			armor_value = 0.05
 		}
@@ -152,7 +152,7 @@ SOV_morozov_design_bureau_organization = {
 
 		on_complete = {
 		}
-		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		limit_to_equipment_type = { armor }
 		equipment_bonus = {
 			armor_value = 0.075
 		}
@@ -179,7 +179,7 @@ SOV_morozov_design_bureau_organization = {
 
 		on_complete = {
 		}
-		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		limit_to_equipment_type = { armor }
 		equipment_bonus = {
 			maximum_speed = 0.1
 		}
@@ -204,7 +204,7 @@ SOV_morozov_design_bureau_organization = {
 		available = { #Two FROM blocs to provide two different check marks in the UI
 		
 		}
-		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		limit_to_equipment_type = { armor }
 		on_complete = {
 		}
 
@@ -233,7 +233,7 @@ SOV_morozov_design_bureau_organization = {
 
 		available = { #Two FROM blocs to provide two different check marks in the UI
 		}
-		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		limit_to_equipment_type = { armor }
 		on_complete = {
 		}
 
@@ -262,12 +262,13 @@ SOV_morozov_design_bureau_organization = {
 
 		available = { #Two FROM blocs to provide two different check marks in the UI
 		}
-		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		limit_to_equipment_type = { armor }
 		on_complete = {
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.125
+			production_efficiency_gain_factor = 0.1
+			production_capacity_factor = 0.15
 			production_efficiency_cap_factor = 0.05
 		}
 	}
@@ -281,7 +282,7 @@ SOV_morozov_design_bureau_organization = {
 		relative_position_id = SOV_mio_trait_initial_t34_units_tz
 		
 		all_parents = { SOV_mio_trait_initial_t34_units_tz }
-		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		limit_to_equipment_type = { armor }
 		position = { x= 2 y=1 }
 		
 		visible = {
@@ -314,7 +315,7 @@ SOV_morozov_design_bureau_organization = {
 		visible = {
 			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
-		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+		limit_to_equipment_type = { armor }
 		available = { #Two FROM blocs to provide two different check marks in the UI
 			date>1942.3.1
 		}

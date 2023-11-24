@@ -215,8 +215,8 @@ NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY = -0.175           -- small rive
 NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.2     -- large river crossing
 
 
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 0 -- (72) Divisions per general
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 0 -- Divisions per field marshal directly leading troops
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 999 -- (72) Divisions per general
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 999 -- Divisions per field marshal directly leading troops
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.00
 
 -- Changes for more granular xp levels
