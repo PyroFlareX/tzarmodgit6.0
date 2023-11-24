@@ -1,4 +1,37 @@
 scripted_gui = {
+	Remove_shit_buildings_tz_window = {
+		context_type = selected_state_context
+
+		window_name = "Remove_shit_buildings_tz_window"
+		parent_window_token = selected_state_view
+		visible = {
+		}
+		effects = {
+	Remove_shit_buildings_tz_click = {
+		if = {
+					limit = { is_fully_controlled_by = ROOT }
+					remove_building = {
+						type = fuel_silo
+						level = 1
+					}
+					remove_building = {
+						type = dockyard
+						level = 1
+					}
+				}
+	}
+	}
+	triggers = {
+			Remove_shit_buildings_tz_visible = { is_fully_controlled_by = ROOT }
+
+			Remove_shit_buildings_tz_click_enabled = {
+				is_fully_controlled_by = ROOT
+				OR = {dockyard > 0
+				fuel_silo > 0}
+			}
+		}
+	}
+
 	topbar_resource_toogle_window = {
 		context_type = player_context
 

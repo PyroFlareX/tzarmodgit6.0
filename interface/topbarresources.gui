@@ -1,5 +1,19 @@
 guiTypes = {
 	containerWindowType = {
+			name = "Remove_shit_buildings_tz_window"
+			
+				buttonType = {
+			name = "Remove_shit_buildings_tz" 
+			position = {x=170 y=140}
+			spriteType = "GFX_steam2_texticon"
+			scale = 0.15
+			pdx_tooltip = "Remove_Silos_and_docks"
+			pdx_tooltip_delayed = "ADD_CHEAT_DELAYED"
+		}
+	}
+	}
+guiTypes = {
+	containerWindowType = {
 			name = "topbar_resource_toogle_window"
 			
 		buttonType ={
@@ -204,6 +218,8 @@ guiTypes = {
 		}
 
 	
+
 	
+
 	
 

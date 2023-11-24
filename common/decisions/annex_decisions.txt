@@ -50,11 +50,11 @@ nigger = {
 			add_core_of = AST}
 	}
 	}
-	}
+	
 	unified_east = { 
 		
-
-		icon = generic_prepare_civil_war
+		name = "Unify British Colonies"
+		icon = generic_operation
 
 		allowed = {
 		OR = {
