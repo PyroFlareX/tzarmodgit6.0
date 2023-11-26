@@ -260,8 +260,7 @@ SOV_morozov_design_bureau_organization = {
 			FROM = { OR = {original_tag = SOV original_tag = MON}}
 		}
 
-		available = {
-			date>1941.3.1
+		available = { #Two FROM blocs to provide two different check marks in the UI
 		}
 		limit_to_equipment_type = { armor }
 		on_complete = {
