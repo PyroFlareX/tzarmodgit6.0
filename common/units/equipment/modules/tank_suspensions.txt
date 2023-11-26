@@ -48,20 +48,6 @@ equipment_modules = {
 		}
 	}
 
-    	tank_unsprung_suspension = {
-		abbreviation = "usn"
-		category = tank_suspension_type
-		sfx = sfx_ui_sd_module_sonar
-
-		add_stats = {
-			build_cost_ic = 1.3
-			reliability = -0.15
-		}
-		multiply_stats = {
-			maximum_speed = -0.25			
-		}		
-	}
-
 	
 	tank_horstmann_suspension = {
 		abbreviation = "hrs"
