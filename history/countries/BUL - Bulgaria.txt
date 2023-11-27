@@ -1,7 +1,9 @@
 ﻿capital = 48
 
 oob = "BUL_1936"
-
+army_experience = 10
+navy_experience = 10
+air_experience = 2
 add_ideas = {
 	limited_conscription
 	#no_training 

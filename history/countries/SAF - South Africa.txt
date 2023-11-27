@@ -1,5 +1,7 @@
 ﻿capital = 275
-
+army_experience = 10
+navy_experience = 10
+air_experience = 2
 oob = "SAF_1936"
 
 set_stability = 0.6

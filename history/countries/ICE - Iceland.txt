@@ -1,7 +1,9 @@
 ﻿capital = 100 #Iceland
 
 set_oob = "ICE_1936"
-
+army_experience = 10
+navy_experience = 10
+air_experience = 2
 #set_variable = { ICE.communism_support_needed = 0.15 }
 
 set_research_slots = 2

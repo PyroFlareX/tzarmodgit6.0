@@ -1,5 +1,7 @@
 ﻿capital = 64
-
+army_experience = 10
+navy_experience = 10
+air_experience = 2
 oob = "GER_1936"
 
 set_fuel_ratio = 0.8
