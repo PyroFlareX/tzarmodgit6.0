@@ -2422,8 +2422,8 @@ CZE = {
 			NOT = { has_war_with = ENG }
 		}
 		cancel_if_invalid = yes
-		x = 17
-		y = 2
+		x = 15
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2445,7 +2445,7 @@ CZE = {
 		}
 		cancel_if_invalid = yes
 		x = 13
-		y = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2460,9 +2460,9 @@ CZE = {
 		id = GER_naval_effort3
 		icon = GFX_focus_GER_plan_z
 		prerequisite = { focus = GER_challenge_british_naval_dominance }
-		x = 12
-		y = 3
-		relative_position_id = GER_rhineland
+		x = 0
+		y = 1
+		relative_position_id = GER_challenge_british_naval_dominance
 		cost = 1
 
 		available_if_capitulated = yes
@@ -2505,8 +2505,8 @@ CZE = {
 		prerequisite = { focus = GER_rhineland }
 		mutually_exclusive = { focus = GER_accept_british_naval_dominance focus = GER_challenge_british_naval_dominance}
 		relative_position_id = GER_rhineland
-		x = 15
-		y = 2
+		x = 17
+		y = 1
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -2582,7 +2582,7 @@ CZE = {
 		id = GER_naval_effort
 		text = naval_effort
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = GER_naval_rearmament focus = GER_challenge_british_naval_dominance}
+		prerequisite = { focus = GER_naval_rearmament }
 		x = 0
 		y = 1
 		relative_position_id = GER_naval_rearmament
@@ -2657,10 +2657,10 @@ CZE = {
 	focus = {
 		id = GER_naval_effort2
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = GER_naval_effort }
-		x = 0
+		prerequisite = { focus = GER_naval_rearmament focus = GER_challenge_british_naval_dominance }
+		x = -2
 		y = 1
-		relative_position_id = GER_naval_effort
+		relative_position_id = GER_naval_rearmament
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -2723,10 +2723,10 @@ CZE = {
 	focus = {
 		id = GER_plan_z
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = GER_naval_effort }
-		x = -2
-		y = 2
-		relative_position_id = GER_naval_effort
+		prerequisite = { focus = GER_naval_effort3 }
+		x = 0
+		y = 1
+		relative_position_id = GER_naval_effort3
 		cost = 1
 		ai_will_do = {
 			factor = 0.25
@@ -2735,35 +2735,7 @@ CZE = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			navy_experience = 50
-			every_state = {
-				limit = { has_state_flag = GER_plan_z_dockyards }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = bc_bonus
-				bonus = 1.0
-				uses = 1
-				category = bc_tech
-			}
-			add_tech_bonus = {
-				name = bb_bonus
-				bonus = 1.0
-				uses = 1
-				category = bb_tech
-				category = shbb_tech
-			}
-			add_tech_bonus = {
-				name = cv_bonus
-				bonus = 1.0
-				uses = 1
-				category = cv_tech
-			}
+			
 		}
 
 		completion_reward = {
@@ -2793,7 +2765,7 @@ CZE = {
 			}
 			add_tech_bonus = {
 				name = bb_bonus
-				bonus = 1.0
+				bonus = 2.0
 				uses = 1
 				category = bb_tech
 				category = shbb_tech
@@ -2836,10 +2808,10 @@ CZE = {
 	focus = {
 		id = GER_Carrier_Effort
 		icon = GFX_goal_generic_navy_carrier
-		prerequisite = { focus = GER_naval_effort }
-		x = 1
-		y = 2
-		relative_position_id = GER_naval_effort
+		prerequisite = { focus = GER_naval_effort3 }
+		x = -2
+		y = 1
+		relative_position_id = GER_naval_effort3
 		cost = 1
 		#ai_will_do = {
 		#	factor = 1
@@ -2879,8 +2851,8 @@ CZE = {
 		id = GER_u_boat_effort
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = GER_naval_effort }
-		x = 3
-		y = 2
+		x = -1
+		y = 1
 		relative_position_id = GER_naval_effort
 		cost = 1
 		ai_will_do = {
@@ -2951,10 +2923,10 @@ CZE = {
 	focus = {
 		id = GER_trade_interdiction
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = GER_u_boat_effort }
-		x = 0
+		prerequisite = { focus = GER_naval_effort }
+		x = 1
 		y = 1
-		relative_position_id = GER_u_boat_effort
+		relative_position_id = GER_naval_effort
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -2963,23 +2935,65 @@ CZE = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = ti_bonus
-				name = GER_trade_interdiction
-				bonus = 1.0
-				uses = 2
-				category = naval_doctrine
-			}
+			navy_experience = 300
 		}
 	}
 
 	focus = {
-		id = GER_modular_construction
-		icon = GFX_goal_generic_construct_naval_dockyard
+		id = GER_norge_bases
+		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = GER_trade_interdiction }
 		x = 0
 		y = 1
 		relative_position_id = GER_trade_interdiction
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+			
+		available_if_capitulated = yes
+		
+		available = {
+			NOR = { has_capitulated = yes }
+			
+		}
+		
+		completion_reward = {
+			142 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			143 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			144 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	
+	}
+	
+	focus = {
+		id = GER_modular_construction
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_u_boat_effort  }
+		x = 0
+		y = 1
+		relative_position_id = GER_u_boat_effort
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -2993,6 +3007,26 @@ CZE = {
 	}
 
 	focus = {
+		id = GER_karl_donz_gone_wild
+		icon = GFX_focus_generic_midget_submarines
+		prerequisite = { focus = GER_modular_construction }
+		prerequisite = {  focus = GER_norge_bases  }
+		x = 1
+		y = 1
+		relative_position_id = GER_modular_construction
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+			
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = { idea = GER_karl_raiding_quotas days = 120 }
+		}
+	}
+	
+	focus = {
 	    id = GER_bismarck
 		prerequisite = { focus = GER_plan_z }
 		relative_position_id = GER_plan_z
@@ -3001,7 +3035,7 @@ CZE = {
 		icon = GFX_goal_generic_navy_battleship
 		cost = 1
 		available = {
-		    GER = { has_completed_focus = GER_danzig_or_war }
+		   has_tech = improved_ship_hull_heavy
 		}
 		completion_reward = {
 			custom_effect_tooltip = "Adds construction of a Battleship 3 at 75% completion"
@@ -3039,14 +3073,14 @@ CZE = {
 					amount = 1
 				}
 			}
-			if = {
-				limit = {
-					not = { has_tech = improved_ship_hull_heavy }
-				}
-				set_technology = {
-					improved_ship_hull_heavy = 1
-				}
-			}
+			#if = {
+				#limit = {
+					#not = { has_tech = improved_ship_hull_heavy }
+				#}
+				#set_technology = {
+					#improved_ship_hull_heavy = 1
+				#}
+			#}
 		}
 	}
 	
@@ -3059,7 +3093,7 @@ CZE = {
 		icon = GFX_goal_generic_navy_battleship
 		cost = 1
 		available = {
-		    GER = { has_completed_focus = GER_danzig_or_war }
+		   has_tech = improved_ship_hull_heavy
 		}
 		completion_reward = {
 			custom_effect_tooltip = "Adds construction of a Battleship 3 at 75% completion"
@@ -3097,14 +3131,14 @@ CZE = {
 					amount = 1
 				}
 			}
-			if = {
-				limit = {
-					not = { has_tech = improved_ship_hull_heavy }
-				}
-				set_technology = {
-					improved_ship_hull_heavy = 1
-				}
-			}
+			#if = {
+				#limit = {
+					#not = { has_tech = improved_ship_hull_heavy }
+				#}
+				#set_technology = {
+					#improved_ship_hull_heavy = 1
+				#}
+			#}
 		}
 	}
 
