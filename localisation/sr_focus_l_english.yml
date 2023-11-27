@@ -1107,6 +1107,10 @@ AXIS_arm_finalnd_desc:0 ""
 AXIS_bosporus:0 "Turkish Trade Agreement"
 AXIS_bosporus_desc:0 ""
 
+GER_norge_bases:0 "Norge U-boat Bases"
+GER_norge_bases_desc:0 "Norway is the perfect staging grounds for our raiding in the Atlantic."
+GER_karl_donz_gone_wild:0 "Karl's Raiding Quotas"
+GER_karl_donz_gone_wild_desc:0 "Karl Donitz has estimated we must sink a total of 750 thousand tons of war material each month in order to win the war. We have the element of surpise we must push our advantage."
 ITA_modify_regio_esercito_dynamic_modifier_ns_intro:0 "Modify §YRegio Esercito§! by"
 
  ITA_regio_esercito_name_default:0 "$ITA_regio_esercito_dynamic_modifier$"
@@ -1135,7 +1139,7 @@ ITA_modify_regio_esercito_dynamic_modifier_ns_intro:0 "Modify §YRegio Esercito�
  news.1002.t:0 "Compass is Enabled"
  news.1002.d:0 "Italy will join the war at Danzig.
 JAP_island_hopping1:0 "All Hope Is Lost"
- JAP_island_hopping2:0 "There Was Never Much Hope"
+ JAP_island_hopping2:0 "There Was Never Much Sex"
  JAP_island_hopping3:0 "The End Is Nigh"
  JAP_island_hopping4:0 "We Have Lost The Pacific War"
  JAP_island_hopping5:0 "We Are Losing The Pacific War"
