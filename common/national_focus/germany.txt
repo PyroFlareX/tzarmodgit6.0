@@ -2075,7 +2075,7 @@ CZE = {
 							ENG = { add_to_faction = USA
 								# add_to_faction = MEX add_to_faction = BRA
 							}
-							# if = { limit = { GER = { is_ai = no } } POL = { load_oob = "POL_spawn" } }
+							 if = { limit = { GER = { is_ai = no } } BEL = { load_oob = "BEL_1939_army" } }
 			}
 			# SOV = {
 			# 	give_resource_rights = { receiver = GER state = 229 }
@@ -2130,6 +2130,7 @@ CZE = {
 			LAT = {	country_event = { id = baltic.4 }	}	
 			hidden_effect = {
 				if = { limit = { GER = { is_ai = no } } POL = { load_oob = "POL_spawn" } }
+				if = { limit = { GER = { is_ai = no } } POL = { load_oob = "POL_1939_naval_mtg" } }
 			}
 		}
 	}

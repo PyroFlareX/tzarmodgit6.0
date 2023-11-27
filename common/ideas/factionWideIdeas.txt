@@ -1,6 +1,27 @@
 ideas = {
     country = {
 		
+		BEL_army = {
+			
+			picture = chi_army_corruption3
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+			conscription = 0.050
+			war_support_factor = 0.50
+			army_core_attack_factor = 0.10
+			army_core_defence_factor = 0.10
+			}
+		}
 		ALLIED_nortaship = {
 
 			picture = generic_coastal_defense_ships2
