@@ -2785,7 +2785,7 @@ CZE = {
 		icon = GFX_focus_attack_britain
 		prerequisite = { focus = GER_plan_z }
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = GER_plan_z
 		cost = 1
 		text = "Battle of the Atlantic"
@@ -2809,10 +2809,10 @@ CZE = {
 	focus = {
 		id = GER_Carrier_Effort
 		icon = GFX_goal_generic_navy_carrier
-		prerequisite = { focus = GER_naval_effort3 }
-		x = -2
+		prerequisite = { focus = GER_kreigsmarine }
+		x = 0
 		y = 1
-		relative_position_id = GER_naval_effort3
+		relative_position_id = GER_kreigsmarine
 		cost = 1
 		#ai_will_do = {
 		#	factor = 1
@@ -3028,6 +3028,34 @@ CZE = {
 	}
 	
 	focus = {
+	    id = GER_kreigsmarine
+		prerequisite = { focus = GER_plan_z }
+		relative_position_id = GER_plan_z
+		x = 1
+		y = 1
+		icon = GFX_focus_generic_naval_discipline
+		cost = 5
+		available = {
+		   
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = amph_bonus
+				bonus = 1.0
+				uses = 1
+				technology = engine_tech_3
+			}
+			set_technology = { marines = 1 }
+			add_doctrine_cost_reduction = {
+				name = GER_kriegmariner
+				cost_reduction = 0.75
+				uses = 3
+				category = special_forces_doctrine
+			}
+		}
+	}
+	
+	focus = {
 	    id = GER_bismarck
 		prerequisite = { focus = GER_plan_z }
 		relative_position_id = GER_plan_z
@@ -3087,9 +3115,9 @@ CZE = {
 	
 	focus = {
 	    id = GER_tirpitz
-		prerequisite = { focus = GER_plan_z }
-		relative_position_id = GER_plan_z
-		x = 1
+		prerequisite = { focus = GER_bismarck }
+		relative_position_id = GER_bismarck
+		x = 0
 		y = 1
 		icon = GFX_goal_generic_navy_battleship
 		cost = 1
