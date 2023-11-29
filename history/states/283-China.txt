@@ -39,7 +39,7 @@ history={
 	}
 	manpower=3705400
 	buildings_max_level_factor=1.000
-	state_category=rural
-
+	state_category=rural	
+	impassable = yes
 	local_supplies=0.0 
 }

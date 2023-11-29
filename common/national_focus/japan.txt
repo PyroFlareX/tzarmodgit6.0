@@ -152,58 +152,69 @@ focus_tree = {
 		select_effect = {}
 		completion_reward = {
 		
-			add_named_threat = { threat = 10 name = JAP_CHIONE }
+		#	add_named_threat = { threat = 10 name = JAP_CHIONE }
 			add_ideas = JAP_war_with_chi1
+			MAN = {
+				declare_war_on = {
+							target = CHI
+							type = annex_everything
+						}
+			}
+			JAP = {
+				declare_war_on = {
+							target = CHI
+							type = annex_everything
+						}
+			}
+#			army_experience = 300
+#			air_experience = 1000
+#			navy_experience = 500
 			
-			army_experience = 300
-			air_experience = 1000
-			navy_experience = 500
+#			transfer_state = 608
+#		    transfer_state = 614
+#		    transfer_state = 597
+#		    transfer_state = 743
+#		    transfer_state = 598
+#		    transfer_state = 613
+#		    transfer_state = 596
+#		    transfer_state = 595
+#		    transfer_state = 593
+#		    transfer_state = 592
+#		    transfer_state = 594
+#			transfer_state = 591
 			
-			transfer_state = 608
-		    transfer_state = 614
-		    transfer_state = 597
-		    transfer_state = 743
-		    transfer_state = 598
-		    transfer_state = 613
-		    transfer_state = 596
-		    transfer_state = 595
-		    transfer_state = 593
-		    transfer_state = 592
-		    transfer_state = 594
-			transfer_state = 591
-			
-			transfer_state = 599
-			transfer_state = 602
-			transfer_state = 600
-			transfer_state = 749
-			transfer_state = 606
-			transfer_state = 607
-			transfer_state = 620
+#			transfer_state = 599
+#			transfer_state = 602
+#			transfer_state = 600
+#			transfer_state = 749
+#			transfer_state = 606
+	#		transfer_state = 607
+#			transfer_state = 620
 			
 			hidden_effect = {
 				
 				news_event = { id = news.334 }
 
-			608 = { set_compliance = 60 }
-		    614 = { set_compliance = 60 }
-		    597 = { set_compliance = 60 }
-		    743 = { set_compliance = 60 }
-		    598 = { set_compliance = 60 }
-		    613 = { set_compliance = 60 }
-		    596 = { set_compliance = 60 }
-		    595 = { set_compliance = 60 }
-		    593 = { set_compliance = 60 }
-		    592 = { set_compliance = 60 }
-		    594 = { set_compliance = 60 }
-			591 = { set_compliance = 60 }
+#			608 = { set_compliance = 60 }
+#		    614 = { set_compliance = 60 }
+#		    597 = { set_compliance = 60 }
+#		    743 = { set_compliance = 60 }
+#		    598 = { set_compliance = 60 }
+#		    613 = { set_compliance = 60 }
+#		    596 = { set_compliance = 60 }
+#		    595 = { set_compliance = 60 }
+#		    593 = { set_compliance = 60 }
+#		    592 = { set_compliance = 60 }
+#		    594 = { set_compliance = 60 }
+#			591 = { set_compliance = 60 }
 			
-			599 = { set_compliance = 60 }
-			602 = { set_compliance = 60 }
-			600 = { set_compliance = 60 }
-			749 = { set_compliance = 60 }
-			606 = { set_compliance = 60 }
-			607 = { set_compliance = 60 }
-			620 = { set_compliance = 60 }
+#			599 = { set_compliance = 60 }
+#			602 = { set_compliance = 60 }
+#			600 = { set_compliance = 60 }
+	#		749 = { set_compliance = 60 }
+#			606 = { set_compliance = 60 }
+	#		607 = { set_compliance = 60 }
+	#		620 = { set_compliance = 60 }
 				
 				USA = {
 					add_political_power = 100
@@ -227,7 +238,7 @@ focus_tree = {
 				ROM = { army_experience = 100 }		
 				HUN = { army_experience = 100 }	
 				BUL = { army_experience = 100 }
-				IF = { limit = { country_exists = CRO } CRO = { army_experience = 100 } }
+				IF = { limit = { country_exists = YUG } YUG = { army_experience = 100 } }
 				IF = { limit = { country_exists = CRO } SIA = { army_experience = 300 air_experience  = 1000 } }
 				IF = { limit = { country_exists = CRO } MAN = { army_experience = 300 air_experience  = 1000 } }
 			}
@@ -253,7 +264,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1938.02.02
+			date > 1940.01.01
 		}
 
 		bypass = {
@@ -271,21 +282,21 @@ focus_tree = {
 		completion_reward = {
 			add_named_threat = { threat = 10 name = JAP_CHITWO }
 			add_timed_idea = { idea = JAP_year_of_righteous_effort days = 365 } #Monkeybuff
-			
-			transfer_state = 608
-			transfer_state = 325
-			transfer_state = 747
-			transfer_state = 751
-			transfer_state = 603
-			transfer_state = 748
-			transfer_state = 750
-			transfer_state = 605
-			transfer_state = 744
-			transfer_state = 622
-			transfer_state = 746
-			transfer_state = 615
-			transfer_state = 621
-			
+			USA = { add_war_support = 0.10 }
+			every_state = {
+				limit = {
+					AND = {
+					is_owned_by = CHI
+					impassable = no
+					}
+				}
+				transfer_state_to = JAP
+			}
+			hidden_effect = {SWE = {
+				annex_country = {
+					target = CHI
+				}
+			}}
 			swap_ideas = {
 				remove_idea = JAP_war_with_chi1
 				add_idea = JAP_war_with_chi2
@@ -300,22 +311,6 @@ focus_tree = {
 			army_experience = 250
 			air_experience = 800
 			navy_experience = 1000
-			hidden_effect = {
-				USA = { add_war_support = 0.10 }
-				608 = { set_compliance = 60 }
-		    	325 = { set_compliance = 60 }
-		    	747 = { set_compliance = 60 }
-		    	751 = { set_compliance = 60 }
-		    	603 = { set_compliance = 60 }
-		    	748 = { set_compliance = 60 }
-		    	750 = { set_compliance = 60 }
-		    	605 = { set_compliance = 60 }
-				744 = { set_compliance = 60 }
-				622 = { set_compliance = 60 }
-				746 = { set_compliance = 60 }
-				615 = { set_compliance = 60 }
-				621 = { set_compliance = 60 }
-			}
 		}
 	}
 
@@ -503,6 +498,42 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
+				declare_war_on = { target = ENG type = annex_everything }
+		declare_war_on = { target = FRF type = annex_everything }
+		declare_war_on = { target = HOL type = annex_everything }
+		declare_war_on = { target = USA type = annex_everything }
+		declare_war_on = { target = AST type = annex_everything }
+		declare_war_on = { target = NZL type = annex_everything }
+		declare_war_on = { target = RAJ type = annex_everything }
+		declare_war_on = { target = SAF type = annex_everything }
+		declare_war_on = { target = CAN type = annex_everything }
+		declare_war_on = { target = NOR type = annex_everything }
+		declare_war_on = { target = MEX type = annex_everything }
+
+		hidden_effect = {
+			load_oob = "JAP_DEI"
+			USA = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+			if = {
+				limit = {
+					country_exists = AST
+				}
+				AST = {
+					transfer_state = 669
+				}
+			}
+			else = {
+				ENG = {
+					transfer_state = 669
+				}				
+			}
+			JAP = {
+				annex_country = {
+					target = HOL
+					transfer_troops = no 					
+				}
+			}
+			
+		}
 				JAP = {
 					transfer_state = 672
 					transfer_state = 334

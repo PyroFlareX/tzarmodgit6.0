@@ -174,42 +174,6 @@ country_event = {
 	
 	option = {
 		name = japan.144.a
-		declare_war_on = { target = ENG type = annex_everything }
-		declare_war_on = { target = FRF type = annex_everything }
-		declare_war_on = { target = HOL type = annex_everything }
-		declare_war_on = { target = USA type = annex_everything }
-		declare_war_on = { target = AST type = annex_everything }
-		declare_war_on = { target = NZL type = annex_everything }
-		declare_war_on = { target = RAJ type = annex_everything }
-		declare_war_on = { target = SAF type = annex_everything }
-		declare_war_on = { target = CAN type = annex_everything }
-		declare_war_on = { target = NOR type = annex_everything }
-		declare_war_on = { target = MEX type = annex_everything }
-
-		hidden_effect = {
-			load_oob = "JAP_DEI"
-			USA = { add_to_war = { targeted_alliance = ENG enemy = GER } }
-			if = {
-				limit = {
-					country_exists = AST
-				}
-				AST = {
-					transfer_state = 669
-				}
-			}
-			else = {
-				ENG = {
-					transfer_state = 669
-				}				
-			}
-			JAP = {
-				annex_country = {
-					target = HOL
-					transfer_troops = no 					
-				}
-			}
-			
-		}
 	}
 }
 
