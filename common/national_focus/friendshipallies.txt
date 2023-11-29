@@ -655,9 +655,7 @@ joint_focus = {
 		}
 
 		available = {
-			GER {
-				has_war_with = SOV
-			}
+			always = no
 		}
 		
 		bypass = {
