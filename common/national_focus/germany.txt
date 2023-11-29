@@ -2309,8 +2309,13 @@ CZE = {
 				news_event = { hours = 6 id = news.233 }
 				37 = { set_compliance = 90 }
 				99 = { set_compliance = 90 }
-				ENG = { transfer_state = 337 }
-				337 = { set_compliance = 100 }
+				ICE = { transfer_state = 337 add_state_core = 337 transfer_state = 101 add_state_core = 101 }	
+				ENG = {
+					add_to_faction = ICE
+				}
+				GER = {
+					declare_war_on = ICE	
+				}
 			}	
 		}
 	}
