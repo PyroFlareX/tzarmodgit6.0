@@ -3,7 +3,7 @@ state={
 	id=618
 	name="STATE_618" # Dzuria
 	manpower = 670800
-
+	impassable = yes
 	state_category = pastoral
 
 history={

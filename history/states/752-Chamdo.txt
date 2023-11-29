@@ -7,6 +7,7 @@ state={
 	manpower=300000
 	buildings_max_level_factor=1.000
 	state_category = pastoral
+	impassable = yes
 history={
 	1936.1.1.16 = {
 			owner = SWE 
