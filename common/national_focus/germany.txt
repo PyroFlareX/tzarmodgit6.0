@@ -91,9 +91,37 @@ focus_tree = {
 		}
 	}
 	
+	#focus = {
+	#	id = GER_Expand_Consumer_Industry
+	#	icon = GFX_focus_generic_modernize_industry
+	#	prerequisite = { focus = GER_Schact_Plan }
+	#	relative_position_id = GER_Schact_Plan
+	#	x = -4
+	#	y = 1
+	#	cost = 5
+	#	ai_will_do = {
+	#		factor = 12
+	#	}
+		
+	#	available = { }
+		
+	#	completion_reward = {
+
+	#		64 = {
+	#			add_extra_state_shared_building_slots = 2
+	#			add_building_construction = {
+	#				type = industrial_complex
+	#				level = 2
+	#				instant_build = yes
+	#			}
+	#		}
+			
+	#	}
+	#}
+	
 	focus = {
-		id = GER_Expand_Consumer_Industry
-		icon = GFX_focus_generic_modernize_industry
+		id = GER_hh_kung
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
 		prerequisite = { focus = GER_Schact_Plan }
 		relative_position_id = GER_Schact_Plan
 		x = -2
@@ -106,24 +134,103 @@ focus_tree = {
 		available = { }
 		
 		completion_reward = {
-
-			64 = {
-				add_extra_state_shared_building_slots = 2
+			GER = { transfer_state = 743 }
+			743 = {
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_compliance = 99
+				add_building_construction = {
+					type = dockyard
 					level = 2
 					instant_build = yes
 				}
+			}	
+			hidden_effect = {
+				CHI = {
+					 division_template = {
+							name = "KMT German Trained Divison"		
+							division_names_group = CHI_INF_01
+
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 0 y = 4 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 1 y = 4 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+							artillery_brigade = { x = 3 y = 2 }
+							artillery_brigade = { x = 3 y = 3 }
+							anti_air_brigade = { x = 3 y = 4 }
+						}
+						support = {
+							recon = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+							anti_air = { x = 0 y = 2 }
+							anti_tank = { x = 0 y = 3 }
+							artillery = { x = 0 y = 4 }
+						}
+					}
+						
+					random_owned_controlled_state = {
+						prioritize = { 613 }
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+						create_unit = {
+							division = "name = \"KMT German Trained Divison\" division_template = \"KMT German Trained Divison\" start_experience_factor = 1.00" 
+							owner = CHI
+						}
+					}
+				}
 			}
-			
+		
 		}
 	}
 	
 	focus = {
-		id = GER_Expand_Welfare_Programs
-		icon = GFX_focus_mex_privatisation
-		prerequisite = { focus = GER_Expand_Consumer_Industry }
-		relative_position_id = GER_Expand_Consumer_Industry
+		id = GER_bilateral_trade
+		icon = GFX_focus_generic_german_trade
+		prerequisite = { focus = GER_hh_kung }
+		relative_position_id = GER_hh_kung
 		x = 0
 		y = 1
 		cost = 5
@@ -134,9 +241,34 @@ focus_tree = {
 		available = { }
 		
 		completion_reward = {
-			add_ideas = GER_Expanded_Welfare_Programs
+			 TUR = {
+			 	give_resource_rights = { receiver = GER state = 49 }
+				give_resource_rights = { receiver = GER state = 347 }
+			 }
+			SWE = {
+				give_resource_rights = { receiver = GER state = 141 }
+			}
 		}
 	}
+	
+	#focus = {
+	#	id = GER_Expand_Welfare_Programs
+	#	icon = GFX_focus_mex_privatisation
+	#	prerequisite = { focus = GER_Expand_Consumer_Industry }
+	#	relative_position_id = GER_Expand_Consumer_Industry
+	#	x = 0
+	#	y = 1
+	#	cost = 5
+	#	ai_will_do = {
+	#		factor = 12
+	#	}
+		
+	#	available = { }
+		
+	#	completion_reward = {
+	#		add_ideas = GER_Expanded_Welfare_Programs
+	#	}
+	#}
 	
 	focus = {
 		id = GER_Shuffle_The_Riechstg
@@ -160,9 +292,9 @@ focus_tree = {
 	focus = {
 		id = GER_A_Stable_Economy
 		icon = GFX_focus_generic_industrialists
-		prerequisite = { focus = GER_Expand_Welfare_Programs }
-		relative_position_id = GER_Expand_Welfare_Programs
-		x = -1
+		prerequisite = { focus = GER_Schact_Plan }
+		relative_position_id = GER_Schact_Plan
+		x = 4
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -587,7 +719,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = arms_factory
 						level = 3
@@ -613,6 +745,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = GER_Expanded_Welfare_Programs
 			53 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
