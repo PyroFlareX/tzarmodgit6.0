@@ -1,6 +1,7 @@
 ideas = {
 
 	country = {
+
 		    JAP_island_hopping1 = {
 			name = JAP_island_hopping
 			allowed = {
@@ -338,63 +339,6 @@ ideas = {
 		
 		modifier = {
 			navy_max_range_factor = 0.2
-		}
-	}
-
-	JAP_war_with_chi1 = {
-		
-		removal_cost = -1
-		
-		allowed = {
-			always = no # Added via focus
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-		
-		picture = jap_intervene_in_china
-		
-		modifier = {
-			stability_factor = -0.15
-		}
-	}
-	
-	JAP_war_with_chi2 = {
-	
-		removal_cost = -1
-		
-		allowed = {
-			always = no # Added via focus
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-		
-		picture = jap_intervene_in_china
-		
-		modifier = {
-			stability_factor = -0.3
-		}
-	}
-	
-	JAP_war_with_chi3 = {
-	
-		removal_cost = -1
-		
-		allowed = {
-			always = no # Added via focus
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-		
-		picture = jap_intervene_in_china
-		
-		modifier = {
-			stability_factor = -0.35
 		}
 	}
 		state_shintoism = {

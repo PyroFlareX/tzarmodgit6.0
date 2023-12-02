@@ -61,7 +61,56 @@ country_event = {
 		}
 	}
 }
-
+add_namespace = chi_troops
+country_event = {
+	id = chi_troops.1
+	title = pol_cap.1.t
+	desc = pol_cap.1.d
+	picture = GFX_report_event_hol_cabinet_de_geer
+	hidden = yes
+	trigger = {
+		CHI = {
+			surrender_progress > 0.2
+		}
+		}
+	fire_only_once = yes
+	immediate = {
+		CHI_spawn_inf_a_little = yes
+	}
+}
+country_event = {
+	id = chi_troops.2
+	title = pol_cap.1.t
+	desc = pol_cap.1.d
+	picture = GFX_report_event_hol_cabinet_de_geer
+	hidden = yes
+	trigger = {
+		CHI = {
+			surrender_progress > 0.5
+		}
+		}
+	fire_only_once = yes
+	immediate = {
+		CHI_spawn_inf = yes
+	}
+}
+country_event = {
+	id = chi_troops.3
+	title = pol_cap.1.t
+	desc = pol_cap.1.d
+	picture = GFX_report_event_hol_cabinet_de_geer
+	hidden = yes
+	trigger = {
+		CHI = {
+			surrender_progress > 0.9
+		}
+	}
+	fire_only_once = yes
+	immediate = {
+		CHI_spawn_inf_alot = yes
+	}
+}
+				
 add_namespace = pol_cap
 country_event = {
 	id = pol_cap.1
