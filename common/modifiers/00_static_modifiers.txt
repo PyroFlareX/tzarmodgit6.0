@@ -171,8 +171,6 @@ naval_invasion_penalty = 0.75
 
 battle_of_north_africa = { # on Province
 	army_armor_speed_factor = -0.125
-	army_armor_attack_factor = -0.05
-	dig_in_speed_factor = 0.3
 	army_defence_factor = 0.05
 	army_armor_defence_factor = -0.125
 	air_bombing_targetting = -0.10
