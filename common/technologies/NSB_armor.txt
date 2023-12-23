@@ -32,6 +32,7 @@ technologies = {
 			light_tank_aa_chassis_0
 			medium_tank_aa_chassis_0
 			heavy_tank_aa_chassis_0
+			
 		}
 		enable_equipment_modules = {
 			expanded_fuel_tank
@@ -62,6 +63,9 @@ technologies = {
 			tank_super_heavy_three_man_tank_turret
 			tank_modern_tank_turret
 			extra_ammo_storage
+			semi_flat_armor
+			sloped_armor_two
+			sloped_armor
 		}
 		enable_subunits = {
 			light_armor
@@ -973,7 +977,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			armor_skirts
-			sloped_armor
 		}
 		path = {
 			leads_to_tech = armor_tech_3

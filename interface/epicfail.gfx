@@ -1,5 +1,15 @@
 spriteTypes = {
+	spriteType = {
+		name = "GFX_EMI_semi_flat_armor"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_semi-flat_armor.dds"
+		legacy_lazy_load = no
+	}
 
+	spriteType = {
+		name = "GFX_EMI_sloped_armor_two"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_sloped_armor_zwei.dds"
+		legacy_lazy_load = no
+	}
 	SpriteType = {
 		name = "GFX_sniper_rifle_medium"
 		texturefile = "gfx/interface/technologies/tech_sniper_rifle_01.dds"

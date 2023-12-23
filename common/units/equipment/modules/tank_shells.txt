@@ -1,0 +1,237 @@
+equipment_modules = {
+aa_ammo = {
+		abbreviation = "aam"
+		category = tank_special_ammo
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+		forbid_equipment_type = {
+			flame
+		}
+		add_stats = {
+		reliability = -0.05	
+		}
+				
+		multiply_stats = {
+			ap_attack = 0.1
+			soft_attack = 0.03
+			build_cost_ic = 0.04
+		}
+
+		build_cost_resources = {
+			tungsten = 1
+		}
+	}
+aa_ammo_2 = {
+		abbreviation = "aam"
+		category = tank_special_ammo
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+		forbid_equipment_type = {
+			flame
+		}
+		add_stats = {
+			reliability = -0.05	
+		}
+				
+		multiply_stats = {
+			ap_attack = 0.1
+			soft_attack = 0.1
+			build_cost_ic = 0.1
+		}
+
+		build_cost_resources = {
+			tungsten = 1
+		}
+	}
+apcr_ammo = {
+		abbreviation = "apc"
+		category = tank_special_ammo
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			anti_air
+			}
+		add_stats = {
+			reliability = -0.05	
+		}
+				
+		multiply_stats = {
+			ap_attack = 0.15
+			hard_attack = -0.075
+			build_cost_ic = 0.1
+		}
+
+		build_cost_resources = {
+			tungsten = 1
+		}
+	}
+	apcr_ammo_2 = {
+		abbreviation = "apc"
+		category = tank_special_ammo
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			anti_air
+			}
+		add_stats = {
+			reliability = -0.05	
+		}
+				
+		multiply_stats = {
+			ap_attack = 0.25
+			hard_attack = -0.05
+			build_cost_ic = 0.1
+		}
+
+		build_cost_resources = {
+			tungsten = 1
+		}
+	}	
+	
+	hvap_ammo = {
+		abbreviation = "hvp"
+		category = tank_special_ammo
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			anti_air
+			}
+		
+		multiply_stats = {
+			hard_attack = 0.09
+			build_cost_ic = 0.15
+		}
+		add_stats = {
+		reliability = -0.05		
+		}
+		build_cost_resources = {
+			tungsten = 1
+		}
+
+	}	
+	hvap_ammo_2 = {
+		abbreviation = "hvp"
+		category = tank_special_ammo
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			anti_air
+			}
+		add_stats = {
+					build_cost_ic = 0.75
+		}
+		
+		multiply_stats = {
+			hard_attack = 0.125
+		}
+		add_stats = {
+		reliability = -0.05		
+		}
+		build_cost_resources = {
+			tungsten = 1
+		}
+
+	}
+	
+	hesh_ammo = {
+		abbreviation = "hsh"
+		category = tank_special_ammo
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			anti_air
+			}
+		add_stats = {
+		reliability = -0.05	
+		}
+		
+		multiply_stats = {
+			soft_attack = 0.08
+			build_cost_ic = 0.15
+		}
+
+		build_cost_resources = {
+		tungsten = 1
+		}
+	}
+	hesh_ammo_2 = {
+		abbreviation = "hsh"
+		category = tank_special_ammo
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			anti_air
+			}
+		add_stats = {
+		reliability = -0.1	
+		build_cost_ic = 1.25		
+		}
+		
+		multiply_stats = {
+			soft_attack = 0.14
+		}
+
+		build_cost_resources = {
+		tungsten = 1
+		}
+	}
+
+	APDS_ammo = {
+		abbreviation = "apd"
+		category = tank_special_ammo
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			anti_air
+			}
+		add_stats = {
+		build_cost_ic = 0.25
+		}
+		
+		multiply_stats = {
+			hard_attack = 0.02
+		}
+
+		build_cost_resources = {
+		tungsten = 1
+		}
+	}
+
+	LRP_ammo = {
+		abbreviation = "LRP"
+		category = tank_special_ammo
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			anti_air
+			}
+		add_stats = {
+		reliability = -0.05		
+		build_cost_ic = 1.25
+		}
+		
+		multiply_stats = {
+			hard_attack = 0.075
+		}
+		add_stats = {
+		reliability = -0.07	
+		}
+
+		build_cost_resources = {
+		tungsten = 1
+		}
+	}
+
+	HEAT_ammo = {
+		abbreviation = "hea"
+		category = tank_special_ammo
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+			anti_air
+			}
+		
+		multiply_stats = {
+			hard_attack = 0.05
+			soft_attack = 0.05
+			build_cost_ic = 0.1
+			}
+
+		build_cost_resources = {
+		tungsten = 1
+		}
+	}
+	}
