@@ -80,6 +80,7 @@ SOV_morozov_design_bureau_organization = {
 	allowed = {	
 		OR = {
 			tag = SOV 
+			tag = MON
 		}
 	}
 

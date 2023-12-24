@@ -85,6 +85,34 @@ equipments = {
 					
 				}
 			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					
+				}
+			}
+			special_type_slot_9 = {
+				required = yes
+				allowed_module_categories = {
+				tank_special_ammo
+				}
+			}special_type_slot_10 = {
+				required = no
+				allowed_module_categories = {
+				}
+			}special_type_slot_11 = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			special_type_slot_12 = {
+				required = yes
+				allowed_module_categories = {
+				tank_sloping_armor
+				}
+			}
+
 		}
 		
 		module_count_limit = {
@@ -169,6 +197,8 @@ equipments = {
 			turret_type_slot = car_three_man_tank_turret
 			suspension_type_slot = car_4x4_suspension
 			armor_type_slot = car_riveted_armor
+			special_type_slot_9 = ap_regular
+			special_type_slot_12 = semi_flat_armor
 			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = empty
 		}
@@ -177,6 +207,26 @@ equipments = {
 			tank_nsb_gun_upgrade
 			tank_nsb_armor_upgrade
 		}
+					special_type_slot_9 = {
+				required = yes
+				allowed_module_categories = {
+				tank_special_ammo
+				}
+			}special_type_slot_10 = {
+				required = no
+				allowed_module_categories = {
+				}
+			}special_type_slot_11 = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			special_type_slot_12 = {
+				required = yes
+				allowed_module_categories = {
+				tank_sloping_armor
+				}
+			}
 	}
 
 	armored_car_chassis_1 = { #nuts
@@ -205,6 +255,8 @@ equipments = {
 			suspension_type_slot = car_4x4_suspension
 			armor_type_slot = car_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_9 = ap_regular
+			special_type_slot_12 = semi_flat_armor
 			special_type_slot_1 = empty
 			special_type_slot_2 = empty
 			special_type_slot_3 = empty
@@ -214,6 +266,98 @@ equipments = {
 			tank_nsb_gun_upgrade
 			tank_nsb_armor_upgrade
 		}
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_small_main_armament
+					#car_medium_main_armament
+				}
+			}
+
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					car_light_turret_type
+					#car_medium_turret_type
+				}
+			}
+
+			suspension_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					car_suspension_type
+				}
+			}
+
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					car_armor_type
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					
+				}
+			}
+
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					
+				}
+			}
+
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					
+				}
+			}
+			special_type_slot_9 = {
+				required = yes
+				allowed_module_categories = {
+				tank_special_ammo
+				}
+			}special_type_slot_10 = {
+				required = no
+				allowed_module_categories = {
+				tank_special_ammo
+				}
+			}special_type_slot_11 = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			special_type_slot_12 = {
+				required = yes
+				allowed_module_categories = {
+				tank_sloping_armor
+				}
+			}
+		
+	}
 	}
 
 	armored_car_chassis_2 = { #there is no at sadge
@@ -242,6 +386,8 @@ equipments = {
 			suspension_type_slot = car_4x4_suspension
 			armor_type_slot = car_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_9 = ap_regular
+			special_type_slot_12 = semi_flat_armor
 			special_type_slot_1 = empty
 			special_type_slot_2 = empty
 			special_type_slot_3 = empty
@@ -322,15 +468,31 @@ equipments = {
 				}
 			}
 			special_type_slot_9 = {
+				required = yes
+				allowed_module_categories = {
+				tank_special_ammo
+				}
+			}special_type_slot_10 = {
+				required = no
+				allowed_module_categories = {
+				tank_special_ammo
+				}
+			}special_type_slot_11 = {
 				required = no
 				allowed_module_categories = {
 				tank_special_ammo
 				}
 			}
-		}
+			special_type_slot_12 = {
+				required = yes
+				allowed_module_categories = {
+				tank_sloping_armor
+				}
+			}
 		
 	}
 
 	
 
+}
 }

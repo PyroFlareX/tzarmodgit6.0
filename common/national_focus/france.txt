@@ -718,34 +718,6 @@ if = {
 	}
 	
 	focus = {
-		id = FRA_encourage_polish_morbilzation
-		icon = GFX_focus_generic_polish_deal
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {focus = FRA_begin_rearmament }
-		relative_position_id = FRA_begin_rearmament
-		cost = 2
-	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-	
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			ROOT = {
-				set_autonomy = {
-						target = POL
-						autonomy_state = autonomy_puppet
-				}
-			}
-		}
-	}	
-	
-	focus = {
 		id = FRA_defensive_focus
 		icon = GFX_focus_SWI_fortify_border_with_france
 

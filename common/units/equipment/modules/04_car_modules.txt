@@ -160,7 +160,7 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		multiply_stats = {
-			
+			soft_attack = -0.15
 		}
 
 	}
@@ -180,7 +180,7 @@ equipment_modules = {
 		xp_cost = 0
 		manpower = 1
 		multiply_stats = {
-			
+			soft_attack = -0.15
 		}
 
 	}
@@ -200,7 +200,7 @@ equipment_modules = {
 		xp_cost = 0
 		manpower = 2
 		multiply_stats = {
-			
+			soft_attack = -0.1
 		}
 
 		can_convert_from = {
@@ -227,7 +227,7 @@ equipment_modules = {
 		xp_cost = 0
 		manpower = 2
 		multiply_stats = {
-		
+			soft_attack = -0.15
 		}
 
 		can_convert_from = {
@@ -261,7 +261,7 @@ equipment_modules = {
 		}
 		manpower = 2
 		multiply_stats = {
-			
+			soft_attack = -0.1
 		}
 	}
 

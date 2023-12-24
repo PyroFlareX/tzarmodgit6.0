@@ -115,7 +115,6 @@ GER_henschel_organization = {
 		equipment_bonus = {
 			soft_attack = 0.05
 			hard_attack = 0.05
-			build_cost_ic = 0.05
 		}
 	}
 }
