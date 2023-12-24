@@ -19,8 +19,8 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 			air_attack = -0.2
 
 		}
@@ -47,8 +47,8 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 			air_attack = -0.2
 		}
 
@@ -75,8 +75,8 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 			air_attack = -0.2
 		}
 
@@ -109,8 +109,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 			breakthrough = -0.60
 			soft_attack = 0.15
 			hard_attack = 0.15
@@ -137,8 +137,8 @@ equipment_modules = {
 		
 		
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 
 		}
 
@@ -161,8 +161,8 @@ equipment_modules = {
 		
 		
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 	
 		}
 
@@ -186,8 +186,8 @@ equipment_modules = {
 		
 		
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 
 		}
 
@@ -219,8 +219,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 			breakthrough = -0.60
 			soft_attack = 0.15
 			hard_attack = 0.15
@@ -258,8 +258,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 
 		}
 
@@ -285,8 +285,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 
 		}
 
@@ -317,8 +317,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 			breakthrough = -0.60
 			soft_attack = 0.15
 			hard_attack = 0.15
@@ -350,8 +350,8 @@ equipment_modules = {
 			breakthrough = 24
 		}
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 			hard_attack = -0.1
 		}
 
@@ -378,8 +378,8 @@ equipment_modules = {
 		
 		
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 			
 		}
 
@@ -403,8 +403,8 @@ equipment_modules = {
 		
 		
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 
 		}
 
@@ -428,8 +428,8 @@ equipment_modules = {
 		
 		
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 
 		}
 
@@ -452,8 +452,8 @@ equipment_modules = {
 		
 		
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 
 		}
 
@@ -477,8 +477,8 @@ equipment_modules = {
 		
 		
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 
 		}
 
@@ -510,8 +510,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 			breakthrough = -0.60
 			soft_attack = 0.15
 			hard_attack = 0.15
@@ -549,8 +549,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 	
 		}
 
@@ -576,8 +576,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 
 		}
 
@@ -608,8 +608,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 			breakthrough = -0.60
 			soft_attack = 0.15
 			hard_attack = 0.15
@@ -641,8 +641,8 @@ equipment_modules = {
 			breakthrough = 24
 		}
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 
 		}
 
@@ -669,8 +669,8 @@ equipment_modules = {
 		
 		
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 			
 		}
 
@@ -694,8 +694,8 @@ equipment_modules = {
 		
 		
 		multiply_stats = {
-		soft_attack = -0.2
-			hard_attack = -0.2
+		soft_attack = -0.05
+			hard_attack = -0.05
 
 		}
 
