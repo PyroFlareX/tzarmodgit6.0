@@ -59,6 +59,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_welded_armor
+			secondary_turret_hmg
 			tank_cast_armor
 			tank_close_support_gun
 			ap_regular
@@ -1508,8 +1509,8 @@ technologies = {
 			anti_tank_equipment_2
 		}
 		enable_equipment_modules = {
-			# tank_high_velocity_cannon_2
-			# tank_heavy_cannon_2
+			tank_heavy_cannon_2		
+			tank_high_velocity_cannon_2
 		}
 		sub_technologies = {
 			autocann_subtech
@@ -1550,11 +1551,7 @@ technologies = {
 	}
 	
 	antitank3 = {
-		enable_equipment_modules = {
-			tank_heavy_cannon_2		
-			tank_high_velocity_cannon_2
-		}
-
+		
 		anti_tank = {
 			hard_attack = 0.05
 			breakthrough = 0.05
@@ -1902,9 +1899,8 @@ technologies = {
 			autocann_subtech
 		}
 		enable_equipment_modules = {
-			# tank_medium_howitzer_2
-			# tank_medium_cannon
-
+			tank_medium_howitzer_2
+			tank_medium_cannon_2	
 		}
 		#artillery = {
 		#	soft_attack = 0.1
@@ -1954,10 +1950,7 @@ technologies = {
 	artillery2 = {
 
 	
-		enable_equipment_modules = {
-			tank_medium_howitzer_2
-			tank_medium_cannon_2	
-		}
+
 		
 		artillery = {
 			soft_attack = 0.1

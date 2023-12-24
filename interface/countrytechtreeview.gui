@@ -327,7 +327,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "tech_special_forces_tree"
-				position = { x = 140 y = 1600 }
+				position = { x = 140 y = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
