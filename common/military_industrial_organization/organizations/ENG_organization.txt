@@ -14,11 +14,18 @@ ENG_vickers_armstrong_eng_organization = {
 	allowed = {	
 		OR = {
 			tag = ENG 
-			is_in_faction_with_allies = yes
+			AND = {
+				tag = GRE
+				has_dlc = "Battle for the Bosporus"
+			}
 		}
 	}
 
 	visible = {
+		IF = {
+			limit = { FROM = { original_tag = ETH } }
+			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+		}
 	}
 	
 	available = {
@@ -51,7 +58,7 @@ ENG_vickers_armstrong_eng_organization = {
 					is_subject = no
 					is_subject_of = ENG
 				}
-				#is_in_faction_with_allies = yes
+				#is_in_faction_with = ENG
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
@@ -110,8 +117,16 @@ ENG_vauxhall_organization = {
 
 	allowed = {	
 		OR = {
-			tag = ENG 
-			is_in_faction_with_allies = yes
+			tag = ENG
+			tag = CAN
+			tag = SAF
+			AND = {
+				tag = POL # If Poland sets up a local one
+				OR = {
+					has_dlc = "Poland: United and Ready"
+					has_dlc = "No Step Back"
+				}
+			}
 		}
 	}
 
@@ -162,7 +177,7 @@ ENG_vauxhall_organization = {
 					is_subject = no
 					is_subject_of = ENG
 				}
-				#is_in_faction_with_allies = yes
+				#is_in_faction_with = ENG
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
@@ -191,10 +206,8 @@ ENG_harland_wolff_organization = {
 	icon = GFX_idea_harland_wolff
 	
 	allowed = {	
-		OR = {
-			tag = ENG 
-			is_in_faction_with_allies = yes
-		}
+		tag = ENG
+		has_dlc = "Arms Against Tyranny"
 	}
 
 	override_trait = {
@@ -243,10 +256,8 @@ ENG_cammell_laird_organization = {
 	icon = GFX_idea_cammell_laird
 	
 	allowed = {	
-		OR = {
-			tag = ENG 
-			is_in_faction_with_allies = yes
-		}
+		tag = ENG
+		has_dlc = "Arms Against Tyranny"
 	}
 
 	override_trait = {
@@ -299,7 +310,6 @@ ENG_yarrow_shipbuilders_organization = {
 	allowed = {	
 		OR = {
 			tag = ENG 
-			is_in_faction_with_allies = yes
 		}
 	}
 	
@@ -325,7 +335,7 @@ ENG_yarrow_shipbuilders_organization = {
 					is_subject = no
 					is_subject_of = ENG
 				}
-				#is_in_faction_with_allies = yes
+				#is_in_faction_with = ENG
 			}
 		}
 	}
@@ -337,8 +347,12 @@ ENG_john_brown_organization = {
 	
 	allowed = {	
 		OR = {
-			tag = ENG 
-			is_in_faction_with_allies = yes
+			tag = ENG
+
+			AND = {
+				tag = ETH 
+				has_dlc = "By Blood Alone"
+			}
 		}
 	}
 
@@ -388,10 +402,8 @@ ENG_supermarine_organization = {
 	icon = GFX_idea_supermarine
 	
 	allowed = {	
-		OR = {
-			tag = ENG 
-			is_in_faction_with_allies = yes
-		}
+		tag = ENG
+		has_dlc = "Arms Against Tyranny"
 	}
 
 	equipment_type = {
@@ -483,10 +495,8 @@ ENG_hawker_organization = {
 	include = generic_cas_aircraft_organization
 	icon = GFX_idea_hawker
 	allowed = {	
-		OR = {
-			tag = ENG 
-			is_in_faction_with_allies = yes
-		}
+		tag = ENG
+		has_dlc = "Arms Against Tyranny"
 	}
 }
 
@@ -494,9 +504,10 @@ ENG_de_havilland_organization = {
 	include = generic_medium_aircraft_organization
 	icon = GFX_idea_de_havilland
 	allowed = {	
+		has_dlc = "Arms Against Tyranny"
 		OR = {
-			tag = ENG 
-			is_in_faction_with_allies = yes
+			tag = ENG
+			tag = NOR 		
 		}
 	}
 
@@ -527,7 +538,10 @@ ENG_fairey_aviation_organization = {
 	allowed = {	
 		OR = {
 			tag = ENG 
-			is_in_faction_with_allies = yes
+			AND = {
+				tag = BUL
+				has_dlc = "Battle for the Bosporus"
+			}
 		}
 	}
 	
@@ -553,7 +567,7 @@ ENG_fairey_aviation_organization = {
 					is_subject = no
 					is_subject_of = ENG
 				}
-				#is_in_faction_with_allies = yes
+				#is_in_faction_with = ENG
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
@@ -564,10 +578,7 @@ ENG_avro_organization = {
 	include = generic_heavy_aircraft_organization
 	icon = GFX_idea_avro
 	allowed = {	
-		OR = {
-			tag = ENG 
-			is_in_faction_with_allies = yes
-		}
+		tag = ENG
 	}
 }
 
@@ -586,10 +597,13 @@ ENG_british_government_tea_stockpile_organization = {
 	name = "British Government Tea Stockpiles"
 	include = generic_support_equipment_organization
 	icon = GFX_idea_eng_steady_as_she_goes
-	allowed = {	
+	allowed = {
 		OR = {
-			tag = ENG 
-			is_in_faction_with_allies = yes
+			tag = ENG
+			tag = SAF
+			tag = NZL
+			tag = RAJ
+			tag = FRF
 		}
 	}
 }
@@ -601,7 +615,8 @@ ENG_rsaf_enfield_organization = {
 	allowed = {	
 		OR = {
 			tag = ENG 
-			is_in_faction_with_allies = yes
+			tag = NZL
+			tag = SAF
 		}
 	}
 
@@ -669,8 +684,12 @@ ENG_vauxhall_automotive_organization = {
 	
 	allowed = {	
 		OR = {
-			tag = ENG 
-			is_in_faction_with_allies = yes
+			tag = ENG
+			tag = POL # If Poland sets up a local one
+			AND = {
+				tag = ETH 
+				has_dlc = "By Blood Alone"
+			}
 		}
 	}
 	
@@ -718,7 +737,7 @@ ENG_vauxhall_automotive_organization = {
 					is_subject = no
 					is_subject_of = ENG
 				}
-				#is_in_faction_with_allies = yes
+				#is_in_faction_with = ENG
 			}
 		}
 	
@@ -734,10 +753,14 @@ ENG_vauxhall_automotive_organization = {
 ENG_royal_arsenal_organization = {
 	include = generic_artillery_organization
 	icon = GFX_idea_royal_arsenal
-	allowed = {	
+	allowed = {
 		OR = {
-			tag = ENG 
-			is_in_faction_with_allies = yes
+			tag = ENG
+			tag = AST
+			#tag = RAJ
+			tag = SAF
+			tag = CAN
+			tag = NZL
 		}
 	}
 

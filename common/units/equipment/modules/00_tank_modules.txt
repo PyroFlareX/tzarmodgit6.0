@@ -1,47 +1,20 @@
 equipment_modules = {
+	
+### Engine Types
+	###Armor Types
 
-	semi_flat_armor = {     
-		abbreviation = "sfla"
-		category = tank_sloping_armor
-		sfx = sfx_ui_sd_module_turret
 
-		add_stats = {
-		}
-		add_stats = {
-			build_cost_ic = 2
-			defense = 1
-			breakthrough = 1
-		}
-		multiply_stats = {
-			armor_value = 0.1
-		}
-	}
 
-	sloped_armor = {       
+	sloped_armor = {
 		abbreviation = "slop"
-		category = tank_sloping_armor
+		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-		build_cost_ic = 2
 		}
 		multiply_stats = {
 			armor_value = 0.2
-			build_cost_ic = 0.1
-		}
-	}
-
-	sloped_armor_two = {       
-		abbreviation = "st1"
-		category = tank_sloping_armor
-		sfx = sfx_ui_sd_module_turret
-
-		add_stats = {
-			reliability = -0.1
-		}
-		multiply_stats = {
-			armor_value = 0.5
-			build_cost_ic = 0.3
+			build_cost_ic = 0.02
 		}
 	}
 
