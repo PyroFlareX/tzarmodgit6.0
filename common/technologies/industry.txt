@@ -12,6 +12,12 @@ technologies = {
                 set_technology = {
                     tech_juggle = 0
                 }
+				if = {
+					limit = {
+						date<1936.1.2
+					}
+					set_country_flag = cheater_1
+				}
             }
         }
 
@@ -19,7 +25,6 @@ technologies = {
             name = industry_folder
             position = { x = 4 y = 2 }
         }
-
     }
 
 	basic_machine_tools = {

@@ -13,27 +13,13 @@ aa_ammo = {
 		}
 				
 		multiply_stats = {
-			ap_attack = 0.03
-			soft_attack = 0.1
+			ap_attack = 0.1
+			soft_attack = 0.03
 			build_cost_ic = 0.04
 		}
 
 		build_cost_resources = {
 			tungsten = 1
-		}
-	}
-ap_regular = {
-		abbreviation = "apr"
-		category = tank_special_ammo
-		sfx = sfx_ui_sd_module_turret
-				
-		multiply_stats = {
-			hard_attack = 0.02
-			build_cost_ic = 0.01
-		}
-
-		build_cost_resources = {
-			steel = 1
 		}
 	}
 aa_ammo_2 = {
@@ -51,8 +37,8 @@ aa_ammo_2 = {
 				
 		multiply_stats = {
 			ap_attack = 0.1
-			soft_attack = 0.15
-			build_cost_ic = 0.01
+			soft_attack = 0.1
+			build_cost_ic = 0.1
 		}
 
 		build_cost_resources = {
@@ -71,9 +57,9 @@ apcr_ammo = {
 		}
 				
 		multiply_stats = {
-			ap_attack = 0.075
-			hard_attack = -0.04
-			build_cost_ic = 0.02
+			ap_attack = 0.15
+			hard_attack = -0.075
+			build_cost_ic = 0.1
 		}
 
 		build_cost_resources = {
@@ -92,9 +78,9 @@ apcr_ammo = {
 		}
 				
 		multiply_stats = {
-			ap_attack = 0.15
-			hard_attack = -0.02
-			build_cost_ic = 0.02
+			ap_attack = 0.25
+			hard_attack = -0.05
+			build_cost_ic = 0.1
 		}
 
 		build_cost_resources = {
@@ -112,10 +98,13 @@ apcr_ammo = {
 		
 		multiply_stats = {
 			hard_attack = 0.09
-			build_cost_ic = 0.05
+			build_cost_ic = 0.15
 		}
 		add_stats = {
 		reliability = -0.05		
+		}
+		build_cost_resources = {
+			tungsten = 1
 		}
 
 	}	
@@ -126,13 +115,18 @@ apcr_ammo = {
 		forbid_equipment_type = {
 			anti_air
 			}
+		add_stats = {
+					build_cost_ic = 0.75
+		}
 		
 		multiply_stats = {
 			hard_attack = 0.125
-			build_cost_ic = 0.05
 		}
 		add_stats = {
 		reliability = -0.05		
+		}
+		build_cost_resources = {
+			tungsten = 1
 		}
 
 	}
@@ -150,9 +144,12 @@ apcr_ammo = {
 		
 		multiply_stats = {
 			soft_attack = 0.08
-			build_cost_ic = 0.05
+			build_cost_ic = 0.15
 		}
 
+		build_cost_resources = {
+		tungsten = 1
+		}
 	}
 	hesh_ammo_2 = {
 		abbreviation = "hsh"
@@ -162,12 +159,16 @@ apcr_ammo = {
 			anti_air
 			}
 		add_stats = {
-		reliability = -0.1		
+		reliability = -0.1	
+		build_cost_ic = 1.25		
 		}
 		
 		multiply_stats = {
 			soft_attack = 0.14
-			build_cost_ic = 0.05
+		}
+
+		build_cost_resources = {
+		tungsten = 1
 		}
 	}
 
@@ -183,7 +184,11 @@ apcr_ammo = {
 		}
 		
 		multiply_stats = {
-			hard_attack = 0.15
+			hard_attack = 0.02
+		}
+
+		build_cost_resources = {
+		tungsten = 1
 		}
 	}
 
@@ -196,17 +201,19 @@ apcr_ammo = {
 			}
 		add_stats = {
 		reliability = -0.05		
+		build_cost_ic = 1.25
 		}
 		
 		multiply_stats = {
-			hard_attack = 0.1
-			ap_attack = 0.2
-			build_cost_ic = 0.05
+			hard_attack = 0.075
 		}
 		add_stats = {
 		reliability = -0.07	
 		}
 
+		build_cost_resources = {
+		tungsten = 1
+		}
 	}
 
 	HEAT_ammo = {
@@ -216,14 +223,15 @@ apcr_ammo = {
 		forbid_equipment_type = {
 			anti_air
 			}
-			add_stats = {
-		reliability = -0.05		
-		}
+		
 		multiply_stats = {
-			hard_attack = 0.055
-			soft_attack = 0.055
-			build_cost_ic = 0.05
+			hard_attack = 0.05
+			soft_attack = 0.05
+			build_cost_ic = 0.1
 			}
 
+		build_cost_resources = {
+		tungsten = 1
+		}
 	}
 	}

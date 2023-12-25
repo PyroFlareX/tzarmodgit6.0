@@ -154,6 +154,9 @@ technology_folders = {
 		# 	has_dlc = "No Step Back"
 		# }
 	}
+	artillery_folder = {
+		ledger = army
+	}
 	air_techs_folder = {
 		ledger = air
 		available = {

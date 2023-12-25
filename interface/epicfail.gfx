@@ -10,31 +10,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_sloped_armor_zwei.dds"
 		legacy_lazy_load = no
 	}
-	spriteType = {
-		name = "GFX_EMI_ap_regular"
-		textureFile = "gfx/interface/equipmentdesigner/regular_ap.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_aa_ammo"
-		textureFile = "gfx/interface/equipmentdesigner/aa_ammo1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_aa_ammo_2"
-		textureFile = "gfx/interface/equipmentdesigner/aa_ammo2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_LRP_ammo"
-		textureFile = "gfx/interface/equipmentdesigner/apdfs.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_HEAT_ammo"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heat.dds"
-		legacy_lazy_load = no
-	}
 	SpriteType = {
 		name = "GFX_sniper_rifle_medium"
 		texturefile = "gfx/interface/technologies/tech_sniper_rifle_01.dds"
@@ -267,7 +242,7 @@ spriteTypes = {
 	
 	SpriteType = {
         name = "GFX_new_tank_guns_medium"
-        texturefile = "gfx/interface/small_gun.dds"
+        texturefile = "gfx/interface/equipmentdesigner/small_gun.dds"
 	} 		
 	
 	SpriteType = {

@@ -376,6 +376,8 @@ generic_mobile_tank_organization = {
 		relative_position_id = generic_mio_trait_improved_boogies
 
 		all_parents = { generic_mio_trait_improved_boogies }
+
+		mutually_exclusive = { generic_mio_reduced_fuel_usage }
 		
 		equipment_bonus = {
 			maximum_speed = 0.05
@@ -392,6 +394,8 @@ generic_mobile_tank_organization = {
 
 		all_parents = { generic_mio_trait_improved_boogies }
 
+		mutually_exclusive = { generic_mio_engine_optimization }
+		
 		equipment_bonus = {
 			fuel_consumption = -0.05
 		}
@@ -437,6 +441,7 @@ generic_mobile_tank_organization = {
 
 		all_parents = { generic_mio_sloping_armor }
 
+		mutually_exclusive = { generic_mio_armor_hardening_process }
 		
 		production_bonus = {
 			production_resource_penalty_factor = -0.1
@@ -453,6 +458,7 @@ generic_mobile_tank_organization = {
 
 		all_parents = { generic_mio_sloping_armor }
 
+		mutually_exclusive = { generic_mio_lighter_materials }
 		
 		equipment_bonus = {
 			armor_value = 0.05
@@ -743,6 +749,22 @@ generic_heavy_tank_organization = {
 	}
 
 	trait = {
+		token = generic_mio_trait_fire_extinguishers
+		name = generic_mio_trait_fire_extinguishers
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_quality
+
+		position = { x=0 y=4 }
+		relative_position_id = generic_mio_trait_wide_tracks
+
+		all_parents = { generic_mio_trait_wide_tracks }
+		
+		equipment_bonus = {
+			reliability = 0.05
+			breakthrough = 0.02
+		}
+	}
+
+	trait = {
 		token = generic_mio_trait_one_piece_hull_side_coverings
 		name = generic_mio_trait_one_piece_hull_side_coverings
 		icon = GFX_generic_mio_department_icon_tank_heavy_tank_technology
@@ -771,6 +793,22 @@ generic_heavy_tank_organization = {
 	}
 
 	trait = {
+		token = generic_mio_trait_improved_engine_output
+		name = generic_mio_trait_improved_engine_output
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+
+		position = { x=0 y=2 }
+		relative_position_id = generic_mio_trait_simplified_transmission_system
+
+		all_parents = { generic_mio_trait_simplified_transmission_system }
+		
+		equipment_bonus = {
+			maximum_speed = 0.05
+			fuel_consumption = -0.05
+		}
+	}
+
+	trait = {
 		token = generic_mio_trait_sloping_armor
 		name = generic_mio_trait_sloping_armor
 		icon = GFX_generic_mio_department_icon_tank_general_armor
@@ -786,7 +824,39 @@ generic_heavy_tank_organization = {
 		}
 	}
 
+	trait = {
+		token = generic_mio_trait_improved_crew_ergonomics
+		name = generic_mio_trait_improved_crew_ergonomics
+		icon = GFX_generic_mio_trait_icon_breakthrough
 
+		position = { x=-1 y=2 }
+		relative_position_id = generic_mio_trait_sloping_armor
+
+		all_parents = { generic_mio_trait_sloping_armor }
+
+		mutually_exclusive = { generic_mio_trait_reinforced_construction }
+		
+		equipment_bonus = {
+			breakthrough = 0.05
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_reinforced_construction
+		name = generic_mio_trait_reinforced_construction
+		icon = GFX_generic_mio_trait_icon_armor_value
+
+		position = { x=1 y=2 }
+		relative_position_id = generic_mio_trait_sloping_armor
+
+		all_parents = { generic_mio_trait_sloping_armor }
+
+		mutually_exclusive = { generic_mio_trait_improved_crew_ergonomics }
+		
+		equipment_bonus = {
+			armor_value = 0.05
+		}
+	}
 
 	trait = {
 		token = generic_mio_trait_fully_cast_turret

@@ -65,7 +65,6 @@ on_startup = {
 			set_technology = {
 				iw_medium_airframe = 1
 				iw_large_airframe = 1
-				armored_car1
 				popup = no
 			}
 			add_timed_idea = {

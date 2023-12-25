@@ -67,16 +67,6 @@ guiTypes = {
 				}
 
 			}
-			@fixed_btn_mod_col_0 = 1
-			@fixed_btn_mod_col_1 = 74
-			@fixed_btn_mod_col_2 = 147
-			@fixed_btn_mod_col_3 = 220
-			@fixed_btn_mod_col_4 = 293
-			@fixed_btn_mod_col_5 = 366
-			@fixed_btn_mod_col_6 = 439
-
-			@fixed_btn_mod_row_0 = 1
-			@fixed_btn_mod_row_1 = 300
 
 			################# MODULE SLOT: Special #################
 			containerWindowType = {
@@ -120,22 +110,6 @@ guiTypes = {
 				size = { width=100% height=100% }
 
 				#### MODULE: Todo ####
-			}
-			positionType = {
-				name = "pos_custom_module_slot_window_9"
-				position = { x=@fixed_btn_mod_col_0 y=50 }
-			}
-			positionType = {
-				name = "pos_custom_module_slot_window_10"
-				position = { x=@fixed_btn_mod_col_0 y=95 }
-			}
-			positionType = {
-				name = "pos_custom_module_slot_window_11"
-				position = { x=@fixed_btn_mod_col_1 y=50 }
-			}
-			positionType = {
-				name = "pos_custom_module_slot_window_12"
-				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_1 }
 			}
 
 			################# MODULE SLOT: Suspension #################

@@ -764,6 +764,40 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = tib5.2
+	title = pol_cap.1.t
+	desc = pol_cap.1.d
+	picture = GFX_report_event_hol_cabinet_de_geer
+	hidden = yes
+	trigger = {
+		date = 1937.6.6
+		}
+	fire_only_once = yes
+	immediate = {
+		news_event = { id = news.813 }
+			every_country = {
+				limit = {
+					NOT = {
+						TAG = SWE
+						TAG = CHI
+						TAG = IRA
+					}
+				}
+				
+				add_tech_bonus = {
+					name = GER_soviet_treaty
+					bonus = 1.5
+					uses = 2
+					technology = shit_guns
+					technology = medium_guns2
+					technology = medium_guns3
+					technology = heavy_guns3
+					technology = heavy_guns2
+					}
+			}
+		}
+	}
 
 add_namespace = tib6
 country_event = {
