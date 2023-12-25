@@ -764,6 +764,8 @@ equipments = {
 			special_type_slot_12 = semi_flat_armor
 			armor_type_slot = tank_welded_armor
 			engine_type_slot = tank_gasoline_engine
+			##special_type_slot_1 = tank_radio_2
+			#special_type_slot_2 = easy_maintenance
 			special_type_slot_3 = extra_ammo_storage
 			
 		}
