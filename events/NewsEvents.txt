@@ -3,6 +3,21 @@
 ###########################
 
 add_namespace = news
+#anglo-afghan war
+news_event = {
+	id = news.1005
+	title = news.1005.t
+	desc = news.1005.d
+	picture = GFX_news_event_072
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "news.1005.a"
+	}
+}
+#finland friendship war
 news_event = {
 	id = news.1004
 	title = news.1004.t

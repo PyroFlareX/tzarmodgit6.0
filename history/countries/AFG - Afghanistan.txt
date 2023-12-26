@@ -6,17 +6,26 @@ if = {
 			has_dlc = "No Step Back"
 		}
 	}
-	set_oob = "AFG_1936"
+	set_oob = "AFG_1936bt"
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	set_oob = "AFG_1936_nsb"
+	set_oob = "AFG_1936bt"
 }
 
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	interwar_artillery = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
 }
 if = {
 	limit = {

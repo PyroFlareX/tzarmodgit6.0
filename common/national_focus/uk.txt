@@ -1969,7 +1969,52 @@ focus_tree = {
 		}
 		}
 	}
+	
+	
+	focus = {
+		id = uk_burma_focus
+		prerequisite = { focus = uk_asia_focus } 
+		available = {
+			CHI = { 
+				has_war_with = JAP 
+				NOT = { has_war_with = ENG }
+			}
+		}
 
+		bypass = {
+			CHI = { exists = no }
+		}
+
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 1
+		relative_position_id = uk_asia_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+			
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT}
+		completion_reward = {
+			#send_equipment = { equipment = small_plane_airframe amount = 50 target = CHI }
+			CHI = {
+				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
+				country_event = britain.4
+				add_offsite_building = { type = arms_factory level = 5 }
+				add_equipment_to_stockpile = {
+					producer = ENG
+					type = infantry_equipment_0
+					amount = 20000
+                }
+			}
+		}
+	}
+	
 	focus = {
 		id = uk_sudan_focus
 		prerequisite = { focus = ENG_global_defense }	
@@ -3165,6 +3210,7 @@ technology = improved_medium_airframe
 				}
 				news_event = { id = news.411 days = 0 }
 				load_oob = ENG_IRAN
+			set_global_flag = iran_front_clown
 		}
 	}
 

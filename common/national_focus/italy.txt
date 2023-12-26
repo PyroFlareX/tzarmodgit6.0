@@ -7371,10 +7371,13 @@ completion_reward = {
 			# Adding factories and resetting state level
 			############################################
 
-			ITA = { annex_country = { target = GRE transfer_troops = no } }
+			#ITA = { annex_country = { target = GRE transfer_troops = no } }
 			ITA = {
 				transfer_state = 802 transfer_state = 105 transfer_state = 853
 				transfer_state = 108 transfer_state = 107
+			
+				transfer_state = 731 transfer_state = 185 transfer_state = 47
+				transfer_state = 186 transfer_state = 187
 			}
 			GER = {
 				transfer_state = 102
@@ -7397,6 +7400,9 @@ completion_reward = {
 			108 = { set_compliance = 30 }
 			185 = { set_compliance = 30 }
 			187 = { set_compliance = 30 }
+			ENG = {
+				add_to_faction = GRE
+			}
 		}
 	}
 

@@ -348,6 +348,21 @@ country_event = {
 	
 }
 
+# AFGHAN AUSTIMO WARNING
+country_event = { 
+	id = srevents.15
+	title = srevents.15.t
+	desc = srevents.15.d 
+	picture = GFX_report_event_tur_machine_gunners
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.15.a 
+
+	}
+	
+}
 ###########################################################################3
 # Russian Mud Events #
 country_event = {

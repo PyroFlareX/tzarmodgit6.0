@@ -7,7 +7,7 @@ state={
 	state_category = town
 	
 	resources={
-		tungsten=3 # was: 3
+		tungsten=24 # was: 3
 	}
 	history={
 		owner = AFG
@@ -22,7 +22,7 @@ state={
 		victory_points = {
 			12248 1
 		}
-		add_core_of = SWE
+		add_core_of = AFG
 	}
 
 	provinces={

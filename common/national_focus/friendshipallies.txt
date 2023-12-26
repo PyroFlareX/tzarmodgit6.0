@@ -257,7 +257,12 @@ joint_focus = {
 		}
 
 		completion_reward_joint_originator = {
-			add_offsite_building = { type = industrial_complex level = 1 }
+			SWI = {		
+				become_exiled_in = {
+					target = ROOT
+					legitimacy = 70
+				}
+			}
 		}
 
 		completion_reward_joint_member = {
@@ -793,7 +798,12 @@ joint_focus = {
 		}
 
 		completion_reward_joint_originator = {
-			add_offsite_building = { type = dockyard level = 1 }
+			NOR = {		
+				become_exiled_in = {
+					target = ROOT
+					legitimacy = 70
+				}
+			}
 		}
 
 		completion_reward_joint_member = {
@@ -1188,7 +1198,7 @@ joint_focus = {
 		}
 
 		available = {
-			
+			GRE = { has_capitulated = yes }
 		}
 		
 		bypass = {
@@ -1208,7 +1218,15 @@ joint_focus = {
 		}
 
 		completion_reward_joint_originator = {
-			add_offsite_building = { type = arms_factory level = 1 }
+			#ENG = {
+			#	add_to_faction = GRE
+			#}
+			GRE = {		
+				become_exiled_in = {
+					target = ROOT
+					legitimacy = 70
+				}
+			}
 		}
 
 		completion_reward_joint_member = {

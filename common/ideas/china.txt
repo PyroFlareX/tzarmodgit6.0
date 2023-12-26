@@ -23,7 +23,7 @@ ideas = {
 			}
 		}
 	 	
-CHI_sacred_war = {
+	CHI_sacred_war = {
 
 			name = "The"
 
@@ -43,6 +43,49 @@ CHI_sacred_war = {
 				cas_damage_reduction = 0.7
 			}
 		}
-	}
+	
 
+		CHI_eight = {
+
+			name = "8"
+
+			picture = chi_war_of_resistance2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				militia_attack_factor = 0.15
+				surrender_limit = 0.70
+			}
+		}
+	
+		CHI_years = {
+
+			name = "Years"
+
+			picture = chi_war_of_resistance2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.15
+			}
+		}
+	}
 }

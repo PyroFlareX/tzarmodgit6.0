@@ -193,7 +193,7 @@ joint_focus = {
 		#mutually_exclusive = { focus =  }
 		dynamic = yes 
 		
-		x = -2
+		x = -3
 		y = 1
 		
 		relative_position_id = AXIS_cum
@@ -247,7 +247,7 @@ joint_focus = {
 		#mutually_exclusive = { focus =  }
 		dynamic = yes 
 		
-		x = 1
+		x = 2
 		y = 1
 		
 		relative_position_id = AXIS_global_fascism
@@ -441,13 +441,143 @@ joint_focus = {
 #}
 
 joint_focus = {
+		id = AXIS_anglo_afghan
+		icon = GFX_focus_generic_befriend_afghanistan
+		prerequisite = { focus = AXIS_global_fascism }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 0
+		y = 1
+		
+		relative_position_id = AXIS_global_fascism
+
+		cost = 6
+
+		ai_will_do = {
+			#factor = 1
+		}
+
+		joint_trigger = {
+  			
+		}
+		
+		select_effect = {
+			RAJ = {
+				country_event = {id = srevents.15 days = 1 }
+			}
+			ENG = {
+				country_event = {id = srevents.15 days = 1 }
+			}
+		}
+		
+		available = {
+			has_global_flag = iran_front_clown
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			442 = { add_claim_by = AFG }
+			GER = {
+				add_to_faction = AFG
+			}
+			news_event = { hours = 1 id = news.1005 }
+			if = {
+				limit = {
+					GER = {
+						has_completed_focus = GER_bilateral_trade
+					}
+				}
+				AFG = {
+					division_template = {
+						name = "German Trained Royal Guard"
+
+						division_names_group = AFG_ARM_01
+
+							regiments = {
+								mountaineers = { x = 0 y = 0 }
+								mountaineers = { x = 0 y = 1 }
+								mountaineers = { x = 0 y = 2 }
+								mountaineers = { x = 0 y = 3 }
+								mountaineers = { x = 0 y = 4 }
+								mountaineers = { x = 1 y = 0 }
+								mountaineers = { x = 1 y = 1 }
+								mountaineers = { x = 1 y = 2 }
+								mountaineers = { x = 1 y = 3 }
+								mountaineers = { x = 1 y = 4 }
+								mountaineers = {x = 2 y = 0 }
+								mountaineers = { x = 2 y = 1 }
+								mountaineers = { x = 2 y = 2 }
+								artillery_brigade = { x = 3 y = 0 }
+								artillery_brigade = { x = 3 y = 1 }
+								anti_air_brigade = { x = 3 y = 2 }
+								artillery_brigade = { x = 4 y = 0 }
+								artillery_brigade = { x = 4 y = 1 }
+							}
+							support = {
+								recon = { x = 0 y = 0 }
+								engineer = { x = 0 y = 1 }
+								artillery = { x = 0 y = 2 }
+								anti_air = { x = 0 y = 3 }
+								anti_tank = { x = 0 y = 4 }
+								signal_company = { x = 0 y = 5}
+								logistics_company = { x = 0 y =6 }
+							}
+	
+								priority = 2
+						}
+						random_owned_controlled_state = {
+							prioritize = { 267 }
+							create_unit = {
+								division = "name = \"German Trained Royal Guard\" division_template = \"German Trained Royal Guard\" start_experience_factor = 1.00" 
+								owner = AFG
+							}	
+							create_unit = {
+								division = "name = \"German Trained Royal Guard\" division_template = \"German Trained Royal Guard\" start_experience_factor = 1.00" 
+								owner = AFG
+							}
+							create_unit = {
+								division = "name = \"German Trained Royal Guard\" division_template = \"German Trained Royal Guard\" start_experience_factor = 1.00" 
+								owner = AFG
+							}
+							create_unit = {
+								division = "name = \"German Trained Royal Guard\" division_template = \"German Trained Royal Guard\" start_experience_factor = 1.00" 
+								owner = AFG
+							}
+						}
+				}
+			}
+		
+		}
+
+		completion_reward_joint_member = {
+			
+		}
+}
+
+joint_focus = {
 		id = AXIS_support_goldensquare
 		icon = GFX_focus_TUR_support_the_golden_square
 		prerequisite = { focus = AXIS_global_fascism }
 		mutually_exclusive = { focus =  }
 		dynamic = yes 
 		
-		x = -1
+		x = -2
 		y = 1
 		
 		relative_position_id = AXIS_global_fascism
@@ -513,6 +643,114 @@ joint_focus = {
 			
 		}
 }
+
+joint_focus = {
+		id = AXIS_sword_islam
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = AXIS_support_goldensquare focus = AXIS_anglo_afghan }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 1
+		y = 1
+		
+		relative_position_id = AXIS_support_goldensquare
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			IRQ = {
+				add_ideas = AXIS_sword_of_islam_idea
+			}
+			
+			AFG = {
+				add_ideas = AXIS_sword_of_islam_idea
+			}
+		}
+
+		completion_reward_joint_member = {
+			
+		}
+}
+
+#joint_focus = {
+#		id = AXIS_azad_hind_fauj
+#		icon = GFX_focus_RAJ_seek_help_from_germany
+#		prerequisite = { focus = AXIS_global_fascism }
+#		#mutually_exclusive = { focus =  }
+#		dynamic = yes 
+		
+#		x = 1
+#		y = 2
+		
+#		relative_position_id = AXIS_global_fascism
+
+#		cost = 5
+
+#		ai_will_do = {
+#			factor = -100
+#		}
+
+#		joint_trigger = {
+  			
+#		}
+
+#		available = {
+			
+#		}
+		
+#		bypass = {
+
+#		}
+
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+
+#		complete_tooltip = {
+
+#		}
+
+#		completion_reward = {
+			
+#		}
+
+#		completion_reward_joint_originator = {
+		
+#		}
+
+#		completion_reward_joint_member = {
+			
+#		}
+#}
 
 joint_focus = {
 		id = AXIS_anti_bosh_war

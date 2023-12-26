@@ -211,6 +211,7 @@
  RAJ_independence_fevor_desc:0 "Independence Fevor"
  Raj_Mysore_lancers:0 "Mysore Lancers"
  Raj_Mysore_lancers_desc:0 "The Rajas Lance calavry serves an empire in need again."
+ RAJ_beast_of_burden:0 "Beasts of Burden"
  
  BUL_national_industry:0 "Bulgarian National Industry"
  BUL_national_industry_desc:0 "this idea seems kinda OP might actually nerf."
@@ -241,4 +242,10 @@
  HUN_hussar_legacy_desc:0 ""
  HUN_forced_labor:0 "Forced Labor Service"
  HUN_forced_labor_desc:0 ""
+ 
+ AXIS_sword_of_islam_idea:0 "Sword Of Islam"
+ AXIS_sword_of_islam_idea_desc:0 ""
+ GER_swiss_gold_exchange:0 "Swiss Gold Bank"
+ GER_swiss_gold_exchange_desc:0 ""
+ 
  

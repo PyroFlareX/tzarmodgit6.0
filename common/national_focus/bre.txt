@@ -524,7 +524,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 25
+			army_experience = 100
 		}
 	}
 
@@ -735,7 +735,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 75
+			army_experience = 100
 			
 			custom_effect_tooltip = "Get 3 Powerful 5 Skill Commanders"
 				add_corps_commander_role = {
@@ -776,7 +776,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -823,7 +823,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 1
 
 		available = {
 
@@ -1371,7 +1371,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 25
+			army_experience = 75
 			custom_effect_tooltip = AST_new_general_tt
 			hidden_effect = {
 				create_corps_commander = {
@@ -2007,7 +2007,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 4
+		cost = 1
 
 		available = {
 
@@ -2028,10 +2028,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 10
 					instant_build = yes
 				}
 				set_state_flag = RAJ_expand_mazagon_dock
@@ -2047,7 +2047,7 @@ focus_tree = {
 			429 = {
 				add_resource = {
 					type = steel
-					amount = 8
+					amount = 20
 				}		
 			}
 		}
@@ -2115,7 +2115,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 4
+		cost = 1
 
 		available = {
 
@@ -2127,10 +2127,10 @@ focus_tree = {
 
 		completion_reward = {
 			426 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 6
 					instant_build = yes
 				}
 				
@@ -2138,7 +2138,7 @@ focus_tree = {
 				426 = {
 					add_resource = {
 						type = steel
-						amount = 8
+						amount = 20
 					}		
 				}	
 		}

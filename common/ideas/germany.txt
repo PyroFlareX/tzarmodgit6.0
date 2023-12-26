@@ -242,6 +242,24 @@ ideas = {
 		}
 	}
 	
+	GER_swiss_gold_exchange = {
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		picture = SWE_land_air_warfare
+		
+		modifier = {
+			consumer_goods_expected_value = -0.05
+		}
+	}
+	
 	hilfswilliger = { 
 		
 		

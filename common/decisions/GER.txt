@@ -649,6 +649,7 @@ operations = {
 					transfer_state = 410
 					load_oob = ENG_IRAN
 				}
+				set_global_flag = iran_front_clown
 			}
 		
 		}

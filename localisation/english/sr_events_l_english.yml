@@ -215,3 +215,11 @@
  news.1004.t:0 "Finland's Continuation War"
  news.1004.d:0 "Together with their Finnish comrades in arms the heroes from Narvik stand at the edge of the Arctic Ocean. German troops under command of the conqueror of Norway, and the Finnish freedom fighters under their Marshal's command, are protecting Finnish territory. Dictator of the German Reich proclaimed today in a speech. The USSR has responded with a bombing raid on Helsinki and the Finnish Parliament has issued another defensive war againist the Soviet Union."
  news.1004.a:0 "NEVAR LOSE!!!"
+ 
+ news.1005.t:0 "4th Anglo-Afghan War"
+ news.1005.d:0 "With Axis forces pushing towards the Indian sub-continent. The neighbouring Kingdom of Afghanistan took advantage of this as an opportunity to seize Peshawar and Quetta, both border regions of the British Raj. The king hopes to bring new lands to the crown and has aligned the country with the Axis powers."
+ news.1005.a:0 "Fourth?!"
+ 
+ srevents.15.t:0 "Afghan troop movement on the border"
+ srevents.15.d:0 "Local garrison forces in Peshawar have spotted Afghan troops gathering near the border following a minor border clash. This clash may have been a probing attack."
+ srevents.15.a:0 "Reinforce the area Immediately!"
