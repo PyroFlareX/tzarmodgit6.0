@@ -163,6 +163,124 @@ units = {
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1182 #Asahigawa
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1182 #Asahigawa
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1182 #Asahigawa
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1182 #Asahigawa
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1182 #Asahigawa
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1182 #Asahigawa
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1182 #Asahigawa
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1182 #Asahigawa
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1182 #Asahigawa
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1182 #Asahigawa
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1182 #Asahigawa
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1182 #Asahigawa
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = { # "7 'Kuma' Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1182 #Asahigawa
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	
 
 	#Chuo Homengun - East Japan Army
 	division = { # "2 'Yu' Hohei Shidan"

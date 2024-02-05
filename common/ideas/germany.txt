@@ -1339,8 +1339,8 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.175
+				defense_bonus_against = 0.175
 			}
 			modifier = {
 				supply_consumption_factor = -0.05
@@ -1351,7 +1351,7 @@ ideas = {
 				army_org_factor = 0.05
 				land_reinforce_rate = 0.05
 				army_infantry_defence_factor = 0.12
-				cas_damage_reduction = 0.1
+				cas_damage_reduction = 0.25
 				dig_in_speed_factor = 0.30
 				production_speed_supply_node_factor = 0.25
 				production_speed_rail_way_factor = 0.25

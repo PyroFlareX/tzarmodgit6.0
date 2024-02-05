@@ -1413,9 +1413,8 @@ ideas = {
 			picture = generic_war_preparation
 			
 			modifier = {
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.1
 				political_power_gain = -0.1
-				production_speed_arms_factory_factor = 0.05
 			}
 		}	
 		true_american_capitalism = {

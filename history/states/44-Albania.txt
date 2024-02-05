@@ -39,6 +39,7 @@ state = {
 
 		}
 		add_core_of = ALB
+		add_core_of = ITA
 		1939.4.12 = {
 			owner = ITA
 			controller = ITA

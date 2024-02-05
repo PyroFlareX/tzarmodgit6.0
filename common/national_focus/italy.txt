@@ -6179,7 +6179,7 @@ focus = {
 		y = -1
 		#relative_position_id = ITA_setting_course #Better to use the other one for hiding branches
 		relative_position_id = ITA_towards_a_greater_italy
-		cost = 5
+		cost = 1
 		available = {
 			679 = {is_controlled_by_ROOT_or_ally = yes}
 			447 = {is_controlled_by_ROOT_or_ally = yes}
@@ -6211,10 +6211,10 @@ focus = {
 
 
 			159 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 8
 					instant_build = yes
 				}
 			}
