@@ -1344,7 +1344,7 @@ ideas = {
 			}
 			modifier = {
 				supply_consumption_factor = -0.05
-				army_strength_factor = 0.05
+				army_strength_factor = 0.15
 				production_speed_air_base_factor=0.20
 				production_speed_infrastructure_factor=0.20
 				army_morale_factor = 0.1
@@ -1418,7 +1418,7 @@ ideas = {
 			}
 			modifier = {
 				supply_consumption_factor = -0.075
-				army_strength_factor = 0.2
+				army_strength_factor = 0.35
 				production_speed_air_base_factor=0.20
 				production_speed_infrastructure_factor=0.20
 				army_morale_factor = 0.1

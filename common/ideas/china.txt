@@ -40,7 +40,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				cas_damage_reduction = 0.7
+				cas_damage_reduction = 0.5
 			}
 		}
 	
