@@ -161,6 +161,59 @@ joint_focus = {
 }
 
 joint_focus = {
+		id = ALLIED_market
+		icon = GFX_focus_research
+		prerequisite = { focus = ALLIED_cum }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 2
+		y = 1
+		
+		relative_position_id = ALLIED_cum
+		text = "Import Exiled Scientists"
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_research_slot = 1
+			add_ideas = { ENG_colonial_elite }
+		}
+
+		completion_reward_joint_member = {
+				add_ideas = { ENG_colonial_elite }
+		}
+}
+
+joint_focus = {
 		id = governments_in_exile_aid
 		icon = GFX_goal_continuous_increase_nu
 		prerequisite = { focus = ALLIED_cum }
