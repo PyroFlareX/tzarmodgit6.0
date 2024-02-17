@@ -20,7 +20,7 @@ ideas = {
 			}
 	}
 	no_fighter_cheating = {
-		name = "No fighter cheating"
+		name = ""
 		picture = YUG_orthodox_church_support
 			allowed = {
 				always = no
@@ -31,18 +31,6 @@ ideas = {
 			}
 			
 			removal_cost = -1
-			
-			equipment_bonus = {
-				small_plane_airframe = {
-					build_cost_ic = 0.5 instant = yes
-				}
-				cv_small_plane_airframe = {
-					build_cost_ic = 0.5 instant = yes
-				}
-				cv_small_plane_cas_airframe = {
-					build_cost_ic = 0.5 instant = yes
-				}
-			}
 			}
 	preparing_ger = {
 		name = "Preparations"

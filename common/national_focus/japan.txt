@@ -254,7 +254,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_intervene_in_china
 
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 3
@@ -265,7 +265,12 @@ focus_tree = {
 		}
 
 		available = {
+		OR = {
+			CHI = {
+			surrender_progress > 0.78
+			}
 			date > 1940.01.01
+		}
 		}
 
 		bypass = {
