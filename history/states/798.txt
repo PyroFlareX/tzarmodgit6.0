@@ -1,7 +1,6 @@
-
 state={
-	id=514
-	name="STATE_514"
+	id=798
+	name="STATE_897"
 	impassable = yes
 	history={
 		owner = FRA
@@ -13,10 +12,11 @@ state={
 	}
 
 	provinces={
-		1043 
+		10725 
 	}
 	manpower=207733
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=0.000
 }
+

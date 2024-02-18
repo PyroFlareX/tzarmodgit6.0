@@ -78,6 +78,7 @@ set_global_flag = axis_lost
 	848 = {transfer_state_to = AUS}
 	665 = {transfer_state_to = FRF}
 	458 = {transfer_state_to = FRF}
+	798 = {transfer_state_to = FRF}
 	291 = {transfer_state_to = ENG}
 	77 = {transfer_state_to = BUL}
 	676 = {transfer_state_to = ENG}
@@ -280,6 +281,7 @@ axis_defeat = {
 	848 = {transfer_state_to = AUS}
 	665 = {transfer_state_to = FRF}
 	458 = {transfer_state_to = FRF}
+	798 = {transfer_state_to = FRF}
 	291 = {transfer_state_to = ENG}
 	77 = {transfer_state_to = BUL}
 	676 = {transfer_state_to = ENG}
