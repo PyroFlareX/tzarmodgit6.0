@@ -3,7 +3,41 @@
 ###########################
 
 add_namespace = news
+news_event = {
+	id = news.1006
+	title = news.1006.t
+	desc = news.1006.d
+	picture = GFX_news_event_stalin_meeting
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "news.1006.a"
+		trigger = {
+			has_government = fascism
+		}
+	}
+	option = {
+		name = "The hope is not yet lost!"
+		trigger = {
+
+				has_government = communism
+		}
+	}
+	option = {
+		name = "Is this the end?"
+		trigger = {
+			NOT = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+}
+
 #anglo-afghan war
+
 news_event = {
 	id = news.1005
 	title = news.1005.t
@@ -16,7 +50,7 @@ news_event = {
 	option = {
 		name = "news.1005.a"
 	}
-}
+}s
 #finland friendship war
 news_event = {
 	id = news.1004

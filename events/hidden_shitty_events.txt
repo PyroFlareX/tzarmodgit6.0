@@ -585,6 +585,7 @@ country_event = {
 						traits = {
 						}
 					}
+
 		transfer_state = 575
 		transfer_state = 564
 		transfer_state = 563

@@ -219,6 +219,10 @@
  news.1005.t:0 "4th Anglo-Afghan War"
  news.1005.d:0 "With Axis forces pushing towards the Indian sub-continent. The neighbouring Kingdom of Afghanistan took advantage of this as an opportunity to seize Peshawar and Quetta, both border regions of the British Raj. The king hopes to bring new lands to the crown and has aligned the country with the Axis powers."
  news.1005.a:0 "Fourth?!"
+
+  news.1006.t:0 "Stalin's Demise After Axis Conquest of Moscow"
+ news.1006.d:0 "In a stunning turn of events, the Axis forces have achieved a significant victory by capturing the heart of the Soviet Union—the historic and strategic city of Moscow. The fall of this symbol of Soviet resistance has not only dealt a severe blow to the morale of the Soviet people but has also cast a shadow of uncertainty over the fate of their revered leader, Joseph Stalin.\n\nThe news of Stalin's death in the wake of Moscow's fall has sent shockwaves through the Soviet Union and the global community. The absence of the iron-fisted leader, whose name has been synonymous with Soviet resilience, has plunged the nation into a state of disarray and questions about its future course."
+ news.1006.a:0 "The rotten structure started to crumble."
  
  srevents.15.t:0 "Afghan troop movement on the border"
  srevents.15.d:0 "Local garrison forces in Peshawar have spotted Afghan troops gathering near the border following a minor border clash. This clash may have been a probing attack."

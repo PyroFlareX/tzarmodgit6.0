@@ -72,6 +72,9 @@ on_startup = {
 				days = 1200
 			}
 		}
+		every_country = {
+		add_ideas = tank_nerf
+		}
 			SWE = { anti_cross_faction_trade_all = yes }
 			SWE = { startup_on_actions = yes }
 
