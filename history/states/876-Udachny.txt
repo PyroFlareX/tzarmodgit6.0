@@ -1,7 +1,7 @@
 state = {
 	id = 876 
 	name = "STATE_876" #Udachny
-
+	impassable = yes
 	history = {
 		owner = SOV
 		victory_points = {

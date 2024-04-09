@@ -2,7 +2,7 @@
 state = {
 	id = 637
 	name = "STATE_637" #Kamtka
-
+	impassable = yes
 	history = {
 		owner = SOV
 		buildings = {

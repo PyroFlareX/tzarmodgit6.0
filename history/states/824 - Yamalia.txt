@@ -2,7 +2,7 @@
 state={
 	id=824
 	name="STATE_824"
-
+	impassable = yes
 	history={
 		owner = SOV
 		buildings = {

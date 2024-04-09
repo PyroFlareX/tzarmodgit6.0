@@ -5,7 +5,7 @@ state={
 	resources={
 		oil=13.000
 	}
-
+	impassable = yes
 	history={
 		owner = SOV
 		buildings = {

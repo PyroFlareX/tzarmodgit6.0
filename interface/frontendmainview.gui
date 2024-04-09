@@ -194,11 +194,6 @@ guiTypes = {
 		Orientation = CENTER
 		Origo = center		
 
-		positionType = {
-			name = "subscription_size"
-			position = { x = 320 y = 563 }
-		}
-				
 		background = {
 			name = "Background"		
 			quadTextureSprite ="GFX_tiled_window"
@@ -244,12 +239,6 @@ guiTypes = {
 			maxHeight = 20	
 		}
 
-		positionType = {
-			name = "version_label_subscription_position"
-			position = { x = 35 y = 524 }
-		}
-		
-		
 		ButtonType = {
 			name = "settings_button"
 			position = { x = 16 y = 98 }
@@ -318,24 +307,6 @@ guiTypes = {
 			
 		}
 
-		iconType = {
-			name = "subscription_divider"
-			position = { x = 4 y = 336 }
-			spriteType = "GFX_main_lobby_divider"
-		}
-
-		containerWindowType = {
-			name = "subscription_widget"
-			position = { x = 16 y = 352 }
-			size = { width = 288 height = 108 }
-
-		}
-
-		containerWindowType = {
-			name = "subscription_widget_subscribed"
-			position = { x = 16 y = 352 }
-			size = { width = 288 height = 108 }
-		}
 	}
 	
 	containerWindowType = {
@@ -350,16 +321,6 @@ guiTypes = {
 			position = { x = 0 y = 175 }
 		}
 
-		positionType = {
-			name = "subscription_position"
-			position = { x = -50 y = 109 }
-		}
-
-		positionType = {
-			name = "subscription_position_without_social_gui"
-			position = { x = 0 y = 239 }
-		}
-		
 		containerWindowType = {
 			name = "social_view_interface_window"
 			position = { x = 250 y = 0  }
@@ -404,6 +365,7 @@ guiTypes = {
 				pdx_tooltip = "SOCIAL_NEW_FRIEND"
 			}
 		}
+		
 		ButtonType = {
 			name = "discord_button"
 			position = { x=90 y=-10 }
@@ -413,7 +375,7 @@ guiTypes = {
 			web_link = "https://discord.com/invite/kHjvvfDnbR"
 			scale = 0.3
 		}
-		}
+	}
 
 	## This position needs updated
 	containerWindowType = {

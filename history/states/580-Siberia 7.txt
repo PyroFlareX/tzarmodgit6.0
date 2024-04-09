@@ -2,7 +2,7 @@
 state={
 	id=580
 	name="STATE_580"
-
+	impassable = yes
 	history={
 		victory_points = {
 			1659 1 
