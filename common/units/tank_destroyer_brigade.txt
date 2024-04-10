@@ -26,7 +26,7 @@ sub_units = {
 			light_tank_destroyer_chassis = 45
 		}
 		manpower = 500
-		soft_attack = -0.6
+		soft_attack = -0.2
 		hard_attack = 0
 		max_organisation = 0
 		default_morale = 0.3
@@ -105,7 +105,7 @@ sub_units = {
 			medium_tank_destroyer_chassis = 47
 		}
 		manpower = 500
-		soft_attack = -0.6
+		soft_attack = -0.2
 		hard_attack = 0
 		max_organisation = 0
 		default_morale = 0.3
@@ -186,7 +186,7 @@ sub_units = {
 			heavy_tank_destroyer_chassis = 45
 		}
 		manpower = 500
-		soft_attack = -0.6
+		soft_attack = -0.2
 		hard_attack = 0
 		max_organisation = 0
 		default_morale = 0.3
