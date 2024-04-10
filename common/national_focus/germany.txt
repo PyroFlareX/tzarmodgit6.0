@@ -1298,10 +1298,10 @@ focus_tree = {
 			available = {
 			}
 			completion_reward = {
-				custom_effect_tooltip = "Doing the focus before 1939 will create imbalance and will greatly impact our economy."
+				custom_effect_tooltip = "Doing the focus before 1938 will create imbalance and will greatly impact our economy."
 				if = {
 					limit = {
-						date<1939.1.1
+						date<1938.1.1
 					}
 					GER_economy_down = yes
 				}
@@ -1888,7 +1888,7 @@ focus_tree = {
 		icon = GFX_focus_GER_anschluss2
 		prerequisite = { focus = GER_rhineland }
 
-		available = { date > 1937.6.1 }
+		available = { date > 1936.6.1 }
 
 		cancel_if_invalid = no
 		x = 0

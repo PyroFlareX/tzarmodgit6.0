@@ -1,3 +1,339 @@
+spawn_militia = {
+	FROM = {
+				division_template = {
+					name = "Strelkoviy Batal'on"
+					priority = 0
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						militia = { x = 0 y = 3 }
+						militia = { x = 0 y = 4 }
+
+						militia = { x = 1 y = 0 }
+						militia = { x = 1 y = 1 }
+						militia = { x = 1 y = 2 }
+						militia = { x = 1 y = 3 }
+						militia = { x = 1 y = 4 }
+
+						militia = { x = 2 y = 0 }
+						militia = { x = 2 y = 1 }
+						militia = { x = 2 y = 2 }
+						militia = { x = 2 y = 3 }
+						anti_air_brigade = { x = 2 y = 4 }
+
+						artillery_brigade = { x = 3 y = 0}
+						anti_tank_brigade = { x = 3 y = 1}
+						artillery_brigade = { x = 3 y = 2}
+						artillery_brigade = { x = 3 y = 3}
+					}
+					support = {
+						engineer_company = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						logistics_company  = { x = 0 y = 2 }
+					}
+				}
+				every_state = {
+					limit = {	
+						AND = {
+							is_fully_controlled_by = FROM
+						}
+					}
+					create_unit = {
+						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = FROM
+					}
+					create_unit = {
+						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = FROM
+					}
+				}
+		}
+			}
+sov_begin_civil_war = {
+		UKR = {
+			transfer_state = 259
+			transfer_state = 193
+			transfer_state = 202
+			transfer_state = 203
+			add_state_core = 203
+			add_state_core = 202
+			add_state_core = 193
+			add_state_core = 259
+			
+		}
+		BLR = {
+			transfer_state = 204
+			add_state_core = 204
+		}
+		DON = {
+			transfer_state = 238
+			transfer_state = 234
+			transfer_state = 218
+			add_state_core = 218
+			add_state_core = 238
+			add_state_core = 234
+		}
+		KOM = {
+			transfer_state = 397
+			add_state_core = 397
+		}
+		TRK = {
+			transfer_state = 832
+			transfer_state = 584
+			add_state_core = 584
+			add_state_core = 832
+		}
+		KAZ = {
+			transfer_state = 589
+			
+		}
+		VLA = {
+			transfer_state = 409
+			transfer_state = 408
+			add_state_core = 408
+			add_state_core = 409
+			
+		}
+		CRI = {
+			transfer_state = 137
+			add_state_core = 137
+			
+		}
+		ARM = {
+			add_state_core = 229
+			
+			transfer_state = 229
+		}
+		KAR = {
+			transfer_state = 216
+			transfer_state = 215
+			transfer_state = 213
+			add_state_core = 216
+			add_state_core = 215
+			add_state_core = 213
+			
+		}
+		if = {
+			limit = {check_variable = {SOV_civil_war_points < 15 }}
+			SOV = {
+				start_civil_war = {
+		ideology = communism
+		capital = 219
+		states = {
+			219 195
+		}
+
+		size = 0.75
+		army_ratio = var:temp_centre_army
+		navy_ratio = var:temp_centre_navy
+		air_ratio = var:temp_centre_air
+
+		keep_political_leader = yes
+		keep_unit_leaders_trigger = {
+			IF = {
+				limit = { SOV_is_left_opposition = yes }
+				has_trait = trait_SOV_trotskyist
+			}
+			ELSE_IF = {
+				limit = { SOV_is_right_opposition = yes }
+				has_trait = trait_SOV_bukharinist
+			}
+			ELSE_IF = {
+				limit = { SOV_is_exiles = yes }
+				has_trait = trait_SOV_monarchist_sympathizer
+			}
+		}
+	}
+			}
+			every_country = {
+				limit = {
+					owns_state = 219
+				}
+				transfer_state =253
+				transfer_state =248
+				transfer_state =247
+				transfer_state =217
+				transfer_state =249
+				transfer_state =221
+				transfer_state =578
+			}
+		}
+		if = {
+			limit = {check_variable = {SOV_civil_war_points < 13 }}
+			every_country = {
+				limit = {
+					owns_state = 219
+				}
+				transfer_state =209
+				transfer_state =214
+			}
+		}
+		if = {
+			limit = {check_variable = {SOV_civil_war_points < 7 }}
+			every_country = {
+				limit = {
+					owns_state = 219
+				}
+				transfer_state =253
+				transfer_state =248
+				transfer_state =247
+				transfer_state =217
+				transfer_state =249
+				transfer_state =221
+				transfer_state =578
+			}
+			CRI = {
+				transfer_state = 196
+			}
+			BLR = {
+				transfer_state = 206
+			}
+			KAZ = {
+				transfer_state = 586
+				transfer_state = 881
+			}
+			TAJ = {
+				transfer_state = 732
+				transfer_state = 405	
+			}
+			UKR = {
+				transfer_state = 201
+				transfer_state = 197
+				transfer_state = 192
+				transfer_state = 226
+			}
+			SOV = {
+			declare_war_on = {
+				target = TAJ 
+                type = annex_everything	
+			}
+			}
+			UKR = {
+				declare_war_on = {
+					target = CRI
+					type = annex_everything
+				}
+			}
+		}
+		every_country = {
+			limit = {owns_state = 219}
+			spawn_militia = yes
+			declare_war_on = {
+				target = UKR 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = KAR 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = ARM 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = CRI 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = VLA 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = KOM 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = TRK 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = DON 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = BLR 
+                type = annex_everything	
+			}
+		}
+		SOV = {
+			declare_war_on = {
+				target = UKR 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = KAR 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = ARM 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = CRI 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = VLA 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = KOM 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = TRK 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = DON 
+                type = annex_everything	
+			}
+			declare_war_on = {
+				target = BLR 
+                type = annex_everything	
+			}
+		}
+		UKR = {
+			spawn_militia = yes
+		}
+		BLR = {
+			spawn_militia = yes
+		}
+		CRI = {
+			spawn_militia = yes
+		}
+		DON = {
+			spawn_militia = yes
+		}
+		KAZ = {
+			spawn_militia = yes
+		}
+		TAJ = {
+			spawn_militia = yes
+		}
+		TRK = {
+			spawn_militia = yes
+		}
+		SOV = {
+			spawn_militia = yes
+		}
+		VLA = {
+			spawn_militia = yes
+		}
+		KOM = {
+			spawn_militia = yes
+		}
+		KAR = {
+			spawn_militia = yes
+		}
+		
+		
+		
+		
+	
+}
+
 #####
 ##### PROPAGANDA SYSTEM #####
 #####
