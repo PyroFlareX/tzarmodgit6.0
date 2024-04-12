@@ -121,11 +121,16 @@ continuous_focus_palette = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_country_flag = cheater_1
+						AND = {
+							NOT = {
+								has_country_flag = cheater_2
+							}
+							has_country_flag = cheater_1
+						}
 					}
+					navy_experience = 35
 					set_country_flag = cheater_2
 				}
-				navy_experience = 35
 			}
 		}
 		ai_will_do = {
