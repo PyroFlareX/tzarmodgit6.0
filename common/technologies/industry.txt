@@ -1521,9 +1521,6 @@ technologies = {
 			leads_to_tech = excavation5
 			research_cost_coeff = 1
 		}
-		allow = {
-			date > 1940.6.6
-			}
 		
 		research_cost = 2
 		start_year = 1943

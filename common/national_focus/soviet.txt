@@ -6354,6 +6354,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
+			always = no
 			custom_trigger_tooltip = {
 				tooltip = SOV_no_major_purge_tt		
 				check_variable = { SOV_great_purge_counter < 1 }

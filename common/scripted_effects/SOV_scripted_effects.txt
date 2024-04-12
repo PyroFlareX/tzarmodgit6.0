@@ -88,23 +88,7 @@ sov_begin_civil_war = {
 			transfer_state = 589
 			
 		}
-		VLA = {
-			transfer_state = 409
-			transfer_state = 408
-			add_state_core = 408
-			add_state_core = 409
-			
-		}
-		CRI = {
-			transfer_state = 137
-			add_state_core = 137
-			
-		}
-		ARM = {
-			add_state_core = 229
-			
-			transfer_state = 229
-		}
+		
 		KAR = {
 			transfer_state = 216
 			transfer_state = 215
@@ -160,14 +144,40 @@ sov_begin_civil_war = {
 			}
 		}
 		if = {
-			limit = {check_variable = {SOV_civil_war_points < 13 }}
+			limit = {check_variable = {SOV_civil_war_points < 8 }}
 			every_country = {
 				limit = {
 					owns_state = 219
 				}
 				transfer_state =209
 				transfer_state =214
+				transfer_state =351
+				transfer_state =264
+				transfer_state =263
+				transfer_state =264
+				transfer_state =208
+				transfer_state =400
+				transfer_state =833
+				
+				
 			}
+			VLA = {
+			transfer_state = 409
+			transfer_state = 408
+			add_state_core = 408
+			add_state_core = 409
+			
+		}
+		CRI = {
+			transfer_state = 137
+			add_state_core = 137
+			
+		}
+		ARM = {
+			add_state_core = 229
+			transfer_state = 230
+			transfer_state = 229
+		}
 		}
 		if = {
 			limit = {check_variable = {SOV_civil_war_points < 7 }}
@@ -182,6 +192,8 @@ sov_begin_civil_war = {
 				transfer_state =249
 				transfer_state =221
 				transfer_state =578
+				transfer_state = 403
+				
 			}
 			CRI = {
 				transfer_state = 196
@@ -202,6 +214,13 @@ sov_begin_civil_war = {
 				transfer_state = 197
 				transfer_state = 192
 				transfer_state = 226
+			}
+			VLA = {
+				transfer_state =657
+				transfer_state =560
+				transfer_state =561
+				transfer_state =
+				
 			}
 			SOV = {
 			declare_war_on = {
