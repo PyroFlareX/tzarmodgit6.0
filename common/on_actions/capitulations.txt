@@ -201,16 +201,6 @@ on_actions = {
 				transfer_state = 335
 				transfer_state = 667
 				transfer_state = 668
-							333 = { set_demilitarized_zone = yes }
-							334 = { set_demilitarized_zone = yes }
-							672 = { set_demilitarized_zone = yes }
-							335 = { set_demilitarized_zone = yes }
-							667 = { set_demilitarized_zone = yes }
-							668 = { set_demilitarized_zone = yes }
-							673 = { set_demilitarized_zone = yes }
-							738 = { set_demilitarized_zone = yes }
-							669 = { set_demilitarized_zone = yes }
-							795 = { set_demilitarized_zone = yes }
 					annex_country = {
 						target = HOL
 					

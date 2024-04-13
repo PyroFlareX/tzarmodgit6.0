@@ -1992,6 +1992,16 @@ add_building_construction = {
 			technology = advanced_medium_tank_chassis
 			technology = advanced_heavy_tank_chassis
 		}
+		add_tech_bonus = {
+					name = GER_soviet_treaty
+					bonus = 1.5
+					uses = 2
+					technology = shit_guns
+					technology = medium_guns2
+					technology = medium_guns3
+					technology = heavy_guns3
+					technology = heavy_guns2
+					}
 		
 		}
 	}

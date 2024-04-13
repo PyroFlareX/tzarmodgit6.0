@@ -526,7 +526,6 @@ focus_tree = {
 		declare_war_on = { target = MEX type = annex_everything }
 
 		hidden_effect = {
-			load_oob = "JAP_DEI"
 			USA = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 			if = {
 				limit = {
@@ -541,21 +540,9 @@ focus_tree = {
 					transfer_state = 669
 				}				
 			}
-			JAP = {
-				annex_country = {
-					target = HOL
-					transfer_troops = no 					
-				}
-			}
 			
 		}
-				JAP = {
-					transfer_state = 672
-					transfer_state = 334
-					transfer_state = 335
-					transfer_state = 333
-					transfer_state = 673
-				}
+			
 			}
 		custom_effect_tooltip = tooltip_jap_war
 		country_event = { id = japan.144 }
@@ -2309,6 +2296,16 @@ focus_tree = {
 				technology = advanced_light_tank_chassis
 				technology = improved_medium_tank_chassis				
 			}
+			add_tech_bonus = {
+					name = GER_soviet_treaty
+					bonus = 1.5
+					uses = 2
+					technology = shit_guns
+					technology = medium_guns2
+					technology = medium_guns3
+					technology = heavy_guns3
+					technology = heavy_guns2
+					}
 		}
 	}
 
