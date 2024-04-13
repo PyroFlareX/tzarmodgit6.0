@@ -316,6 +316,7 @@ joint_focus = {
 					legitimacy = 70
 				}
 			}
+			
 		}
 
 		completion_reward_joint_member = {

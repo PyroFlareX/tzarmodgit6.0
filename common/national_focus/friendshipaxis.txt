@@ -496,6 +496,12 @@ joint_focus = {
 			GER = {
 				add_to_faction = AFG
 			}
+			ROOT = {
+				set_autonomy = {
+						target = AFG
+						autonomy_state = autonomy_puppet
+				}
+			}
 			news_event = { hours = 1 id = news.1005 }
 			if = {
 				limit = {
