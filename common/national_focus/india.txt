@@ -1564,513 +1564,7 @@ focus_tree = {
 	######## AIR SECTION #######
 	############################
 
-	
 
-	focus = {
-		id = RAJ_the_smiling_buddha
-		icon = GFX_focus_smiling_buddha
-		prerequisite = { focus = RAJ_institute_of_fundamental_research }
-		x = 0
-		y = 1
-		relative_position_id = RAJ_institute_of_fundamental_research
-
-		cost = 10
-
-
-		available = {
-				compare_autonomy_state > autonomy_colony
-		
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = RAJ_the_smiling_buddha
-				bonus = 1.0
-				uses = 1
-				category = nuclear
-			}
-		}
-	}
-
-
-
-	############################
-	######### INDUSTRY #########
-	############################
-
-	focus = {
-		id = RAJ_great_indian_peninsula_railway
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 26
-		y = 0
-
-		cost = 5
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-			build_railway = {
-			path = { 12137 5055 5040 }
-			}
-			build_railway = {
-			path = { 12137 1377 4299 9973 10751 4516 11792 4544 }
-			}
-			build_railway = {
-			path = { 4516 11792 4544 }
-			}
-			439 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = RAJ_great_indian_peninsula_railway_Inf1
-			}
-			438 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = RAJ_great_indian_peninsula_railway_Inf2
-			}
-			435 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = RAJ_great_indian_peninsula_railway_Inf3
-			}
-		}
-	}
-	
-	focus = {
-		id = RAJ_industrial_expansion
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = RAJ_great_indian_peninsula_railway }
-		x = -4
-		y = 1
-		relative_position_id = RAJ_great_indian_peninsula_railway
-
-		cost = 10
-
-
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			438 = {
-				
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			438 = {
-	
-				
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = RAJ_industrial_expansion_IC
-			}
-		}
-	}
-
-	focus = {
-		id = RAJ_tata_steel
-		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = RAJ_industrial_expansion }
-		x = -1
-		y = 1
-		relative_position_id = RAJ_industrial_expansion
-
-		cost = 5
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			429 = {
-				add_resource = {
-					type = steel
-					amount = 32
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = RAJ_assam_oil
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = RAJ_industrial_expansion }
-		x = 1
-		y = 1
-		relative_position_id = RAJ_industrial_expansion
-
-		cost = 5
-
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			432 = {
-							add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			
-			
-				add_resource = {
-					type = oil
-					amount = 24
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = RAJ_indian_institute_of_science
-		icon = GFX_focus_research
-		prerequisite = { focus = RAJ_tata_steel }
-		prerequisite = { focus = RAJ_assam_oil }
-		x = 0
-		y = 2
-		relative_position_id = RAJ_industrial_expansion
-
-		cost = 10
-
-	
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-
-	focus = {
-		id = RAJ_institute_of_fundamental_research
-		icon = GFX_focus_research
-		prerequisite = { focus = RAJ_indian_institute_of_science }
-		x = 0
-		y = 3
-		relative_position_id = RAJ_industrial_expansion
-
-		cost = 5
-
-	
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			# custom_effect_tooltip = available_theorist
-			# show_ideas_tooltip = RAJ_homi_j_bhabha
-			add_ideas = ENG_colonial_elite
-			# add_tech_bonus = {
-			# 	name = RAJ_institute_of_fundamental_research
-			# 	bonus = 1.0
-			# 	uses = 1
-			# 	category = nuclear
-			# }
-		}
-	}
-	
-	focus = {
-		id = RAJ_empire_industrial_expertise
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = RAJ_institute_of_fundamental_research }
-		x = 2
-		y = 1
-		relative_position_id = RAJ_institute_of_fundamental_research
-
-		cost = 5
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {			
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
-		}
-	}	
-	
-	############################
-	########## DOCKS ############
-	############################
-
-	focus = {
-		id = RAJ_expand_mazagon_dock
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = RAJ_industrial_expansion }
-		x = 3
-		y = 1
-		relative_position_id = RAJ_industrial_expansion
-
-		cost = 1
-
-	
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_expand_mazagon_dock
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				if = {
-					limit = { has_state_flag = RAJ_expand_mazagon_dock_NB }
-					add_building_construction = {
-						type = naval_base
-						level = 1
-						instant_build = yes
-						province = 1349
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			navy_experience = 5
-			random_owned_controlled_state = {
-				prioritize = { 429 }
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = dockyard
-					level = 4
-					instant_build = yes
-				}
-				set_state_flag = RAJ_expand_mazagon_dock
-				429 = {
-					add_building_construction = {
-						type = naval_base
-						level = 2
-						instant_build = yes
-						province = 1349
-					}
-					set_state_flag = RAJ_expand_mazagon_dock_NB
-				}
-			}
-			439 = {
-				add_resource = {
-					type = steel
-					amount = 8
-				}		
-			}
-		}
-	}
-
-	focus = {
-		id = RAJ_found_scindia_shipyard
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = RAJ_east_india_railways }
-		x = 2
-		y = 0
-		relative_position_id = RAJ_expand_mazagon_dock
-
-		cost = 1
-
-	
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		complete_tooltip = {
-	
-		}
-
-		completion_reward = {
-			navy_experience = 5
-			426 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-				
-				}
-				439 = {
-					add_resource = {
-						type = steel
-						amount = 8
-					}		
-				}	
-			}
-		}
-
-	focus = {
-		id = RAJ_kashmir_naval_steel
-		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = RAJ_expand_mazagon_dock }
-		prerequisite = { focus = RAJ_found_scindia_shipyard }
-		#mutually_exclusive = { focus = RAJ_clamp_down_on_corruption }
-		x = 1
-		y = 1
-		relative_position_id = RAJ_expand_mazagon_dock
-
-		cost = 5
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			441 = {
-				add_resource = {
-					type = steel
-					amount = 36
-				}
-			}
-		}
-	}
-	
 	######################
 	#####NAVY POGGERS#####
 	######################
@@ -2079,9 +1573,8 @@ focus_tree = {
 		id = RAJ_royal_indian_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
 
-		x = 1
-		y = 3
-		relative_position_id = RAJ_kashmir_naval_steel
+		x = 28
+		y = 10
 
 		cost = 1
 
@@ -2423,18 +1916,394 @@ focus_tree = {
 		}
 	}
 
+		############################ INDUSTRY #############################
+	
+	focus = {
+		id = RAJ_great_indian_peninsula_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 29
+		y = 0
 
-	############################
-	#### BRITISH INVESTORS #####
-	############################
+		cost = 5
 
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			build_railway = {
+			path = { 12137 5055 5040 }
+			}
+			build_railway = {
+			path = { 12137 1377 4299 9973 10751 4516 11792 4544 }
+			}
+			build_railway = {
+			path = { 4516 11792 4544 }
+			}
+			439 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = RAJ_great_indian_peninsula_railway_Inf1
+			}
+			438 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = RAJ_great_indian_peninsula_railway_Inf2
+			}
+			435 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = RAJ_great_indian_peninsula_railway_Inf3
+			}
+		}
+	}
+	
+	focus = {
+		id = RAJ_brit_burmaoil
+		icon = GFX_burma_oil_01
+		prerequisite = { focus = RAJ_great_indian_peninsula_railway }
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = RAJ_great_indian_peninsula_railway
+		
+		completion_reward = {
+			288 = {
+			
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RAJ_assam_oil
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = RAJ_brit_burmaoil }
+		x = 1
+		y = 1
+		relative_position_id = RAJ_brit_burmaoil
+
+		cost = 5
+
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			432 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+				add_resource = {
+					type = oil
+					amount = 50
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RAJ_tcil
+		icon = GFX_focus_generic_aluminum
+		prerequisite = { focus = RAJ_brit_burmaoil focus = RAJ_tata_group }
+		x = -1
+		y = 1
+		relative_position_id = RAJ_brit_burmaoil
+
+		cost = 5
+
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			426 = {
+			
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RAJ_tata_group
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = RAJ_great_indian_peninsula_railway }
+		x = -4
+		y = 1
+		relative_position_id = RAJ_great_indian_peninsula_railway
+
+		cost = 5
+
+
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			429 = {
+			
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RAJ_tata_steel
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = RAJ_tata_group }
+		x = -2
+		y = 1
+		relative_position_id = RAJ_tata_group
+
+		cost = 10
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			429 = {
+				add_resource = {
+					type = steel
+					amount = 68
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RAJ_tata_power
+		icon = GFX_focus_generic_hydroelectric_energy
+		prerequisite = { focus = RAJ_tata_steel }
+		x = 0
+		y = 1
+		relative_position_id = RAJ_tata_steel
+
+		cost = 10
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			429 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RAJ_indian_institute_of_science
+		icon = GFX_focus_research
+		prerequisite = { focus = RAJ_tata_group }
+		#prerequisite = { focus = RAJ_assam_oil }
+		x = 0
+		y = 1
+		relative_position_id = RAJ_tata_group
+
+		cost = 10
+
+	
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = ENG_colonial_elite
+		}
+	}
+
+	focus = {
+		id = RAJ_empire_industrial_expertise
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = RAJ_indian_institute_of_science }
+		x = 0
+		y = 1
+		relative_position_id = RAJ_indian_institute_of_science
+
+		cost = 5
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {			
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}	
+	
+		focus = {
+		id = RAJ_british_rail_investors
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RAJ_great_indian_peninsula_railway }
+		x = 2
+		y = 1
+		relative_position_id = RAJ_great_indian_peninsula_railway
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+		
+			is_subject_of = ENG
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			438 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
 	focus = {
 		id = RAJ_east_india_railways
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = RAJ_great_indian_peninsula_railway }
-		x = 4
+		prerequisite = { focus = RAJ_british_rail_investors }
+		x = 0
 		y = 1
-		relative_position_id = RAJ_great_indian_peninsula_railway
+		relative_position_id = RAJ_british_rail_investors
 
 		cost = 5
 
@@ -2617,122 +2486,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = RAJ_strengthen_ties_with_british_investors
-		icon = GFX_focus_RAJ_british_investors
-		prerequisite = { focus = RAJ_british_rail_investors }
-		x = -1
-		y = 2
-		relative_position_id = RAJ_ishapore_arsenal
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 30
-		}
-
-		available = {
-		
-			is_subject_of = ENG
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-		
-		completion_reward = {
-			429 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = RAJ_british_rail_investors
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = RAJ_ishapore_arsenal }
-		x = 0
-		y = 1
-		relative_position_id = RAJ_ishapore_arsenal
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 30
-		}
-
-		available = {
-		
-			is_subject_of = ENG
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-		
-		completion_reward = {
-			438 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = RAJ_british_arms_investors
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = RAJ_british_rail_investors }
-		x = 1
-		y = 2
-		relative_position_id = RAJ_ishapore_arsenal
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 30
-		}
-
-		available = {
-	
-			is_subject_of = ENG
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-			427 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
 }
 	
 	#################################### Ill figure this out eventually

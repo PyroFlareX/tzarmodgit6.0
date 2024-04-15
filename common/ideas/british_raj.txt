@@ -1046,4 +1046,52 @@ ideas = {
 			}
 		}
 	}
+
+	industrial_concern = {
+		company_tata = {
+			picture = generic_improved_industries
+			allowed = {
+				original_tag = RAJ
+			}
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		
+			modifier = {
+				
+			}
+		}
+	
+		company_burmah_oil = {
+			picture = GFX_idea_company_burmah_oil
+			allowed = {
+				original_tag = RAJ
+			}
+			available = { 
+
+			
+			}
+			research_bonus = {
+				synth_resources = 0.15
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { refinery_concern }
+		
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.30
+			}
+		}
+	}
+
 }

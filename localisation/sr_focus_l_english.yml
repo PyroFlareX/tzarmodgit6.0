@@ -821,6 +821,19 @@ RAJ_naval_gun_repurposed:0 "Naval gun repurposed"
 RAJ_naval_gun_repurposed_desc:0 "A commissoned plan for a future battleship has been scraped ,but the Bombay shipyards say the gun turrets are still very useable."
 RAJ_security_forces:0 "Security Forces"
 RAJ_security_forces_desc:0 ""
+
+RAJ_tata_group:0 "Tata Group"
+RAJ_tata_group_desc:0 "Founded by Jamsetji Tata the Tata Group has been instrumental in expanding the growing industrial base in British India."
+RAJ_tata_power:0 "Tata Hydro-electric"
+RAJ_tata_power_desc:0 ""
+RAJ_tcil:0 "Tinplate Company of India"
+RAJ_tcil_desc:0 ""
+RAJ_brit_burmaoil:0 "Burmah Oil"
+RAJ_brit_burmaoil_desc:0 ""
+
+company_burmah_oil:0 "§LBurmah Oil"
+company_tata:0 "§LTata"
+
 BUL_artillery_effort:0 "Modernized Field Gun"
 BUL_artillery_effort_desc:0 "We can no longer rely on Great War field guns supporting our forces. Modernization of artillery is key to maintaining the combat effectiveness of the army.
 BUL_modern_tanks:0 "Modern Tanks"

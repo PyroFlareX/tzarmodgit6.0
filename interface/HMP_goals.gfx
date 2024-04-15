@@ -2,7 +2,10 @@ spriteTypes = {
   
       
     
-    
+    SpriteType = {
+		name = "GFX_burma_oil_01"
+		texturefile = "gfx/interface/goals/burma_oil_01.dds"
+	}
     
       		    	SpriteType = {              
 		name = "GFX_NOR_norge"
