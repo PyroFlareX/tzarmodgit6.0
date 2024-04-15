@@ -1497,14 +1497,13 @@ technologies = {
 				research_cost_coeff = 1
 			}
 			category_cavalry = {
-				max_organisation = 5
+				max_organisation = 3
 				soft_attack = 0.05
 				maximum_speed = 0.2
 			}
 			recon = {
 				plains = {
 					attack = 0.05
-					defence = 0.05
 					movement = 0.10
 				}
 			}
@@ -1596,7 +1595,7 @@ technologies = {
 					}
 
 					category_cavalry = {
-						max_organisation = 5
+						max_organisation = 3
 					}
 					military_police = {
 						battalion_mult = {
@@ -1779,7 +1778,6 @@ technologies = {
 					force_use_small_tech_layout = yes
 
 					category_cavalry = {
-						max_organisation = 10
 						default_morale = 0.2
 					}
 
@@ -1817,7 +1815,7 @@ technologies = {
 					force_use_small_tech_layout = yes
 
 					category_cavalry = {
-						max_strength = 0.10
+						max_strength = 0.05
 						breakthrough = 0.15
 					}
 

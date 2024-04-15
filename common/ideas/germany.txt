@@ -1511,6 +1511,12 @@ ideas = {
 				army_attack_factor = 0.12
 				army_defence_factor = 0.12
 			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = -0.12
+				defense_bonus_against = -0.12
+			}
+		
 		}
 
 		GER_fall_blau = {

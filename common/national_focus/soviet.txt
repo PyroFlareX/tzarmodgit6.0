@@ -4163,15 +4163,15 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = SOV_strengthen_the_mobilization_plan
-		cost = 5
+		cost = 10
 		available = {
 		}
 		
 		search_filters = {}
 
 		completion_reward = {
-			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
-			add_to_variable = { SOV_the_red_army_training_time_factor = 0.1 }
+			add_to_variable = { SOV_the_red_army_army_org_factor = 0.1 }
+			add_to_variable = { SOV_the_red_army_training_time_factor = 0.15 }
 			custom_effect_tooltip = SOV_cohesion_first_ns_tt
 			army_experience = 50
 		}
@@ -7934,7 +7934,7 @@ focus_tree = {
 		x = 2
 		y = 0
 		relative_position_id = SOV_expand_the_agitprop
-		cost = 2
+		cost = 3
 
 		available = {
 

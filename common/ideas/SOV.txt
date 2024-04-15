@@ -1452,6 +1452,8 @@ ideas = {
 			modifier = {
 					army_armor_attack_factor = 0.08
 					army_armor_defence_factor = 0.08
+					mechanized_attack_factor = 0.08
+					mechanized_defence_factor = 0.08
 			}
 		}
 
@@ -1473,7 +1475,7 @@ ideas = {
 			modifier = {
 				military_leader_cost_factor = -0.2
 				promote_cost_factor	 = -0.15
-				army_org_factor = 0.05
+				army_org_factor = 0.1
 				dig_in_speed_factor = 0.2
 				army_morale_factor = 0.1
 			}
@@ -9739,8 +9741,8 @@ ideas = {
 				custom_modifier_tooltip = SOV_gosproyektstroy_1_tt
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
-				license_purchase_cost = -0.25
-				production_factory_max_efficiency_factor = 0.1
+				production_speed_dockyard_factor = 0.05
+				production_factory_max_efficiency_factor = 0.075
 			}
 		}
 
@@ -9983,6 +9985,12 @@ ideas = {
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
 				production_factory_efficiency_gain_factor = 0.2
+				
+			}
+			equipment_bonus = {
+			armor = {
+					build_cost_ic = -0.05  
+				}
 			}
 		}
 
@@ -10101,7 +10109,9 @@ ideas = {
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
-				production_factory_start_efficiency_factor = 0.2
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+
 			}
 		}
 

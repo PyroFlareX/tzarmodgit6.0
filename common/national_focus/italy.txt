@@ -7347,6 +7347,9 @@ completion_reward = {
 					transfer_state = 109
 					transfer_state = 853
 				}
+				ENG = {
+					transfer_state = 182
+				}
 				
 			}
 			ALB = {

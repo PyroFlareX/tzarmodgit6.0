@@ -18,7 +18,7 @@ equipments = {
 		maximum_speed = 4.5 #was 3.0 before 3 speed changes
 
 		#Defensive Abilities
-		defense = 14.50
+		defense = 11.50
 		breakthrough = 2
 		hardness = 0
 		armor_value = 0
@@ -56,8 +56,8 @@ equipments = {
 		visual_level = 1
 
 		#Defensive Abilities
-		defense = 17.5
-		breakthrough = 2.75
+		defense = 15.5
+		breakthrough = 2.25
 
 		#Offensive Abilities
 		soft_attack = 3.6
