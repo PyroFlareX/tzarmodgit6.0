@@ -5,7 +5,7 @@ air_experience = 2
 oob = "RAJ_1936"
 
 set_research_slots = 3
-
+add_offsite_building = { type = dockyard level = 4 }
 set_stability = 0.71
 set_war_support = 0.1
 # Starting tech
