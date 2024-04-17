@@ -5,7 +5,7 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = USA
-			has_dlc = "Man the Guns"
+			#has_dlc = "Man the Guns"
 		}
 	}
 	continuous_focus_position = { x = 50 y = 1200 }
