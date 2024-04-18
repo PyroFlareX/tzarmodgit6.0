@@ -410,7 +410,11 @@
 		relative_position_id = FRA_election
 		available = {
 			OR = {
-				has_completed_focus = FRA_military_investments
+				OR = {
+					has_completed_focus = FRA_military_investments
+					has_completed_focus = FRA_defensive_strategems
+				}
+				
 				has_completed_focus = FRA_united_france
 			}
 		}
@@ -611,7 +615,7 @@
 		id = FRA_special_forces
 		icon = GFX_focus_generic_horse_studs
 		prerequisite = { focus = FRA_firepower_kills focus = FRA_artillery_focus }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = FRA_firepower_kills
 		cost = 5
@@ -848,7 +852,7 @@
 			focus = FRA_begin_rearmament 
 		}
 		x = 0
-		y = 4
+		y = 6
 		relative_position_id = FRA_begin_rearmament
 		cost = 10
 

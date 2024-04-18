@@ -23,6 +23,42 @@ add_intel = { target = SOV civilian_intel = 200 army_intel = 200 navy_intel = 20
 
 add_to_tech_sharing_group = commonwealth_research
 
+set_variable = { FRA_pp_eco = 0 }
+set_variable = { FRA_construction_speed = 0 }
+set_variable = { FRA_eff_gain = 0 }
+set_variable = { FRA_cap = 0 }
+set_variable = { FRA_cg = 0.4 }
+set_variable = { FRA_civ_speed = 0 }
+set_variable = { FRA_industry_con = -0.1 }
+set_variable = { FRA_exports = 0.05 }
+set_variable = { FRA_resources = -0.075 }
+set_variable = { FRA_eff_ret = 0.065 }
+set_variable = { FRA_output = -0.3 }
+set_variable = { FRA_stab = -0.2 }
+set_variable = { FRA_ws = -0.2 }
+set_variable = { FRA_pp_diplo = -0.5 }
+set_variable = { FRA_tank = -0.025 }
+set_variable = { FRA_planning = 0.075 }
+set_variable = { FRA_entr = -0.025 }
+set_variable = { FRA_anti_minor = 0 }
+set_variable = { FRA_xp_gain = -0.5 }
+set_variable = { FRA_reinforce_rate = 0 }
+set_variable = { FRA_defence = 0 }
+set_variable = { FRA_offence = 0 }
+set_variable = { FRA_military_donations = 0 }
+set_variable = { FRA_oil_consumption = -0.05 }
+set_variable = { FRA_winter = 0 }
+set_variable = { FRA_heat = 0 }
+set_variable = { FRA_stab = 0 }
+set_variable = { FRA_ws_army = 0 }
+set_variable = { FRA_ww_army = 0 }
+set_variable = { FRA_cap_limit = -0.5 }
+set_variable = { FRA_pop_growth = 0.1 }
+
+add_dynamic_modifier = { modifier = FRA_economy }
+add_dynamic_modifier = { modifier = FRA_violence }
+add_dynamic_modifier = { modifier = FRA_Army }
+
 # Starting tech
 set_technology = { basic_train = 1
 	infantry_weapons = 1
@@ -167,13 +203,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	FRA_victors_of_wwi
-	FRA_disjointed_government
-	FRA_protected_by_the_maginot_line
-	limited_conscription
-	FRA_full_employment
-	FRA_political_violence
-	FRA_inefficient_economy_2
 }
 
 #Order matters here Daladier will start as leaders because added last

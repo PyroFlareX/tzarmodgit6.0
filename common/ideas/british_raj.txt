@@ -1,6 +1,35 @@
 ideas = {
 
 	hidden_ideas = {
+		france_production_regrowth = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 10.00
+				industrial_capacity_factory = 0.2
+			}
+			
+		}
+		production_fixer = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 1000.00
+			}
+			
+		}
 		RAJ_lions_of_the_great_war = {
 
 			allowed = {
