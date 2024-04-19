@@ -514,7 +514,11 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				declare_war_on = { target = ENG type = annex_everything }
+			every_country = {
+			limit = {is_in_faction_with = ENG}
+			add_ideas = allies_nerf
+			}
+		declare_war_on = { target = ENG type = annex_everything }
 		declare_war_on = { target = FRF type = annex_everything }
 		declare_war_on = { target = HOL type = annex_everything }
 		declare_war_on = { target = USA type = annex_everything }

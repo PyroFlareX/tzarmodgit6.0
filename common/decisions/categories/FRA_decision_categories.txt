@@ -20,7 +20,14 @@ FRA_war_measures = {
 # 	}
 # }
 
-
+FRA_relocation = {
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+            original_tag  = FRA
+        }
+}
 FRA_move_capital = {
 	allowed = {
 		original_tag = FRF

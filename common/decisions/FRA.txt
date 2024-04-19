@@ -104,7 +104,333 @@
 # 		}
 # 	}	
 # }
+FRA_indutry_tzar = {
+	FRA_industry_1 = {
+		visible = {
+			NOT = {
+				has_war = yes
+			}
+			has_country_flag = FRA_eco_1
+		}
+		cost = 15
+		
+		complete_effect = {
+			14 = {
+				add_extra_state_shared_building_slots = 4
+			}
+			fra_cg_upgrade_effect = yes 
+			custom_effect_tooltip = FRA_cg_upgrade
+		}
+	}
+	FRA_industry_2 = {
+		visible = {
+			NOT = {
+				has_war = yes
+			}
+			has_country_flag = FRA_eco_1
+		}
+		cost = 35
+		
+		complete_effect = {
+			16 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			fra_cg_upgrade_effect = yes 
+			custom_effect_tooltip = FRA_cg_upgrade
+		}
+	}
+	FRA_Civ_industry_north_1 = {
+		visible = {
+			NOT = {
+				has_war = yes
+			}
+			has_country_flag = FRA_eco_north
+		}
+		cost = 40
+		complete_effect = {
+			add_to_variable = { FRA_north_eco = 1 }
+			28 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			fra_small_eco_upgrade_effect = yes 
+			custom_effect_tooltip = FRA_small_eco_upgrade
+		}
+	}
+	FRA_Civ_industry_north_2 = {
+		visible = {
+			NOT = {
+				has_war = yes
+			}
+			has_country_flag = FRA_eco_north
+		}
+		cost = 60
+		complete_effect = {
+			add_to_variable = { FRA_north_eco = 1 }
+			29 = {
+				add_extra_state_shared_building_slots = 7
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			fra_small_eco_upgrade_effect = yes 
+			custom_effect_tooltip = FRA_small_eco_upgrade
+		}
+	}
+	FRA_Civ_industry_north_3 = {
+		visible = {
+			NOT = {
+				has_war = yes
+			}
+			has_country_flag = FRA_eco_north
+		}
+		cost = 50
+		complete_effect = {
+			add_to_variable = { FRA_north_eco = 1 }
+			18 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			fra_small_eco_upgrade_effect = yes 
+			custom_effect_tooltip = FRA_small_eco_upgrade
+		}
+	}
+	FRA_North_ult_upgrade = {
+		visible = {
+			NOT = {
+				has_war = yes
+			}
+			check_variable = {FRA_north_eco > 2 }
+		}
+		complete_effect = {
+			fra_big_eco_upgrade_effect = yes
+			custom_effect_tooltip = FRA_big_upgrade_eco
+		}
+	}
 
+	### south
+	FRA_Civ_industry_south_1 = {
+		visible = {
+			NOT = {
+				has_war = yes
+			}
+			has_country_flag = FRA_eco_south
+		}
+		cost = 40
+		complete_effect = {
+			add_to_variable = { FRA_south_eco = 1 }
+			21 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			fra_small_eco_upgrade_effect = yes 
+			custom_effect_tooltip = FRA_small_eco_upgrade
+		}
+	}
+	FRA_Civ_industry_south_2 = {
+		visible = {
+			NOT = {
+				has_war = yes
+			}
+			has_country_flag = FRA_eco_south
+		}
+		cost = 60
+		complete_effect = {
+			add_to_variable = { FRA_south_eco = 1 }
+			20 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			fra_small_eco_upgrade_effect = yes 
+			custom_effect_tooltip = FRA_small_eco_upgrade
+		}
+	}
+	FRA_Civ_industry_south_3 = {
+		visible = {
+			NOT = {
+				has_war = yes
+			}
+			has_country_flag = FRA_eco_south
+		}
+		cost = 80
+		complete_effect = {
+			add_to_variable = { FRA_south_eco = 1 }
+			31 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			fra_small_eco_upgrade_effect = yes 
+			custom_effect_tooltip = FRA_small_eco_upgrade
+		}
+	}
+	FRA_south_ult_upgrade = {
+		visible = {
+			NOT = {
+				has_war = yes
+			}
+			check_variable = {FRA_south_eco > 2 }
+		}
+		complete_effect = {
+			fra_big_eco_upgrade_effect = yes
+			custom_effect_tooltip = FRA_big_upgrade_eco
+		}
+	}
+}
+FRA_relocation = {
+	FRA_TZAR_RELOCATION_CIV = {
+		icon = generic_construction
+		available = {
+			NOT = {
+			any_state = {
+							is_core_of = FRA
+							is_controlled_by  = FRA
+							is_on_continent = europe
+							industrial_complex > 2
+						}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+			tag = FRA
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 5
+
+		visible = {
+		}
+
+        timeout_effect = {
+			random_controlled_state = {
+				limit = {
+					AND = {is_on_continent = europe is_fully_controlled_by = FRA}
+					industrial_complex > 2
+				}
+				remove_building = {type = industrial_complex level = 3}
+				FRA = {
+					random_owned_controlled_state = {
+						limit = { AND = { is_core_of = FRA is_on_continent = africa}}
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+   				 			type = industrial_complex
+   				 			level = 3
+  				 			instant_build = yes
+				 		}
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						any_state = {
+							is_core_of = FRA
+							is_controlled_by  = FRA
+							is_on_continent = europe
+							industrial_complex > 2
+						}
+					}
+					activate_mission = FRA_TZAR_RELOCATION_CIV
+				}
+			}
+			custom_effect_tooltip = GER_relocate_industry_mil
+		}
+	}
+	FRA_TZAR_RELOCATION_MIL = {
+		icon = generic_construction
+		available = {
+			NOT = {
+			any_state = {
+							is_core_of = FRA
+							is_controlled_by  = FRA
+							is_on_continent = europe
+							industrial_complex > 2
+						}
+			}
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+			tag = SOV
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 5
+
+		visible = {
+			date<1942.1.1
+		}
+
+        timeout_effect = {
+			random_controlled_state = {
+				limit = {
+					AND = {is_on_continent = europe is_fully_controlled_by = FRA}
+					arms_factory > 2
+				}
+				remove_building = {type = arms_factory level = 3}
+				SOV = {
+					random_owned_controlled_state = {
+						limit = { AND = { is_core_of = SOV is_on_continent = africa}}
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+   				 			type = arms_factory
+   				 			level = 3
+  				 			instant_build = yes
+				 		}
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						any_state = {
+							is_core_of = FRA
+							is_controlled_by  = FRA
+							is_on_continent = europe
+							arms_factory > 2
+						}
+					}
+					activate_mission = FRA_TZAR_RELOCATION_MIL
+				}
+			}
+			custom_effect_tooltip = GER_relocate_industry_mil
+		}
+	}
+}
 FRA_move_capital = {
 FRA_move_capital_casablanca = {
 icon = generic_operation
