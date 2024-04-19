@@ -42,7 +42,7 @@
     srevents.9.d:0 "-Italian focus tree cleaned/dememed. \n-Yugoslavia and Greece are allowed to be annexed pre-war. \n-Italy has a large amount of rubber and oil in Libya (which can be further increased by focus), so actually fighting for Africa is a must if you don't want to put large amounts of resources into refineries. \n-If you successfully take Cairo and Alexandria you have a focus called Triumph in Egypt which gives and axis-wide buff of -2% consumer goods and +10% stability, which can be cancelled if you lose egypt."
 
     srevents.10.t:0 "IMPORTANT INFORMATION ABOUT JAPAN"
-    srevents.10.d:0 "-War with china is automated, and is fully annexed by two focuses, which gives xp to various nations"
+    srevents.10.d:0 "-War with china is NOT automated."
 
     srevents.11.t:0 "IMPORTANT INFORMATION ABOUT BARBAROSSA"
     srevents.11.d:0 "The Soviets have a dynamic barb debuff mechanic in which they start out very weak at the beginning of barb but slowly grow stronger. \nThe debuff is -30% division org and recovery rate, and -20% to plane stats, these debuffs will decrease by 3% and 2% respectively every 10 days.\nThe debuff can be increased whenever the soviets lose a big city, which not only increases the debuff percentage, it also lengthens how long the debuff will last by 10 days\n\nDebuff: \n§GDecreases by 4%§! every 10 days \n§RIncreases by 4%§! when the Soviets lose any of the following cities: Leningrad, Moscow, Smolensk, Kiev, Rostov, Stalingrad, Sevastopol"
