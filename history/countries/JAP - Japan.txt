@@ -85,7 +85,7 @@ set_technology = { basic_train = 1
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 3000
+	amount = 5000
 	producer = JAP
 }  
 add_equipment_to_stockpile = {
