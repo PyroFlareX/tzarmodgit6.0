@@ -1352,6 +1352,7 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
+			fra_big_eco_upgrade_effect = yes
 			custom_effect_tooltip = FRA_big_upgrade_eco
 			add_stability = 0.05
 		}

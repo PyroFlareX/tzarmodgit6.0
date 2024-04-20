@@ -106,6 +106,7 @@
 # }
 FRA_indutry_tzar = {
 	FRA_industry_1 = {
+		fire_only_once = yes
 		visible = {
 			NOT = {
 				has_war = yes
@@ -123,6 +124,7 @@ FRA_indutry_tzar = {
 		}
 	}
 	FRA_industry_2 = {
+		fire_only_once = yes
 		visible = {
 			NOT = {
 				has_war = yes
@@ -145,6 +147,7 @@ FRA_indutry_tzar = {
 		}
 	}
 	FRA_Civ_industry_north_1 = {
+		fire_only_once = yes
 		visible = {
 			NOT = {
 				has_war = yes
@@ -167,6 +170,7 @@ FRA_indutry_tzar = {
 		}
 	}
 	FRA_Civ_industry_north_2 = {
+		fire_only_once = yes
 		visible = {
 			NOT = {
 				has_war = yes
@@ -189,6 +193,7 @@ FRA_indutry_tzar = {
 		}
 	}
 	FRA_Civ_industry_north_3 = {
+		fire_only_once = yes
 		visible = {
 			NOT = {
 				has_war = yes
@@ -211,6 +216,7 @@ FRA_indutry_tzar = {
 		}
 	}
 	FRA_North_ult_upgrade = {
+		fire_only_once = yes
 		visible = {
 			NOT = {
 				has_war = yes
@@ -225,6 +231,7 @@ FRA_indutry_tzar = {
 
 	### south
 	FRA_Civ_industry_south_1 = {
+		fire_only_once = yes
 		visible = {
 			NOT = {
 				has_war = yes
@@ -247,6 +254,7 @@ FRA_indutry_tzar = {
 		}
 	}
 	FRA_Civ_industry_south_2 = {
+		fire_only_once = yes
 		visible = {
 			NOT = {
 				has_war = yes
@@ -269,6 +277,7 @@ FRA_indutry_tzar = {
 		}
 	}
 	FRA_Civ_industry_south_3 = {
+		fire_only_once = yes
 		visible = {
 			NOT = {
 				has_war = yes
@@ -291,6 +300,7 @@ FRA_indutry_tzar = {
 		}
 	}
 	FRA_south_ult_upgrade = {
+		fire_only_once = yes
 		visible = {
 			NOT = {
 				has_war = yes

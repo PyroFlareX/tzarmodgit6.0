@@ -19,7 +19,14 @@ FRA_war_measures = {
 # 		}
 # 	}
 # }
-
+FRA_indutry_tzar = {
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		original_tag = FRA
+	}
+}
 FRA_relocation = {
 	allowed = {
 		original_tag = FRA
