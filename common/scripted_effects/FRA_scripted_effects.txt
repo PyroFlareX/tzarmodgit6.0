@@ -8,7 +8,19 @@ remove_worker_shortage_effect = {
 		remove_ideas = FRA_full_employment
 	}
 }
-
+fra_small_eco_upgrade_effect = {
+	add_to_variable = { FRA_cg = -0.04 }
+	add_to_variable = { FRA_output = 0.05 }
+	add_to_variable = { FRA_eff_ret = 0.015 }
+}
+fra_big_eco_upgrade_effect = {
+	add_to_variable = { FRA_cg = -0.04 }
+	add_to_variable = { FRA_cap = 0.025 }
+	add_to_variable = { FRA_output = 0.05 }
+}
+fra_cg_upgrade_effect = {
+	add_to_variable = { FRA_cg = -0.08 }
+}
 remove_occupation_cost_effect = {
 	if = {
 		limit = { has_idea = FRA_occupation_costs_1 }

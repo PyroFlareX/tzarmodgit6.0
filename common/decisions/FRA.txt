@@ -195,10 +195,7 @@ FRA_indutry_tzar = {
 	FRA_Civ_industry_north_3 = {
 		fire_only_once = yes
 		visible = {
-			NOT = {
-				has_war = yes
-			}
-			has_country_flag = FRA_eco_north
+			always = yes
 		}
 		cost = 50
 		complete_effect = {

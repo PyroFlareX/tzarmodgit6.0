@@ -22,7 +22,7 @@
 		icon = GFX_focus_fra_devalue_the_franc
 		prerequisite = {focus = FRA_election}
 		relative_position_id = FRA_election
-		x = 1	
+		x = 2	
 		y = 1
 			cost = 5
 		cancel_if_invalid = yes
@@ -30,6 +30,8 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			fra_cg_upgrade_effect = yes 
+			custom_effect_tooltip = FRA_cg_upgrade
 			custom_effect_tooltip = "Will decrease public support but help our economy"
 			add_timed_idea = {
 				idea = FRA_devalue_the_franc
@@ -368,7 +370,7 @@
 		id = FRA_begin_rearmament
 		icon = GFX_focus_war_production
 		x = 0
-		y = 5
+		y = 6
 		offset = {
 			x = 0
 			y = 0
@@ -1052,22 +1054,6 @@
 					instant_build = yes
 				}
 			}
-			# add_tech_bonus = {
-			# 	name = FRA_army_reform
-			# 	bonus = 1.0
-			# 	uses = 2
-			# 	category = land_doctrine
-			# }
-			add_tech_bonus = {
-				name = FRA_army_reform
-				bonus = 1.0
-				uses = 1
-				technology = advanced_medium_tank_chassis
-				technology = advanced_heavy_tank_chassis
-				technology = super_heavy
-			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = FRA_AMX
 		}
 	}	
 
@@ -1106,10 +1092,13 @@
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
 			custom_effect_tooltip = "Unlocks new decisions"
-			add_political_power = 50
+			set_country_flag = Left_won
 		}
 	}
 	focus = {
+		allow_branch = {
+			always = no
+		}
 		id = Fra_right_wing
 		text = "Victoire de la droite"
 		icon = GFX_focus_ARG_defense_and_democracy
@@ -1166,7 +1155,7 @@
 		id = Fra_left_wing
 		text = "Victoire de la gauche"
 		icon = GFX_focus_NORDIC_com_form_alliance
-		x = -5
+		x = 0
 		y = 1
 		available = {
 			custom_trigger_tooltip = {
@@ -1366,10 +1355,9 @@
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = "We finished inplementing economical reform"
-				not = {
 				has_country_flag = {
 					flag = FRA_economy_flag
-				}
+					days > 70
 				}
 			}
 		}
@@ -1388,9 +1376,9 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
-			custom_effect_tooltip = FRA_afrika
 			clr_country_flag = FRA_economy_flag
 			set_country_flag = FRA_economy_flag
+			set_country_flag = FRA_eco_south
 			custom_effect_tooltip = "Unlocks new decisions"
 			add_stability = 0.05
 			
@@ -1405,11 +1393,9 @@
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = "We finished inplementing economical reform"
-				not = {
 				has_country_flag = {
 					flag = FRA_economy_flag
 					days > 70
-				}
 				}
 			}
 
@@ -1432,6 +1418,7 @@
 			custom_effect_tooltip = FRA_afrika
 			clr_country_flag = FRA_economy_flag
 			set_country_flag = FRA_economy_flag
+			set_country_flag = FRA_eco_north
 			custom_effect_tooltip = "Unlocks new decisions"
 			add_stability = 0.05
 			
@@ -1916,7 +1903,7 @@
 	focus = {
 		id = FRA_review_foreign_policy
 		icon = GFX_focus_chi_reach_out_to_france
-		x = -1
+		x = -2
 		y = 1
 		available = {
 			OR = {

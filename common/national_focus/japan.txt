@@ -313,20 +313,62 @@ focus_tree = {
 					target = CHI
 				}
 			}}
-			swap_ideas = {
-				remove_idea = JAP_war_with_chi1
-				add_idea = JAP_war_with_chi2
-			}
 			hidden_effect = {SWE = {
 				annex_country = {
 					target = CHI
 				}
 			}}
 			hidden_effect = { CHI = { set_equipment_fraction = 0.00 } }
-			
 			army_experience = 250
 			air_experience = 800
 			navy_experience = 1000
+		}
+	}
+	focus = {
+		id = JAP_ensure_compliance
+		icon = GFX_focus_chi_one_china_policy
+		prerequisite = { focus = JAP_intervene_in_china }
+		x = -2
+		y = 1
+		text = "The thing"
+		relative_position_id = JAP_intervene_in_china
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				threat < 0.9
+			}
+		}
+
+		available = {
+		owns_state = 608
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					AND = {
+					is_owned_by = CHI
+					impassable = no
+					}
+				}
+				add_compliance = 70
+			}
 		}
 	}
 
