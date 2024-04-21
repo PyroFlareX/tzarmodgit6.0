@@ -69,7 +69,7 @@ country_event = {	#ww2
 		
         set_global_flag = GER_WW2
 		set_global_flag = Super_Event_Visible
-		play_song = "super_ww2"
+		sound_effect = "super_ww2"
 		
 		#WW2 Flag
 		set_global_flag = Super_WW2
@@ -97,7 +97,7 @@ country_event = {	#Second Sino Japanese War
 		
         set_global_flag = JAP_Sino_Japanese
 		set_global_flag = Super_Event_Visible
-		play_song = "super_sino_japanese_war"
+		sound_effect = "super_sino_japanese_war"
 	}
 }
 
@@ -123,7 +123,7 @@ country_event = {	#Pacific War
 		
         set_global_flag = USA_Pacific_War
 		set_global_flag = Super_Event_Visible
-		play_song = "super_pacific_war"
+		sound_effect = "super_pacific_war"
 	}
 }
 
@@ -151,7 +151,7 @@ country_event = {	#Barb
 		
         set_global_flag = GER_Barbarossa
 		set_global_flag = Super_Event_Visible
-		play_song = "super_barbarossa"
+		sound_effect = "super_barbarossa"
 	}
 }
 
@@ -181,7 +181,7 @@ country_event = {	#Fall of UK
 		
         set_global_flag = ENG_fall
 		set_global_flag = Super_Event_Visible
-		play_song = "super_british_collapse"
+		sound_effect = "super_british_collapse"
 	}
 }
 
@@ -211,7 +211,7 @@ country_event = {	#Fall of Germany
 		
         set_global_flag = GER_fall
 		set_global_flag = Super_Event_Visible
-		play_song = "super_fall_germany"
+		sound_effect = "super_fall_germany"
 	}
 }
 
@@ -245,7 +245,7 @@ country_event = {	#Fall of Russia
 		
         set_global_flag = SOV_fall
 		set_global_flag = Super_Event_Visible
-		play_song = "super_soviet_end"
+		sound_effect = "super_soviet_end"
 	}
 }
 
@@ -275,7 +275,7 @@ country_event = {	#Fall of Japan
 		
         set_global_flag = JAP_fall
 		set_global_flag = Super_Event_Visible
-		play_song = "super_japanese_surrender"
+		sound_effect = "super_japanese_surrender"
 	}
 }
 
@@ -305,7 +305,7 @@ country_event = {	#Fall of USA
 		
         set_global_flag = USA_fall
 		set_global_flag = Super_Event_Visible
-		play_song = "super_fall_america"
+		sound_effect = "super_fall_america"
 	}
 }
 
@@ -330,7 +330,7 @@ country_event = {	#1st Nuke
 		
         set_global_flag = SP_Nuke
 		set_global_flag = Super_Event_Visible
-		play_song = "super_nuke"
+		sound_effect = "super_nuke"
 	}
 }
 
@@ -489,7 +489,7 @@ country_event = { #Endsieg
 		
 		set_global_flag = GER_Endsieg
 		set_global_flag = Super_Event_Visible
-		play_song = "super_endsieg"
+		sound_effect = "super_endsieg"
 	}
 }
 
@@ -514,7 +514,7 @@ country_event = { #2nd Russo-Japanese War
 		
 		set_global_flag = JAP_Russo
 		set_global_flag = Super_Event_Visible
-		play_song = "super_russo_japanese_war"
+		sound_effect = "super_russo_japanese_war"
 	}
 }
 
@@ -542,6 +542,6 @@ country_event = { #Co-Prosperity
 		
 		set_global_flag = JAP_GEACPS
 		set_global_flag = Super_Event_Visible
-		play_song = "super_geacps"
+		sound_effect = "super_geacps"
 	}
 }
