@@ -209,9 +209,9 @@ SOV_morozov_design_bureau_organization = {
 		}
 
 		equipment_bonus = {
-			hard_attack = 0.025
-			soft_attack = 0.025
-			reliability = -0.05
+			hard_attack = 0.05
+			soft_attack = 0.05
+			reliability = -0.1
 		}
 	}
 	trait = {

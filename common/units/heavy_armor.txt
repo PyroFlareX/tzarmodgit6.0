@@ -85,5 +85,8 @@ sub_units = {
 			defence = -0.175
 			movement = -0.15
 		}
+		desert = {
+			attack = 0.05
+		}
 	}
 }

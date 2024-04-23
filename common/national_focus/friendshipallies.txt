@@ -161,7 +161,7 @@ joint_focus = {
 }
 
 joint_focus = {
-		id = ALLIED_market
+		id = Research_Friendship
 		icon = GFX_focus_research
 		prerequisite = { focus = ALLIED_cum }
 		#mutually_exclusive = { focus =  }
@@ -1458,8 +1458,8 @@ joint_focus = {
 		}
 
 		available = {
-			SOV = { has_war_with = GER }
-		}
+			has_war_with = GER
+		}	
 		
 		bypass = {
 

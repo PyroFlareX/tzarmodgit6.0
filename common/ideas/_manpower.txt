@@ -15,7 +15,6 @@ ideas = {
 
 			modifier = {
 				conscription = 0.01
-				military_industrial_organization_funds_gain = 0.3
 			}
 			
 			cancel_if_invalid = no
@@ -50,7 +49,6 @@ ideas = {
 
 			modifier = {
 				conscription = 0.025
-				military_industrial_organization_funds_gain = 0.15
 			}
 			
 			default = yes
@@ -229,10 +227,10 @@ ideas = {
 
 			modifier = {
 				conscription = 0.09
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
-				production_speed_buildings_factor = -0.1
-				training_time_factor = 0.2
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.05
+				training_time_factor = 0.1
 			}
 			
 			cancel_if_invalid = no
