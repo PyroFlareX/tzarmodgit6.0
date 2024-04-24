@@ -227,7 +227,54 @@ if = {
 	recruit_character = SOV_vladimir_kosmin
 	recruit_character = SOV_andrey_shkuro
 }
-
+SOV_mikhail_kalinin = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_nikita_khrushchyov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_lazar_kaganovich = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_genrikh_yagoda = { #NKVD Chiefs are always safe from regular purges, they'll be handled by a special purge event
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_nikolay_yezhov = { #NKVD Chiefs are always safe from regular purges, they'll be handled by a special purge event
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_lavrenty_beriya = { #NKVD Chiefs are always safe from regular purges, they'll be handled by a special purge event. Beriya will always be safe.
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_vsevolod_merkulov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_vyacheslav_molotov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_konstantin_rodzayevsky = { #Not in the country
+	set_character_flag = SOV_exiled_flag
+}
+SOV_aleksandr_kerensky = { #Not in the country
+	set_character_flag = SOV_exiled_flag
+}
+SOV_lev_trotsky = { #Not in the country
+	set_character_flag = SOV_exiled_flag
+}
+SOV_patriarch_sergy = { #Priests are not political enemies at this point
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_konstantin_rokossovsky = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_semyon_timoshenko = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_ivan_konev = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_boris_shaposhnikov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
 ###PARANOIA ###
 set_variable = { SOV_paranoia = 0 } # Intitial Paranoia value
 set_variable = { SOV_paranoia_very_low_increase = 5 } #Paranoia very low increment
