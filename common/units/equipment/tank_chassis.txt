@@ -54,15 +54,17 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_secondary_turret
+					tank_special_module
+					tank_radio_module
 				}
 			}
 
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
+					tank_secondary_turret
 					tank_special_module
 					tank_radio_module
-					
 				}
 			}
 
@@ -71,24 +73,32 @@ equipments = {
 			special_type_slot_3 = {
 				required = no
 				allowed_module_categories = {
+					tank_secondary_turret
 					tank_special_module
 					tank_radio_module
-					
 				}
 			}
 
 			special_type_slot_4 = {
 				required = no
 				allowed_module_categories = {
+					tank_secondary_turret
 					tank_special_module
 					tank_radio_module
-					
 				}
 			}
 			special_type_slot_9 = {
 				required = no
 				allowed_module_categories = {
 				tank_special_ammo
+				}
+			}
+			special_type_slot_10 = {
+				required = no
+				allowed_module_categories = {
+				tank_secondary_turret
+					tank_special_module
+					tank_radio_module
 				}
 			}
 
@@ -100,6 +110,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_secondary_turret
 			count < 2
 		}
 		module_count_limit = {
@@ -454,17 +468,17 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					tank_radio_module
+					tank_secondary_turret
 					tank_special_module
-					
+					tank_radio_module
 				}
 			}
 
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
 					tank_secondary_turret
+					tank_special_module
 					tank_radio_module
 				}
 			}
@@ -474,8 +488,8 @@ equipments = {
 			special_type_slot_3 = {
 				required = no
 				allowed_module_categories = {
+					tank_secondary_turret
 					tank_special_module
-					
 					tank_radio_module
 				}
 			}
@@ -483,8 +497,8 @@ equipments = {
 			special_type_slot_4 = {
 				required = no
 				allowed_module_categories = {
+					tank_secondary_turret
 					tank_special_module
-					
 					tank_radio_module
 				}
 			}
@@ -492,6 +506,14 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 				tank_special_ammo
+				}
+			}
+			special_type_slot_10 = {
+				required = no
+				allowed_module_categories = {
+				tank_secondary_turret
+					tank_special_module
+					tank_radio_module
 				}
 			}
 		}
@@ -503,6 +525,10 @@ equipments = {
 		# 	module = smoke_launchers
 		# 	count < 3
 		# }
+		module_count_limit = {
+			category = tank_secondary_turret
+			count < 2
+		}
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
@@ -859,23 +885,27 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_secondary_turret
+					tank_special_module
+					tank_radio_module
 				}
 			}
 
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
+					tank_secondary_turret
 					tank_special_module
-				
 					tank_radio_module
 				}
 			}
 
+
+
 			special_type_slot_3 = {
 				required = no
 				allowed_module_categories = {
+					tank_secondary_turret
 					tank_special_module
-					
 					tank_radio_module
 				}
 			}
@@ -883,8 +913,8 @@ equipments = {
 			special_type_slot_4 = {
 				required = no
 				allowed_module_categories = {
+					tank_secondary_turret
 					tank_special_module
-					
 					tank_radio_module
 				}
 			}
@@ -894,12 +924,23 @@ equipments = {
 				tank_special_ammo
 				}
 			}
-
+			special_type_slot_10 = {
+				required = no
+				allowed_module_categories = {
+				tank_secondary_turret
+					tank_special_module
+					tank_radio_module
+				}
+			}
 		}
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
 		}	
+		module_count_limit = {
+			category = tank_secondary_turret
+			count < 3
+		}
 		module_count_limit = {
 			category = tank_radio_module
 			count < 2
@@ -907,10 +948,6 @@ equipments = {
 		module_count_limit = {
 			module = stabilizer
 			count < 2
-		}
-		module_count_limit = {
-			category = 
-			count < 2 #one secondary turrets only
 		}
 		# module_count_limit = {
 		# 	module = smoke_launchers

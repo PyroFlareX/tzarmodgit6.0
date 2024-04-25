@@ -479,10 +479,6 @@ focus_tree = {
 
 		available = {
 			SOV_third_five_year_plan_available = yes
-			custom_trigger_tooltip = {
-				tooltip = SOV_fyp_controlled_factories_tier_3_tt
-				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_3 }
-			}
 			
 		}
 		
@@ -521,7 +517,7 @@ focus_tree = {
 				add_tech_bonus = {
 					name = SOV_reorganize_the_pc_of_heavy_industry_name_alt
 					bonus = 1.0
-					uses = 2
+					uses = 3
 					category = industry
 					category = electronics
 				}
@@ -541,10 +537,7 @@ focus_tree = {
 
 		available = {
 			SOV_third_five_year_plan_available = yes
-			custom_trigger_tooltip = {
-				tooltip = SOV_fyp_controlled_factories_tier_4_tt
-				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_4 }
-			}
+
 			
 		}
 		
@@ -634,17 +627,12 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SOV_third_five_year_plan
-		cost = 4
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_reorganize_the_pc_of_heavy_industry}
 
 		available = {
 			SOV_third_five_year_plan_available = yes
-			custom_trigger_tooltip = {
-				tooltip = SOV_fyp_controlled_factories_tier_3_tt
-				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_3 }
-			}
-			
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -696,14 +684,10 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = SOV_shift_to_armaments_production
-		cost = 4
+		cost = 5
 
 		available = {
 			SOV_third_five_year_plan_available = yes
-			custom_trigger_tooltip = {
-				tooltip = SOV_fyp_controlled_factories_tier_4_tt
-				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_4 }
-			}
 			
 		}
 		
@@ -4717,12 +4701,6 @@ focus_tree = {
 				complete_national_focus = GER_ussr_war_goal
 			}
 			}
-			add_to_variable = { SOV_barb_debuff_air_superiority_efficiency = 0.1 }
-			add_to_variable = { SOV_barb_debuff_army_bonus_air_superiority_factor = 0.025 }
-			add_to_variable = { SOV_barb_debuff_air_intercept_efficiency = 0.1 }
-			add_to_variable = { SOV_barb_debuff_enemy_army_bonus_air_superiority_factor = -0.075 }
-			add_to_variable = { SOV_barb_debuff_army_org_factor = 0.1  }
-			add_to_variable = { SOV_barb_debuff_army_defence_factor = 0.05 }
 			hidden_effect = {
 				if = { limit = { has_idea = semyon_timoshenko } remove_ideas = semyon_timoshenko }
 				if = { limit = { has_idea = SOV_aleksandr_yegorov } remove_ideas = SOV_aleksandr_yegorov }
@@ -4951,6 +4929,13 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			add_to_variable = { SOV_barb_debuff_air_superiority_efficiency = 0.1 }
+			add_to_variable = { SOV_barb_debuff_army_bonus_air_superiority_factor = 0.025 }
+			add_to_variable = { SOV_barb_debuff_air_intercept_efficiency = 0.1 }
+			add_to_variable = { SOV_barb_debuff_enemy_army_bonus_air_superiority_factor = -0.075 }
+			add_to_variable = { SOV_barb_debuff_army_org_factor = 0.1  }
+			add_to_variable = { SOV_barb_debuff_army_defence_factor = 0.05 }
+
 			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.1 }
 			add_to_variable = { SOV_soviet_airforce_air_mission_efficiency = 0.1 } 
 			custom_effect_tooltip = SOV_the_modern_war_in_the_skies_ns_tt
@@ -5140,7 +5125,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = SOV_desperate_measures
-		cost = 2.9
+		cost = 5
 
 		available = {
 			NOT = { has_idea = SOV_desperate_measures_ns }
@@ -5166,7 +5151,7 @@ focus_tree = {
 		x = -2
 		y = 3
 		relative_position_id = SOV_desperate_measures
-		cost = 2.9
+		cost = 5
 
 		available = {
 			AND = {
@@ -5208,6 +5193,7 @@ focus_tree = {
 				add_ideas = SOV_tool_relocation
 			}
 			custom_effect_tooltip = SOV_focus_complete_effect_tt
+			remove_ideas = SOV_tool_relocation
 			add_ideas = SOV_tool_relocated
 		}
 	}
@@ -7824,7 +7810,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_revive_the_stakhanovite_movement
-		cost = 10
+		cost = 15	
 
 		available = {
 
@@ -7959,7 +7945,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = SOV_expand_the_agitprop }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = SOV_expand_the_agitprop
 		cost = 3
 

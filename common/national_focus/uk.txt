@@ -151,15 +151,15 @@ focus_tree = {
 		prerequisite = { focus = limited_rearmament_focus }
 			available = {
 		OR = { 
-			date > 1938.2.1
-			GER = { has_completed_focus = GER_demand_sudetenland }
+			date > 1937.6.1
+			GER = { has_completed_focus = GER_anschluss }
 		}
  	}
 		icon = GFX_goal_generic_army_tanks
 		x = 0
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -167,6 +167,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = ENG_arty_nerf
+			add_research_slot = 1
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 3.0
@@ -182,8 +184,7 @@ focus_tree = {
 			}		
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 3.0
-				ahead_reduction = 2
+				bonus = 1.25
 				uses = 1				
 				technology = advanced_light_tank_chassis
 				technology = improved_medium_tank_chassis				

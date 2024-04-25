@@ -69,6 +69,9 @@ on_startup = {
 			}
 		}
 		every_country = {
+		limit = {
+		always = yes
+		}
 		add_ideas = tank_nerf
 		}
 			SWE = { anti_cross_faction_trade_all = yes }

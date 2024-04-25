@@ -237,7 +237,6 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = SWE_ball_bearing_idea
-			add_ideas = GER_swiss_gold_exchange
 			TUR = {
 			 	give_resource_rights = { receiver = GER state = 49 }
 			 }
@@ -307,14 +306,13 @@ focus_tree = {
 		
 		completion_reward = {
 			add_research_slot = 1
-			add_ideas = GER_Economic_Development
 			add_tech_bonus = {
 				name = GER_four_year_plan
 				bonus = 3.0
 				uses = 2
 				technology = construction4
 				technology = construction5
-				}
+			}
 		}
 	}
 	
