@@ -3182,6 +3182,9 @@ technology = improved_medium_airframe
 		#NOT = { SOV = { has_completed_focus = SOV_southern_thrust } }
 		has_war_with = GER
 		date>1940.7.1
+		NOT = {
+			has_global_flag = iran_front_clown
+		}
 	}
 
 	bypass = {

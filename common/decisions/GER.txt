@@ -611,6 +611,9 @@ operations = {
 			available =  {
 				291 = { is_controlled_by_ROOT_or_ally = yes }
 				ITA = { has_completed_focus = ITA_mare_nostrum_bba }
+				NOT = {
+					has_global_flag = iran_front_clown
+				}
 			}
 		
 			complete_effect = {	
