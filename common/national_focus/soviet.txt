@@ -5179,7 +5179,7 @@ focus_tree = {
 		x = 2
 		y = 3
 		relative_position_id = SOV_desperate_measures
-		cost = 7.2
+		cost = 10
 
 		select_effect = {
 			add_ideas = SOV_tool_relocation
