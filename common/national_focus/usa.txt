@@ -475,7 +475,7 @@ focus = {
 		
 		prerequisite = {  focus = USA_roosevelt_deal focus = USA_landon_deal  }
 		mutually_exclusive { focus = USA_neutrality_act }
-		available = {date > 1939.8.1 }	
+		available = {date > 1938.8.1 }	
 		relative_position_id=USA_reorganization_act
 		completion_reward = {
 			add_ideas = low_economic_mobilisation
@@ -1436,10 +1436,15 @@ focus = {
 		prerequisite = {  focus = USA_wartime_industry }
 		relative_position_id=USA_wartime_industry
 		completion_reward = {
+            add_timed_idea = {
+                idea = Overnight_conversion_Spirit
+                days = 60
+            }
 		custom_effect_tooltip = USA_the_overnight_conversation_tt 
 		hidden_effect = { HMP_usa_total_mob = yes }		
 		}
 	}
+
 focus = {
 		id = USA_manhattan_project
 		icon = GFX_focus_wonderweapons
@@ -1981,8 +1986,14 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-				custom_effect_tooltip = USA_support_sov_tt
-		}
+			SOV ={
+			add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 32000  } 
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500  } 
+			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 800  } 
+			add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 1250  }
+			add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 3460  }  
+		 }
+	 }
 	}
 
 focus = {
@@ -2716,7 +2727,7 @@ focus = {
 			focus = USA_defend_philippines
 		}
 		available = {
-			controls_state  = 327
+			controls_state  = 627
 		}
 		completion_reward = {
 			custom_effect_tooltip = "I shall return "
