@@ -345,7 +345,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SOV_finish_the_five_year_plan
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -987,7 +987,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = SOV_finish_the_five_year_plan
-		cost = 5
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_foreign_experts }
 
@@ -1380,7 +1380,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -3314,7 +3314,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 5
+		cost = 3
 
 		available = {
 			has_full_control_of_state = 219 #MOSCOW
@@ -6081,15 +6081,11 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_stalins_cult_of_personality
-		cost = 5
+		cost = 2
 
 		mutually_exclusive = { focus = SOV_the_faithful_servant_of_lenin }
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_5_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 5 compare = greater_than_or_equals }
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
@@ -6107,13 +6103,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_inheritor_of_the_mantle_of_lenin
-		cost = 5
+		cost = 3
 		
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_10_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 10 compare = greater_than_or_equals }
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -6148,15 +6140,11 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_stalins_cult_of_personality
-		cost = 5
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_inheritor_of_the_mantle_of_lenin }
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_5_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 5 compare = greater_than_or_equals }
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -6174,13 +6162,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_faithful_servant_of_lenin
-		cost = 5
+		cost = 2
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_10_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 10 compare = greater_than_or_equals }
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
@@ -6219,8 +6203,8 @@ focus_tree = {
 		
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_15_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 15 compare = greater_than_or_equals }
+				tooltip = "10 Campaigns completed"
+				check_variable = { SOV_propaganda_campaigns_taken = 10 compare = greater_than_or_equals }
 			}
 		}
 		
@@ -6254,8 +6238,8 @@ focus_tree = {
 
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_15_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 15 compare = greater_than_or_equals }
+				tooltip = "12 Campaigns completed"
+				check_variable = { SOV_propaganda_campaigns_taken = 12 compare = greater_than_or_equals }
 			}
 		}
 		
@@ -6277,8 +6261,8 @@ focus_tree = {
 
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_20_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 20 compare = greater_than_or_equals }
+				tooltip = "15 Campaigns completed"
+				check_variable = { SOV_propaganda_campaigns_taken = 15 compare = greater_than_or_equals }
 			}
 		}
 		
@@ -7741,7 +7725,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SOV_addressing_internal_affairs
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -7795,7 +7779,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SOV_expand_the_agitprop
-		cost = 5
+		cost = 10
 
 		mutually_exclusive = { focus = SOV_collectivist_propaganda }
 
@@ -7820,7 +7804,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_positive_heroism
-		cost = 5
+		cost = 10
 
 		available = {
 
@@ -7840,7 +7824,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_revive_the_stakhanovite_movement
-		cost = 5
+		cost = 10
 
 		available = {
 
@@ -7860,10 +7844,10 @@ focus_tree = {
 		id = SOV_collectivist_propaganda
 		icon = GFX_focus_ICE_embrace_the_workers_revolution
 		prerequisite = { focus = SOV_expand_the_agitprop }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = SOV_expand_the_agitprop
-		cost = 10
+		cost = 8
 
 		mutually_exclusive = { focus = SOV_positive_heroism }
 
@@ -7891,7 +7875,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_collectivist_propaganda
-		cost = 10
+		cost = 12
 
 		available = {
 
@@ -7934,7 +7918,7 @@ focus_tree = {
 		x = 2
 		y = 0
 		relative_position_id = SOV_expand_the_agitprop
-		cost = 3
+		cost = 5
 
 		available = {
 
@@ -7974,7 +7958,7 @@ focus_tree = {
 		id = SOV_development_aid_for_eastern_allies
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = SOV_expand_the_agitprop }
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = SOV_expand_the_agitprop
 		cost = 3
