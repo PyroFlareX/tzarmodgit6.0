@@ -1093,6 +1093,10 @@
 		completion_reward = {
 			custom_effect_tooltip = "Unlocks new decisions"
 			set_country_flag = Left_won
+			set_power_balance = {
+				id = FRA_violence
+			}
+
 		}
 	}
 	focus = {

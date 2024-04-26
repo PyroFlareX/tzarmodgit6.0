@@ -10,6 +10,9 @@ if = {
 		set_naval_oob = "FRA_1936_naval_legacy"
 	}
 }
+set_power_balance = {
+    id = FRA_violence
+}
 
 set_rule = { can_be_spymaster = no }
 

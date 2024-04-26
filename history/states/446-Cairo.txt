@@ -7,14 +7,6 @@ state={
 		owner = ENG
 		buildings = {
 			infrastructure = 3
-			12049 = {
-				naval_base = 2
-
-			}
-			12883 = {
-				naval_base = 1
-
-			}
 			9947 = {
 				naval_base = 1
 
@@ -36,7 +28,7 @@ state={
 	}
 
 	provinces={
-		1155 4981 9947 12049 12883 
+		1155 9947 
 	}
 	manpower=131732
 	buildings_max_level_factor=1.000
