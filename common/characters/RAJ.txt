@@ -41,6 +41,23 @@ characters={
 			id=-1
 		}
 	}
+
+	RAJ_jawaharlal_nehru={
+		name="Jawaharlal Nehru"
+		portraits={
+			civilian={
+				large="gfx/leaders/RAJ/r56_idea_RAJ_Jawaharlal_Nehru.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_B_P_SITARAMAYYA_DESC"
+			ideology=socialism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
 	RAJ_b._p._sitaramayya={
 		name="B. P. Sitaramayya"
 		portraits={
@@ -53,6 +70,73 @@ characters={
 			ideology=socialism
 			expire="1965.1.1.1"
 			id=-1
+		}
+	}
+	RAJ_george_giffard={
+		name="George Giffard"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ENG_george_giffard.dds"
+			}
+			army={
+				large="gfx/leaders/ENG/Portrait_Britain_George_Giffard.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = george_giffard
+			ledger  = army 
+				allowed  = {
+					original_tag  = RAJ
+				}
+				traits  = {
+					army_chief_organizational_3
+				}
+				cost = 150.000
+				ai_will_do  = {
+					factor  = 1.000
+				}
+			available = {
+				
+			}
+		}
+	}
+	RAJ_archibald_wavell={
+		name="Archibald Wavell"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ENG_archibald_wavell.dds"
+			}
+			army={
+				large="gfx/leaders/ENG/Portrait_Britain_Archibald_Wavell.dds"
+			}
+			civilian={
+				large="gfx/leaders/RAJ/r56_portrait_RAJ_Archibald_Wavell.dds"
+			}
+		}
+		field_marshal={
+			traits={ trait_reckless harsh_leader politically_connected organizer infantry_leader skilled_staffer trait_engineer logistics_wizard defensive_doctrine thorough_planner expert_delegator }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=9
+			legacy_id=998
+		}
+		advisor={
+			slot = high_command
+			idea_token = archibald_wavell
+			ledger = army
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
+			}
 		}
 	}
 	RAJ_noel_beresfordpeirse={
@@ -293,25 +377,25 @@ characters={
 		name="RAJ_mohan_singh"
 		portraits={
 			army={
-				small="GFX_idea_generic_army_arab_2"
+				small="GFX_idea_RAJ_mohan_singh"
 			}
 		}
 	}
 	RAJ_chakravarti_rajagopalachari={
+		name=RAJ_chakravarti_rajagopalachari
+		portraits={
+			army={
+				small="GFX_idea_RAJ_chakravarti_rajagopalachari" #small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = RAJ_chakravarti_rajagopalachari
-			allowed  = {
-					original_tag  = RAJ
-				}
-				traits  = {
-					popular_figurehead 
-				}
-		}
-		name="RAJ_chakravarti_rajagopalachari"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_3"
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				popular_figurehead 
 			}
 		}
 	}
@@ -452,22 +536,23 @@ characters={
 		}
 	}
 	RAJ_rajendra_prasad={
-		advisor={
-			slot = theorist
-			idea_token = RAJ_rajendra_prasad
-			ledger  = army 
-				allowed  = {
-					original_tag  = RAJ
-				}
-				cost = 150.000
-				traits  = {
-					military_theorist 
-				}
-		}
-		name="RAJ_rajendra_prasad"
+		name=RAJ_rajendra_prasad
 		portraits={
 			army={
-				small="GFX_idea_generic_army_arab_1"
+				small="GFX_idea_RAJ_rajendra_prasad" #small="GFX_idea_generic_army_arab_1"
+			}
+		}
+		advisor={
+			cost = 100	
+			slot = theorist
+			idea_token = RAJ_rajendra_prasad
+			ledger = army
+			allowed = {
+				original_tag = RAJ
+			}
+			
+			traits = {
+				military_theorist
 			}
 		}
 	}
@@ -501,6 +586,7 @@ characters={
 					original_tag  = RAJ
 				}
 				available  = {
+					has_country_flag = RAJ_dominionpath
 				}
 				traits  = {
 					democratic_reformer 
@@ -563,117 +649,266 @@ characters={
 			army={
 				small="GFX_idea_generic_navy_europe_2"
 			}
+			civilian={
+				large="gfx/leaders/RAJ/r56_portrait_RAJ_Luis_Mountbatten.dds"
+			}
 		}
 	}
 	RAJ_kodandera_cariappa={
-		advisor={
-			slot = high_command
-			idea_token = RAJ_kodandera_cariappa
-			ledger  = army 
-				allowed  = {
-					original_tag  = RAJ
-				}
-				traits  = {
-					army_chief_morale_2 
-				}
-				cost = 150.000
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="RAJ_kodandera_cariappa"
+		name=RAJ_kodandera_cariappa
 		portraits={
 			army={
-				small="GFX_idea_generic_army_arab_3"
+				small="GFX_idea_RAJ_kodandera_cariappa" #small="GFX_idea_generic_army_arab_3"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = RAJ_kodandera_cariappa
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RAJ_claude_auchinleck={
+		name="Claude Auchinleck"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ENG_claude_auchinleck.dds"
+			}
+			army={
+				large="gfx/leaders/ENG/Portrait_Britain_Claude_Auchinleck.dds"
+			}
+		}
+		#corps_commander={
+		#	traits={ brilliant_strategist career_officer infantry_officer organizer infantry_leader trickster jungle_rat infantry_expert expert_improviser }
+		#	skill=5
+		#	attack_skill=6
+		#	defense_skill=2
+		#	planning_skill=5
+		#	logistics_skill=3
+		#	legacy_id=-1
+		#}
+		advisor={
+			slot = high_command
+			idea_token = claude_auchinleck
+			ledger = army
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 2.000
 			}
 		}
 	}
 	RAJ_agha_khan_iii={
+		name=RAJ_agha_khan_iii
+		portraits={
+			army={
+				small= "GFX_idea_RAJ_agha_khan_iii" #small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = RAJ_agha_khan_iii
-			allowed  = {
-					original_tag  = RAJ
-				}
-				traits  = {
-					ideological_crusader 
-				}
-		}
-		name="RAJ_agha_khan_iii"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				ideological_crusader 
 			}
 		}
 	}
 	RAJ_ram_singh_thakur={
+		name=RAJ_ram_singh_thakur
+		portraits={
+			army={
+				small="GFX_idea_RAJ_ram_singh_thakur" #small="GFX_idea_generic_army_arab_1"
+			}
+		}
 		advisor={
 			slot = high_command
 			idea_token = RAJ_ram_singh_thakur
-			ledger  = army 
-				allowed  = {
-					original_tag  = RAJ
-				}
-				traits  = {
-					army_infantry_3 
-				}
-				cost = 150.000
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="RAJ_ram_singh_thakur"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_arab_1"
+			ledger = army
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 	}
 	RAJ_sir_mohammed_iqbal={
+		name=RAJ_sir_mohammed_iqbal
+		portraits={
+			army={
+				small="GFX_idea_RAJ_sir_mohammed_iqbal" #small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = RAJ_sir_mohammed_iqbal
-			allowed  = {
-					original_tag  = RAJ
-				}
-				traits  = {
-					backroom_backstabber 
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="RAJ_sir_mohammed_iqbal"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_arab_3"
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				backroom_backstabber 
+			}
+			ai_will_do = {
+				factor = 0.000
 			}
 		}
 	}
 	RAJ_john_mathai={
+		name=RAJ_john_mathai
+		portraits={
+			army={
+				small="GFX_idea_RAJ_john_mathai" #small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = RAJ_john_mathai
-			allowed  = {
-					original_tag  = RAJ
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-		name="RAJ_john_mathai"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				captain_of_industry 
 			}
 		}
 	}
 
+	RAJ_jd_tata={
+	advisor={
+			slot = political_advisor
+			idea_token = RAJ_jd_tata
+			allowed  = {
+					original_tag  = RAJ
+					#has_government  = democratic
+				}
+				available  = {
+					has_country_flag = RAJ_dominionpath
+				}
+				traits  = {
+					technocrat 
+				}
+		}
+		name="RAJ_jd_tata"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_advisor_sl_tata.dds"
+			}
+		}	
+	}
 
+	RAJ_Narendra_Deva={
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_Narendra_Deva
+			available = {
+				has_country_flag = RAJ_dominionpath
+			}
+			allowed = {
+				tag = RAJ
+			}
+			traits = {
+				accomplished_professor
+			}
+		}
+		name="RAJ_Narendra_Deva"
+		portraits={
+			army={
+				small="GFX_idea_RAJ_Narendra_Deva"
+			}
+		}
+	}
 
+	RAJ_Chhotu_Ram={
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_Chhotu_Ram
+			available = {
+				OR = {
+					has_country_flag = RAJ_dominionpath
+				}
+			}
+			allowed = {
+				tag = RAJ
+			}
+			traits = {
+				proponent_of_peasents
+			}
+		}
+		name="RAJ_Chhotu_Ram"
+		portraits={
+			army={
+				small="GFX_idea_RAJ_Chhotu_Ram"
+			}
+		}
+	}
 
+	RAJ_Jwala_Prasad_Srivastava={
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_Jwala_Prasad_Srivastava
+			available = {
+				OR = {
+					has_country_flag = RAJ_imperialpath
+				}
+			}
+			allowed = {
+				tag = RAJ
+			}
+			traits = {
+				defence_industrialist
+			}
+		}
+		name="RAJ_Jwala_Prasad_Srivastava"
+		portraits={
+			army={
+				small="GFX_idea_RAJ_Jwala_Prasad_Srivastava"
+			}
+		}
+	}
 
-
+	RAJ_Sir_Jeremy_Raisman={
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_Sir_Jeremy_Raisman
+			available = {
+				OR = {
+					has_country_flag = RAJ_imperialpath
+				}
+			}
+			allowed = {
+				tag = RAJ
+			}
+			traits = {
+				financial_expert
+			}
+		}
+		name="RAJ_Sir_Jeremy_Raisman"
+		portraits={
+			army={
+				small="GFX_idea_RAJ_Sir_Jeremy_Raisman"
+			}
+		}
+	}
+	
 	RAJ_orde_wingate={
 		name="Orde Wingate"
 		portraits={
@@ -683,6 +918,21 @@ characters={
 			army={
 				large="GFX_RAJ_orde_wingate"
 			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RAJ_orde_wingate
+			ledger  = army 
+				allowed  = {
+					original_tag  = RAJ
+				}
+				traits  = {
+					army_commando_0 
+				}
+				cost = 150.000
+				ai_will_do  = {
+					factor  = 1.000
+				}
 		}
 		# corps_commander={
 		# 	traits = { jungle_rat commando }
@@ -738,11 +988,26 @@ characters={
 		name="Jayanto Nath Chaudhuri"
 		portraits={
 			army={
-				small=""
+				small="GFX_portrait_RAJ_jayanto_nath_chaudhuri_small"
 			}
 			army={
 				large="GFX_RAJ_jayanto_nath_chaudhuri"
 			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RAJ_jayanto_nath_chaudhuri
+			ledger  = army 
+				allowed  = {
+					original_tag  = RAJ
+				}
+				traits  = {
+					army_armored_2 
+				}
+				cost = 150.000
+				ai_will_do  = {
+					factor  = 1.000
+				}
 		}
 		# corps_commander={
 		# 	traits = { desert_fox cavalry_leader  trickster panzer_leader career_officer trait_reckless armor_officer}

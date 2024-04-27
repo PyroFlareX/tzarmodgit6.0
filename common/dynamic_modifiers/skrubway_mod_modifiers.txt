@@ -1,0 +1,34 @@
+RAJ_army_dynamic_modifier = {
+
+	enable = { always = yes }
+
+	icon = GFX_idea_raj_all_india_forward_bloc
+
+	special_forces_attack_factor = RAJ_special_forces_attack_factor #0.05
+	special_forces_defence_factor = RAJ_special_forces_defence_factor #0.05
+	special_forces_out_of_supply_factor = RAJ_special_forces_out_of_supply_factor # 0.1
+	conscription_factor = RAJ_conscription_factor #0.1
+	supply_consumption_factor = RAJ_supply_consumption_factor #-0.05
+	max_dig_in_factor = RAJ_army_max_dig_in_factor #0.1
+	army_core_defence_factor = RAJ_army_core_defence_factor #0.05
+	army_infantry_attack_factor = RAJ_infantry_attack
+	motorized_attack_factor = RAJ_motorized_attack
+	mechanized_attack_factor = RAJ_mechanized_attack
+	out_of_supply_factor = RAJ_out_of_supply
+	army_armor_attack_factor = RAJ_armor_attack
+	army_artillery_attack_factor = RAJ_army_artillery_attack
+	surrender_limit = RAJ_cap_limit
+	heat_attrition_factor = RAJ_heat
+	army_org_factor = RAJ_army_org_factor
+	army_attack_factor = RAJ_army_attack
+	cavalry_attack_factor = RAJ_cav_attack
+	cavalry_defence_factor = RAJ_cav_defence
+	org_loss_when_moving = RAJ_org_loss
+	extra_marine_supply_grace = RAJ_marine_grace
+	max_planning = RAJ_max_planning
+	planning_speed = RAJ_planning_speed_factor
+	army_speed_factor = RAJ_army_speed_factor #-0.1
+	naval_invasion_capacity = RAJ_naval_invasion_capacity #10
+	air_superiority_bonus_in_combat = RAJ_air_superiority_bonus_in_combat #0.05
+	army_attack_against_major_factor = RAJ_tyranny
+}

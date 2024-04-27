@@ -66,7 +66,191 @@ ideas = {
 	}
 
 	country = {
-	
+		
+		RAJ_stick_to_your_post = {
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.10
+				
+			}
+			
+		}
+		RAJ_textile_machine_tools = {
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				
+			}
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		RAJ_defence_act = {
+			allowed = { always = no }
+
+			removal_cost = -1
+			
+			picture = raj_quit_india_movement
+		
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
+		
+		RAJ_hindustan_motors = {
+			allowed = { always = no }
+
+			removal_cost = -1
+			
+			picture = raj_quit_india_movement
+		
+			
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		RAJ_governmentownedbanks = {
+			allowed = { always = no }
+
+			removal_cost = -1
+			
+			picture = raj_quit_india_movement
+		
+			modifier = {
+				consumer_goods_expected_value = -0.05
+			}
+		}
+		
+		RAJ_protectionismidea = {
+			allowed = { always = no }
+
+			removal_cost = -1
+			
+			picture = raj_quit_india_movement
+		
+			modifier = {
+				min_export = -0.1
+			}
+		}
+		
+		RAJ_grain_export = {
+			allowed = { always = no }
+
+			removal_cost = -1
+			
+			picture = raj_quit_india_movement
+		
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				stability_factor = -0.10
+			}
+		}
+		
+		RAJ_quit_india_peaceful = {
+			allowed = { always = no }
+
+			removal_cost = -1
+			
+			picture = raj_quit_india_movement	
+			
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		
+		RAJ_quit_india_active = {
+			allowed = { always = no }
+
+			removal_cost = -1
+			
+			picture = raj_quit_india_movement	
+			
+			modifier = {
+				stability_factor = -0.30
+			}
+		}
+		
+		RAJ_quit_india_crackdown = {
+			allowed = { always = no }
+
+			removal_cost = -1
+			
+			picture = raj_quit_india_movement
+			
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+		
+		RAJ_quit_india_arrested = {
+			allowed = { always = no }
+
+			removal_cost = -1
+			 
+			 picture = raj_quit_india_movement
+			 
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		
+		all_india_radio = {
+			
+			allowed = { always = no }
+			removal_cost = -1
+			picture = propaganda
+
+			modifier = {
+				war_support_factor = 0.1
+				compliance_gain = 0.2
+				production_speed_radar_station_factor = 0.3
+			}
+		}
+		
+		RAJ_govt_propaganda = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = propaganda
+		
+			modifier = {
+				drift_defence_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+		
 		RAJ_beast_of_burden = {
 		
 		picture = raj_all_india_forward_bloc
@@ -452,7 +636,7 @@ ideas = {
 				army_core_defence_factor = 0.05
 			}
 		}
-	
+
 	}
 
 		
@@ -1078,7 +1262,7 @@ ideas = {
 
 	industrial_concern = {
 		company_tata = {
-			picture = generic_improved_industries
+			picture = GFX_r56_idea_RAJ_Tata_Steel
 			allowed = {
 				original_tag = RAJ
 			}

@@ -12,6 +12,14 @@ joint_focus = {
 		
 		cost = 10
 
+		offset = {
+			x = 0
+			y = 2
+			trigger = {
+				has_focus_tree = indian_focus
+			}
+		}
+		
 		ai_will_do = {
 			factor = -100
 		}
