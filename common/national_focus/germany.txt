@@ -2298,6 +2298,13 @@ CZE = {
 			factor = 10	
 		}
 		completion_reward = {
+			hidden_effect ={
+				FRA = {
+				#FRA_TZAR_RELOCATION_CIV
+				activate_mission = FRA_TZAR_RELOCATION_CIV
+				activate_mission = FRA_TZAR_RELOCATION_MIL
+				}
+			}
 			if = {
 				limit = {
 					has_completed_focus = GER_four_year_plan

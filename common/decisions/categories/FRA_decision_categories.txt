@@ -7,7 +7,21 @@ FRA_war_measures = {
         }
         
 }
+FRA_elections = {
+	priority = 100
+	scripted_gui = fra_elections
+	allowed = {
+		original_tag = FRA
+	}
 
+	available = {
+		always = yes
+	}
+
+	visible = {
+		always = yes
+	}
+}
 # VIC_concessions_to_the_germans = {
 # 	allowed = {
 # 		original_tag = EFR
