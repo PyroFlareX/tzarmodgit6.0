@@ -40,7 +40,7 @@ set_variable = { FRA_industry_con = -0.1 }
 set_variable = { FRA_exports = 0.05 }
 set_variable = { FRA_resources = -0.075 }
 set_variable = { FRA_eff_ret = 0.065 }
-set_variable = { FRA_output = -0.475 }
+set_variable = { FRA_output = -0.375 }
 set_variable = { FRA_stab = -0.2 }
 set_variable = { FRA_ws = -0.2 }
 set_variable = { FRA_pp_diplo = -0.5 }
