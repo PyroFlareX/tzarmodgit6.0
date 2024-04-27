@@ -1344,6 +1344,25 @@ ideas = {
 				}
 			}
 		}
+		FRA_tank_ic = {
+			name = "French Tanks"
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
 		FRA_support_the_left_focus = {
 				picture = generic_communism_drift_bonus
 				allowed = {

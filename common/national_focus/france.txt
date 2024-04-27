@@ -362,6 +362,10 @@
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			custom_effect_tooltip = FRA_extraction_eff
+			add_to_variable = {
+				FRA_resources = 0.1
+			}
 			add_ideas = { FRA_global_investments }
 		}
 	}	
@@ -385,7 +389,7 @@
 					has_completed_focus = FRA_military_investments
 					has_completed_focus = FRA_defensive_strategems
 				}
-				
+				has_completed_focus = FRA_review_foreign_policy
 				has_completed_focus = FRA_united_france
 			}
 		}
@@ -396,21 +400,12 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			if = {
-                limit = { 539 = { is_fully_controlled_by = ROOT } }
-                539 = {
-        add_building_construction = {
-                        type = naval_base
-                        level = 14
-                        instant_build = yes
-                        province = 5139
-                    }
-                }
-
-
-        }
-		
-        461 = {
+			add_to_variable = {
+				FRA_xp_gain = 0.65
+				FRA_ww_army = 0.05
+			}
+			hidden_effect = {
+				        461 = {
                 add_building_construction = {
                         type = anti_air_building
                         level = 2
@@ -461,6 +456,22 @@
 					instant_build = yes
 				}
 		}
+			if = {
+                limit = { 539 = { is_fully_controlled_by = ROOT } }
+                539 = {
+        add_building_construction = {
+                        type = naval_base
+                        level = 14
+                        instant_build = yes
+                        province = 5139
+                    }
+                }
+				}
+			}
+			custom_effect_tooltip = FRA_warsupport_weekly
+			add_to_variable = {
+				FRA_ww_army = 0.1
+			}
 			army_experience = 100
 			add_offsite_building = { type = arms_factory level = 4 }
 			# add_ideas =  FRA_charles_de_gaulle
@@ -516,6 +527,10 @@
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = FRA_defence
+			add_to_variable = {
+				FRA_entr = 5
+			}
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maxime_weygand
 			army_experience = 20
@@ -588,6 +603,13 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_to_variable = {
+				FRA_winter = 0.1
+			}
+			add_to_variable = {
+				FRA_heat = 0.1
+			}
+			custom_effect_tooltip = FRA_weather_attrition
 			army_experience = 10
 			774 = { add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -619,6 +641,10 @@
 			factor = 0.2
 		}
 		completion_reward = {
+			custom_effect_tooltip = FRA_tank_buff
+			add_to_variable = {
+				FRA_offence = 0.04
+			}
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maurice_gamelin
 			add_tech_bonus = {
@@ -722,25 +748,18 @@
 
 		completion_reward = {
 			army_experience = 10
-			774 = { add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
 			add_ideas = FRA_motorized_focus
-						add_tech_bonus = {
+			add_tech_bonus = {
 				name = FRA_mechanized_focus
-				bonus = 1.0
+				bonus = 3.0
 				uses = 1
 				category = cat_mechanized_equipment
 			}
 		}
 	}
 	focus = {
-		id = FRA_heavy_armor_focus
-		icon = GFX_focus_FIN_foreign_anti_air
+		id = FRA_light_medium_armor
+		icon = GFX_focus_ITA_ferrea_mole_ferreo_cuore
 		prerequisite = { focus = FRA_motorized_focus }
 		x = -1
 		y = 1
@@ -751,34 +770,7 @@
 
 		completion_reward = {
 			army_experience = 5
-			add_tech_bonus = {
-				name = FRA_heavy_armor_focus
-				bonus = 1.0
-				uses = 1
-				category = cat_heavy_armor
-			}
-		}
-	}
-	focus = {
-		id = FRA_light_medium_armor
-		icon = GFX_focus_ITA_ferrea_mole_ferreo_cuore
-		prerequisite = { focus = FRA_motorized_focus focus = FRA_mech }
-		x = 0
-		y = 2
-		relative_position_id = FRA_motorized_focus
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = FRA_light_medium_armor
-				bonus = 1.0
-				uses = 1
-				category = cat_light_armor
-				category = cat_medium_armor
-			}
+			add_ideas = FRA_tank_ic
 		}
 	}
 	focus = {
@@ -789,26 +781,16 @@
 		x = 3
 		y = 1
 		relative_position_id = FRA_motorized_focus
-		cost = 5
+		cost = 2
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			army_experience = 10
-			774 = { add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
+			add_to_variable = {
+				FRA_oil_consumption = -0.25
 			}
-			add_ideas = FRA_motorized_focus
-						add_tech_bonus = {
-				name = FRA_mechanized_focus
-				bonus = 1.0
-				uses = 1
-				category = cat_mechanized_equipment
-			}
+			custom_effect_tooltip = FRA_oil_consumption
 		}
 	}
 	focus = {
@@ -835,7 +817,7 @@
 			add_ideas = FRA_motorized_focus
 						add_tech_bonus = {
 				name = FRA_mechanized_focus
-				bonus = 1.0
+				bonus = 2.0
 				uses = 1
 				category = cat_mechanized_equipment
 			}
@@ -872,7 +854,7 @@
 				name = FRA_methodical_battle
 				category = land_doctrine
 				uses = 2
-				cost_reduction = 0.65
+				cost_reduction = 0.25
 			}
 		}
 	}
@@ -992,6 +974,10 @@
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = FRA_anti_minor
+			add_to_variable = {
+				FRA_anti_minor = 0.15
+			}
 			18 = {
 				add_building_construction = {
 					type = bunker
@@ -1159,13 +1145,102 @@
 		}
 	}
 	focus = {
+		id = FRA_support_left
+		text = "Support Left Wing Parties"
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		mutually_exclusive = {
+			focus = FRA_support_right
+		}
+		
+		x = -1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+
+		cost = 10
+		prerequisite = {focus = FRA_election}
+		relative_position_id =FRA_election
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+		completion_reward = {
+			custom_effect_tooltip = FRA_decrease_instability
+			hidden_effect = {
+			add_power_balance_value = {
+				id = FRA_violence
+				value = 0.1
+			}}
+		}
+	}
+	focus = {
+		id = FRA_support_right
+		text = "Support Right Wing Parties"
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		mutually_exclusive = {
+			focus = FRA_support_left
+		}
+		cost = 10
+		prerequisite = {focus = FRA_election}
+		relative_position_id =FRA_election
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+		completion_reward = {
+			add_to_variable = {
+				FRA_support_for_right = 15
+			}
+			add_to_variable = {
+				FRA_support_for_left = -15
+			}
+			custom_effect_tooltip = FRA_increase_support_for_right
+		}
+	}
+	focus = {
 		allow_branch = {
 		}
 		id = Fra_right_wing
 		text = "Victoire De La Droite"
 		icon = GFX_focus_ARG_defense_and_democracy
 		x = 5
-		y = 1
+		y = 2
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = "The National Union won"
@@ -1210,7 +1285,7 @@
 		text = "Victoire De La Gauche"
 		icon = GFX_focus_NORDIC_com_form_alliance
 		x = -5
-		y = 1
+		y = 2
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = "The left won"
@@ -1546,6 +1621,8 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
+			clr_country_flag = FRA_passed_reform
+			set_country_flag = FRA_passed_reform
 			custom_effect_tooltip = FRA_decrease_instability
 			hidden_effect = {
 			add_power_balance_value = {
@@ -1589,6 +1666,8 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
+			clr_country_flag = FRA_passed_reform
+			set_country_flag = FRA_passed_reform
 			hidden_effect = {
 				add_power_balance_value = {
 					id = FRA_violence
@@ -1596,7 +1675,8 @@
 				}
 			}
 			custom_effect_tooltip = FRA_afrika
-			
+			custom_effect_tooltip = FRA_increase_foutput
+			add_to_variable = { FRA_output = 0.075 }
 		}
 	}
 	focus = {
@@ -1632,10 +1712,13 @@
 			custom_effect_tooltip = FRA_wages
 			Fra_custom_wages = yes
 			hidden_effect = {
-			add_power_balance_value = {
-				id = FRA_violence
-				value = 0.1
-			}}
+				add_power_balance_value = {
+					id = FRA_violence
+					value = 0.1
+				}
+			}
+			add_to_variable = { FRA_output = 0.05 }
+			add_to_variable = { FRA_cg = 0.1 }
 		}
 	}
 	focus = {
@@ -1667,12 +1750,14 @@
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
 			hidden_effect = {
-			hidden_effect = {
 			add_power_balance_value = {
 				id = FRA_violence
 				value = 0.2
-			}}}
+			}}
 			custom_effect_tooltip = "With our country secured we can finally begin expanding our military!"
+			add_to_variable = {
+				FRA_pp_diplo = 0.5
+			}
 			custom_effect_tooltip = FRA_stability
 			custom_effect_tooltip = FRA_decrease_instability_BIG
 		}
@@ -1695,7 +1780,12 @@
 		relative_position_id = Fra_right_wing
 		cost = 5
 		available = {
-			date > 1937.6.1
+			or = {
+				GER = {
+					has_completed_focus = GER_anschluss
+				}
+				date > 1937.6.1
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1719,17 +1809,18 @@
 			focus = FRA_stimulate_the_dynamic_market
 		}
 		relative_position_id = FRA_stimulate_the_dynamic_market
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			hidden_effect = {
 			add_power_balance_value = {
 				id = FRA_violence
-				value = 0.3
-			}
+				value = 0.2
+			}}	
 			custom_effect_tooltip = "Significantly reduces chances of strikes"
 			custom_effect_tooltip = FRA_decrease_instability_BIG
 		}
@@ -1787,8 +1878,10 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		remove_ideas = FRA_inefficient_economy_2
-		remove_ideas = FRA_full_employment
+		add_to_variable = { FRA_cg = -0.08 }
+			add_to_variable = { FRA_output = 0.1 }
+			add_to_variable = { FRA_eff_ret = 0.015 } 
+			custom_effect_tooltip = FRA_right_side_eco_from_focus
 		}
 	}
 
@@ -1810,6 +1903,9 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			add_to_variable = { FRA_cg = -0.08 }
+			add_to_variable = { FRA_output = 0.1 }
+			add_to_variable = { FRA_eff_ret = 0.015 } 
 			custom_effect_tooltip = FRA_entrepenuership
 		}
 	}
@@ -1824,7 +1920,7 @@
 			focus = FRA_laissez_faire
 		}
 		relative_position_id = FRA_laissez_faire
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1850,14 +1946,16 @@
 			focus = FRA_laissez_faire
 		}
 		relative_position_id = FRA_laissez_faire
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_ideas = { FRA_entrepeneurship }
+			add_to_variable = { FRA_cg = -0.08 }
+			add_to_variable = { FRA_output = 0.075 }
+			custom_effect_tooltip = FRA_big_upgrade_eco
 		}
 	}
 	focus = {
@@ -1878,7 +1976,10 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_ideas = { FRA_entrepeneurship }
+			add_to_variable = { FRA_cg = -0.08 }
+			add_to_variable = { FRA_output = 0.1 }
+			add_to_variable = { FRA_eff_ret = 0.015 } 
+			custom_effect_tooltip = FRA_right_side_eco_from_focus
 		}
 	}
 	focus = {
@@ -1899,7 +2000,9 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_ideas = { FRA_entrepeneurship }
+			add_to_variable = { FRA_cg = -0.08 }
+			add_to_variable = { FRA_output = 0.075 }
+			custom_effect_tooltip = FRA_big_upgrade_eco
 		}
 	}
 	
@@ -1916,7 +2019,7 @@
 			focus = FRA_laissez_faire
 		}
 		relative_position_id = FRA_laissez_faire
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1948,6 +2051,8 @@
 	
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			add_to_variable = { FRA_cg = 0.15 }
+			custom_effect_tooltip = FRA_cg_increase
 			add_research_slot = 1
 		}
 	}
@@ -2044,7 +2149,7 @@
 		x = -1
 		y = 1
 		relative_position_id = FRA_stimulate_the_dynamic_market
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -2087,7 +2192,17 @@
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			remove_ideas = FRA_disjointed_government
+			hidden_effect = {
+			add_power_balance_value = {
+				id = FRA_violence
+				value = 0.2
+			}}
+			custom_effect_tooltip = "With our country secured we can finally begin expanding our military!"
+			add_to_variable = {
+				FRA_pp_diplo = 0.5
+			}
+			custom_effect_tooltip = FRA_stability
+			custom_effect_tooltip = FRA_decrease_instability_BIG
 		}
 	}
 	

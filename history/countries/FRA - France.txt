@@ -40,13 +40,13 @@ set_variable = { FRA_industry_con = -0.1 }
 set_variable = { FRA_exports = 0.05 }
 set_variable = { FRA_resources = -0.075 }
 set_variable = { FRA_eff_ret = 0.065 }
-set_variable = { FRA_output = -0.3 }
+set_variable = { FRA_output = -0.475 }
 set_variable = { FRA_stab = -0.2 }
 set_variable = { FRA_ws = -0.2 }
 set_variable = { FRA_pp_diplo = -0.5 }
 set_variable = { FRA_tank = -0.025 }
 set_variable = { FRA_planning = 0.075 }
-set_variable = { FRA_entr = -0.025 }
+set_variable = { FRA_entr = -2.5 }
 set_variable = { FRA_anti_minor = 0 }
 set_variable = { FRA_xp_gain = -0.5 }
 set_variable = { FRA_reinforce_rate = 0 }
