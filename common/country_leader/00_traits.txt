@@ -4176,7 +4176,7 @@ tank_refurbishment_plant = { #NSB
 	financial_expert = {
 		sprite = 10
 		random = yes
-		consumer_goods_factor = -0.03
+		consumer_goods_expected_value = -0.05 
 		
 		ai_will_do = {
 			factor = 2
@@ -5921,6 +5921,16 @@ tank_refurbishment_plant = { #NSB
 		}
 	}
 	
+	army_commando_0 = { # +4 paratrooper/marine/mountain efficiency
+		sprite = 5
+		special_forces_attack_factor = 0.04
+	    special_forces_defence_factor = 0.04
+		experience_gain_army = 0.06
+		command_cap = @tier2
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	army_commando_1 = { # +4 paratrooper/marine/mountain efficiency
 		sprite = 5
@@ -7132,7 +7142,7 @@ tank_refurbishment_plant = { #NSB
 	technocrat = {
 		sprite = 13
 		
-		production_speed_industrial_complex_factor = 0.05
+		production_speed_industrial_complex_factor = 0.15
 		research_speed_factor = 0.05
 		ai_will_do = {
 			factor = 1
@@ -7153,5 +7163,27 @@ tank_refurbishment_plant = { #NSB
 
 		production_speed_dockyard_factor = 0.17
 	}
+
+	defence_industrialist = {
+		random = no
+		sprite = 13
+		industrial_capacity_factory = 0.1
+		production_speed_arms_factory_factor = 0.1
+	}
+	
+	accomplished_professor = {
+		random = no
+		sprite = 13
+		research_speed_factor = 0.10
+		license_infantry_eq_tech_difference_speed_factor = 0.25
+	}
+	
+	proponent_of_peasents = {
+		random = no
+		sprite = 13
+		war_support_factor = 0.10
+		war_support_weekly_factor = 0.01
+	}
+
 
 }

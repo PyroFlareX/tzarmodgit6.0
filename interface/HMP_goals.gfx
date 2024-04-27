@@ -2,6 +2,52 @@ spriteTypes = {
   
       
     
+	SpriteType = {
+		name = "GFX_nawab_guns"
+		texturefile = "gfx/interface/goals/nawab_guns.dds"
+	}
+	SpriteType = {
+		name = "GFX_sikh_01"
+		texturefile = "gfx/interface/goals/sikh_01.dds"
+	}
+	SpriteType = {
+		name = "GFX_rhino_icon2"
+		texturefile = "gfx/interface/goals/rhino_icon2.dds"
+	}
+	SpriteType = {
+		name = "GFX_india_tank"
+		texturefile = "gfx/interface/goals/india_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_khairpur_cav"
+		texturefile = "gfx/interface/goals/khairpur_cav.dds"
+	}
+	SpriteType = {
+		name = "GFX_chitral_cav"
+		texturefile = "gfx/interface/goals/chitral_cav.dds"
+	}
+	SpriteType = {
+		name = "GFX_gwalior"
+		texturefile = "gfx/interface/goals/gwalior_01.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bhopal"
+		texturefile = "gfx/interface/goals/bhopal_01.dds"
+	}
+	SpriteType = {
+		name = "GFX_sikh_military_02"
+		texturefile = "gfx/interface/goals/sikh_military_02.dds"
+	}
+	SpriteType = {
+		name = "GFX_bikaner"
+		texturefile = "gfx/interface/goals/bikaner_01.dds"
+	}
+	SpriteType = {
+		name = "GFX_hindu_german_03"
+		texturefile = "gfx/interface/goals/hindu_german_03.dds"
+	}
+	
     SpriteType = {
 		name = "GFX_burma_oil_01"
 		texturefile = "gfx/interface/goals/burma_oil_01.dds"
