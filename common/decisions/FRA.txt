@@ -1,3 +1,59 @@
+FRA_elections = {
+	FRA_elections_support_left = {
+	fire_only_once = yes
+	}
+	FRA_elections = {
+		icon = generic_construction
+		available = {
+			date>1936.5.3
+		}
+
+		is_good = yes
+
+		allowed = {
+			#added through on_action
+			tag = FRA
+		}
+
+		fire_only_once = yes
+		days_mission_timeout = 153
+
+		visible = {
+		}
+
+        timeout_effect = {
+        if = {
+	        limit = {
+	        	check_variable = {
+	        		FRA_support_for_right < 50
+	        	}
+	        }
+	        	complete_national_focus = Fra_left_wing
+	    }
+        if = {
+	        limit = {
+	        	check_variable = {
+	        		FRA_support_for_right > 49
+	        	}
+	        }
+	        complete_national_focus = Fra_right_wing
+        }
+        if = {
+        limit = {
+        FRA = {
+        NOT = {
+        has_completed_focus = FRA_elections
+        }
+        }
+        }
+        complete_national_focus = FRA_election
+        }
+			hidden_effect = {
+			}
+			#custom_effect_tooltip = GER_relocate_industry_mil
+		}
+	}
+}
 FRA_indutry_tzar = {
 	FRA_industry_1 = {
 		fire_only_once = yes

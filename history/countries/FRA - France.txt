@@ -20,7 +20,8 @@ add_timed_idea = { idea = france_production_regrowth days = 30 }
 set_variable = { FRA_north_eco = 0 }
 set_variable = { FRA_south_eco = 0 }
 set_variable = { FRA_polical_instability = 3 }
-set_variable = { FRA_support_for_right = 0 }
+set_variable = { FRA_support_for_right = 36 }
+set_variable = { FRA_support_for_left = 64 }
 set_research_slots = 3
 set_stability = 0.55
 set_war_support = 0.20
