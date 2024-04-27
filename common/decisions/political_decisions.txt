@@ -93,6 +93,114 @@ democratic_on_the_rise = {
 }
 
 political_actions = {
+	war_propaganda = {
+
+		icon = generic_prepare_civil_war
+		allowed = {
+			OR = {	
+				tag = FRF
+				tag = SOV
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = SIA
+				tag = BRA
+				tag = MEX
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR	
+				tag = CRO
+				tag = CZE
+			}
+		}		available = {
+			NOT = { has_country_flag = war_propaganda_campaign_running }
+			threat > 0.3
+			# has_offensive_war = no
+		}
+
+		visible = {
+			
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+		days_re_enable = 0
+
+		cost = 100
+
+		modifier = {
+			war_support_weekly = 0.01
+		}
+
+		complete_effect = {
+			set_country_flag = war_propaganda_campaign_running
+			custom_effect_tooltip = "Gives 12.85% War Support in total"
+		}
+		remove_effect = {
+			clr_country_flag = war_propaganda_campaign_running
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+				has_war = yes
+			}
+		}
+	}
+	supply_buildup_cancel = {
+	name = "Cancel Logistical preparations"
+		icon = generic_construction
+		available = {
+		}
+		visible = {
+			has_decision = supply_buildup
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			remove_decision = supply_buildup
+		}
+	}
+	supply_buildup = {
+		icon = generic_construction
+		available = {
+			
+		}
+		visible = {
+		}
+		fire_only_once = no
+		days_remove = -1
+		cost = 0
+		modifier = {
+			production_speed_rail_way_factor = 0.35
+			production_speed_supply_node_factor = 0.35
+			production_speed_naval_base_factor = 0.35
+			consumer_goods_expected_value = 0.03
+		}
+		ai_will_do = {
+			base = 0
+		}
+		remove_effect = {
+		}
+		complete_effect = {
+		}
+	}
 	give_refuge_ger = {
 
 		icon = generic_research

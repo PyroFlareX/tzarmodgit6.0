@@ -1,109 +1,3 @@
-# VIC_concessions_to_the_germans = {
-# 	VIC_produce_aircraft_parts = {
-# 		available = {}
-
-# 		visible = {
-# 			has_any_occupation_cost_trigger = yes
-# 		}
-
-# 		cost = 25
-
-# 		fire_only_once = yes
-# 		ai_will_do = {
-# 			factor = 1
-# 			modifier = {
-# 				has_idea = FRA_occupation_costs_4
-# 				factor = 5
-# 			}
-# 			modifier = {
-# 				has_idea = FRA_occupation_costs_3
-# 				factor = 2
-# 			}
-# 			modifier = {
-# 				has_idea = FRA_occupation_costs_2
-# 				factor = 1.5
-# 			}
-# 		}
-# 		complete_effect = {
-# 			add_ideas = VIC_produce_aircraft_parts
-# 			GER = { add_ideas = VIC_aircraft_parts }
-# 			reduce_occupation_cost_effect = yes
-# 		}
-# 	}
-# 	VIC_send_guest_workers = {
-# 		available = {
-			
-# 		}
-# 		visible = { has_any_occupation_cost_trigger = yes }
-# 		cancel_trigger = {
-# 			not = { has_country_flag = VIC_send_guest_workers }
-# 		}
-# 		cost = 25
-# 		ai_will_do = {
-# 			factor = 1
-# 			modifier = {
-# 				has_idea = FRA_occupation_costs_4
-# 				factor = 5
-# 			}
-# 			modifier = {
-# 				has_idea = FRA_occupation_costs_3
-# 				factor = 2
-# 			}
-# 			modifier = {
-# 				has_idea = FRA_occupation_costs_2
-# 				factor = 1.5
-# 			}
-# 		}
-# 		fire_only_once = yes
-# 		days_remove = -1
-# 		modifier = {
-# 			conscription_factor = -0.25
-# 		}
-# 		complete_effect = {
-# 			GER = { add_ideas = VIC_guest_workers }
-# 			reduce_occupation_cost_effect = yes
-# 			reduce_occupation_cost_effect = yes
-# 			set_country_flag = VIC_send_guest_workers
-# 		}
-# 	}
-# 	VIC_recall_guest_workers = {
-# 		available = {
-# 			has_country_flag = VIC_send_guest_workers
-# 		}
-# 		visible = { 
-# 		 	has_country_flag = VIC_send_guest_workers
-# 		}
-# 		cost = 0
-# 		ai_will_do = {
-# 			factor = 0
-# 			modifier = {
-# 				controls_state = 16
-# 				add = 10
-# 			}
-# 		}
-# 		fire_only_once = yes
-# 		complete_effect = {
-# 			GER = { remove_ideas = VIC_guest_workers }
-# 			if = {
-# 				limit = {
-# 					NOT = {
-# 						controls_state = 16
-# 					}
-# 				}
-# 				increase_occupation_cost_effect = yes
-# 								increase_occupation_cost_effect = yes
-# 			}
-# 			if = {
-# 				limit = {
-# 					controls_state = 16
-# 					has_idea = FRA_mandatory_work_service
-# 				}
-# 				remove_ideas = FRA_mandatory_work_service
-# 			}
-# 			clr_country_flag = VIC_send_guest_workers
-# 		}
-# 	}	
-# }
 FRA_indutry_tzar = {
 	FRA_industry_1 = {
 		fire_only_once = yes
@@ -147,6 +41,7 @@ FRA_indutry_tzar = {
 		}
 	}
 	FRA_Civ_industry_north_1 = {
+		name = "Civil Works in Alsace"
 		fire_only_once = yes
 		visible = {
 			NOT = {
@@ -165,11 +60,14 @@ FRA_indutry_tzar = {
 					instant_build = yes
 				}
 			}
-			fra_small_eco_upgrade_effect = yes 
+			add_to_variable = { FRA_cg = -0.04 }
+			add_to_variable = { FRA_output = 0.05 }
+			add_to_variable = { FRA_eff_ret = 0.015 }
 			custom_effect_tooltip = FRA_small_eco_upgrade
 		}
 	}
 	FRA_Civ_industry_north_2 = {
+		name = "Civil Works in Nord-Pas-De-Calai"
 		fire_only_once = yes
 		visible = {
 			NOT = {
@@ -188,14 +86,20 @@ FRA_indutry_tzar = {
 					instant_build = yes
 				}
 			}
-			fra_small_eco_upgrade_effect = yes 
+			add_to_variable = { FRA_cg = -0.04 }
+add_to_variable = { FRA_output = 0.05 }
+add_to_variable = { FRA_eff_ret = 0.015 } 
 			custom_effect_tooltip = FRA_small_eco_upgrade
 		}
 	}
 	FRA_Civ_industry_north_3 = {
+		name = "Civil Works in Chamapgne"
 		fire_only_once = yes
 		visible = {
-			always = yes
+			NOT = {
+				has_war = yes
+			}
+			has_country_flag = FRA_eco_north
 		}
 		cost = 50
 		complete_effect = {
@@ -208,11 +112,14 @@ FRA_indutry_tzar = {
 					instant_build = yes
 				}
 			}
-			fra_small_eco_upgrade_effect = yes 
+			add_to_variable = { FRA_cg = -0.04 }
+add_to_variable = { FRA_output = 0.05 }
+add_to_variable = { FRA_eff_ret = 0.015 } 
 			custom_effect_tooltip = FRA_small_eco_upgrade
 		}
 	}
 	FRA_North_ult_upgrade = {
+		name = "Stabilize The North"
 		fire_only_once = yes
 		visible = {
 			NOT = {
@@ -221,13 +128,16 @@ FRA_indutry_tzar = {
 			check_variable = {FRA_north_eco > 2 }
 		}
 		complete_effect = {
-			fra_big_eco_upgrade_effect = yes
+			add_to_variable = { FRA_cg = -0.04 }
+		add_to_variable = { FRA_cap = 0.025 }
+		add_to_variable = { FRA_output = 0.05 }
 			custom_effect_tooltip = FRA_big_upgrade_eco
 		}
 	}
 
 	### south
 	FRA_Civ_industry_south_1 = {
+		name = "Civil Works in Bouches Du Rhone"
 		fire_only_once = yes
 		visible = {
 			NOT = {
@@ -246,11 +156,14 @@ FRA_indutry_tzar = {
 					instant_build = yes
 				}
 			}
-			fra_small_eco_upgrade_effect = yes 
+			add_to_variable = { FRA_cg = -0.04 }
+add_to_variable = { FRA_output = 0.05 }
+add_to_variable = { FRA_eff_ret = 0.015 } 
 			custom_effect_tooltip = FRA_small_eco_upgrade
 		}
 	}
 	FRA_Civ_industry_south_2 = {
+		name = "Civil Works in Rhone"
 		fire_only_once = yes
 		visible = {
 			NOT = {
@@ -269,11 +182,14 @@ FRA_indutry_tzar = {
 					instant_build = yes
 				}
 			}
-			fra_small_eco_upgrade_effect = yes 
+			add_to_variable = { FRA_cg = -0.04 }
+add_to_variable = { FRA_output = 0.05 }
+add_to_variable = { FRA_eff_ret = 0.015 } 
 			custom_effect_tooltip = FRA_small_eco_upgrade
 		}
 	}
 	FRA_Civ_industry_south_3 = {
+		name = "Civil Works in Bordeaux"
 		fire_only_once = yes
 		visible = {
 			NOT = {
@@ -284,7 +200,7 @@ FRA_indutry_tzar = {
 		cost = 80
 		complete_effect = {
 			add_to_variable = { FRA_south_eco = 1 }
-			31 = {
+			19 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
@@ -292,11 +208,14 @@ FRA_indutry_tzar = {
 					instant_build = yes
 				}
 			}
-			fra_small_eco_upgrade_effect = yes 
+			add_to_variable = { FRA_cg = -0.04 }
+add_to_variable = { FRA_output = 0.05 }
+add_to_variable = { FRA_eff_ret = 0.015 } 
 			custom_effect_tooltip = FRA_small_eco_upgrade
 		}
 	}
 	FRA_south_ult_upgrade = {
+		name = "Stabilize The South"
 		fire_only_once = yes
 		visible = {
 			NOT = {
@@ -305,7 +224,9 @@ FRA_indutry_tzar = {
 			check_variable = {FRA_south_eco > 2 }
 		}
 		complete_effect = {
-			fra_big_eco_upgrade_effect = yes
+			add_to_variable = { FRA_cg = -0.04 }
+		add_to_variable = { FRA_cap = 0.025 }
+		add_to_variable = { FRA_output = 0.05 }
 			custom_effect_tooltip = FRA_big_upgrade_eco
 		}
 	}

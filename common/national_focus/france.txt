@@ -37,6 +37,8 @@
 				idea = FRA_devalue_the_franc
 				days = 365
 			}
+			FRA_increase_instability = yes
+			custom_effect_tooltip = FRA_afrika
 		}
 	}
 
@@ -1279,6 +1281,7 @@
 		completion_reward = {
 			add_stability = 0.025
 			custom_effect_tooltip = FRA_women
+			FRA_increase_instability = yes
 		}
 	}
 	focus = {
@@ -1337,7 +1340,9 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
-			fra_big_eco_upgrade_effect = yes
+			add_to_variable = { FRA_cg = -0.04 }
+		add_to_variable = { FRA_cap = 0.025 }
+		add_to_variable = { FRA_output = 0.05 }
 			custom_effect_tooltip = FRA_big_upgrade_eco
 			add_stability = 0.05
 		}
@@ -1411,7 +1416,6 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
-			custom_effect_tooltip = FRA_afrika
 			clr_country_flag = FRA_economy_flag
 			set_country_flag = FRA_economy_flag
 			set_country_flag = FRA_eco_north
@@ -1515,6 +1519,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
 			custom_effect_tooltip = FRA_afrika
+			FRA_increase_instability = yes
 		}
 	}
 	focus = {
@@ -1581,7 +1586,7 @@
 		completion_reward = {
 			custom_effect_tooltip = "With our country secured we can finally begin expanding our military!"
 			custom_effect_tooltip = FRA_remove_instability
-			custom_effect_toolti = FRA_stability
+			custom_effect_tooltip = FRA_stability
 			custom_effect_tooltip = FRA_decrease_instability_BIG
 		}
 	}
@@ -1714,7 +1719,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_ideas = { FRA_entrepeneurship }
+			custom_effect_tooltip = FRA_entrepenuership
 		}
 	}
 	focus = {
@@ -1822,7 +1827,10 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_ideas = { FRA_market_dynamism }
+			#add_ideas = { FRA_market_dynamism }
+			add_to_variable = { FRA_cap = 0.1 }
+			add_to_variable = { FRA_output = 0.1 }
+			custom_effect_tooltip = FRA_dynamic_market
 		}
 	}
 	focus = {
