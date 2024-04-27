@@ -18,9 +18,12 @@ FRA_elections = {
 		always = yes
 	}
 
-	visible = {
-		always = yes
-	}
+	NOT = {
+				OR = {
+					has_completed_focus = Fra_right_wing
+					has_completed_focus = Fra_left_wing
+				}
+			}
 }
 # VIC_concessions_to_the_germans = {
 # 	allowed = {

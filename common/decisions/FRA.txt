@@ -1,9 +1,6 @@
 FRA_elections = {
-	FRA_elections_support_left = {
-	fire_only_once = yes
-	}
 	FRA_elections = {
-		icon = generic_construction
+		icon = GFX_decision_generic_political_address
 		available = {
 			date>1936.5.3
 		}
@@ -19,6 +16,12 @@ FRA_elections = {
 		days_mission_timeout = 153
 
 		visible = {
+			NOT = {
+				OR = {
+					has_completed_focus = Fra_right_wing
+					has_completed_focus = Fra_left_wing
+				}
+			}
 		}
 
         timeout_effect = {
@@ -56,6 +59,7 @@ FRA_elections = {
 }
 FRA_indutry_tzar = {
 	FRA_industry_1 = {
+		name = "Industrial Expansion"
 		fire_only_once = yes
 		visible = {
 			NOT = {
@@ -74,6 +78,7 @@ FRA_indutry_tzar = {
 		}
 	}
 	FRA_industry_2 = {
+		name = "Industrial Expansion"
 		fire_only_once = yes
 		visible = {
 			NOT = {
