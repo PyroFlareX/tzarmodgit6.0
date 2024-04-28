@@ -34,7 +34,7 @@ set_variable = { FRA_pp_eco = 0 }
 set_variable = { FRA_construction_speed = 0 }
 set_variable = { FRA_eff_gain = 0 }
 set_variable = { FRA_cap = 0 }
-set_variable = { FRA_cg = 0.4 }
+set_variable = { FRA_cg = 0.3 }
 set_variable = { FRA_civ_speed = 0 }
 set_variable = { FRA_industry_con = -0.1 }
 set_variable = { FRA_exports = 0.05 }
@@ -46,11 +46,11 @@ set_variable = { FRA_ws = -0.2 }
 set_variable = { FRA_pp_diplo = -0.5 }
 set_variable = { FRA_tank = -0.025 }
 set_variable = { FRA_planning = 0.075 }
-set_variable = { FRA_entr = -2.5 }
+set_variable = { FRA_entr = -5.0 }
 set_variable = { FRA_anti_minor = 0 }
 set_variable = { FRA_xp_gain = -0.5 }
 set_variable = { FRA_reinforce_rate = 0 }
-set_variable = { FRA_defence = 0 }
+set_variable = { FRA_defence = 0.15 }
 set_variable = { FRA_offence = 0 }
 set_variable = { FRA_military_donations = 0 }
 set_variable = { FRA_oil_consumption = -0.05 }

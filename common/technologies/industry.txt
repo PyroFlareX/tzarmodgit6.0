@@ -23,9 +23,10 @@ technologies = {
 
         folder = {
             name = industry_folder
-            position = { x = 4 y = 2 }
+            position = { x = 0 y = @1936 }
         }
     }
+
 
 	basic_machine_tools = {
 	

@@ -1,8 +1,49 @@
+FRA_bop_decisions = {
+	FRA_bop_1 = {
+		name = "Seize Civilian Property"
+		fire_only_once = no
+		visible = {
+		}
+		cost = 10
+		
+		complete_effect = {
+			14 = {
+				add_extra_state_shared_building_slots = 4
+			}
+			add_power_balance_value = {
+				id = FRA_violence
+				value = -0.1
+			}
+			16 = {
+			add_extra_state_shared_building_slots =1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	FRA_bop_2 = {
+		name = "Stabilize the country"
+		fire_only_once = no
+		visible = {
+		}
+		cost = 20
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = FRA_violence
+				value = 0.05
+			}
+		}	
+	}
+}
 FRA_elections = {
 	FRA_elections = {
 		icon = GFX_decision_generic_political_address
 		available = {
-			date>1936.5.3
+			date>1936.5.4
 		}
 
 		is_good = yes
@@ -13,7 +54,7 @@ FRA_elections = {
 		}
 
 		fire_only_once = yes
-		days_mission_timeout = 153
+		days_mission_timeout = 122
 
 		visible = {
 			NOT = {
@@ -294,6 +335,7 @@ add_to_variable = { FRA_eff_ret = 0.015 }
 }
 FRA_relocation = {
 	FRA_TZAR_RELOCATION_CIV = {
+		name = "Civilian Evacuation"
 		icon = generic_construction
 		available = {
 			NOT = {
@@ -316,12 +358,15 @@ FRA_relocation = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 5
+		days_mission_timeout = 3
 
 		visible = {
 		}
 
         timeout_effect = {
+       		add_to_variable = {
+       			FRA_defence = -0.01
+       		}
 			random_controlled_state = {
 				limit = {
 					AND = {is_on_continent = europe is_fully_controlled_by = FRA}
@@ -341,22 +386,26 @@ FRA_relocation = {
 				}
 			}
 			hidden_effect = {
-				if = {
-					limit = {
-						any_state = {
-							is_core_of = FRA
-							is_controlled_by  = FRA
-							is_on_continent = europe
-							industrial_complex > 2
+				AND = {
+							if = {
+								limit = {
+									any_state = {
+										is_core_of = FRA
+										is_controlled_by  = FRA
+										is_on_continent = europe
+										industrial_complex > 2
+									}
+								}
+								activate_mission = FRA_TZAR_RELOCATION_CIV
+							}
+							date<1941.12.1
 						}
-					}
-					activate_mission = FRA_TZAR_RELOCATION_CIV
-				}
 			}
-			custom_effect_tooltip = GER_relocate_industry_mil
+			#custom_effect_tooltip = GER_relocate_industry_mil
 		}
 	}
 	FRA_TZAR_RELOCATION_MIL = {
+		name = "Military Evacuation"
 		icon = generic_construction
 		available = {
 			NOT = {
@@ -364,7 +413,7 @@ FRA_relocation = {
 							is_core_of = FRA
 							is_controlled_by  = FRA
 							is_on_continent = europe
-							industrial_complex > 2
+							arms_factory > 2
 						}
 			}
 		}
@@ -374,14 +423,14 @@ FRA_relocation = {
 		allowed = {
 			always = no
 			#added through on_action
-			tag = SOV
+			tag = FRA
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 5
+		days_mission_timeout = 3
 
 		visible = {
-			date<1942.1.1
+			date<1941.12.1
 		}
 
         timeout_effect = {
@@ -391,7 +440,7 @@ FRA_relocation = {
 					arms_factory > 2
 				}
 				remove_building = {type = arms_factory level = 3}
-				SOV = {
+				FRA = {
 					random_owned_controlled_state = {
 						limit = { AND = { is_core_of = SOV is_on_continent = africa}}
 						add_extra_state_shared_building_slots = 3
@@ -404,19 +453,22 @@ FRA_relocation = {
 				}
 			}
 			hidden_effect = {
-				if = {
-					limit = {
-						any_state = {
-							is_core_of = FRA
-							is_controlled_by  = FRA
-							is_on_continent = europe
-							arms_factory > 2
+				AND = {
+							if = {
+								limit = {
+									any_state = {
+										is_core_of = FRA
+										is_controlled_by  = FRA
+										is_on_continent = europe
+										industrial_complex > 2
+									}
+								}
+								activate_mission = FRA_TZAR_RELOCATION_MIL
+							}
+							date<1941.12.1
 						}
-					}
-					activate_mission = FRA_TZAR_RELOCATION_MIL
-				}
 			}
-			custom_effect_tooltip = GER_relocate_industry_mil
+			#custom_effect_tooltip = GER_relocate_industry_mil
 		}
 	}
 }

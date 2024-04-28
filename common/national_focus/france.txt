@@ -404,7 +404,7 @@
 				FRA_xp_gain = 0.65
 			}
 			add_to_variable = {
-				FRA_ww_army = 0.05
+				FRA_ww_army = 0.005
 			}
 			custom_effect_tooltip = FRA_army_reform1	
 			hidden_effect = {
@@ -1080,10 +1080,7 @@
 		available_if_capitulated = yes
 
 		available = {
-			custom_trigger_tooltip = {
-				text = "We finished army reform"
-				has_country_flag = Completed_army_reforms
-			}
+			date>1939.2.1
 		}
 		completion_reward = {
 			army_experience = 50
@@ -1367,7 +1364,7 @@
 		prerequisite = {focus = Fra_left_wing}
 		relative_position_id = Fra_left_wing
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -1380,10 +1377,11 @@
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
 			custom_effect_tooltip = "Unlocks colonial part of the tree"
+			hidden_effect = {
 			add_power_balance_value = {
 				id = FRA_violence
-				value = -0.1
-			}
+				value = -0.2
+			}}
 			custom_effect_tooltip = FRA_afrika
 		}
 	}
@@ -1413,7 +1411,7 @@
 			hidden_effect = {
 			add_power_balance_value = {
 				id = FRA_violence
-				value = -0.1
+				value = -0.2
 			}}
 			add_stability = 0.025
 			custom_effect_tooltip = FRA_women
@@ -1456,11 +1454,13 @@
 		x = 0
 		y = 2
 		available = {
-			tooltip = "105 Days have passed since last industrial expansion"
+				custom_trigger_tooltip = {
+				tooltip = "105 Days have passed since last industrial expansion"
 				has_country_flag = {
 					flag = FRA_economy_flag
-					days > 105
+					days > 104
 				}
+			}
 		}
 		prerequisite = {focus = Public_works}
 		relative_position_id = Public_works
@@ -1495,7 +1495,7 @@
 				tooltip = "70 Days have passed since last industrial expansion"
 				has_country_flag = {
 					flag = FRA_economy_flag
-					days > 70
+					days > 69
 				}
 			}
 		}
@@ -1533,7 +1533,7 @@
 				tooltip = "70 Days have passed since our last industrial expansion"
 				has_country_flag = {
 					flag = FRA_economy_flag
-					days > 70
+					days > 69
 				}
 			}
 
@@ -1599,7 +1599,7 @@
 				tooltip = "70 Days have passed since the last reform"
 				has_country_flag = {
 					flag = FRA_passed_reform
-					days > 70
+					days > 69
 				}
 			}
 		}
@@ -1643,7 +1643,7 @@
 				tooltip = "70 Days have passed since the last reform"
 				has_country_flag = {
 					flag = FRA_passed_reform
-					days > 70
+					days > 69
 				}
 			}
 		}
@@ -1686,7 +1686,7 @@
 				tooltip = "70 Days have passed since the last reform"
 				has_country_flag = {
 					flag = FRA_passed_reform
-					days > 70
+					days > 69
 				}
 			}
 		}
@@ -1733,7 +1733,7 @@
 		prerequisite = {focus = The_south}
 		relative_position_id = Fra_left_wing
 
-		cost = 5
+		cost = 0
 
 		ai_will_do = {
 			factor = 1
@@ -1780,7 +1780,7 @@
 				GER = {
 					has_completed_focus = GER_anschluss
 				}
-				date > 1937.6.1
+				date > 1937.3.1
 			}
 		}
 		cancel_if_invalid = yes
@@ -1843,7 +1843,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_laissez_faire
-				uses = 2
+				uses = 3
 				bonus = 1.5
 				technology = advanced_machine_tools
 				technology = flexible_line
@@ -1892,7 +1892,7 @@
 			focus = FRA_laissez_faire
 		}
 		relative_position_id = FRA_laissez_faire
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1901,7 +1901,7 @@
 		completion_reward = {
 			add_to_variable = { FRA_cg = -0.08 }
 			add_to_variable = { FRA_output = 0.1 }
-			add_to_variable = { FRA_eff_ret = 0.015 } 
+			add_to_variable = { FRA_eff_ret = 0.075 } 
 			custom_effect_tooltip = FRA_entrepenuership
 		}
 	}
@@ -1951,7 +1951,7 @@
 		completion_reward = {
 			add_to_variable = { FRA_cg = -0.08 }
 			add_to_variable = { FRA_output = 0.075 }
-			custom_effect_tooltip = FRA_big_upgrade_eco
+			custom_effect_tooltip = FRA_right_side_eco_from_focus
 		}
 	}
 	focus = {

@@ -1180,7 +1180,13 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UPPER_LEFT"
 			}
-
+			gridboxtype = {
+				name = "tech_juggle_armor_tree"
+				position = { x = 0 y = 0 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UPPER_LEFT"
+			}
 			gridboxtype = {
 				name = "engine_tech_1_tree"
 				position = { x = 175 y = 0 }
@@ -3037,8 +3043,8 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "tech_juggle_tree"
-				position = { x = 540 y = 0 }
-				size = { width = 400 height = 400 }
+				position = { x = 894 y = 172 }
+				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
