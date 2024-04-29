@@ -386,20 +386,19 @@ FRA_relocation = {
 				}
 			}
 			hidden_effect = {
-				AND = {
 							if = {
 								limit = {
-									any_state = {
-										is_core_of = FRA
-										is_controlled_by  = FRA
-										is_on_continent = europe
-										industrial_complex > 2
-									}
-								}
+								and = {
+																	any_state = {
+																		is_core_of = FRA
+																		is_controlled_by  = FRA
+																		is_on_continent = europe
+																		industrial_complex > 2
+																	}
+																	date<1940.12.12
+																}}
 								activate_mission = FRA_TZAR_RELOCATION_CIV
 							}
-							date<1941.12.1
-						}
 			}
 			#custom_effect_tooltip = GER_relocate_industry_mil
 		}
@@ -453,20 +452,15 @@ FRA_relocation = {
 				}
 			}
 			hidden_effect = {
-				AND = {
-							if = {
-								limit = {
-									any_state = {
-										is_core_of = FRA
-										is_controlled_by  = FRA
-										is_on_continent = europe
-										industrial_complex > 2
-									}
-								}
-								activate_mission = FRA_TZAR_RELOCATION_MIL
-							}
-							date<1941.12.1
-						}
+				and = {
+																	any_state = {
+																		is_core_of = FRA
+																		is_controlled_by  = FRA
+																		is_on_continent = europe
+																		arms_factory > 2
+																	}
+																	date<1940.12.12
+																}}
 			}
 			#custom_effect_tooltip = GER_relocate_industry_mil
 		}

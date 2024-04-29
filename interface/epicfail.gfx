@@ -335,6 +335,10 @@ spriteTypes = {
         name = "GFX_tech_juggle_medium"
         texturefile = "gfx/technologies/tech_jugle.dds"
 	}
+	SpriteType = {
+        name = "GFX_tech_juggle_armor_medium"
+        texturefile = "gfx/technologies/tech_jugle.dds"
+	}
 	spriteType = {
 		name = "GFX_terrain_village"
 		textureFile = "gfx/map/terrain_village.dds"
