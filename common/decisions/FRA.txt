@@ -42,6 +42,7 @@ FRA_bop_decisions = {
 FRA_elections = {
 	FRA_elections = {
 		icon = GFX_decision_generic_political_address
+		name = "French Elections of 1936"
 		available = {
 			date>1936.5.4
 		}
@@ -72,6 +73,7 @@ FRA_elections = {
 	        		FRA_support_for_right < 50
 	        	}
 	        }
+	        	custom_effect_tooltip = FRA_left_win
 	        	complete_national_focus = Fra_left_wing
 	    }
         if = {
@@ -80,6 +82,7 @@ FRA_elections = {
 	        		FRA_support_for_right > 49
 	        	}
 	        }
+	        custom_effect_tooltip = FRA_right_win
 	        complete_national_focus = Fra_right_wing
         }
         if = {
@@ -90,7 +93,8 @@ FRA_elections = {
         }
         }
         }
-        complete_national_focus = FRA_election
+        hidden_effect = {
+                complete_national_focus = FRA_election}
         }
 			hidden_effect = {
 			}
@@ -358,32 +362,31 @@ FRA_relocation = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 3
+		days_mission_timeout = 1
 
 		visible = {
 		}
 
         timeout_effect = {
        		add_to_variable = {
-       			FRA_defence = -0.01
+       			FRA_defence = -0.005
        		}
 			random_controlled_state = {
 				limit = {
 					AND = {is_on_continent = europe is_fully_controlled_by = FRA}
-					industrial_complex > 2
+					industrial_complex > 0
 				}
-				remove_building = {type = industrial_complex level = 3}
-				FRA = {
-					random_owned_controlled_state = {
-						limit = { AND = { is_core_of = FRA is_on_continent = africa}}
-						add_extra_state_shared_building_slots = 3
+				remove_building = {type = industrial_complex level = 1}
+			}
+			FRA = {
+					539 = {
+						add_extra_state_shared_building_slots = 1
 						add_building_construction = {
    				 			type = industrial_complex
-   				 			level = 3
+   				 			level = 1
   				 			instant_build = yes
 				 		}
 					}
-				}
 			}
 			hidden_effect = {
 							if = {
@@ -393,7 +396,7 @@ FRA_relocation = {
 																		is_core_of = FRA
 																		is_controlled_by  = FRA
 																		is_on_continent = europe
-																		industrial_complex > 2
+																		industrial_complex > 0
 																	}
 																	date<1940.12.12
 																}}
@@ -426,41 +429,48 @@ FRA_relocation = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 3
+		days_mission_timeout = 1
 
 		visible = {
-			date<1941.12.1
+			date<1940.12.1
 		}
 
         timeout_effect = {
 			random_controlled_state = {
 				limit = {
-					AND = {is_on_continent = europe is_fully_controlled_by = FRA}
-					arms_factory > 2
+					AND = {
+						is_on_continent = europe
+						is_fully_controlled_by = FRA
+						arms_factory > 2
+					}
 				}
-				remove_building = {type = arms_factory level = 3}
-				FRA = {
-					random_owned_controlled_state = {
-						limit = { AND = { is_core_of = SOV is_on_continent = africa}}
-						add_extra_state_shared_building_slots = 3
+				remove_building = {type = arms_factory level = 1}
+			}
+			FRA = {
+					539 = {
+						add_extra_state_shared_building_slots = 1
 						add_building_construction = {
    				 			type = arms_factory
-   				 			level = 3
+   				 			level = 1
   				 			instant_build = yes
 				 		}
 					}
-				}
 			}
-			hidden_effect = {
-				and = {
+						hidden_effect = {
+							if = {
+								limit = {
+								and = {
 																	any_state = {
 																		is_core_of = FRA
 																		is_controlled_by  = FRA
 																		is_on_continent = europe
-																		arms_factory > 2
+																		arms_factory > 0
 																	}
 																	date<1940.12.12
 																}}
+								activate_mission = FRA_TZAR_RELOCATION_MIL
+							}
+			}
 			}
 			#custom_effect_tooltip = GER_relocate_industry_mil
 		}

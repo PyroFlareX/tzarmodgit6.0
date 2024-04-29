@@ -63,6 +63,8 @@ ideas = {
 			
 			allowed = {
 				NOT = {tag = SOV}
+NOT = {tag = MON}
+				
 			}
 			cost = 150
 			removal_cost = -1
@@ -103,6 +105,8 @@ ideas = {
 			}
 			allowed = {
 				NOT = {tag = SOV}
+NOT = {tag = MON}
+				
 			}
 
 			
@@ -164,6 +168,8 @@ ideas = {
 			}
 			allowed = {
 				NOT = {tag = SOV}
+NOT = {tag = MON}
+				
 			}
 
 			cost = 150
@@ -195,6 +201,8 @@ ideas = {
 		war_economy = {
 			allowed = {
 				NOT = {tag = SOV}
+NOT = {tag = MON}
+				
 			}
 			
 			available = {
@@ -245,6 +253,8 @@ ideas = {
 			
 			allowed = {
 				NOT = {tag = SOV}
+NOT = {tag = MON}
+				
 			}
 			# available = {
 			# 	has_war = yes
@@ -280,6 +290,7 @@ ideas = {
 		}
 		planned_economy = {
 			picture = SOV_transformation_of_nature
+			name = "Planned Economy"
 			allowed = {
 				always = no
 			}
@@ -300,10 +311,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_expected_value = 0.15
-				production_speed_arms_factory_factor = 0.4
-				conversion_cost_civ_to_mil_factor= -0.3
-				conversion_cost_mil_to_civ_factor = -0.3
+				consumer_goods_expected_value = 0.2
+				production_speed_arms_factory_factor = 0.3
+				conversion_cost_civ_to_mil_factor= -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
 			}
 			
 			cancel_if_invalid = no
@@ -317,9 +328,12 @@ ideas = {
 
 			available = {
 				NOT = {	tag = SOV } 
+				NOT = {tag = MON}
 			}
 				allowed = {
 				NOT = {tag = SOV}
+NOT = {tag = MON}
+				
 			}		
 			cost = 150
 			removal_cost = -1
@@ -371,6 +385,9 @@ ideas = {
 			}
 			allowed = {
 				NOT = {tag = SOV}
+NOT = {tag = MON}
+				
+
 			}
 			
 			cost = 150
@@ -418,6 +435,8 @@ ideas = {
 			}
 			allowed = {
 				NOT = {tag = SOV}
+NOT = {tag = MON}
+				
 			}
 			cost = 150
 			removal_cost = -1
@@ -452,6 +471,8 @@ ideas = {
 			}
 			allowed = {
 				NOT = {tag = SOV}
+NOT = {tag = MON}
+				
 			}
 			cost = 150
 			removal_cost = -1

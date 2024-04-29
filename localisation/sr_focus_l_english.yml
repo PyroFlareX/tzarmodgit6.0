@@ -1431,3 +1431,6 @@ JAP_island_hopping1:0 "All Hope Is Sex"
  FRA_positive_2:0 ""
  FRA_positive_3:0 ""
  FRA_max_stability:0 "§BProsperity§!"
+
+  FRA_left_win:0 "§RPopular Front§! wins the elections."
+  FRA_right_win:0 "§BNational Union§! wins the elections."
