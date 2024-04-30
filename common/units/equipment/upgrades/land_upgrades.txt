@@ -1,4 +1,10 @@
 upgrades = {
+	mot_rocket_engine_upgrade = {
+		max_level = 5
+		cost = land
+		build_cost_ic = -0.1
+		reliability = -0.05
+	}
 	tank_nsb_engine_upgrade = {
 		abbreviation = "eng"
 		max_level = 20 #each level represents ~50HP
