@@ -227,3 +227,11 @@
  srevents.15.t:0 "Afghan troop movement on the border"
  srevents.15.d:0 "Local garrison forces in Peshawar have spotted Afghan troops gathering near the border following a minor border clash. This clash may have been a probing attack."
  srevents.15.a:0 "Reinforce the area Immediately!"
+ 
+ srevents.16.t:0 "Occupation of Portuguese Colonies"
+ srevents.16.d:0 "With the fall of Portugal, Control of the Portuguese Colonies Angola and Mozambique has now come into question. A question that we will not allow to become a possibility. Local garrison forces have already moved in and report local Portuguese Authorities are so far complying with them."
+ srevents.16.a:0 "Better us, than Franco"
+ 
+ srevents.17.t:0 "Occupation of Portuguese Mozambique"
+ srevents.17.d:0 "With the fall of Portugal, British Forces have moved in to occupy Angola. We have been tasked to move into South Mozambique to deny Franco control of strategic ports near the Cape. Portuguese Authorities are so far compliant."
+ srevents.17.a:0 "Better us, than Franco"

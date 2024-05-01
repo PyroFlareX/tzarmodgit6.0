@@ -363,6 +363,37 @@ country_event = {
 	}
 	
 }
+
+# ANGOLA/MOZAMBIQUE
+country_event = { 
+	id = srevents.16
+	title = srevents.16.t
+	desc = srevents.16.d 
+	picture = GFX_report_event_saf_soldiers
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.16.a 
+
+	}
+	
+}
+
+country_event = { 
+	id = srevents.17
+	title = srevents.17.t
+	desc = srevents.17.d 
+	picture = GFX_report_event_saf_soldiers
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.17.a 
+
+	}
+	
+}
 ###########################################################################3
 # Russian Mud Events #
 country_event = {

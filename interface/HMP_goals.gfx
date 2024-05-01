@@ -2,6 +2,11 @@ spriteTypes = {
   
       
     
+	
+	SpriteType = {
+		name = "GFX_goal_RAJ_british_india_navy"
+		texturefile = "gfx/interface/goals/r56_goal_RAJ_british_india_navy.dds"
+	}
 	SpriteType = {
 		name = "GFX_nawab_guns"
 		texturefile = "gfx/interface/goals/nawab_guns.dds"

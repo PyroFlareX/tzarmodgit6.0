@@ -67,9 +67,29 @@ ideas = {
 
 	country = {
 		
+		RAJ_sloop_production = {
+
+			picture = generic_sea_focused_navy
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.2 instant = yes
+				}
+			}
+		}
 		RAJ_stick_to_your_post = {
 
-			picture = ENG_the_war_to_end_all_wars
+			picture = MEX_politicised_army
 
 			allowed = {
 				original_tag = RAJ
@@ -89,7 +109,7 @@ ideas = {
 		}
 		RAJ_textile_machine_tools = {
 
-			picture = ENG_the_war_to_end_all_wars
+			picture = SWE_gotaverken_retooled_for_rapid_repairs
 
 			allowed = {
 				original_tag = RAJ
@@ -117,7 +137,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = raj_quit_india_movement
+			picture = ARG_rapid_militarization
 		
 			modifier = {
 				production_speed_arms_factory_factor = 0.15
@@ -129,7 +149,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = raj_quit_india_movement
+			picture = FRA_motorized_focus
 		
 			
 			equipment_bonus = {
@@ -147,7 +167,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = raj_quit_india_movement
+			picture = tur_balkan_central_bank_wealthy_greece
 		
 			modifier = {
 				consumer_goods_expected_value = -0.05
@@ -159,7 +179,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = raj_quit_india_movement
+			picture = limited_exports
 		
 			modifier = {
 				min_export = -0.1
@@ -171,7 +191,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = raj_quit_india_movement
+			picture = export_focus
 		
 			modifier = {
 				consumer_goods_expected_value = -0.1

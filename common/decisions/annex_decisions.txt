@@ -64,6 +64,7 @@ nigger = {
 		}
 
 		available = {
+			always = no
 			ROOT = {
 			is_ai = no
 			}

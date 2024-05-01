@@ -50,7 +50,7 @@ news_event = {
 	option = {
 		name = "news.1005.a"
 	}
-}s
+}
 #finland friendship war
 news_event = {
 	id = news.1004

@@ -186,6 +186,15 @@ on_actions = {
 						transfer_troops = no
 					}
 				}
+				ENG = { transfer_state = 540 540 = { set_compliance = 70 } transfer_state = 892 892 = { set_compliance = 70 } 
+					transfer_state = 891 891 = { set_compliance = 70 } transfer_state = 346 346 = { set_compliance = 70 } transfer_state = 292 292 = { set_compliance = 70 }  transfer_state = 544 544 = { set_compliance = 70 }
+					If = { limit = { country_exists = SAF } SAF = { transfer_state = 292 292 = { set_compliance = 70 } transfer_state = 544 544 = { set_compliance = 70 } country_event = { id = srevents.17 days = 1 } } }
+					
+					country_event = { id = srevents.16 days = 1 }
+				}
+				
+				
+				
 				}
 				
 			if = {
