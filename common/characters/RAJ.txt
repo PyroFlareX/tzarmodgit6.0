@@ -603,7 +603,7 @@ characters={
 		name="RAJ_bhimrao_ramji_ambedkar"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_india_1"
+				small="GFX_idea_RAJ_Bhimrao_Ambedkar"
 			}
 		}
 	}
@@ -905,6 +905,28 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_RAJ_Sir_Jeremy_Raisman"
+			}
+		}
+	}
+	
+	RAJ_walchand_hirachand={
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_walchand_hirachand
+			available = {
+				
+			}
+			allowed = {
+				tag = RAJ
+			}
+			traits = {
+				NOR_shipping_capitalist
+			}
+		}
+		name="RAJ_walchand_hirachand"
+		portraits={
+			army={
+				small="GFX_idea_RAJ_Chhotu_Ram"
 			}
 		}
 	}

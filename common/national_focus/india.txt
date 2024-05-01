@@ -3430,7 +3430,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = RAJ_naval_equipment
+				bonus = 2.0
+				uses = 6
+				category = naval_equipment
+			}
 		}
 	}
 	
@@ -3604,6 +3609,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_technology = { ship_hull_super_heavy = 1 }
 			create_equipment_variant = {
 						name = "Baroda Class"
 						type = ship_hull_super_heavy_1
