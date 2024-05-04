@@ -3523,10 +3523,84 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RAJ_form_hindustan_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = RAJ_found_scindia_shipyard }
+		x = 0
+		y = 1
+		relative_position_id = RAJ_found_scindia_shipyard
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+			has_country_flag =  RAJ_dominionpath 
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			random_owned_controlled_state = {
+				prioritize = { 426 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = dockyard
+					level = 6
+					instant_build = yes
+				}
+			}
+			mio:RAJ_scindia_shipyard_organization = {
+					add_mio_size = 6
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 426 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = dockyard
+					level = 6
+					instant_build = yes
+				}
+			}
+			mio:RAJ_scindia_shipyard_organization = {
+					add_mio_size = 6
+			}
+		}		
+	}
+	
+	focus = {
 		id = RAJ_capital_ship_effort
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = RAJ_found_scindia_shipyard }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = RAJ_found_scindia_shipyard
 		cost = 1
@@ -3559,7 +3633,7 @@ focus_tree = {
 		id = RAJ_cruiser_effort
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = RAJ_found_scindia_shipyard }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = RAJ_found_scindia_shipyard
 
