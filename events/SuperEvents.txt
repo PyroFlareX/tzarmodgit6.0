@@ -59,20 +59,20 @@ country_event = {	#ww2
 				GER = { has_offensive_war_with = FRA }
 			}
 			NOT = {
-				has_global_flag = Super_WW2
+				has_global_flag = 1_sr_ev
 			}
 		}
 	}
 
 	option = {
 		name = super.1.a
-		
-        set_global_flag = GER_WW2
-		set_global_flag = Super_Event_Visible
+		every_country = {
+		        set_country_flag = GER_WW2
+				set_country_flag = Super_Event_Visible}
 		sound_effect = "super_ww2"
-		
 		#WW2 Flag
-		set_global_flag = Super_WW2
+		set_global_flag = 1_sr_ev
+		set_country_flag = Super_WW2
 	}
 }
 
@@ -94,9 +94,9 @@ country_event = {	#Second Sino Japanese War
 
 	option = {
 		name = super.2.a
-		
-        set_global_flag = JAP_Sino_Japanese
-		set_global_flag = Super_Event_Visible
+		every_country = {
+		        set_country_flag = JAP_Sino_Japanese
+				set_country_flag = Super_Event_Visible}
 		sound_effect = "super_sino_japanese_war"
 	}
 }
@@ -120,9 +120,9 @@ country_event = {	#Pacific War
 	
 	option = {
 		name = super.4.a
-		
-        set_global_flag = USA_Pacific_War
-		set_global_flag = Super_Event_Visible
+		every_country = {
+		        set_country_flag = USA_Pacific_War
+				set_country_flag = Super_Event_Visible}
 		sound_effect = "super_pacific_war"
 	}
 }
@@ -148,9 +148,9 @@ country_event = {	#Barb
 	
 	option = {
 		name = super.5.a
-		
-        set_global_flag = GER_Barbarossa
-		set_global_flag = Super_Event_Visible
+		every_country = {
+		        set_country_flag = GER_Barbarossa
+				set_country_flag = Super_Event_Visible}
 		sound_effect = "super_barbarossa"
 	}
 }
@@ -178,9 +178,9 @@ country_event = {	#Fall of UK
 	
 	option = {
 		name = super.13.a
-		
-        set_global_flag = ENG_fall
-		set_global_flag = Super_Event_Visible
+		every_country = {
+		        set_country_flag = ENG_fall
+				set_country_flag = Super_Event_Visible}
 		sound_effect = "super_british_collapse"
 	}
 }
@@ -208,9 +208,9 @@ country_event = {	#Fall of Germany
 	
 	option = {
 		name = super.14.a
-		
-        set_global_flag = GER_fall
-		set_global_flag = Super_Event_Visible
+		every_country = {
+		        set_country_flag = GER_fall
+				set_country_flag = Super_Event_Visible}
 		sound_effect = "super_fall_germany"
 	}
 }
@@ -242,9 +242,9 @@ country_event = {	#Fall of Russia
 	
 	option = {
 		name = super.15.a
-		
-        set_global_flag = SOV_fall
-		set_global_flag = Super_Event_Visible
+		every_country = {
+		        set_country_flag = SOV_fall
+				set_country_flag = Super_Event_Visible}
 		sound_effect = "super_soviet_end"
 	}
 }
@@ -272,9 +272,9 @@ country_event = {	#Fall of Japan
 	
 	option = {
 		name = super.16.a
-		
-        set_global_flag = JAP_fall
-		set_global_flag = Super_Event_Visible
+		every_country = {
+		        set_country_flag = JAP_fall
+				set_country_flag = Super_Event_Visible}
 		sound_effect = "super_japanese_surrender"
 	}
 }
@@ -302,9 +302,9 @@ country_event = {	#Fall of USA
 	
 	option = {
 		name = super.17.a
-		
-        set_global_flag = USA_fall
-		set_global_flag = Super_Event_Visible
+		every_country = {
+		        set_country_flag = USA_fall
+				set_country_flag = Super_Event_Visible}
 		sound_effect = "super_fall_america"
 	}
 }
@@ -327,9 +327,9 @@ country_event = {	#1st Nuke
 	
 	option = {
 		name = super.18.a
-		
-        set_global_flag = SP_Nuke
-		set_global_flag = Super_Event_Visible
+		every_country = {
+		        set_country_flag = SP_Nuke
+				set_country_flag = Super_Event_Visible}
 		sound_effect = "super_nuke"
 	}
 }
@@ -486,9 +486,9 @@ country_event = { #Endsieg
 	
 	option = {
 		name = super.28.a 
-		
-		set_global_flag = GER_Endsieg
-		set_global_flag = Super_Event_Visible
+		every_country = {
+				set_country_flag = GER_Endsieg
+				set_country_flag = Super_Event_Visible}
 		sound_effect = "super_endsieg"
 	}
 }
@@ -511,9 +511,9 @@ country_event = { #2nd Russo-Japanese War
 	
 	option = {
 		name = super.39.a
-		
-		set_global_flag = JAP_Russo
-		set_global_flag = Super_Event_Visible
+		every_country = {
+				set_country_flag = JAP_Russo
+				set_country_flag = Super_Event_Visible}
 		sound_effect = "super_russo_japanese_war"
 	}
 }
@@ -531,7 +531,6 @@ country_event = { #Co-Prosperity
 	hidden = yes
 	
 	trigger = {
-		JAP = { has_government = fascism }
 		JAP = {
 			has_completed_focus = Victory_in_the_Pacific
 		}
@@ -539,9 +538,9 @@ country_event = { #Co-Prosperity
 	
 	option = {
 		name = super.41.a
-		
-		set_global_flag = JAP_GEACPS
-		set_global_flag = Super_Event_Visible
+		every_country = {
+				set_country_flag = JAP_GEACPS
+				set_country_flag = Super_Event_Visible}
 		sound_effect = "super_geacps"
 	}
 }
