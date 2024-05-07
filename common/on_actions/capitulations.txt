@@ -166,9 +166,8 @@ on_actions = {
 				762 = { set_compliance = 60 }
 				if = {
 					limit = {
-						has_game_rule = {
-							rule = sr_no_asia
-							option = DISABLE_sr_no_asia
+						JAP = {
+							exists = yes
 						}
 					}
 					JAP = { transfer_state = 671 transfer_state = 286 transfer_state = 728 }
@@ -247,7 +246,7 @@ on_actions = {
             ### bel
 			if =  { limit = { original_tag = BEL }
 				BEL = { country_event = { id =  mtg_netherlands.331 days = 1 } 	}
-				GER = { transfer_state = 6 transfer_state = 34 transfer_state = 8 }
+				GER = { set_state_owner = 6 set_state_owner = 34 set_state_owner = 8 }
 				every_state = { limit = { is_core_of = BEL } set_compliance = 40 }
 				FRA = {
 					annex_country = {

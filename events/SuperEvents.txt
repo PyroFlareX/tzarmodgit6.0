@@ -265,6 +265,7 @@ country_event = {	#Fall of Japan
 		OR = {
 			NOT = {
 				country_exists = JAP
+				date < 1940.1.1
 			}
 			JAP = { has_capitulated = yes }
 		}
