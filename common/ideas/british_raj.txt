@@ -67,6 +67,28 @@ ideas = {
 
 	country = {
 		
+		RAJ_inc = {
+
+			picture = generic_sea_focused_navy
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+				#mobilization_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+			}
+		}
+		
 		RAJ_sloop_production = {
 
 			picture = generic_sea_focused_navy

@@ -64,7 +64,7 @@ joint_focus = {
 		#mutually_exclusive = { focus =  }
 		dynamic = yes 
 		
-		x = 0
+		x = -1
 		y = 1
 		
 		relative_position_id = ALLIED_cum
@@ -169,8 +169,8 @@ joint_focus = {
 }
 
 joint_focus = {
-		id = Research_Friendship
-		icon = GFX_focus_research
+		id = ALLIED_international_zone
+		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = ALLIED_cum }
 		#mutually_exclusive = { focus =  }
 		dynamic = yes 
@@ -179,7 +179,6 @@ joint_focus = {
 		y = 1
 		
 		relative_position_id = ALLIED_cum
-		text = "Import Exiled Scientists"
 
 		cost = 5
 
@@ -204,7 +203,7 @@ joint_focus = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			
+
 		}
 
 		completion_reward = {
@@ -212,12 +211,17 @@ joint_focus = {
 		}
 
 		completion_reward_joint_originator = {
-			add_research_slot = 1
-			add_ideas = { ENG_colonial_elite }
+			add_manpower = -2000
+			add_tech_bonus = {
+				name = ALLIED_mp
+				bonus = 2.00
+				uses = 1
+				technology = tech_military_police = 1
+			}
 		}
 
 		completion_reward_joint_member = {
-				add_ideas = { ENG_colonial_elite }
+			
 		}
 }
 
@@ -401,7 +405,7 @@ joint_focus = {
 		dynamic = yes 
 		
 		x = 0
-		y = 3
+		y = 1
 		
 		relative_position_id = governments_in_exile_aid
 
@@ -451,7 +455,7 @@ joint_focus = {
 		#mutually_exclusive = { focus =  }
 		dynamic = yes 
 		
-		x = -2
+		x = 0
 		y = 1
 		
 		relative_position_id = ALLIED_poland
@@ -699,123 +703,123 @@ joint_focus = {
 		}
 }
 
-joint_focus = {
-		id = ALLIED_support_polish_redarmy
-		icon = GFX_focus_POL_prepare_for_the_inevitable
-		prerequisite = { focus = ALLIED_poland }
-		#mutually_exclusive = { focus =  }
-		dynamic = yes 
+#joint_focus = {
+#		id = ALLIED_support_polish_redarmy
+#		icon = GFX_focus_POL_prepare_for_the_inevitable
+#		prerequisite = { focus = ALLIED_poland }
+#		#mutually_exclusive = { focus =  }
+#		dynamic = yes 
 		
-		x = 2
-		y = 1
+#		x = 2
+#		y = 1
 		
-		relative_position_id = ALLIED_poland
+#		relative_position_id = ALLIED_poland
 
-		cost = 5
+#		cost = 5
 
-		ai_will_do = {
-			factor = -100
-		}
+#		ai_will_do = {
+#			factor = -100
+#		}
 
-		joint_trigger = {
+#		joint_trigger = {
   			
-		}
+#		}
 
-		available = {
-			always = no
-		}
+#		available = {
+#			always = no
+#		}
 		
-		bypass = {
+#		bypass = {
 
-		}
+#		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
 
-		complete_tooltip = {
+#		complete_tooltip = {
 
-		}
+#		}
 
-		completion_reward = {
+#		completion_reward = {
 			
-		}
+#		}
 
-		completion_reward_joint_originator = {
-			PRA = {
-				transfer_state = 898
-				add_manpower = 300000
-				diplomatic_relation = {   country = SOV relation = military_access  active = yes  }
-			}
-			ROOT = {
-				set_autonomy = {
-						target = PRA
-						autonomy_state = autonomy_puppet
-				}
-				diplomatic_relation = {   country = SOV relation = military_access  active = yes  }
-			}
-			build_railway = {
-			path = { 3338 9041 6105 6016 9099 154 }
-			}
-		}
+#		completion_reward_joint_originator = {
+#			PRA = {
+#				transfer_state = 898
+#				add_manpower = 300000
+#				diplomatic_relation = {   country = SOV relation = military_access  active = yes  }
+#			}
+#			ROOT = {
+#				set_autonomy = {
+#						target = PRA
+#						autonomy_state = autonomy_puppet
+#				}
+#				diplomatic_relation = {   country = SOV relation = military_access  active = yes  }
+#			}
+#			build_railway = {
+#			path = { 3338 9041 6105 6016 9099 154 }
+#			}
+#		}
 
-		completion_reward_joint_member = {
+#		completion_reward_joint_member = {
 			
-		}
-}
+#		}
+#}
 
-joint_focus = {
-		id = ALLIED_sponsor_polish_redarmy
-		icon = GFX_focus_generic_polish_deal
-		prerequisite = { focus = ALLIED_support_polish_redarmy }
-		#mutually_exclusive = { focus =  }
-		dynamic = yes 
+#joint_focus = {
+#		id = ALLIED_sponsor_polish_redarmy
+#		icon = GFX_focus_generic_polish_deal
+#		prerequisite = { focus = ALLIED_support_polish_redarmy }
+#		#mutually_exclusive = { focus =  }
+#		dynamic = yes 
 		
-		x = 0
-		y = 1
+#		x = 0
+#		y = 1
 		
-		relative_position_id = ALLIED_support_polish_redarmy
+#		relative_position_id = ALLIED_support_polish_redarmy
 
-		cost = 10
+#		cost = 10
 
-		ai_will_do = {
-			factor = -100
-		}
+#		ai_will_do = {
+#			factor = -100
+#		}
 
-		joint_trigger = {
+#		joint_trigger = {
   			
-		}
+#		}
 
-		available = {
+#		available = {
 			
-		}
+#		}
 		
-		bypass = {
+#		bypass = {
 
-		}
+#		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
 
-		complete_tooltip = {
+#		complete_tooltip = {
 
-		}
+#		}
 
-		completion_reward = {
+#		completion_reward = {
 			
-		}
+#		}
 
-		completion_reward_joint_originator = {
-			PRA = {
-				add_manpower = 200000
-			}
-		}
+#		completion_reward_joint_originator = {
+#			PRA = {
+#				add_manpower = 200000
+#			}
+#		}
 
-		completion_reward_joint_member = {
+#		completion_reward_joint_member = {
 			
-		}
-}
+#		}
+#}
 
 joint_focus = {
 		id = ALLIED_norway

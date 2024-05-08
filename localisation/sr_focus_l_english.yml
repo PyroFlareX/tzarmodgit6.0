@@ -930,6 +930,8 @@ RAJ_baroda:0 "Princedom of Baroda"
 RAJ_baroda_desc:0 ""
 RAJ_form_hindustan_shipyards:0 "Form Hindustan Shipyards"
 RAJ_form_hindustan_shipyards_desc:0 ""
+RAJ_fund_dehli_uni:0 "Fund Delhi University"
+RAJ_fund_dehli_uni_desc:0 ""
 
 company_burmah_oil:0 "§LBurmah Oil"
 company_tata:0 "§LTata"
@@ -947,12 +949,13 @@ RAJ_quit_india_active:0 "Quit India Movement"
 RAJ_quit_india_crackdown:0 "Quit India Movement"
 RAJ_quit_india_arrested:0 "Gandhi Arrested"
 RAJ_sloop_production:0 "Simple Sloops"
+RAJ_inc:0 "Congress"
 
 #character traits Raj
 accomplished_professor:0 "Accomplished Professor"
 defence_industrialist:0 "Defence Industrialist"
 army_commando_0:0 "Long Range Penetrator \n(Specialist)"
-
+	
 #raj Advisors
 RAJ_jd_tata:0 "J.R.D Tata"
 RAJ_Narendra_Deva:0 "Narendra Deva"
@@ -1247,6 +1250,9 @@ ALLIED_support_polish_redarmy:0 "AR AR AR AR ARARAR AR AR"
 ALLIED_support_polish_redarmy_desc:0 "YAP YAP YAP"
 ALLIED_polishgov_exile:0 "Polish Government in Exile"
 ALLIED_polishgov_exile_desc:0 "YAP YAP YAP"
+ALLIED_international_zone:0 "Reinforce International Settlement"
+ALLIED_international_zone_desc:0 "With the war in China escalating and refugees pouring into the zone. The Shanghai International Settlement has requested additional security forces to maintain order."
+
 GER_seized_gold:0 "Swiss Gold Seized"
 GER_seized_gold_desc:0 "No where to hide. The Swiss Gold Resereves are ours now."
 

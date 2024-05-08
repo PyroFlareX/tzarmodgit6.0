@@ -139,6 +139,16 @@ focus_tree = {
 		relative_position_id = RAJ_great_indian_peninsula_railway
 		
 		completion_reward = {
+			add_tech_bonus = {
+				name = GER_autarky
+				bonus = 1.5
+				uses = 2
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
 			288 = {
 			
 				add_resource = {
@@ -714,20 +724,25 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = RAJ_inc
 			add_autonomy_ratio = {
 				value = 0.2
 				localization = RAJ_indian_national_congress
 			}
-			add_opinion_modifier = { target = ENG modifier = RAJ_indian_national_congress }
+			#add_opinion_modifier = { target = ENG modifier = RAJ_indian_national_congress }
 			#custom_effect_tooltip = available_political_advisor
 			#show_ideas_tooltip = RAJ_bhimrao_ramji_ambedkar
 			swap_ideas = {
 				add_idea = RAJ_quit_india_peaceful
 				remove_idea = RAJ_quit_india_active
 			}
-			hidden_effect = { news_event = { id = news.283 hours = 12 } }
+			hidden_effect = { 
+				news_event = { 
+					id = news.283 hours = 12
+				} 
+			}
 			set_country_flag = RAJ_dominionpath
-			add_political_power = 50
+			#add_political_power = 50
 		}
 	}
 	
@@ -740,7 +755,7 @@ focus_tree = {
 		x = 0
 		y = 1	
 		relative_position_id = RAJ_indian_national_congress
-		cost = 2
+		cost = 5
 
 
 		available = {
@@ -772,7 +787,7 @@ focus_tree = {
 	
 	focus = {
 		id = RAJ_tolerate_princes 
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_focus_generic_home_defense
 		prerequisite = { focus = RAJ_quit_india_movement }
 		x = -1
 		y = 1	
@@ -831,6 +846,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = RAJ_indian_national_congress
+			}
 			swap_ideas = {
 				add_idea = RAJ_princely_states_donations_troops
 				remove_idea = RAJ_princely_states_donations
@@ -1076,8 +1095,8 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RAJ_tata_chemical
-		icon = GFX_goal_generic_oil_refinery
+		id = RAJ_fund_dehli_uni
+		icon = GFX_RAJ_delhi_university_shine
 		prerequisite = { focus = RAJ_protectionism }
 		x = 1
 		y = 1	
@@ -1102,14 +1121,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			429 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 2
-					instant_build = yes
-				}
-			}
+			add_research_slot = 1
 		}
 	}
 	
@@ -1140,7 +1152,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = RAJ_textile_machine_tools
+			add_tech_bonus = {
+				name = RAJ_textile_tools
+				bonus = 1.50
+				uses = 2
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+			}
+			#add_ideas = RAJ_textile_machine_tools
 			
 		}
 	}
@@ -1148,7 +1172,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_state_banking
 		icon = GFX_focus_ETH_the_state_bank_of_ethiopia
-		prerequisite = { focus = RAJ_hindustan focus = RAJ_tata_chemical}
+		prerequisite = { focus = RAJ_hindustan focus = RAJ_fund_dehli_uni}
 		x = 0
 		y = 2	
 		relative_position_id = RAJ_protectionism
@@ -1177,10 +1201,57 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = RAJ_tata_chemical
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = RAJ_state_banking }
+		x = -1
+		y = 1	
+		relative_position_id = RAJ_state_banking
+		cost = 5
+
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = RAJ_tata_chemical
+				bonus = 1.0
+				uses = 2
+				technology	= fuel_refining2
+				technology	= fuel_refining3
+				technology	= fuel_refining4
+				technology	= fuel_refining5
+			}
+			429 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
 		id = RAJ_domestic_motor
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = RAJ_state_banking}
-		x = 0
+		x = 1
 		y = 1	
 		relative_position_id = RAJ_state_banking
 		cost = 5
@@ -1272,8 +1343,8 @@ focus_tree = {
 		id = RAJ_lions_of_the_great_war
 		icon = GFX_focus_RAJ_lions_of_the_great_war
 		prerequisite = { focus = RAJ_indianisation_of_army }
-		x = -1
-		y = 2
+		x = -3
+		y = 1
 		relative_position_id = RAJ_indianisation_of_army
 
 		cost = 10
@@ -1297,169 +1368,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RAJ_sikh_regiment
-		icon = GFX_sikh_01
-		x = 2
-		y = 1
-		prerequisite = { focus = RAJ_lions_of_the_great_war }
-		relative_position_id = RAJ_lions_of_the_great_war
-		cost = 10
-		
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = RAJ_special_forces_attack_factor_tt
-			add_to_variable = { RAJ_special_forces_attack_factor = 0.05 }
-		}
-	}		
-	
-	focus = {
-		id = RAJ_assam_rifles
-		icon = GFX_rhino_icon2
-		prerequisite = { focus = RAJ_lions_of_the_great_war }
-		x = -2
-		y = 1
-		relative_position_id = RAJ_lions_of_the_great_war
-		cost = 10
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = RAJ_chindits
-				bonus = 1.0
-				uses = 2
-				category = mountaineers_tech
-			}
-		}		
-	}
-
-	focus = {
-		id = RAJ_indian_gurkhas
-		icon = GFX_focus_RAJ_indian_gurkhas
-		prerequisite = { focus = RAJ_lions_of_the_great_war }
-		x = 0
-		y = 1
-		relative_position_id = RAJ_lions_of_the_great_war
-
-		cost = 10
-
-		available = {
-			
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-			custom_effect_tooltip = RAJ_special_forces_attack_factor_tt
-			add_to_variable = { RAJ_special_forces_attack_factor = 0.05 }			
-		}
-	}
-	
-	focus = {
-		id = RAJ_army_motorization
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = RAJ_indianisation_of_army }
-		x = 2
-		y = 1
-		relative_position_id = RAJ_indianisation_of_army
-
-		cost = 5
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = RAJ_army_motorization
-				bonus = 1.00
-				uses = 1
-				category = motorized_equipment
-			}
-		}
-	}
-	
-	focus = {
-		id = RAJ_255armor
-		icon = GFX_india_tank
-		x = -1
-		y = 1
-		prerequisite = { focus = RAJ_army_motorization }
-		relative_position_id = RAJ_army_motorization
-		cost = 10
-		
-		available = {
-					
-		}
-		
-		
-		completion_reward = {
-			
-			add_tech_bonus = {
-				name = RAJ_indian_armor
-				bonus = 1.0
-				uses = 2
-				category = armor
-			}
-		}		
-	}
-	
-	focus = {
-		id = RAJ_british_armor_support
-		icon = GFX_goal_generic_army_motorized
-		x = 1
-		y = 1
-		prerequisite = { focus = RAJ_army_motorization }
-		relative_position_id = RAJ_army_motorization
-		cost = 10
-		
-		available = {
-					
-		}
-		
-		
-		completion_reward = {
-			custom_effect_tooltip = RAJ_motorized_attack_tt
-			custom_effect_tooltip = RAJ_mechanized_attack_tt
-			add_to_variable = { RAJ_motorized_attack = 0.10}
-			add_to_variable = { RAJ_mechanized_attack = 0.10} 
-		}		
-	}
-	
-	focus = {
 		id = RAJ_indian_gentlemen_officers
 		icon = GFX_focus_RAJ_indian_gentlemen_offcers
-		prerequisite = { focus = RAJ_indianisation_of_army }
-		x = -4
+		prerequisite = { focus = RAJ_lions_of_the_great_war }
+		x = 2
 		y = 1
-		relative_position_id = RAJ_indianisation_of_army
+		relative_position_id = RAJ_lions_of_the_great_war
 
 		cost = 10
 
@@ -1523,7 +1437,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_indian_gentlemen_officers
 
-		cost = 5
+		cost = 10
 
 
 		available = {
@@ -1543,6 +1457,186 @@ focus_tree = {
 			add_to_variable = { RAJ_army_attack = 0.05 }
 		}
 	}
+	
+	focus = {
+		id = RAJ_indian_gurkhas
+		icon = GFX_focus_RAJ_indian_gurkhas
+		prerequisite = { focus = RAJ_lions_of_the_great_war }
+		x = -2
+		y = 1
+		relative_position_id = RAJ_lions_of_the_great_war
+
+		cost = 10
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = RAJ_special_forces_attack_factor_tt
+			add_to_variable = { RAJ_special_forces_attack_factor = 0.05 }			
+		}
+	}
+	
+	focus = {
+		id = RAJ_sikh_regiment
+		icon = GFX_sikh_01
+		x = 1
+		y = 1
+		prerequisite = { focus = RAJ_indian_gurkhas }
+		relative_position_id = RAJ_indian_gurkhas
+		cost = 10
+		
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = RAJ_special_forces_attack_factor_tt
+			add_to_variable = { RAJ_special_forces_attack_factor = 0.05 }
+		}
+	}		
+	
+	focus = {
+		id = RAJ_assam_rifles
+		icon = GFX_rhino_icon2
+		prerequisite = { focus = RAJ_indian_gurkhas }
+		x = -1
+		y = 1
+		relative_position_id = RAJ_indian_gurkhas
+		cost = 10
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = RAJ_chindits
+				bonus = 1.0
+				uses = 2
+				category = mountaineers_tech
+			}
+		}		
+	}
+	
+	#################################
+	
+	focus = {
+		id = RAJ_army_motorization
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = RAJ_indianisation_of_army }
+		x = 2
+		y = 1
+		relative_position_id = RAJ_indianisation_of_army
+
+		cost = 5
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = RAJ_army_motorization
+				bonus = 1.00
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = RAJ_255armor
+		icon = GFX_india_tank
+		x = -1
+		y = 1
+		prerequisite = { focus = RAJ_army_motorization }
+		relative_position_id = RAJ_army_motorization
+		cost = 10
+		
+		available = {
+					
+		}
+		
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				technology = basic_medium_tank_chassis
+			}
+			add_tech_bonus = {
+				name = RAJ_indian_armor
+				bonus = 1.15
+				uses = 2
+				technology = improved_medium_tank_chassis
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+			}
+			add_tech_bonus = {
+					name = GER_soviet_treaty
+					bonus = 1.5
+					uses = 2
+					technology = shit_guns
+					technology = medium_guns2
+					technology = medium_guns3
+					technology = heavy_guns3
+					technology = heavy_guns2
+			}
+		}		
+	}
+	
+	focus = {
+		id = RAJ_british_armor_support
+		icon = GFX_goal_generic_army_motorized
+		x = 1
+		y = 1
+		prerequisite = { focus = RAJ_army_motorization }
+		relative_position_id = RAJ_army_motorization
+		cost = 10
+		
+		available = {
+					
+		}
+		
+		
+		completion_reward = {
+			custom_effect_tooltip = RAJ_motorized_attack_tt
+			custom_effect_tooltip = RAJ_mechanized_attack_tt
+			add_to_variable = { RAJ_motorized_attack = 0.10}
+			add_to_variable = { RAJ_mechanized_attack = 0.10} 
+		}		
+	}
+	
+	
 	
 	########################################
 	############ IMPERIAL ##################
@@ -1865,7 +1959,7 @@ focus_tree = {
 					traits = {  }
 				}
 			}
-			army_experience = 30
+			army_experience = 50
 		}
 	}
 	
@@ -3012,7 +3106,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_british_army_support
 
-		cost = 5
+		cost = 2
 
 		available = {
 			
@@ -3188,7 +3282,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			
+			navy_experience = 35
 			
 		}
 	}
