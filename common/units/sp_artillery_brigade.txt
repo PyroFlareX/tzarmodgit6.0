@@ -19,14 +19,14 @@
 			category_army
 		}		
 
-		combat_width = 3
+		combat_width = 2
 
 		need = {
 			light_tank_artillery_chassis = 60
 		}
 		manpower = 500
-		hard_attack = -0.25
-		breakthrough = -0.5
+		hard_attack = -0.15
+		breakthrough = -0.1
 		max_organisation = 0
 		default_morale = 0.1
 		max_strength = 6
@@ -96,15 +96,15 @@
 			category_all_armor
 			category_army
 		}		
-		combat_width = 3
+		combat_width = 2
 
 		need = {
 			medium_tank_artillery_chassis = 60
 		}
 		manpower = 500
-		hard_attack = -0.25
+		hard_attack = -0.1
 		max_organisation = 0
-		breakthrough = -0.5
+		breakthrough = -0.2
 		default_morale = 0.1
 		max_strength = 6
 		training_time = 180
@@ -175,14 +175,14 @@
 			category_army
 		}
 
-		combat_width = 3
+		combat_width = 2
 
 		need = {
 			heavy_tank_artillery_chassis = 60
 		}
 		manpower = 500
-		hard_attack = -0.25
-		breakthrough = -0.5
+		hard_attack = -0.1
+		breakthrough = -0.2
 		max_organisation = 0
 		default_morale = 0.1
 		max_strength = 6
