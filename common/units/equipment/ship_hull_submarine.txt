@@ -33,6 +33,12 @@ equipments = {
 					ship_torpedo_sub
 				}
 			}
+			fixed_ship_secondaries_slot = {
+				required = yes
+				allowed_module_categories = { 
+					ship_secondaries 
+				}
+			}
 		}
 		
 		module_count_limit = {
@@ -44,6 +50,7 @@ equipments = {
 			fixed_ship_torpedo_slot = empty
 			fixed_ship_engine_slot = sub_ship_engine_1
 			rear_1_custom_slot = empty
+			fixed_ship_secondaries_slot = empty
 		}
 		
 		lg_armor_piercing = 0
@@ -106,6 +113,7 @@ equipments = {
 				allowed_module_categories = {
 					ship_torpedo_sub
 					ship_radar
+					ship_secondaries
 				}
 			}
 		}
@@ -113,6 +121,7 @@ equipments = {
 		default_modules = {
 			rear_1_custom_slot = empty
 			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_secondaries_slot = empty
 		}
 		sub_visibility = 36
 		naval_speed = 13.35
@@ -154,6 +163,7 @@ equipments = {
 				allowed_module_categories = {
 					ship_radar
 					ship_sub_snorkel
+					ship_secondaries
 				}
 			}
 			rear_1_custom_slot = front_1_custom_slot
@@ -163,6 +173,7 @@ equipments = {
 			front_1_custom_slot = empty
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
+			fixed_ship_secondaries_slot = empty
 		}
 		
 		sub_visibility = 32.5
@@ -203,6 +214,7 @@ equipments = {
 				allowed_module_categories = {
 					ship_radar
 					ship_sub_snorkel
+					ship_secondaries
 				}
 			}
 			rear_1_custom_slot = front_1_custom_slot
@@ -212,6 +224,7 @@ equipments = {
 			front_1_custom_slot = empty
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
+			fixed_ship_secondaries_slot = empty
 		}
 		
 		sub_visibility = 30
@@ -263,6 +276,7 @@ equipments = {
 					ship_torpedo_sub
 					ship_airplane_launcher
 					ship_extra_fuel_tank
+					ship_secondaries
 				}
 			}
 		}
@@ -271,6 +285,7 @@ equipments = {
 			front_1_custom_slot = empty
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
+			fixed_ship_secondaries_slot = empty
 		}
 		
 		sub_visibility = 34
@@ -303,6 +318,7 @@ equipments = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
 			fixed_ship_engine_slot = sub_ship_engine_1
 			rear_1_custom_slot = empty
+			fixed_ship_secondaries_slot = empty
 		}
 
 		lg_armor_piercing = 0
@@ -349,6 +365,7 @@ equipments = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
 			fixed_ship_engine_slot = sub_ship_engine_1
 			rear_1_custom_slot = ship_torpedo_sub_1
+			fixed_ship_secondaries_slot = empty
 		}
 		lg_armor_piercing = 0
 		lg_attack = 0
@@ -394,6 +411,7 @@ equipments = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
 			fixed_ship_engine_slot = sub_ship_engine_1
 			rear_1_custom_slot = ship_torpedo_sub_1
+			fixed_ship_secondaries_slot = empty
 		}
 		lg_armor_piercing = 0
 		lg_attack = 0
@@ -438,6 +456,7 @@ equipments = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
 			fixed_ship_engine_slot = sub_ship_engine_1
 			rear_1_custom_slot = ship_torpedo_sub_2
+			fixed_ship_secondaries_slot = empty
 		}
 		lg_armor_piercing = 0
 		lg_attack = 0

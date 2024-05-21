@@ -1,6 +1,26 @@
 ideas = {
 
 	country = {
+	# look into sub visability
+	GER_happytime = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+			
+			modifier = {
+				navy_max_range_factor = 5.0
+				#naval_torpedo_hit_chance_factor = 0.5
+				#naval_torpedo_screen_penetration_factor = 1.00
+			}
+	}
 	GER_karl_raiding_quotas = {
 		name = "Raiding Quotas"
 		picture = generic_fascism_drift_2
@@ -1686,7 +1706,7 @@ ideas = {
 
 			equipment_bonus = {
 				submarine = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.7 instant = yes
 				}
 			}
 		}

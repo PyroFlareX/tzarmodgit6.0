@@ -1298,6 +1298,17 @@ GER_kreigsmarine:0 "Kriegsmarine Korps"
 GER_kreigsmarine_desc:0 ""
 GER_hh_kung:0 "Meeting with H.H Kung"
 GER_hh_kung_desc:0 "Schacht believes openning trade between China and Germany can help improve our economic situation. Chinese Finance Minster Dr. H.H Kung has convinced Chaing Kai Shek to reopen the former German economic zone in Qingdao in exchange for training his armies."
+GER_u_boat_pens:0 "Saint-Nazaire U-boat Pens"
+GER_u_boat_pens_desc:0 ""
+GER_happy_time1:0 "Die Glückliche Zeit"
+GER_happy_time1_desc:0 ""
+GER_happy_time2:0 "Zweite Glückliche Zeit"
+GER_happy_time2_desc:0 ""
+
+GER_happytime:0 "The Happy Time"
+
+
+
 GER_bilateral_trade:0 "Bilateral Trade Agreements"
 GER_bilateral_trade_desc:0 "Schacht has brokered several foreign trade agreements ensuring the flow of raw material."
 ITA_modify_regio_esercito_dynamic_modifier_ns_intro:0 "Modify §YRegio Esercito§! by"
