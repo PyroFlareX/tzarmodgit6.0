@@ -262,12 +262,14 @@ country_event = {	#Fall of Japan
 	hidden = yes
 	
 	trigger = {
-		OR = {
-			NOT = {
-				country_exists = JAP
-				date < 1940.1.1
+		AND = {
+			OR = {
+				NOT = {
+					country_exists = JAP
+				}
+				JAP = { has_capitulated = yes }
 			}
-			JAP = { has_capitulated = yes }
+			date < 1940.1.1
 		}
 	}
 	

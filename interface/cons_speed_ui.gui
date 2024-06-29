@@ -8,7 +8,7 @@ guiTypes = {
 		buttonType = {
 			name = "construction_speed_open"
 			quadTextureSprite = "GFX_cons_speed"
-			position = { x = 363 y = -196 } 
+			position = { x = 445 y = -145 } 
 			shortcut = "c"
 			pdx_tooltip = construction_speed_open_tt
 			clicksound = click_ok
