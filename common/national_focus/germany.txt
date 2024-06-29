@@ -293,10 +293,10 @@ focus_tree = {
 	focus = {
 		id = GER_A_Stable_Economy
 		icon = GFX_focus_generic_industrialists
-		prerequisite = { focus = GER_Schact_Plan }
+		prerequisite = { focus = GER_civilian_industry2 focus = GER_civilian_industry3 focus = GER_civilian_industry4}
 		relative_position_id = GER_Schact_Plan
-		x = 4
-		y = 1
+		x = 0
+		y = 4
 		cost = 5
 		ai_will_do = {
 			factor = 12
@@ -692,7 +692,7 @@ focus_tree = {
 		text = "A Balanced Economy"
 		dynamic = yes
 		prerequisite = { focus = GER_civilian_industry }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = GER_civilian_industry
 		cost = 10
@@ -734,7 +734,7 @@ focus_tree = {
 		dynamic = yes
 		text = "Expansion of Butter Production"
 		prerequisite = { focus = GER_civilian_industry }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = GER_civilian_industry
 		cost = 10
@@ -762,7 +762,7 @@ focus_tree = {
 		text = "Expansion of Heavy Industry"
 		prerequisite = { focus = GER_civilian_industry }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_civilian_industry
 		cost = 10
 		ai_will_do = {
@@ -1489,7 +1489,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = "Unlocks an upgrade for Henschel"
+			custom_effect_tooltip = "Unlocks an upgrade for Henschel MIO"
 			custom_effect_tooltip = "     "
 			custom_effect_tooltip = ger_hen_tt
 		}
@@ -1511,7 +1511,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = "Unlocks an upgrade for Man"
+			custom_effect_tooltip = "Unlocks an upgrade for Man MIO"
 			custom_effect_tooltip = "     "
 			custom_effect_tooltip = ger_man_tt
 		}
