@@ -15,11 +15,7 @@ equipment_modules = {
 		}
 		add_stats = {
 			build_cost_ic = 0.75
-			breakthrough = 7
-		}
-		
-		multiply_stats = {
-			air_attack = -0.25
+			breakthrough = 6
 		}
 
 	}
@@ -40,7 +36,7 @@ equipment_modules = {
 		}
 		add_stats = {
 			build_cost_ic = 1.00
-			breakthrough = 10
+			breakthrough = 8
 		}
 		
 		multiply_stats = {
@@ -66,7 +62,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 1.5
 			maximum_speed = -0.25
-			breakthrough = 15
+			breakthrough = 13
 		}
 		
 		multiply_stats = {
@@ -121,8 +117,8 @@ equipment_modules = {
 			}
 		}
 		add_stats = {
-			build_cost_ic = 2
-			breakthrough = 6
+			build_cost_ic = 2.3
+			breakthrough = 4
 			
 		}
 		
@@ -145,7 +141,7 @@ equipment_modules = {
 		}
 		add_stats = {
 			build_cost_ic = 3
-			breakthrough = 12
+			breakthrough = 6
 		}
 		
 		
@@ -168,7 +164,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 4
 			maximum_speed = -0.25
-			breakthrough = 18
+			breakthrough = 10
 		}
 		
 		

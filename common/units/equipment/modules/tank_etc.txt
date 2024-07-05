@@ -12,7 +12,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			breakthrough = 0.30
+			breakthrough = 0.15
 		}
 	}
 
@@ -28,7 +28,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			breakthrough = 0.45
+			breakthrough = 0.3
 		}
 	}
 
@@ -44,7 +44,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			breakthrough = 0.65
+			breakthrough = 0.45
 		}
 	}
 	stabilizer = {
@@ -54,7 +54,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 1.75
-			breakthrough = 8
+			breakthrough = 4
 		}
 		
 		multiply_stats = {
@@ -70,7 +70,7 @@ equipment_modules = {
 
 		add_stats = {
 			defense = 3
-			breakthrough = 2
+			breakthrough = 1
 		}
 		
 		multiply_stats = {
@@ -85,8 +85,8 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = -0.05
-			breakthrough = 2
-			defense = 6
+			breakthrough = 1.5
+			defense = 4.5
 			build_cost_ic =0.5
 		}
 		
