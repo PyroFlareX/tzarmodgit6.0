@@ -79,6 +79,7 @@ buildings = {
 		disabled_in_dmz = yes
 		icon_frame = 16
 		max_level = 1
+		allied_build = yes
 		infrastructure_construction_effect = yes
 	}
 
@@ -103,13 +104,14 @@ buildings = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
 		base_cost = 750
-		per_level_extra_cost = 1000
+		per_level_extra_cost = 500
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 7
 		land_fort = 1
 		max_level = 15
 		value = 1
+		allied_build = yes
 		infrastructure_construction_effect = no
 	}
 
@@ -125,6 +127,7 @@ buildings = {
 		naval_fort = 1
 		max_level = 10
 		value = 1
+		allied_build = yes
 		infrastructure_construction_effect = no
 	}
 
@@ -140,6 +143,7 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		damage_factor = 7
+		allied_build = yes
 		infrastructure_construction_effect = yes
 	}
 

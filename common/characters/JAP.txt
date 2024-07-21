@@ -1129,7 +1129,6 @@ characters={
 			idea_token = JAP_intelligence_advisor
 			allowed  = {
 					original_tag  = JAP
-					has_intelligence_agency  = yes 
 				}
 				traits  = {
 					head_of_intelligence 

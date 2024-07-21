@@ -38,6 +38,73 @@ FRA_bop_decisions = {
 			}
 		}	
 	}
+	FRA_bop_2_5 = {
+		name = "Rally the left"
+		fire_only_once = no
+		visible = {
+				has_completed_focus = Fra_left_wing
+		}
+		cost = 15
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = FRA_violence
+				value = 0.1
+			}
+			add_stability = -0.1
+		}	
+	}
+	FRA_bop_3_5 = {
+		name = "Rally the right"
+		fire_only_once = no
+		visible = {
+				has_completed_focus = Fra_right_wing
+		}
+		cost = 15
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = FRA_violence
+				value = 0.1
+			}
+			add_stability = -0.1
+		}	
+	}
+	FRA_bop_3 = {
+		name = "Ban Right Wing Parties"
+		fire_only_once = yes
+		visible = {
+			AND = {
+				date>1938.1.1
+				has_completed_focus = Fra_left_wing
+			}
+		}
+		cost = 100
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = FRA_violence
+				value = 0.2
+			}
+			add_stability = -0.2
+		}	
+	}
+	FRA_bop_4 = {
+		name = "Ban Left Wing Parties"
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = FRA_support_right
+		}
+		cost = 50
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = FRA_violence
+				value = 0.25
+			}
+			add_stability = -0.3
+		}	
+	}
 }
 FRA_elections = {
 	FRA_elections = {

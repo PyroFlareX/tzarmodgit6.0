@@ -1180,14 +1180,13 @@ characters={
 			slot = political_advisor
 			idea_token = usa_william_donovan
 			available  = {
-					has_intelligence_agency  = yes 
-				}
-				allowed  = {
-					original_tag  = USA
-				}
-				traits  = {
-					head_of_intelligence 
-				}
+			}
+			allowed  = {
+				original_tag  = USA
+			}
+			traits  = {
+				head_of_intelligence 
+			}
 		}
 		name="usa_william_donovan"
 		portraits={
