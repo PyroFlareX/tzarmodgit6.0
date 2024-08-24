@@ -887,7 +887,7 @@ equipment_modules = {
 		}	
 		add_stats = {
 			soft_attack = 9
-			build_cost_ic = 2.75
+			build_cost_ic = 2.25
 			reliability = -0.05
 		}
 		
