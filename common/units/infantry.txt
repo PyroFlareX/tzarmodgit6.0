@@ -772,9 +772,9 @@ marine_commando  = {
 		#Offensive Abilities
 		soft_attack = 0.2
 		hard_attack = 3.5
-		
+		defense = 0.1
 		#Size Definitions
-		max_strength = 35.5
+		max_strength = 30
 		max_organisation = 35
 		default_morale = 0.3
 		manpower = 1200

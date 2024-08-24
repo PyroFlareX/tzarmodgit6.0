@@ -6,6 +6,12 @@ hidden_ideas = {
 			modifier = {
 				army_speed_factor = -0.15
 			}
+			equipment_bonus = {
+				armor = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+			}
 		}
 		allies_nerf = {
 			equipment_bonus = {

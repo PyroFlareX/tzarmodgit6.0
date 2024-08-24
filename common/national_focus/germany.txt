@@ -34,6 +34,7 @@ focus_tree = {
 			51 = { set_demilitarized_zone = no }
 			355 = { set_demilitarized_zone = no }
 			897 = { set_demilitarized_zone = no }
+			899 = { set_demilitarized_zone = no }
 			add_political_power = 120
 			add_war_support = 0.1 
 			army_experience = 25

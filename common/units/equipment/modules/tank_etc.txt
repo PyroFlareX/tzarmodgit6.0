@@ -217,13 +217,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			fuel_capacity = 200
-			reliability = -0.05
-
-		}
-		
-		multiply_stats = {
-			build_cost_ic = 0.03
+			fuel_capacity = 300
 		}
 	}
 }
