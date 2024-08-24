@@ -7192,4 +7192,14 @@ tank_refurbishment_plant = { #NSB
 		production_speed_dockyard_factor = 0.17
 	}
 
+	SL_industrialist = {
+		random = no
+		sprite = 10
+		#custom_modifier_tooltip = SL_industrialist_desc
+		#production_speed_industrial_complex_factor = 0.10
+		political_power_factor = -0.05
+		production_factory_max_efficiency_factor = 0.10
+		
+	}
+
 }

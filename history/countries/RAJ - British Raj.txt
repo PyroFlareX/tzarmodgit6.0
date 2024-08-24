@@ -303,11 +303,12 @@ recruit_character = RAJ_orde_wingate
 
 recruit_character = RAJ_jd_tata
 recruit_character = RAJ_jawaharlal_nehru
-recruit_character = RAJ_Narendra_Deva
+#recruit_character = RAJ_Narendra_Deva
 #recruit_character = RAJ_Chhotu_Ram
 recruit_character = RAJ_Jwala_Prasad_Srivastava
 recruit_character = RAJ_Sir_Jeremy_Raisman
 recruit_character = RAJ_walchand_hirachand
+recruit_character = RAJ_jamnalal_bajaj
 
 recruit_character = RAJ_george_giffard
 recruit_character = RAJ_archibald_wavell

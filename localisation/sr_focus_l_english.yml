@@ -955,6 +955,7 @@ RAJ_inc:0 "Congress"
 accomplished_professor:0 "Accomplished Professor"
 defence_industrialist:0 "Defence Industrialist"
 army_commando_0:0 "Long Range Penetrator \n(Specialist)"
+SL_industrialist:0 "Scrupulous Industrialist" 
 	
 #raj Advisors
 RAJ_jd_tata:0 "J.R.D Tata"
@@ -962,6 +963,7 @@ RAJ_Narendra_Deva:0 "Narendra Deva"
 RAJ_Jwala_Prasad_Srivastava:0 "Jawala Prasad Srivastava"
 RAJ_Sir_Jeremy_Raisman:0 "Sir Jeremy Raisman"
 RAJ_walchand_hirachand:0 "Walchand Hirachand"
+RAJ_jamnalal_bajaj:0 "Jamnalal Bajaj"
 
 #flag cels
 RAJ_dominionpath:0 "Indian National Congress"

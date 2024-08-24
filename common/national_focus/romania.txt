@@ -1012,7 +1012,7 @@ focus_tree = {
 		prerequisite = { focus = ROM_anti_soviet_war }
 		prerequisite = { focus = ROM_governate_transnistria }
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = ROM_reichswerke_hermann_goring
 
 		cost = 5

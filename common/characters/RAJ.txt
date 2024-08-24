@@ -931,6 +931,32 @@ characters={
 		}
 	}
 	
+	RAJ_jamnalal_bajaj ={
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_jamnalal_bajaj
+			available = {
+				OR = {
+					has_country_flag = RAJ_dominionpath
+				}
+			}
+			allowed = {
+				tag = RAJ
+			}
+			traits = {
+				SL_industrialist
+			}
+		}
+		name="RAJ_jamnalal_bajaj"
+		portraits={
+			army={
+				small="gfx/interface/ideas/raj/advisors/idea_advisor_sl_bajaj.dds"
+			}
+		}
+	}
+	
+	################################
+	
 	RAJ_orde_wingate={
 		name="Orde Wingate"
 		portraits={
