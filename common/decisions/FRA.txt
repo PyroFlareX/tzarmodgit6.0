@@ -405,143 +405,6 @@ add_to_variable = { FRA_eff_ret = 0.015 }
 	}
 }
 FRA_relocation = {
-	FRA_TZAR_RELOCATION_CIV = {
-		name = "Civilian Evacuation"
-		icon = generic_construction
-		available = {
-			NOT = {
-			any_state = {
-							is_core_of = FRA
-							is_controlled_by  = FRA
-							is_on_continent = europe
-							industrial_complex > 2
-						}
-			}
-
-		}
-
-		is_good = yes
-
-		allowed = {
-			always = no
-			#added through on_action
-			tag = FRA
-		}
-
-		fire_only_once = no
-		days_mission_timeout = 1
-
-		visible = {
-		}
-
-        timeout_effect = {
-       		add_to_variable = {
-       			FRA_defence = -0.005
-       		}
-			random_controlled_state = {
-				limit = {
-					AND = {is_on_continent = europe is_fully_controlled_by = FRA}
-					industrial_complex > 0
-				}
-				remove_building = {type = industrial_complex level = 1}
-			}
-			FRA = {
-					539 = {
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-   				 			type = industrial_complex
-   				 			level = 1
-  				 			instant_build = yes
-				 		}
-					}
-			}
-			hidden_effect = {
-							if = {
-								limit = {
-								and = {
-																	any_state = {
-																		is_core_of = FRA
-																		is_controlled_by  = FRA
-																		is_on_continent = europe
-																		industrial_complex > 0
-																	}
-																	date<1940.12.12
-																}}
-								activate_mission = FRA_TZAR_RELOCATION_CIV
-							}
-			}
-			#custom_effect_tooltip = GER_relocate_industry_mil
-		}
-	}
-	FRA_TZAR_RELOCATION_MIL = {
-		name = "Military Evacuation"
-		icon = generic_construction
-		available = {
-			NOT = {
-			any_state = {
-							is_core_of = FRA
-							is_controlled_by  = FRA
-							is_on_continent = europe
-							arms_factory > 2
-						}
-			}
-		}
-
-		is_good = yes
-
-		allowed = {
-			always = no
-			#added through on_action
-			tag = FRA
-		}
-
-		fire_only_once = no
-		days_mission_timeout = 1
-
-		visible = {
-			date<1940.12.1
-		}
-
-        timeout_effect = {
-			random_controlled_state = {
-				limit = {
-					AND = {
-						is_on_continent = europe
-						is_fully_controlled_by = FRA
-						arms_factory > 2
-					}
-				}
-				remove_building = {type = arms_factory level = 1}
-			}
-			FRA = {
-					539 = {
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-   				 			type = arms_factory
-   				 			level = 1
-  				 			instant_build = yes
-				 		}
-					}
-			}
-						hidden_effect = {
-							if = {
-								limit = {
-								and = {
-																	any_state = {
-																		is_core_of = FRA
-																		is_controlled_by  = FRA
-																		is_on_continent = europe
-																		arms_factory > 0
-																	}
-																	date<1940.12.12
-																}}
-								activate_mission = FRA_TZAR_RELOCATION_MIL
-							}
-			}
-			}
-			#custom_effect_tooltip = GER_relocate_industry_mil
-		}
-	}
 }
 FRA_move_capital = {
 FRA_move_capital_casablanca = {
@@ -822,75 +685,170 @@ war_measures = {
 }
 
 Battle_for_France = {
-	FRA_battle_start = {
-		allowed = { always = no
-			original_tag = FRA }
-
-		icon = officers_purged
-
-		available = { 
-			OR = {
-				GER = { has_war_with = BEL }
-				FRA = { has_war_with = ITA }
-				FRA = { surrender_progress > 0.00 }
+	FRA_TZAR_RELOCATION_CIV = {
+		name = "Civilian Evacuation"
+		icon = generic_construction
+		available = {
+			NOT = {
+			any_state = {
+							is_core_of = FRA
+							is_controlled_by  = FRA
+							is_on_continent = europe
+							industrial_complex > 2
+						}
 			}
-		}
-		activation = {
-			always=no
+
 		}
 
-		selectable_mission = no
-		days_mission_timeout = 9999
 		is_good = yes
-		fire_only_once = yes
-		timeout_effect = {
-			FRA = {
-				set_country_flag = FRA_battle_flag
-				activate_mission = FRA_battle_1
+
+		allowed = {
+			always = no
+			#added through on_action
+			tag = FRA
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 1
+
+		visible = {
+		}
+
+        timeout_effect = {
+       		add_to_variable = {
+       			FRA_defence = -0.005
+       		}
+			random_controlled_state = {
+				limit = {
+					AND = {is_on_continent = europe is_fully_controlled_by = FRA}
+					industrial_complex > 0
+				}
+				remove_building = {type = industrial_complex level = 1}
 			}
-			#539.FRA_battle_weeks_held = 0
-			FRA = { set_variable = { var = FRA_battle_weeks_held value = 0 } }
-		 }
-		complete_effect = {
-			#France reward for holding mission
 			FRA = {
-				set_country_flag = FRA_battle_flag
-				activate_mission = FRA_battle_1
+					539 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+   				 			type = industrial_complex
+   				 			level = 1
+  				 			instant_build = yes
+				 		}
+					}
 			}
-			#539.FRA_battle_weeks_held = 0
-			FRA = { set_variable = { var = FRA_battle_weeks_held value = 0 } }
+			hidden_effect = {
+							if = {
+								limit = {
+								and = {
+																	any_state = {
+																		is_core_of = FRA
+																		is_controlled_by  = FRA
+																		is_on_continent = europe
+																		industrial_complex > 0
+																	}
+																	date<1940.12.12
+																}}
+								activate_mission = FRA_TZAR_RELOCATION_CIV
+							}
+			}
+			#custom_effect_tooltip = GER_relocate_industry_mil
 		}
 	}
-
-	FRA_battle_1 = {
-		allowed = { always = no
-			original_tag = FRA }
-
-		icon = officers_purged
-
-		available = { 
-			NOT = { has_country_flag = FRA_battle_flag } 
+	FRA_TZAR_RELOCATION_MIL = {
+		name = "Military Evacuation"
+		icon = generic_construction
+		available = {
+			NOT = {
+				any_state = {
+					is_core_of = FRA
+					is_controlled_by  = FRA
+					is_on_continent = europe
+					arms_factory > 2
+				}
+			}
 		}
-		activation = {
-			always=no
-		}
 
-		
-
-		selectable_mission = no
-		days_mission_timeout = 7
 		is_good = yes
-		fire_only_once = yes
-		timeout_effect = {
-			#custom_effect_tooltip = FRA_weeks_held_tooltip
+
+		allowed = {
+			always = no
+			tag = FRA
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 1
+
+		visible = {
+			date<1940.12.1
+		}
+
+        timeout_effect = {
+			random_controlled_state = {
+				limit = {
+					AND = {
+						is_on_continent = europe
+						is_fully_controlled_by = FRA
+						arms_factory > 2
+					}
+				}
+				remove_building = {type = arms_factory level = 1}
+			}
+			FRA = {
+					539 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+   				 			type = arms_factory
+   				 			level = 1
+  				 			instant_build = yes
+				 		}
+					}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						and = {
+							any_state = {
+								is_core_of = FRA
+								is_controlled_by  = FRA
+								is_on_continent = europe
+								arms_factory > 0
+							}
+							date<1940.12.12
+						}
+					}
+					activate_mission = FRA_TZAR_RELOCATION_MIL
+				}
+			}
+			}
+			#custom_effect_tooltip = GER_relocate_industry_mil
+		}
+	}
+	FRA_tzar_war22 = {
+		name = "Battle for France"
+		icon = officers_purged
+		available = {
+			always = yes
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			tag = FRA
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 7
+
+		visible = {
+			always = yes 
+		}
+
+        timeout_effect = {
 			add_to_variable = {
 				var = FRA_battle_weeks_held
 				value = 1
 			}
-			if = { limit = { check_variable = { FRA_battle_weeks_held < 10 } } 
-				activate_mission = FRA_battle_1
-			}
-		 }
-		complete_effect = {}
+			activate_mission = FRA_tzar_war
+		}
 	}
 }

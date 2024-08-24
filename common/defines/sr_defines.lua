@@ -346,7 +346,7 @@ NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.8
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 45.0
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.125
 NDefines.NProduction.EQUIPMENT_BASE_LEND_LEASE_WEIGHT = 2.25
-
+NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0
 -- NDefines.NBuildings.INFRA_TO_SUPPLY = 2.4
 -- NDefines.NBuildings.INFRA_TO_SUPPLY_COEFF = 1 -- Testing, 1 in vanilla -- TW/WTT 
 ---------------------------------------------------------------

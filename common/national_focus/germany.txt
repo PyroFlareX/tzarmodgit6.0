@@ -2300,7 +2300,6 @@ CZE = {
 		completion_reward = {
 			hidden_effect ={
 				FRA = {
-				#FRA_TZAR_RELOCATION_CIV
 				activate_mission = FRA_TZAR_RELOCATION_CIV
 				activate_mission = FRA_TZAR_RELOCATION_MIL
 				}
@@ -3776,6 +3775,9 @@ CZE = {
 
 				available_if_capitulated = no
 				completion_reward = {
+					FRA = {
+						activate_mission = FRA_tzar_war22
+					}
 					every_country = {
 						limit = {
 							AND = {
