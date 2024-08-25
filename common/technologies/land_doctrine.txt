@@ -2636,7 +2636,7 @@ technologies = {
 
 		
 
-		# supply_consumption_factor = -0.1
+		supply_consumption_factor = -0.15
 		motorized_rocket_brigade = {
 			max_organisation = 10
 			default_morale = 0.2

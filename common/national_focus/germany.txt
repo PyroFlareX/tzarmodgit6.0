@@ -411,7 +411,7 @@ focus_tree = {
 		relative_position_id = GER_fall_gelb
 		available = {
 			has_completed_focus = GER_four_year_plan
-			date>1941.4.1
+			date>1943.4.1
 		}
 		x = 2
 		y = 2
@@ -2579,7 +2579,6 @@ CZE = {
 			factor = 1
 		}
 		completion_reward = {
-			GER_economy_down = yes
 			add_ideas = USA_ships_for_victory_idea_v2
 		}
 	}
@@ -2595,7 +2594,6 @@ CZE = {
 
 		available_if_capitulated = yes
 		completion_reward = {
-			GER_economy_down = yes
 		navy_experience = 500
 	every_state = { limit = { is_coastal = yes is_core_of = GER   }		
 				add_extra_state_shared_building_slots = 1

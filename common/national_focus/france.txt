@@ -48,7 +48,7 @@
 		x = 0
 		y = 1
 		cost = 5
-		available = {has_completed_focus = FRA_colonial_investments}
+		available = {}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -1193,7 +1193,7 @@
 		mutually_exclusive = {
 			focus = FRA_support_left
 		}
-		cost = 10
+		cost = 5
 		prerequisite = {focus = FRA_election}
 		relative_position_id =FRA_election
 
@@ -1351,38 +1351,6 @@
 			add_to_variable = { FRA_cg = 0.15 }
 			custom_effect_tooltip = FRA_cg_increase
 			add_research_slot = 1
-		}
-	}
-	focus = {
-		id = FRA_colonial_investments
-		text = "Colonial Investments"
-		icon = GFX_focus_NORDIC_com_capstone_research
-		x = 0
-		y = 2
-		available = {
-		}
-		prerequisite = {focus = Fra_left_wing}
-		relative_position_id = Fra_left_wing
-
-		cost = 2
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL  }
-		completion_reward = {
-			custom_effect_tooltip = "Unlocks colonial part of the tree"
-			hidden_effect = {
-			add_power_balance_value = {
-				id = FRA_violence
-				value = -0.2
-			}}
-			custom_effect_tooltip = FRA_afrika
 		}
 	}
 	focus = {
@@ -1733,7 +1701,7 @@
 		prerequisite = {focus = The_south}
 		relative_position_id = Fra_left_wing
 
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -1834,13 +1802,14 @@
 			focus = Fra_right_wing
 		}
 		relative_position_id = Fra_right_wing
-		cost = 5
+		cost = 3
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			add_political_power = 100
 			add_tech_bonus = {
 				name = FRA_laissez_faire
 				uses = 3
@@ -1923,6 +1892,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			add_political_power = 100
 			hidden_effect = {
 			add_power_balance_value = {
 				id = FRA_violence
@@ -2015,7 +1985,7 @@
 			focus = FRA_laissez_faire
 		}
 		relative_position_id = FRA_laissez_faire
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2179,7 +2149,7 @@
 		x = 1
 		y = 1
 		relative_position_id = FRA_strengthen_government_support
-		cost = 5
+		cost = 2
 
 		available_if_capitulated = yes
 

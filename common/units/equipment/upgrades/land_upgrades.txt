@@ -70,7 +70,7 @@ upgrades = {
 			armor_value = 0.75
 			breakthrough = 0.5
 			defense = 0.1
-			build_cost_ic = 0.5
+			build_cost_ic = 0.2
 		}
 	}
 
@@ -96,6 +96,10 @@ upgrades = {
 		max_level = 5
 		cost = land
 		maximum_speed = 0.04
+		linear_cost = {
+			cost_by_level = 0
+			cost_by_level_for_licensed_equipment = 2
+		}
 	}	
 	ac_engine_upgrade = {
 		max_level = 5
