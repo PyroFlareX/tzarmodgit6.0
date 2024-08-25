@@ -26,6 +26,7 @@
 		}
 		manpower = 500
 		hard_attack = -0.15
+		soft_attack = -0.2
 		breakthrough = -0.1
 		max_organisation = 0
 		default_morale = 0.1
@@ -101,6 +102,7 @@
 		need = {
 			medium_tank_artillery_chassis = 60
 		}
+		soft_attack = -0.2
 		manpower = 500
 		hard_attack = -0.1
 		max_organisation = 0
@@ -180,6 +182,7 @@
 		need = {
 			heavy_tank_artillery_chassis = 60
 		}
+		soft_attack = -0.2
 		manpower = 500
 		hard_attack = -0.1
 		breakthrough = -0.2

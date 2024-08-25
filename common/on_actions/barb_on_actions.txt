@@ -26,20 +26,25 @@ on_actions = {
 				}
 				if = { limit = { 219 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_moscow } } } }
 					219 = { set_state_flag = sr_fall_of_moscow }
-					SOV = {
-					kill_country_leader = yes
-					create_country_leader = {
-					name = "Lavrenty Beriya"
-					desc = ""
-					picture = GFX_portrait_SOV_lavrenty_beriya
-					expire = "1965.1.1"
-					ideology = stalinism
-					traits = {
-					}
-					}
+					if = {
+						limit = {
+							date < 1942.1.1
+						}
+						SOV = {
+							kill_country_leader = yes
+							create_country_leader = {
+								name = "Lavrenty Beriya"
+								desc = ""
+								picture = GFX_portrait_SOV_lavrenty_beriya
+								expire = "1965.1.1"
+								ideology = stalinism
+								traits = {
+								}
+							}
+						}
+						news_event = news.1006
 					}
 					news_event = news.106
-					news_event = news.1006
 					if = { limit = { date <  1942.5.1 } SOV = { add_ideas = SOV_Danger_To_Heartland } }
 				}
 				if = { limit = { 195 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_leningrad } } } }
