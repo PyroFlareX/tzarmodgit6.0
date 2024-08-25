@@ -13,9 +13,9 @@ set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
 	state_shintoism
-	limited_exports
+	autarky_generic
 	limited_conscription
-	partial_economic_mobilisation
+	war_economy
 	JAP_interservice_rivalry_balanced
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts

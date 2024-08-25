@@ -2142,10 +2142,7 @@
 				has_country_flag = FRA_strengthen_government_support_focus_flag
 			}
 		}
-		prerequisite = { focus = FRA_fight_communists }
-		prerequisite = { focus =  FRA_Individual_freedom }
-		prerequisite = { focus =  FRA_Competition }
-	 	prerequisite = { focus = FRA_strengthen_government_support }
+		prerequisite = { focus = FRA_strengthen_government_support focus =  FRA_Competition focus = FRA_fight_communists focus =  FRA_Individual_freedom }
 		x = 1
 		y = 1
 		relative_position_id = FRA_strengthen_government_support
