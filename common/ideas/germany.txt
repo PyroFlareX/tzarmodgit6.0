@@ -732,8 +732,7 @@ ideas = {
 			modifier = {
 			license_production_speed = 0.20
 			license_tech_difference_speed = 0.20
-			industrial_capacity_factory = 0.075
-			consumer_goods_expected_value = -0.03
+			industrial_capacity_factory = 0.05
 		}	
 	}
 		

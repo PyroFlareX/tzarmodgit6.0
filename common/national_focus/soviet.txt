@@ -4243,6 +4243,9 @@ focus_tree = {
 				has_war_with = SOV
 			}
 			date>1941.7.1
+			ENG = {
+				has_capitulated = yes
+			}
 			}
 		}
 		
@@ -5179,21 +5182,14 @@ focus_tree = {
 		x = 2
 		y = 3
 		relative_position_id = SOV_desperate_measures
-		cost = 10
+		cost = 5
 
 		select_effect = {
-			add_ideas = SOV_tool_relocation
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_focus_select_effect_tt
-			effect_tooltip = {
-				add_ideas = SOV_tool_relocation
-			}
-			custom_effect_tooltip = SOV_focus_complete_effect_tt
-			remove_ideas = SOV_tool_relocation
 			add_ideas = SOV_tool_relocated
 		}
 	}

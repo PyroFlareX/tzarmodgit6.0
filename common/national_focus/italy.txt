@@ -1183,10 +1183,10 @@ focus = {
 		id = ITA_new_industrialization_program
 		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = ITA_strengthen_northern_industry focus = ITA_modernize_the_mezzogiorno }
-		prerequisite = { focus = ITA_expand_national_universities }
+		prerequisite = { focus = ITA_investments_in_edison }
 
-		x = 1
-		y = 2
+		x = 2
+		y = 1
 		relative_position_id = ITA_strengthen_northern_industry
 		cost = 5
 		available = {
@@ -1214,12 +1214,12 @@ focus = {
 			}
 			
 			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.5
-				uses = 2
-				technology = construction2
-				technology = construction3
-			}
+					name = SOV_reorganize_the_pc_of_heavy_industry_name_default
+					bonus = 1.0
+					uses = 2
+					category = industry
+					category = electronics
+				}
 		}
 	}
 
@@ -1364,11 +1364,11 @@ focus = {
 	focus = {
 		id = ITA_expand_national_universities
 		icon = GFX_focus_research
-		prerequisite = { focus = ITA_investments_in_edison }
+		prerequisite = { focus = ITA_italian_highways_bba }
 
-		x = 0
-		y = 1
-		relative_position_id = ITA_investments_in_edison
+		x = -2
+		y = 2
+		relative_position_id = ITA_italian_highways_bba
 		cost = 5
 		available = {
 		}
@@ -1616,10 +1616,10 @@ focus = {
 	focus = {
 		id = ITA_increase_production
 		icon = GFX_focus_generic_combined_arms
-		prerequisite = { focus = ITA_expand_national_universities }
+		prerequisite = { focus = ITA_investments_in_edison }
 		prerequisite = { focus = ITA_redirect_alfa_romeo_production }
 		x = -1
-		y = 2
+		y = 1
 		relative_position_id = ITA_redirect_alfa_romeo_production
 		cost = 5
 		available = {
@@ -1642,10 +1642,10 @@ focus = {
 	focus = {
 		id = ITA_keep_specialization
 		icon = GFX_goal_generic_production
-		prerequisite = { focus = ITA_expand_national_universities }
+		prerequisite = { focus = ITA_investments_in_edison }
 		prerequisite = { focus = ITA_redirect_alfa_romeo_production }
 		x = 1
-		y = 2
+		y = 1
 		relative_position_id = ITA_redirect_alfa_romeo_production
 		cost = 5
 		available = {
@@ -2569,7 +2569,7 @@ focus = {
 
 			add_tech_bonus = {
 				name = ITA_air_innovations_bba #fighter_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = light_fighter
 			}

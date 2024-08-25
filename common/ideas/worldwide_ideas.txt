@@ -1,7 +1,7 @@
 ideas = {
 hidden_ideas = {
 	tank_nerf = {
-			name = "Victor Emmanuel"
+			name = "Tank balance"
 			picture = vittorio_emanuele
 			modifier = {
 				army_speed_factor = -0.15
@@ -10,6 +10,7 @@ hidden_ideas = {
 				armor = {
 					instant = yes
 					build_cost_ic = -0.15
+					soft_attack = 0.2
 				}
 			}
 		}
@@ -17,7 +18,7 @@ hidden_ideas = {
 			equipment_bonus = {
 					medium_tank_chassis = {
 							instant = yes
-							build_cost_ic = 0.2
+							build_cost_ic = 0.15
 					}
 					heavy_tank_chassis = {
 							instant = yes
