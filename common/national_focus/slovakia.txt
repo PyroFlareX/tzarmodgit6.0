@@ -1037,7 +1037,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 4
 		}
-		text = "SS Standarts of Training"
+		text = "SS Standards of Training"
 		available = {
 
 		}
