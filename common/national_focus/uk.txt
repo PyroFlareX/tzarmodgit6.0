@@ -3234,20 +3234,13 @@ technology = improved_medium_airframe
 		available = { 
 			GER = { has_completed_focus = GER_pressure_sweden }
 			NOT = {
-			any_country = {
-				OR = {
-				AND = {
-					OR = {
-					tag = GER
-					is_in_faction_with = GER
-					}
+				GER = {
 					controls_state = 110
 					controls_state = 142
 				}
-				}
 			}
 		}
-		}
+		
 		
 		icon = GFX_goal_generic_production2
 		x = -1

@@ -15,10 +15,10 @@ state={
 			7011 20 
 		}
 		victory_points = {
-			3996 5 
+			10947 30
 		}
 		victory_points = {
-			1068 3 
+		7143 15
 		}
 		add_core_of = SWE
 

@@ -73,7 +73,8 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_max_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.2
 			}
 		}
 		SOV_Danger_To_Heartland = {

@@ -5,9 +5,6 @@ state={
 
 	history={
 		owner = TUR
-		victory_points = {
-			806 15 
-		}
 		add_core_of = TUR
 
 	}
