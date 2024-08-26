@@ -727,6 +727,29 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = SPA_División_Azul
+		icon = GFX_focus_focus_fra_intervention_spain
+		prerequisite = { focus = SPA_national_recovery }
+		relative_position_id = SPA_national_recovery
+		text = "División_Azul"
+		x = 0
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			date>1941.05.01
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			load_oob = "Azul_tanks"
+		}
+	}
+	
 
 
 		focus = { 
