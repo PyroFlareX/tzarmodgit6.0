@@ -7351,15 +7351,15 @@ completion_reward = {
 					transfer_state = 109
 					transfer_state = 853
 				}
-				ENG = {
-					transfer_state = 182
-				}
 				
 			}
 			ALB = {
 				add_state_claim = 802
 				add_state_claim = 105
 			}
+			ENG = {
+					transfer_state = 182
+				}
 			add_threat = 7
 			hidden_effect = { 
 				# YUG = { set_equipment_fraction = 0.0 }
