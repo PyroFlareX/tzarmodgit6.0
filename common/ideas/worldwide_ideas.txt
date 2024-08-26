@@ -5,6 +5,7 @@ hidden_ideas = {
 			picture = vittorio_emanuele
 			modifier = {
 				army_speed_factor = -0.25
+				supply_consumption_factor = -0.15
 			}
 			equipment_bonus = {
 				armor = {

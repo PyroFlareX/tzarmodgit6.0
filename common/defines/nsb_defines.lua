@@ -47,7 +47,7 @@ NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_DEFEND = -0.28     -- defend comb
 --NDefines.NSupply.CAPITAL_ADDED_PENALTY_PER_PROVINCE = 1.2, -- added penalty as we move away from origin
 
 -- defines that are used for supply reach for built nodes
-NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 3   --vanilla 2.8
+NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 3.2   --vanilla 2.8
 NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.40   --vanilla 0.5
 NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.55 --vanilla 0.7
 
