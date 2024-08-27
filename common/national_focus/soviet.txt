@@ -3987,12 +3987,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = SOV_the_path_of_marxism_leninism
 		cost = 5
-		offset = {
-			trigger = {
-				has_country_flag = picked_stalin
-			}
-			x = -2
-		}
 		mutually_exclusive = {  focus = SOV_the_left_opposition }
 
 		allow_branch = {
@@ -6332,18 +6326,6 @@ focus_tree = {
 		cost = 5
 		available = {
 
-		}
-		offset = {
-			trigger = {
-				has_country_flag = picked_stalin
-			}
-			x = -2
-		}
-		offset = {
-			trigger = {
-				has_country_flag = picked_trotsky
-			}
-			x = -3
 		}
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 
