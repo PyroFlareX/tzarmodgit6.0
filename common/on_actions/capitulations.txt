@@ -195,7 +195,16 @@ on_actions = {
 				
 				
 				}
-				
+			if = {
+				limit = {
+					original_tag = NOR
+				}
+				transfer_state = 110
+				transfer_state = 142
+				transfer_state = 143
+				transfer_state = 144
+
+			}
 			if = {
 				limit = { original_tag = HOL }
 				HOL = { set_equipment_fraction = 0.0 }
