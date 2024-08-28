@@ -1,5 +1,50 @@
 spriteTypes = {
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	SpriteType = {
+		name = "GFX_goal_ROM_the_manifest_of_legionaries"
+		texturefile = "gfx/interface/goals/ROM_the_manifest_of_legionaries.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_the_marshal_of_the_nation"
+		texturefile = "gfx/interface/goals/ROM_the_marshal_of_the_nation.png"
+	}
+	SpriteType = {
+		name = "ROM_legionary_in_name_of_god"
+		texturefile = "gfx/interface/goals/ROM_legionary_in_name_of_god.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_ROM_king_carol_ii_overthdrow_the_government"
+		texturefile = "gfx/interface/goals/ROM_king_carol_ii_overthdrow_the_government.png"
+	}
+	SpriteType = {
+		name = "ROM_legionary_proclaim_codreanu_a_saint"
+		texturefile = "gfx/interface/goals/ROM_legionary_proclaim_codreanu_a_saint.png"
+	}	
+	SpriteType = {
+		name = "ROM_antonescu_win_the_struggle"
+		texturefile = "gfx/interface/goals/ROM_antonescu_win_the_struggle.png"
+	}
+	SpriteType = {
+		name = "ROM_antonescu_continue_the_legionary_goverment"
+		texturefile = "gfx/interface/goals/ROM_antonescu_continue_the_legionary_goverment.png"
+	}	
+	SpriteType = {
+		name = "ROM_antonescu_appoint_sima_into_the_government"
+		texturefile = "gfx/interface/goals/ROM_antonescu_appoint_sima_into_the_government.png"
+	}	
 	SpriteType = {
 		name = "GFX_sniper_rifle_medium"
 		texturefile = "gfx/interface/technologies/tech_sniper_rifle_01.dds"

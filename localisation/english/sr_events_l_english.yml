@@ -220,7 +220,7 @@
  news.1005.d:0 "With Axis forces pushing towards the Indian sub-continent. The neighbouring Kingdom of Afghanistan took advantage of this as an opportunity to seize Peshawar and Quetta, both border regions of the British Raj. The king hopes to bring new lands to the crown and has aligned the country with the Axis powers."
  news.1005.a:0 "Fourth?!"
 
-  news.1006.t:0 "Stalin's Demise After Axis Conquest of Moscow"
+ news.1006.t:0 "Stalin's Demise After Axis Conquest of Moscow"
  news.1006.d:0 "In a stunning turn of events, the Axis forces have achieved a significant victory by capturing the heart of the Soviet Union—the historic and strategic city of Moscow. The fall of this symbol of Soviet resistance has not only dealt a severe blow to the morale of the Soviet people but has also cast a shadow of uncertainty over the fate of their revered leader, Joseph Stalin.\n\nThe news of Stalin's death in the wake of Moscow's fall has sent shockwaves through the Soviet Union and the global community. The absence of the iron-fisted leader, whose name has been synonymous with Soviet resilience, has plunged the nation into a state of disarray and questions about its future course."
  news.1006.a:0 "The rotten structure started to crumble."
  
@@ -235,3 +235,7 @@
  srevents.17.t:0 "Occupation of Portuguese Mozambique"
  srevents.17.d:0 "With the fall of Portugal, British Forces have moved in to occupy Angola. We have been tasked to move into South Mozambique to deny Franco control of strategic ports near the Cape. Portuguese Authorities are so far compliant."
  srevents.17.a:0 "Better us, than Franco"
+ 
+ news.1007.t:0 "Fall of Istanbul"
+ news.1007.d:0 "In a dramatic turn of events that has shocked the international community, the Romanian Legionary State has successfully taken control of Istanbul, raising the Romanian Flag over the Hagia Sophia and Claiming the restablishment of a Constantinople Orthdox Patriarch. The rapid and unexpected military operation has shifted the balance of power in the region and raised significant questions about the future of Turkish sovereignty and regional stability."
+ news.1007.a:0 "The Collapse of Turkey"

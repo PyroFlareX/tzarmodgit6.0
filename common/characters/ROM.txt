@@ -1,30 +1,59 @@
 characters={
-		
-	ROM_armand_calinescu={
-		name=ROM_armand_calinescu
+	
+	ROM_octavian_goga={
+		name="Octavian Goga"
 		portraits={
 			civilian={
-				large="GFX_Portrait_romania_armand_calinescu"
-			}
-			army={
-				small="GFX_idea_ROM_armand_calinescu"
+				large="gfx/leaders/ROM/Portrait_Romania_Octavian_Goga.dds"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = ROM_armand_calinescu
-			allowed = {
-				original_tag = ROM
-			}
-			traits = {
-				prince_of_terror 
-			}
-		}
-
 		country_leader={
-			ideology=centrism
+			desc="POLITICS_OCTAVIAN_GOGA_DESC"
+			ideology=fascism_ideology
 			expire="1965.1.1.1"
 			id=-1
+		}
+	}
+	
+	ROM_horia_sima={
+		name="Horia Sima"
+		portraits={
+			civilian={
+				large="gfx/leaders/ROM/r56_portrait_ROM_Horia_Sima.dds"
+			}
+		}
+		
+	}
+	
+	ROM_corneliu_codreanu={
+		name="Corneliu Zelea Codreanu"
+		portraits={
+			civilian={
+				large="gfx/leaders/ROM/portrait_corneliu_zelea_codreanu.dds"
+			}
+		}
+		
+	}
+	
+	ROM_carol_2={
+		name="Carol II"
+		portraits={
+			civilian={
+				large="GFX_Portrait_romania_Carol_II"
+			}
+			#army={
+			#	small="GFX_idea_ROM_armand_calinescu"
+			#}
+		}
+		
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+			traits = {
+				hedonist
+				camarilla_leader
+			}
 		}
 	}
 	ROM_constantin_sanatescu={
@@ -88,11 +117,11 @@ characters={
 			logistics_skill=4
 			legacy_id=-1
 		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
+		#country_leader={
+		#	ideology=fascism_ideology
+		#	expire="1965.1.1.1"
+		#	id=-1
+		#}
 	}
 	ROM_horia_macellariu={
 		name="Horia Macellariu"
@@ -190,20 +219,7 @@ characters={
 			id=-1
 		}
 	}
-	ROM_octavian_goga={
-		name="Octavian Goga"
-		portraits={
-			civilian={
-				large="gfx/leaders/ROM/Portrait_Romania_Octavian_Goga.dds"
-			}
-		}
-		country_leader={
-			desc="POLITICS_OCTAVIAN_GOGA_DESC"
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
+	
 	ROM_petre_dumitrescu={
 		name="Petre Dumitrescu"
 		portraits={

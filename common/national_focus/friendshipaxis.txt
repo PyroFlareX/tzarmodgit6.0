@@ -22,7 +22,7 @@ joint_focus = {
 		
 		offset = {
 			x = -2
-			y = 2
+			y = 4
 			trigger = {
 				has_focus_tree = romanian_focus
 			}

@@ -2239,11 +2239,29 @@ CZE = {
 				transfer_state = 811
 				transfer_state = 146
 				transfer_state = 147
-				transfer_state = 78
-				transfer_state = 766
-				transfer_state = 80
+				#transfer_state = 78
+				#transfer_state = 766
+				#transfer_state = 80
 				army_experience = 50
 				air_experience = 300
+			
+			}
+		
+			if = {
+					
+				limit = {	
+					ROM = {
+						NOT = {
+							has_country_flag = DUH_BORDER_WALL
+						}
+					}
+					SOV = {
+						transfer_state = 78
+						transfer_state = 766
+						transfer_state = 80
+					}
+						
+				}
 			}
 		}
 	}

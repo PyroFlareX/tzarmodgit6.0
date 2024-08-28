@@ -3,6 +3,21 @@
 ###########################
 
 add_namespace = news
+
+news_event = {
+	id = news.1007
+	title = news.1007.t
+	desc = news.1007.d
+	picture = GFX_news_event_the_megali_idea_fails
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "news.1007.a"
+	}
+}
+
 news_event = {
 	id = news.1006
 	title = news.1006.t

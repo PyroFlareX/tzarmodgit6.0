@@ -147,13 +147,14 @@ add_timed_idea = { idea = GER_mefo_bills_1 days = 1330 }
  #Ideas
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
- 	}
+		ROM_iron_guard_violence
+	}
 add_ideas = neutrality_idea
 
 set_convoys = 100
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes
@@ -164,15 +165,16 @@ set_popularities = {
 	communism = 2
 	neutrality = 20
 }
-recruit_character = ROM_armand_calinescu
+recruit_character = ROM_carol_2
 # recruit_character = ROM_constantin_sanatescu
 recruit_character = ROM_ion_antonescu
 recruit_character = ROM_horia_macellariu
 recruit_character = ROM_gheorghe_avramescu
 recruit_character = ROM_gheorghe_tatarescu
 recruit_character = ROM_constantin_ion_parhon
-#recruit_character = ROM_octavian_goga
-
+recruit_character = ROM_octavian_goga
+recruit_character = ROM_horia_sima
+recruit_character = ROM_corneliu_codreanu
 
 # recruit_character = ROM_petre_dumitrescu
 recruit_character = ROM_ioan_mihail_racovita
