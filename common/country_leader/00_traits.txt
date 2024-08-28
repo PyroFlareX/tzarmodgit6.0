@@ -24,7 +24,8 @@ leader_traits = {
 		#production_speed_rail_way_factor = 0.1
 		#production_speed_synthetic_refinery_factor = 0.1
 		trade_opinion_factor = 0.25
-		democratic_acceptance = 70
+		democratic_acceptance = 150
+		communism_acceptance = 150
 	}
 	
 	################################
@@ -3526,8 +3527,8 @@ tank_refurbishment_plant = { #NSB
 	
 	anti_communist = {
 		random = no
-		communism_acceptance = -50
-		communism_drift = -0.01
+		communism_acceptance = 50
+		
 
 		ai_will_do = {
 			factor = 1
