@@ -69,8 +69,8 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = { always = no }
 	 
 	DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
-	 ROOT = { original_tag = EFR  }
-	 if = { limit = {ROOT = { TAG = EFR } }	FROM = { TAG = GER }  }
+	 #ROOT = { original_tag = EFR  }
+	 #if = { limit = {ROOT = { TAG = EFR } }	FROM = { TAG = GER }  }
 	} 
 	
 	DIPLOMACY_REQUEST_ACCESS_TO_LICENCE_PRODUCTION_ENABLE_TRIGGER = { 
