@@ -56,9 +56,9 @@ ideas = {
 			}
 
 			modifier = {
-				conscription_factor = -0.45
+				conscription_factor = -0.25
 				#non_core_manpower = 0.15
-				army_attack_factor = 0.15
+				army_attack_factor = 0.08
 			}
 		}
 		
