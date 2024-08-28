@@ -803,6 +803,7 @@ SOV_war_for_communism_generals:0 "§YKonstantin Rokossovsky (Best Tank Commander
 GER_mol_rib_pact:0 "Molotov-Ribbentrop Pact"
 GER_soviet_treaty:0 "Treaty With USSR"
 
+add_convoy:0 "Break Incase of Convoy Bugged"
 RAJ_Chinese_Expeditionary_Force:0 "Chinese Expeditionary Force"
 RAJ_Chinese_Expeditionary_Force_desc:0 "Chiang Kai Shek is not willing to lose the Burma road and has dispatched the CEF to aid allied forces."
 RAJ_Aid_the_Empire:0 "Aid the Empire"
