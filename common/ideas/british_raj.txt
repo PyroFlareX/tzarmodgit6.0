@@ -218,6 +218,7 @@ ideas = {
 			modifier = {
 				consumer_goods_expected_value = -0.1
 				stability_factor = -0.10
+				send_volunteer_size = 2
 			}
 		}
 		
@@ -230,6 +231,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.05
+				send_volunteer_size = 2
 			}
 		}
 		
@@ -242,6 +244,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.30
+				send_volunteer_size = 2
 			}
 		}
 		
@@ -254,6 +257,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.15
+				send_volunteer_size = 2
 			}
 		}
 		
@@ -266,6 +270,7 @@ ideas = {
 			 
 			modifier = {
 				stability_factor = -0.05
+				send_volunteer_size = 2
 			}
 		}
 		
@@ -636,6 +641,7 @@ ideas = {
 			
 			modifier = {
 				autonomy_gain = 0.4
+				send_volunteer_size = 2
 			}
 		}
 				

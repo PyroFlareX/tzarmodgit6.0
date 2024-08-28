@@ -19,6 +19,7 @@ ideas = {
 			
 			modifier = {
 				non_core_manpower = -1.00
+				send_volunteer_size = 2
 			}
 		}
 	}

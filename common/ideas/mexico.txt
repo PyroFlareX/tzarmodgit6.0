@@ -95,6 +95,7 @@ ideas = {
 				industrial_capacity_factory = 0.2
 				stability_factor = -0.05
 				production_lack_of_resource_penalty_factor = -1
+				send_volunteer_size = 2
 			}
 		}
 		
@@ -116,6 +117,7 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.1
 				production_lack_of_resource_penalty_factor = -1
+				send_volunteer_size = 2
 			}
 		}
 		
@@ -137,6 +139,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				production_lack_of_resource_penalty_factor = -1
+				send_volunteer_size = 2
 			}
 		}
 		
@@ -158,6 +161,7 @@ ideas = {
 			modifier = {
 				consumer_goods_expected_value = -0.02
 				production_lack_of_resource_penalty_factor = -1
+				send_volunteer_size = 2
 			}
 		}
 		
@@ -180,6 +184,7 @@ ideas = {
 				consumer_goods_expected_value = -0.05
 				stability_factor = -0.05
 				production_lack_of_resource_penalty_factor = -1
+				send_volunteer_size = 2
 			}			
 		}
 

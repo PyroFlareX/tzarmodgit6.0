@@ -20,6 +20,25 @@ ideas = {
 				surrender_limit = -0.60
 			}
         }
+		
+		FRA_volunteers = {
+
+			picture = generic_disjointed_gov
+			FRA_volunteers
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no			
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteer_size = 3
+			}
+        }
 	
 		FRA_full_employment = {
 			picture = generic_production_bonus

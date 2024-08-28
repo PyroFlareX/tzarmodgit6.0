@@ -16,6 +16,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_expected_value = -0.04
+				send_volunteer_size = 2
 			}
 			
 		}

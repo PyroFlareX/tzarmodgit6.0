@@ -157,6 +157,7 @@ ideas = {
 				political_power_factor = -0.25
 				consumer_goods_expected_value = -0.05
 				conscription = 0.015
+				send_volunteer_size = 2
 			}
 		}
 
@@ -167,6 +168,7 @@ ideas = {
 			modifier = {
 				consumer_goods_expected_value = -0.05
 				conscription = 0.015
+				send_volunteer_size = 2
 			}
 		}
 
