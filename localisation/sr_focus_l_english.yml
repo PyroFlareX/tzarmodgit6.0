@@ -1146,6 +1146,11 @@ AST_jungle_support_desc:0 ""
 ROM_sima_bess:0 "§RWith enough of a Deterrence perhaps the Soviets may think twice of walking into Bessarabia§!" 
 ROM_mil_police:0 "Military Law Enforcement"
 
+CHI_norman_bethune_mission:0 "Bethune's Mission"
+
+ALLIED_support_norman:0 "Supply Bethune's Mission"
+ALLIED_support_norman_desc:0 "Dr.Norman Bethune is travelling to Yan'an to meet with an American Dr.George Hatem, perhaps we should lend them supplies to aid their humanitarian mission to troops in China."
+
 SLO_mountain_artillery_tech_tt:0 "Enables §HUrban Gun§!\n§HArtillery\n    Urban§!: Movement: §G+15%§!\n§HAnti-Tank\n    Urban§!: Movement: §G+15%§!"
 SLO_unlock_porsche_tt:0 "Unlocks §HPorsche§! as tank designer."
 SLO_Czech_mediums_tt:0 "§H2.00K§! units of Czech medium tanks will be added to stockpile."

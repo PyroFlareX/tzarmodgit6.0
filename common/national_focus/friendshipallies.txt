@@ -221,7 +221,78 @@ joint_focus = {
 		}
 
 		completion_reward_joint_member = {
+			add_tech_bonus = {
+				name = ALLIED_mp
+				bonus = 1.00
+				uses = 1
+				technology = tech_military_police = 1
+			}
+		}
+}
+
+joint_focus = {
+		id = ALLIED_support_norman
+		icon = GFX_focus_generic_field_hostpital
+		prerequisite = { focus = ALLIED_international_zone }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 0
+		y = 1
+		
+		relative_position_id = ALLIED_international_zone
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
 			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			
+			add_tech_bonus = {
+				name = SWI_spirit_of_saint_bernard
+				uses = 2
+				bonus = 1.0
+				category = hospital_tech
+			}
+		
+			CHI = {
+				add_ideas = CHI_norman_bethune_mission
+			}
+		}
+
+		completion_reward_joint_member = {
+			add_tech_bonus = {
+				name = SWI_spirit_of_saint_bernard
+				uses = 1
+				bonus = 1.0
+				category = hospital_tech
+			}
 		}
 }
 

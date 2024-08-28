@@ -1,6 +1,15 @@
 ideas = {
     country = {
 		
+		CHI_norman_bethune_mission = {
+			picture = ast_abandon_the_westminster_system_communism
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				experience_loss_factor = -0.15
+			}
+		}
+		
 		AXIS_sword_of_islam_idea = {
 			picture = chi_army_corruption3
 		
