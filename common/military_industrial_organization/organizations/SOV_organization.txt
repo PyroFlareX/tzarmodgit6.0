@@ -2732,10 +2732,10 @@ SOV_gaz_organization = {
 		}
 	}
 	add_trait = { 
-		token = GFX_generic_mio_department_icon_mechanized_production
+		token = SOV_mio_trait_katyusha_buff
 		name = "Katyusha Production"
 		#icon = GFX_generic_mio_department_icon_facilities
-		icon = generic_political_support
+		icon = GFX_generic_mio_department_icon_mechanized_production
 		special_trait_background = yes
 
 		position = { x=@materiel_1_X y=1 }

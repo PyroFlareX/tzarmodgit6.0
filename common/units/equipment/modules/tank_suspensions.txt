@@ -1,4 +1,4 @@
-equipment_modules = {
+ 	equipment_modules = {
 	tank_bogie_suspension = {
 		abbreviation = "bog"
 		category = tank_suspension_type
