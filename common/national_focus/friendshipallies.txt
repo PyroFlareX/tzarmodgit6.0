@@ -45,7 +45,6 @@ joint_focus = {
 		}
 
 		completion_reward = {
-			
 		}
 
 		completion_reward_joint_originator = {
@@ -56,7 +55,92 @@ joint_focus = {
 			army_experience = 30
 		}
 }
+joint_focus = {
+	id = ALLIED_China
+	icon = GFX_focus_attack_germany
+	text = "Volunteers to China"
+	prerequisite = {focus = ALLIED_cum}
+	dynamic = yes
+	x = 0
+	y = 1
+	relative_position_id = ALLIED_cum
+	cost = 5
+	cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			CHI = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = FRA
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = SOV
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = CAN
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = SAF
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = AST
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = RAJ
+					modifier = cheat_opinion_modifier_good
+				}
+			}
+			ENG = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			FRA = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			SOV = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			CAN = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			SAF = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			AST = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			RAJ = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+		}		
+}
 joint_focus = {
 		id = ALLIED_market
 		icon = GFX_goal_generic_positive_trade_relations
@@ -64,7 +148,7 @@ joint_focus = {
 		#mutually_exclusive = { focus =  }
 		dynamic = yes 
 		
-		x = -1
+		x = -2
 		y = 1
 		
 		relative_position_id = ALLIED_cum
