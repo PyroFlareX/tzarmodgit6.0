@@ -1,4 +1,8 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
+9821;9809;sea;13261;-1;-1;-1;-1;;YUGO
+11586;11580;sea;13262;-1;-1;-1;-1;;YUGO
+11899;982;sea;13262;-1;-1;-1;-1;;YUGO
+9608;3623;sea;13263;-1;-1;-1;-1;;YUGO
 12251;10321;sea;8313;-1;-1;-1;-1;;Andaman
 12993;5042;sea;;-1;-1;-1;-1;Ast-Raj;Ast-Raj
 3761;11853;sea;;-1;-1;-1;-1;Berlin-Madrid;Berlin-Madrid
