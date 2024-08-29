@@ -73,6 +73,11 @@ set_technology = { basic_train = 1
 	fighter_ace_initiative = 1 	
 }
 
+set_autonomy = {
+		target = MEX
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.35
+	}
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
