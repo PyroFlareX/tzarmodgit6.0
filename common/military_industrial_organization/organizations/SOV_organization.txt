@@ -2732,12 +2732,13 @@ SOV_gaz_organization = {
 		}
 	}
 	add_trait = { 
-		token = SOV_mio_trait_katyusha_buff
+		token = GFX_generic_mio_department_icon_mechanized_production
 		name = "Katyusha Production"
-		icon = GFX_generic_mio_department_icon_motorized_production
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = generic_political_support
 		special_trait_background = yes
 
-		position = { x=@materiel_1_X y=3 }
+		position = { x=@materiel_1_X y=1 }
 		
 		visible = {
 			FROM = { OR = {original_tag = SOV original_tag = MON}}
@@ -2789,10 +2790,46 @@ SOV_gaz_organization = {
 		}
 
 		production_bonus = {
-			production_cost_factor = 0.075
+			production_cost_factor = @motorized_production_cost_factor
 		}
 	}
 	
+	add_trait = { 
+		token = SOV_mio_trait_merge_nkmz_plant
+		name = SOV_merge_materiel_plant_2
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+		special_trait_background = yes
+
+		position = { x=@materiel_2_X y=@materiel_2_Y }
+		
+		visible = {
+			FROM = { OR = {original_tag = SOV original_tag = MON}}
+		}
+
+		available = {
+			FROM = {
+				has_full_control_of_state = 227 #STALINO
+			}
+			FROM = {
+				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			NOT = {
+				has_country_flag = SOV_merge_plant_no_112_flag
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+			FROM = {
+				set_country_flag = SOV_merge_nkmz_plant_flag
+			}
+		}
+
+		production_bonus = {
+			production_efficiency_cap_factor = @materiel_production_efficiency_cap_factor
+		}
+	}
 
 	add_trait = { 
 		token = SOV_mio_trait_merge_magnitogorsk_metallurgical_plant

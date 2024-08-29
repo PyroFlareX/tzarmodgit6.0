@@ -4909,8 +4909,8 @@ focus_tree = {
 
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = "20 Campaigns completed"
-				check_variable = { SOV_propaganda_campaigns_taken = 20 compare = greater_than_or_equals }
+				tooltip = "17 Campaigns completed"
+				check_variable = { SOV_propaganda_campaigns_taken = 17 compare = greater_than_or_equals }
 			}
 		}
 		
