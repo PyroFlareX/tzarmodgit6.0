@@ -6,10 +6,12 @@ state={
 	history={
 		owner = YUG
 		1936.1.1.15 = {
-			owner = SWE 
+			owner = SWE
+
 		}
 		1936.1.1.16 = {
-			owner = YUG 
+			owner = YUG
+
 		}
 		buildings = {
 			infrastructure = 3
@@ -22,16 +24,14 @@ state={
 			11586 15 
 		}
 		add_core_of = SWE
-	
 
 	}
 
 	provinces={
-		797 3609 3956 3984 6634 9599 11583 11586 
+		797 3609 3956 3984 9599 11583 11586 
 	}
 	manpower=1279121
 	buildings_max_level_factor=1.000
 	state_category=large_city
-
-	local_supplies=4.0 
+	local_supplies=4.000
 }

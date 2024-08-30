@@ -10,10 +10,12 @@ state={
 	history={
 		owner = CZE
 		1936.1.1.15 = {
-			owner = SWE 
+			owner = SWE
+
 		}
 		1936.1.1.16 = {
-			owner = CZE 
+			owner = CZE
+
 		}
 		buildings = {
 			infrastructure = 3
@@ -36,7 +38,7 @@ state={
 	}
 
 	provinces={
-		3565 3716 5016 6561 6571 6573 8086 9537 11679 
+		3565 3716 6561 6573 9537 11679 
 	}
 	manpower=854300
 	buildings_max_level_factor=1.000
