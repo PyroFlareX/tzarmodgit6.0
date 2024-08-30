@@ -1,8 +1,17 @@
 balkan_form = {
 	icon = generic_formable_nations
-
-	picture = GFX_decision_cat_generic_roman_empire
+	scripted_gui = balkan_war
+	priority = 1000
 	allowed = {
-	always = yes
+		OR = {
+			original_tag = HUN
+			original_tag = ITA
+			original_tag = ROM
+			original_tag = BUL
+			original_tag = GER
+		}
+	}
+	allowed = {
+		always = yes
 	}
 }

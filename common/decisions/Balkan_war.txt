@@ -219,136 +219,7 @@ balkan_form = {
 			original_tag = HUN
 		}
 
-		available = {
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 45
-					}
-				}
-				controls_state = 45
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 76
-					}
-				}
-				controls_state = 76
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 664
-					}
-				}
-				controls_state = 664
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 908
-					}
-				}
-				controls_state = 908
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 73
-					}
-				}
-				controls_state = 73
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 909
-					}
-				}
-				controls_state = 909
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 109
-					}
-				}
-				controls_state = 109
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 901
-					}
-				}
-				controls_state = 901
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 764
-					}
-				}
-				controls_state = 764
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 82
-					}
-				}
-				controls_state = 82
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 906
-					}
-				}
-				controls_state = 906
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 83
-					}
-				}
-				controls_state = 83
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 84
-					}
-				}
-				controls_state = 84
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 907
-					}
-				}
-				controls_state = 907
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 70
-					}
-				}
-				controls_state = 70
-			}
-			if = {
-				limit = {
-					NOT = {
-						controls_state = 71
-					}
-				}
-				controls_state = 71
-			}
-		}
+		available = {}
 
 		visible = {
 			original_tag = HUN
@@ -356,9 +227,8 @@ balkan_form = {
 		}
 
 		complete_effect = {
-			set_cosmetic_tag = HUN_kingdom
-			hidden_effect = {
-				set_global_flag = form_greater_hun_2
+			add_to_variable = {
+				global.ITA_POWER = 1
 			}
 		}
 	}
