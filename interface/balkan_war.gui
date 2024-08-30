@@ -9,15 +9,69 @@ guiTypes = {
 		name = "Background"
 		spriteType = "GFX_ss_background_gui"
 	}
-		
 		instantTextBoxType = {
-			name ="fra_elections_text_box"
-			position = { x = 100 y = 16 }
+			name =victors
+			position = { x = 150 y = 16 }
 			font = "hoi4_typewriter16"
-			text = "fra_elections_desc"
+			text = [victorDesc]
 			format = center
-			maxWidth = 318
-			
+			maxWidth = 450
+		}
+		instantTextBoxType = {
+			name =gain
+			position = { x = 0 y = 150 }
+			font = "hoi4_typewriter16"
+			text = [gainDesc]
+			format = center
+			maxWidth = 450
+		}
+		instantTextBoxType = {
+			name =trans
+			position = { x = 50 y = 112 }
+			font = "hoi4_typewriter16"
+			text = [transDesc]
+			format = left
+			maxWidth = 450
+		}
+		instantTextBoxType = {
+			name ="croatia"
+			position = { x = 50 y = 32 }
+			font = "hoi4_typewriter16"
+			text = [croatiaDesc]
+			format = left
+			maxWidth = 450
+		}
+		instantTextBoxType = {
+			name =["serbia"]
+			position = { x = 50 y = 48 }
+			font = "hoi4_typewriter16"
+			text = [serbiaDesc]
+			format = left
+			maxWidth = 450
+		}
+		instantTextBoxType = {
+			name ="resources"
+			position = { x = 50 y = 64 }
+			font = "hoi4_typewriter16"
+			text = [resourcesDesc]
+			format = left
+			maxWidth = 450
+		}
+		instantTextBoxType = {
+			name ="greece"
+			position = { x = 50 y = 80 }
+			font = "hoi4_typewriter16"
+			text = [greeceDesc]
+			format = left
+			maxWidth = 450
+		}
+		instantTextBoxType = {
+			name ="dobruja"
+			position = { x = 50 y = 96 }
+			font = "hoi4_typewriter16"
+			text = [dobrujaDesc]
+			format = left
+			maxWidth = 450
 		}
 		
 		iconType = {

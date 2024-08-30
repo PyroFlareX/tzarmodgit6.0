@@ -1,4 +1,5 @@
 balkan_form = {
+
 	form_greater_BUL2 = {
 		name = "Proclaim Bulgarian Empire"
 		icon = generic_form_nation
