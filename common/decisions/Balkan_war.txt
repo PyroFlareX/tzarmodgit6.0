@@ -227,9 +227,6 @@ balkan_form = {
 		}
 
 		complete_effect = {
-			add_to_variable = {
-				global.ITA_POWER = 1
-			}
 		}
 	}
 	form_greater_ROM_bal = {
