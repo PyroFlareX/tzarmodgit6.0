@@ -10,8 +10,7 @@
 # Otherwise the neutral rule is used, unless is_neutral evaluates to false, then the enemy rule is used.
 #
 # The 'name' property is how you refer to the rule in adjacencies.csv
-adjacency_rule =
-{
+adjacency_rule = {
 	name = "OTRANTO_STRAIT"
 
 	contested =
@@ -48,8 +47,81 @@ adjacency_rule =
 	icon = 5864
 	offset = { 5.0 10.0 0.0 }
 }
-adjacency_rule =
-{
+adjacency_rule = {
+	name = "MED_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 11969 11773 }
+	
+	icon = 5605
+	offset = { -1.0 0.0 0.0 }
+}
+adjacency_rule = {
+	name = "MED_STRAIT2"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 6891 11751 }
+	
+	icon = 5656
+	offset = { -1.0 0.0 0.0 }
+}
+adjacency_rule = {
 	name = "YEMEN_STRAIT"
 
 	contested =

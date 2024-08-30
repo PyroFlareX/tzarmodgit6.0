@@ -1,0 +1,8 @@
+balkan_form = {
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_roman_empire
+	allowed = {
+	always = yes
+	}
+}
