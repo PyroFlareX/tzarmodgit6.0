@@ -1,11 +1,13 @@
 ideas = {
-hidden_ideas = {
+country = {
 	tank_nerf = {
-			name = "Tank balance"
+			name = ""
 			picture = vittorio_emanuele
 			modifier = {
 				army_speed_factor = -0.25
 				supply_consumption_factor = -0.15
+				send_volunteer_size = -0
+				send_volunteer_factor = -1000.0
 			}
 			equipment_bonus = {
 				armor = {
