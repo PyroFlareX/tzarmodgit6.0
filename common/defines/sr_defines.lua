@@ -744,7 +744,7 @@ NDefines.NAI.NUM_SILOS_PER_CIVILIAN_FACTORIES = 0					-- ai will try to build a 
 NDefines.NAI.NUM_SILOS_PER_MILITARY_FACTORIES = 0					-- ai will try to build a silo per this ratio of mil factories
 NDefines.NAI.NUM_SILOS_PER_DOCKYARDS = 0							-- ai will try to build a silo per this ratio of dockyards
 ---------------------------------------------------------------
-NDefines.NDiplomacy.BASE_RELUCTANCE  = -1
+NDefines.NDiplomacy.BASE_RELUCTANCE  = 0
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0
 NDefines.NDiplomacy.DIPLOMACY_SEND_MAX_FACTION = 0
