@@ -1,6 +1,44 @@
 ideas = {
     country = {
 		
+		COOM_volunteers_minors = {
+
+			picture = volunteer_only
+
+			removal_cost = -1
+			
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {				
+				send_volunteer_size = 2
+			}
+		}
+		
+		COOM_volunteers_majors = {
+
+			picture = volunteer_only
+
+			removal_cost = -1
+			
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {				
+				send_volunteer_size = 4
+			}
+		}
+		
 		CHI_norman_bethune_mission = {
 			picture = ast_abandon_the_westminster_system_communism
 			allowed = { always = no }
