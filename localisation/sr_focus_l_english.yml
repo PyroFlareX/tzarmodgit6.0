@@ -1172,6 +1172,9 @@ AST_jungle_support:0 "Burn the Jungles"
 AST_jungle_support_desc:0 ""
 ROM_sima_bess:0 "§RWith enough of a Deterrence perhaps the Soviets may think twice of walking into Bessarabia§!" 
 ROM_mil_police:0 "Military Law Enforcement"
+COOM_volunteers_minors:0 "Bīng Qílín"
+COOM_volunteers_majors:0 "Bīng Qílín"
+
 
 CHI_norman_bethune_mission:0 "Bethune's Mission"
 
@@ -1189,6 +1192,9 @@ nigger:0 "Proclaim Greater British Reich"
 TZAR_SOV_third_five_year_plan_ns_tt:0 "Replace §Y$SOV_third_five_year_plan_dynamic_modifier$§! by §Y$SOV_third_five_year_plan_dynamic_modifier_alt$§!\n Effective change: \n£prod_eff Production Efficiency growth: §G+5.00%§! \nIndustrial Concern Cost: §G-15%§! \nConsumer Goods Factories: §Y+2.0%§! \n§YMilitary Factory§! construction speed: §G+10.00%§! \n\n"
 TZAR_SOV_shift_to_armaments_production_ns_tt:0 "$SOV_modify_fyp_ns_intro$ \n§YCivilian Factory§! construction speed: §R-5.00%§! \n\n"
 
+#never meet a nice south afrikan
+SAF_raider:0 "Small Apartheid South African Dockyards"
+SAF_cape_town_shipyards:0 "Cape Town Shipyards"
 SAF_rhodesia_african_rifles:0 "Rhodesian African Rifles"
 SAF_rhodesia_african_rifles_desc:0 "South Rhodesia has prepared divisons for operations at home and aborad."
 SAF_native_military_corps:0 "Native Military Corps"

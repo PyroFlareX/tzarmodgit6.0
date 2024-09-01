@@ -2255,13 +2255,15 @@ CZE = {
 							has_country_flag = DUH_BORDER_WALL
 						}
 					}
-					SOV = {
+				
+						
+				}
+				SOV = {
 						transfer_state = 78
 						transfer_state = 766
 						transfer_state = 80
-					}
-						
 				}
+			
 			}
 		}
 	}
