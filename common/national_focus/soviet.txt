@@ -1760,7 +1760,7 @@ focus_tree = {
 		icon = GFX_goal_generic_defence
 		x = 21
 		y = 0
-		relative_position_id = SOV_expand_the_red_fleet
+		#relative_position_id = SOV_expand_the_red_fleet
 		cost = 5
 
 		ai_will_do = {
@@ -6664,5 +6664,1616 @@ focus_tree = {
 			}
 		}
 	}
+
+		
+
+##    ##    ###    ##     ## ##    ## 
+###   ##   ## ##   ##     ##  ##  ##  
+####  ##  ##   ##  ##     ##   ####   
+## ## ## ##     ## ##     ##    ##    
+##  #### #########  ##   ##     ##    
+##   ### ##     ##   ## ##      ##    
+##    ## ##     ##    ###       ##    
+
+
+	focus = {
+		id = SOV_expand_the_red_fleet
+
+		icon = GFX_SOV_expand_the_red_fleet_ccp_2d_sov_compatibility
+		x = 10
+		y = 6
+		#relative_position_id = SOV_transpolar_flights
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = ships_bonus
+				bonus = 1.0
+				uses = 2
+				category = naval_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_reinforce_western_naval_bases
+
+		icon = GFX_SOV_reinforce_western_naval_bases_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_expand_the_red_fleet }
+		x = -3
+		y = 1
+		relative_position_id = SOV_expand_the_red_fleet
+		cost = 1
+
+		available = {
+			195 = { #LENINGRAD
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			195 = { #LENINGRAD
+				if = {
+					limit = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = 3151
+				}
+				if = {
+					limit = {
+						ROOT = { has_tech = radio_detection }
+						radar_station < 1
+					}
+					add_building_construction = {
+						type = radar_station
+						level = 1
+						instant_build = yes
+					}
+				}
+				else = {
+					custom_effect_tooltip = SOV_reinforce_western_naval_bases_radar_tt
+				}
+				set_state_flag = SOV_naval_bases_reinforced_flag
+			}
+			
+			custom_effect_tooltip = SOV_reinforce_western_naval_bases_other_states_tt
+
+			if = { #HELSINKI (UUSIMAA)
+				limit = {
+					has_full_control_of_state = 111
+				}
+				111 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 11105
+					}
+					set_state_flag = SOV_naval_bases_reinforced_flag
+				}
+			}
+			if = { #TALLIN (HARNU)
+				limit = {
+					has_full_control_of_state = 812
+				}
+				812 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 3152
+					}
+					set_state_flag = SOV_naval_bases_reinforced_flag
+				}
+			}
+			if = { #RIGA
+				limit = {
+					has_full_control_of_state = 808
+				}
+				808 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 9340
+					}
+					set_state_flag = SOV_naval_bases_reinforced_flag
+				}
+			}
+			if = { #PALANGA (ŽEMAITIJA)
+				limit = {
+					has_full_control_of_state = 189
+				}
+				189 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 6314
+					}
+					set_state_flag = SOV_naval_bases_reinforced_flag
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_reinforce_northern_naval_bases
+
+		icon = GFX_SOV_reinforce_northern_naval_bases_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_expand_the_red_fleet }
+		x = -1
+		y = 1
+		relative_position_id = SOV_expand_the_red_fleet
+		cost = 1
+
+		available = {
+			OR = {
+				213 = { #MURMANSK
+					is_owned_and_controlled_by = ROOT
+				}
+				214 = { #ARKHANGELSK
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			if = { #MURMANSK - Improved naval base + AA + coastal fort
+				limit = {
+					has_full_control_of_state = 213
+				}
+				213 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+						province = 3134
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 3134
+					}
+					set_state_flag = SOV_naval_bases_reinforced_flag
+				}
+			}
+			if = { #ARKHANGELSK - Improved naval base + Severodvinsk Naval Base + AA + coastal fort
+				limit = {
+					has_full_control_of_state = 214
+				}
+				214 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						instant_build = yes
+						province = 3338
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+						province = 312
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 3338
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 312
+					}
+					set_state_flag = SOV_naval_bases_reinforced_flag
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_reinforce_southern_naval_bases
+
+		icon = GFX_SOV_reinforce_southern_naval_bases_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_expand_the_red_fleet }
+		x = 1
+		y = 1
+		relative_position_id = SOV_expand_the_red_fleet
+		cost = 1
+
+		available = {
+			OR = {
+				192 = { #ODESSA
+					is_owned_and_controlled_by = ROOT
+				}
+				137 = { #CRIMEA
+					is_owned_and_controlled_by = ROOT
+				}
+				218 = { #ROSTOV
+					is_owned_and_controlled_by = ROOT
+				}
+				234 = { #KRASNODAR
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			if = { #ODESSA - Improved naval base + AA + coastal fort
+				limit = {
+					has_full_control_of_state = 192
+				}
+				192 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+						province = 11670
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 11670
+					}
+					set_state_flag = SOV_naval_bases_reinforced_flag
+				}
+			}
+			if = { #SEVASTOPOL (CRIMEA) - Extra AA + coastal fort
+				limit = {
+					has_full_control_of_state = 137
+				}
+				137 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 3686
+					}
+					set_state_flag = SOV_naval_bases_reinforced_flag
+				}
+			}
+			if = { #ROSTOV - Improved naval base + AA + coastal fort
+				limit = {
+					has_full_control_of_state = 218
+				}
+				218 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+						province = 9417
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 9417
+					}
+					set_state_flag = SOV_naval_bases_reinforced_flag
+				}
+			}
+			if = { #KRASNODAR - Improved naval base + AA + coastal fort
+				limit = {
+					has_full_control_of_state = 234
+				}
+				234 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+						province = 719
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 719
+					}
+					set_state_flag = SOV_naval_bases_reinforced_flag
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_reinforce_eastern_naval_bases
+
+		icon = GFX_SOV_reinforce_eastern_naval_bases_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_expand_the_red_fleet }
+		x = 3
+		y = 1
+		relative_position_id = SOV_expand_the_red_fleet
+		cost = 1
+
+		available = {
+			OR = {
+				408 = { #VLADIVOSTOK
+					is_owned_and_controlled_by = ROOT
+				}
+				409 = { #KHABAROVSK
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			if = { #VLADIVOSTOK - Improved naval base + AA + coastal fort
+				limit = {
+					has_full_control_of_state = 408
+				}
+				408 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+						province = 957
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 957
+					}
+					set_state_flag = SOV_naval_bases_reinforced_flag
+				}
+			}
+			if = { #VLADIVOSTOK - Improved naval base + AA + coastal fort
+				limit = {
+					has_full_control_of_state = 409
+				}
+				409 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+						province = 9604
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 9604
+					}
+					set_state_flag = SOV_naval_bases_reinforced_flag
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_expand_shipbuilding_plants
+
+		icon = GFX_SOV_expand_shipbuilding_plants_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_reinforce_western_naval_bases focus = SOV_reinforce_northern_naval_bases focus = SOV_reinforce_southern_naval_bases focus = SOV_reinforce_eastern_naval_bases }
+		x = 1
+		y = 1
+		relative_position_id = SOV_reinforce_northern_naval_bases
+		cost = 1
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_expand_shipbuilding_plants_tt
+			every_owned_state = {
+				limit = {
+					has_state_flag = SOV_naval_bases_reinforced_flag
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				if = {
+					limit = {
+						state = 195 #LENINGRAD - Gets 2 dockyards instead of 1
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				else = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			
+		}
+	}
+
+	focus = {
+		id = SOV_merge_naval_plants
+
+		icon = GFX_focus_SOV_merge_plants
+		prerequisite = { focus = SOV_expand_shipbuilding_plants }
+		x = -1
+		y = 2
+		relative_position_id = SOV_expand_shipbuilding_plants
+		cost = 1
+
+		available = {
+			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					mio:SOV_nevskoye_design_bureau_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_370
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_5
+					}
+
+					mio:SOV_rubin_design_bureau_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_370
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_363
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_190
+					}
+
+					mio:SOV_black_sea_shipyard_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_mariupol_plant
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_leninskaya_kuznitsa_plant
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_340
+					}
+
+					mio:SOV_sevastopol_marine_plant_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_mariupol_plant
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_200
+					}
+				}
+				else = {
+					mio:SOV_nevskoye_design_bureau_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_370_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_5
+					}
+
+					mio:SOV_rubin_design_bureau_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_370_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_363
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_190
+					}
+
+					mio:SOV_black_sea_shipyard_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_mariupol_plant_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_leninskaya_kuznitsa_plant
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_340
+					}
+
+					mio:SOV_sevastopol_marine_plant_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_mariupol_plant_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_200
+					}
+				}
+				
+			}
+			else = {
+				custom_effect_tooltip = SOV_merge_naval_plants_tt
+			}
+		}
+	}
+
+
+	focus = {
+		id = SOV_pc_of_the_ussr_navy
+
+		icon = GFX_SOV_pc_of_the_ussr_navy_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_expand_the_red_fleet }
+		x = 4
+		y = 2
+		relative_position_id = SOV_expand_the_red_fleet
+		cost = 1
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_government = communism
+					}
+					add_dynamic_modifier = { modifier = SOV_the_red_fleet_dynamic_modifier }
+				}
+				else = {
+					add_dynamic_modifier = { modifier = SOV_the_red_fleet_dynamic_modifier_alt }
+				}
+			}
+			custom_effect_tooltip = SOV_pc_of_the_ussr_navy_ns_tt
+
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_tech_bonus = {
+					name = SOV_the_red_fleet_dynamic_modifier
+					bonus = 1.0
+					uses = 2
+					category = ship_modules_tech
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = SOV_the_red_fleet_dynamic_modifier_alt
+					bonus = 1.0
+					uses = 2
+					category = ship_modules_tech
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = SOV_surface_warfare
+
+		icon = GFX_SOV_surface_warfare_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_pc_of_the_ussr_navy }
+		x = -2
+		y = 1
+		relative_position_id = SOV_pc_of_the_ussr_navy
+		cost = 1
+
+		#mutually_exclusive = { focus = SOV_submarine_warfare }
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
+
+		completion_reward = {
+			hidden_effect = {
+				if = { #DEFAULT COMMIE
+					limit = {
+						has_government = communism
+					}
+					#Swap dynamic modifier to change dynamic modifier's custom tooltip
+					remove_dynamic_modifier = { modifier = SOV_the_red_fleet_dynamic_modifier }
+					add_dynamic_modifier = { modifier = SOV_the_red_fleet_surface_1_dynamic_modifier }
+				}
+				else = { #ALT IDEOLOGY
+					#Swap dynamic modifier to change dynamic modifier's custom tooltip
+					remove_dynamic_modifier = { modifier = SOV_the_red_fleet_dynamic_modifier_alt }
+					add_dynamic_modifier = { modifier = SOV_the_red_fleet_surface_1_dynamic_modifier_alt }
+				}
+				#This handles the equipment bonus that's not supported by dynamic modifiers
+				add_ideas = SOV_red_fleet_surface_bonus_1
+			}
+			custom_effect_tooltip = SOV_surface_warfare_ns_tt
+
+			navy_experience = 15
+
+			add_tech_bonus = {
+				name = SOV_surface_warfare
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_submarine_warfare
+
+		icon = GFX_SOV_submarine_warfare_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_pc_of_the_ussr_navy }
+		x = 2
+		y = 1
+		relative_position_id = SOV_pc_of_the_ussr_navy
+		cost = 1
+
+		#mutually_exclusive = { focus = SOV_surface_warfare }
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
+
+		completion_reward = {
+			hidden_effect = {
+				if = { #DEFAULT COMMIE
+					limit = {
+						has_government = communism
+					}
+					#Swap dynamic modifier to change dynamic modifier's custom tooltip
+					remove_dynamic_modifier = { modifier = SOV_the_red_fleet_dynamic_modifier }
+					add_dynamic_modifier = { modifier = SOV_the_red_fleet_submarine_1_dynamic_modifier }
+				}
+				else = { #ALT IDEOLOGY
+					#Swap dynamic modifier to change dynamic modifier's custom tooltip
+					remove_dynamic_modifier = { modifier = SOV_the_red_fleet_dynamic_modifier_alt }
+					add_dynamic_modifier = { modifier = SOV_the_red_fleet_submarine_1_dynamic_modifier_alt }
+				}
+				
+				#This handles the equipment bonus that's not supported by dynamic modifiers
+				add_ideas = SOV_red_fleet_submarine_bonus_1
+			}
+			custom_effect_tooltip = SOV_submarine_warfare_ns_tt
+
+			navy_experience = 15
+
+			add_tech_bonus = {
+				name = SOV_submarine_warfare
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_offensive_maritime_strategy
+
+		icon = GFX_SOV_offensive_maritime_strategy_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_surface_warfare }
+		x = -1
+		y = 1
+		relative_position_id = SOV_surface_warfare
+		cost = 1
+
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				has_tech = basic_ship_hull_heavy
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
+
+		completion_reward = {
+			hidden_effect = {
+				if = { #DEFAULT COMMIE
+					limit = {
+						has_government = communism
+					}
+					#Swap dynamic modifier to change dynamic modifier's custom tooltip
+					remove_dynamic_modifier = { modifier = SOV_the_red_fleet_surface_1_dynamic_modifier }
+					add_dynamic_modifier = { modifier = SOV_the_red_fleet_surface_2_dynamic_modifier }
+				}
+				else = { #ALT IDEOLOGY
+					#Swap dynamic modifier to change dynamic modifier's custom tooltip
+					remove_dynamic_modifier = { modifier = SOV_the_red_fleet_surface_1_dynamic_modifier_alt }
+					add_dynamic_modifier = { modifier = SOV_the_red_fleet_surface_2_dynamic_modifier_alt }
+				}
+				
+				#Hidden National Spirits handle the equipment bonus that's not supported by dynamic modifiers
+				swap_ideas = {
+					remove_idea = SOV_red_fleet_surface_bonus_1
+					add_idea = SOV_red_fleet_surface_bonus_2
+				}
+			}
+			custom_effect_tooltip = SOV_offensive_maritime_strategy_ns_tt
+
+			navy_experience = 25
+
+			add_tech_bonus = {
+				name = SOV_offensive_maritime_strategy
+				bonus = 1.0
+				uses = 1
+				category = ca_tech
+				category = cl_tech
+			}
+
+			#Kronshtadt Class Battlecruiser
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				add_tech_bonus = {
+					name = SOV_offensive_maritime_strategy
+					bonus = 2.0
+					uses = 1
+					category = bc_tech	
+				}
+			}
+			else = {
+				create_equipment_variant = {
+					name = "Kronshtadt Class"		
+					type = ship_hull_heavy_2
+					name_group = SOV_BC_HISTORICAL
+					parent_version = 0
+					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_1
+						fixed_ship_armor_slot = ship_armor_bc_2
+						front_1_custom_slot = ship_heavy_battery_1
+						mid_1_custom_slot = ship_secondaries_1
+						mid_2_custom_slot = ship_anti_air_1
+						rear_1_custom_slot = ship_airplane_launcher_1
+					}
+				}
+
+				#Line Production
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_2
+						creator = "SOV"
+						version_name = "Kronshtadt Class"
+					}
+					requested_factories = 1
+					progress = 0.50
+					amount = 1 #Tooltip purposes
+				}
+
+				#Line Production
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_2
+						creator = "SOV"
+						version_name = "Kronshtadt Class"
+					}
+					requested_factories = 1
+					progress = 0.35
+					amount = 1
+				}
+			}
+			
+		}
+	}
+
+	focus = {
+		id = SOV_an_oceangoing_navy
+
+		icon = GFX_SOV_an_oceangoing_navy_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_surface_warfare focus = SOV_submarine_warfare }
+		x = 1
+		y = 1
+		relative_position_id = SOV_surface_warfare
+		cost = 1
+
+		available = {
+			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				has_tech = basic_ship_hull_heavy
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = SOV_an_oceangoing_navy
+				bonus = 1.0
+				uses = 2
+				category = bb_tech
+			}
+
+			#Sovietsky Soyuz Super-Heavy Battleship
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				add_tech_bonus = {
+					name = SOV_an_oceangoing_navy
+					bonus = 2.0
+					uses = 1
+					category = shbb_tech	
+				}
+			}
+			else = {
+				#Grant SHBB Tech and required battery modules (not fire control)
+				if = {
+					limit = {
+						NOT = { has_tech = ship_hull_super_heavy }
+					}
+					hidden_effect = {
+						set_technology = {
+							ship_hull_super_heavy = 1
+						}
+					}
+					custom_effect_tooltip = SOV_an_oceangoing_navy_shbb_tt
+				}
+				create_equipment_variant = { #TODO_Manu: Engine should be 3 (but also should Yamato's)
+					name = "Sovetsky Soyuz Class"
+					type = ship_hull_super_heavy_1
+					name_group = SOV_STATES
+					parent_version = 0
+					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+					modules = {
+						fixed_ship_battery_slot = ship_super_heavy_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_shbb
+						front_1_custom_slot = ship_anti_air_2
+						front_2_custom_slot = empty
+						mid_1_custom_slot = empty
+						mid_2_custom_slot = ship_secondaries_2
+						mid_3_custom_slot = ship_secondaries_2
+						rear_1_custom_slot = ship_super_heavy_battery_1
+						rear_2_custom_slot = ship_airplane_launcher_1
+					}
+				}
+				#Line Production
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_1
+						creator = "SOV"
+						version_name = "Sovetsky Soyuz Class"
+					}
+					requested_factories = 1
+					progress = 0.50
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_1
+						creator = "SOV"
+						version_name = "Sovetsky Soyuz Class"
+					}
+					requested_factories = 1
+					progress = 0.25
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_1
+						creator = "SOV"
+						version_name = "Sovetsky Soyuz Class"
+					}
+					requested_factories = 1
+					progress = 0.25
+					amount = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_mine_warfare
+
+		icon = GFX_focus_generic_mine_warfare
+		prerequisite = { focus = SOV_surface_warfare focus = SOV_submarine_warfare }
+		x = -1
+		y = 1
+		relative_position_id = SOV_submarine_warfare
+		cost = 1
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				add_ideas = SOV_mine_warfare_ns
+
+				add_tech_bonus = {
+					name = SOV_mine_warfare
+					bonus = 1.0
+					uses = 2
+					category = naval_mines
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = SOV_mine_warfare
+					bonus = 0.5
+					uses = 1
+					category = ss_tech
+					category = dd_tech
+				}
+
+				add_doctrine_cost_reduction = {
+					name = SOV_mine_warfare
+					cost_reduction = 0.75
+					uses = 1
+					category = naval_doctrine
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_long_range_raiders
+
+		icon = GFX_SOV_long_range_raiders_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_submarine_warfare }
+		x = 1
+		y = 1
+		relative_position_id = SOV_submarine_warfare
+		cost = 1
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP}
+
+		completion_reward = {
+			hidden_effect = {
+				if = { #DEFAULT COMMIE
+					limit = {
+						has_government = communism
+					}
+					#Swap dynamic modifier to change dynamic modifier's custom tooltip
+					remove_dynamic_modifier = { modifier = SOV_the_red_fleet_submarine_1_dynamic_modifier }
+					add_dynamic_modifier = { modifier = SOV_the_red_fleet_submarine_2_dynamic_modifier }
+				}
+				else = { #ALT IDEOLOGY
+					#Swap dynamic modifier to change dynamic modifier's custom tooltip
+					remove_dynamic_modifier = { modifier = SOV_the_red_fleet_submarine_1_dynamic_modifier_alt }
+					add_dynamic_modifier = { modifier = SOV_the_red_fleet_submarine_2_dynamic_modifier_alt }
+				}
+				
+				#Hidden National Spirits handle the equipment bonus that's not supported by dynamic modifiers
+				swap_ideas = {
+					remove_idea = SOV_red_fleet_submarine_bonus_1
+					add_idea = SOV_red_fleet_submarine_bonus_2
+				}
+			}
+			custom_effect_tooltip = SOV_submarine_warfare_ns_tt
+
+			navy_experience = 25
+
+			add_tech_bonus = {
+				name = SOV_long_range_raiders
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+			set_technology = { cruiser_submarines = 1 }
+
+			###########
+			### MTG ###
+			###########
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "K Class"
+					type = ship_hull_cruiser_submarine
+					name_group = SOV_SS_HISTORICAL
+					parent_version = 0
+					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+					modules = {
+						fixed_ship_torpedo_slot = ship_torpedo_sub_2
+						fixed_ship_engine_slot = sub_ship_engine_2
+						front_1_custom_slot = ship_mine_layer_sub
+						mid_1_custom_slot = empty
+						rear_1_custom_slot = ship_torpedo_sub_2
+					}
+				}
+				#Line Production
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_submarine
+						creator = "SOV"
+						version_name = "K Class"
+					}
+					name = "K-1"
+					requested_factories = 1
+					progress = 0.35
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_submarine
+						creator = "SOV"
+						version_name = "K Class"
+					}
+					name = "K-2"
+					requested_factories = 1
+					progress = 0.35
+					amount = 1
+				}
+			}
+
+			##############
+			### NO MTG ###
+			##############
+			else = {
+				if = { #Submarine 3 if available
+					limit = {
+						has_tech = improved_submarine
+					}
+					create_equipment_variant = {
+						name = "K Class"
+						type = submarine_3
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+						upgrades = {
+							ship_reliability_upgrade = 3
+							sub_engine_upgrade = 3
+							sub_stealth_upgrade = 2
+							sub_torpedo_upgrade = 3
+						}
+					}
+					add_equipment_production = {
+						equipment = {
+							type = submarine_3
+							creator = "SOV"
+							version_name = "K Class"
+						}
+						requested_factories = 1
+						progress = 0.35
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = submarine_3
+							creator = "SOV"
+							version_name = "K Class"
+						}
+						requested_factories = 1
+						progress = 0.35
+						amount = 1
+					}
+				}
+				else = { #Submarine 2 as default
+					create_equipment_variant = {
+						name = "K Class"
+						type = submarine_2
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+						upgrades = {
+							ship_reliability_upgrade = 2
+							sub_engine_upgrade = 2
+							sub_stealth_upgrade = 2
+							sub_torpedo_upgrade = 2
+						}
+					}
+					add_equipment_production = {
+						equipment = {
+							type = submarine_2
+							creator = "SOV"
+							version_name = "K Class"
+						}
+						requested_factories = 1
+						progress = 0.35
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = submarine_2
+							creator = "SOV"
+							version_name = "K Class"
+						}
+						requested_factories = 1
+						progress = 0.35
+						amount = 1
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_advanced_maneuvers
+
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = SOV_expand_shipbuilding_plants }
+		prerequisite = { focus = SOV_an_oceangoing_navy }
+		x = 0
+		y = 3
+		relative_position_id = SOV_expand_shipbuilding_plants
+		cost = 1
+
+		available = {
+		}
+		
+		search_filters = {FOCUS_FILTER_NAVY_XP}
+
+		completion_reward = {
+			set_variable = { SOV_red_fleet_naval_coordination = 0.1 }
+			set_variable = { SOV_red_fleet_navy_visibility = -0.05 }
+			set_variable = { SOV_red_fleet_positioning = 0.1 }
+			set_variable = { SOV_red_fleet_screening_efficiency = 0.1 }
+			custom_effect_tooltip = SOV_advanced_maneuvers_ns_tt
+
+			navy_experience = 50
+		}
+	}
+
+	focus = {
+		id = SOV_expand_the_morskaya_aviatsiya
+
+		icon = GFX_SOV_expand_the_morskaya_aviatsiya_ccp_2d_sov_compatibility
+		#prerequisite = { focus = SOV_increase_aircraft_production focus = SOV_intensify_pilot_training_program }
+		prerequisite = { focus = SOV_advanced_maneuvers }
+		x = -2
+		y = 1
+		relative_position_id = SOV_advanced_maneuvers
+		cost = 1
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP}
+
+		completion_reward = {
+			navy_experience = 25
+			air_experience = 25
+			add_tech_bonus = {
+				name = SOV_expand_the_morskaya_aviatsiya
+				bonus = 1
+				uses = 2
+				category = cv_tech
+				category = naval_air
+			}
+
+			###########
+			### MTG ###
+			###########
+			if = { #MTG 
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				if = {
+					limit = { #Carrier 4 
+						has_tech = advanced_ship_hull_carrier
+					}
+					#Equipment Variant
+					create_equipment_variant = {
+						name = "Project 71 Class"
+						type = ship_hull_carrier_3
+						name_group = SOV_CV_HISTORICAL
+						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space
+							fixed_ship_deck_slot_2 = ship_deck_space
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = carrier_ship_engine_4
+							fixed_ship_secondaries_slot = ship_secondaries_1
+							front_1_custom_slot = ship_deck_space
+						}
+					}
+					#Line Production
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_3
+							creator = "SOV"
+							version_name = "Project 71 Class"
+						}
+						name = "Siberia"
+						requested_factories = 1
+						progress = 0.45
+						amount = 1
+					}
+				}
+				else_if = {
+					limit = { #Carrier 3
+						has_tech = improved_ship_hull_carrier
+					}
+					#Equipment Variant
+					create_equipment_variant = {
+						name = "Project 71 Class"
+						type = ship_hull_carrier_2
+						name_group = SOV_CV_HISTORICAL
+						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space
+							fixed_ship_deck_slot_2 = ship_deck_space
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = carrier_ship_engine_3
+							fixed_ship_secondaries_slot = ship_secondaries_1
+							front_1_custom_slot = ship_deck_space
+						}
+					}
+					#Line Production
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_2
+							creator = "SOV"
+							version_name = "Project 71 Class"
+						}
+						name = "Siberia"
+						requested_factories = 1
+						progress = 0.45
+						amount = 1
+					}
+				}
+				else_if = {
+					limit = { #Carrier 2
+						has_tech = basic_ship_hull_carrier
+					}
+					#Equipment Variant
+					create_equipment_variant = {
+						name = "Project 71 Class"
+						type = ship_hull_carrier_1
+						name_group = SOV_CV_HISTORICAL
+						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space
+							fixed_ship_deck_slot_2 = ship_deck_space
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = carrier_ship_engine_2
+							fixed_ship_secondaries_slot = ship_secondaries_1
+							front_1_custom_slot = ship_deck_space
+						}
+					}
+					#Line Production
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_1
+							creator = "SOV"
+							version_name = "Project 71 Class"
+						}
+						name = "Siberia"
+						requested_factories = 1
+						progress = 0.45
+						amount = 1
+					}
+				}
+				else = {  #Carrier 1
+					if = {
+						limit = {
+							NOT = { has_tech = early_ship_hull_carrier }
+						}
+						set_technology = { early_ship_hull_carrier = 1 }
+					}
+					#Equipment Variant
+					create_equipment_variant = {
+						name = "Project 71 Class"
+						type = ship_hull_carrier_conversion_ca
+						name_group = SOV_CV_HISTORICAL
+						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space
+							fixed_ship_deck_slot_2 = ship_deck_space
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = carrier_ship_engine_1
+							fixed_ship_secondaries_slot = ship_secondaries_1
+						}
+					}
+					#Line Production
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_conversion_ca
+							creator = "SOV"
+							version_name = "Project 71 Class"
+						}
+						name = "Siberia"
+						requested_factories = 1
+						progress = 0.45
+						amount = 1
+					}
+				}
+			}
+
+			##############
+			### NO MTG ###
+			##############
+			else = {
+				if = {
+					limit = { #Carrier 4 
+						has_tech = advanced_carrier
+					}
+					create_equipment_variant = {
+						name = "Project 71 Class"
+						type = carrier_4
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+						upgrades = {
+							ship_deckspace_upgrade = 4
+							carrier_armor_upgrade = 4
+							ship_engine_upgrade = 3
+							ship_reliability_upgrade = 3
+						}
+					}
+					add_equipment_production = {
+						equipment = {
+							type = carrier_4
+							creator = "SOV"
+							version_name = "Project 71 Class"
+						}
+						requested_factories = 1
+						progress = 0.45
+						amount = 1
+					}
+				}
+				else_if = {
+					limit = { #Carrier 3
+						has_tech = improved_carrier
+					}
+					create_equipment_variant = {
+						name = "Project 71 Class"
+						type = carrier_3
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+						upgrades = {
+							ship_deckspace_upgrade = 3
+							carrier_armor_upgrade = 3
+							ship_engine_upgrade = 3
+							ship_reliability_upgrade = 2
+						}
+					}
+					add_equipment_production = {
+						equipment = {
+							type = carrier_3
+							creator = "SOV"
+							version_name = "Project 71 Class"
+						}
+						requested_factories = 1
+						progress = 0.45
+						amount = 1
+					}
+				}
+				else_if = {
+					limit = { #Carrier 2
+						has_tech = basic_carrier
+					}
+					create_equipment_variant = {
+						name = "Project 71 Class"
+						type = carrier_2
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+						upgrades = {
+							ship_deckspace_upgrade = 2
+							carrier_armor_upgrade = 2
+							ship_engine_upgrade = 2
+							ship_reliability_upgrade = 2
+						}
+					}
+					add_equipment_production = {
+						equipment = {
+							type = carrier_2
+							creator = "SOV"
+							version_name = "Project 71 Class"
+						}
+						requested_factories = 1
+						progress = 0.45
+						amount = 1
+					}
+				}
+				else = {  #Carrier 1
+					if = {
+						limit = {
+							NOT = { has_tech = early_carrier }
+						}
+						set_technology = { early_carrier = 1 }
+					}
+					create_equipment_variant = {
+						name = "Project 71 Class"
+						type = carrier_1
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+						upgrades = {
+							ship_deckspace_upgrade = 2
+							carrier_armor_upgrade = 1
+							ship_engine_upgrade = 2
+							ship_reliability_upgrade = 1
+						}
+					}
+					add_equipment_production = {
+						equipment = {
+							type = carrier_1
+							creator = "SOV"
+							version_name = "Project 71 Class"
+						}
+						requested_factories = 1
+						progress = 0.45
+						amount = 1
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_naval_infantry
+
+		icon = GFX_SOV_naval_infantry_ccp_2d_sov_compatibility
+		prerequisite = { focus = SOV_advanced_maneuvers }
+		x = 0
+		y = 1
+		relative_position_id = SOV_advanced_maneuvers
+		cost = 1
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_potential_special_forces_tree = yes
+				add_doctrine_cost_reduction = {
+					name = SOV_naval_infantry
+					cost_reduction = 0.25
+					uses = 2
+					category = special_forces_doctrine
+				}
+			}
+			else = {
+				set_variable = { SOV_red_fleet_naval_invasion_capacity = 10 }
+				set_variable = { SOV_red_fleet_invasion_preparation = -0.1 }
+				set_variable = { SOV_red_fleet_special_forces_cap = 0.1 }
+				custom_effect_tooltip = SOV_naval_infantry_ns_tt
+				
+				add_tech_bonus = {
+					name = SOV_naval_infantry
+					bonus = 1
+					uses = 1
+					category = marine_tech
+				}
+			}
+
+			navy_experience = 25
+			army_experience = 25
+		}
+	}
+
 
 }
