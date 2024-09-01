@@ -50,7 +50,7 @@ add_ideas = {
 	limited_conscription
 	MON_collectivisation_1
 	autarky_generic
-	planned_economy
+	planned_economy_mon 
 	prewar_training
 }
 
