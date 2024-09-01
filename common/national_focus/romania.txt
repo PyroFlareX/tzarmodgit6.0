@@ -1956,6 +1956,7 @@ focus_tree = {
 					transfer_state = 341
 				}
 				news_event = { id = news.1007 days = 1 }
+				set_global_flag = fall_of_istanb
 			}
 		}
 	}

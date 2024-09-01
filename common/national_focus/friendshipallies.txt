@@ -141,116 +141,7 @@ joint_focus = {
 			}
 		}		
 }
-joint_focus = {
-		id = ALLIED_market
-		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = ALLIED_cum }
-		#mutually_exclusive = { focus =  }
-		dynamic = yes 
-		
-		x = -2
-		y = 1
-		
-		relative_position_id = ALLIED_cum
 
-		cost = 5
-
-		ai_will_do = {
-			factor = -100
-		}
-
-		joint_trigger = {
-  			
-		}
-
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			
-		}
-
-		completion_reward = {
-			
-		}
-
-		completion_reward_joint_originator = {
-	
-			hidden_effect = {
-				TUR = {
-					add_opinion_modifier = { target = ENG modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = AST modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = NZL modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = RAJ modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = SAF modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = CAN modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = FRA modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = FRF modifier = long_term_trade_partner }
-				}
-		
-				CHI = {
-					add_opinion_modifier = { target = ENG modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = AST modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = NZL modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = RAJ modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = SAF modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = CAN modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = FRA modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = FRF modifier = long_term_trade_partner }
-				}
-				
-				POR = {
-					add_opinion_modifier = { target = ENG modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = AST modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = NZL modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = RAJ modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = SAF modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = CAN modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = FRA modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = FRF modifier = long_term_trade_partner }
-				}
-				
-				SWE = {
-					add_opinion_modifier = { target = ENG modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = AST modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = NZL modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = RAJ modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = SAF modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = CAN modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = FRA modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = FRF modifier = long_term_trade_partner }
-				}
-				
-				POL = {
-					add_opinion_modifier = { target = ENG modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = AST modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = NZL modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = RAJ modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = SAF modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = CAN modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = FRA modifier = long_term_trade_partner }
-					add_opinion_modifier = { target = FRF modifier = long_term_trade_partner }
-				}
-			}
-		}
-
-		completion_reward_joint_member = {
-				add_opinion_modifier = { target = TUR modifier = long_term_trade_partner }
-				add_opinion_modifier = { target = CHI modifier = long_term_trade_partner }
-				add_opinion_modifier = { target = POR modifier = long_term_trade_partner }
-				add_opinion_modifier = { target = POL modifier = long_term_trade_partner }
-				add_opinion_modifier = { target = SWE modifier = long_term_trade_partner }
-		}
-}
 
 joint_focus = {
 		id = ALLIED_international_zone
@@ -259,7 +150,7 @@ joint_focus = {
 		#mutually_exclusive = { focus =  }
 		dynamic = yes 
 		
-		x = 2
+		x = 4
 		y = 1
 		
 		relative_position_id = ALLIED_cum
@@ -387,7 +278,7 @@ joint_focus = {
 		#mutually_exclusive = { focus =  }
 		dynamic = yes 
 		
-		x = -4
+		x = -2
 		y = 1
 		
 		relative_position_id = ALLIED_cum
@@ -477,12 +368,8 @@ joint_focus = {
 		}
 
 		completion_reward_joint_originator = {
-			SWI = {		
-				become_exiled_in = {
-					target = ROOT
-					legitimacy = 70
-				}
-			}
+			add_ideas = GER_swiss_gold_exchange
+			#add_offsite_building = { type = arms_factory level = 1 }
 			
 		}
 
@@ -491,66 +378,66 @@ joint_focus = {
 		}
 }
 
-joint_focus = {
-		id = ALLIED_spirit_of_saint_bernard
-		icon = GFX_focus_SWI_spirit_of_saint_bernard
-		prerequisite = { focus = ALLIED_switerzland }
-		#mutually_exclusive = { focus =  }
-		dynamic = yes 
+#joint_focus = {
+#		id = ALLIED_spirit_of_saint_bernard
+#		icon = GFX_focus_SWI_spirit_of_saint_bernard
+#		prerequisite = { focus = ALLIED_switerzland }
+#		#mutually_exclusive = { focus =  }
+#		dynamic = yes 
 		
-		x = 0
-		y = 1
+#		x = 0
+#		y = 1
 		
-		relative_position_id = ALLIED_switerzland
+#		relative_position_id = ALLIED_switerzland
 
-		cost = 5
+#		cost = 5
 
-		ai_will_do = {
-			factor = -100
-		}
+#		ai_will_do = {
+#			factor = -100
+#		}
 		
-		visible = {
+#		visible = {
 		
-		}
+#		}
 		
-		joint_trigger = {
-  			
-		}
+#		joint_trigger = {
+ 			
+#		}
 
-		available = {
+#		available = {
 			
-		}
+#		}
 		
-		bypass = {
+#		bypass = {
 
-		}
+#		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
 
-		complete_tooltip = {
+#		complete_tooltip = {
 
-		}
+#		}
 
-		completion_reward = {
+#		completion_reward = {
 			
-		}
+#		}
 
-		completion_reward_joint_originator = {
-			add_ideas = { SWI_spirit_of_saint_bernard_idea }
-			add_tech_bonus = {
-				name = SWI_spirit_of_saint_bernard
-				uses = 2
-				bonus = 1.5 
-				category = hospital_tech
-			}
-		}
+#		completion_reward_joint_originator = {
+#			add_ideas = { SWI_spirit_of_saint_bernard_idea }
+#			add_tech_bonus = {
+#				name = SWI_spirit_of_saint_bernard
+#				uses = 2
+#				bonus = 1.5 
+#				category = hospital_tech
+#			}
+#		}
 
-		completion_reward_joint_member = {
-			add_ideas = { SWI_spirit_of_saint_bernard_idea }
-		}
-}
+#		completion_reward_joint_member = {
+#			add_ideas = { SWI_spirit_of_saint_bernard_idea }
+#		}
+#}
 
 joint_focus = {
 		id = ALLIED_poland
@@ -1019,12 +906,13 @@ joint_focus = {
 		}
 
 		completion_reward_joint_originator = {
-			NOR = {		
-				become_exiled_in = {
-					target = ROOT
-					legitimacy = 70
-				}
-			}
+			add_offsite_building = { type = dockyard level = 2 }
+			#NOR = {		
+			#	become_exiled_in = {
+			#		target = ROOT
+			#		legitimacy = 70
+			#	}
+			#}
 		}
 
 		completion_reward_joint_member = {
@@ -1333,7 +1221,7 @@ joint_focus = {
 		}
 
 		completion_reward_joint_originator = {
-			add_offsite_building = { type = dockyard level = 1 }
+			add_offsite_building = { type = dockyard level = 2 }
 		}
 
 		completion_reward_joint_member = {
@@ -1419,7 +1307,7 @@ joint_focus = {
 		}
 
 		available = {
-			GRE = { has_capitulated = yes }
+			
 		}
 		
 		bypass = {
@@ -1439,15 +1327,25 @@ joint_focus = {
 		}
 
 		completion_reward_joint_originator = {
+			add_offsite_building = { type = arms_factory level = 1 }
+			add_manpower = 30000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 5000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 300
+			}
 			#ENG = {
 			#	add_to_faction = GRE
 			#}
-			GRE = {		
-				become_exiled_in = {
-					target = ROOT
-					legitimacy = 70
-				}
-			}
+			#GRE = {		
+			#	become_exiled_in = {
+			#		target = ROOT
+			#		legitimacy = 70
+			#	}
+			#}
 		}
 
 		completion_reward_joint_member = {
@@ -1456,8 +1354,59 @@ joint_focus = {
 }
 
 joint_focus = {
-		id = ALLIED_greece_army
-		icon = GFX_focus_GRE_hellenic_armed_forces
+		id = ALLIED_portgual
+		icon = GFX_focus_por_the_fifth_empire
+		prerequisite = { focus = ALLIED_greece }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = -1
+		y = 2
+		
+		relative_position_id = ALLIED_greece
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			has_global_flag = fall_of_port
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_offsite_building = { type = dockyard level = 2 }
+		}
+
+		completion_reward_joint_member = {
+			
+		}
+}
+
+joint_focus = {
+		id = ALLIED_turkey
+		icon = GFX_focus_generic_befriend_turkey
 		prerequisite = { focus = ALLIED_greece }
 		#mutually_exclusive = { focus =  }
 		dynamic = yes 
@@ -1478,7 +1427,7 @@ joint_focus = {
 		}
 
 		available = {
-			
+			has_global_flag = fall_of_istanb
 		}
 		
 		bypass = {
@@ -1498,22 +1447,23 @@ joint_focus = {
 		}
 
 		completion_reward_joint_originator = {
-			add_manpower = 30000
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = 5000
+			 create_corps_commander = {
+			 	name = "Fahrettin Altay"
+			 	gfx = "GFX_portrait_tur_fahrettin_altay"
+			 	traits={ brilliant_strategist cavalry_leader cavalry_expert war_hero hill_fighter trickster improv_expert }
+				skill=4
+				attack_skill=6
+				defense_skill=3
+				planning_skill=4
+				logistics_skill=4
 			}
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = 300
-			}
+			add_ideas = { TUR_kemalist_army_officers_powerful_loyal }
 		}
 
 		completion_reward_joint_member = {
-			add_manpower = 2000
+			add_ideas = { TUR_kemalist_army_officers_powerful_loyal }
 		}
 }
-
 
 joint_focus = {
 		id = ALLIED_soviet_subsidizes
@@ -1522,7 +1472,7 @@ joint_focus = {
 		#mutually_exclusive = { focus =  }
 		dynamic = yes 
 		
-		x = 4
+		x = 6
 		y = 1
 		
 		relative_position_id = ALLIED_cum

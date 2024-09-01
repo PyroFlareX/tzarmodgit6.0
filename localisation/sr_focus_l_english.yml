@@ -996,6 +996,9 @@ RAJ_jamnalal_bajaj:0 "Jamnalal Bajaj"
 #flag cels
 RAJ_dominionpath:0 "Indian National Congress"
 RAJ_imperialpath:0 "British Raj"
+fall_of_port:0 "Portugal has Fallen"
+fall_of_istanb:0 "Istanbul has Fallen"
+
 
 #raj dynamic army Spirit
 RAJ_army_dynamic_modifier:0 "Indian Army"
@@ -1360,6 +1363,10 @@ ALLIED_polishgov_exile:0 "Polish Government in Exile"
 ALLIED_polishgov_exile_desc:0 "YAP YAP YAP"
 ALLIED_international_zone:0 "Reinforce International Settlement"
 ALLIED_international_zone_desc:0 "With the war in China escalating and refugees pouring into the zone. The Shanghai International Settlement has requested additional security forces to maintain order."
+ALLIED_portgual:0 "Portugal"
+ALLIED_portgual_desc:0 ":
+ALLIED_turkey:0 "Turkey"
+ALLIED_turkey_desc:0 ""
 
 GER_seized_gold:0 "Swiss Gold Seized"
 GER_seized_gold_desc:0 "No where to hide. The Swiss Gold Resereves are ours now."
