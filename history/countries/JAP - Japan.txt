@@ -22,6 +22,7 @@ add_ideas = {
 	JAP_militarism
 	JAP_island_hopping8
 	Jap_temp_chi
+	COOM_volunteers_majors
 }
 add_timed_idea = { idea = No_Prewar_TradeBuff days = 1826 }
 add_intel = { target = GER civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }

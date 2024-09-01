@@ -210,6 +210,7 @@ set_popularities = {
 }
 
 add_ideas = {
+COOM_volunteers_minors
 }
 
 #Order matters here Daladier will start as leaders because added last

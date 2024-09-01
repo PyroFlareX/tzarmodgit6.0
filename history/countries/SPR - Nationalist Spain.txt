@@ -18,6 +18,7 @@ add_ideas = {
 	SPR_no_navy
 	no_war_against_sov
 	no_war_against_allies
+	COOM_volunteers_minors
 }
 
 add_timed_idea = { idea = france_production_regrowth days = 30 }

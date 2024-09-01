@@ -350,6 +350,6 @@ add_ideas = {
 	RAJ_agrarian_society
 	SAF_the_commonwealth	
 	RAJ_quit_india_active
-	
+	COOM_volunteers_minors
 	#RAJ_mahatma_mohandas_gandhi (political advisor)
 }

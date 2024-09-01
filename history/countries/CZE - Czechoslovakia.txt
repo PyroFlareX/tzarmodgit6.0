@@ -38,7 +38,9 @@ add_opinion_modifier = {
 	
 }
 
-add_ideas = { CZE_arms_industry }
+add_ideas = { CZE_arms_industry 
+	COOM_volunteers_minors
+}
 
 recruit_character = CZE_karl_albrecht
 recruit_character = CZE_edvard_benesh

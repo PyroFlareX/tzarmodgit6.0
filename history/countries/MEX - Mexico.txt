@@ -133,6 +133,7 @@ if = {
 		MEX_oil_concessions
 		MEX_politicised_army
 		MEX_cedillo_tension_2
+		COOM_volunteers_minors
 	}
 }
 

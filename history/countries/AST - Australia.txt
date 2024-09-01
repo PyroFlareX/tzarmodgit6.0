@@ -128,6 +128,7 @@ if = {
 }
 	add_ideas = AST_great_depression_1
 	add_ideas = SAF_the_commonwealth
+	add_ideas = COOM_volunteers_minors
 	add_to_tech_sharing_group = commonwealth_research
 
 set_politics = {

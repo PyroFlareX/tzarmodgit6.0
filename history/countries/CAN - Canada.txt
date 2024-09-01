@@ -169,10 +169,11 @@ if = {
 		cruiser_submarines = 1
 	}
 }
-
+	
 	add_ideas = CAN_great_depression_1
 	add_ideas = CAN_conscription_crisis
 	add_ideas = SAF_the_commonwealth
+	add_ideas = COOM_volunteers_minors
 	set_cosmetic_tag = CAN_UK
 	
 	add_to_tech_sharing_group = commonwealth_research

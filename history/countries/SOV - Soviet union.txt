@@ -715,6 +715,7 @@ add_ideas = {
 	autarky_generic
 	planned_economy
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
+	COOM_volunteers_majors
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }

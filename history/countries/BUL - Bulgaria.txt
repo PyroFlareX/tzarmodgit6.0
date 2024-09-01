@@ -9,6 +9,7 @@ add_ideas = {
 	#no_training 
 	BUL_second_national_catastrophe
 	BUL_army_restrictions
+	COOM_volunteers_minors
 }
 
 

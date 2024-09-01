@@ -148,6 +148,7 @@ add_timed_idea = { idea = GER_mefo_bills_1 days = 1330 }
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
 		ROM_iron_guard_violence
+		COOM_volunteers_minors
 	}
 add_ideas = neutrality_idea
 

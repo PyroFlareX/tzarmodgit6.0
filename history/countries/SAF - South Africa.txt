@@ -171,7 +171,7 @@ if = {
 add_ideas = SAF_ossewabrandwag
 add_ideas = SAF_history_of_segregation
 add_ideas = SAF_the_commonwealth
-	
+add_ideas = COOM_volunteers_minors	
 add_to_tech_sharing_group = commonwealth_research
 
 

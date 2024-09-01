@@ -13,7 +13,7 @@ if = {
 
 set_research_slots = 3
 add_timed_idea = { idea = GER_mefo_bills_1 days = 1330 }
-
+add_ideas = COOM_volunteers_minors
 
 add_to_tech_sharing_group = axis_research 
 

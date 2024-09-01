@@ -83,6 +83,7 @@ set_rule = { can_be_spymaster = no }
 	add_ideas = {
 		disarmed_nation
 		HUN_treaty_of_triannon
+		COOM_volunteers_minors
 }
 
 

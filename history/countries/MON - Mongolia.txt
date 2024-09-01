@@ -52,6 +52,7 @@ add_ideas = {
 	autarky_generic
 	planned_economy_mon 
 	prewar_training
+	COOM_volunteers_minors
 }
 
 add_timed_idea = { idea = france_production_regrowth days = 30 }
