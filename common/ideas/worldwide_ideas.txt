@@ -42,10 +42,6 @@ hidden_ideas = {
 			modifier = {
 				experience_gain_navy_unit_factor = 10
 				training_time_factor = -0.75
-				planning_speed = 10.00
-				dig_in_speed = 10.00
-				army_speed_factor = 1.0
-				army_org_regain = 1.0
 				experience_gain_army = 0.02
 				attrition = -1
 			}
