@@ -33,6 +33,7 @@ ideas = {
 				}
 			}
 		}
+		}
 		    JAP_island_hopping1 = {
 			name = JAP_island_hopping
 			allowed = {
