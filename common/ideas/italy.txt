@@ -549,8 +549,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = 0.10		
-				send_volunteer_size = 4
+				stability_factor = 0.10				
 			}
 		}
 		ITA_libya_stands = {

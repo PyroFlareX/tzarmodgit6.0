@@ -18,7 +18,6 @@ ideas = {
 
 			modifier = {
 			trade_cost_for_target_factor = -0.6	
-			send_volunteer_size = 2
 			
 			}
 

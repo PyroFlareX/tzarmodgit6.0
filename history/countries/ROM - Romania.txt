@@ -139,7 +139,6 @@ add_equipment_to_stockpile = {
 #add_ideas = ig_farben_romania
 add_ideas = {
 	partial_economic_mobilisation 
-	ROM_volunteers
 }
 
 add_timed_idea = { idea = GER_mefo_bills_1 days = 1330 }

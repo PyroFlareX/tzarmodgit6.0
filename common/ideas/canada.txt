@@ -125,7 +125,6 @@ ideas = {
 			
 			modifier = {
 				conscription_factor = -0.30
-				send_volunteer_size = 2
 			}
 		}
 		

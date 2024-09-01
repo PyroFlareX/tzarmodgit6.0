@@ -19,7 +19,6 @@ ideas = {
 				supply_consumption_factor = -0.1
 				army_org_factor = 0.2
 				army_strength_factor = 0.2
-				send_volunteer_size = 2
 			}		
 
 		}

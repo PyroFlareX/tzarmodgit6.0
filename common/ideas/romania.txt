@@ -23,25 +23,6 @@ ideas = {
 			}
 		}
 		
-		ROM_volunteers = {
-
-			picture = generic_secret_police
-
-			removal_cost = -1
-			
-			allowed = {
-				original_tag = ROM
-			}
-
-			allowed_civil_war = {
-
-			}
-			
-			modifier = {				
-				send_volunteer_size = 2
-			}
-		}
-		
 		r56_ROM_christian_education_centers = {
 
 			picture = generic_soldiers_bad

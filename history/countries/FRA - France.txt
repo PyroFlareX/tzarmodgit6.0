@@ -210,7 +210,6 @@ set_popularities = {
 }
 
 add_ideas = {
-FRA_volunteers
 }
 
 #Order matters here Daladier will start as leaders because added last
