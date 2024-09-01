@@ -7340,6 +7340,11 @@ completion_reward = {
 					}
 				}
 				ITA = {
+					transfer_state = 902
+					transfer_state = 901
+					transfer_state = 916
+					transfer_state = 914
+					transfer_state = 915
 					transfer_state = 107
 					transfer_state = 108
 					transfer_state = 802
