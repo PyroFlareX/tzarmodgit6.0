@@ -319,7 +319,6 @@ NOT = {tag = MON}
 			
 			cancel_if_invalid = no
 		}
-	}
 		planned_economy = {
 			picture = SOV_transformation_of_nature
 			name = "Planned Economy"
