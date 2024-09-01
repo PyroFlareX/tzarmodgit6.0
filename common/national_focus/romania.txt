@@ -1909,46 +1909,22 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = ROM_total_holy_war
-		icon = ROM_antonescu_continue_the_legionary_goverment
+		id = ROM_reclaim_the_mother_church
+		icon = GFX_focus_TUR_the_montreux_convention
 		prerequisite = { focus = ROM_establish_the_legion }
 		relative_position_id = ROM_establish_the_legion
 		x = 0
 		y = 1
 		
+	
 		cost = 5
 	
 		ai_will_do = {
 			factor = 20
 		}
-
+	
 		available = {
 			has_war = yes
-		}
-	
-		completion_reward = {
-			add_ideas = tot_economic_mobilisation
-		}
-		
-	}
-	
-	focus = {
-		id = ROM_reclaim_the_mother_church
-		icon = GFX_focus_TUR_the_montreux_convention
-		prerequisite = { focus = ROM_total_holy_war }
-		relative_position_id = ROM_total_holy_war
-		x = 1
-		y = 1
-		
-	
-		cost = 10
-	
-		ai_will_do = {
-			factor = 20
-		}
-	
-		available = {
-			
 		}
 	
 		bypass = {
@@ -1985,10 +1961,34 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = ROM_total_holy_war
+		icon = ROM_antonescu_continue_the_legionary_goverment
+		prerequisite = { focus = ROM_reclaim_the_mother_church }
+		relative_position_id = ROM_reclaim_the_mother_church
+		x = 1
+		y = 1
+		
+		cost = 5
+	
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+			
+		}
+	
+		completion_reward = {
+			add_ideas = tot_economic_mobilisation
+		}
+		
+	}
+	
+	focus = {
 		id = ROM_the_holy_land
 		icon = GFX_focus_ETH_the_one_true_heir_of_solomon
-		prerequisite = { focus = ROM_total_holy_war }
-		relative_position_id = ROM_total_holy_war
+		prerequisite = { focus = ROM_reclaim_the_mother_church }
+		relative_position_id = ROM_reclaim_the_mother_church
 		x = -1
 		y = 1
 		
