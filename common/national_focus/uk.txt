@@ -971,7 +971,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = uk_waves_focus
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -982,7 +982,7 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = uk_battleship_focus
-				bonus = 1.0
+				bonus = 1.5
 				uses = 2
 				category = bb_tech
 			}
