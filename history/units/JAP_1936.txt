@@ -149,10 +149,85 @@ division_template = {
 	priority = 0
 }
 
+division_template = {
+	name = "Dokuritsu Konsei Ryodan" 	# Independent Mixed Brigade: 5 infantry battalions (4k men total), 1 field artillery basttalion - abstracted into infantry,
+	division_names_group = JAP_IMB_01
+	is_locked = yes										# 1 engineering battalion
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		heavy_armor = { x= 2 y = 0 }
+		heavy_armor = { x= 2 y = 1 }
+		heavy_armor = { x= 2 y = 2 }
+		heavy_armor = { x= 2 y = 3 }
+		heavy_armor = { x= 2 y = 4 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 } 		
+		artillery = { x = 0 y = 2 }	
+		logistics_company = { x = 0 y = 3 }
+	}
+}
 
 ##### OOB #####
 units = {
-
+	division = { # "Karafuto Dokuritsu Konsei Ryodan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 201
+		}
+		location = 900 #Toyohara
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_equipment_factor = 1
+		start_experience_factor = 0.5
+		force_equipment_variants = { heavy_tank_chassis_0 = { owner = JAP version_name = "Type 89 I-Go" } }
+	}
+	division = { # "Karafuto Dokuritsu Konsei Ryodan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 201
+		}
+		location = 900 #Toyohara
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_equipment_factor = 1
+		start_experience_factor = 0.5
+		force_equipment_variants = { heavy_tank_chassis_0 = { owner = JAP version_name = "Type 89 I-Go" } }
+	}
+	division = { # "Karafuto Dokuritsu Konsei Ryodan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 201
+		}
+		location = 900 #Toyohara
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_equipment_factor = 1
+		start_experience_factor = 0.5
+		force_equipment_variants = { heavy_tank_chassis_0 = { owner = JAP version_name = "Type 89 I-Go" } }
+	}
+	division = { # "Karafuto Dokuritsu Konsei Ryodan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 201
+		}
+		location = 900 #Toyohara
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_equipment_factor = 1
+		start_experience_factor = 0.5
+		force_equipment_variants = { heavy_tank_chassis_0 = { owner = JAP version_name = "Type 89 I-Go" } }
+	}
 	#Kita Homengun - North Japan Army
 	division = { # "7 'Kuma' Hohei Shidan"
 		division_name = {
