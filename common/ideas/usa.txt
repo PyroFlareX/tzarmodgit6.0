@@ -893,8 +893,8 @@ ideas = {
 			modifier = {
 				production_speed_infrastructure_factor = 0.1
 				stability_factor = 0.20
-				production_speed_arms_factory_factor = -0.3
-				production_speed_dockyard_factor = -0.4
+				production_speed_arms_factory_factor = -0.15
+				production_speed_dockyard_factor = -0.2
 				consumer_goods_factor = 0.15
 			}
 		}
@@ -1092,7 +1092,7 @@ ideas = {
 			picture = generic_foreign_capital
 			
 			modifier = {
-				civilian_factory_use = 20
+				civilian_factory_use = 10
 			}
 		}
 		USA_economic_aid= {
@@ -1108,7 +1108,7 @@ ideas = {
 			}
 			
 			modifier = {
-				production_factory_max_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.075
 			}
 
 			picture = generic_exploit_mines

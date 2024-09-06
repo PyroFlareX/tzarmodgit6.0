@@ -12,6 +12,7 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
+set_convoys = 200
 add_ideas = {
 	CHI_sacred_war
 	CHI_eight

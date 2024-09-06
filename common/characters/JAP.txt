@@ -696,7 +696,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter air_controller blue_water_expert flight_deck_manager }
+			traits={ bold aviation_enthusiast superior_tactician ironside air_controller blue_water_expert flight_deck_manager }
 			skill=7
 			attack_skill=7
 			defense_skill=3

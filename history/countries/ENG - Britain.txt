@@ -286,7 +286,7 @@ add_equipment_to_stockpile = {
 	amount = 100
 	producer = ENG
 }
-set_convoys = 1100
+set_convoys = 1300
 
 # DIPLOMACY
 if = {
