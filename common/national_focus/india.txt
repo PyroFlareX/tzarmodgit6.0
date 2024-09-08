@@ -10,7 +10,7 @@ focus_tree = {
 		}
 	}
 
-	#shared_focus = ALLIED_cum
+	shared_focus = ALLIED_cum
 	focus = {
 		id = RAJ_refinery_effort
 		icon = GFX_focus_generic_rubber
