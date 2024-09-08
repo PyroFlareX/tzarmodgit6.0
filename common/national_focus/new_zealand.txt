@@ -12,7 +12,7 @@ focus_tree = {
 
 	}
 	
-	shared_focus = ALLIED_cum
+	#shared_focus = ALLIED_cum
 	
 	focus = {
 		id = NZL_refinery_effort

@@ -14,7 +14,7 @@
 	default = no
 	
 	continuous_focus_position = { x = 50 y = 1000 }
-	shared_focus = ALLIED_cum
+	#shared_focus = ALLIED_cum
 
 	focus = {
 		id = AST_refinery_effort
