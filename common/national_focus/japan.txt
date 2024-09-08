@@ -153,98 +153,12 @@ focus_tree = {
 		select_effect = {}
 		completion_reward = {
 			add_ideas = JAP_intervene_in_china_5
-			
-		#	add_named_threat = { threat = 10 name = JAP_CHIONE }
-			#add_ideas = JAP_war_with_chi1
-			MAN = {
-				declare_war_on = {
-							target = CHI
-							type = annex_everything
-						}
-			}
-			JAP = {
-				declare_war_on = {
-							target = CHI
-							type = annex_everything
-						}
-			}
-#			army_experience = 300
-#			air_experience = 1000
-#			navy_experience = 500
-			
-#			transfer_state = 608
-#		    transfer_state = 614
-#		    transfer_state = 597
-#		    transfer_state = 743
-#		    transfer_state = 598
-#		    transfer_state = 613
-#		    transfer_state = 596
-#		    transfer_state = 595
-#		    transfer_state = 593
-#		    transfer_state = 592
-#		    transfer_state = 594
-#			transfer_state = 591
-			
-#			transfer_state = 599
-#			transfer_state = 602
-#			transfer_state = 600
-#			transfer_state = 749
-#			transfer_state = 606
-	#		transfer_state = 607
-#			transfer_state = 620
-			
 			hidden_effect = {
-				
-				news_event = { id = news.334 }
-
-#			608 = { set_compliance = 60 }
-#		    614 = { set_compliance = 60 }
-#		    597 = { set_compliance = 60 }
-#		    743 = { set_compliance = 60 }
-#		    598 = { set_compliance = 60 }
-#		    613 = { set_compliance = 60 }
-#		    596 = { set_compliance = 60 }
-#		    595 = { set_compliance = 60 }
-#		    593 = { set_compliance = 60 }
-#		    592 = { set_compliance = 60 }
-#		    594 = { set_compliance = 60 }
-#			591 = { set_compliance = 60 }
-			
-#			599 = { set_compliance = 60 }
-#			602 = { set_compliance = 60 }
-#			600 = { set_compliance = 60 }
-	#		749 = { set_compliance = 60 }
-#			606 = { set_compliance = 60 }
-	#		607 = { set_compliance = 60 }
-	#		620 = { set_compliance = 60 }
-				
-				USA = {
-					add_political_power = 100
-					add_war_support = 0.10
-					air_experience = 300
-					army_experience = 50
+				CHI = {
+					annex_country = { target = JAP transfer_troops = yes }
 				}
-				SOV = { army_experience = 200 air_experience  = 300 }
-				GER = { air_experience  = 300 }
-				ITA = { air_experience  = 300 }
-				ENG = { army_experience = 150 }
-                FRA = { army_experience = 150 }	
-				CAN = { army_experience = 150 }
-				NOR = { army_experience = 150 }
-				SAF = {	army_experience = 150 }
-				MON = {	army_experience = 150 }
-				RAJ = {	army_experience = 150 }
-				AST = {	army_experience = 150 }
-				MAN = {	army_experience = 350 }
-				NZL = { army_experience = 150 }	
-				ROM = { army_experience = 100 }		
-				HUN = { army_experience = 100 }	
-				BUL = { army_experience = 100 }
-				IF = { limit = { country_exists = YUG } YUG = { army_experience = 100 } }
-				IF = { limit = { country_exists = SIA } SIA = { army_experience = 300 air_experience  = 1000 } }
-				IF = { limit = { country_exists = MAN } MAN = { army_experience = 300 air_experience  = 1000 } }
 			}
-		}
+		}		
 	}
 
 	focus = {
