@@ -18,7 +18,7 @@ focus_tree = {
 	}
 	
 	default = no
-	shared_focus = ALLIED_cum
+	#shared_focus = ALLIED_cum
 	focus = {
 		id = CAN_refinery_effort
 		icon = GFX_focus_generic_rubber
