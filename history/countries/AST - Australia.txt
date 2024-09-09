@@ -124,7 +124,7 @@ if = {
 		basic_fire_control_system = 1
 		cruiser_submarines = 1
 	}
-	#set_naval_oob = "AST_1936_naval"
+	set_naval_oob = "AST_1936_naval"
 }
 	add_ideas = AST_great_depression_1
 	add_ideas = SAF_the_commonwealth
