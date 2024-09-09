@@ -40,7 +40,7 @@ ideas = {
 			}
 			
 			modifier = {				
-				send_volunteer_size = 50
+				send_volunteer_size = 2
 			}
 		}
 		
@@ -59,7 +59,7 @@ ideas = {
 			}
 			
 			modifier = {				
-				send_volunteer_size = 100
+				send_volunteer_size = 4
 			}
 		}
 		
