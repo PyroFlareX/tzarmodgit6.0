@@ -936,6 +936,362 @@ technology = improved_medium_airframe
 	}
 
 	############################
+	###### NAVY SECTION ########
+	############################
+
+
+	focus = {
+		id = AST_cockatoo_island_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 11
+		y = 0
+
+		cost = 1
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			navy_experience = 25
+			521 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			add_ideas = AST_Navy_Manpower1		
+			285 = {
+				add_resource = {
+					type = steel
+					amount = 4
+				}		
+			}
+			navy_experience = 25
+			521 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = dockyard
+					level = 10
+					instant_build = yes
+				}
+					add_building_construction = {
+					type = naval_base
+					province = 12406
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AST_protect_overseas_commerce
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = AST_cockatoo_island_shipyards }
+		x = 0
+		y = 1
+		relative_position_id = AST_cockatoo_island_shipyards
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Navy_Manpower1
+				add_idea = AST_Navy_Manpower2
+			}
+			285 = {
+				add_resource = {
+					type = steel
+					amount = 2
+				}			
+			}		
+			add_tech_bonus = {
+				name = AST_protect_overseas_commerce
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+
+	
+	focus = {
+		id = AST_scrap_iron_flotilla
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = AST_protect_overseas_commerce  }
+		x = 0
+		y = 2
+		relative_position_id = AST_cockatoo_island_shipyards
+
+		cost = 1
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Navy_Manpower2
+				add_idea = AST_Navy_Manpower3
+			}
+			285 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+				add_resource = {
+					type = oil
+					amount = 3
+				}				
+			}
+			add_tech_bonus = {
+				name = AST_scrap_iron_flotilla
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = AST_royal_australian_submarine_service
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = AST_scrap_iron_flotilla  }
+		x = 0
+		y = 1
+		relative_position_id = AST_scrap_iron_flotilla
+
+		cost = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Navy_Manpower3
+				add_idea = AST_Navy_Manpower4
+			}	
+			285 = {
+				add_resource = {
+					type = steel
+					amount = 4
+				}
+				add_resource = {
+					type = oil
+					amount = 1
+				}				
+			}
+			add_tech_bonus = {
+				name = AST_royal_australian_submarine_service
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = AST_naval_auxiliary_patrol
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = AST_royal_australian_submarine_service }
+		x = 0
+		y = 1
+		relative_position_id = AST_royal_australian_submarine_service
+
+		cost = 1
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Navy_Manpower4
+				add_idea = AST_Navy_Manpower5
+			}	
+			285 = {
+				add_resource = {
+					type = steel
+					amount = 7
+				}
+				add_resource = {
+					type = oil
+					amount = 2
+				}				
+			}
+			add_ideas = AST_naval_auxiliary_patrol
+		}
+	}
+
+	focus = {
+		id = AST_cruisers
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = AST_naval_auxiliary_patrol }
+		x = 0
+		y = 1
+		relative_position_id = AST_naval_auxiliary_patrol
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Navy_Manpower5
+				add_idea = AST_Navy_Manpower6
+			}
+			285 = {
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+				add_resource = {
+					type = oil
+					amount = 1
+				}				
+			}
+			add_tech_bonus = {
+				name = AST_cruisers
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+
+	focus = {
+		id = AST_pacific_area_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = AST_cruisers }
+		x = 0
+		y = 1
+		relative_position_id = AST_cruisers
+
+		cost = 1
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Navy_Manpower6
+				add_idea = AST_Navy_Manpower7
+			}
+			521 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = dockyard
+					level = 10
+					instant_build = yes
+				}
+			}
+			285 = {
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+				add_resource = {
+					type = oil
+					amount = 1
+				}				
+			}
+			add_tech_bonus = {
+				name = AST_pacific_area_navy
+				bonus = 1.0
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+
+
+	############################
 	##### INDUSTRY SECTION #####
 	############################
 

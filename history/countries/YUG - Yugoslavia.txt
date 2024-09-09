@@ -3,6 +3,13 @@ army_experience = 10
 navy_experience = 10
 air_experience = 2
 oob = "YUG_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "YUG_1936_naval_mtg"
+	else = {
+		set_naval_oob = "YUG_1936_naval_legacy"
+	}
+}
 
 set_research_slots = 3
 add_timed_idea = { idea = GER_mefo_bills_1 days = 1330 }

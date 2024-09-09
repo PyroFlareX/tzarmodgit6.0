@@ -661,6 +661,261 @@ focus_tree = {
 		}
 	}
 	
+	############ NAVY ###################
+	
+	focus = {
+		id = ROM_expand_the_galati_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = ROM_begin_rearm }
+		x = 7
+		y = 1
+		relative_position_id = ROM_begin_rearm
+		
+		cost = 1
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_offsite_building = { type = dockyard level = 7 }
+		}
+	}
+	
+	focus = {
+		id = ROM_black_sea_dominance
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = ROM_expand_the_galati_shipyards }
+		x = 1
+		y = 1
+		relative_position_id = ROM_expand_the_galati_shipyards
+
+		cost = 1
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {			
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = ROM_black_sea_dominance_designer
+		}
+	}
+
+	focus = {
+		id = ROM_capital_ships
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = ROM_black_sea_dominance }
+		x = 0
+		y = 1
+		relative_position_id = ROM_black_sea_dominance
+
+		cost = 1
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_capital_ships
+				bonus = 1.0
+				uses = 2
+				category = ca_tech
+				category = bb_tech
+				category = bc_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = ROM_expand_the_marine_regiment
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = ROM_capital_ships }
+		x = 0
+		y = 1
+		relative_position_id = ROM_capital_ships
+
+		cost = 2
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_expand_the_marine_regiment
+				bonus = 1.0
+				uses = 2
+				category = tp_tech
+				category = marine_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = ROM_coastal_defense_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = ROM_expand_the_galati_shipyards }
+		x = -1
+		y = 1
+		relative_position_id = ROM_expand_the_galati_shipyards
+
+		cost = 1
+
+	
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = ROM_coastal_defense_navy_designer
+		}
+	}
+	
+	focus = {
+		id = ROM_coastal_defense_ships
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = ROM_coastal_defense_navy }
+		x = 0
+		y = 1
+		relative_position_id = ROM_coastal_defense_navy
+
+		cost = 1
+
+	
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = ROM_coastal_defense_ships
+			#custom_effect_tooltip = ROM_coastal_defense_ships_tech_tt
+			if = { 
+				limit = { has_dlc = "Man the Guns" }
+				set_technology = { coastal_defense_ships = 1 } 
+			}
+		}
+	}
+	
+	focus = {
+		id = ROM_torpedo_boats
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = ROM_coastal_defense_ships }
+		x = 0
+		y = 1
+		relative_position_id = ROM_coastal_defense_ships
+
+		cost = 1
+
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ROM_coastal_defense_ships_2
+				remove_idea = ROM_coastal_defense_ships
+			}
+		}
+	}
+	
+	focus = {
+		id = ROM_modern_destroyers
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { focus = ROM_torpedo_boats focus = ROM_expand_the_marine_regiment }
+		x = 1
+		y = 1
+		relative_position_id = ROM_torpedo_boats
+
+		cost = 1
+
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_modern_destroyers
+				bonus = 3.0
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+	
 	########### GERMOID ################
 	
 	focus = {
