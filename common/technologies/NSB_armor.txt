@@ -149,6 +149,7 @@ technologies = {
 			armor
 			cat_light_armor
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	basic_light_tank_chassis = { #Panzer I
@@ -237,6 +238,7 @@ technologies = {
 			armor
 			cat_light_armor
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	improved_light_tank_chassis = { #Panzer II
@@ -318,6 +320,7 @@ technologies = {
 			armor
 			cat_light_armor
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 
@@ -364,6 +367,7 @@ technologies = {
 			armor
 			cat_light_armor
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	basic_medium_tank_chassis = { #Panzer III
@@ -460,6 +464,7 @@ technologies = {
 			armor
 			cat_medium_armor
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 
@@ -544,10 +549,11 @@ technologies = {
 			armor
 			cat_medium_armor
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	advanced_medium_tank_chassis = { #Panther
-
+		special_project_specialization = { specialization_land }
 		enable_equipments = {
 			medium_tank_chassis_3
 			medium_tank_destroyer_chassis_3
@@ -606,7 +612,7 @@ technologies = {
 	}
 
 	main_battle_tank_chassis = { #E-50
-
+		special_project_specialization = { specialization_land }
 		enable_equipments = {
 			modern_tank_chassis_1
 			modern_tank_destroyer_chassis_1
@@ -647,7 +653,7 @@ technologies = {
 
 
 	basic_heavy_tank_chassis = { #Grosstraktor
-
+		special_project_specialization = { specialization_land }
 		enable_equipments = {
 			heavy_tank_chassis_1
 			heavy_tank_destroyer_chassis_1
@@ -733,7 +739,7 @@ technologies = {
 	}
 
 	improved_heavy_tank_chassis = { #Tiger
-
+		special_project_specialization = { specialization_land }
 		enable_equipments = {
 			heavy_tank_chassis_2
 			heavy_tank_destroyer_chassis_2
@@ -797,7 +803,7 @@ technologies = {
 
 
 	advanced_heavy_tank_chassis = { #King Tiger
-
+		special_project_specialization = { specialization_land }
 		enable_equipments = {
 			heavy_tank_chassis_3
 			heavy_tank_destroyer_chassis_3
@@ -854,7 +860,7 @@ technologies = {
 	}
 
 	super_heavy_tank_chassis = { #Maus
-
+		special_project_specialization = { specialization_land }
 		enable_equipments = {
 			super_heavy_tank_chassis_1
 			super_heavy_tank_destroyer_chassis_1
@@ -933,6 +939,7 @@ technologies = {
         }
     }
 	armor_tech_1 = {
+		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {
 			tank_welded_armor
 			tank_cast_armor
@@ -989,7 +996,7 @@ technologies = {
 	}
 
 	armor_tech_2 = {
-
+		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {
 			armor_skirts
 			sloped_armor
@@ -1046,7 +1053,7 @@ technologies = {
 
 	armor_tech_3 = {
 
-
+		special_project_specialization = { specialization_land }
 		path = {
 			leads_to_tech = armor_tech_4
 			research_cost_coeff = 1
@@ -1098,7 +1105,7 @@ technologies = {
 	}
 
 	armor_tech_4 = {
-
+		special_project_specialization = { specialization_land }
 		research_cost = 0.5
 		start_year = 1942
 		folder = {
@@ -1145,7 +1152,7 @@ technologies = {
 	}
 
 	engine_tech_1 = {
-
+		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {
 			tank_leafsupring_bogie_suspension
 			tank_christie_suspension	
@@ -1199,6 +1206,7 @@ technologies = {
 	}
 
 	engine_tech_2 = {
+		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {
 			tank_interleaved_suspension
 			tank_volute_spring_suspension
@@ -1256,6 +1264,7 @@ technologies = {
 	}
 
 	engine_tech_3 = {
+		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {
 			amphibious_drive
 		}
@@ -1314,7 +1323,7 @@ technologies = {
 	}
 
 	engine_tech_4 = {
-		
+		special_project_specialization = { specialization_land }
 		research_cost = 1
 		start_year = 1944
 		folder = {
@@ -1396,7 +1405,7 @@ mio_cat_tech_light_armor_and_modules
 	}
 
 	medium_guns = {	
-
+		special_project_specialization = { specialization_land }
 		path = {
 			leads_to_tech = medium_guns2
 			research_cost_coeff = 1
@@ -1434,7 +1443,7 @@ mio_cat_tech_light_armor_and_modules
 	}
 	
 	medium_guns2 = {	
-
+		special_project_specialization = { specialization_land }
 		path = {
 			leads_to_tech = medium_guns3
 			research_cost_coeff = 1
@@ -1475,7 +1484,7 @@ mio_cat_tech_light_armor_and_modules
 	}
 
 	tank_ammo2 = {	
-
+		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {
 			HEAT_ammo
 		}
@@ -1500,7 +1509,7 @@ mio_cat_tech_light_armor_and_modules
 	}
 
 	tank_ammo = {
-
+		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {
 			LRP_ammo
 		}
@@ -1525,7 +1534,7 @@ mio_cat_tech_light_armor_and_modules
 	}
 
 	medium_guns3 = {	
-
+		special_project_specialization = { specialization_land }
 		allow = {
 			#date > 1941.1.1
 			OR = {
@@ -1587,7 +1596,7 @@ mio_cat_tech_light_armor_and_modules
 		}
 	}
 	shit_modules = {
-
+		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {
 			apcr_ammo	
 			hesh_ammo
@@ -1614,7 +1623,7 @@ mio_cat_tech_light_armor_and_modules
 		}
 	}
 	shit_guns = {
-
+		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {	
 			dozer_blade
 			auto_loader
@@ -1644,7 +1653,7 @@ mio_cat_tech_light_armor_and_modules
 	}
 
 	heavy_guns = {	
-
+		special_project_specialization = { specialization_land }
 		path = {
 			leads_to_tech = heavy_guns2
 			research_cost_coeff = 1
@@ -1681,7 +1690,7 @@ mio_cat_tech_light_armor_and_modules
 	}
 	
 	heavy_guns2 = {	
-
+		special_project_specialization = { specialization_land }
 		path = {
 			leads_to_tech = heavy_guns3
 			research_cost_coeff = 1
@@ -1722,7 +1731,7 @@ mio_cat_tech_light_armor_and_modules
 	}
 	
 	heavy_guns3 = {	
-
+		special_project_specialization = { specialization_land }
 		allow = {
 			#date > 1941.1.1
 			OR = {
@@ -1786,7 +1795,7 @@ mio_cat_tech_light_armor_and_modules
 		}
 	}
 		radio_tech_1 = {
-
+		special_project_specialization = { specialization_land }
 		enable_equipment_modules = { 
 			tank_radio_1
 		}
@@ -1815,7 +1824,7 @@ mio_cat_tech_light_armor_and_modules
 	}	
 	
 	radio_tech_2 = {
-	
+		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {
 			tank_radio_2			
 		}
@@ -1843,7 +1852,7 @@ mio_cat_tech_light_armor_and_modules
 		}
 	}	
 	radio_tech_3 = {
-	
+		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {
 			tank_radio_3	
 			stabilizer		

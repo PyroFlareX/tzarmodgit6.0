@@ -2,5 +2,11 @@ technology_categories = {
 	special_forces
 	tank_modules
 	cat_cavalry_doctrine
+	category_cavalry
+	category_front_line
+	category_army
+	
+	
+	
 }
 
