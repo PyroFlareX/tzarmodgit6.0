@@ -1847,7 +1847,8 @@ technologies = {
 	# }
 	
 	motorised_infantry = {
-		enable_equipment_modules = {
+		
+                enable_equipment_modules = {
 			tank_wheeled_suspension
 		}
 
@@ -1901,7 +1902,7 @@ technologies = {
 		}
 	}
 	motorized_rocket_unit = {
-
+                special_project_specialization = { specialization_air specialization_land }
 		enable_subunits = {
 			motorized_rocket_brigade
 		}
@@ -1923,7 +1924,7 @@ technologies = {
 	}
 	
 	armored_car1 = {
-
+                special_project_specialization = { specialization_land }
 		enable_subunits = {
 			armored_car
 		}
@@ -1984,7 +1985,7 @@ technologies = {
 	}
 
 	armored_car2 = {
-
+                special_project_specialization = { specialization_land }
 		enable_equipments = {
 			armored_car_chassis_1
 		}
@@ -2038,7 +2039,7 @@ technologies = {
 	}
 
 	armored_car3 = {
-
+                special_project_specialization = { specialization_land }
 		enable_equipments = {
 			armored_car_chassis_2
 		}
@@ -2082,7 +2083,7 @@ technologies = {
 	}
 
 	mechanised_infantry = {
-
+                special_project_specialization = { specialization_land }
 		enable_equipments = {
 		
 			mechanized_equipment_1
@@ -2136,7 +2137,7 @@ technologies = {
 	}
 
 	amphibious_mechanized_infantry = {
-
+                special_project_specialization = { specialization_land }
 		enable_equipments = {
 			amphibious_mechanized_equipment_1
 		}
@@ -2167,7 +2168,7 @@ technologies = {
 	}
 
 	amphibious_mechanized_infantry_2 = {
-
+                special_project_specialization = { specialization_land }
 		enable_equipments = {
 			amphibious_mechanized_equipment_2
 		}
@@ -2189,7 +2190,7 @@ technologies = {
 	}
 	
 	mechanised_infantry2 = {
-
+                special_project_specialization = { specialization_land }
 		enable_equipments = {
 
 			mechanized_equipment_2
@@ -2227,7 +2228,7 @@ technologies = {
 	}
 	
 	mechanised_infantry3 = {
-
+                special_project_specialization = { specialization_land }
 		enable_equipments = {
 			mechanized_equipment_3
 		}
