@@ -12717,14 +12717,14 @@ special_projects = {
 			has_dlc = "La Resistance"
 		}
 		available = {
-			921 = {
-				CONTROLLER = {
-					OR = {
-						tag = ROOT
-						is_subject_of = ROOT
-					}
-				}
-			}
+			#921 = {
+			#	CONTROLLER = {
+			#		OR = {
+			#			tag = ROOT
+			#			is_subject_of = ROOT
+			#		}
+			#	}
+			#}
 		}
 		visible = { has_tech = atomic_research }
 		cost = 0
