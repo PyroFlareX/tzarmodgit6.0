@@ -2,7 +2,7 @@
 # If adding new technology, make sure they are uniquely named.
 
 technology_categories = {
-	light_air
+		light_air
 	medium_air
 	heavy_air
 	armor
@@ -21,6 +21,7 @@ technology_categories = {
 	nuclear
 	industry
 	electronics
+	cat_fortification
 	land_doctrine
 	air_doctrine
 	naval_doctrine
@@ -92,18 +93,31 @@ technology_categories = {
 	cat_production
 	cat_synth_rubber
 	cat_synth_oil
+	cat_armored_cars
+	cat_special_forces_generic
+	cat_torpedoes
+	cat_ship_light_battery
+	cat_ship_medium_battery
+	cat_ship_heavy_battery
 	air_equipment
 	plane_modules_tech
 	cat_air_guns
 	cat_air_engine
 	cat_air_bombs
-	generic
 	special_forces_doctrine
 	cat_maritime_patrol
 	cat_mountaineers_doctrine
 	cat_marines_doctrine
 	cat_paratroopers_doctrine
+	naval_armor
+	naval_artillery
+	helicopter_tech
+	pykrete_tech
+	transport_planes_cat
 	cat_cavalry_doctrine
+	generic
+
+	mio_cat_tech_all_armor_and_modules #Includes modules and chassis (DOES NOT INCLUDE ARMORED CARS)
 	mio_cat_tech_light_armor_and_modules #Includes modules and stand-alone Amphibious Chassis
 	mio_cat_tech_medium_armor_and_modules #Includes modules and Modern Tank
 	mio_cat_tech_heavy_armor_and_modules #Includes modules and Super-Heavy Tank
@@ -120,6 +134,8 @@ technology_categories = {
 	mio_cat_tech_all_carrier_and_modules #Includes CV and all related modules
 	mio_cat_tech_all_cruiser_and_modules #Includes all CA (+ Coastal etc.), CL (Torpedo Cruiser) and all related modules
 	mio_cat_tech_all_destroyer_and_modules #Includes all DD and all related modules
+	mio_cat_tech_all_motorized_mechanized #Includes all Motorized (incl. Motorized Rocket Artillery) and Mechanized Equipment. (DOES NOT INCLUDE ARMORED CARS)
+	mio_cat_artillery #Includes Artillery only (no AT, AA or Rocketry)
 }
 
 technology_folders = {
