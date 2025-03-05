@@ -7180,7 +7180,7 @@ focus_tree = {
 		#icon = GFX_goal_generic_small_arms
 		
 		prerequisite = { focus = GER_heed_von_neuraths_concerns }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GER_heed_von_neuraths_concerns
 		cost = 5
@@ -7207,7 +7207,7 @@ focus_tree = {
 		prerequisite = { focus = GER_war_preparations }
 
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_war_preparations
 		cost = 10
 		available = {
@@ -7237,111 +7237,6 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = train_equipment
 				amount = 25
-			}
-		}
-	}
-
-	focus = {
-		id = GER_reorganize_secret_services
-		icon = GFX_focus_generic_secret_service_agency
-		prerequisite = { focus = GER_war_preparations }
-		x = -1
-		y = 1
-		relative_position_id = GER_war_preparations
-		cost = 10
-
-		allow_branch = {
-			has_dlc = "La Resistance"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = GER_oppose_hitler
-						has_completed_focus = GER_oppose_hitler_ww
-					}
-				}
-			}
-		}
-
-		available = {
-		}
-
-		search_filters = {}
-
-		completion_reward = {
-			custom_effect_tooltip = generic_remove_as_political_advisor_tt
-			show_ideas_tooltip = GER_wilhelm_canaris
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			GER_add_or_modify_military_intelligence_service = yes
-			add_to_variable = { 
-				GER_military_intelligence_service_operative_slot = 1
-				tooltip = operative_slot_tt
-			}
-			add_to_variable = { 
-				GER_military_intelligence_service_agency_upgrade_time = -0.2
-				tooltip = agency_upgrade_time_tt
-			}
-
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				GER_create_operative_hans_haupt = yes
-			}
-		}
-	}
-
-	focus = {
-		id = GER_subversive_infiltrators
-		icon = GFX_focus_ARG_keep_it_in_the_party
-		prerequisite = { focus = GER_reorganize_secret_services }
-
-		x = 0
-		y = 2
-		relative_position_id = GER_reorganize_secret_services
-		cost = 5
-		available = {
-		}
-
-		search_filters = {}
-
-		completion_reward = {
-			custom_effect_tooltip = GER_modify_military_intelligence_service_modifier_tt
-			add_to_variable = { 
-				GER_military_intelligence_service_operative_slot = 1
-				tooltip = operative_slot_tt
-			}
-			add_to_variable = { 
-				GER_military_intelligence_service_boost_ideology_mission_factor = 0.25
-				tooltip = boost_ideology_mission_factor_tt
-			}
-			add_to_variable = { 
-				GER_military_intelligence_service_master_ideology_drift = 0.15
-				tooltip = master_ideology_drift_tt
-			}
-
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				GER_create_operative_otto_von_bolschwing = yes
-
-				if = {
-					limit = {
-						controls_state = 16 #PARIS
-					}
-					GER_create_operative_coco_chanel = yes
-				}
-				else = {
-					set_country_flag = GER_coco_chanel_ready_to_join_as_operative_flag
-				}
 			}
 		}
 	}
@@ -7873,7 +7768,7 @@ focus_tree = {
 		alternate_icon = GFX_focus_ger_reichskommisariats_historical
 		prerequisite = { focus = GER_heed_von_neuraths_concerns focus = GER_reorganize_the_wehrmacht }
 
-		x = 4
+		x = 1
 		y = 1
 		relative_position_id = GER_heed_von_neuraths_concerns
 		cost = 5
