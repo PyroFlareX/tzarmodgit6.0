@@ -7320,6 +7320,7 @@ completion_reward = {
 
 completion_reward = {
 	transfer_state = 345
+	transfer_state = 903
 			YUG = {
 				complete_national_focus = CRO_emergency_powers_to_pavlec
 					set_cosmetic_tag = YUG_CRO	

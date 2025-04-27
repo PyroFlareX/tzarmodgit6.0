@@ -2029,6 +2029,7 @@ focus_tree = {
 					controls_state = 43
 				}
 				transfer_state = 664
+				transfer_state = 908
 			}
 			664 = { set_compliance = 60 }
 			hidden_effect = { CZE = { 				remove_state_core = 664  }}
