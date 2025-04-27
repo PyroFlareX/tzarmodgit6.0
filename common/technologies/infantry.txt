@@ -1941,7 +1941,7 @@ technologies = {
 		enable_equipments = {
 			armored_car_chassis_0
 		}
-		allow_branch = { has_dlc = "La Resistance" }
+		#allow_branch = { has_dlc = "La Resistance" }
 		path = {
 			leads_to_tech = armored_car2
 			research_cost_coeff = 1
@@ -2141,7 +2141,7 @@ technologies = {
 			amphibious_mechanized_equipment_1
 		}
 
-		# allow_branch = {
+		# #allow_branch = {
 		# 	has_dlc = "Man the Guns"
 		# }
 
