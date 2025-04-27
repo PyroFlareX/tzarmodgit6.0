@@ -30,6 +30,8 @@ chief_of_navy_cost_factor:0 "£navy_chief_cost_texticon  Chief of Navy Cost"
 chief_of_air_force_cost_factor:0 "£air_chief_cost_texticon  Chief of Air Force Cost"
 weapons_manufacturer_cost_factor:0 "£manufacturer_materiel_cost_texticon  Weapons Manufacturer Cost"
 excavation_tech_research:0 "£research_speed_texticon  Excavation Research Speed"
+modifier_experience_gain_mountaineers_training_factor:0 "£experience_neutral_combat_texticon  Mountaineers Experience Gain"
+modifier_experience_gain_mountaineers_combat_factor:0 "£experience_neutral_combat_texticon  Mountaineers Combat Experience Gain"
 
 
 #KR_00_Political_l_english
@@ -110,6 +112,7 @@ BAT_devolution_economics_tooltip:0 "modifies §HDevolution§! by\n   $MODIFIER_L
 BAT_latgale_remove_tooltip:0 "loses §HDvinsk Autonomous Region§!, which currently grants\n   $MODIFIER_LOCAL_MANPOWER$: [?-0.25|+=0%]\n   $MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR$: [?0.25|+=0%]\n"
 
 #KR_Bolsheviks_l_english
+SOV_Down_With_The_Village_tt: "Modify §H$SOV_socialism_in_one_contry_policies$§! or §H$SOV_Council_Of_Labour_And_Defence_idea$§! by\n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: [?0.05|+=%]\n$MODIFIER_LOCAL_RESOURCES_FACTOR$: [?-0.11|+=%]\n$MODIFIER_CONSUMER_GOODS_FACTOR$: [?0.03|Y%]"
 SOV_Rapid_Industrialization_tooltip:0 "Modify §HFraternal Triumvirate§! or §HThe Cheka Supremacy§! by\n$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: [?0.15|+=%]"
 SOV_Collective_Is_Everything_tooltip:0 "Modify §HFraternal Triumvirate: Economy Focus§! or §HFraternal Triumvirate: Security Focus§! by\n$MODIFIER_CONSUMER_GOODS_FACTOR$: [?-0.05|-=%]\n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: [?0.06|+=%]"
 SOV_Individual_Is_Nothing_tooltip:0 "Modify §HFraternal Triumvirate: Economy Focus§! or §HFraternal Triumvirate: Security Focus§! by\n$stability_good_modifier$: [?-0.09|+=%]\n$war_support_modifier$: [?-0.09|+=%]"
@@ -178,6 +181,16 @@ CSA_refit_old_ships_tooltip_peoples_navy:0 "Modify §HAmerican People's Navy§!b
 CSA_navy_of_new_age_tooltip_continental_navy:0 "Modify §HThe Second Continental Navy§!by\n$MODIFIER_NAVAL_COORDINATION$: [?0.05|+=%0]\n$naval_doctrine_research$: [?0.15|+=%0]"
 CSA_navy_of_new_age_tooltip_peoples_navy:0 "Modify §HAmerican People's Navy§!by\n$MODIFIER_NAVAL_COORDINATION$: [?0.05|+=%0]\n$naval_doctrine_research$: [?0.15|+=%0]"
 modifier_repair_speed_fuel_silo_factor:0 "£repairing Fuel Silo Repair Speed"
+
+#KR_Commonly_Used_l_english.yml
+offmap_military_factories_tooltip: "£mil_factory  Offmap Military Factories"
+offmap_civilian_factories_tooltip: "£civ_factory  Offmap Civilian Factories"
+offmap_dockyards_tooltip: "£dockyard_texticon  Offmap Dockyards"
+daily_popularity_drift: "£boost_popularity_texticon  Daily Ruling Party Support"
+daily_non_ruling_popularity_drift: "£boost_popularity_texticon  Daily Non-Ruling Party Support"
+
+cic_from_target_factor_tooltip: "£civ_factory  Civilian industry from target country"
+mic_from_target_factor_tooltip: "£mil_factory  Military industry from target country"
 
 #KR_Constitutional_States_of_America_l_english
 experience_gain_artillery_training_factor:0 "£experience_neutral_training_texticon  Artillery Training Experience Gain"
@@ -658,10 +671,41 @@ TRM_zaibatsu_investments_tt:0 "Modify §HJapanese Dependence§! by\n$MODIFIER_PR
 #KR_Two_Sicilies_l_english
 SIC_asymmetrical_warfare_effect:0 "Enables §HUrban Warfare Training§!\n§HLeg Infantry\n    Urban§!\n      $STAT_ADJUSTER_ATTACK$§G+10%§!\n      $STAT_ADJUSTER_DEFENCE$§G+5%§!\n      $STAT_ADJUSTER_MOVEMENT$§G+5%§!"
 
+#KR_Ukraine_l_english
+ UKR_Public_Housing_1_tt: "Modify §Y$UKR_red_kyiv$§! by:\n$MODIFIER_POLITICAL_POWER_COST: [?0.05|=%-]\n$stability_good_modifier: [?0.02|=%+]"
+ UKR_Public_Housing_2_tt: "Modify §Y$UKR_red_kyiv$§! by:\n$MODIFIER_POLITICAL_POWER_COST: [?-0.05|=%-]\n$stability_good_modifier: [?0.02|=%+]\n£boost_popularity_texticon  Daily USDRP Support: [?0.02|=%+]\n£population_texticon  Kyiv Monthly Population: [?0.3|=%+]"
+ UKR_Public_Housing_2_1_tt: "Modify §Y$UKR_red_kyiv$§! by:\n£population_texticon  Kyiv Monthly Population: [?0.15|=%+]\n$MODIFIER_LOCAL_FACTORIES: [?0.2|=%+]\n$MODIFIER_LOCAL_RESOURCES: [?0.2|=%+]\n$MODIFIER_LOCAL_SUPPLIES: [?0.1|=%+]"
+ UKR_Housing_Protection_Bill_tt: "Modify §Y$UKR_red_kyiv$§! by:\n$MODIFIER_POLITICAL_POWER_COST: [?0.02|=%-]\n$stability_good_modifier: [?-0.05|=%+]\n£boost_popularity_texticon  Daily USDRP Support: [?0.01|=%+]"
+ UKR_Raise_Social_Expenditures_tt: "Modify §Y$UKR_red_kyiv$§! by:\n£population_texticon  Kyiv Monthly Population: [?0.25|=%+]\n$MODIFIER_LOCAL_RESOURCES: [?0.1|=%+]\n$MODIFIER_LOCAL_SUPPLIES: [?0.25|=%+]"
+ UKR_Launch_The_First_Trolleybus_Line_tt: "Modify §Y$UKR_red_kyiv$§! by:\n$MODIFIER_LOCAL_RESOURCES: [?-0.15|=%+]\n$MODIFIER_LOCAL_SUPPLIES: [?0.15|=%+]"
+ UKR_Open_Shevchenko_State_Art_School_tt: "Modify §Y$UKR_red_kyiv$§! by:\n$MODIFIER_POLITICAL_POWER_COST: [?-0.02|=%-]\n$stability_good_modifier: [?0.02|=%+]\n£boost_popularity_texticon  Daily USDRP Support: [?0.02|=%+]"
+ UKR_Karl_Marx_Monument_tt: "Modify §Y$UKR_red_kyiv$§! by:\n£boost_popularity_texticon  Daily USDRP Support: [?0.02|=%+]"
+ UKR_Metro_Construction_tt: "Modify §Y$UKR_red_kyiv$§! by:\n$MODIFIER_POLITICAL_POWER_COST: [?0.02|=%-]\n$stability_good_modifier: [?0.04|=%+]"
+ UKR_Navodnytskyi_Mist_tt: "Modify §Y$UKR_red_kyiv$§! by:\n$MODIFIER_LOCAL_FACTORIES [?0.25|=%+]\n$MODIFIER_LOCAL_SUPPLIES: [?0.3|=%+]"
+ UKR_Great_Constructions_full_tt_1: "Modify §Y$UKR_red_kyiv$§! by:\n$MODIFIER_POLITICAL_POWER_COST: [?0.08|=%-]\n$stability_good_modifier: [?-0.2|=%+]"
+ UKR_Great_Constructions_full_tt: "Modify §Y$UKR_red_kyiv$§! by:\n$MODIFIER_POLITICAL_POWER_COST: [?-0.05|=%-]\n$stability_good_modifier: [?0.2|=%+]\n(§Y[202.GetName]§!):\n$MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR: [?0.1|=%+0]\n$MODIFIER_LOCAL_FACTORIES: [?0.25|=%+]\n£population_texticon  Kyiv Monthly Population: [?0.25|=%+]\n$MODIFIER_LOCAL_RESOURCES: [?0.15|=%+]\n$MODIFIER_LOCAL_SUPPLIES: [?0.15|=%+]"
+ UKR_Great_Constructions_moderate_tt_1: "Modify §Y$UKR_red_kyiv$§! by:\n$MODIFIER_POLITICAL_POWER_COST: [?0.04|=%-]\n$stability_good_modifier: [?-0.15|=%+]"
+ UKR_Great_Constructions_moderate_tt: "Modify §Y$UKR_red_kyiv$§! by:\n$MODIFIER_POLITICAL_POWER_COST: [?-0.02|=%-]\n$stability_good_modifier: [?0.05|=%+]\n(§Y[202.GetName]§!):\n$MODIFIER_LOCAL_FACTORIES: [?0.15|=%+]\n£population_texticon  Kyiv Monthly Population: [?0.15|=%+]\n$MODIFIER_LOCAL_RESOURCES: [?0.05|=%+]\n$MODIFIER_LOCAL_SUPPLIES: [?0.05|=%+]"
+ UKR_Green_City_tt: "Modify §Y$UKR_red_kyiv$§! by:\n$MODIFIER_POLITICAL_POWER_COST: [?-0.02|=%-]\n(§Y[202.GetName]§!):\n$MODIFIER_LOCAL_FACTORIES: [?-0.25|=%+]\n£population_texticon  Kyiv Monthly Population: [?0.2|=%+]\n$MODIFIER_LOCAL_RESOURCES: [?0.3|=%+]\n$MODIFIER_LOCAL_SUPPLIES: [?-0.15|=%+]"
+ UKR_Karakis_tt: "Modify §Y$UKR_red_kyiv$§! by:\n$MODIFIER_POLITICAL_POWER_COST: [?-0.05|=%-]"
+ UKR_Karakis_2_tt: "Modify §Y$UKR_red_kyiv$§! by:\n(§Y[202.GetName]§!):\n$MODIFIER_LOCAL_RESOURCES: [?0.05|=%+]\n$MODIFIER_LOCAL_SUPPLIES: [?-0.05|=%+]"
+ UKR_Karakis_3_tt: "Modify §Y$UKR_red_kyiv$§! by:\n£boost_popularity_texticon  Daily USDRP Support: [?0.02|=%+]\n£population_texticon  Kyiv Monthly Population: [?0.1|=%+]"
+ UKR_Karakis_4_tt: "Modify §Y$UKR_red_kyiv$§! by:\n(§Y[202.GetName]§!):\n$MODIFIER_LOCAL_SUPPLIES: [?0.05|=%+]"
+ UKR_red_kyiv_desc: "Kyiv is changing. With the victory of Chekhivskyi’s social-democratic bloc in Kyivrada elections, the city experiences major reforms, considering public housing, landscaping and modernization.\n§W--------------\n$MODIFIER_POLITICAL_POWER_COST: [?UKR_red_kyiv_pp|=%-]\n$stability_good_modifier: [?UKR_red_kyiv_stability|=%+]\n£boost_popularity_texticon  Daily USDRP Support: [GetRedKyivUSDRPSupport]\n$MODIFIER_WEEKLY_MANPOWER: [?UKR_red_kyiv_weekly_manpower|=+0]\n(§Y[202.GetName]§!):\n$MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR: [?UKR_red_kyiv_state_building_slots|=%+0]\n[GetRedKyivLocalFactories][GetRedKyivLocalManpower][GetRedKyivLocalResources][GetRedKyivLocalSupplies]"
+ UKR_red_kyiv_state_modifier: "£pol_idea  Red Kyiv\n§WKyiv is changing. With the victory of Chekhivskyi’s social-democratic bloc in Kyivrada elections, the city experiences major reforms, considering public housing, landscaping and modernization.\n--------------\n$MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR: [?UKR_red_kyiv_state_building_slots|=%+0]\n[GetRedKyivLocalFactories][GetRedKyivLocalManpower][GetRedKyivLocalResources][GetRedKyivLocalSupplies]"
+ UKR_red_kyiv_lf_text: "$MODIFIER_LOCAL_FACTORIES: [?UKR_red_kyiv_state_local_factories|=%+0]\n"
+ UKR_red_kyiv_lf_text_last: "$MODIFIER_LOCAL_FACTORIES: [?UKR_red_kyiv_state_local_factories|=%+0]"
+ UKR_red_kyiv_lm_text: "£population_texticon  Kyiv Monthly Population: [?UKR_red_kyiv_state_local_manpower|=%+0]\n"
+ UKR_red_kyiv_lm_text_last: "£population_texticon  Kyiv Monthly Population: [?UKR_red_kyiv_state_local_manpower|=%+0]"
+ UKR_red_kyiv_lr_text: "$MODIFIER_LOCAL_RESOURCES: [?UKR_red_kyiv_state_local_resources|=%+0]\n"
+ UKR_red_kyiv_lr_text_last: "$MODIFIER_LOCAL_RESOURCES: [?UKR_red_kyiv_state_local_resources|=%+0]"
+ UKR_red_kyiv_ls_text_last: "$MODIFIER_LOCAL_SUPPLIES: [?UKR_red_kyiv_state_local_supplies|=%+0]"
+ 
+
 #KR_United_Kingdom_l_english
-GBR_postwar_devastation_idea_desc:0 "After so many battles fought on British soil, the economy has been devastated. Worse than the actual destruction is the tatters of a syndicalist economic system which has been hastily discarded, and yet with nothing to replace it. Britons will go through a period of hardship and readjustment, and it will not be easy.\n§W--------------\n$MODIFIER_CONSUMER_GOODS_FACTOR$: [?GBR.GBR_consumer_goods_adj|=%+]\n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: [?GBR.GBR_factory_adj|=%+]\n$MODIFIER_INDUSTRIAL_CAPACITY_DOCKYARD_FACTOR$: [?GBR.GBR_dockyards_adj|=%+]\n$MODIFIER_LOCAL_RESOURCES$: [?GBR.GBR_resources_adj|=%+]\n$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: [?GBR.GBR_construction_adj|=%+]§!"
-GBR_legacy_revolution_idea_desc:0 "There is more than the economy to rebuild in Britain - there is the very fabric of society. The young have never known anything other than syndicalism, and many of the older generation supported the revolution - or look on the returning Exiles as cowards who fled instead of staying and fighting. Trust must be restored, and it will take time and effort.\n§W--------------\n$MODIFIER_STABILITY_WEEKLY$: [?GBR.GBR_weekly_stab_adj|=%+]\n$MODIFIER_POLITICAL_POWER_COST$: [?GBR.GBR_pp_cost_adj|=%+]\n$MODIFIER_CONSCRIPTION_TOTAL_FACTOR$: [?GBR.GBR_consc_adj|=%+]§!"
-GBR_syndicalist_resistance_idea_desc:0 "Most of the syndicalists in Britain are tired of fighting... but give them enough cause to be angry, to believe that the return of the king means that everything - including the injustices - will be just as it was? And we may very well be facing a return to the violence which heralded the 1925 uprising.\n§W--------------\n$stability_good_modifier$: [?GBR.GBR_stab_factor_adj|=%+]§!"
+GBR_postwar_devastation_idea_desc:0 "After so many battles fought on British soil, the economy has been devastated. Worse than the actual destruction is the tatters of a syndicalist economic system which has been hastily discarded, and yet with nothing to replace it. Britons will go through a period of hardship and readjustment, and it will not be easy.\n§W--------------\n$MODIFIER_CONSUMER_GOODS_FACTOR$: [?GBR_consumer_goods_adj|=%+]\n$MODIFIER_INDUSTRIAL_CAPACITY_FACTOR$: [?GBR_factory_adj|=%+]\n$MODIFIER_INDUSTRIAL_CAPACITY_DOCKYARD_FACTOR$: [?GBR_dockyards_adj|=%+]\n$MODIFIER_LOCAL_RESOURCES$: [?GBR_resources_adj|=%+]\n$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: [?GBR_construction_adj|=%+]§!"
+GBR_legacy_revolution_idea_desc:0 "There is more than the economy to rebuild in Britain - there is the very fabric of society. The young have never known anything other than syndicalism, and many of the older generation supported the revolution - or look on the returning Exiles as cowards who fled instead of staying and fighting. Trust must be restored, and it will take time and effort.\n§W--------------\n$MODIFIER_STABILITY_WEEKLY$: [?GBR_weekly_stab_adj|=%+]\n$MODIFIER_POLITICAL_POWER_COST$: [?GBR_pp_cost_adj|=%+]\n$MODIFIER_CONSCRIPTION_TOTAL_FACTOR$: [?GBR_consc_adj|=%+]§!"
+GBR_syndicalist_resistance_idea_desc:0 "Most of the syndicalists in Britain are tired of fighting... but give them enough cause to be angry, to believe that the return of the king means that everything - including the injustices - will be just as it was? And we may very well be facing a return to the violence which heralded the 1925 uprising.\n§W--------------\n$stability_good_modifier$: [?GBR_stab_factor_adj|=%+]§!"
 
 #KR_United_States_of_America_l_english
 modifier_experience_gain_armored_car_training_factor:1 "£experience_neutral_training_texticon  Armored Car Training Experience Gain"
@@ -723,3 +767,25 @@ NFA_Colonel_TRAITS:0 "§YThe Colonel§!\n- $stability_good_modifier$: §G+5.00%�
 NFA_Bull_TRAITS:0 "§YThe Bull§!\n- $MODIFIER_POLITICAL_POWER_GAIN$: §G+15.00%§!"
 
 GAMELIN_TRAITS:0 "§YThe Marshal§!\n- $MODIFIER_RECRUITABLE_POPULATION_FACTOR$: §G+5.00%§!\n- $MODIFIER_TRAINING_TIME_ARMY$: §G-5.00%§!"
+
+#KX_unit_l_english
+modifier_army_sub_unit_irregular_cavalry_attack_factor:0 "£attack_irregular_cavalry_texticon  Irregular Cavalry Attack"
+modifier_army_sub_unit_irregular_cavalry_defence_factor:0 "£defence_irregular_cavalry_texticon  Irregular Cavalry Defence"
+modifier_army_sub_unit_irregular_cavalry_speed_factor:0 "£speed_irregular_cavalry_texticon  Irregular Cavalry Speed"
+modifier_army_sub_unit_irregular_cavalry_max_org_factor:0 "£organisation_irregular_cavalry_texticon  Irregular Cavalry Organization"
+modifier_unit_irregular_cavalry_design_cost_factor:0 "£design_irregular_cavalry_texticon  Irregular Cavalry Design Cost"
+
+modifier_army_sub_unit_elite_infantry_attack_factor:0 "£attack_elite_infantry_texticon  Elite Infantry Attack"
+modifier_army_sub_unit_elite_infantry_defence_factor:0 "£defence_elite_infantry_texticon  Elite Infantry Defence"
+modifier_army_sub_unit_elite_infantry_speed_factor:0 "£speed_elite_infantry_texticon  Elite Infantry Speed"
+modifier_army_sub_unit_elite_infantry_max_org_factor:0 "£organisation_elite_infantry_texticon  Elite Infantry Organization"
+
+modifier_army_sub_unit_category_bicycle_battalion_attack_factor:0 "£attack_bicycle_texticon  Bicycle Attack"
+modifier_army_sub_unit_category_bicycle_battalion_defence_factor:0 "£defence_bicycle_texticon  Bicycle Defence"
+modifier_army_sub_unit_category_bicycle_battalion_speed_factor:0 "£speed_bicycle_texticon  Bicycle Speed"
+
+modifier_army_sub_unit_category_mobile_infantry_attack_factor:0 "£attack_cavalry_texticon  Cav/Mot/Mech Attack"
+modifier_army_sub_unit_category_mobile_infantry_defence_factor:0 "£defence_cavalry_texticon  Cav/Mot/Mech Defence"
+modifier_army_sub_unit_category_mobile_infantry_speed_factor:0 "£speed_cavalry_texticon  Cav/Mot/Mech Speed"
+
+modifier_experience_gain_anti_tank_brigade_combat_factor: "£experience_neutral_combat_texticon  $anti_tank_brigade$ Combat Experience Gain"
