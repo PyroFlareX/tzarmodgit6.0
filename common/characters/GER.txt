@@ -1,9 +1,9 @@
 characters={
 	GER_adolf_hitler={
 		name="Adolf Hitler"
-		portraits={
-			civilian={
-				large="gfx/leaders/GER/Portrait_Germany_Adolf_Hitler.dds"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_GER_adolf_hitler
 			}
 		}
 		country_leader={

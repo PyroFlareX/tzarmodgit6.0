@@ -1,3 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 *.txt text eol=crlf
+*.gui text eol=crlf
