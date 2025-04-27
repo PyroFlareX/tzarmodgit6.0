@@ -1,7 +1,7 @@
 technologies = {
 
 	gw_artillery = {
-		special_project_specialization = { specialization_land }
+
 		enable_equipments = {
 			artillery_equipment_1
 		}
@@ -58,7 +58,7 @@ technologies = {
 	}
 	
 	interwar_artillery = {
-		special_project_specialization = { specialization_land }
+
 		artillery = {
 			soft_attack = 0.1
 			breakthrough = 0.1
@@ -117,7 +117,7 @@ technologies = {
 	}
 	
 	artillery1 = {
-		special_project_specialization = { specialization_land }
+	
 		enable_equipments = {
 			artillery_equipment_2
 		}
@@ -173,7 +173,7 @@ technologies = {
 	}
 	
 	artillery2 = {
-		special_project_specialization = { specialization_land }
+
 		enable_equipment_modules = {
 			tank_heavy_howitzer
 		}
@@ -234,7 +234,6 @@ technologies = {
 	}
 	
 	artillery3 = {
-		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {
 			hesh_ammo_2
 		}
@@ -288,7 +287,7 @@ technologies = {
 	}
 	
 	artillery4 = {
-		special_project_specialization = { specialization_land }
+	
 		enable_equipments = {
 			artillery_equipment_3
 		}
@@ -359,7 +358,7 @@ technologies = {
 	}
 	
 	artillery5 = {
-		special_project_specialization = { specialization_land }
+
 		artillery = {
 			soft_attack = 0.1
 			breakthrough = 0.1
@@ -436,7 +435,7 @@ technologies = {
 		}
 	}
 	mountain_gun = {
-		
+
 		research_cost = 1
 
 		# only from focus!!! #####
@@ -490,7 +489,7 @@ technologies = {
 	# }
 	
 	rocket_artillery = {
-		special_project_specialization = { specialization_air }
+
 		enable_equipments = {
 			rocket_artillery_equipment_1
 		}
@@ -530,7 +529,7 @@ technologies = {
 	}
 	
 	rocket_artillery2 = {
-		special_project_specialization = { specialization_air }
+
 		rocket_artillery = {
 			soft_attack = 0.15
 			breakthrough = 0.15
@@ -583,7 +582,7 @@ technologies = {
 	}
 	
 	rocket_artillery3 = {
-		special_project_specialization = { specialization_air }
+
 		rocket_artillery = {
 			soft_attack = 0.15
 			breakthrough = 0.15
@@ -634,7 +633,7 @@ technologies = {
 	}
 	
 	rocket_artillery4 = {
-		special_project_specialization = { specialization_air }
+	
 		enable_equipments = {
 			rocket_artillery_equipment_2
 		}
@@ -694,7 +693,7 @@ technologies = {
 	}
 	
 	interwar_antiair = {
-		special_project_specialization = { specialization_land }
+
 		enable_equipments = {
 			anti_air_equipment_1
 		}
@@ -731,7 +730,6 @@ technologies = {
 	}
 	
 	antiair1 = {
-		special_project_specialization = { specialization_land }
 		anti_air = {
 			air_attack = 0.08
 		}
@@ -777,7 +775,6 @@ technologies = {
 	}
 	
 	antiair2 = {
-		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {
 			apcr_ammo_2
 		}
@@ -818,7 +815,7 @@ technologies = {
 	}
 	
 	antiair3 = {
-		special_project_specialization = { specialization_land }
+
 		anti_air = {
 			air_attack = 0.08
 		}
@@ -864,7 +861,7 @@ technologies = {
 	}
 
 	antiair3_5 = {
-		special_project_specialization = { specialization_land }
+		
 		anti_air = {
 			air_attack = 0.08
 		}
@@ -910,7 +907,7 @@ technologies = {
 	}
 	
 	antiair4 = {
-		special_project_specialization = { specialization_land }
+
 		anti_air = {
 			air_attack = 0.08
 		}
@@ -956,7 +953,7 @@ technologies = {
 	}
 	
 	antiair5 = {
-		special_project_specialization = { specialization_land }
+
 		enable_equipments = {
 			anti_air_equipment_3
 		}
@@ -1005,7 +1002,7 @@ technologies = {
 	}
 	
 	interwar_antitank = {
-		special_project_specialization = { specialization_land }
+
 		enable_equipments = {
 			anti_tank_equipment_1
 		}
@@ -1038,7 +1035,7 @@ technologies = {
 	}
 	
 	antitank1 = {
-		special_project_specialization = { specialization_land }
+
 		anti_tank = {
 			hard_attack = 0.05 
 			breakthrough = 0.08
@@ -1096,7 +1093,7 @@ technologies = {
 	}
 	
 	antitank2 = {
-		special_project_specialization = { specialization_land }	
+		
 		# mot_anti_tank_brigade = {
 		# 	hard_attack = 0.08
 		# 	breakthrough = 0.08
@@ -1143,7 +1140,6 @@ technologies = {
 	}
 	
 	antitank3 = {
-		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {
 			# tank_medium_cannon_2
 		}
@@ -1202,7 +1198,6 @@ technologies = {
 	}
 
 	antitank3_5 = {
-		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {
 			hvap_ammo_2
 		}
@@ -1260,7 +1255,7 @@ technologies = {
 	}
 	
 	antitank4 = {
-		special_project_specialization = { specialization_land }
+
 		anti_tank = {
 			hard_attack = 0.05
 			breakthrough = 0.05
@@ -1315,7 +1310,7 @@ technologies = {
 	}
 	
 	antitank5 = {
-		special_project_specialization = { specialization_land }	
+			
 		enable_equipments = {
 			anti_tank_equipment_3
 		}	

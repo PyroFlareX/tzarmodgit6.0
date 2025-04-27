@@ -2,6 +2,7 @@ version="1"
 tags={
 	"Alternative History"
 }
+replace_path="map/strategicregions"
 replace_path="history/countries"
 replace_path="history/states"
 replace_path="common/national_focus"

@@ -1,4 +1,0 @@
-special_project_specialization = { specialization_naval }
-special_project_specialization = { specialization_land }
-special_project_specialization = { specialization_air }
-special_project_specialization = { specialization_nuclear }
