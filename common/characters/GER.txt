@@ -1286,9 +1286,10 @@ characters={
 
 	GER_joseph_goebbels={
 		name=GER_joseph_goebbels
-		portraits={
-			army={
-				small="GFX_idea_joseph_goebbels"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_GER_joseph_goebbels
+				small = GFX_portrait_GER_joseph_goebbels_small
 			}
 		}
 		advisor={
@@ -1323,9 +1324,10 @@ characters={
 
 	GER_rudolf_hess={
 		name=GER_rudolf_hess
-		portraits={
-			army={
-				small="GFX_idea_rudolf_hess"
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_rudolf_hess
+				small = GFX_portrait_GER_rudolf_hess_small
 			}
 		}
 		advisor={
@@ -1348,13 +1350,13 @@ characters={
 
 	GER_heinrich_himmler={
 		name=GER_heinrich_himmler
-		portraits={
-			army={
-				small="GFX_idea_heinrich_himmler"
-				large="gfx/leaders/GER/Portrait_Germany_Heinrich_Himmler.dds"
+		portraits = {
+			army = {
+				small = GFX_portrait_GER_heinrich_himmler_small
+				large = GFX_portrait_GER_heinrich_himmler
 			}
 			civilian = {
-				large="gfx/leaders/GER/Portrait_Germany_Heinrich_Himmler.dds"
+				large = GFX_portrait_GER_heinrich_himmler
 			}
 		}
 		allowed_civil_war = {

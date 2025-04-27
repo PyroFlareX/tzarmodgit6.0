@@ -53,8 +53,8 @@ buildings = {
 
 	arms_factory = {
 		show_on_map = 6
-		base_cost = 7200
-		base_cost_conversion = 4000
+		base_cost = 8600
+		base_cost_conversion = 5200
 		military_production = 1
 		disabled_in_dmz = yes
 		icon_frame = 2
@@ -68,8 +68,8 @@ buildings = {
 
 	industrial_complex = {
 		show_on_map = 6
-		base_cost = 10800
-		base_cost_conversion = 9000
+		base_cost = 12600
+		base_cost_conversion = 10500
 		general_production = 1
 		icon_frame = 1
 		value = 5
@@ -82,7 +82,7 @@ buildings = {
 
 	air_base = {
 		show_on_map = 1
-		base_cost = 1250
+		base_cost = 800
 		icon_frame = 5
 		air_base = yes
 		value = 1
@@ -96,7 +96,7 @@ buildings = {
 
 	supply_node = {
 		show_on_map = 1
-		base_cost = 20000
+		base_cost = 8000
 		disabled_in_dmz = yes
 		icon_frame = 15
 		centered = yes
