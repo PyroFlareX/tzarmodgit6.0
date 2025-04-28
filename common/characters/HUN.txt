@@ -2,8 +2,12 @@ characters={
 	HUN_miklos_horthy={
 		name="Miklós Horthy"
 		portraits={
+			navy={
+				large="GFX_Portrait_hungary_miklos_horthy_admiral"
+				small="GFX_idea_HUN_miklos_horthy_admiral"
+			}
 			civilian={
-				large="gfx/leaders/HUN/Portrait_Hungary_Miklos_Horthy.dds"
+				large="GFX_Portrait_hungary_miklos_horthy"
 			}
 		}
 		country_leader={
@@ -38,6 +42,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_HUN_ferenc_szombathelyi"
+				large="GFX_Portrait_hungary_ferenc_szombathelyi"
 			}
 		}
 		advisor={
@@ -61,6 +66,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_HUN_bela_rakosi"
+				large="GFX_Portrait_hungary_bela_rakosi"
 			}
 		}
 		advisor={
@@ -85,6 +91,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_HUN_gusztav_jany"
+				large="GFX_Portrait_hungary_gusztav_jany"
 			}
 		}
 		advisor={
@@ -109,6 +116,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_HUN_henrik_werth"
+				large="GFX_Portrait_hungary_henrik_werth"
 			}
 		}
 		advisor={
@@ -136,6 +144,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_HUN_kalman_kanya"
+				large="GFX_Portrait_hungary_kalman_kanya"
 			}
 		}
 		advisor={
@@ -155,6 +164,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_HUN_lajos_remenyi_schneller"
+				large="GFX_Portrait_hungary_lajos_remenyi_schneller"
 			}
 		}
 		advisor={
@@ -175,6 +185,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_HUN_kalman_daranyi"
+				large="GFX_Portrait_hungary_kalman_daranyi"
 			}
 		}
 		advisor={
@@ -194,6 +205,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_HUN_zoltan_tildy"
+				large="GFX_Portrait_hungary_zoltan_tildy"
 			}
 		}
 		advisor={
@@ -217,9 +229,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_HUN_vilmos_roder"
-			}
-			army={
-				large="gfx/leaders/HUN/Portrait_HUN_Vilmos_Roder.tga"
+				large="GFX_Portrait_hungary_vilmos_roder"
 			}
 		}
 		advisor={
@@ -247,9 +257,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_HUN_hugo_sonyi"
-			}
-			army={
-				large="gfx/leaders/HUN/Portrait_HUN_Hugo_Sonyi.tga"
+				large="GFX_Portrait_hungary_hugo_sonyi"
 			}
 		}
 		advisor={
@@ -281,9 +289,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_HUN_dezso_laszlo"
-			}
-			army={
-				large="gfx/leaders/HUN/Portrait_HUN_Dezso_Laszlo.tga"
+				large="GFX_Portrait_hungary_dezso_laszlo"
 			}
 		}
 		advisor={
@@ -316,7 +322,7 @@ characters={
 		name="Mátyás Rákosi"
 		portraits={
 			civilian={
-				large="gfx/leaders/HUN/Portrait_Hungary_Matyas_Rakoski.dds"
+				large="GFX_Portrait_hungary_matyas_rakosi"
 			}
 		}
 		country_leader={
@@ -330,7 +336,7 @@ characters={
 		name="Árpád Szakasits"
 		portraits={
 			civilian={
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+				large="GFX_Portrait_hungary_arpad_szakasits"
 			}
 		}
 		country_leader={
@@ -345,8 +351,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_Portrait_hungary_geza_lakatos_small"
-			}
-			army={
 				large="GFX_Portrait_hungary_geza_lakatos"
 			}
 		}
@@ -365,8 +369,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_Portrait_hungary_ivan_hindy_small"
-			}
-			army={
 				large="GFX_Portrait_hungary_ivan_hindy"
 			}
 		}
@@ -385,8 +387,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_Portrait_hungary_karoly_beregfy_small"
-			}
-			army={
 				large="GFX_Portrait_hungary_karoly_beregfy"
 			}
 		}
@@ -405,8 +405,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_Portrait_hungary_lajos_veress_small"
-			}
-			army={
 				large="GFX_Portrait_hungary_lajos_veress"
 			}
 		}
@@ -424,10 +422,8 @@ characters={
 		name="Bela Miklos"
 		portraits={
 			army={
-				small=""
-			}
-			army={
-				large="gfx/leaders/HUN/Portrait_HUN_Bela_Miklos.tga"
+				small="GFX_Portrait_hungary_bela_miklos_small"
+				large="GFX_Portrait_hungary_bela_miklos"
 			}
 		}
 		corps_commander={
@@ -444,10 +440,8 @@ characters={
 		name="Gusztav Denk"
 		portraits={
 			army={
-				small=""
-			}
-			army={
-				large="gfx/leaders/HUN/Portrait_HUN_Gusztav_Denk.tga"
+				small="GFX_Portrait_hungary_gusztav_denk_small"
+				large="GFX_Portrait_hungary_gusztav_denk"
 			}
 		}
 		corps_commander={
@@ -464,10 +458,8 @@ characters={
 		name="Janky Kocsard"
 		portraits={
 			army={
-				small=""
-			}
-			army={
-				large="gfx/leaders/HUN/Portrait_HUN_Janky_Kocsard.tga"
+				small="GFX_Portrait_hungary_janky_kocsard_small"
+				large="GFX_Portrait_hungary_janky_kocsard"
 			}
 		}
 		corps_commander={
@@ -484,10 +476,8 @@ characters={
 		name="Jany Gusztav"
 		portraits={
 			army={
-				small=""
-			}
-			army={
-				large="gfx/leaders/HUN/Portrait_HUN_Jany_Gusztav.tga"
+				small="GFX_Portrait_hungary_jany_gusztav_small"
+				large="GFX_Portrait_hungary_jany_gusztav"
 			}
 		}
 		corps_commander={
@@ -504,10 +494,8 @@ characters={
 		name="Hugo Miklos"
 		portraits={
 			army={
-				small=""
-			}
-			army={
-				large="gfx/leaders/HUN/Portrait_Romania_Constantin_Pantazi.tga"
+				small="GFX_Portrait_hungary_hugo_miklos_small"
+				large="GFX_Portrait_hungary_hugo_miklos"
 			}
 		}
 		corps_commander={
@@ -525,8 +513,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_Portrait_hungary_ferenc_feketehalmy_czeydner_small"
-			}
-			army={
 				large="GFX_Portrait_hungary_ferenc_feketehalmy_czeydner"
 			}
 		}
@@ -559,10 +545,8 @@ characters={
 		name="Szilard Bakay"
 		portraits={
 			army={
-				small=""
-			}
-			army={
-				large="gfx/leaders/HUN/Portrait_HUN_Szilard_Bakay.tga"
+				small="GFX_Portrait_hungary_szilard_bakay_small"
+				large="GFX_Portrait_hungary_szilard_bakay"
 			}
 		}
 		corps_commander={
@@ -579,10 +563,8 @@ characters={
 		name="Vilmos Nagy de Nagybaczon"
 		portraits={
 			army={
-				small=""
-			}
-			army={
-				large="gfx/leaders/HUN/Portrait_HUN_Vilmos_Nagy_de_Nagybaczon.tga"
+				small="GFX_Portrait_hungary_vilmos_nagy_de_nagybaczon_small"
+				large="GFX_Portrait_hungary_vilmos_nagy_de_nagybaczon"
 			}
 		}
 		field_marshal={
