@@ -111,6 +111,14 @@ focus_tree = {
 						instant_build = yes						
 					}
 		}
+		252 = {
+			add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
+		}
+
 		223 = {
 			add_building_construction = {
 						type = infrastructure
@@ -118,6 +126,20 @@ focus_tree = {
 						instant_build = yes						
 					}
 		}
+		251 = {
+			add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
+		}
+		}
+		214 {
+			add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
 		}
 	}
 
@@ -694,9 +716,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 } #Add efficiency gain
-			add_to_variable = { SOV_fyp_production_factory_start_efficiency_factor = 0.05 } #Add efficiency start
-			add_to_variable = { SOV_fyp_industrial_capacity_factory = 0.02 } #Add small output bonus
+			add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.1 } 
+			add_to_variable = { SOV_fyp_production_factory_start_efficiency_factor = 0.05 } 
+			add_to_variable = { SOV_fyp_industrial_capacity_factory = 0.05 }
 			custom_effect_tooltip = SOV_optimize_production_lines_ns_tt
 
 			add_tech_bonus = {
@@ -3700,7 +3722,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = SOV_operation_bagration
-				days = 30
+				days = 45
 			}
 		}
 	}
@@ -3724,7 +3746,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = SOV_operation_little_saturn
-				days = 30
+				days = 45
 			}
 		}
 	}
@@ -3748,7 +3770,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = SOV_operation_uranus
-				days = 30
+				days = 45
 			}
 		}
 	}
@@ -3791,9 +3813,9 @@ focus_tree = {
 		completion_reward = {
 			
 			add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 32000  } 
-			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500  } 
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500  } 	
 			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 800  } 
-			add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 1250  }
+			add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 1500 }
 			add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 3460  }  
 
 		}
@@ -4234,7 +4256,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { SOV_the_politburo_good_consumer_goods_factor = -0.15 }
-			add_to_variable = { SOV_the_politburo_production_speed_buildings_factor = 0.05 } 
+			add_to_variable = { SOV_the_politburo_production_speed_buildings_factor = 0.075 } 
 			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
 			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
 
@@ -4446,10 +4468,10 @@ focus_tree = {
 
 			add_political_power = 50
 			217 = {
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 6
 					add_building_construction = {
 						type = arms_factory
-						level = 4
+						level = 6
 						instant_build = yes
 					}
 				}
@@ -4956,10 +4978,10 @@ focus_tree = {
 			if = {
 				limit = {MON = {exists = yes}}
 				330 = {
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 16
 				add_building_construction = {
 					type = arms_factory
-					level = 8
+					level = 16
 					instant_build = yes
 				}
 			}

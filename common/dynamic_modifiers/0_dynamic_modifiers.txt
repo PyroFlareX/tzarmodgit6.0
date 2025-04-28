@@ -760,7 +760,7 @@ SOV_defense_industry_dynamic_modifier = { #NATIONAL SPIRIT
 	conversion_cost_civ_to_mil_factor = SOV_defense_industry_conversion_cost_civ_to_mil_factor #-0.2
 	production_factory_max_efficiency_factor = SOV_defense_industry_production_factory_max_efficiency_factor #0.05
 	production_factory_efficiency_gain_factor = SOV_defense_industry_production_factory_efficiency_gain_factor #-0.05
-	line_change_production_efficiency_factor = SOV_defense_industry_line_change_production_efficiency_factor #-0.1
+	line_change_production_efficiency_factor = SOV_defense_industry_line_change_production_efficiency_factor #-0.05
 
 	#FUTURE
 	tank_manufacturer_cost_factor = SOV_defense_industry_tank_manufacturer_cost_factor #-0.25 -> Tank Designer focus

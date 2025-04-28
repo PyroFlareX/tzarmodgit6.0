@@ -119,10 +119,11 @@ ideas = {
 			modifier = {
 				# army_armor_attack_factor = 0.075
 				# army_infantry_attack_factor = 0.05
-				army_armor_attack_factor = 0.025
-				army_infantry_attack_factor = 0.075
-				winter_attrition_factor = -0.8
+				army_armor_attack_factor = 0.15
+				army_infantry_attack_factor = 0.1
+				winter_attrition_factor = -0.85
 				acclimatization_cold_climate_gain_factor = 100.0
+				army_speed_factor = 0.2
 			}
 		}
 		shattered_retreat = {
@@ -175,7 +176,7 @@ ideas = {
 
 			picture = generic_acquire_tanks
 			modifier = {
-				army_armor_attack_factor = 0.05
+				army_armor_attack_factor = 0.1
 				army_infantry_attack_factor = 0.10
 				winter_attrition_factor = -0.8
 				acclimatization_cold_climate_gain_factor = 100.0
