@@ -22,6 +22,34 @@ ideas = {
 			removal_cost = -1			
 			
 		}
+		
+		ENG_Sudan_Buff = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				
+				army_morale_factor = 0.1
+				supply_node_range = 0.25
+				production_speed_air_base_factor=0.20
+				production_speed_infrastructure_factor=0.20
+				production_speed_supply_node_factor = 0.25
+				production_speed_rail_way_factor = 0.25
+				supply_consumption_factor = -0.1
+			}
+
+			picture = eng_special_air_service
+			
+			removal_cost = -1			
+			
+		}
+		
 		ENG_arty_nerf = {
 			allowed = {
 				always = no
@@ -37,8 +65,8 @@ ideas = {
 			
 			modifier = {
 				army_infantry_defence_factor = -0.04
-				army_armor_defence_factor = 0.08
-				army_armor_attack_factor = 0.08
+				army_armor_defence_factor = 0.14
+				army_armor_attack_factor = 0.14
 			}
 			research_bonus = {
 				artillery = -0.2

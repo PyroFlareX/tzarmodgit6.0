@@ -3077,11 +3077,44 @@ technology = improved_medium_airframe
 	}
 	
 	focus = {
+		id = ENG_Sudan_fall
+		available = { 
+			551 = { 
+						NOT = { is_controlled_by = ENG }
+					}
+			
+		}
+
+		continue_if_invalid = yes
+		prerequisite = { focus = ENG_chiefs_of_staff_committee }
+		icon = GFX_focus_eng_chiefs_of_staff_committee	
+		relative_position_id = ENG_operation_cum_pass
+		text = "Recover Sudan"
+		x = 0
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_timed_idea = { idea = ENG_operation_cumpass days = 180 }
+			
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+				}
+				add_timed_idea = { idea = ENG_operation_cumpass days = 180 }
+			}
+			FRF = { add_timed_idea = { idea = ENG_operation_cumpass days = 180 } }
+		}
+	}
+	
+	focus = {
 		id = ENG_Gib_Fell
 		#prerequisite = { focus = ENG_chiefs_of_staff_committee }	
 		icon = GFX_focus_attack_italy
 		x = 0
-		y = 3
+		y = 5
 		cost = 1
 		relative_position_id = ENG_chiefs_of_staff_committee
 		available = {

@@ -6,15 +6,15 @@ USA_landon_ll_to_eng = {
 		allowed = { original_tag = USA } 
 		available = {
 			#NOT = { has_country_flag = landon_supporting_minor }	
-			has_completed_focus = USA_lend_lease_act
+			has_completed_focus = USA_cash_and_carry
 			num_of_civilian_factories_available_for_projects > 54
 			}
 		fire_only_once = no
 		cost = 0
 		days_re_enable = 0
-		days_remove = 30
+		days_remove = 25
 		on_map_mode = map_and_decisions_view 
-		modifier = { civilian_factory_use = 40 } #44 is 80% of 55
+		modifier = { civilian_factory_use = 35 } #44 is 80% of 55
 		remove_effect = {
 			ENG = { random_core_state = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1  instant_build = yes } }  }
 			ENG = { random_core_state = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1  instant_build = yes } }  }		
@@ -29,7 +29,7 @@ USA_landon_ll_to_target_army = {
 		}
 		available = {
 			#NOT = { has_country_flag = landon_supporting_minor }	
-			has_completed_focus = USA_lend_lease_act
+			has_completed_focus = USA_cash_and_carry
 			num_of_civilian_factories_available_for_projects > 19
 			}
 		fire_only_once = no
@@ -58,7 +58,7 @@ USA_landon_ll_to_target_army = {
 		}
 		available = {	
 			#NOT = { has_country_flag = landon_supporting_minor }
-			has_completed_focus = USA_lend_lease_act
+			has_completed_focus = USA_cash_and_carry
 			num_of_civilian_factories_available_for_projects > 14
 			}
 		fire_only_once = no
@@ -85,7 +85,7 @@ USA_roosevelt_ll_to_target_inf  = {
 		}
 		available = {
 			NOT = { has_country_flag = roosevelt_supporting_minor }	
-			has_completed_focus = USA_lend_lease_act
+			has_completed_focus = USA_cash_and_carry
 			}
 		fire_only_once = no
 		cost = 0
@@ -112,7 +112,7 @@ USA_roosevelt_ll_to_target_armor  = {
 		}
 		available = {
 			NOT = { has_country_flag = roosevelt_supporting_minor }	
-			has_completed_focus = USA_lend_lease_act
+			has_completed_focus = USA_cash_and_carry
 			}
 		fire_only_once = no
 		cost = 0
