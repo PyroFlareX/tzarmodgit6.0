@@ -270,7 +270,7 @@ focus_tree = {
 			CHI = {
 			surrender_progress > 0.78
 			}
-			date > 1940.01.01
+			date > 1939.09.01
 		}
 		}
 
