@@ -1374,7 +1374,10 @@ focus = {
 
 		completion_reward = {
 				hidden_effect = {news_event = { id = Manhattan.1 days = 1 } }     
-			
+				add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 1.5
+			}
 			set_technology = { atomic_research = 1 }
 			
 		}

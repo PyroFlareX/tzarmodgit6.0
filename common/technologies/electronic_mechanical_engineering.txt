@@ -37,7 +37,9 @@ technologies = {
 		categories = {
 			electronics
 		}
+		special_project_specialization = { specialization_air specialization_nuclear }
 		
+
 
 	}
 	
@@ -379,6 +381,7 @@ technologies = {
 			electronics
 			computing_tech
 		}
+		special_project_specialization = { specialization_air specialization_nuclear }
 	}
 	
 	computing_machine = {
@@ -434,6 +437,7 @@ technologies = {
 			decryption_tech
 			computing_tech
 		}
+		special_project_specialization = { specialization_air specialization_nuclear }
 	}
 	
 	improved_computing_machine = {
@@ -496,6 +500,7 @@ technologies = {
 			decryption_tech
 			computing_tech
 		}
+		special_project_specialization = { specialization_air specialization_nuclear }
 	}
 	
 	advanced_computing_machine = {
@@ -625,7 +630,7 @@ technologies = {
 			nuclear
 		}
 		
-
+		special_project_specialization = { specialization_air specialization_nuclear }
 	}
 
 		nuclear_reactor = {

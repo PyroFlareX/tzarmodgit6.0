@@ -2930,7 +2930,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_desperate_measures
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = SOV_strengthen_the_mobilization_plan }
 		x = 0
 		y = 1
@@ -3466,8 +3466,8 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_mongolian_horses
-		text = "Aid to Our Allies"
-		icon = GFX_focus_SWI_issue_war_bonds
+		text = "Bolster Asian Alliance"
+		icon = GFX_focus_CHL_union_of_hispanic_republics
 		prerequisite = { focus = SOV_Siberian_troops }
 		x = 1
 		y = 4
@@ -3496,9 +3496,9 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_last_stand
-		icon = GFX_focus_generic_workers_and_farmers_rise
+		icon = GFX_focus_generic_spur_communist_revolutions
 		prerequisite = { focus = SOV_Siberian_troops }
-		text = "Last Stand"
+		text = "Great Patriotic Resistance"
 		x = -1
 		y = 4
 		relative_position_id = SOV_desperate_measures
@@ -3619,7 +3619,7 @@ focus_tree = {
 	focus = {
 		id = SOV_lessons_of_war
 		text = "Lessons of War"
-		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		icon = GFX_focus_generic_join_comintern
 		prerequisite = { focus = SOV_winter_offensive }
 		x = 0
 		y = 8
@@ -3772,8 +3772,8 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Siberian_eco
-		icon = GFX_focus_generic_aircraft_production
-		text = "Siberian Factories"
+		icon = GFX_focus_generic_communist_industry
+		text = "Wartime Industrial Surge"
 		prerequisite = { focus = SOV_desperate_measures }
 		x = 1
 		y = 2
@@ -3846,9 +3846,9 @@ focus_tree = {
 	}
 		focus = {
 		id = SOV_tool_relocation
-		icon = GFX_focus_SOV_organize_wreckers
+		icon = GFX_SOV_transformation_of_nature_ccp_2d_sov_compatibility
 		prerequisite = { focus = SOV_Siberian_eco }
-		text = "Relocation of Industrial Equipment"
+		text = "Operation Factory Exodus"
 		x = 2
 		y = 3
 		relative_position_id = SOV_desperate_measures
