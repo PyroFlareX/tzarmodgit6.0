@@ -438,7 +438,7 @@ SOV_great_patriotic_war = {
  		visible = {
  			controls_state = 218
  		}
- 		cost = 75
+ 		cost = 125
  		fire_only_once = yes
  		complete_effect = {
 		load_oob = "SOV_rostov"
@@ -604,7 +604,7 @@ SOV_great_patriotic_war = {
  		visible = {
  			controls_state = 217
  		}
- 		cost = 75
+ 		cost = 125
  		fire_only_once = yes
  		complete_effect = {
 		load_oob = "SOV_stalingrad"
@@ -639,7 +639,7 @@ SOV_great_patriotic_war = {
 		fire_only_once = no
 		available = {
 			has_war = yes
-			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			SOV = { has_completed_focus = SOV_desperate_measures }
 			any_enemy_country = {
 				is_major = yes
 			}
@@ -665,11 +665,11 @@ SOV_great_patriotic_war = {
 			has_war = yes
 		}
 
-		cost = 0
+		cost = 100
 		fire_only_once = no
 		available = {
 			has_war = yes
-			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			SOV = { has_completed_focus = SOV_desperate_measures }
 			any_enemy_country = {
 				is_major = yes
 			}
@@ -699,7 +699,7 @@ SOV_great_patriotic_war = {
 		fire_only_once = no
 		available = {
 			has_war = yes
-			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			SOV = { has_completed_focus = SOV_desperate_measures }
 			any_enemy_country = {
 				is_major = yes
 			}
@@ -729,7 +729,7 @@ SOV_great_patriotic_war = {
 		fire_only_once = no
 		available = {
 			has_war = yes
-			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			SOV = { has_completed_focus = SOV_desperate_measures }
 			any_enemy_country = {
 				is_major = yes
 			}
@@ -759,7 +759,7 @@ SOV_great_patriotic_war = {
 		fire_only_once = no
 		available = {
 			has_war = yes
-			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			SOV = { has_completed_focus = SOV_desperate_measures }
 			any_enemy_country = {
 				is_major = yes
 			}
@@ -789,7 +789,7 @@ SOV_great_patriotic_war = {
 		fire_only_once = no
 		available = {
 			has_war = yes
-			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			SOV = { has_completed_focus = SOV_desperate_measures }
 			any_enemy_country = {
 				is_major = yes
 			}
@@ -819,7 +819,7 @@ SOV_great_patriotic_war = {
 		fire_only_once = no
 		available = {
 			has_war = yes
-			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			SOV = { has_completed_focus = SOV_desperate_measures }
 			any_enemy_country = {
 				is_major = yes
 			}
@@ -849,7 +849,7 @@ SOV_great_patriotic_war = {
 		fire_only_once = no
 		available = {
 			has_war = yes
-			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			SOV = { has_completed_focus = SOV_desperate_measures }
 			any_enemy_country = {
 				is_major = yes
 			}
@@ -879,7 +879,7 @@ SOV_great_patriotic_war = {
 		fire_only_once = no
 		available = {
 			has_war = yes
-			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			SOV = { has_completed_focus = SOV_desperate_measures }
 			any_enemy_country = {
 				is_major = yes
 			}

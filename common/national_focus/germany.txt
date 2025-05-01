@@ -17,7 +17,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_rhineland
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_focus_GER_remilitarize_the_rhineland_historical
 		x = 18
 		y = 0
 		cost = 10
@@ -295,6 +295,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_A_Stable_Economy
+		text = "The Thousand Year Economy"
 		icon = GFX_focus_GER_wirtschaftswunder
 		prerequisite = { focus = GER_civilian_industry2 focus = GER_civilian_industry3 focus = GER_civilian_industry4}
 		relative_position_id = GER_Schact_Plan
@@ -795,7 +796,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_autarky
-		icon = GFX_focus_generic_improve_roads
+		icon = GFX_focus_GER_autarky_achieved
 		prerequisite = { focus = GER_four_year_plan }
 		x = -2
 		y = 1
@@ -1458,8 +1459,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_tank_designer
-		text = "Plans for Tank Manufacturing"
-		icon = GFX_focus_SOV_merge_plants
+		text = "Panzerwaffe Development Program"
+		icon = GFX_focus_GER_combined_arms_historical
 		prerequisite = { focus = GER_army_innovation }
 		relative_position_id = GER_army_innovation
 		x = 0
@@ -1479,7 +1480,7 @@ focus_tree = {
 		focus = {
 		id = GER_tank_designer_HEN
 		mutually_exclusive = {focus = GER_tank_designer_MAN}
-		text = "Quality over Quantity "
+		text = "Henschel Tiger Program "
 		icon = GFX_focus_generic_heavy_tank
 		prerequisite = { focus = GER_tank_designer }
 		relative_position_id = GER_tank_designer
@@ -1500,7 +1501,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_tank_designer_MAN
-		text = "Balanced Approach"
+		text = "MAN Panther Initiative"
 		mutually_exclusive = {focus = GER_tank_designer_HEN}
 		icon = GFX_focus_generic_tank_assault
 		prerequisite = { focus = GER_tank_designer }
@@ -1522,7 +1523,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_army_innovation
-		icon = GFX_focus_GER_army
+		icon = GFX_focus_GER_appease_the_wehrmacht
 		prerequisite = { focus = GER_rhineland }
 		relative_position_id = GER_rhineland
 		x = -6
@@ -2198,7 +2199,7 @@ CZE = {
 	
 	focus = { #should already be signed in 39
 		id = GER_mol_rib_pact
-		icon = GFX_focus_GER_alliance_with_the_ussr
+		icon = GFX_focus_GER_molotov_ribbentrop_pact
 		prerequisite = { focus = GER_anschluss }
 		available = {
 			date > 1939.8.20
@@ -2567,8 +2568,9 @@ CZE = {
 
 	focus = {
 		id = GER_accept_british_naval_dominance
+		text = "The Führer's Continental Vision"
 		icon = GFX_focus_ger_accept_british_naval_dominance
-		mutually_exclusive = { focus = GER_challenge_british_naval_dominance focus = GER_naval_rearmament }
+		mutually_exclusive = { focus = GER_naval_rearmament }
 		prerequisite = { focus = GER_rhineland }
 		relative_position_id = GER_rhineland
 		available = {
@@ -2652,6 +2654,7 @@ CZE = {
 	
 	focus = {
 		id = GER_naval_rearmament
+		text = "Deutschland's Destiny at Sea"
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = GER_rhineland }
 		mutually_exclusive = { focus = GER_accept_british_naval_dominance }
@@ -3933,8 +3936,8 @@ CZE = {
 					}
 					focus = {
 					id = GER_prepare_railways
-					text = "Supply Preparations"
-					icon = GFX_focus_generic_railroad
+					text = "Operation Otto"
+					icon = GFX_focus_GER_kriegslokomotive
 					prerequisite = { focus = GER_anti_comitern_pact  }
 					cancel = {
 					NOT = { country_exists = SOV }
@@ -3976,7 +3979,7 @@ CZE = {
 					focus = {
 					id = GER_prepare_army
 					icon = GFX_focus_FIN_parmis_devils
-					text = "Preparation of Reserves"
+					text = "Aufmarsch Ost"
 					prerequisite = { focus = GER_anti_comitern_pact  }
 					available = {
 						date<1941.6.1
@@ -4007,8 +4010,8 @@ CZE = {
 					}
 					focus = {
 					id = GER_prepare_airbases
-					icon = GFX_focus_generic_cas_aircraft
-					text = "Preparation of Airbases"
+					icon = GFX_focus_generic_air_bases
+					text = "Luftflotte Aufbau Ost"
 					prerequisite = { focus = GER_anti_comitern_pact  }
 					x = 2
 					y = 1

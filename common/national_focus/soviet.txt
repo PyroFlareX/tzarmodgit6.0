@@ -26,7 +26,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 6500 y = 100 }
+	continuous_focus_position = { x = 0 y = 1200 }
 
 
 ##    ##  #######      ######  ######## ######## ########     ########     ###     ######  ##    ## 
@@ -170,7 +170,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -328,10 +328,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
@@ -345,10 +345,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
@@ -1407,7 +1407,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -2101,58 +2101,31 @@ focus_tree = {
 			add_to_variable = { SOV_defense_industry_land_equipment_upgrade_xp_cost = -0.1 }
 			custom_effect_tooltip = SOV_development_of_tankograd_ns_tt
 
-			custom_effect_tooltip = SOV_development_of_tankograd_factories_tt
-			#This is just for tooltip purposes
-			effect_tooltip = {
-				every_owned_state = {
-					limit = {
-						is_on_continent = asia
-						arms_factory > 2
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
+			653 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
 				}
 			}
+			573 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			572 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
+			}	
 
-			#Actual effects
-			set_temp_variable = { temp_targets_index = 0 }
-			while_loop_effect = {
-				limit = {
-					check_variable = { temp_targets_index = 10 compare = less_than }
-				}
-				hidden_effect = {
-					random_owned_state = {
-						limit = {
-							is_on_continent = asia
-							arms_factory > 2
-							free_building_slots = {
-								building = arms_factory
-								size > 1
-								include_locked = yes
-							}
-							NOT = { has_state_flag = SOV_development_of_tankograd_flag }
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-						set_state_flag = SOV_development_of_tankograd_flag
-						add_to_temp_variable = { SOV.temp_targets_index = 1 }
-						#log = "Round [?SOV.temp_targets_index]"
-					}
-				}
-			}
 		}
 	}
 
@@ -3836,11 +3809,11 @@ focus_tree = {
 		completion_reward = {
 			
 			add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 32000  } 
-			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500  } 	
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 5500  } 	
 			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 800  } 
 			add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 1500 }
 			add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 3460  }  
-
+			add_equipment_to_stockpile = { type = mech_equipment_1 amount = 5000  }  
 		}
 	}
 	focus = {
@@ -3887,10 +3860,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_on_continent = asia
-				}
+			403 = {
 				add_extra_state_shared_building_slots = 12
 					add_building_construction = {
 						type = arms_factory
@@ -3898,10 +3868,7 @@ focus_tree = {
 						instant_build = yes
 					}
 			}
-			random_owned_state = {
-				limit = {
-					is_on_continent = asia
-				}
+			570 = {
 				add_extra_state_shared_building_slots = 12
 					add_building_construction = {
 						type = arms_factory
@@ -3909,10 +3876,7 @@ focus_tree = {
 						instant_build = yes
 					}
 			}
-			random_owned_state = {
-				limit = {
-					is_on_continent = asia
-				}
+			564 = {
 				add_extra_state_shared_building_slots = 12
 					add_building_construction = {
 						type = arms_factory
@@ -4777,8 +4741,6 @@ focus_tree = {
 		relative_position_id = SOV_stalins_cult_of_personality
 		cost = 2
 
-		mutually_exclusive = { focus = SOV_the_faithful_servant_of_lenin }
-
 		available = {
 		}
 		
@@ -4836,7 +4798,6 @@ focus_tree = {
 		relative_position_id = SOV_stalins_cult_of_personality
 		cost = 3
 
-		mutually_exclusive = { focus = SOV_inheritor_of_the_mantle_of_lenin }
 
 		available = {
 		}
@@ -4949,9 +4910,9 @@ focus_tree = {
 		icon = GFX_focus_SOV_father_of_nations
 		prerequisite = { focus = SOV_stalins_cult_of_personality }
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = SOV_stalins_cult_of_personality
-		cost = 5
+		cost = 0
 
 		available = {
 			custom_trigger_tooltip = {

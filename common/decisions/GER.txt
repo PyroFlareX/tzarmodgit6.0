@@ -1601,7 +1601,7 @@ operations = {
 		icon = generic_construction
 
 		available = {
-			has_tech = improved_rocket_engines
+			always = no
 		}
 
 		cost = 50

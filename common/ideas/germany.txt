@@ -106,7 +106,7 @@ ideas = {
 			consumer_goods_expected_value = 0.15
 			production_speed_buildings_factor = -0.2
 			production_factory_max_efficiency_factor = -0.05
-			research_speed_factor = 0.025
+			research_speed_factor = 0.05
 		}
 	}
 	GER_war_economy1 = {
@@ -126,7 +126,7 @@ ideas = {
 			consumer_goods_expected_value = 0.10
 			production_speed_buildings_factor = -0.1
 			production_factory_max_efficiency_factor = 0
-			research_speed_factor = 0.025
+			research_speed_factor = 0.05
 		}
 	}
 	GER_war_economy2 = {
@@ -143,9 +143,10 @@ ideas = {
 		picture = SWE_land_air_warfare
 		
 		modifier = {
-			consumer_goods_expected_value = 0.05
+			consumer_goods_expected_value = 0.08
 			production_speed_buildings_factor = 0
-			research_speed_factor = 0.025
+			production_factory_max_efficiency_factor = 0.05
+			research_speed_factor = 0.05
 		}
 	}
 	GER_war_economy3 = {
@@ -164,8 +165,8 @@ ideas = {
 		modifier = {
 			consumer_goods_expected_value = 0
 			production_speed_buildings_factor = 0.025
-			production_factory_max_efficiency_factor = 0.025
-			research_speed_factor = 0.025
+			production_factory_max_efficiency_factor = 0.05
+			research_speed_factor = 0.05
 		}
 	}
 	GER_war_economy4 = {
@@ -183,9 +184,9 @@ ideas = {
 		
 		modifier = {
 			consumer_goods_expected_value = -0.02
-			production_speed_buildings_factor = 0.025
-			production_factory_max_efficiency_factor = 0.025
-			research_speed_factor = 0.025
+			production_speed_buildings_factor = 0.05
+			production_factory_max_efficiency_factor = 0.05
+			research_speed_factor = 0.05
 		}
 	}
 	GER_war_economy5 = {
@@ -203,9 +204,9 @@ ideas = {
 		
 		modifier = {
 			consumer_goods_expected_value = -0.03
-			production_speed_buildings_factor = 0.05
-			production_factory_max_efficiency_factor = 0.025
-			research_speed_factor = 0.025
+			production_speed_buildings_factor = 0.075
+			production_factory_max_efficiency_factor = 0.5
+			research_speed_factor = 0.075
 		}
 	}
 	GER_war_economy6 = {
@@ -224,8 +225,8 @@ ideas = {
 		modifier = {
 			consumer_goods_expected_value = -0.04
 			production_speed_buildings_factor = 0.1
-			production_factory_max_efficiency_factor = 0.05
-			research_speed_factor = 0.025
+			production_factory_max_efficiency_factor = 0.1
+			research_speed_factor = 0.1
 		}
 	}
 	
