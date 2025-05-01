@@ -283,6 +283,8 @@ technologies = {
 			mot_recon
 			armored_car_recon
 			light_tank_recon
+			helicopter_recon
+
 		}
 		
 		path = {
@@ -1005,6 +1007,7 @@ technologies = {
 
 		enable_subunits = {
 			field_hospital
+			helicopter_field_hospital
 		}
 		
 		path = {
@@ -1184,6 +1187,7 @@ technologies = {
 
 		enable_subunits = {
 			logistics_company
+			helicopter_transport
 		}
 		
 		path = {
