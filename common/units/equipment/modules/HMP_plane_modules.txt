@@ -747,7 +747,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 12 #6
+				air_bombing = 18 #6
 			}
 		}
 		dismantle_cost_ic = 7
@@ -774,7 +774,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 25 #15
+				air_bombing = 30 #15
 			}
 		}
 		mission_type_stats = {
@@ -865,7 +865,7 @@ equipment_modules = {
 				port_strike
 			}
 			add_stats = {
-			naval_strike_attack = 18			
+			naval_strike_attack = 21			
 				air_agility = -15
 			}
 			add_average_stats = {
