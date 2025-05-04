@@ -504,12 +504,11 @@ equipment_modules = {
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 18.5
+			air_attack = 24.5
 			weight = 5
 			build_cost_ic = 8
 		}
 		multiply_stats = {
-			air_agility = -0.035
 		}
 				mission_type_stats = {
 			limit = {
@@ -532,12 +531,11 @@ equipment_modules = {
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 37.5
+			air_attack = 49.5
 			build_cost_ic = 14 #10
 			weight = 10
 		}
 			multiply_stats = {
-			air_agility = -0.07
 		}
 		allow_mission_type = {
 			air_superiority
@@ -564,12 +562,11 @@ equipment_modules = {
 		parent = aircraft_cannon_1_1x
 		add_equipment_type = fighter
 		add_stats = {
-			air_attack = 23
+			air_attack = 30.5
 			build_cost_ic = 9 #7
 			weight = 5
 		}
 					multiply_stats = {
-			air_agility = -0.04
 		}
 						mission_type_stats = {
 			limit = {
@@ -592,12 +589,11 @@ equipment_modules = {
 		parent = aircraft_cannon_1_2x
 		add_equipment_type = fighter
 		add_stats = {
-			air_attack = 46.5
+			air_attack = 62
 			build_cost_ic = 16 #12
 			weight = 10
 		}
 					multiply_stats = {
-			air_agility = -0.08
 		}
 		allow_mission_type = {
 			air_superiority
