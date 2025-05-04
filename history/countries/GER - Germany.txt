@@ -670,6 +670,21 @@ recruit_character = GER_konstantin_von_neurath
 # recruit_character = GER_wilhelm_canaris
 recruit_character = GER_andrey_vlasov
 
+#SCIENTISTS
+recruit_character = GER_peter_adolf_thiessen
+recruit_character = GER_gustav_ludwig_hertz
+recruit_character = GER_eduard_grote
+recruit_character = GER_ferdinand_porsche 
+recruit_character = GER_erwin_aders
+recruit_character = GER_hermann_burkhardt
+recruit_character = GER_ulrich_gabler
+recruit_character = GER_hans_von_ohain
+recruit_character = GER_max_kramer
+recruit_character = GER_kurt_tank
+recruit_character = GER_hellmuth_walter
+recruit_character = GER_manfred_von_ardenne
+recruit_character = GER_konrad_zuse
+
 # create_navy_leader = {
 # 	name = "Karl Dönitz"
 # 	picture = "Portrait_Germany_Karl_Donitz.dds"

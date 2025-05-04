@@ -314,6 +314,7 @@ recruit_character = RAJ_george_giffard
 recruit_character = RAJ_archibald_wavell
 recruit_character = RAJ_claude_auchinleck
 
+recruit_character = RAJ_homi_j_bhabha
 
 set_variable = { RAJ_tyranny = 0}
 set_variable = { RAJ_air_superiority_bonus_in_combat = 0}

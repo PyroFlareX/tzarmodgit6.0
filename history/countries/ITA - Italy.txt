@@ -865,6 +865,14 @@ recruit_character = ITA_italy_mario_roatta
 # recruit_character = ITA_arturo_riccardi
 # recruit_character =ITA_gaetano_crocco
 
+recruit_character = ITA_enrico_fermi
+recruit_character = ITA_gaetano_crocco
+recruit_character = ITA_mario_castoldi
+recruit_character = ITA_giovanni_giorgi
+recruit_character = ITA_filippo_bonfiglietti
+recruit_character = ITA_curio_bernardis
+
+
 ### VARIANTS ###
 # 1936 Start #
 #plane variants
