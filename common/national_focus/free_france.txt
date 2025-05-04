@@ -29,6 +29,7 @@ focus_tree = {
 		}
 
 		completion_reward = {	
+			army_experience = 800
 			set_technology = {
 				improved_medium_tank_chassis = 1
 				heavy_guns2 = 1
