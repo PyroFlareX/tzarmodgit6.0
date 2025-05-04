@@ -1573,24 +1573,24 @@ characters={
 				specialization_land = 3
 			}
 
-			visible = {
-				owner = {
-					if = { #AAT
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						mio:GER_porsche_organization = {
-							is_mio_trait_completed = GER_mio_trait_involve_porsche_in_special_projects
-						}
-					}
-					else = { #NO-AAT
-						OR = {
-							has_idea = porsche
-							has_idea = GER_porsche_improved
-						}
-					}
-				}
-			}
+			#visible = {
+			#	owner = {
+			#		if = { #AAT
+			#			limit = {
+			#				has_dlc = "Arms Against Tyranny"
+			#			}
+			#			mio:GER_porsche_organization = {
+			#				is_mio_trait_completed = GER_mio_trait_involve_porsche_in_special_projects
+			#			}
+			#		}
+			#		else = { #NO-AAT
+			#			OR = {
+			#				has_idea = porsche
+			#				has_idea = GER_porsche_improved
+			#			}
+			#		}
+			#	}
+			#}
 		}
 	}
 
@@ -1608,24 +1608,24 @@ characters={
 				specialization_land = 3
 			}
 
-			visible = {
-				owner = {
-					if = { #AAT
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						mio:GER_henschel_organization = {
-							is_mio_trait_completed = GER_mio_trait_involve_henschel_in_special_projects
-						}
-					}
-					else = { #NO-AAT
-						OR = {
-							has_idea = henschel
-							has_idea = GER_henschel_improved
-						}
-					}
-				}
-			}
+			#visible = {
+			#	owner = {
+			#		if = { #AAT
+			#			limit = {
+			#				has_dlc = "Arms Against Tyranny"
+			#			}
+			#			mio:GER_henschel_organization = {
+			#				is_mio_trait_completed = GER_mio_trait_involve_henschel_in_special_projects
+			#			}
+			#		}
+			#		else = { #NO-AAT
+			#			OR = {
+			#				has_idea = henschel
+			#				has_idea = GER_henschel_improved
+			#			}
+			#		}
+			#	}
+			#}
 		}
 	}
 
