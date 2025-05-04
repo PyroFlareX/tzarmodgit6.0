@@ -28,6 +28,11 @@ state={
 			}
 			3957 = {
 				naval_base = 1
+				# United States Naval Research Laboratory (NRL)
+				naval_facility = 1
+			}
+			3957 = {
+				naval_base = 1
 
 			}
 		}
