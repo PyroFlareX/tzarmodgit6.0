@@ -27,7 +27,7 @@ sp_air_bouncing_bomb = {
 				has_dlc = "By Blood Alone"
 			}
 			FROM = {
-				has_tech = heavy_bombs
+				#has_tech = heavy_bombs
 			}
 		}
 		else = {
@@ -204,7 +204,7 @@ sp_air_earthshaker_bomb = {
 		if = {
 			limit = { has_dlc = "By Blood Alone" }
 			FROM = {
-				has_tech = heavy_bombs
+				#has_tech = heavy_bombs
 			}
 		}
 		else = {
@@ -372,6 +372,8 @@ sp_air_earthshaker_bomb = {
 		}
 	}
 }
+
+
 
 
 
@@ -803,7 +805,7 @@ sp_air_jet_engine = {
 		FROM = {
 			if = {
 				limit = { has_dlc = "By Blood Alone" }
-				has_tech = engines_2
+				#has_tech = engines_2
 				OR = {
 					has_tech = improved_small_airframe
 					has_tech = improved_medium_airframe
@@ -1083,7 +1085,7 @@ sp_air_axial_jet_engine = {
 		FROM = {
 			if = {
 				limit = { has_dlc = "By Blood Alone" }
-				has_tech = engines_3
+				#has_tech = engines_3
 				OR = {
 					has_tech = advanced_small_airframe
 					has_tech = advanced_medium_airframe
