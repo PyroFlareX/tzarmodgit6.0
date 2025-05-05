@@ -585,10 +585,14 @@ sp_land_military_engineering_vehicles = {
 			armored_support_vehicle_1
 		}
 
-		enable_subunits = {
-			assault_engineer
+		#enable_subunits = {
+		#	assault_engineer
+		#}
+		
+		enable_equipments = {
+			motorbike_equipment_1
 		}
-
+		
 		country_effects = {
 			if = {
 				limit = {
@@ -597,22 +601,22 @@ sp_land_military_engineering_vehicles = {
 				SP_create_variant_based_on_country_assault_engineer = yes
 			}
 
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_TECH
-				TECH = sp_armored_engineer_tech
-			}
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_TECH
-				TECH = sp_armored_maintenance_tech
-			}
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_TECH
-				TECH = sp_armored_signal_tech
-			}
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_TECH
-				TECH = sp_armored_motorized_military_police_tech
-			}
+			#custom_effect_tooltip = {
+			#	localization_key = SP_UNLOCK_TECH
+			#	TECH = sp_armored_engineer_tech
+			#}
+			#custom_effect_tooltip = {
+			#	localization_key = SP_UNLOCK_TECH
+			#	TECH = sp_armored_maintenance_tech
+			#}
+			#custom_effect_tooltip = {
+			#	localization_key = SP_UNLOCK_TECH
+			#	TECH = sp_armored_signal_tech
+			#}
+			#custom_effect_tooltip = {
+			#	localization_key = SP_UNLOCK_TECH
+			#	TECH = sp_armored_motorized_military_police_tech
+			#}
 		}
 	}
 

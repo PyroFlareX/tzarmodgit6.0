@@ -150,7 +150,10 @@ technologies = {
 			}
 		}
 		
-		
+		enable_subunits = {
+			assault_engineer
+			armored_engineer
+		}
 		path = {
 			leads_to_tech = tech_engineers3
 			research_cost_coeff = 1
@@ -343,7 +346,11 @@ technologies = {
 			leads_to_tech = tech_recon3
 			research_cost_coeff = 1
 		}
-
+		
+		enable_subunits = {
+			helicopter_recon
+		}
+		
 		research_cost = 1.5
 		start_year = 1939
 		folder = {
@@ -527,6 +534,10 @@ technologies = {
 			suppression_factor = 0.15
 		}
 		
+		enable_subunits = {
+			motorized_military_police
+		}
+
 		
 		path = {
 			leads_to_tech = tech_military_police3
@@ -667,7 +678,9 @@ technologies = {
 		enable_equipment_modules = {
 			easy_maintenance
 		}
-		
+		enable_subunits = {
+			armored_maintenance
+		}
 		
 		path = {
 			leads_to_tech = tech_maintenance_company3
@@ -1059,7 +1072,9 @@ technologies = {
 			experience_loss_factor = -0.10
 			max_strength = 5
 		}
-		
+		enable_subunits = {
+			helicopter_field_hospital
+		}
 		path = {
 			leads_to_tech = tech_field_hospital3
 			research_cost_coeff = 1
@@ -1242,7 +1257,9 @@ technologies = {
 			supply_consumption_factor = -0.10
 			fuel_consumption_factor = -0.05
 		}
-		
+		enable_subunits = {
+			helicopter_transport
+		}
 		
 		path = {
 			leads_to_tech = tech_logistics_company3
@@ -1417,6 +1434,13 @@ technologies = {
 			initiative = 0.12
 		}
 		
+		enable_subunits = {
+			armored_signal
+		}
+
+		enable_equipment_modules = { #This shouldn't show up without NSB OR GOT
+			lc_command_center #Module for Land Cruiser
+		}
 		
 		path = {
 			leads_to_tech = tech_signal_company3
