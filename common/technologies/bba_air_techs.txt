@@ -178,9 +178,7 @@ technologies = {
 		}
 		research_cost = 2
 		start_year = 1944
-		
-		
-		
+
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 8 }
@@ -218,13 +216,9 @@ technologies = {
 			rocket_engine_1
 		}
 
-		allow = { 	 		
-			ROOT = {
-				is_special_project_completed = sp:sp_air_axial_jet_engine
-			} 
+		dependencies = {
+			jet_engines = 1
 		}
-		
-		is_special_project_tech = yes
 		
 		research_cost = 2
 		start_year = 1945
@@ -244,7 +238,6 @@ technologies = {
 			jet_technology
 		}
 	}
-	
 	
 	iw_medium_airframe = {
 		allow = { disabled_ai_production = yes }
@@ -376,7 +369,6 @@ technologies = {
 		}
 		research_cost = 2
 		start_year = 1944
-		
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 8 }
@@ -408,13 +400,9 @@ technologies = {
 			rocket_engine_1
 		}
 		
-		allow = { 	 		
-			ROOT = {
-				is_special_project_completed = sp:sp_air_axial_jet_engine
-			} 
+		dependencies = {
+			jet_engines = 1
 		}
-
-		is_special_project_tech = yes
 
 		research_cost = 2
 		start_year = 1945
@@ -510,7 +498,6 @@ naval_bomber
 	}
 	
 	improved_large_airframe = {
-		
 		enable_equipment_modules = {
 			engine_3_4x
 		}
@@ -540,13 +527,7 @@ naval_bomber
 	}
 	
 	advanced_large_airframe = {
-		allow = { 	 		
-			ROOT = {
-				is_special_project_completed = sp:sp_air_axial_jet_engine
-			} 
-		}
 
-		is_special_project_tech = yes
 		enable_equipments = {
 			large_plane_airframe_3
 			large_plane_maritime_patrol_plane_airframe_3
@@ -584,7 +565,9 @@ naval_bomber
 		research_cost = 2
 		start_year = 1950
 
-		
+		dependencies = {
+			jet_engines = 1
+		}
 		enable_equipment_modules = {
 			tank_gas_turbine_engine
 			jet_engine_1x
