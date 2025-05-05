@@ -224,7 +224,7 @@ technologies = {
 			} 
 		}
 		
-		is_special_project_tech = yes
+		#is_special_project_tech = yes
 		
 		research_cost = 2
 		start_year = 1945
@@ -414,7 +414,7 @@ technologies = {
 			} 
 		}
 
-		is_special_project_tech = yes
+		#is_special_project_tech = yes
 
 		research_cost = 2
 		start_year = 1945
@@ -546,7 +546,7 @@ naval_bomber
 			} 
 		}
 
-		is_special_project_tech = yes
+		#is_special_project_tech = yes
 		enable_equipments = {
 			large_plane_airframe_3
 			large_plane_maritime_patrol_plane_airframe_3
