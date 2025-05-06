@@ -91,6 +91,9 @@ technologies = {
 	radio_detection = {
 
 		# 
+		enable_equipment_modules = {
+			lc_radar
+		}
 		enable_building = {
 			building = radar_station
 			level = 1

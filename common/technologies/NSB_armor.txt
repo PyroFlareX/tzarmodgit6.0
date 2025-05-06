@@ -993,6 +993,7 @@ technologies = {
 		enable_equipment_modules = {
 			armor_skirts
 			sloped_armor
+			lc_armored_skirts
 		}
 		path = {
 			leads_to_tech = armor_tech_3
@@ -1503,6 +1504,7 @@ mio_cat_tech_light_armor_and_modules
 
 		enable_equipment_modules = {
 			LRP_ammo
+			
 		}
 
 		research_cost = 1
@@ -1700,6 +1702,10 @@ mio_cat_tech_light_armor_and_modules
 			tank_high_velocity_cannon_2
 			tank_anti_air_cannon_2
 			tank_small_cannon_3
+			lc_high_velocity_cannon_turret
+			lc_assault_gun
+			lc_heavy_high_velocity_cannons
+			lc_high_impact_obliterator_cannon
 		}
 
 		research_cost = 1
@@ -1789,6 +1795,7 @@ mio_cat_tech_light_armor_and_modules
 
 		enable_equipment_modules = { 
 			tank_radio_1
+			lc_radio_1
 		}
 
 		path = {
@@ -1817,7 +1824,8 @@ mio_cat_tech_light_armor_and_modules
 	radio_tech_2 = {
 	
 		enable_equipment_modules = {
-			tank_radio_2			
+			tank_radio_2
+			lc_radio_2
 		}
 		
 		path = {
@@ -1846,7 +1854,8 @@ mio_cat_tech_light_armor_and_modules
 	
 		enable_equipment_modules = {
 			tank_radio_3	
-			stabilizer		
+			stabilizer	
+			lc_radio_3
 		}
 		allow = {
 			#date > 1941.1.1

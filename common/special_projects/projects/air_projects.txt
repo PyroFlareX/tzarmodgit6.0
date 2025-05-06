@@ -1613,6 +1613,7 @@ sp_air_helicopter = {
 
 		enable_equipments = {
 			helicopter_equipment_1 
+			lc_helipad
 		}
 
 		enable_subunits = { 

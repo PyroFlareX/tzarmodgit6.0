@@ -781,6 +781,21 @@ sp_land_land_cruiser = {
 				has_dlc = "No Step Back"
 			}
 			land_cruiser_chassis_1
+			lc_aircraft_catapult
+			lc_smoke_generators
+			lc_obstacle_clearance_gear
+			lc_internal_fuel_tanks
+			lc_internal_ammunition_compartments
+			lc_wet_ammunition_storage
+			lc_bunker_emplacement
+			lc_stabilizers
+			lc_rocket_launcher
+			lc_light_anti_air_battery
+			lc_medium_cannon_turret
+			lc_heavy_anti_air_battery
+			lc_super_heavy_howitzer
+			lc_medium_naval_guns
+			lc_heavy_anti_air_platform
 		}
 
 		enable_equipments = {
