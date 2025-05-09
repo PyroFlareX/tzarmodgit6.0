@@ -1,0 +1,47 @@
+sub_units = {
+
+	irongiants_light = {
+		abbreviation = "IRG"
+		sprite = irongiants
+		map_icon_category = armored
+		priority = 2501
+		ai_priority = 2000
+		active = yes
+		
+		type = {
+			armor
+		}
+		
+		group = armor
+		
+		categories = {
+			category_tanks
+			category_front_line
+			category_all_armor
+			category_army
+		}
+
+
+		combat_width = 2
+
+		need = {
+			irongiant_chassis = 1
+		}
+		manpower = 1000
+		max_organisation = 60
+		default_morale = 0.3
+		training_time = 500
+		max_strength = 12
+		weight = 2
+		supply_consumption = 0.9
+
+		#soft_attack = 0.01
+		suppression = 4
+		breakthrough = 0.25
+		
+		
+		
+
+	
+	}
+}

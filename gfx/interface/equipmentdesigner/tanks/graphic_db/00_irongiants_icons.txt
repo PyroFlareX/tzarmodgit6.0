@@ -1,0 +1,15 @@
+default = {
+	mechZ_chassis_0 = {
+		pool = {
+			weight = 2
+			icons = { 
+				GFX_mechZ_chassis_0_medium
+			}
+		}
+		pool = {
+			models = { 
+				mechZs_entity
+			 }
+		}
+	}
+}

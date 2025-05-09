@@ -1,0 +1,194 @@
+equipments = {
+
+	irongiant_chassis = {
+		year = 1922
+		is_archetype = yes
+		is_buildable = no
+
+		can_be_produced = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = BUL_army_restrictions_aat
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = BUL_army_restrictions
+				}
+			}
+		}
+
+		picture = archetype_irongiant_equipment
+		type = armor
+		group_by = archetype
+		interface_category = interface_category_armor
+		priority = 2000
+		
+
+		module_slots = {			
+
+			turret_type_slot = { #Turrets must go at the top
+				required = yes
+				allowed_module_categories = {
+					giant_light_exo
+				}
+			}
+			
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					irongiant_small_main_armament
+				}
+			}
+			
+
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_armor_type
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+				}
+			}
+
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+				}
+			}
+
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+				}
+			}
+			
+		}
+		module_count_limit = {
+			module = sloped_armor
+			count < 2
+		}	
+		module_count_limit = {
+			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_secondary_turret
+			count < 2
+		}
+		module_count_limit = {
+			module = amphibious_drive
+			count < 2
+		}
+
+		module_count_limit = {
+			module = wet_ammo_storage
+			count < 2
+		}
+
+		module_count_limit = {
+			module = squeezebore_adaptor
+			count < 2
+		}
+
+		module_count_limit = {
+			module = armor_skirts
+			count < 2
+		}
+
+		module_count_limit = {
+			module = dozer_blade
+			count < 2
+		}
+
+		module_count_limit = {
+			module = easy_maintenance
+			count < 2
+		}
+		module_count_limit = {
+			module = auto_loader
+			count < 2
+		}
+		module_count_limit = {
+			module = stabilizer
+			count < 2
+		}
+		default_modules = {
+			main_armament_slot = empty
+		
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+
+		#Misc Abilities
+		maximum_speed = 5
+		reliability = 0.80
+		
+		#Defensive Abilities
+		defense = 50
+		breakthrough = 240
+		hardness = 24
+		armor_value = 180
+		
+		#Offensive Abilities
+		soft_attack = 80
+		hard_attack = 80
+		ap_attack = 160
+		air_attack = 32
+		
+		build_cost_ic = 500
+		
+		resources = {
+			steel = 40
+			chromium = 20 
+		}
+		fuel_consumption = 14
+
+		lend_lease_cost = 500
+		manpower = 2
+
+	}
+
+	irongiant_chassis_0 = {
+		abbreviation = "wl1"
+		visual_level = 0
+		year = 1936
+		archetype = irongiant_chassis
+		priority = 2000
+		module_slots = inherit
+		
+		
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+	}
+}

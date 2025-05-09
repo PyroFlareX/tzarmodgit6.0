@@ -1,0 +1,43 @@
+
+entity = {
+	name = irongiants_entity # A simple model for a land unit
+	pdxmesh = generic_irongiant_mesh # References a mesh defined in a *.gfx file
+
+	default_state = idle
+	state = { name = attack			animation = attack 					animation_blend_time = 0.0  animation_speed = 1.0 }
+	state = { name = defend			animation = defend 			animation_blend_time = 0.3  animation_speed = 1.0 }
+	state = { name = support_attack	animation = support_attack 	animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = move				animation = move 		 		animation_blend_time = 1.0 animation_speed = 1.0 }
+	state = { name = retreat			animation = retreat 	 		animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = death			animation = death 			animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = idle				animation = idle       		animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = training				animation = training 			animation_blend_time = 0.3 animation_speed = 1.0 }
+	
+	
+	
+	scale = .9
+}
+entity = {
+	name = GER_irongiants_entity # A simple model for a land unit
+	pdxmesh = GER_irongiant_mesh # References a mesh defined in a *.gfx file
+
+	default_state = idle
+	state = { name = attack			animation = attack 					animation_blend_time = 0.0  animation_speed = 1.0 }
+	state = { name = defend			animation = defend 			animation_blend_time = 0.3  animation_speed = 1.0 }
+	state = { name = support_attack	animation = support_attack 	animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = move				animation = move 		 		animation_blend_time = 1.0 animation_speed = 1.0 }
+	state = { name = retreat			animation = retreat 	 		animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = death			animation = death 			animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = idle				animation = idle       		animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = training				animation = training 			animation_blend_time = 0.3 animation_speed = 1.0 }
+	
+	
+	
+	scale = .9
+}
+
+
+
+
+
+
