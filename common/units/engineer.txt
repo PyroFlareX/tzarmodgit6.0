@@ -274,11 +274,11 @@ sub_units = {
 		}
 
 		amphibious = {
-			attack = 0.15
+			attack = 0.2
 		}
 
 		urban = {
-			attack = 0.2 #More than regular enginners (0)
+			attack = 0.15 
 			movement = 0.05 #More than reg engineers (0)
 		}
 
@@ -357,8 +357,8 @@ sub_units = {
 		}
 
 		forest = {
-			defence = 0.25
-			movement = 0.1 #More than reg engineers (0.05)
+			defence = 0.1 
+			movement = 0.05 
 		}
 
 		plains = {
@@ -366,7 +366,7 @@ sub_units = {
 		}
 
 		desert = {
-			movement = 0.1 #More than reg engineers (0)
+			movement = 0.05 #More than reg engineers (0)
 		}
 
 		hills = {
@@ -375,12 +375,12 @@ sub_units = {
 		}
 
 		jungle = {
-			defence = 0.15 #Less than reg engineers (0.25)
+			attack = 0.1 #Defense swapped with attack because tanks in asia are canc*r
 			movement = 0.05 #More than reg eng (0)
 		}
 
 		marsh = {
-			defence = 0.15 #Less than reg engineers (0.25)
+			defence = 0.1 #Less than reg engineers (0.25)
 			movement = 0.2
 		}
 
@@ -390,9 +390,8 @@ sub_units = {
 		}
 
 		river = {
-			attack = 0.1 #More than reg engineers (0)
-			defence = 0.15 #Less than reg engineers (0.25)
-			movement = 0.4 #More than reg eng (0.25)
+			attack = 0.5 #More than reg engineers (0)
+			movement = 0.30 #More than reg eng (0.25)
 		}
 
 		amphibious = {
@@ -400,9 +399,9 @@ sub_units = {
 		}
 
 		urban = {
-			attack = 0.2 #More than regular enginners (0)
-			defence = 0.1 #More than reg eng (0)
-			movement = 0.1 #More than reg engineers (0)
+			attack = 0.1 #More than regular enginners (0)
+			defence = 0.05 #More than reg eng (0)
+			movement = 0.05 #More than reg engineers (0)
 		}
 
 		same_support_type = engineer
