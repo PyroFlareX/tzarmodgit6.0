@@ -174,8 +174,8 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.03
-				industrial_capacity_dockyard = 0.03
+				industrial_capacity_factory = 0.02
+				industrial_capacity_dockyard = 0.02
 				conscription_factor = -0.05
 			}
 
@@ -195,9 +195,9 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.06
-				industrial_capacity_dockyard = 0.06
-				consumer_goods_expected_value = -0.03
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				consumer_goods_expected_value = -0.02
 				conscription_factor = -0.05
 			}
 
@@ -217,9 +217,9 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.09
-				industrial_capacity_dockyard = 0.09
-				consumer_goods_expected_value = -0.06
+				industrial_capacity_factory = 0.08
+				industrial_capacity_dockyard = 0.08
+				consumer_goods_expected_value = -0.05
 				conscription_factor = -0.05
 			}
 
