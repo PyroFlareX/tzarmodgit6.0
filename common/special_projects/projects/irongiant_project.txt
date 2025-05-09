@@ -17,7 +17,7 @@ sp_land_irongiants = {
 	}
 
 	breakthrough_cost = {
-		specialization_land = 10
+		specialization_land = 1
 	}
 	
 	prototype_time = sp_time.prototype.short
