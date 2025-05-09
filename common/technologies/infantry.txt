@@ -1286,7 +1286,7 @@ technologies = {
 	}
 
 	night_vision = {
-
+		special_project_specialization = { specialization_land }
 		land_night_attack = 0.1
 		
 		path = {
@@ -1311,7 +1311,7 @@ technologies = {
 	}
 	
 	night_vision2 = {
-
+		special_project_specialization = { specialization_land }
 		land_night_attack = 0.15	
 
 		research_cost = 2
@@ -1331,7 +1331,7 @@ technologies = {
 	}
 	
 	support_weapons = {
-
+		special_project_specialization = { specialization_land }
 		infantry = {
 			defense = 0.05
 			breakthrough = 0.05
@@ -1414,7 +1414,7 @@ technologies = {
 	}
 	
 	support_weapons2 = {
-
+		special_project_specialization = { specialization_land }
 		infantry = {
 			defense = 0.05
 			breakthrough = 0.05
@@ -1505,7 +1505,7 @@ technologies = {
 	}
 	
 	support_weapons3 = {
-
+		special_project_specialization = { specialization_land }
 		infantry = {
 			defense = 0.05
 			breakthrough = 0.05
@@ -1596,7 +1596,7 @@ technologies = {
 	}
 	
 	support_weapons4 = {
-
+		special_project_specialization = { specialization_land }
 		infantry = {
 			defense = 0.05
 			breakthrough = 0.05
@@ -1674,7 +1674,7 @@ technologies = {
 	}
 
 	sniper_rifle = {
-
+		special_project_specialization = { specialization_land }
 		category_recon = {
 			recon = 0.5
 		}
@@ -1708,7 +1708,7 @@ technologies = {
 	}
 	
 	sniper_rifle_2 = {
-
+		special_project_specialization = { specialization_land }
 		category_recon = {
 			recon = 0.5
 		}
@@ -1741,7 +1741,7 @@ technologies = {
 	}
 
 	tech_mortar = {
-
+		special_project_specialization = { specialization_land }
 		category_light_infantry = {
 			breakthrough = 0.10
 		}
@@ -1769,7 +1769,7 @@ technologies = {
 	}
 	
 	tech_mortar2 = {
-
+		special_project_specialization = { specialization_land }
 		category_light_infantry = {
 			breakthrough = 0.10
 		}
@@ -1855,6 +1855,7 @@ technologies = {
 	# }
 	
 	motorised_infantry = {
+				special_project_specialization = { specialization_land }
 		enable_equipment_modules = {
 			tank_wheeled_suspension
 		}
@@ -1909,7 +1910,7 @@ technologies = {
 		}
 	}
 	motorized_rocket_unit = {
-
+		special_project_specialization = { specialization_land }
 		enable_subunits = {
 			motorized_rocket_brigade
 		}
@@ -1931,7 +1932,7 @@ technologies = {
 	}
 	
 	armored_car1 = {
-
+		special_project_specialization = { specialization_land }
 		enable_subunits = {
 			armored_car
 		}
@@ -1992,7 +1993,7 @@ technologies = {
 	}
 
 	armored_car2 = {
-
+		special_project_specialization = { specialization_land }
 		enable_equipments = {
 			armored_car_chassis_1
 		}
@@ -2046,7 +2047,7 @@ technologies = {
 	}
 
 	armored_car3 = {
-
+		special_project_specialization = { specialization_land }
 		enable_equipments = {
 			armored_car_chassis_2
 		}
@@ -2090,7 +2091,7 @@ technologies = {
 	}
 
 	mechanised_infantry = {
-
+		special_project_specialization = { specialization_land }
 		enable_equipments = {
 		
 			mechanized_equipment_1
@@ -2144,7 +2145,8 @@ technologies = {
 	}
 
 	amphibious_mechanized_infantry = {
-
+		special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
 		enable_equipments = {
 			amphibious_mechanized_equipment_1
 		}
@@ -2175,7 +2177,8 @@ technologies = {
 	}
 
 	amphibious_mechanized_infantry_2 = {
-
+		special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
 		enable_equipments = {
 			amphibious_mechanized_equipment_2
 		}
@@ -2197,7 +2200,7 @@ technologies = {
 	}
 	
 	mechanised_infantry2 = {
-
+		special_project_specialization = { specialization_land }
 		enable_equipments = {
 
 			mechanized_equipment_2
@@ -2235,7 +2238,7 @@ technologies = {
 	}
 	
 	mechanised_infantry3 = {
-
+		special_project_specialization = { specialization_land }
 		enable_equipments = {
 			mechanized_equipment_3
 		}
