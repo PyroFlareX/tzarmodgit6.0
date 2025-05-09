@@ -1911,6 +1911,7 @@ technologies = {
 	}
 	motorized_rocket_unit = {
 		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_air }
 		enable_subunits = {
 			motorized_rocket_brigade
 		}
@@ -2282,6 +2283,35 @@ technologies = {
 		enable_subunits = {
 			bicycle_battalion
 		}		
+	}
+
+	
+	camelry = {
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_subunits = {
+			camelry
+		}
+	}
+
+	elephantry = {
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_subunits = {
+			elephantry
+		}
 	}
 
 	######### FROM SOVIET FOCUS ##########
