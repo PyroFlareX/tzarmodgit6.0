@@ -1,6 +1,9 @@
 technologies = {
 	electronic_mechanical_engineering = {
-
+		special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_nuclear }
 		# small boost to research speed
 		research_speed_factor = 0.03
 		
@@ -44,7 +47,10 @@ technologies = {
 	}
 	
 	radio = {
-
+		special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_nuclear }
 		# units with radios can more efficiently join combats when there is room
 		land_reinforce_rate = 0.06
 		coordination_bonus = 0.04
@@ -89,7 +95,10 @@ technologies = {
 	}
 	
 	radio_detection = {
-
+		special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_nuclear }
 		# 
 		enable_equipment_modules = {
 			lc_radar
@@ -127,7 +136,10 @@ technologies = {
 	}
 	
 	decimetric_radar = {
-
+				special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_nuclear }
 		# can build radars/radar boost in air/sea combat depends on radar level
 
 		path = {
@@ -172,7 +184,10 @@ technologies = {
 	}
 	
 	improved_decimetric_radar = {
-
+		special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_nuclear }
 		# radar boost in air/sea combat depends on radar level
 		enable_building = {
 			building = radar_station
@@ -218,7 +233,10 @@ technologies = {
 	}
 	
 	centimetric_radar = {
-
+		special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_nuclear }
 		# radar boost in air/sea combat depends on radar level
 		enable_building = {
 			building = radar_station
@@ -266,7 +284,10 @@ technologies = {
 	}
 	
 	improved_centimetric_radar = {
-
+		special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_nuclear }
 		# radar boost in air/sea combat depends on radar level
 		enable_building = {
 			building = radar_station
@@ -312,7 +333,10 @@ technologies = {
 	}
 	
 	advanced_centimetric_radar = {
-
+		special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_nuclear }
 		# radar boost in air/sea combat depends on radar level
 		enable_building = {
 			building = radar_station
@@ -351,7 +375,10 @@ technologies = {
 	}
 	
 	mechanical_computing = {
-
+		special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_nuclear }
 		# small boost to research speed
 		research_speed_factor = 0.05
 		
@@ -388,7 +415,10 @@ technologies = {
 	}
 	
 	computing_machine = {
-
+		special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_nuclear }
 		# small boost to research speed
 		research_speed_factor = 0.06
 		
@@ -444,7 +474,10 @@ technologies = {
 	}
 	
 	improved_computing_machine = {
-
+		special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_nuclear }
 		# small boost to research speed
 		research_speed_factor = 0.08
 		
@@ -507,7 +540,10 @@ technologies = {
 	}
 	
 	advanced_computing_machine = {
-
+		special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_nuclear }
 		# small boost to research speed
 		research_speed_factor = 0.08
 		
@@ -557,7 +593,10 @@ technologies = {
 
 	
 	experimental_rockets = {
-
+		special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_nuclear }
 		enable_building = {
 			building = rocket_site
 			level = 2
@@ -587,7 +626,10 @@ technologies = {
 	
 
 	atomic_research = {
-
+		special_project_specialization = { specialization_naval }
+		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_nuclear }
 		research_speed_factor = 0.04
 		
 		path = {

@@ -1,6 +1,7 @@
 technologies = {
 	
 	iw_small_airframe = {
+				special_project_specialization = { specialization_air }
 		allow = { NOT = { disabled_ai_production = yes tag = EFR tag =SPR }  }
 		enable_equipment_modules = {
 		recon_camera
@@ -63,7 +64,7 @@ technologies = {
 	
 	
 	basic_small_airframe = {
-
+		special_project_specialization = { specialization_air }
 		enable_equipments = {
 			small_plane_airframe_1
 			small_plane_cas_airframe_1
@@ -107,6 +108,7 @@ technologies = {
 	
 	
 	improved_small_airframe = {
+				special_project_specialization = { specialization_air }
 		enable_equipment_modules = {
 			engine_3_1x
 		}
@@ -153,6 +155,7 @@ technologies = {
 	}
 	
 	advanced_small_airframe = {
+				special_project_specialization = { specialization_air }
 		allow = {
 			date > 1941.6.6
 			}
@@ -197,7 +200,7 @@ technologies = {
 	}
 	
 	modern_small_airframe = {
-
+		special_project_specialization = { specialization_air }
 		enable_equipments = {
 			small_plane_airframe_4
 			small_plane_cas_airframe_4
@@ -247,6 +250,7 @@ technologies = {
 	
 	
 	iw_medium_airframe = {
+				special_project_specialization = { specialization_air }
 		allow = { disabled_ai_production = yes }
 		enable_equipment_modules = {
 		recon_camera
@@ -295,7 +299,7 @@ technologies = {
 	}
 	
 	basic_medium_airframe = {
-
+		special_project_specialization = { specialization_air }
 		enable_equipments = {
 			medium_plane_airframe_1
 			medium_plane_fighter_airframe_1
@@ -329,6 +333,7 @@ technologies = {
 	}
 	
 	improved_medium_airframe = {
+				special_project_specialization = { specialization_air }
 		enable_equipment_modules = {
 			engine_3_2x
 		}
@@ -360,7 +365,7 @@ technologies = {
 	}
 	
 	advanced_medium_airframe = {
-
+		special_project_specialization = { specialization_air }
 		enable_equipments = {
 			medium_plane_airframe_3
 			medium_plane_fighter_airframe_3
@@ -392,7 +397,7 @@ technologies = {
 	}
 	
 	modern_medium_airframe = {
-
+		special_project_specialization = { specialization_air }
 		enable_equipments = {
 			medium_plane_airframe_4
 			medium_plane_fighter_airframe_4
@@ -433,6 +438,7 @@ technologies = {
 	}
 
 	iw_large_airframe = {
+				special_project_specialization = { specialization_air }
 		allow = { disabled_ai_production = yes }
 		enable_equipment_modules = {
 		recon_camera
@@ -480,7 +486,7 @@ naval_bomber
 	}
 	
 	basic_large_airframe = {
-
+		special_project_specialization = { specialization_air }
 		enable_equipments = {
 			large_plane_airframe_1
 			large_plane_maritime_patrol_plane_airframe_1
@@ -510,7 +516,7 @@ naval_bomber
 	}
 	
 	improved_large_airframe = {
-		
+				special_project_specialization = { specialization_air }
 		enable_equipment_modules = {
 			engine_3_4x
 		}
@@ -540,6 +546,7 @@ naval_bomber
 	}
 	
 	advanced_large_airframe = {
+				special_project_specialization = { specialization_air }
 		allow = { 	 		
 			ROOT = {
 				is_special_project_completed = sp:sp_air_axial_jet_engine
@@ -575,7 +582,7 @@ naval_bomber
 	}
 	
 	modern_large_airframe = {
-
+		special_project_specialization = { specialization_air }
 		enable_equipments = {
 			large_plane_airframe_4
 			large_plane_maritime_patrol_plane_airframe_4
@@ -609,7 +616,7 @@ naval_bomber generic
 	}
 
 	aa_lmg = {
-
+		special_project_specialization = { specialization_air }
 		enable_equipment_modules = {
 			tank_buster_1
 			light_mg_2x
@@ -655,7 +662,7 @@ naval_bomber generic
 	}
 
 	survivability_studies = {
-
+		special_project_specialization = { specialization_air }
 		enable_equipment_modules = {
 			self_sealing_fuel_tanks_small
 			self_sealing_fuel_tanks_medium
@@ -680,7 +687,7 @@ naval_bomber generic
 	}
 
 	aa_hmg = {
-
+		special_project_specialization = { specialization_air }
 		enable_equipment_modules = {
 			heavy_mg_2x
 			heavy_mg_4x
@@ -704,7 +711,7 @@ naval_bomber generic
 	}
 
 	aa_cannon_1 = {
-
+		special_project_specialization = { specialization_air }
 		enable_equipment_modules = {
 			aircraft_cannon_1_1x
 			aircraft_cannon_1_2x
@@ -729,7 +736,7 @@ naval_bomber generic
 	}
 
 	aa_cannon_2 = {
-
+		special_project_specialization = { specialization_air }
 		enable_equipment_modules = {
 			aircraft_cannon_2_1x
 			aircraft_cannon_2_2x
@@ -755,7 +762,7 @@ naval_bomber generic
 
 
 	range_improvements = {
-
+		special_project_specialization = { specialization_air }
 		enable_equipment_modules = {
 			fuel_tanks_small
 			fuel_tanks_medium
