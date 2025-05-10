@@ -390,7 +390,7 @@ sub_units = {
 		}
 
 		river = {
-			attack = 0.5 #More than reg engineers (0)
+			attack = 0.1 #More than reg engineers (0)
 			movement = 0.30 #More than reg eng (0.25)
 		}
 
