@@ -254,8 +254,8 @@ NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.1-- (0.1)
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 0.05
 
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
-NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.12 -- -0.12 vanilla, per level AA state 
---NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.62 -- .75 Maximum damage reduction factor applied to incoming air attacks against units with AA.
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.2 -- -0.12 vanilla, per level AA state 
+--NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.68 -- .75 Maximum damage reduction factor applied to incoming air attacks against units with AA.
 
 NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 0.4
 --NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1
