@@ -149,6 +149,7 @@ soviet_hero_city = { # on Province
 	dig_in_speed_factor = 8
 	supply_consumption_factor = -0.25
 	cas_damage_reduction = 0.3
+    infantry_defence = 0.1
 	
 }
 france_hero_cities_buffed = { # on Province
