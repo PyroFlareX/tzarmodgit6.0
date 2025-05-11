@@ -8353,7 +8353,7 @@ SOV_industry_relocation = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 5
+		days_mission_timeout = 4
 
 		visible = {
 			date<1942.1.1
@@ -8416,7 +8416,7 @@ SOV_industry_relocation = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 5
+		days_mission_timeout = 4
 
 		visible = {
 			date<1942.1.1

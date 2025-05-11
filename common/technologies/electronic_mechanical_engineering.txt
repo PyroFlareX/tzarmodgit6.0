@@ -645,8 +645,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		start_year = 1940
-		research_cost = 4
+		start_year = 1939
+		research_cost = 3.5
 		
 		folder = {
 			name = electronics_folder

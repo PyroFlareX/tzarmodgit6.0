@@ -179,9 +179,9 @@ sub_units = {
 		
 		#Size Definitions
 		max_organisation = 40
-		max_strength = 10
+		max_strength = 9.5
 		default_morale = 0.25
-		manpower = 1100
+		manpower = 1200
 
 		#Misc Abilities
 		maximum_speed = 0.5
@@ -200,7 +200,7 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 260
-			artillery_equipment = 30
+			artillery_equipment = 50
 		}
 
 		forest = {

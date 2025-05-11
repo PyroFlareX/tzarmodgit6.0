@@ -770,7 +770,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 30 #15
+				air_bombing = 26 #15
 			}
 		}
 		mission_type_stats = {

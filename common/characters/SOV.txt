@@ -1848,9 +1848,7 @@ SOV_arseniy_golovko={
 			}
 			
 			visible = {
-				NOT = {
-					has_character_flag = SOV_character_purged_flag 
-				}
+				
 			}
 			traits = {
 				captain_of_industry 
