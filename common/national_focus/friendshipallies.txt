@@ -103,6 +103,18 @@ joint_focus = {
 					target = RAJ
 					modifier = cheat_opinion_modifier_good
 				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = MEX
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = NZL
+					modifier = cheat_opinion_modifier_good
+				}
 			}
 			ENG = {
 				set_rule = {
@@ -135,6 +147,21 @@ joint_focus = {
 				}
 			}
 			RAJ = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			USA = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			MEX = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			NZL = {
 				set_rule = {
 					can_send_volunteers = yes
 				}

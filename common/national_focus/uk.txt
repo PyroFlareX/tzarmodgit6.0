@@ -675,6 +675,15 @@ focus_tree = {
 
 
 		completion_reward = {
+		add_tech_bonus = {
+					ahead_reduction = 0.75
+					bonus = 1.25
+					uses = 2
+					category = bb_tech
+					category = bc_tech
+					category = cat_ship_heavy_battery
+				}
+		
 			navy_experience = 50
 			136 = {
 				add_extra_state_shared_building_slots = 4
