@@ -8402,7 +8402,7 @@ SOV_industry_relocation = {
 							is_core_of = SOV
 							is_controlled_by  = SOV
 							is_on_continent = europe
-							industrial_complex > 2
+							arms_factory > 2
 						}
 			}
 		}
