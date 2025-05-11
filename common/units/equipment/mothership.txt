@@ -54,8 +54,8 @@ equipments = {
 		air_range = 3600
 		maximum_speed = 650
 		air_agility = 44 #57
-		air_attack = 190 #53
-		air_defence = 60  #8
+		air_attack = 165 #53
+		air_defence = 45  #8
 
 		upgrades = {
 			plane_gun_upgrade
@@ -75,7 +75,7 @@ equipments = {
 			aluminium = 8
 			rubber = 3
 		}
-		build_cost_ic = 200 #
+		build_cost_ic = 500 #
 		manpower = 100
 		fuel_consumption = 1.32
 
