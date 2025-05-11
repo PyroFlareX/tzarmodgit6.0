@@ -3068,7 +3068,7 @@ technology = improved_medium_airframe
 		continue_if_invalid = yes
 		prerequisite = { focus = ENG_chiefs_of_staff_committee }
 		icon = GFX_focus_eng_chiefs_of_staff_committee
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = ENG_chiefs_of_staff_committee
 		cost = 5
@@ -3103,7 +3103,7 @@ technology = improved_medium_airframe
 		relative_position_id = ENG_operation_cum_pass
 		text = "Recover Sudan"
 		x = 0
-		y = 3
+		y = 1
 		cost = 2
 		ai_will_do = {
 			factor = 1
@@ -3115,9 +3115,9 @@ technology = improved_medium_airframe
 				limit = {
 					is_subject_of = ROOT
 				}
-				add_timed_idea = { idea = ENG_operation_cumpass days = 180 }
+				add_timed_idea = { idea = ENG_operation_cumpass days = 100 }
 			}
-			FRF = { add_timed_idea = { idea = ENG_operation_cumpass days = 180 } }
+			FRF = { add_timed_idea = { idea = ENG_operation_cumpass days = 100 } }
 		}
 	}
 	
@@ -3220,7 +3220,7 @@ technology = improved_medium_airframe
 		prerequisite = { focus = ENG_chiefs_of_staff_committee }	
 		icon = GFX_focus_ENG_iran
 		x = 1
-		y = 2
+		y = 1
 
 		cost = 1.5
 		relative_position_id = ENG_chiefs_of_staff_committee
@@ -3273,42 +3273,6 @@ technology = improved_medium_airframe
 		}
 	}
 
-	focus = {
-		id = ENG_pressure_sweden
-		prerequisite = { focus = ENG_chiefs_of_staff_committee }	
-		available = { 
-			GER = { has_completed_focus = GER_pressure_sweden }
-			NOT = {
-				GER = {
-					controls_state = 110
-					controls_state = 142
-				}
-			}
-		}
-		
-		
-		icon = GFX_goal_generic_production2
-		x = -1
-		y = 2
-		cost = 1
-		relative_position_id = ENG_chiefs_of_staff_committee
-		
-		completion_reward = {
-			custom_effect_tooltip = "This will remove German resource rights to Sweden if we have retaken Norway"
-			GER = {
-				remove_resource_rights = 666
-			}
-			give_resource_rights = { receiver = ENG state = 666 }
-			hidden_effect = {
-				ENG = {
-					transfer_state = 110
-					transfer_state = 143
-					transfer_state = 142
-					transfer_state = 144
-				}
-			}
-		}
-	}
 }
 
 	

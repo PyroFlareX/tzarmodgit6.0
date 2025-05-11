@@ -235,7 +235,7 @@ sr_no_asia = {
 	# 		}
 	# 	}
 	# }
-	SWE = { give_resource_rights = { receiver = GER state = 724 } }
+	SWE = { give_resource_rights = { receiver = GER state = 666 } }
 }
 
 startup_on_actions = {

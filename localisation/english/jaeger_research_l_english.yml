@@ -31,7 +31,8 @@ desertinfantry_at2_desc:0"The sandy Mountains of the desert can be treacherous t
 desertinfantry_at3:0"Desert Infantry III"
 desertinfantry_at3_desc:0"The sandy Mountains of the Desert can be treacherous to your regular Infantry. To be able to cope in this Environment you can train Desert Infantry Forces to gain an upper Hand in the Desert."
 
-
+RESEARCH_TAB_SLOTS:0 "Research"
+RESEARCH_TAB_FACILITIES:0 "Experimental Technologies"
 tech_flamethrower:0"Flamethrower I"
 tech_flamethrower_desc:0"Flamethrowers are very useful in close Combat and can be used very effectively in Urban Warfare and against fixed Fortifications. These also add a substantial soft attack to your Divisions."
 tech_flamethrower2:0"Flamethrower II"
