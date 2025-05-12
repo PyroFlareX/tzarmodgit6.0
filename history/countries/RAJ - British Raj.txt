@@ -29,8 +29,8 @@ set_technology = { basic_train = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
 	motorised_infantry = 1
-	camelry = 1 
-	elephantry = 1
+	#camelry = 1 
+	#elephantry = 1
 }
 
 add_timed_idea = { idea = france_production_regrowth days = 30 }
