@@ -1,0 +1,10 @@
+soundeffect =
+{
+	name = "schizo_war"
+	volume = 0.35
+	sounds = {
+		sound = "player_declare_war_01"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}

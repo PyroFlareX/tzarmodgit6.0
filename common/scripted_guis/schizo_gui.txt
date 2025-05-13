@@ -1,0 +1,24 @@
+scripted_gui = {
+
+	schizo_gui = {
+		context_type = player_context
+		window_name = "schizo_gui"
+		visible = {
+			has_country_flag = schizo_war
+		}
+		effects = {
+			GFX_nothing_lol_right_click = {
+				clr_country_flag = schizo_war
+			}
+		}
+		properties = {
+			sender_flag = {
+				image = [?sender_var.GetFlag]
+			}
+			receiver_flag = {
+				image = [ROOT.GetFlag]
+			}
+		}
+	}
+
+}
