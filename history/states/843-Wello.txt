@@ -1,8 +1,9 @@
-
 state={
 	id=843
 	name="STATE_843"
-
+	provinces={
+		7944 
+	}
 	history={
 		set_variable = {
 			843.ETH_state_development_production_speed = -0.3
@@ -35,10 +36,6 @@ state={
 
 		}
 
-	}
-
-	provinces={
-		5097 7944 
 	}
 	manpower=650000
 	buildings_max_level_factor=1.000

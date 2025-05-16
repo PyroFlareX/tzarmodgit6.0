@@ -1,11 +1,6 @@
-
 state={
 	id=301
 	name="STATE_301"
-	manpower = 890100
-	
-	state_category = town
-	
 	history={
 		owner = SWE
 		buildings = {
@@ -20,11 +15,11 @@ state={
 		}
 
 	}
-
 	provinces={
-		2152 2173 2194 11023 12901 
+		2152 2173 2194 12901 
 	}
-	
-
-	local_supplies=0.0 
+	manpower=890100
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }
