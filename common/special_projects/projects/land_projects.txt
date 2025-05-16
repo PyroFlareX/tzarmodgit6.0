@@ -1442,11 +1442,11 @@ sp_land_super_heavy_howitzer = {
 		}
 
 		country_effects = {
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_TECH_WITH_EXTRA_TECH
-				TECH = sp_artillery_rocket_assisted_projectiles_tech
-				EXTRA_TECH = experimental_rockets
-			}
+			#custom_effect_tooltip = {
+			#	localization_key = SP_UNLOCK_TECH_WITH_EXTRA_TECH
+			#	TECH = sp_artillery_rocket_assisted_projectiles_tech
+			#	EXTRA_TECH = experimental_rockets
+			#}
 		}
 	}
 
@@ -1571,8 +1571,8 @@ sp_land_self_propelled_super_heavy_howitzer = {
 	project_output = {
 		country_effects = {
 			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_TECH
-				TECH = sp_artillery_purpose_built_gun_motor_carriages_tech
+				#localization_key = SP_UNLOCK_TECH
+				#TECH = sp_artillery_purpose_built_gun_motor_carriages_tech
 			}
 		}
 		

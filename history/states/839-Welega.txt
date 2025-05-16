@@ -1,12 +1,9 @@
-state = {
-	id = 839 # Welega
-	name = "STATE_839"
-	manpower = 600000
-	resources = {
+state={
+	id=839
+	name="STATE_839"
+	provinces={
+		2009 13243 
 	}
-	
-	state_category = pastoral
-
 	history = {
 		set_variable = { ETH_state_development_production_speed = -0.3 }
 		set_variable = { ETH_state_development_local_building_slots_factor = -0.3 }
@@ -40,10 +37,8 @@ state = {
 			controller = ITA
 		}
 	}
-
-	provinces = {
- 		2009 12856 13243
- 	}
-
-	local_supplies = 0.0 
+	manpower=600000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }
