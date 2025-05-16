@@ -16,6 +16,15 @@ scripted_gui = {
 		effects = {
 			construction_speed_open_click = {
 				if = {
+					limit = {
+						and = {
+							has_country_flag = cheater_2
+							has_idea = instilled_aggression_spirit
+						}
+					}
+					set_country_flag = cheater
+				}
+				if = {
 					limit = { NOT = { has_country_flag = cons_speed_on } }
 					set_country_flag = cons_speed_on
 				}
