@@ -1,9 +1,13 @@
-state={
-	id=838
-	name="STATE_838"
-	provinces={
-		13244 13245 
+state = {
+	id = 838 # Illubabor-Kaffa
+	name = "STATE_838"
+	manpower = 600000
+	resources = {
+		
 	}
+	
+	state_category = pastoral
+
 	history = {
 		set_variable = { ETH_state_development_production_speed = -0.3 }
 		set_variable = { ETH_state_development_local_building_slots_factor = -0.3 }
@@ -38,8 +42,10 @@ state={
 			controller = ITA
 		}
 	}
-	manpower=600000
-	buildings_max_level_factor=1.000
-	state_category=pastoral
-	local_supplies=0.000
+
+	provinces = {
+ 		7912 13244 13245
+ 	}
+
+	local_supplies = 0.0 
 }
