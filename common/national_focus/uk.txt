@@ -666,7 +666,7 @@ focus_tree = {
 		x = 6
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -704,7 +704,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = naval_rearmament_focus
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -903,7 +903,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = naval_rearmament_focus
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -1069,7 +1069,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = uk_waves_focus
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}

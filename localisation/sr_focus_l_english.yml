@@ -1046,6 +1046,8 @@ BUL_bulgarization_mace:0 "Bulgarization of Macedonia"
 BUL_bulgarization_mace_desc:0 "After the Great War Yugoslavia closed off many Bulgarian institutions in Macedonia. With our return and Pro-Bulgarian sentiment high, its time to re-establish our cultural values within Macedonia."
 BUL_crush_drama_uprising:0 "Crush the Drama uprising"
 BUL_crush_drama_uprising_desc:0 "A local Greek resistance group has attacked Bulgarian authorities in the region. We must reestablish order."
+BUL_artillery_modernization:0 "Joint Co-operation"
+BUL_artillery_modernization_desc:0 "It is high time the world recognizes the slavic power of joint civilian military cooperation. Bulgaria will rise from the ashes of shadow modding!"
 
 #Romania
 ROM_simas_ascendancy:0 "Sima's Ascendancy"
@@ -1419,7 +1421,8 @@ GER_happy_time1:0 "Die Glückliche Zeit"
 GER_happy_time1_desc:0 ""
 GER_happy_time2:0 "Zweite Glückliche Zeit"
 GER_happy_time2_desc:0 ""
-
+GER_naval_docks:0 "Nordic Prussian Steel"
+GER_naval_docks_desc:0  "The High Seas Admiral, the Honorable and revered Royal Somalian BBCHighness, demands more naval investment. Who are you to refuse?"
 GER_happytime:0 "The Happy Time"
 
 

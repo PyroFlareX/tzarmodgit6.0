@@ -70,7 +70,8 @@ equipment_modules = {
 
 		add_stats = {
 			defense = 3
-			breakthrough = 1
+			breakthrough = 3.50
+			build_cost_ic = 1.00
 		}
 		
 		multiply_stats = {

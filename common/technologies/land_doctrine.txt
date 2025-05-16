@@ -1160,9 +1160,10 @@ technologies = {
 		# }
 
 		category_support_battalions = {
-			max_organisation = 7
+			max_organisation = 10
 			soft_attack = 0.15
-			breakthrough = 0.15
+			hard_attack = 0.3
+			breakthrough = 0.35
 			default_morale = 0.1
 			}
 		
@@ -1250,7 +1251,7 @@ technologies = {
 		xp_unlock_cost = 100
 		category_line_artillery = {
 			soft_attack = 0.15
-			hard_attack = 0.05
+			hard_attack = 0.15
 		}
 		
 		enable_tactic = tactic_overwhelming_fire
@@ -1393,12 +1394,12 @@ technologies = {
 		}
 		category_special_forces = { 
 			soft_attack = 0.25
-			max_organisation = 1
+			max_organisation = 7
 			default_morale = 0.01
 		}
 		infantry = { 
 			soft_attack = 0.05
-			max_organisation = 1
+			max_organisation = 3
 		}
 		
 		enable_tactic = tactic_breakthrough
@@ -1444,6 +1445,7 @@ technologies = {
 		enable_tactic = tactic_tactical_withdrawal
 
 		category_all_armor = {
+			
 			max_organisation = 5.0
 			default_morale = 0.03
 		}
@@ -1492,12 +1494,14 @@ technologies = {
 		category_army = {
 			max_organisation = 5
 			default_morale = 0.05
+			breakthrough = 0.1
 		}
 			
 		#combat advantage when air superior
 		#army_bonus_air_superiority_factor = 0.20
 		# Replaced with ground support buff
-		air_cas_present_factor = 0.125
+		air_superiority_bonus_in_combat = 0.375
+		air_cas_present_factor = -0.25
 		
 		doctrine = yes	
 		research_cost = 4.71
@@ -1668,6 +1672,8 @@ technologies = {
 		# xp_research_bonus = 1.00
 		xp_unlock_cost = 100
 		
+		air_superiority_bonus_in_combat = -0.40
+		air_cas_present_factor = 0.175
 		category_front_line = {
 			 soft_attack = 0.05
 		}
@@ -1719,8 +1725,7 @@ technologies = {
 		
 		xor = { mobile_warfare superior_firepower mass_assault } 
 	
-		max_dig_in = 5
-		dig_in_speed_factor = 0.25 #25% bonus
+		max_dig_in = 6
 		additional_brigade_column_size = 1
 		
 		path = {
@@ -1771,6 +1776,7 @@ technologies = {
 		
 		#planning max bonus increase
 		max_planning = 0.1
+		land_reinforce_rate = 0.01
 
 		doctrine = yes	
 		research_cost = 4.71
@@ -1818,6 +1824,7 @@ technologies = {
 			defense = 0.10
 			max_organisation = 15
 		}
+		
 		
 		path = {
 			leads_to_tech = grand_assault 
@@ -1966,6 +1973,7 @@ technologies = {
 		max_planning = 0.1
 		category_light_infantry = {
 			default_morale = 0.15
+			hard_attack = 2.5
 		}
 
 		enable_tactic = tactic_overwhelming_fire
@@ -2010,15 +2018,15 @@ technologies = {
 			max_organisation = 7
 		}
 		category_tanks = {
-			max_organisation = 1
+			max_organisation = 5
 		}
 		armored_car = {
 			max_organisation = 1
 		}
 		category_artillery = {
 			max_organisation = 3
-			soft_attack = 0.05
-			default_morale = 0.15
+			soft_attack = 0.075
+			default_morale = 0.35
 		}
 		
 		path = {
@@ -2057,9 +2065,13 @@ technologies = {
 		# xp_research_bonus = 1.00
 		xp_unlock_cost = 100
 		category_army = {
-			breakthrough = 0.05
+			breakthrough = 0.075
 			soft_attack = 0.05
-			hard_attack = 0.05
+			hard_attack = 0.1
+		}
+		category_special_forces = {
+		default_morale = 0.1
+		land_reinforce_rate = 0.03
 		}
 		org_loss_when_moving = -0.1
 		
@@ -2390,8 +2402,10 @@ technologies = {
 		# xp_research_cost = 100
 		# xp_research_bonus = 1.00
 		xp_unlock_cost = 100
+		planning_speed = 0.35
 		category_all_infantry = {
 			max_organisation = 5
+			default_morale = 0.15
 		}
 		category_tanks = {
 			max_organisation = 1
@@ -2630,6 +2644,10 @@ technologies = {
 				tag = SOV
 				tag = MON
 				tag = RAJ
+				TAG = ITA
+				TAG = ENG
+				TAG = USA
+				TAG = JAP
 			}
 		}
 

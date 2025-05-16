@@ -372,23 +372,24 @@ ideas = {
 	# }
 
 
-	# army_chief = {
+	 army_chief = {
 
-	# 	BUL_nikola_hadzipetkov = {
-	# 		picture = generic_army_europe_3
+	 	BUL_nikola_hadzipetkov = {
+	 		picture = generic_army_europe_3
 			
-	# 		allowed = {
-	# 			original_tag = BUL
-	# 		}
+	 		allowed = {
+	 			original_tag = BUL
+	 		}
 			
 
 			
-	# 		traits = { army_chief_offensive_2 }
+	 		traits = { army_chief_defensive_3 }
 			
-	# 		ai_will_do = {
-	# 			factor = 1
-	# 		}
-	# 	}
+	 		ai_will_do = {
+	 			factor = 1
+	 		}
+	 	}
+	}
 
 	# 	# BUL_hristo_lukov = {
 	# 	# 	picture = generic_army_europe_2

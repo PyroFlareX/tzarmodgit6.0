@@ -21,13 +21,13 @@ characters={
 	BUL_nikola_totev_markov={
 		name="Nikola Totev Markov"
 		advisor={
-			slot = navy_chief
+			slot = army_chief
 			idea_token = BUL_nikola_totev_markov
 			allowed  = {
 					original_tag  = BUL
 				}
 				traits  = {
-					navy_chief_decisive_battle_1 
+					army_chief_defensive_3
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -476,6 +476,10 @@ characters={
 			}
 		}
 	}
+	
+
+	
+	
 	BUL_atanas_pavlov_zhilkov={
 		advisor={
 			slot = high_command
