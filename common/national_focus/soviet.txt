@@ -4146,7 +4146,7 @@ focus_tree = {
 
 		completion_reward = {
 			clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
-			set_country_flag = { flag = SOV_paranoia_random_purge_cooldown_from_focus_flag days = 15 } #Used to prevent random purges from popping up while this is active
+			set_country_flag = { flag = SOV_paranoia_random_purge_cooldown_from_focus_flag days = 30 } #Used to prevent random purges from popping up while this is active
 			set_country_flag = SOV_first_moscow_trial_flag #Used to unlock the next purge focus
 
 			add_political_power = 25
