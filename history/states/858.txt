@@ -12,8 +12,8 @@ state={
 		}
 		owner = SAF
 		1936.1.1.13 = {
-			owner = ENG
-			add_core_of = ENG 
+			owner = CAN
+			add_core_of = CAN 
 		}
 		1936.1.1.15 = {
 			owner = SAF
