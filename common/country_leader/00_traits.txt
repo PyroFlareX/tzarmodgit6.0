@@ -7757,7 +7757,7 @@ tank_refurbishment_plant = { #NSB
 			}
 		}
 	}
-}
+
 	NOR_shipping_capitalist = { #For Johan Ludwig Mowinckel 
 		random = no
 		sprite = 10 
