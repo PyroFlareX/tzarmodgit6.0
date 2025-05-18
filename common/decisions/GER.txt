@@ -1780,35 +1780,6 @@ GER_case_anton = {
 	
 		complete_effect = {
  			GER = { 
-				if = {
-					limit = { HUN = { has_tech = CAS2 } }
-					set_technology = { CAS2 = 1 }
-				}
-				#############################################################################################
-				if = {
-					limit = { HUN = { has_tech = CAS3 } }
-					set_technology = { CAS3 = 1 }
-				}
-				#############################################################################################
-				if = {
-					limit = { HUN = { has_tech = tactical_bomber2 } }
-					set_technology = { tactical_bomber2 = 1 }
-				}
-				#############################################################################################
-				if = {
-					limit = { HUN = { has_tech = tactical_bomber3 } }
-					set_technology = { tactical_bomber3 = 1 }
-				}
-				#############################################################################################
-				if = {
-					limit = { HUN = { has_tech = naval_bomber2 } }
-					set_technology = { naval_bomber2 = 1 }
-				}
-				#############################################################################################
-				if = {
-					limit = { HUN = { has_tech = naval_bomber3 } }
-					set_technology = { naval_bomber3 = 1 }
-				}
 				#############################################################################################
 			}
 			GER = { 
