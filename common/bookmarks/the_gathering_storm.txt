@@ -1,7 +1,7 @@
 bookmarks = {
 	bookmark = {
-		name = "GATHERING_STORM_NAME"
-		desc = "WAH_1"
+		name = "Regular Game"
+		desc = "The intended Tzarmod(c) experience"
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
 		default_country = "GER"

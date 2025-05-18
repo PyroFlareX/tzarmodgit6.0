@@ -5141,7 +5141,7 @@ news_event = {
 news_event = {
 	id = news.813
 	title = "Cannon bonus"
-	desc = "Everyone got their cannon bonus steamhappy time!!!"
+	desc = "news.813.d"
 	picture = GFX_report_event_fall_blau
 
 	is_triggered_only = yes
@@ -5150,6 +5150,59 @@ news_event = {
 	fire_only_once = no
 
 	option = {
-		name = "wtf?"
+		name = "Okay..."
+	}
+}
+news_event = {
+	id = news.814
+	title = news.814.t
+	desc = news.814.d
+	picture = GFX_news_event_051
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_global_flag = liberation_of_kiev }
+		date > 1942.4.4
+	}
+	
+	immediate = {
+		set_global_flag = liberation_of_kiev
+	}
+	
+	option = {
+		name = news.145.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+				TAG = USA
+				TAG = AST
+				TAG = FRA
+				TAG = CAN
+				TAG = NZL
+				TAG = SAF
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = news.145.b
+		trigger = { 
+			OR = {
+				TAG = ENG
+				TAG = USA
+				TAG = AST
+				TAG = FRA
+				TAG = CAN
+				TAG = NZL
+				TAG = SAF
+			}
+		}
+	}
+	option = {
+		name = news.100.c
+		trigger = { TAG = GER }
 	}
 }

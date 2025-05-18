@@ -95,7 +95,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = chi_troops.3
+	id = chi_troops.377
 	title = pol_cap.1.t
 	desc = pol_cap.1.d
 	picture = GFX_report_event_hol_cabinet_de_geer
@@ -113,7 +113,7 @@ country_event = {
 				
 add_namespace = pol_cap
 country_event = {
-	id = pol_cap.1
+	id = pol_cap.166
 	title = pol_cap.1.t
 	desc = pol_cap.1.d
 	picture = GFX_report_event_hol_cabinet_de_geer
@@ -144,7 +144,7 @@ country_event = {
 				}
 				}
 country_event = {
-	id = pol_cap.2
+	id = pol_cap.255
 	title = pol_cap.1.t
 	desc = pol_cap.1.d
 	picture = GFX_report_event_hol_cabinet_de_geer
@@ -193,7 +193,7 @@ country_event = {
 				}
 				}
 country_event = {
-	id = pol_cap.3
+	id = pol_cap.344
 	title = pol_cap.1.t
 	desc = pol_cap.1.d
 	picture = GFX_report_event_hol_cabinet_de_geer
@@ -247,7 +247,7 @@ country_event = {
 				}
 				add_namespace = sov_cap_tzar
 country_event = {
-	id = sov_cap_tzar.1
+	id = sov_cap_tzar.133
 	title = pol_cap.2.t
 	desc = pol_cap.2.d
 	picture = GFX_report_event_hol_cabinet_de_geer
@@ -655,15 +655,15 @@ country_event = {
 	}
 	}
 }
-add_namespace = tib1
+add_namespace = hidden_shit_lol1
 country_event = {
-	id = tib1.1
+	id = hidden_shit_lol1.1
 	title = pol_cap.1.t
 	desc = pol_cap.1.d
 	picture = GFX_report_event_hol_cabinet_de_geer
 	hidden = yes
 	trigger = {
-		date = 1936.1.21
+		date > 1936.1.21
 		}
 	fire_only_once = yes
 	immediate = {
@@ -671,15 +671,15 @@ country_event = {
 	}
 }
 }
-add_namespace = tib2
+add_namespace = hidden_shit_lol2
 country_event = {
-	id = tib2.1
+	id = hidden_shit_lol2.1
 	title = pol_cap.1.t
 	desc = pol_cap.1.d
 	picture = GFX_report_event_hol_cabinet_de_geer
 	hidden = yes
 	trigger = {
-		date = 1936.4.29
+		date > 1936.4.29
 		}
 	fire_only_once = yes
 	immediate = {
@@ -687,30 +687,30 @@ country_event = {
 		}
 	}
 }
-add_namespace = tib3
+add_namespace = hidden_shit_lol3
 country_event = {
-	id = tib3.1
+	id = hidden_shit_lol3.1
 	title = pol_cap.1.t
 	desc = pol_cap.1.d
 	picture = GFX_report_event_hol_cabinet_de_geer
 	hidden = yes
 	trigger = {
-		date = 1936.8.19
+		date > 1936.8.19
 		}
 	fire_only_once = yes
 	immediate = {
 		
 	}
 }
-add_namespace = tib4
+add_namespace = hidden_shit_lol4
 country_event = {
-	id = tib4.1
+	id = hidden_shit_lol4.1
 	title = pol_cap.1.t
 	desc = pol_cap.1.d
 	picture = GFX_report_event_hol_cabinet_de_geer
 	hidden = yes
 	trigger = {
-		date = 1937.1.1
+		date > 1937.1.1
 		}
 	fire_only_once = yes
 	immediate = {
@@ -718,7 +718,7 @@ country_event = {
 		if = {
 		limit = {
 					AND = {
-					has_start_date = 1936.1.1.13
+					has_start_date > 1936.1.1.13
 					has_game_rule = { rule = canada_small_game option = CAN_SMALL_GAME_DISABLE }
 				}
 				}
@@ -733,15 +733,15 @@ country_event = {
 }
 }
 
-add_namespace = tib5
+add_namespace = hidden_shit_lol5
 country_event = {
-	id = tib5.1
+	id = hidden_shit_lol5.1
 	title = pol_cap.1.t
 	desc = pol_cap.1.d
 	picture = GFX_report_event_hol_cabinet_de_geer
 	hidden = yes
 	trigger = {
-		date = 1938.2.5
+		date > 1938.2.5
 		}
 	fire_only_once = yes
 	immediate = {
@@ -749,15 +749,15 @@ country_event = {
 		}
 	}
 }
-add_namespace = tib5
+add_namespace = hidden_shit_lol5
 country_event = {
-	id = tib5.1
+	id = hidden_shit_lol5.1
 	title = pol_cap.1.t
 	desc = pol_cap.1.d
 	picture = GFX_report_event_hol_cabinet_de_geer
 	hidden = yes
 	trigger = {
-		date = 1940.1.1
+		date > 1940.1.1
 		}
 	fire_only_once = yes
 	immediate = {
@@ -766,13 +766,13 @@ country_event = {
 	}
 }
 country_event = {
-	id = tib5.2
+	id = hidden_shit_lol5.2
 	title = pol_cap.1.t
 	desc = pol_cap.1.d
 	picture = GFX_report_event_hol_cabinet_de_geer
 	hidden = yes
 	trigger = {
-		date = 1937.6.6
+		date > 1937.6.6
 		}
 	fire_only_once = yes
 	immediate = {
@@ -800,15 +800,15 @@ country_event = {
 		}
 	}
 
-add_namespace = tib6
+add_namespace = hidden_shit_lol6
 country_event = {
-	id = tib6.1
+	id = hidden_shit_lol6.1
 	title = pol_cap.1.t
 	desc = pol_cap.1.d
 	picture = GFX_report_event_hol_cabinet_de_geer
 	hidden = yes
 	trigger = {
-		date = 1940.1.1
+		date > 1940.1.1
 		}
 	fire_only_once = yes
 	immediate = {

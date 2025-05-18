@@ -124,9 +124,18 @@ foreign_politics = {
 				}
 
 				ENG = {
-					set_state_controller = 271
 					set_state_controller = 550
+					set_state_controller = 842
+					set_state_controller = 678
+					set_state_controller = 843
+					set_state_controller = 835
+					set_state_controller = 271
+					set_state_controller = 840
+					set_state_controller = 839
+					set_state_controller = 837
+					set_state_controller = 836
 					set_state_controller = 559
+					set_state_controller = 844
 				}
 				# GER = { 
 				# 	remove_relation_modifier = {

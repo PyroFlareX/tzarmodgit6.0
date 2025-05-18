@@ -1,4 +1,7 @@
 ﻿l_english:
+ news.814.t:0 "The Liberation of Kiev"
+ news.814.d:0 "Kiev, the capital of Soviet Ukraine, has been liberated by Red Army forces after bitter fighting. German troops have retreated or been captured, and Soviet soldiers were met with tears and cheers from residents who endured two years of occupation. Though parts of the city lie in ruins, major landmarks have survived. The red Soviet flag now flies once more over Kiev, marking a significant victory on the Eastern Front and a powerful symbol of Soviet resistance and hope."
+SMALL_GAME_DESC:0 "A smaller game setup that excludes the following nations:\n§WAxis§!:\nHungary, Bulgaria, Croatia, Slovakia, Manchukuo.\n§tAllies§!:\nSouth Africa, Mexico, New Zealand, Mongolia. (Australia is included but not strictly necessary.)"
  fra_elections_desc:1 "§WThe 1936 elections marked a turning point in French history, highlighting the growing strength of the left and the desire for social change in the face of economic hardship and the threat of fascism."
  FRA_support_for_left_num:0 "[?FRA.FRA_support_for_left]"
  FRA_support_for_right_num:0 "[?FRA.FRA_support_for_right]"
