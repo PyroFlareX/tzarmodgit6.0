@@ -1,4 +1,5 @@
 ﻿l_english:
+  news.813.d:0 "Congratulations!!!\n\nYou've won the cannon bonus!!!\n\n\n                                                               £steam2_texticon"
  news.814.t:0 "The Liberation of Kiev"
  news.814.d:0 "Kiev, the capital of Soviet Ukraine, has been liberated by Red Army forces after bitter fighting. German troops have retreated or been captured, and Soviet soldiers were met with tears and cheers from residents who endured two years of occupation. Though parts of the city lie in ruins, major landmarks have survived. The red Soviet flag now flies once more over Kiev, marking a significant victory on the Eastern Front and a powerful symbol of Soviet resistance and hope."
 SMALL_GAME_DESC:0 "A smaller game setup that excludes the following nations:\n§WAxis§!:\nHungary, Bulgaria, Croatia, Slovakia, Manchukuo.\n§tAllies§!:\nSouth Africa, Mexico, New Zealand, Mongolia. (Australia is included but not strictly necessary.)"
