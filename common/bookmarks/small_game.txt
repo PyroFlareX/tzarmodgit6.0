@@ -1,7 +1,7 @@
 bookmarks = {
 	bookmark = {
 		name = "Scraping the barrel kind of game"
-		desc = "SMALL_GAME_DESC"
+		desc = "WAH2"
 		date = 1936.1.1.13
 		picture = "GFX_select_date_1936"
 		default_country = "GER"
@@ -93,6 +93,9 @@ bookmarks = {
 				victor_emmanuel
 			}	
 			focuses = {
+				ITA_pact_of_steel
+				#ITA_greece_war_goal
+				ITA_italia_irredenta
 			}		
 		}
 		"JAP"={

@@ -9,8 +9,8 @@ state={
 	history={
 		owner = SAF
 		1936.1.1.13 = {
-			owner = CAN
-			add_core_of = CAN 
+			owner = ENG
+			add_core_of = ENG 
 		}
 		1936.1.1.15 = {
 			owner = SAF

@@ -10,12 +10,6 @@ state={
 
 
 	history = {
-	1936.1.1.15 = {
-			owner = SWE 
-		}
-		1936.1.1.13 = {
-			owner = SWE 
-		}
 		owner = YUG
 		victory_points = {
 			13252 1 

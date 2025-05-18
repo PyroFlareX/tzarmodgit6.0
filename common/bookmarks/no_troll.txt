@@ -1,7 +1,7 @@
 bookmarks = {
 	bookmark = {
 		name = "RAID"
-		desc = "Use in case of pests"
+		desc = "RAID_STARTING_DATE"
 		date = 1936.1.1.15
 		picture = "GFX_start_RAID"
 		default_country = "GER"

@@ -1,9 +1,9 @@
 bookmarks = {
 	bookmark = {
 		name = "No asia"
-		desc = "Do you really need a desription?"
+		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.16
-		picture = "GFX_start_noasia"
+		picture = "GFX_select_date_1936"
 		default_country = "GER"
 		default = no
 		

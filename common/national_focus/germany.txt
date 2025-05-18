@@ -2030,12 +2030,14 @@ focus_tree = {
 			if = { limit = {country_exists = HUN } HUN = {
 				country_event = { id = germany.51 }
 				add_opinion_modifier = { target = GER modifier = GER_first_vienna_award_GER }
+				transfer_state = 664 
 			} }
 			every_country = {
 				limit = {
 					controls_state = 43
 				}
 				transfer_state = 664
+				transfer_state = 908
 			}
 			664 = { set_compliance = 60 }
 			hidden_effect = { CZE = { 				remove_state_core = 664  }}
@@ -2142,13 +2144,7 @@ focus_tree = {
 					transfer_state = 73
 				}
 			  }
-			  every_country = {
-					limit = {
-						controls_state = 43
-					}
-					transfer_state = 908
-				}
-			CZE = {
+CZE = {
 					set_cosmetic_tag = CZE_SLO	
 					set_politics = {
 						ruling_party = fascism

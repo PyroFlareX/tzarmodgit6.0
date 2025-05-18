@@ -1,7 +1,16 @@
 state={
 	id=688
 	name="STATE_688"
-		history={
+	manpower = 45900
+	
+	state_category = pastoral
+	
+	resources={
+		tungsten=3 # was: 4
+		steel=2 # was: 2
+	}
+
+	history={
 		owner = SWE
 		buildings = {
 			infrastructure = 1
@@ -9,15 +18,10 @@ state={
 		add_core_of = SWE
 		add_core_of = SWE
 	}
-	resources={
-		tungsten=3.000
-		steel=2.000
-	}
+	
 	provinces={
-		5165 
+		2195 2209 5165 8203 10973 
 	}
-	manpower=45900
-	buildings_max_level_factor=1.000
-	state_category=pastoral
-	local_supplies=0.000
+
+	local_supplies=0.0 
 }

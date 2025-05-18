@@ -7,9 +7,6 @@ state={
 
 	history={
 		owner = YUG
-		1936.1.1.13 = {
-			owner = SWE
-		}
 		1936.1.1.15 = {
 			owner = SWE 
 		}
