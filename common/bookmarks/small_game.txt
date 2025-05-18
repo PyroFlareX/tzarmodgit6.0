@@ -3,7 +3,7 @@ bookmarks = {
 		name = "Scraping the barrel kind of game"
 		desc = "SMALL_GAME_DESC"
 		date = 1936.1.1.13
-		picture = "GFX_select_date_1936"
+		picture = "GFX_start_small_game"
 		default_country = "GER"
 		default = no
 		

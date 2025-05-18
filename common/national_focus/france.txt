@@ -1150,7 +1150,7 @@
 			y = 0
 		}
 
-		cost = 10
+		cost = 4
 		prerequisite = {focus = FRA_election}
 		relative_position_id =FRA_election
 
@@ -1336,7 +1336,7 @@
 		prerequisite = {focus = Fra_left_wing}
 		relative_position_id = Fra_left_wing
 
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -1364,7 +1364,7 @@
 		prerequisite = {focus = Fra_left_wing}
 		relative_position_id = Fra_left_wing
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -1729,37 +1729,6 @@
 
 
 	focus = {
-		id = FRA_military_investments
-		text = "Strengthen National Defense"
-		icon = GFX_focus_NORDIC_dem_army
-		x = 3
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = Fra_right_wing
-		}
-		relative_position_id = Fra_right_wing
-		cost = 5
-		available = {
-			or = {
-				GER = {
-					has_completed_focus = GER_anschluss
-				}
-				date > 1937.3.1
-			}
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			custom_effect_tooltip = "Unlocks Military Tree"
-		}
-	}
-	focus = {
 		id = FRA_fight_communists
 		text = "Fight the Radicals"
 		icon = GFX_focus_SWE_attack_landsorganisationen
@@ -1773,7 +1742,7 @@
 			focus = FRA_stimulate_the_dynamic_market
 		}
 		relative_position_id = FRA_stimulate_the_dynamic_market
-		cost = 10
+		cost = 4
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2008,7 +1977,7 @@
 			focus = Fra_right_wing
 			
 		}
-		x = -3
+		x = 3
 		y = 1
 		relative_position_id = Fra_right_wing
 		cost = 5
@@ -2091,7 +2060,7 @@
 			focus = FRA_election
 		}
 		relative_position_id = FRA_election 
-		cost = 5
+		cost = 4
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2169,271 +2138,6 @@
 		}
 	}
 	
-	focus = {
-		id = FRA_naval_rearmament
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 30
-		y = 0
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			navy_experience = 25
-			every_state = {
-				limit = { has_state_flag = FRA_naval_rearmament_2NB }
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}		
-		}
-
-		completion_reward = {
-			navy_experience = 25
-			772 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-					set_state_flag = FRA_naval_rearmament_2NB
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = FRA_colonial_naval_bases
-		icon = GFX_goal_generic_build_navy
-	 	prerequisite = { focus = FRA_naval_rearmament }
-		x = -2
-		y = 1
-		relative_position_id = FRA_naval_rearmament
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			459 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = naval_base
-						level = 3
-						province = 1145
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_naval_bases
-				}
-			}
-			272 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = naval_base
-						level = 3
-						province = 4948
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_naval_bases
-				}
-			}
-			286 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = naval_base
-						level = 3
-						province = 4401
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_naval_bases
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = FRA_develop_colonial_dockyards
-		icon = GFX_goal_generic_construct_naval_dockyard
-	 	prerequisite = { focus = FRA_colonial_naval_bases }
-		x = 0
-		y = 1
-		relative_position_id = FRA_colonial_naval_bases
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			772 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = dockyard
-						level = 4
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_dockyards
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = FRA_the_old_school
-		icon = GFX_focus_generic_navy_battleship2
-	 	prerequisite = { focus = FRA_naval_rearmament }
-
-		x = 0
-		y = 1
-		relative_position_id = FRA_naval_rearmament
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-		772 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
-			}
-		}
-	}
-
-	focus = {
-		id = FRA_carrier_focus
-		icon = GFX_goal_generic_navy_carrier
-	 	prerequisite = { focus = FRA_the_old_school }
-		x = 0
-		y = 1
-		relative_position_id = FRA_the_old_school
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_carrier_focus
-				bonus = 1.0
-				uses = 2
-				category = cv_tech
-			}
-		}
-	}
-
-
-	focus = {
-		id = FRA_the_young_school
-		icon = GFX_goal_generic_navy_cruiser
-	 	prerequisite = { focus = FRA_naval_rearmament }
-
-		x = 3
-		y = 1
-		relative_position_id = FRA_naval_rearmament
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_ideas = FRA_the_young_school
-		}
-	}
-
-	focus = {
-		id = FRA_undersea_combat
-		icon = GFX_goal_generic_navy_submarine
-	 	prerequisite = { focus = FRA_the_young_school }
-		x = -1
-		y = 1
-		relative_position_id = FRA_the_young_school
-		cost = 1
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = FRA_undersea_combat
-				bonus = 1.0
-				uses = 2
-				category = ss_tech
-			}
-		}
-	}
-
-	focus = {
-		id = FRA_surface_combat
-		icon = GFX_focus_generic_destroyer
-	 	prerequisite = { focus = FRA_the_young_school }
-		x = 1
-		y = 1
-		relative_position_id = FRA_the_young_school
-		cost = 1
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = FRA_surface_combat
-				bonus = 2.0
-				uses = 1
-				category = dd_tech
-			}
-		}
-	}
-	focus = {
-		id = FRA_improved_screen_ships
-		icon = GFX_goal_generic_navy_cruiser
-	 	prerequisite = { focus = FRA_surface_combat }
-	 	prerequisite = { focus = FRA_undersea_combat }
-		x = -1
-		y = 1
-		relative_position_id = FRA_surface_combat
-		cost = 1
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			navy_experience = 25
-			add_tech_bonus = {
-				name = FRA_improved_screen_ships
-				bonus = 2.0
-				uses = 1
-				category = cl_tech
-			}
-		}
-	}
-
-	
-
-	focus = {
-		id = FRA_naval_doctrine
-		icon = GFX_goal_generic_navy_doctrines_tactics
-	 	prerequisite = { 
-	 		focus = FRA_carrier_focus
-	 	}
-		x = 0
-		y = 1
-		relative_position_id = FRA_carrier_focus
-		cost = 5
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		available_if_capitulated = yes
-
-		completion_reward = {
-			navy_experience = 1000
-		
-		}
-	}
 	
 
 # 	focus = {

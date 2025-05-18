@@ -813,7 +813,7 @@ focus_tree = {
 		relative_position_id = JAP_purge_the_kodoha_faction
 		prerequisite = { focus = JAP_purge_the_kodoha_faction }
 
-		cost = 3
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -852,7 +852,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 3
+		cost = 2
 
 		ai_will_do = {
 			factor = 2
@@ -933,7 +933,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 3
+		cost = 2
 
 		ai_will_do = {
 			factor = 1

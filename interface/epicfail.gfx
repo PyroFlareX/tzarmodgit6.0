@@ -915,6 +915,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/no_asia.dds"
 	}
 	SpriteType = { 
+		name = "GFX_start_small_game"
+		texturefile = "gfx/interface/small_game.dds"
+	}
+	SpriteType = { 
 		name = "GFX_focus_USA_shield_with_guns"
 		texturefile = "gfx/interface/goals/focus_USA_shield_with_guns.dds"
 	}
