@@ -195,65 +195,13 @@ resource_rights = {
 		else = { JAP = { give_resource_rights = { receiver = GER state = 724 } } } }
 }
 
-sr_no_asia = {
-	SWE = {
-		annex_country = { target = JAP transfer_troops = no }
-		annex_country = { target = MAN transfer_troops = no }
-		annex_country = { target = SIA transfer_troops = no }
-		annex_country = { target = CHI transfer_troops = no }
-		annex_country = { target = USA transfer_troops = no }
-		#indochina
-		transfer_state = 671 transfer_state = 670 transfer_state = 286 transfer_state = 741 transfer_state = 728
-		#phillipenes
-		transfer_state = 623 transfer_state = 327 transfer_state = 624 transfer_state = 628 transfer_state = 625
-		transfer_state = 627 transfer_state = 626
-
-		annex_country = { target = AST transfer_troops = no }
-		annex_country = { target = NZL transfer_troops = no }
-		
-		transfer_state = 320
-		transfer_state = 316
-
-		add_ideas = no_exports
-	}
-	ENG = {
-		# Having Australia/NZL is probably too much industry for UK, who doesn't even have great depression modifiers
-		# annex_country = { target = AST transfer_troops = no }
-		# annex_country = { target = NZL transfer_troops = no }
-	}
-
-	every_state = {
-		limit = { is_core_of = AST }
-		add_core_of = ENG
-	}
-	# USA = { add_ideas = the_price_of_no_asia }
-	# every_state = { limit = { is_core_of = USA }
-	# 	THIS = {
-	# 		remove_building = {
-	# 			type = industrial_complex
-	# 			level = 2
-	# 		}
-	# 	}
-	# }
-	SWE = { give_resource_rights = { receiver = GER state = 666 } }
-}
 
 startup_on_actions = {
 	simulate_pop_growth = yes
-	ai_manchukuo_effect = yes
 	ai_siam_effect = yes
-	startup_events = yes
+	#startup_events = yes
 	startup_ideas = yes
 	croatia_player = yes
 	resource_rights = yes
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = sr_no_asia
-				option = ENABLE_sr_no_asia
-			}
-		}
-		sr_no_asia = yes
-	}
 }
 	
