@@ -2586,7 +2586,6 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_tech = cv_fighter2
 		}
 
 		cancel_if_invalid = yes

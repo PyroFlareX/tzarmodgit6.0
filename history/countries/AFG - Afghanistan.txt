@@ -94,8 +94,8 @@ recruit_character = AFG_muhammed_nowroz
 		else = {
 			set_air_oob = "AFG_1939_air_legacy"
 			set_technology = {
-				early_fighter = 1
-				CAS1 = 1
+				
+				
 			}
 		}
 	}

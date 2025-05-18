@@ -91,11 +91,10 @@ set_technology = { basic_train = 1
 	basic_small_airframe = 1
 		basic_medium_airframe = 1
 					aa_lmg = 1
-	tactical_bomber1 = 1
+	
 
 	naval_bomber1 = 1
-	heavy_fighter1 = 1
-	
+		
 	mobile_warfare = 1
 	trade_interdiction = 1
 	convoy_interdiction_ti = 1

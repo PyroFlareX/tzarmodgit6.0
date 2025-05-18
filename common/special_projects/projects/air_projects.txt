@@ -32,7 +32,7 @@ sp_air_bouncing_bomb = {
 		}
 		else = {
 			OR = {
-				FROM = { has_tech = tactical_bomber2 }
+				FROM = {  }
 				FROM = { has_tech = strategic_bomber2 }
 			}
 		}
@@ -615,8 +615,8 @@ sp_air_jet_engine = {
 			}
 			else = {
 				OR = {
-					has_tech = fighter2
-					has_tech = tactical_bomber2
+					
+					
 				}
 			}	
 		}

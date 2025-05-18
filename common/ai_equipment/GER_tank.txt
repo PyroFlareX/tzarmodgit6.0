@@ -563,9 +563,9 @@ GER_light_tank_anti_air = {
 	priority = {
 		factor = 5
 		modifier = {
-			NOT = { has_tech = fighter2 } #we should probably do something about that air superiority...
+			NOT = { has_tech = improved_small_airframe } #we should probably do something about that air superiority...
 			any_enemy_country = {
-				has_tech = fighter2
+				has_tech = improved_small_airframe
 			}
 			factor = 3
 		}
@@ -1342,9 +1342,9 @@ GER_medium_tank_anti_air = {
 	priority = {
 		factor = 5
 		modifier = {
-			NOT = { has_tech = fighter2 } #we should probably do something about that air superiority...
+			NOT = { has_tech = improved_small_airframe } #we should probably do something about that air superiority...
 			any_enemy_country = {
-				has_tech = fighter2
+				has_tech = improved_small_airframe
 			}
 			factor = 3
 		}
@@ -2039,9 +2039,9 @@ GER_heavy_tank_anti_air = {
 	priority = {
 		factor = 5
 		modifier = {
-			NOT = { has_tech = fighter2 } #we should probably do something about that air superiority...
+			NOT = { has_tech = improved_small_airframe } #we should probably do something about that air superiority...
 			any_enemy_country = {
-				has_tech = fighter2
+				has_tech = improved_small_airframe
 			}
 			factor = 3
 		}

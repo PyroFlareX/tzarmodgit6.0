@@ -1003,7 +1003,7 @@ technology = improved_medium_airframe
 
         set_technology = {
 
-        early_fighter = 1
+        
 
         }
         }
@@ -1034,7 +1034,7 @@ technology = improved_medium_airframe
 
 			hidden_effect = {
 				set_technology = {
-					early_bomber = 1
+					
 				}
 			}
 		}

@@ -48,8 +48,7 @@ add_to_faction = SIA
 set_faction_spymaster = yes	
 
 set_technology = { basic_train = 1
-	heavy_fighter1 = 1
-	improved_airplane_launcher = 1
+		improved_airplane_launcher = 1
 	interwar_antiair = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -68,7 +67,7 @@ set_technology = { basic_train = 1
 	basic_small_airframe = 1
 		basic_medium_airframe = 1
 					aa_lmg = 1
-	tactical_bomber1 = 1
+	
 	naval_bomber1 = 1
 
 	trench_warfare = 1
@@ -1161,13 +1160,13 @@ if = {
 	else = {
 		set_air_oob = "JAP_1936_air_legacy"
 		set_technology = {
-			cv_early_fighter = 1
-			cv_CAS1 = 1
+			cv_
+			cv_
 			cv_naval_bomber1 = 1
-			early_fighter = 1
+			
 			naval_bomber1 = 1
-			early_bomber = 1
-			CAS1 = 1
+			
+			
 		}
 	}
 }

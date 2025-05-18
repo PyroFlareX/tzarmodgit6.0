@@ -45,7 +45,7 @@ set_technology = {
 
 		basic_medium_airframe = 1
 					aa_lmg = 1
-	tactical_bomber1 = 1
+	
 
 	mobile_warfare = 1
 	radio = 1

@@ -491,9 +491,9 @@ ITA_light_tank_anti_air = {
 	priority = {
 		factor = 500
 		modifier = {
-			NOT = { has_tech = fighter2 } #we should probably do something about that air superiority...
+			NOT = { has_tech = improved_small_airframe } #we should probably do something about that air superiority...
 			any_enemy_country = {
-				has_tech = fighter2
+				has_tech = improved_small_airframe
 			}
 			factor = 3
 		}
@@ -1175,9 +1175,9 @@ ITA_medium_tank_anti_air = {
 	priority = {
 		factor = 500
 		modifier = {
-			NOT = { has_tech = fighter2 } #we should probably do something about that air superiority...
+			NOT = { has_tech = improved_small_airframe } #we should probably do something about that air superiority...
 			any_enemy_country = {
-				has_tech = fighter2
+				has_tech = improved_small_airframe
 			}
 			factor = 3
 		}
@@ -1888,9 +1888,9 @@ ITA_heavy_tank_anti_air = {
 	priority = {
 		factor = 500
 		modifier = {
-			NOT = { has_tech = fighter2 } #we should probably do something about that air superiority...
+			NOT = { has_tech = improved_small_airframe } #we should probably do something about that air superiority...
 			any_enemy_country = {
-				has_tech = fighter2
+				has_tech = improved_small_airframe
 			}
 			factor = 3
 		}

@@ -205,7 +205,7 @@ recruit_character = HOL_wilhelmina
 			set_air_oob = "HOL_1939_air_legacy"
 			set_technology = {
 				basic_small_airframe = 1
-				tactical_bomber1 = 1
+				
 				naval_bomber1 = 1
 			}
 		}

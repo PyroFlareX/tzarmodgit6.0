@@ -23,9 +23,9 @@ if = {
 	else = {
 		set_air_oob = "MEX_1936_air_legacy"
 		set_technology = {
-			early_fighter = 1
-			early_bomber = 1
-			CAS1 = 1
+			
+			
+			
 
 		}
 	}
