@@ -206,24 +206,6 @@ on_actions = {
 
 			}
 			if = {
-				limit = { original_tag = HOL }
-				HOL = { set_equipment_fraction = 0.0 }
-				GER = { transfer_state = 35 transfer_state = 7 transfer_state = 36 36 = { set_compliance = 40 } 7 = { set_compliance = 40 } 35 = { set_compliance = 40 } }
-		 		ENG =  { transfer_state = 695 }
-				ENG = { country_event = { id = britain.1333 days = 1 } }
-				ENG = {
-				transfer_state = 673
-				transfer_state = 334
-				transfer_state = 672
-				transfer_state = 335
-				transfer_state = 667
-				transfer_state = 668
-					annex_country = {
-						target = HOL
-					
-					}
-				}
-			}
             ### den
             if = {
                 limit = { original_tag = DEN }
