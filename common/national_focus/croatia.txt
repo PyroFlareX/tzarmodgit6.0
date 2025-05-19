@@ -794,7 +794,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -834,7 +834,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -870,7 +870,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -907,7 +907,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -943,7 +943,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -978,7 +978,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1013,7 +1013,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1049,7 +1049,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1084,7 +1084,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1119,7 +1119,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1157,7 +1157,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1195,7 +1195,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1230,7 +1230,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1265,7 +1265,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1303,7 +1303,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1326,7 +1326,7 @@
 		text = "The Bureau of National Planning"
 		icon = GFX_focus_SOV_organize_wreckers
 		relative_position_id = YUG_sword_and_power
-		x = -1
+		x = 1
 		y = 1
 		prerequisite = {
 			focus = YUG_sword_and_power
@@ -1338,7 +1338,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1361,7 +1361,7 @@
 		text = "Supress The Old Guard"
 		icon = GFX_focus_SOV_zemsky_sobor
 		relative_position_id = YUG_sword_and_power
-		x = -3
+		x = -1
 		y = 1
 		prerequisite = {
 			focus = YUG_sword_and_power
@@ -1373,7 +1373,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1392,14 +1392,14 @@
 		}
 	}
 	focus = {
-		id = YUG_military_plan
-		text = "State-Directed Industrial Revival"
-		icon = GFX_focus_AFG_establish_darulaman
-		relative_position_id = YUG_sword_and_power
-		x = 1
+		id = YUG_purge
+		text = "Purge the Reactionaries"
+		icon = GFX_focus_SOV_military_purge
+		relative_position_id = YUG_supress_old_guard
+		x = -1
 		y = 1
 		prerequisite = {
-			focus = YUG_sword_and_power
+			focus = YUG_supress_old_guard
 		}
 		cost = 5
 
@@ -1408,7 +1408,150 @@
 		}
 
 		available = {
-			is_ai = no
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	#A New Doctrine of Command
+	focus = {
+		id = YUG_new_doctrine
+		text = "A New Doctrine of Command"
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = YUG_purge
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YUG_purge
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_institute
+		text = "The Institute for Strategic Studies"
+		icon = GFX_focus_SOV_zemsky_sobor
+		relative_position_id = YUG_purge
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = YUG_purge
+			focus = YUG_military_plan
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	#The Institute for Strategic Studies
+	focus = {
+		id = YUG_military_plan
+		text = "State-Directed Industrial Revival"
+		icon = GFX_focus_AFG_establish_darulaman
+		relative_position_id = YUG_establish_beurau
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = YUG_establish_beurau
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_economic_zon
+		text = "Economic Zoning Reform"
+		icon = GFX_focus_RAJ_special_economic_zones
+		relative_position_id = YUG_military_plan
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YUG_military_plan
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			
 		}
 
 		bypass = {
@@ -1429,12 +1572,15 @@
 	focus = {
 		id = YUG_authoritarian_technocracy
 		text = "Technocratic Authoritarianism"
-		icon = GFX_focus_GER_expand_ss_security_duties
+		icon = GFX_focus_generic_advanced_military_studies
 		relative_position_id = YUG_sword_and_power
-		x = 4
-		y = 1
+		x = -2
+		y = 4
 		prerequisite = {
-			focus = YUG_sword_and_power
+			focus = YUG_new_doctrine
+		}
+		prerequisite = {
+			focus = YUG_economic_zon
 		}
 		mutually_exclusive = {
 			focus = YUG_civil_promises
@@ -1446,7 +1592,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1467,7 +1613,7 @@
 	focus = {
 		id = YUG_industry_fusion
 		text = "Industrial-Military Fusion"
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_mass_production
 		relative_position_id = YUG_authoritarian_technocracy
 		x = -1
 		y = 1
@@ -1481,7 +1627,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1516,7 +1662,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1554,7 +1700,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1576,7 +1722,7 @@
 	focus = {
 		id = YUG_national_innovation
 		text = "National Innovation Drive"
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_research2
 		relative_position_id = YUG_strength_and_order
 		x = 6
 		y = 1
@@ -1590,7 +1736,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1610,7 +1756,7 @@
 	}
 	focus = {
 		id = YUG_bureaukcrat_republci
-		text = "The Bureaucrat’s Republic"
+		text = "The Bureaucrat's Republic"
 		icon = GFX_focus_BRA_reach_out_to_military_dem
 		relative_position_id = YUG_strength_and_order
 		x = 4
@@ -1625,7 +1771,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1660,7 +1806,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1680,8 +1826,8 @@
 	}
 	focus = {
 		id = YUG_balkan_order
-		text = ""
-		icon = GFX_focus_generic_diplomatic_treaty
+		text = "Establish The Balkan Order"
+		icon = GFX_focus_GER_weltpolitik
 		relative_position_id = YUG_strength_and_order
 		x = 2
 		y = 1
@@ -1696,7 +1842,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1731,7 +1877,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1769,7 +1915,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1790,12 +1936,15 @@
 	focus = {
 		id = YUG_civil_promises
 		text = "Promises of Return to Order"
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_improve_the_administration
 		relative_position_id = YUG_sword_and_power
-		x = 8
-		y = 1
+		x = 2
+		y = 4
 		prerequisite = {
-			focus = YUG_sword_and_power
+			focus = YUG_new_doctrine
+		}
+		prerequisite = {
+			focus = YUG_economic_zon
 		}
 		mutually_exclusive = {
 			focus = YUG_authoritarian_technocracy
@@ -1807,7 +1956,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1828,7 +1977,7 @@
 	focus = {
 		id = YUG_establish_civil
 		text = "Technocrat Civil Assembly"
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_generic_industrialists
 		relative_position_id = YUG_civil_promises
 		x = 1
 		y = 1
@@ -1842,7 +1991,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1877,7 +2026,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1915,7 +2064,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1953,7 +2102,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -1969,6 +2118,386 @@
 		}
 
 		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = YUG_federal_reforms
+		text = "Federal Reforms"
+		icon = GFX_focus_generic_improve_the_administration
+		relative_position_id = YUG_federal_kingdom
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YUG_federal_kingdom
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = YUG_royal_authority
+		text = "Strengthen Royal Authority"
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+		relative_position_id = YUG_federal_reforms
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = YUG_federal_reforms
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = YUG_federal_council
+		text = "Establish Federal Council"
+		icon = GFX_focus_GRE_following_in_the_footsteps_of_giants
+		relative_position_id = YUG_federal_reforms
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = YUG_federal_reforms
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = democratic_drift
+		}
+	}
+
+	focus = {
+		id = YUG_royal_government
+		text = "Royal Government"
+		icon = GFX_focus_GER_total_control_over_domestic_affairs
+		relative_position_id = YUG_federal_reforms
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = YUG_royal_authority
+		}
+		prerequisite = {
+			focus = YUG_federal_council
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.15
+		}
+	}
+
+	focus = {
+		id = YUG_royal_administration
+		text = "Royal Administration"
+		icon = GFX_focus_GER_expand_gestapo
+		relative_position_id = YUG_royal_government
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = YUG_royal_government
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = improved_administration
+		}
+	}
+
+	focus = {
+		id = YUG_federal_autonomy
+		text = "Federal Autonomy"
+		icon = GFX_focus_GER_strengthen_the_proletarian_international
+		relative_position_id = YUG_royal_government
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = YUG_royal_government
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = federal_autonomy
+		}
+	}
+
+	focus = {
+		id = YUG_royal_centralization
+		text = "Royal Centralization"
+		icon = GFX_focus_GER_divide_and_conquer
+		relative_position_id = YUG_royal_government
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = YUG_royal_administration
+		}
+		prerequisite = {
+			focus = YUG_federal_autonomy
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = YUG_royal_economy
+		text = "Royal Economic Policy"
+		icon = GFX_focus_CONGO_gold_and_diamonds
+		relative_position_id = YUG_royal_centralization
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = YUG_royal_centralization
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = royal_economy
+		}
+	}
+
+	focus = {
+		id = YUG_federal_economy
+		text = "Federal Economic Policy"
+		icon = GFX_focus_CONGO_gold_and_diamonds
+		relative_position_id = YUG_royal_centralization
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = YUG_royal_centralization
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = federal_economy
+		}
+	}
+
+	focus = {
+		id = YUG_united_kingdom
+		text = "United Kingdom"
+		icon = GFX_focus_AUS_bring_back_the_habsburg_rule
+		relative_position_id = YUG_royal_centralization
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = YUG_royal_economy
+		}
+		prerequisite = {
+			focus = YUG_federal_economy
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = 0.1
 		}
 	}
 
@@ -1993,7 +2522,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -2032,7 +2561,7 @@
 		}
 
 		available = {
-			is_ai = no
+			
 		}
 
 		bypass = {
@@ -2338,7 +2867,7 @@
 		}
 
 		available = {
-			#is_ai = no
+			#
 		}
 
 		bypass = {
