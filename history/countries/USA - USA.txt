@@ -70,7 +70,7 @@ set_technology = { basic_train = 1
 	marines = 1
 	air_superiority = 1
 	forward_interception = 1 
-	fighter_ace_initiative = 1 	
+	#fighter_ace_initiative = 1 	
 }
 
 set_autonomy = {

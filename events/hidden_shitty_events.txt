@@ -751,7 +751,7 @@ country_event = {
 }
 add_namespace = hidden_shit_lol5
 country_event = {
-	id = hidden_shit_lol5.1
+	id = hidden_shit_lol5.567
 	title = pol_cap.1.t
 	desc = pol_cap.1.d
 	picture = GFX_report_event_hol_cabinet_de_geer
