@@ -16,13 +16,16 @@
 	
 	focus = {
 		id = CRO_emergency_powers_to_pavlec
-		icon = GFX_focus_YUG_banovina_of_croatia
-		x = 11
-		y = 5
-		offset = {
-			x = 0
-			y = 0
+		prerequisite = {
+			focus = YUG_attract_foreign_capital
 		}
+		prerequisite = {
+			focus = YUG_invite_german_military_mission
+		}
+		icon = GFX_focus_YUG_banovina_of_croatia
+		relative_position_id = YUG_attract_foreign_capital
+		x = 1
+		y = 1
 		prerequisite = {}
 		mutually_exclusive = { }
 		
@@ -622,7 +625,7 @@
 	focus = {
 		id = CRO_the_national_bureau_of_statistics
 		icon = GFX_focus_generic_treaty
-		x = -4
+		x = -2
 		y = 1
 		offset = {
 			x = 0
@@ -774,63 +777,1253 @@
 		}
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	###############################
 	##### MAIN POLITICAL ######
 	###############################
+	focus = {
+		id = YUG_Political_1
+		text = "Securing the State's Future"
+		icon = GFX_focus_invite_yugoslavia
+		x = 25
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_serbian_supremacy
+		text  = "The Greater Serbian Kingdom"
+		icon = GFX_focus_YUG_dissolve_serbia
+		mutually_exclusive = {
+			focus = YUG_croatian_supremacy
+			focus = YUG_greater_nation
+		}
+		relative_position_id = YUG_Political_1
+		x = 6
+		prerequisite = {
+			focus = YUG_Political_1
+		}
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+#### Croatian path
+	focus = {
+		id = YUG_croatian_supremacy
+		text = "Croatian National State"
+		icon = GFX_focus_ICE_break_with_the_crown
+		relative_position_id = YUG_Political_1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YUG_Political_1
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = YUG_Orthodox
+		text = "Orthodox-Catholic Cold Peace"
+		icon = GFX_goal_generic_improve_relations
+		relative_position_id = YUG_croatian_supremacy
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = YUG_croatian_supremacy
+			focus = YUG_serbian_supremacy
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_Orthodoxy
+		text = "Empowerment of Orthodox Church"
+		icon = GFX_focus_GRE_an_orthodox_state
+		relative_position_id = YUG_serbian_supremacy
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = YUG_croatian_supremacy
+			focus = YUG_serbian_supremacy
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_Axis_council
+		icon = GFX_focus_GER_the_supreme_leader
+		relative_position_id = YUG_croatian_supremacy
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = YUG_croatian_supremacy
+			focus = YUG_serbian_supremacy
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_partisan_suppresion
+		icon = GFX_focus_AUS_legitimistische_jugend
+		relative_position_id = YUG_croatian_supremacy
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = YUG_croatian_supremacy
+			focus = YUG_greater_nation
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_Croatian_empoverment
+		text = "Croatian Military Empowerment"
+		icon = GFX_focus_YUG_devolved_croatia
+		relative_position_id = YUG_croatian_supremacy
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = YUG_croatian_supremacy
+			focus = YUG_greater_nation
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_greater_autonomy
+		text = "Promise Greater Autonomy"
+		icon = GFX_focus_GER_fate_of_yugoslavia
+		relative_position_id = YUG_greater_nation
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = YUG_greater_nation
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_Reform_comission
+		text = "Constitution Reform Comission"
+		icon = GFX_focus_AUS_lawmaking_leniency
+		relative_position_id = YUG_greater_nation
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = YUG_greater_nation
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_contitutional_reform
+		text = "Croatian Military Empowerment"
+		icon = GFX_goal_generic_improve_relations
+		relative_position_id = YUG_greater_nation
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = YUG_Reform_comission
+		}
+		prerequisite = {
+			focus = YUG_greater_autonomy
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_crisis_of_unity
+		text = "The Crisis of Unity"
+		icon = GFX_focus_BRA_utilize_security_law
+		relative_position_id = YUG_contitutional_reform
+		mutually_exclusive = {
+			focus = YUG_federal_kingdom
+		}
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = YUG_contitutional_reform
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_attempt_stabilise
+		text = "The Crisis of Unity"
+		icon = GFX_focus_BRA_end_the_state_of_emergency
+		relative_position_id = YUG_crisis_of_unity
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = YUG_crisis_of_unity
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_emergency_council
+		text = "Emergency Council Assembled"
+		icon = GFX_focus_SWI_dissolve_the_federal_council
+		relative_position_id = YUG_crisis_of_unity
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = YUG_crisis_of_unity
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_sword_and_power
+		text = "Rule by the Sword"
+		icon = GFX_focus_RAJ_kingmaker
+		relative_position_id = YUG_crisis_of_unity
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = YUG_attempt_stabilise
+		}
+		prerequisite = {
+			focus = YUG_emergency_council
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_establish_beurau
+		text = "The Bureau of National Planning"
+		icon = GFX_focus_SOV_organize_wreckers
+		relative_position_id = YUG_sword_and_power
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = YUG_sword_and_power
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_supress_old_guard
+		text = "Supress The Old Guard"
+		icon = GFX_focus_SOV_zemsky_sobor
+		relative_position_id = YUG_sword_and_power
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = YUG_sword_and_power
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_military_plan
+		text = "State-Directed Industrial Revival"
+		icon = GFX_focus_AFG_establish_darulaman
+		relative_position_id = YUG_sword_and_power
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = YUG_sword_and_power
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_authoritarian_technocracy
+		text = "Technocratic Authoritarianism"
+		icon = GFX_focus_GER_expand_ss_security_duties
+		relative_position_id = YUG_sword_and_power
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = YUG_sword_and_power
+		}
+		mutually_exclusive = {
+			focus = YUG_civil_promises
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_industry_fusion
+		text = "Industrial-Military Fusion"
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = YUG_authoritarian_technocracy
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = YUG_authoritarian_technocracy
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_effiecency_ministry
+		text = "Establishing the Ministry of Efficiency"
+		icon = GFX_focus_GER_integrated_economies
+		relative_position_id = YUG_authoritarian_technocracy
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = YUG_authoritarian_technocracy
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_strength_and_order
+		text = "Strength and Order"
+		icon = GFX_focus_AUS_bring_phonix_insurance_from_the_ashes
+		relative_position_id = YUG_authoritarian_technocracy
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = YUG_effiecency_ministry
+		}
+		prerequisite = {
+			focus = YUG_industry_fusion
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	# National Innovation Drive
+	focus = {
+		id = YUG_national_innovation
+		text = "National Innovation Drive"
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = YUG_strength_and_order
+		x = 6
+		y = 1
+		prerequisite = {
+			focus = YUG_reestablish_order
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_bureaukcrat_republci
+		text = "The Bureaucrat’s Republic"
+		icon = GFX_focus_BRA_reach_out_to_military_dem
+		relative_position_id = YUG_strength_and_order
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = YUG_reestablish_order
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_order_without_end
+		text = "Order Without End"
+		icon = GFX_focus_RAJ_war_taxes
+		relative_position_id = YUG_strength_and_order
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = YUG_strength_and_order
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_balkan_order
+		text = ""
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = YUG_strength_and_order
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = YUG_strength_and_order
+			focus = YUG_reestablish_order
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_Steel_republic
+		text = "The Steel Republic"
+		icon = GFX_focus_CHL_a_french_alliance
+		relative_position_id = YUG_strength_and_order
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YUG_strength_and_order
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_civil_promises
+		text = "Technocratic Authoritarianism"
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = YUG_sword_and_power
+		x = 5
+		y = 1
+		prerequisite = {
+			focus = YUG_sword_and_power
+		}
+		mutually_exclusive = {
+			focus = YUG_authoritarian_technocracy
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_civil_promises
+		text = "Promises of Return to Order"
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = YUG_sword_and_power
+		x = 8
+		y = 1
+		prerequisite = {
+			focus = YUG_sword_and_power
+		}
+		mutually_exclusive = {
+			focus = YUG_authoritarian_technocracy
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_establish_civil
+		text = "Technocrat Civil Assembly"
+		icon = GFX_focus_generic_diplomatic_treaty
+		relative_position_id = YUG_civil_promises
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = YUG_civil_promises
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_prepare_guided
+		text = "Preparing the Stage for elections"
+		icon = GFX_focus_AFG_pashtunistan_referendum
+		relative_position_id = YUG_civil_promises
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = YUG_civil_promises
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_reestablish_order
+		text = "Reestablish the Order"
+		icon = GFX_focus_AFG_parliamentary_democracy
+		relative_position_id = YUG_civil_promises
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = YUG_establish_civil
+		}
+		prerequisite = {
+			focus = YUG_prepare_guided
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = YUG_federal_kingdom
+		text = "The Federal Kingdom of Yugoslavia"
+		icon = GFX_goal_generic_improve_relations
+		relative_position_id = YUG_contitutional_reform
+		mutually_exclusive = {
+			focus = YUG_crisis_of_unity
+		}
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = YUG_contitutional_reform
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = YUG_greater_nation
+		text = "Aim For a Greater Union"
+		mutually_exclusive = {
+			focus = YUG_croatian_supremacy
+			focus = YUG_serbian_supremacy
+		}
+		icon = GFX_focus_generic_attack_yugoslavia
+		relative_position_id = YUG_Political_1
+		x = -9
+		y = 1
+		prerequisite = {
+			focus = YUG_Political_1
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+	}
 
 	focus = {
 		id = YUG_friendship_treaty_with_italy
 		icon = GFX_goal_generic_improve_relations
-		x = 7
-		y = 0
+		relative_position_id = YUG_croatian_supremacy
+		prerequisite = {
+			focus = YUG_partisan_suppresion
+		}
+		prerequisite = {
+			focus = YUG_Axis_council
+		}
+		x = 0
+		y = 2
 
 		cost = 10
 
@@ -870,7 +2063,7 @@
 		id = YUG_attract_foreign_capital
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = YUG_friendship_treaty_with_italy }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = YUG_friendship_treaty_with_italy
 
@@ -906,10 +2099,10 @@
 	focus = {
 		id = YUG_invite_german_military_mission
 		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = YUG_attract_foreign_capital  }
-		x = 0
+		prerequisite = { focus = YUG_friendship_treaty_with_italy  }
+		x = 1
 		y = 1
-		relative_position_id = YUG_attract_foreign_capital
+		relative_position_id = YUG_friendship_treaty_with_italy
 
 		cost = 5
 
@@ -1528,265 +2721,6 @@
 		}
 	}
 
-	
-	############################
-	######## AIR FORCE #########
-	############################
-
-	focus = {
-		id = YUG_modernize_the_air_force
-		icon = GFX_goal_generic_air_doctrine
-		x = 21
-		y = 0
-
-		cost = 1
-
-		ai_will_do = {
-			factor = 60
-			modifier = {
-				factor = 1.2
-				is_in_faction_with = GER
-			}
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		air_experience = 50
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1.0
-				uses = 2
-				category = air_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = YUG_local_developers
-		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = YUG_modernize_the_air_force }
-		x = 0
-		y = 1
-		relative_position_id = YUG_modernize_the_air_force
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-				air_experience = 50
-			add_ideas = HUN_indigenous_designs #emergency fix
-		}
-	}
-
-	focus = {
-		id = YUG_ikarus
-		icon = GFX_focus_YUG_ikarus
-		prerequisite = { focus = YUG_local_developers }
-		x = -2
-		y = 1
-		relative_position_id = YUG_local_developers
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-						air_experience = 25
-			custom_effect_tooltip = YUG_designer_tt
-
-			109 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = YUG_rogozarski
-		icon = GFX_focus_YUG_rogozarski
-		prerequisite = { focus = YUG_local_developers }
-		x = 0
-		y = 1
-		relative_position_id = YUG_local_developers
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-								air_experience = 25
-			custom_effect_tooltip = YUG_designer_tt
-			109 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = YUG_zmaj
-		icon = GFX_focus_YUG_zmaj
-		prerequisite = { focus = YUG_local_developers }
-		x = 2
-		y = 1
-		relative_position_id = YUG_local_developers
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-								air_experience = 25
-			custom_effect_tooltip = YUG_designer_tt
-			109 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = YUG_the_ik_3
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = YUG_ikarus focus = YUG_rogozarski focus = YUG_zmaj }
-		x = 0
-		y = 2
-		relative_position_id = YUG_local_developers
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = YUG_the_ik_3
-				bonus = 3.0
-				uses = 1
-				category = medium_air_bomber
-				category = heavy_air
-				category = light_fighter
-				category = cat_heavy_fighter
-			}
-		}
-	}
 
 	############################
 	######## LAND FORCE ########
@@ -1795,8 +2729,8 @@
 	focus = {
 		id = YUG_army_modernization
 		icon = GFX_goal_generic_army_doctrines
-		x = 15
-		y = 0
+		x = 60
+		y = 10
 
 		cost = 10
 
