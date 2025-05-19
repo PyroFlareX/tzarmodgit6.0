@@ -2090,7 +2090,7 @@
 		mutually_exclusive = {
 			focus = YUG_crisis_of_unity
 		}
-		x = 2
+		x = 4
 		y = 1
 		prerequisite = {
 			focus = YUG_contitutional_reform
