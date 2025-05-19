@@ -149,6 +149,19 @@ technologies = {
 				attack = 0.10
 			}
 		}
+		assault_engineer = {
+			breakthrough = 0.1
+			fort = {
+				attack = 0.15
+			}
+		}
+
+		armored_engineer = {
+			entrenchment = 1
+			fort = {
+				defence = 0.15
+			}
+		}
 		
 		enable_subunits = {
 			assault_engineer
