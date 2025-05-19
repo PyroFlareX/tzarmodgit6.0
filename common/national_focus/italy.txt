@@ -6085,8 +6085,16 @@ completion_reward = {
 
 		completion_reward = {
 			custom_effect_tooltip = "Gives cores on all occupied French states"
-			every_owned_state = {
-				limit = { is_core_of = FRA }
+			735 = {
+				add_core_of = ITA
+			}
+			1 = {
+				add_core_of = ITA
+			}
+			85 = {
+				add_core_of = ITA
+			}
+			913 = {
 				add_core_of = ITA
 			}
 		}

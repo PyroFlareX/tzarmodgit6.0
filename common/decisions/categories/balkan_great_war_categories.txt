@@ -12,6 +12,9 @@ balkan_form = {
 			original_tag = GER
 		}
 	}
+	visible = {
+		always = no
+	}
 	allowed = {
 		always = yes
 	}
