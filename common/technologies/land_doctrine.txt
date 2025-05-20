@@ -1122,6 +1122,10 @@ technologies = {
 			hard_attack = 0.2
 		}
 		
+		anti_tank_brigade = {
+		hard_attack = 0.05
+		}
+		
 		path = {
 			leads_to_tech = regimental_combat_teams 
 			research_cost_coeff = 1
@@ -1170,6 +1174,11 @@ technologies = {
 			breakthrough = 0.35
 			default_morale = 0.1
 			}
+			
+		infantry = {
+		max_organisation = 2
+		soft_attack = 0.1
+		}
 		
 		enable_tactic = tactic_overwhelming_fire
 		
