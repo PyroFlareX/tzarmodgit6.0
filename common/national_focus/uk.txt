@@ -151,7 +151,7 @@ focus_tree = {
 		prerequisite = { focus = limited_rearmament_focus }
 			available = {
 		OR = { 
-			date > 1937.6.1
+			date > 1937.2.1
 			GER = { has_completed_focus = GER_anschluss }
 		}
  	}
@@ -314,12 +314,13 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			 add_timed_idea = {
-                idea = british_austerity_idea
-                days = 730
+		
+			add_research_slot = 1
+		
+			 add_ideas =  british_austerity_idea
             }
 		}
-	}
+	
 	
 	focus = {
 		id = ENG_markI_artillery
@@ -481,6 +482,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		add_tech_bonus = {
+			technology = aa_cannon_2
+			uses = 1
+			bonus = 0.5
+			}
+		
 			air_experience = 25
 			126 = {
 				set_building_level = {
@@ -1456,7 +1463,7 @@ focus_tree = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = radar_focus
-				bonus = 1.0
+				bonus = 2.0
 				uses = 3
 				category = radar_tech
 			}
@@ -1484,6 +1491,164 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+		
+			if = {
+				limit = {
+					has_idea = ENG_fortify_the_empire_1
+				}
+				swap_ideas = {
+					remove_idea = ENG_fortify_the_empire_1
+					add_idea = ENG_fortify_the_empire_2
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = ENG_fortify_the_empire_1 }
+					NOT = { has_idea = ENG_fortify_the_empire_2 }
+				}
+				add_ideas = ENG_fortify_the_empire_1
+			}
+			if = { limit = { 447 = { is_controlled_by = ROOT } }
+				447 = {
+					set_building_level = {
+						type = coastal_bunker
+						level = 5
+						province = 4076
+						instant_build = yes
+					}
+					set_building_level = {
+						type = coastal_bunker
+						level = 3
+						province = 12013
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 4076
+						instant_build = yes
+					}
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			if = { limit = { 446 = { is_controlled_by = ROOT } }
+				446 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 3
+						instant_build = yes
+					}
+					set_building_level = {
+						type = bunker
+						level = 3
+						province = 7011
+						instant_build = yes
+					}
+					set_building_level = {
+						type = bunker
+						level = 3
+						province = 12016
+						instant_build = yes
+					}
+				}
+			}
+				
+			
+			if = { limit = { 118 = { is_controlled_by = ROOT } }
+						118 = {
+	
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					province = 4135
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					province = 13228
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 5
+					province = 13228
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 6
+					instant_build = yes
+				}
+				
+			}
+		}
+			
+		if = { limit = { 116 = { is_controlled_by = ROOT } }
+						116 = {
+				add_extra_state_shared_building_slots = 1
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province = 12003
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		if = { limit = { 183 = { is_controlled_by = ROOT } }
+			183 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province = 7193
+					instant_build = yes
+				}
+				set_building_level = {
+					type = naval_base
+					level = 3
+					province = 7193
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province = 11984
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+		
 			add_timed_idea = { idea = ENG_steady_as_she_goes_idea days = 365 }
 			add_ideas = ENG_service_overseas_idea
 		}
@@ -1662,8 +1827,14 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = { is_in_home_area=yes free_building_slots = { building = industrial_complex size > 1 include_locked = yes } }
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = { type = industrial_complex level = 4 instant_build = yes }
+				
+				add_building_construction = {
+					type = dockyard
+					level = 6
+					instant_build = yes
+				}
 			}
 			random_owned_controlled_state = {
 				limit = { is_in_home_area=yes free_building_slots = { building = arms_factory size > 1 include_locked = yes } }
@@ -1699,182 +1870,14 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = uk_mediterranean_focus 
-		prerequisite = { focus = ENG_global_defense }
-		available = {
-
-		} 
-		icon = GFX_goal_generic_construct_military
-		x = 0
-		y = 1
-		relative_position_id = ENG_global_defense
-		cost = 5
-		completion_reward = {
-			if = {
-				limit = {
-					has_idea = ENG_fortify_the_empire_1
-				}
-				swap_ideas = {
-					remove_idea = ENG_fortify_the_empire_1
-					add_idea = ENG_fortify_the_empire_2
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = ENG_fortify_the_empire_1 }
-					NOT = { has_idea = ENG_fortify_the_empire_2 }
-				}
-				add_ideas = ENG_fortify_the_empire_1
-			}
-			if = { limit = { 447 = { is_controlled_by = ROOT } }
-				447 = {
-					set_building_level = {
-						type = coastal_bunker
-						level = 5
-						province = 4076
-						instant_build = yes
-					}
-					set_building_level = {
-						type = coastal_bunker
-						level = 3
-						province = 12013
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = naval_base
-						level = 2
-						province = 4076
-						instant_build = yes
-					}
-					set_building_level = {
-						type = air_base
-						level = 10
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 3
-						instant_build = yes
-					}
-				}
-			}
-			if = { limit = { 446 = { is_controlled_by = ROOT } }
-				446 = {
-					add_building_construction = {
-						type = anti_air_building
-						level = 3
-						instant_build = yes
-					}
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = 7011
-						instant_build = yes
-					}
-					set_building_level = {
-						type = bunker
-						level = 3
-						province = 12016
-						instant_build = yes
-					}
-				}
-			}
-				
-			
-			if = { limit = { 118 = { is_controlled_by = ROOT } }
-						118 = {
-	
-				set_building_level = {
-					type = coastal_bunker
-					level = 5
-					province = 4135
-					instant_build = yes
-				}
-				set_building_level = {
-					type = coastal_bunker
-					level = 5
-					province = 13228
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 5
-					province = 13228
-					instant_build = yes
-				}
-				set_building_level = {
-					type = air_base
-					level = 20
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 6
-					instant_build = yes
-				}
-				
-			}
-		}
-			
-		if = { limit = { 116 = { is_controlled_by = ROOT } }
-						116 = {
-				add_extra_state_shared_building_slots = 1
-				set_building_level = {
-					type = coastal_bunker
-					level = 3
-					province = 12003
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		if = { limit = { 183 = { is_controlled_by = ROOT } }
-			183 = {
-				set_building_level = {
-					type = coastal_bunker
-					level = 3
-					province = 7193
-					instant_build = yes
-				}
-				set_building_level = {
-					type = naval_base
-					level = 3
-					province = 7193
-					instant_build = yes
-				}
-				set_building_level = {
-					type = air_base
-					level = 10
-					instant_build = yes
-				}
-				set_building_level = {
-					type = coastal_bunker
-					level = 3
-					province = 11984
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		}
-	}
 
 	focus = {
 		id = uk_colonial_focus 
-		prerequisite = { focus = uk_mediterranean_focus }
+		prerequisite = { focus = ENG_global_defense }
 		icon = GFX_focus_research2
 		x = 0
-		y = 1
-		relative_position_id = uk_mediterranean_focus
+		y = 2
+		relative_position_id = ENG_global_defense
 		cost = 5
 
 		available_if_capitulated = yes
@@ -1896,7 +1899,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = ENG_global_defense
-		cost = 2
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -2012,7 +2015,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_asia_focus
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -2024,6 +2027,8 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
+		
+		add_ideas = ENG_burma_road_volunteers
 			#send_equipment = { equipment = small_plane_airframe amount = 50 target = CHI }
 			CHI = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_good } 
@@ -2491,6 +2496,13 @@ focus_tree = {
 				technology = improved_small_airframe
 technology = improved_medium_airframe
 			}
+			
+			add_tech_bonus = {
+			technology = aa_cannon_1
+			uses = 1
+			bonus = 0.35
+			}
+			
 			add_tech_bonus = {
 				name = FRA_air_ground_cooperation
 				category = air_doctrine
@@ -3013,10 +3025,29 @@ technology = improved_medium_airframe
 		available_if_capitulated = yes
 
 		completion_reward = {
+		
+		random_owned_controlled_state = {
+					limit = {
+						AND = { 
+							is_core_of = ENG
+							free_building_slots = {
+								building = dockyard
+								size > 0
+								include_locked = yes
+							}
+						 }
+					}
+					add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = dockyard
+						level = 8
+						instant_build = yes
+					}
+				}
 			add_tech_bonus = {
 				name = UK_secret_focus
-				bonus = 1.0
-				uses = 2
+				bonus = 1.75
+				uses = 3
 				category = electronics
 			}
 			add_tech_bonus = {

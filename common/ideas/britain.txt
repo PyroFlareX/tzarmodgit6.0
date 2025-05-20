@@ -354,6 +354,26 @@ ideas = {
 			}
 		}
 		
+		
+		ENG_burma_road_volunteers = {
+
+			picture = volunteer_only
+
+			removal_cost = -1
+			
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {				
+				send_volunteer_size = 2
+			}
+		}
+		
 		british_fighter_discount = {
 			
 			allowed = {

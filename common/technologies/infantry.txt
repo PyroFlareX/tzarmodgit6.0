@@ -1013,7 +1013,7 @@ technologies = {
 	improved_special_forces = {
 
 		category_special_forces = {
-			breakthrough = 0.10
+			breakthrough = 0.12
 		}	
 		
 		path = {
@@ -1021,7 +1021,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 0.9
 		start_year = 1940
 		folder = {
 			name = infantry_folder
@@ -1046,6 +1046,7 @@ technologies = {
 		category_special_forces = {
 			acclimatization_hot_climate_gain_factor = 0.7
 			acclimatization_cold_climate_gain_factor = 0.7
+			supply_consumption_factor = -0.03
 		}
 		
 		
@@ -1080,7 +1081,8 @@ technologies = {
 			breakthrough = 0.05
 		}
 		special_forces_no_supply_grace = 48
-		special_forces_out_of_supply_factor = -0.1
+		special_forces_out_of_supply_factor = -0.3
+		supply_consumption_factor = -0.02
 		
 		path = {
 			leads_to_tech = elite_forces
@@ -1749,6 +1751,7 @@ technologies = {
 		
 		engineer = {
 			entrenchment = 0.5
+			initiative = 0.02
 		}
 
 		research_cost = 1.5
@@ -1778,6 +1781,7 @@ technologies = {
 		
 		engineer = {
 			entrenchment = 0.5
+			initiative = 0.02
 		}
 
 		research_cost = 1.5

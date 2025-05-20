@@ -1803,7 +1803,7 @@ mio_cat_tech_light_armor_and_modules
 
 		path = {
 			leads_to_tech = radio_tech_2
-			research_cost_coeff = 1
+			research_cost_coeff = 0.4
 		}
 
 		research_cost = 0.3
@@ -1833,7 +1833,7 @@ mio_cat_tech_light_armor_and_modules
 		
 		path = {
 			leads_to_tech = radio_tech_3
-			research_cost_coeff = 1
+			research_cost_coeff = 0.4
 		}	
 
 		research_cost = 0.35
@@ -1897,7 +1897,7 @@ mio_cat_tech_light_armor_and_modules
 				}
 			}
 		}
-		research_cost = 0.5
+		research_cost = 0.4
 		start_year = 1942
 		folder = {
 			name = nsb_armour_folder

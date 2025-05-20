@@ -108,6 +108,7 @@ set_technology = { basic_train = 1
 	radio = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
+	fuel_refining2 = 1
 	jaegers = 1 
 	shocktroops = 1
 	# improved_light_spaa = 1

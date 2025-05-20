@@ -684,9 +684,9 @@ technologies = {
 	tech_maintenance_company2 = {
 		special_project_specialization = { specialization_land }
 		maintenance_company = {
-			reliability_factor = 0.05
+			reliability_factor = 0.08
 			#equipment_capture_factor = 0.025
-			max_strength = 2.5
+			max_strength = 5.0
 		}
 		enable_equipment_modules = {
 			easy_maintenance
@@ -735,7 +735,7 @@ technologies = {
 	tech_maintenance_company3 = {
 		special_project_specialization = { specialization_land }
 		maintenance_company = {
-			reliability_factor = 0.05
+			reliability_factor = 0.08
 			#equipment_capture_factor = 0.025
 			max_strength = 2.5
 		}
@@ -778,7 +778,7 @@ technologies = {
 	tech_maintenance_company4 = {
 		special_project_specialization = { specialization_land }
 		maintenance_company = {
-			reliability_factor = 0.05
+			reliability_factor = 0.08
 			#equipment_capture_factor = 0.025
 			max_strength = 2.5
 		}
@@ -1445,6 +1445,9 @@ technologies = {
 	tech_signal_company2 = {
 		special_project_specialization = { specialization_land }
 		signal_company = {
+			initiative = 0.12
+		}
+		armored_signal = {
 			initiative = 0.12
 		}
 		

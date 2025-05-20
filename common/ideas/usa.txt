@@ -2,6 +2,30 @@ ideas = {
 
 	country = {
 	
+	
+	USA_navy_catchup = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_problems
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.5
+
+				
+			}
+		}
+	
 	USA_island_hopping1 = {
 			allowed = {
 				always = no

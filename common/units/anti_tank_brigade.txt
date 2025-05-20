@@ -105,7 +105,7 @@ sub_units = {
 		}
 		manpower = 500
 		max_organisation = -7.5
-		default_morale = 0.05
+		default_morale = 0.10
 		max_strength = 1.5
 		training_time = 120
 		weight = 0.5
@@ -113,8 +113,15 @@ sub_units = {
 		supply_consumption = 0.03
 
 		forest = {
-			attack = -0.2
+			attack = -0.15
+			defence = 0.05
 			movement = -0.2
+		}
+		
+		desert = {
+		attack = 0.05
+		defence = 0.05
+		movement = -0.01
 		}
 
 		hills = {
@@ -137,6 +144,7 @@ sub_units = {
 
 		fort = {
 			attack = 0.1
+			defense = 0.1
 		}
 
 		river = {
