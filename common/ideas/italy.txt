@@ -312,7 +312,7 @@ ideas = {
 				capital_ship = {
 					instant = yes
 					build_cost_ic = -0.10
-					armor_value = 0.10
+					armor_value = 0.05
 				}
 			}
 		}

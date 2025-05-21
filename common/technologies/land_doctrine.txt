@@ -1052,11 +1052,7 @@ technologies = {
 			defense = -0.1
 		}
 		mot_anti_tank_brigade = {
-			defense = -0.1
-		}
-		
-		infantry = {
-		defense = 0.1
+			defense = -0.5
 		}
 		
 		enable_tactic = tactic_elastic_defense
@@ -2210,7 +2206,7 @@ technologies = {
 		}
 		category_all_infantry = {
 			max_organisation = 10
-			default_morale = 0.175
+			default_morale = 0.125
 			breakthrough = 0.1
 		}
 		
@@ -2331,7 +2327,6 @@ technologies = {
 		}
 		anti_tank_brigade = { 
 			max_strength = 1.0
-			hard_attack = 0.1
 		}
 		
 		path = {
@@ -2482,7 +2477,6 @@ technologies = {
 		
 		anti_tank_brigade = {
 		initiative = 0.01
-		defense = -0.3
 		}
 
 		category_all_infantry = {
@@ -2689,7 +2683,7 @@ technologies = {
 		motorized_rocket_brigade = {
 			max_organisation = 10
 			default_morale = 0.2
-			soft_attack = 0.2
+			soft_attack = 0.1
 		}		
 		motorized = {
 			max_organisation = 5
@@ -2753,9 +2747,9 @@ technologies = {
 		}
 		
 		anti_tank_brigade = { 
-			defense = -0.5		}
+			defense = 0.25		} #I went in singleplayer and made a 8 at unit and had 550 defense, I'm aware this modifier lowers defense instead of increasing it, that's the entire point.
 		mot_anti_tank_brigade = {
-			defense = -0.5
+			defense = 0.25
 		}
 
 		category_all_armor = {
@@ -2854,7 +2848,7 @@ technologies = {
 			default_morale = 0.25
 		}
 		infantry = {
-			max_strength = 6.0
+			max_strength = 7.0
 		}
 		# category_light_infantry = { 
 			
@@ -3027,16 +3021,16 @@ technologies = {
 		
 			
 		mechanized = {
-			max_organisation = 5
+			max_organisation = 6
 			default_morale = 0.075
 			breakthrough = 0.10
-			max_strength = 6.0
+			max_strength = 7.0
 		}
 		motorized = {
-			max_organisation = 5
-			default_morale = 0.05
+			max_organisation = 6
+			default_morale = 0.075
 			breakthrough = 0.10
-			max_strength = 6.0
+			max_strength = 7.0
 		}	
 		amphibious_mechanized = {
 			max_organisation = 10

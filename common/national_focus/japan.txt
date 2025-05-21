@@ -270,7 +270,7 @@ focus_tree = {
 			CHI = {
 			surrender_progress > 0.78
 			}
-			date > 1939.09.01
+			date > 1940.01.01
 		}
 		}
 
@@ -599,9 +599,9 @@ focus_tree = {
 		every_country = { limit = { OR = { original_tag = AST original_tag = NZL } }
 			add_ideas = AST_papua
 		}
-		add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 240 }
-		MAN = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 240 } }
-		RAJ = { add_timed_idea = { idea = Raj_ToraToraTora days = 180 } }
+		add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 210 }
+		MAN = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 210 } }
+		RAJ = { add_timed_idea = { idea = Raj_ToraToraTora days = 150 } }
 		if = { limit = { OR = { country_exists = MAN country_exists = SIA } }
 			JAP = { add_ideas = game_impact_japan   }
 		}

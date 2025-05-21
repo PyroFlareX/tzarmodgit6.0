@@ -2443,7 +2443,7 @@ focus = {
 		completion_reward = {
 			add_timed_idea = {
 						idea = USA_invasion_of_philipines
-						days = 180
+						days = 120
 					}
 				
 				custom_effect_tooltip = "I Have Returned."
@@ -2678,7 +2678,7 @@ focus = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = "We will hold Philippines at all cost " 
-			hidden_effect = {every_state = { limit = { Philippines = yes }  add_dynamic_modifier = { scope = USA modifier = USA_hold_philippines days = 30 } } }
+			hidden_effect = {every_state = { limit = { Philippines = yes }}  add_dynamic_modifier = { scope = USA modifier = USA_hold_philippines days = 30 }  }
 		}
 	}
 	focus = {

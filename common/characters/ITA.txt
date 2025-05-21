@@ -360,9 +360,9 @@ characters={
 		}
 		navy_leader={
 			traits={ gentlemanly battleship_adherent fleet_protector superior_tactician ironside cruiser_captain green_water_expert concealment_expert big_guns_expert }
-			skill=7
-			attack_skill=10
-			defense_skill=6
+			skill=6
+			attack_skill=6
+			defense_skill=5
 			maneuvering_skill=5
 			coordination_skill=5
 			legacy_id=-1
