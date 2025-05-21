@@ -1483,7 +1483,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.1
 				min_export = 0.05	
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.25
 			}
 		}
 		allocate_more_resources_to_the_manhattan_project = {
@@ -1750,7 +1750,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_the_london_naval_treaty
 			modifier = {
-				production_speed_dockyard_factor = 0.1
+				production_speed_dockyard_factor = 0.20
 			}
 		}
 		NIRA = {

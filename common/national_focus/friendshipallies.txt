@@ -115,6 +115,10 @@ joint_focus = {
 					target = NZL
 					modifier = cheat_opinion_modifier_good
 				}
+				add_opinion_modifier = {
+					target = HOL
+					modifier = cheat_opinion_modifier_good
+				}
 			}
 			ENG = {
 				set_rule = {
@@ -162,6 +166,11 @@ joint_focus = {
 				}
 			}
 			NZL = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			HOL = {
 				set_rule = {
 					can_send_volunteers = yes
 				}
