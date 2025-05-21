@@ -423,10 +423,10 @@ characters={
 		corps_commander={
 			traits = { desert_fox commando trickster expert_improviser inflexible_strategist panzer_expert trait_reckless war_hero media_personality infantry_officer trait_engineer panzer_leader }
 			skill = 6
-			attack_skill = 6
+			attack_skill = 8
 			defense_skill = 5
 			planning_skill = 3
-			logistics_skill = 2
+			logistics_skill = 4
 			legacy_id=-1
 		}
 	}
