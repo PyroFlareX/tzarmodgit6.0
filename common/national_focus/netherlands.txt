@@ -679,7 +679,6 @@ focus_tree = {
 		prerequisite = { focus = HOL_curtail_colonial_autonomy }
 		available = {
 			has_capitulated = yes
-			NOT = { has_completed_focus = HOL_oranje_boven }
 			OR = {
 				INS = {
 					is_subject_of = HOL
@@ -3459,39 +3458,16 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = HOL_the_only_man_in_the_dutch_government
-		available = {
-			neutrality > 0.45
-			NOT = { has_completed_focus = HOL_curtail_colonial_autonomy }
-		}
-		prerequisite = { focus = HOL_symbol_of_resistance }
-		prerequisite = { focus = HOL_replace_the_defeatist_government }
-		icon = GFX_focus_hol_the_only_man_in_the_dutch_government
-		x = 1
-		y = 1
-		relative_position_id = HOL_symbol_of_resistance
-		cost = 10
 
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
-		completion_reward = {
-			promote_character = {
-				character = HOL_wilhelmina
-				ideology = centrism
-			}
-			set_politics = { ruling_party = neutrality elections_allowed = no }
-			remove_ideas = HOL_wilhelmina
-		}
-	}
+	
 
 	focus = {
 		id = HOL_de_vernieuwing
-		prerequisite = { focus = HOL_the_only_man_in_the_dutch_government }
+		prerequisite = { focus = HOL_symbol_of_resistance}
 		icon = GFX_goal_generic_demand_territory
 		x = -1
 		y = 1
-		relative_position_id = HOL_the_only_man_in_the_dutch_government
+		relative_position_id = HOL_symbol_of_resistance
 		cost = 10
 
 		available_if_capitulated = yes
@@ -3541,11 +3517,11 @@ focus_tree = {
 
 	focus = {
 		id = HOL_depillarization
-		prerequisite = { focus = HOL_the_only_man_in_the_dutch_government }
+		prerequisite = { focus = HOL_symbol_of_resistance }
 		icon = GFX_goal_generic_national_unity
 		x = 1
 		y = 1
-		relative_position_id = HOL_the_only_man_in_the_dutch_government
+		relative_position_id = HOL_symbol_of_resistance
 		cost = 10
 
 		available_if_capitulated = yes
