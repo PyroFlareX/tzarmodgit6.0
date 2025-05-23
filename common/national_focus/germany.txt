@@ -2575,7 +2575,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		x = -1
 		y = 1
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -2772,7 +2772,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_naval_effort3
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 0.25
 		}	
