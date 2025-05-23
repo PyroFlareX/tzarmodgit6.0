@@ -47,7 +47,6 @@
 		completion_reward = {
 			800 = { add_core_of = YUG }
 			103 = { add_core_of = YUG }	104 = { add_core_of = YUG }	109 = { add_core_of = YUG }
-			YUG = { transfer_state = 104 transfer_state = 109 transfer_state = 103 }
 			103 = {
 				add_extra_state_shared_building_slots = 13
 				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
@@ -60,6 +59,10 @@
 			}
 			YUG = { add_ideas = yugoslav_partisans }
 			YUG = { set_capital = { state = 109 } }
+			custom_effect_tooltip = YUG_internal_divide_reduction_small
+			custom_effect_tooltip = YUG_political_divide_reduction_small
+			add_to_variable = {YUG_internal_divide value = -0.1 }
+			add_to_variable = {YUG_political_divide value = -0.1 }
 		}
 	}
 	focus = {
@@ -93,6 +96,10 @@
 		completion_reward = {
 			add_country_leader_trait = emergency_powers
 			add_stability = 0.2
+			custom_effect_tooltip = YUG_internal_divide_reduction_medium
+			custom_effect_tooltip = YUG_political_divide_reduction_medium
+			add_to_variable = {YUG_internal_divide value = -0.15 }
+			add_to_variable = {YUG_political_divide value = -0.15 }
 		}
 	}
 	focus = {
@@ -131,6 +138,8 @@
 				uses = 2
 				bonus = 1.25
 			}
+			custom_effect_tooltip = YUG_internal_divide_reduction_small
+			add_to_variable = {YUG_internal_divide value = -0.1 }
 		}
 	}
 	focus = {
@@ -179,6 +188,8 @@
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = YUG_political_divide_reduction_small
+			add_to_variable = {YUG_political_divide value = -0.1 }
 		}
 	}
 	focus = {
@@ -212,6 +223,8 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = { FRA_venerate_the_craftsman }
+			custom_effect_tooltip = YUG_internal_divide_reduction_medium
+			add_to_variable = {YUG_internal_divide value = -0.15 }
 		}
 	}
 	focus = {
@@ -251,6 +264,8 @@
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = YUG_political_divide_reduction_small
+			add_to_variable = {YUG_political_divide value = -0.1 }
 		}
 	}
 
@@ -292,6 +307,10 @@
 					instant_build = yes 
 				}
 			}
+			custom_effect_tooltip = YUG_internal_divide_increase
+			custom_effect_tooltip = YUG_political_divide_increase
+			add_to_variable = {YUG_internal_divide value = 0.2 }
+			add_to_variable = {YUG_political_divide value = 0.2 }
 		}
 	}
 
@@ -326,6 +345,8 @@
 		completion_reward = {
 			reduce_occupation_cost_effect = yes
 			add_ideas = { FRA_mandatory_work_service }
+			custom_effect_tooltip = YUG_internal_divide_increase
+			add_to_variable = {YUG_internal_divide value = 0.2 }
 		}
 	}
 	focus = {
@@ -358,6 +379,10 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_stability = 0.15
+			custom_effect_tooltip = YUG_internal_divide_reduction_medium
+			custom_effect_tooltip = YUG_political_divide_reduction_medium
+			add_to_variable = {YUG_internal_divide value = -0.15 }
+			add_to_variable = {YUG_political_divide value = -0.15 }
 		}
 	}	
 	
@@ -399,6 +424,8 @@
 				amount = 3
 				state = 104
 			}
+			custom_effect_tooltip = YUG_internal_divide_reduction_small
+			add_to_variable = {YUG_internal_divide value = -0.1 }
 		}
 	}
 	focus = {
@@ -434,6 +461,8 @@
 
 		completion_reward = {
 			add_timed_idea = { idea = FRA_anti_decandence days = 365 }
+			custom_effect_tooltip = YUG_political_divide_reduction_medium
+			add_to_variable = {YUG_political_divide value = -0.15 }
 		}
 	}
 	focus = {
@@ -477,7 +506,10 @@
 				amount = 7
 				state = 104
 			}
-
+			custom_effect_tooltip = YUG_internal_divide_reduction_small
+			custom_effect_tooltip = YUG_political_divide_reduction_small
+			add_to_variable = {YUG_internal_divide value = -0.1 }
+			add_to_variable = {YUG_political_divide value = -0.1 }
 		}
 	}
 	focus = {
@@ -513,6 +545,8 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = { FRA_travail }
+			custom_effect_tooltip = YUG_internal_divide_reduction_small
+			add_to_variable = {YUG_internal_divide value = -0.1 }
 		}
 	}
 	focus = {
@@ -548,6 +582,8 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_stability = 0.2
+			custom_effect_tooltip = YUG_political_divide_reduction_small
+			add_to_variable = {YUG_political_divide value = -0.1 }
 		}
 	}
 	focus = {
@@ -582,6 +618,8 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_war_support = 0.2
+			custom_effect_tooltip = YUG_army_improvement_medium
+			add_to_variable = {YUG_army value = -0.15 }
 		}
 	}
 	focus = {
@@ -616,6 +654,8 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_popularity = { ideology = fascism popularity = 1 }
+			custom_effect_tooltip = YUG_political_divide_reduction_medium
+			add_to_variable = {YUG_political_divide value = -0.15 }
 		}
 	}
 
@@ -694,12 +734,13 @@
 					instant_build = yes
 				}
 			}
-			
-
+			custom_effect_tooltip = YUG_army_improvement_large
+			add_to_variable = {YUG_army value = -0.2 }
 		}
 	}
 	focus = {
 		id = CRO_hidden_materials
+		
 		icon = GFX_focus_secret_rearmament
 		x = 0
 		y = 1
@@ -919,7 +960,8 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
+			custom_effect_tooltip = YUG_internal_divide_reduction_medium
+			add_to_variable = {YUG_internal_divide value = -0.15 }
 		}
 
 		completion_reward = {
@@ -955,7 +997,8 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
+			custom_effect_tooltip = YUG_political_divide_reduction_medium
+			add_to_variable = {YUG_political_divide value = -0.15 }
 		}
 
 		completion_reward = {
@@ -990,7 +1033,8 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
+			custom_effect_tooltip = YUG_army_improvement_medium
+			add_to_variable = {YUG_army value = -0.15 }
 		}
 
 		completion_reward = {
@@ -1025,7 +1069,8 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
+			custom_effect_tooltip = YUG_internal_divide_reduction_large
+			add_to_variable = {YUG_internal_divide value = -0.25 }
 		}
 
 		completion_reward = {
@@ -1036,7 +1081,7 @@
 		text = "Croatian Military Empowerment"
 		icon = GFX_focus_YUG_devolved_croatia
 		relative_position_id = YUG_croatian_supremacy
-		x = -4
+		x = -3
 		y = 1
 		prerequisite = {
 			focus = YUG_croatian_supremacy
@@ -1061,7 +1106,8 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
+			custom_effect_tooltip = YUG_army_improvement_large
+			add_to_variable = {YUG_army value = -0.2 }
 		}
 
 		completion_reward = {
@@ -1207,10 +1253,10 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
-		}
-
-		completion_reward = {
+			custom_effect_tooltip = YUG_internal_divide_increase_large
+			custom_effect_tooltip = YUG_political_divide_increase_large
+			add_to_variable = {YUG_internal_divide value = 0.3 }
+			add_to_variable = {YUG_political_divide value = 0.3 }
 		}
 	}
 	focus = {
@@ -1315,10 +1361,12 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
-		}
-
-		completion_reward = {
+			custom_effect_tooltip = YUG_internal_divide_increase
+			custom_effect_tooltip = YUG_political_divide_increase
+			custom_effect_tooltip = YUG_army_improvement_large
+			add_to_variable = {YUG_internal_divide value = 0.2 }
+			add_to_variable = {YUG_political_divide value = 0.2 }
+			add_to_variable = {YUG_army value = -0.2 }
 		}
 	}
 	focus = {
@@ -1897,44 +1945,6 @@
 	}
 	focus = {
 		id = YUG_civil_promises
-		text = "Technocratic Authoritarianism"
-		icon = GFX_focus_generic_diplomatic_treaty
-		relative_position_id = YUG_sword_and_power
-		x = 5
-		y = 1
-		prerequisite = {
-			focus = YUG_sword_and_power
-		}
-		mutually_exclusive = {
-			focus = YUG_authoritarian_technocracy
-		}
-		cost = 5
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = YUG_civil_promises
 		text = "Promises of Return to Order"
 		icon = GFX_focus_generic_improve_the_administration
 		relative_position_id = YUG_sword_and_power
@@ -2114,10 +2124,10 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
-		}
-
-		completion_reward = {
+			custom_effect_tooltip = YUG_internal_divide_reduction_large
+			custom_effect_tooltip = YUG_political_divide_reduction_large
+			add_to_variable = {YUG_internal_divide value = -0.25 }
+			add_to_variable = {YUG_political_divide value = -0.25 }
 		}
 	}
 
@@ -2378,11 +2388,11 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
-		}
-
-		completion_reward = {
 			add_stability = 0.1
+			custom_effect_tooltip = YUG_internal_divide_reduction_medium
+			custom_effect_tooltip = YUG_political_divide_reduction_medium
+			add_to_variable = {YUG_internal_divide value = -0.15 }
+			add_to_variable = {YUG_political_divide value = -0.15 }
 		}
 	}
 
@@ -2492,12 +2502,12 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
-		}
-
-		completion_reward = {
 			add_stability = 0.2
 			add_war_support = 0.1
+			custom_effect_tooltip = YUG_internal_divide_reduction_very_large
+			custom_effect_tooltip = YUG_political_divide_reduction_very_large
+			add_to_variable = {YUG_internal_divide value = -0.3 }
+			add_to_variable = {YUG_political_divide value = -0.3 }
 		}
 	}
 
@@ -3284,11 +3294,9 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
-		}
-
-		completion_reward = {
 			army_experience = 75
+			custom_effect_tooltip = YUG_army_improvement_medium
+			add_to_variable = {YUG_army value = -0.15 }
 		}
 	}
 
@@ -3818,11 +3826,9 @@
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
-		}
-
-		completion_reward = {
 			army_experience = 100
+			custom_effect_tooltip = YUG_army_improvement_large
+			add_to_variable = {YUG_army value = -0.25 }
 		}
 	}
 

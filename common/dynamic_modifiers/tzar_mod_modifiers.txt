@@ -44,3 +44,48 @@ FRA_Army = { #NATIONAL SPIRIT - Civilian
  	surrender_limit = FRA_cap_limit
  	monthly_population = FRA_pop_growth
  }
+YUG_internal_divide = { #NATIONAL SPIRIT - Civilian
+	enable = { always = yes }
+	name = "Internal Politics"
+	icon = GFX_idea_generic_political_crisis
+
+	political_power_gain = YUG_pp_internal_divide
+	stability_factor = YUG_stab_internal_divide
+	consumer_goods_factor = YUG_cg_internal_divide
+	resistance_target = YUG_resist_internal_divide
+	local_resources_factor = YUG_resources_internal_divide
+	recruitable_population_factor = YUG_recruit_internal_divide
+	justify_war_goal_time = YUG_justify_internal_divide
+	enemy_operative_capture_chance = YUG_operative_internal_divide
+}
+
+YUG_army = { #NATIONAL SPIRIT - Military
+	enable = { always = yes }
+	name = "Yugoslavian Army"
+	icon = GFX_idea_generic_army
+
+	army_org = YUG_org_army
+	army_morale = YUG_morale_army
+	experience_gain_army = YUG_xp_gain_army
+	land_doctrine_cost_factor = YUG_doctrine_cost_army
+	production_speed_military_factory_factor = YUG_mil_speed_army
+	training_time_army_factor = YUG_training_time_army
+	casualty_trickleback = YUG_casualty_army
+	conscription_factor = YUG_conscription_army
+	army_leader_cost_factor = YUG_leader_cost_army
+}
+
+YUG_political_divide = { #NATIONAL SPIRIT - Civilian
+	enable = { always = yes }
+	name = "Political Landscape"
+	icon = GFX_idea_generic_constitutional_monarchy
+
+	political_power_gain = YUG_pp_political_divide
+	stability_factor = YUG_stab_political_divide
+	advisor_cost_factor = YUG_advisor_cost_political_divide
+	ideology_drift_defense = YUG_ideology_defense_political_divide
+	trade_opinion_factor = YUG_trade_political_divide
+	licence_production_speed = YUG_license_political_divide
+	autonomy_gain = YUG_autonomy_political_divide
+	civil_war_damage_factor = YUG_civil_war_political_divide
+}	
