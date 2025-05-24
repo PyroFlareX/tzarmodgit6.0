@@ -235,26 +235,7 @@ ideas = {
 			}
 		}
 
-		RAJ_marginalized_muslim_community_happy_alt = {
-		
-			picture = raj_marginalized_muslim_community_happy
-
-			allowed = {
-				original_tag = RAJ
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				army_core_defence_factor = 0.12
-				conscription_factor = -0.1
-
-			}
-		}
+	
 		idea_RAJ_boycott_british_made_goods = {
 			allowed = {
 				original_tag = RAJ
@@ -821,6 +802,27 @@ ideas = {
 			}
 		}
 
+		RAJ_marginalized_muslim_community_happy_alt = {
+		
+			picture = raj_marginalized_muslim_community_happy
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.12
+				conscription_factor = -0.05
+				autonomy_gain = 0.6
+
+			}
+		}
 		RAJ_risk_of_famine = {
 
 			picture = raj_risk_of_famine

@@ -5,12 +5,12 @@ prospect_for_resources = {
 		icon = rubber
 
 		allowed = {
-			has_dlc = "Graveyard of Empires"
+			
 			original_tag = RAJ
 		}
 
 		visible = {
-			has_completed_focus = RAJ_exploit_the_frontier
+			has_completed_focus = RAJ_the_riches_of_the_raj
 			owns_state = 423
 			controls_state = 423
 			423 = {
@@ -87,7 +87,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			has_completed_focus = RAJ_exploit_the_frontier
+			has_completed_focus = RAJ_the_riches_of_the_raj
 			owns_state = 434
 			controls_state = 434
 			434 = {
@@ -160,12 +160,12 @@ prospect_for_resources = {
 		icon = tungsten
 
 		allowed = {
-			has_dlc = "Graveyard of Empires"
+			
 			original_tag = RAJ
 		}
 
 		visible = {
-			has_completed_focus = RAJ_exploit_the_frontier
+			has_completed_focus = RAJ_the_riches_of_the_raj
 			owns_state = 429
 			controls_state = 429
 			429 = {
@@ -238,12 +238,12 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-			has_dlc = "Graveyard of Empires"
+			
 			original_tag = RAJ
 		}
 
 		visible = {
-			has_completed_focus = RAJ_exploit_the_frontier
+			has_completed_focus = RAJ_the_riches_of_the_raj
 			owns_state = 431
 			controls_state = 431
 			431 = {
@@ -316,12 +316,12 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-			has_dlc = "Graveyard of Empires"
+			
 			original_tag = RAJ
 		}
 
 		visible = {
-			has_completed_focus = RAJ_exploit_the_frontier
+			has_completed_focus = RAJ_the_riches_of_the_raj
 			owns_state = 426
 			controls_state = 426
 			426 = {
@@ -408,12 +408,12 @@ prospect_for_resources = {
 		icon = chromium
 
 		allowed = {
-			has_dlc = "Graveyard of Empires"
+			
 			original_tag = RAJ
 		}
 
 		visible = {
-			has_completed_focus = RAJ_exploit_the_frontier
+			has_completed_focus = RAJ_the_riches_of_the_raj
 			owns_state = 427
 			controls_state = 427
 			427 = {

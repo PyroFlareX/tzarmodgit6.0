@@ -225,9 +225,136 @@ focus = {
 					amount = 40
 				}
 		}
+        custom_effect_tooltip = generic_skip_one_line_tt 
+        custom_effect_tooltip = {
+			localization_key = generic_unlocks_decisions_explanation_tt
+			DECISIONS = prospect_for_resources
+			EXPLANATION = RAJ_exploit_the_frontier_decisions_tt
+		}
 	}
 }
 
+focus = {
+        id = RAJ_trade_port
+        icon = GFX_focus_POL_develop_polish_shipbuilding
+        prerequisite = { focus = RAJ_the_riches_of_the_raj }
+        x = 1
+        y = 1
+        relative_position_id = RAJ_the_riches_of_the_raj
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+            
+        }
+        
+        bypass = {
+
+
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = {FOCUS_FILTER_INDUSTRY}
+
+        completion_reward = {
+            RAJ = {
+                transfer_state = 659
+            }
+            659 ={
+                
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+focus = {
+        id = RAJ_fortify_aden
+        icon = GFX_focus_generic_coastal_fort
+        prerequisite = { focus = RAJ_trade_port }
+        x = 0
+        y = 1
+        relative_position_id = RAJ_trade_port
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+            659 = { is_fully_controlled_by = ROOT }
+            
+        }
+        
+        bypass = {
+
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = {FOCUS_FILTER_INDUSTRY}
+
+        completion_reward = {
+            992 ={
+                add_building_construction = {
+                    type = bunker
+                    level = 5
+                    instant_build = yes
+                    province = 5074
+                }
+
+                add_building_construction = {
+                    type = coastal_bunker   
+                    level = 5
+                    instant_build = yes
+                    province = 5074
+                }
+
+                add_building_construction = {
+                    type = naval_base
+                    level = 3
+                    instant_build = yes
+                    province = 5074
+                }
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+
+                add_building_construction = {
+                    type = dockyard
+                    level = 1
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
 
 focus = {
 	id = RAJ_imperial_rail_renewal_act
@@ -245,27 +372,6 @@ focus = {
 		custom_effect_tooltip = RAJ_a_loyal_government_tt
         add_to_variable = { RAJ_loyal_government_production_speed_rail_way_factor = 0.15 tooltip = production_speed_rail_way_factor_tt }
         add_to_variable = { RAJ_loyal_government_production_speed_supply_node_factor = 0.15 tooltip = production_speed_supply_node_factor_tt }
-	}
-}
-
-focus = {
-	id = RAJ_exploit_the_frontier
-	icon = GFX_goal_generic_construction2
-	prerequisite = { focus = RAJ_the_riches_of_the_raj }
-	
-	x = 1
-	y = 1
-	relative_position_id = RAJ_the_riches_of_the_raj
-	cost = 5
-
-	search_filters = { FOCUS_FILTER_INDUSTRY }
-
-	completion_reward = {
-		custom_effect_tooltip = {
-			localization_key = generic_unlocks_decisions_explanation_tt
-			DECISIONS = prospect_for_resources
-			EXPLANATION = RAJ_exploit_the_frontier_decisions_tt
-		}
 	}
 }
 
@@ -338,15 +444,10 @@ focus = {
 	search_filters = { FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 
 	completion_reward = {
-		add_autonomy_score = {
-			value = 150
-			localization = RAJ_the_empires_workshop
-		}
-		custom_effect_tooltip = generic_skip_one_line_tt
-
+		
 		add_tech_bonus = {
 			name = RAJ_the_empires_workshop
-			bonus = 0.75
+			bonus = 1
 			uses = 2
 			category = industry
 		}
@@ -375,48 +476,49 @@ focus = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = RAJ_the_empires_workshop_civs_to_the_empire_subjects_tt
-			every_subject_country = {
-				limit = {
-					NOT = { tag = ROOT }
-				}
-				event_option_tooltip = GOE_RAJ_loyalist.02.a
-			}
+			
 
 			hidden_effect = {
-				ENG = {
-					if = {
-						limit = {
-							any_core_state = {
-								is_fully_controlled_by = PREV
-								free_building_slots = {
-									building = industrial_complex
-									size > 1
-									include_locked = yes
-								}
-							}
-						}
-						country_event = { id = GOE_RAJ_loyalist.02 hours = 8 random_hours = 4 }
-					}
-
-					every_subject_country = {
-						limit = {
-							NOT = { tag = ROOT }
-						}
-						if = {
-							limit = {
-								any_core_state = {
-									is_fully_controlled_by = PREV
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-								}
-							}
-							country_event = { id = GOE_RAJ_loyalist.02 hours = 8 random_hours = 4 }
-						}
-					}
-				}
+				285 = {
+                    add_extra_state_shared_building_slots = 1
+			        add_building_construction = {
+				        type = industrial_complex
+				        level = 1
+				        instant_build = yes
+			        }
+                }
+                284 = {
+                    add_extra_state_shared_building_slots = 1
+			        add_building_construction = {
+				        type = industrial_complex
+				        level = 1
+				        instant_build = yes
+			        }
+                }
+                681 = {
+                    add_extra_state_shared_building_slots = 1
+			        add_building_construction = {
+				        type = industrial_complex
+				        level = 1
+				        instant_build = yes
+			        }
+                }
+                468 = {
+                    add_extra_state_shared_building_slots = 1
+			        add_building_construction = {
+				        type = industrial_complex
+				        level = 1
+				        instant_build = yes
+			        }
+                }
+                126 = {
+                    add_extra_state_shared_building_slots = 2
+			        add_building_construction = {
+				        type = industrial_complex
+				        level = 2
+				        instant_build = yes
+			        }
+                }
 			}
 		}
 	}
@@ -623,6 +725,78 @@ focus = {
         }
     }
 
+        focus = {
+        id = RAJ_punjab_autonomy
+        icon = GFX_focus_RAJ_punjab_autonomy
+        prerequisite = { focus = RAJ_indo_centric_curriculum }
+        x = 0
+        y = 1
+        relative_position_id = RAJ_indo_centric_curriculum
+        
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+
+        }
+        
+        bypass = {
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        search_filters = {FOCUS_FILTER_INDUSTRY}
+
+        completion_reward = {
+
+            if = {
+                limit = {
+                    440 = {
+                        is_controlled_by_ROOT_or_subject = yes
+                    }
+                }
+
+                440 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_dynamic_modifier = {
+                        modifier = idea_RAJ_sikh_approval
+                    }
+                }
+            }
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            if = {
+                limit = {
+                    433 = {
+                        is_controlled_by_ROOT_or_subject = yes
+                    }
+                }
+
+                433 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_dynamic_modifier = {
+                        modifier = idea_RAJ_sikh_approval
+                    }
+                }
+            }
+
+
+           # unlock_decision_tooltip = {
+            #    decision = RAJ_GOE_sikh_recruitment
+
+            #}
+            
+
+        }
+    }
+
     focus = {
         id = RAJ_tenancy_reforms
         icon = GFX_focus_generic_low_cost_housing
@@ -797,7 +971,7 @@ focus = {
         id = RAJ_cottage_industries
         icon = GFX_focus_CHL_enlarge_the_textile_industries
         prerequisite = { focus = RAJ_tenancy_reforms }
-        x = 1
+        x = 0
         y = 1
         relative_position_id = RAJ_tenancy_reforms
         
@@ -873,7 +1047,14 @@ focus = {
         search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY}
 
         completion_reward = {
+            
 
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.05
+            }
         }
     }
 	
@@ -1137,52 +1318,20 @@ focus = {
         completion_reward = {
 			custom_effect_tooltip = available_political_advisor
             show_ideas_tooltip = RAJ_GOE_muhammad_ali_jinnah
+            custom_effect_tooltip = generic_skip_one_line_tt
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.05
+            }
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            swap_ideas = {
+                add_idea = RAJ_marginalized_muslim_community_angry
+                remove_idea = RAJ_marginalized_muslim_community
+            }
         }
     }
 	
-	
-    focus = {
-        id = RAJ_two_nation_theory_dlc
-        icon = GFX_focus_RAJ_two_nation_theory
-        prerequisite = { focus = RAJ_a_permanent_muslim_governmental_seat }
-        x = 0
-        y = 1
-        relative_position_id = RAJ_a_permanent_muslim_governmental_seat
-       
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-           
-        }
-        
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY}
-
-        completion_reward = {
-
-                swap_ideas = {
-                    add_idea = RAJ_marginalized_muslim_community_happy
-                    remove_idea = RAJ_marginalized_muslim_community_angry
-                }
-            
-            444 = { add_core_of = RAJ }
-			445 = { add_core_of = RAJ }
-			442 = { add_core_of = RAJ }
-              
-        }
-    }
-
     focus = {
         id = RAJ_a_permanent_muslim_governmental_seat
         icon = GFX_focus_TUR_turanist_ambition
@@ -1217,14 +1366,57 @@ focus = {
 
         completion_reward = {
             
+                swap_ideas = {
+                    add_idea = RAJ_marginalized_muslim_community_happy
+                    remove_idea = RAJ_marginalized_muslim_community_angry
+                }
+
+         
+        }
+    }
+	
+    focus = {
+        id = RAJ_two_nation_theory_dlc
+        icon = GFX_focus_RAJ_two_nation_theory
+        prerequisite = { focus = RAJ_a_permanent_muslim_governmental_seat }
+        x = 0
+        y = 1
+        relative_position_id = RAJ_a_permanent_muslim_governmental_seat
+       
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
            
+        }
+        
+        bypass = {
+
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY}
+
+        completion_reward = {
+
                 swap_ideas = {
                     add_idea = RAJ_marginalized_muslim_community_happy_alt
                     remove_idea = RAJ_marginalized_muslim_community_happy
                 }
-         
+            
+            444 = { add_core_of = RAJ }
+			445 = { add_core_of = RAJ }
+			442 = { add_core_of = RAJ }
+              
         }
     }
+
 
 	##############################################################
 	
@@ -1369,7 +1561,7 @@ focus = {
 
 		completion_reward = {
 			add_research_slot = 1
-			add_ideas = ENG_colonial_elite
+			#add_ideas = ENG_colonial_elite
 		}
 	}
   
