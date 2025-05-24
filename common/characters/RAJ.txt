@@ -1,4 +1,212 @@
 characters={
+	
+	
+RAJ_GOE_g_d_birla= { 
+		name=RAJ_GOE_g_d_birla
+		portraits={
+			civilian={
+				small="GFX_portrait_RAJ_g_d_birla_small"  
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_GOE_g_d_birla
+			allowed = {
+				original_tag = RAJ
+				
+			}
+			visible = {
+				has_country_flag = RAJ_industrialists_joined_eic 
+			}
+			traits = {
+				motor_tycoon
+			}
+		}
+	}
+
+RAJ_GOE_j_r_d_tata= { 
+		name=RAJ_GOE_j_r_d_tata
+		portraits={
+			civilian={
+				small="GFX_portrait_RAJ_j_r_d_tata_small"  
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_GOE_j_r_d_tata
+			allowed = {
+				original_tag = RAJ
+				
+			}
+			visible = {
+				has_country_flag = RAJ_industrialists_joined_eic 
+			}
+			traits = {
+				tata_chairman
+			}
+		}
+	}
+
+	RAJ_GOE_prescott_bush= { 
+		name=RAJ_GOE_prescott_bush
+		portraits={
+			civilian={
+				small="GFX_portrait_RAJ_prescott_bush_small"  
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_GOE_prescott_bush
+			allowed = {
+				original_tag = RAJ
+				
+			}
+			visible = {
+				has_country_flag = RAJ_industrialists_joined_eic 
+			}
+			traits = {
+				banking_mogul
+			}
+		}
+	}
+
+	RAJ_GOE_muhammad_ali_jinnah = {
+
+ 		name=RAJ_GOE_muhammad_ali_jinnah
+		portraits={
+			civilian={
+				small = GFX_portrait_RAJ_muhammad_ali_jinnah_small
+				large = GFX_portrait_RAJ_muhammad_ali_jinnah
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_GOE_muhammad_ali_jinnah
+			allowed = {
+				
+			}
+			visible = {
+				has_completed_focus = RAJ_all_india_muslim_league
+			}
+			available = {
+			}
+			traits = {
+				all_india_muslim_league_leader 
+			}
+		}
+	}
+	
+	RAJ_mir_osman_ali_khan = {
+			name = RAJ_mir_osman_ali_khan
+
+			portraits = {
+				civilian = {
+					large = GFX_portrait_RAJ_mir_osman_ali_khan
+					small = GFX_portrait_RAJ_mir_osman_ali_khan_small
+				}
+				army = {
+					large = GFX_portrait_RAJ_mir_osman_ali_khan
+					small = GFX_portrait_RAJ_mir_osman_ali_khan_small
+				}
+			}
+
+			#country_leader = {
+			#	ideology = despotism
+			#	traits = { RAJ_GOE_patron_of_education }
+			#	expire = "1965.1.1.1"
+			#	id = -1
+			#}
+
+			# Basically only available if country leader
+			corps_commander = {
+				traits = {  }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				
+				visible = {
+					
+					
+							
+					
+				}
+			}
+			advisor={
+				slot = political_advisor
+				idea_token = RAJ_mir_osman_ali_khan
+				allowed = {
+					original_tag = RAJ
+				}
+				visible = {
+					has_completed_focus = RAJ_all_princes_of_india
+				}
+				traits = {
+					RAJ_GOE_wealthy_philantrophist
+				}
+			}
+	}
+
+	RAJ_shripad_amrit_dange = {
+		name = RAJ_shripad_amrit_dange
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_RAJ_shripad_amrit_dange_small"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = RAJ_shripad_amrit_dange
+			allowed = {
+				original_tag = RAJ
+			}
+			visible = {
+				has_completed_focus = RAJ_all_india_communist_party
+			}
+			
+			traits = {
+				RAJ_union_leader
+			}
+		}
+	}
+	
+	RAJ_GOE_tara_singh = {
+
+		name = RAJ_GOE_tara_singh
+		portraits = {
+			civilian = {
+				small = GFX_portrait_RAJ_tara_singh_small
+				large = GFX_portrait_RAJ_tara_singh
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_GOE_tara_singh
+			allowed = {
+				original_tag = RAJ
+				has_dlc = "Graveyard of Empires"
+			}
+			visible = {
+			
+					
+					has_completed_focus = RAJ_sikh_religious_guarantees
+				
+			}
+			available = {
+				
+					has_completed_focus = RAJ_sikh_religious_guarantees
+				
+			}
+			traits = {
+				sikh_activist 
+			}
+		}
+	}
+
+	
+	########### old shit below ################
 	RAJ_lord_linlithgow={
 		name="Lord Linlithgow"
 		portraits={

@@ -303,20 +303,27 @@ recruit_character = RAJ_kodendera_subayya_thimayya
 recruit_character = RAJ_jayanto_nath_chaudhuri
 recruit_character = RAJ_orde_wingate
 
-recruit_character = RAJ_jd_tata
+#recruit_character = RAJ_jd_tata
 recruit_character = RAJ_jawaharlal_nehru
 #recruit_character = RAJ_Narendra_Deva
 #recruit_character = RAJ_Chhotu_Ram
-recruit_character = RAJ_Jwala_Prasad_Srivastava
-recruit_character = RAJ_Sir_Jeremy_Raisman
+#recruit_character = RAJ_Jwala_Prasad_Srivastava
+#recruit_character = RAJ_Sir_Jeremy_Raisman
 recruit_character = RAJ_walchand_hirachand
-recruit_character = RAJ_jamnalal_bajaj
+#recruit_character = RAJ_jamnalal_bajaj
 
 recruit_character = RAJ_george_giffard
 recruit_character = RAJ_archibald_wavell
 recruit_character = RAJ_claude_auchinleck
 
 recruit_character = RAJ_homi_j_bhabha
+recruit_character = RAJ_GOE_muhammad_ali_jinnah
+recruit_character = RAJ_mir_osman_ali_khan
+recruit_character = RAJ_shripad_amrit_dange
+recruit_character = RAJ_GOE_tara_singh
+recruit_character = RAJ_GOE_g_d_birla
+recruit_character = RAJ_GOE_j_r_d_tata
+recruit_character = RAJ_GOE_prescott_bush
 
 set_variable = { RAJ_tyranny = 0}
 set_variable = { RAJ_air_superiority_bonus_in_combat = 0}
@@ -344,15 +351,69 @@ set_variable = { RAJ_infantry_attack = 0 }
 set_variable = { RAJ_motorized_attack = 0 }
 set_variable = { RAJ_mechanized_attack = 0 }
 set_variable = { RAJ_out_of_supply = 0 }
+
 set_variable = { RAJ_armor_attack = 0 }
+set_variable = { RAJ_core_attack_factor = 0 }
+set_variable = { RAJ_army_armor_defence_factor = 0 }
+set_variable = { RAJ_military_coordination_bonus = 0 }
+set_variable = { RAJ_modifier_army_sub_unit_cavalry_speed_factor = 0 }
+set_variable = { RAJ_peoples_army_militia_attack = 0 }
+set_variable = { RAJ_peoples_army_militia_defence = 0 }
+set_variable = { RAJ_military_minimum_training_level = 0 }
+set_variable = { RAJ_military_initiative_factor = 0 }
+set_variable = { RAJ_land_bunker_effectiveness_factor = 0 }
+set_variable = { RAJ_land_night_attack = 0 }
+set_variable = { RAJ_modifier_cas_damage_reduction = 0 }
+set_variable = { RAJ_coastal_bunker_effectiveness_factor = 0 }
+set_variable = { RAJ_army_artillery_attack_factor = 0 }
+set_variable = { RAJ_no_supply_grace = 0 }
+set_variable = { RAJ_modifier_army_sub_unit_camelry_attack_factor = 0 }
+
+
 add_dynamic_modifier = { modifier = RAJ_army_dynamic_modifier }
 
 add_ideas = {
 	RAJ_princely_states
 	RAJ_marginalized_muslim_community
 	RAJ_agrarian_society
-	SAF_the_commonwealth	
+	#SAF_the_commonwealth	
 	RAJ_quit_india_active
 	COOM_volunteers_minors
 	#RAJ_mahatma_mohandas_gandhi (political advisor)
 }
+
+	set_variable = { RAJ_a_loyal_government_political_power_factor = 0.05 }
+	set_variable = { RAJ_a_loyal_government_master_ideology_drift = 0 }
+	set_variable = { RAJ_a_loyal_government_consumer_goods_factor = 0 }
+	set_variable = { RAJ_a_loyal_government_political_advisor_cost_factor = 0 }
+	set_variable = { RAJ_a_loyal_government_party_popularity_stability_factor = 0.05 }
+	set_variable = { RAJ_a_loyal_government_resistance_target = 0 }
+	set_variable = { RAJ_a_loyal_government_resistance_damage_to_garrison = 0 }
+	set_variable = { RAJ_a_loyal_government_extra_trade_to_overlord_factor = 0 }
+	set_variable = { RAJ_a_loyal_government_conscription_factor = 0 }
+	set_variable = { RAJ_a_loyal_government_research_speed_factor = 0 }
+	set_variable = { RAJ_a_loyal_government_industrial_capacity_dockyard = 0 }
+	set_variable = { RAJ_a_loyal_government_industrial_capacity_factory = 0 }
+	set_variable = { RAJ_loyal_government_production_speed_buildings_factor = 0 }
+	set_variable = { RAJ_loyal_government_local_resources_factor = 0 }
+	set_variable = { RAJ_loyal_government_production_speed_rail_way_factor = 0 }
+	set_variable = { RAJ_loyal_government_production_speed_supply_node_factor = 0 }
+	
+	
+	set_variable = { RAJ_autonomy_gain_independence_movement = 0.3 }
+	
+	set_variable = { RAJ_independence_movement_pp = 0 } 
+	set_variable = { RAJ_independence_movement_research = 0 }
+	set_variable = { RAJ_independence_movement_civ = 0 }
+	set_variable = { RAJ_independence_movement_stability = 0 }
+	set_variable = { RAJ_independence_movement_industrial_capacity_factory = 0 }
+	set_variable = { RAJ_independence_movement_infra = 0 }
+	set_variable = { RAJ_independence_movement_factory_efficiency = 0 }
+	
+	
+	set_variable = { RAJ_royal_indian_navy_navy_anti_air_attack_factor = 0 }
+	set_variable = { RAJ_royal_indian_navy_repair_speed_factor = 0 }
+	set_variable = { RAJ_royal_indian_navy_naval_coordination = 0 }
+	set_variable = { RAJ_royal_indian_navy_capital_ship_defence_factor = 0 }
+	set_variable = { RAJ_royal_indian_navy_screen_defence_factor = 0 }
+	
