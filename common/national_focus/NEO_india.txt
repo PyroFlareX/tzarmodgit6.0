@@ -4067,7 +4067,8 @@ focus = {
         search_filters = {FOCUS_FILTER_ARMY_XP}
 
         completion_reward = {
-            
+            custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
+            add_to_variable = { RAJ_breakthrough_factor = 0.1 tooltip = breakthrough_factor_tt }
         }
     }
 

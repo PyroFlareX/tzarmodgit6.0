@@ -368,6 +368,7 @@ set_variable = { RAJ_coastal_bunker_effectiveness_factor = 0 }
 set_variable = { RAJ_army_artillery_attack_factor = 0 }
 set_variable = { RAJ_no_supply_grace = 0 }
 set_variable = { RAJ_modifier_army_sub_unit_camelry_attack_factor = 0 }
+set_variable = { RAJ_breakthrough_factor = 0 } 
 
 
 add_dynamic_modifier = { modifier = RAJ_army_dynamic_modifier }
