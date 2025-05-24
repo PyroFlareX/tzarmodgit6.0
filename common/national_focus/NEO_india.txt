@@ -1392,7 +1392,7 @@ focus = {
         }
 
         available = {
-            
+            has_war = yes
         }
         
         bypass = {
@@ -1424,7 +1424,7 @@ focus = {
 
 
 		available = {
-			has_war = yes
+			
 		}
 
 		bypass = {
@@ -1566,6 +1566,53 @@ focus = {
 		}
 	}
     
+    
+focus = {
+	id = RAJ_the_jewel_becomes_the_crown
+	icon = GFX_focus_RAJ_the_jewel_becomes_the_crown
+	prerequisite = { focus = RAJ_defense_of_india_act }
+    prerequisite = { focus = RAJ_arrest_gandhi }
+
+	x = 1
+	y = 2
+	relative_position_id = RAJ_defense_of_india_act
+	cost = 5
+
+	available = {
+		ENG = {
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.05
+			}
+			is_ally_with = ROOT
+		}
+	}
+
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_TFV_AUTONOMY }
+
+	completion_reward = {
+		custom_effect_tooltip = RAJ_modify_a_loyal_government_tt
+		add_to_variable = { RAJ_a_loyal_government_industrial_capacity_factory = 0.15 tooltip = industrial_capacity_factory_tt }
+		add_to_variable = { RAJ_a_loyal_government_industrial_capacity_dockyard = 0.35 tooltip = industrial_capacity_dockyard_tt }
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		#if = {
+		#	limit = {
+		#		is_subject_of = ENG
+		#	}
+		#	ENG = {
+		#		set_autonomy = {
+		#			target = ROOT
+		#			autonomy_state = autonomy_free
+		#		}
+		#	}
+		#}
+		set_major = yes
+
+	}
+}
+
     ################ GANDHI ####################
 
     focus = {
@@ -1866,6 +1913,7 @@ focus = {
 				uses = 1
 				category = artillery
 			    }
+                custom_effect_tooltip = generic_skip_one_line_tt
                 431 = {
                     add_extra_state_shared_building_slots = 1
                     add_building_construction = {
@@ -1874,6 +1922,7 @@ focus = {
                     instant_build = yes
                     }
                 }
+                custom_effect_tooltip = generic_skip_one_line_tt
                 mio:RAJ_ammunition_factory_khadki_organization = {
                     add_mio_size = 1
                     unlock_mio_trait_tooltip = {
@@ -1920,6 +1969,7 @@ focus = {
 				uses = 1
 				category = infantry_weapons
 			    }
+                custom_effect_tooltip = generic_skip_one_line_tt
                 430 = {
                     add_extra_state_shared_building_slots = 1
                     add_building_construction = {
@@ -1928,6 +1978,7 @@ focus = {
                     instant_build = yes
                     }
                 }
+                custom_effect_tooltip = generic_skip_one_line_tt
                 mio:RAJ_ammunition_factory_khadki_organization = {
                     add_mio_size = 1
                     unlock_mio_trait_tooltip = {
@@ -1975,13 +2026,14 @@ focus = {
                     instant_build = yes
                     }
                 }
+                custom_effect_tooltip = generic_skip_one_line_tt
                 mio:RAJ_ammunition_factory_khadki_organization = {
                     add_mio_size = 1
                     unlock_mio_trait_tooltip = {
                         trait = RAJ_mio_trait_ordnance_factory_kanpur_uttar_pradesh_inf
                     }
                 }
-
+                custom_effect_tooltip = generic_skip_one_line_tt
                 mio:RAJ_ordnance_factory_kanpur_organization = {
                     add_mio_size = 1
                     unlock_mio_trait_tooltip = {
@@ -2027,6 +2079,7 @@ focus = {
 				    uses = 1
 				    technology = armored_car2
 			    }
+                custom_effect_tooltip = generic_skip_one_line_tt
                 427 = {
                     add_extra_state_shared_building_slots = 1
                     add_building_construction = {
@@ -2035,6 +2088,7 @@ focus = {
                     instant_build = yes
                     }
                 }
+                custom_effect_tooltip = generic_skip_one_line_tt
                 mio:RAJ_ordnance_factory_medak_organization = {
                     add_mio_size = 1
                     unlock_mio_trait_tooltip = {
@@ -2090,6 +2144,7 @@ focus = {
                 name = RAJ_chariot_of_victory
                 # technology  = technology_id # optional
             }
+            custom_effect_tooltip = generic_skip_one_line_tt
            
                 425 = {
                     add_extra_state_shared_building_slots = 1
@@ -2099,6 +2154,7 @@ focus = {
                     instant_build = yes
                     }
                 }
+                custom_effect_tooltip = generic_skip_one_line_tt
                 mio:RAJ_ordnance_factory_medak_organization = {
                     add_mio_size = 1
                     unlock_mio_trait_tooltip = {
@@ -2147,6 +2203,7 @@ focus = {
 				uses = 1
 				category = rocketry
 			    }
+                custom_effect_tooltip = generic_skip_one_line_tt
                 423 = {
                     add_extra_state_shared_building_slots = 1
                     add_building_construction = {
@@ -2155,6 +2212,7 @@ focus = {
                     instant_build = yes
                     }
                 }
+                custom_effect_tooltip = generic_skip_one_line_tt
                 mio:RAJ_ordnance_factory_kanpur_organization = {
                     add_mio_size = 1
                     unlock_mio_trait_tooltip = {
@@ -2198,6 +2256,13 @@ focus = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
+                add_tech_bonus = {
+				name = RAJ_royal_indian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			    }
+                custom_effect_tooltip = generic_skip_one_line_tt
                 436 = {
                     add_extra_state_shared_building_slots = 1
                     add_building_construction = {
@@ -2206,6 +2271,7 @@ focus = {
                     instant_build = yes
                     }
                 }
+                custom_effect_tooltip = generic_skip_one_line_tt
                 mio:RAJ_ammunition_factory_khadki_organization = {
                     add_mio_size = 1
                     unlock_mio_trait_tooltip = {
