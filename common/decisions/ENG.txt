@@ -726,7 +726,7 @@ foreign_politics = {
         }
 
         visible = {
-		#has_game_rule = {  rule = horst_vichy_france    option = HORST_ENABLE_VICHY_FRANCE   }
+			date>1942.6.6
         }
 
         cost = 0
@@ -737,7 +737,6 @@ foreign_politics = {
 			EFR = { owns_state = 26 }
 			NOT = { has_global_flag = operation_torch_flag }
 			OR = { NOT = { ITA = { controls_state = 448 controls_state = 450 controls_state = 451 }   }
-			date > 1941.12.1
 			
 			}
 		}
