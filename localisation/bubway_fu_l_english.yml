@@ -109,3 +109,4 @@ RAJ_deep_battle_desc:0 "Tukhachevsky was cookin, we should adpot his theories of
 
 RAJ_modifier_army_sub_unit_camelry_attack_factor_tt:0 "Camelry Attack: §G+20.00%§!"
 coastal_bunker_effectiveness_factor_tt:0 "Coastal Fort Effectiviness: §G+15.00%§!"
+RAJ_stability_weekly_tt:0 "Weekly Stablitiy Gain: §G+0.10%§!"

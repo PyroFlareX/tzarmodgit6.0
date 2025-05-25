@@ -172,6 +172,7 @@ idea_RAJ_independence_movement = { #STATE MODIFIER
 	industrial_capacity_factory = RAJ_independence_movement_industrial_capacity_factory
 	production_speed_infrastructure_factor = RAJ_independence_movement_infra
 	production_factory_efficiency_gain_factor = RAJ_independence_movement_factory_efficiency
+	stability_weekly = RAJ_independence_movement_stability_weekly
 
 }
 

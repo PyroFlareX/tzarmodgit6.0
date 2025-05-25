@@ -127,6 +127,7 @@ focus = {
 	completion_reward = {
 		custom_effect_tooltip = RAJ_a_loyal_government_tt
         add_to_variable = { RAJ_loyal_government_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+        add_to_variable = { RAJ_a_loyal_government_political_advisor_cost_factor = -0.20 tooltip = political_advisor_cost_factor_tt }
 	}
 }
 
@@ -153,10 +154,10 @@ focus = {
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -369,7 +370,11 @@ focus = {
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
 	completion_reward = {
-		custom_effect_tooltip = RAJ_a_loyal_government_tt
+		set_technology = { railway_gun = 1 }
+        custom_effect_tooltip = generic_skip_one_line_tt
+        add_equipment_to_stockpile = { type = train_equipment_1 amount = 100 producer = RAJ }	
+        custom_effect_tooltip = generic_skip_one_line_tt
+        custom_effect_tooltip = RAJ_a_loyal_government_tt
         add_to_variable = { RAJ_loyal_government_production_speed_rail_way_factor = 0.15 tooltip = production_speed_rail_way_factor_tt }
         add_to_variable = { RAJ_loyal_government_production_speed_supply_node_factor = 0.15 tooltip = production_speed_supply_node_factor_tt }
 	}
@@ -423,7 +428,7 @@ focus = {
 
 
         custom_effect_tooltip = RAJ_a_loyal_government_tt
-        add_to_variable = { RAJ_a_loyal_government_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+        add_to_variable = { RAJ_a_loyal_government_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
 
     }
 }
@@ -682,7 +687,8 @@ focus = {
         completion_reward = {
             #add_ideas = idea_RAJ_federal_court_of_india
              custom_effect_tooltip = idea_RAJ_independence_movement_tt
-            add_to_variable = { RAJ_independence_movement_pp = 0.1 tooltip = political_power_factor_tt }
+            add_to_variable = { RAJ_independence_movement_pp = 0.15 tooltip = political_power_factor_tt }
+            add_to_variable = { RAJ_independence_movement_stability_weekly = 0.001 tooltip = RAJ_stability_weekly_tt }
         }
     }
 	
@@ -717,10 +723,9 @@ focus = {
 
         completion_reward = {
             add_research_slot = 1
-            add_autonomy_score = { 
-                value = 20
-
-            }
+            custom_effect_tooltip = generic_skip_one_line_tt
+            custom_effect_tooltip = idea_RAJ_independence_movement_tt
+            add_to_variable = { RAJ_independence_movement_research = 0.15 tooltip = research_speed_factor_tt }
             
         }
     }
