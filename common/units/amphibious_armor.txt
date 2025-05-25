@@ -41,8 +41,8 @@ sub_units = {
 			movement = -0.2
 		}
 		mountain = 	{
-		    attack = -0.8
-			defence = -0.85
+		    attack = -0.95
+			defence = -0.95
 			movement = -0.85
 		}
 		jungle = {
@@ -55,8 +55,8 @@ sub_units = {
 			movement = -0.1
 		}
 		urban = {
-			attack = -0.55
-			defence = -0.55
+			attack = -0.35
+			defence = -0.45
 		}
 		village = {
 			attack = -0.15

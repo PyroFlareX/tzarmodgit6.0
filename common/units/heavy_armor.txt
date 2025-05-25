@@ -63,8 +63,8 @@ sub_units = {
 			movement = -0.2
 		}
 		urban = {
-			attack = -0.7
-			defence = -0.65
+			attack = -0.55
+			defence = -0.5
 		}
 		village = {
 			attack = -0.15
