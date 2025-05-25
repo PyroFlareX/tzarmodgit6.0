@@ -304,7 +304,7 @@ recruit_character = RAJ_jayanto_nath_chaudhuri
 recruit_character = RAJ_orde_wingate
 
 #recruit_character = RAJ_jd_tata
-recruit_character = RAJ_jawaharlal_nehru
+#recruit_character = RAJ_jawaharlal_nehru
 #recruit_character = RAJ_Narendra_Deva
 #recruit_character = RAJ_Chhotu_Ram
 #recruit_character = RAJ_Jwala_Prasad_Srivastava
@@ -324,6 +324,8 @@ recruit_character = RAJ_GOE_tara_singh
 recruit_character = RAJ_GOE_g_d_birla
 recruit_character = RAJ_GOE_j_r_d_tata
 recruit_character = RAJ_GOE_prescott_bush
+recruit_character = RAJ_GOE_jawaharlal_nehru
+recruit_character = RAJ_mahatma_mohandas_gandhi
 
 set_variable = { RAJ_tyranny = 0}
 set_variable = { RAJ_air_superiority_bonus_in_combat = 0}
@@ -411,6 +413,7 @@ add_ideas = {
 	set_variable = { RAJ_independence_movement_infra = 0 }
 	set_variable = { RAJ_independence_movement_factory_efficiency = 0 }
 	set_variable = { RAJ_independence_movement_stability_weekly = 0 }
+	set_variable = { RAJ_independence_movement_factory_efficiency_gain_factor = 0 }
 	
 	
 	set_variable = { RAJ_royal_indian_navy_navy_anti_air_attack_factor = 0 }

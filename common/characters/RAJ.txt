@@ -1,6 +1,71 @@
 characters={
 	
+		RAJ_GOE_jawaharlal_nehru = {
+
+		name=RAJ_GOE_jawaharlal_nehru
+		portraits={
+			civilian={
+				large = GFX_portrait_RAJ_jawaharlal_nehru
+				small = GFX_portrait_RAJ_jawaharlal_nehru_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_GOE_jawaharlal_nehru
+			allowed = {
+				original_tag = RAJ
+				
+			}
+			visible = {
+				has_completed_focus = RAJ_mahatma
+			}
+			available = {
+				has_completed_focus = RAJ_mahatma
+			}
+			traits = {
+				anti_colonial_humanist 
+			}
+		}
+	}
 	
+	RAJ_mahatma_mohandas_gandhi={
+
+			name=RAJ_mahatma_mohandas_gandhi
+			portraits={
+				civilian = {
+					small = GFX_portrait_RAJ_mohandas_gandi_small 
+					large = GFX_portrait_RAJ_mohandas_gandi
+					# Also GFX_portrait_RAJ_mohandas_gandi_nuclear_small
+					# Also GFX_portrait_RAJ_mohandas_gandi_nuclear
+				}
+			}
+
+			country_leader={
+				ideology=liberalism
+				expire="1965.1.1.1"
+				id=-1
+			}
+			
+			advisor={
+				slot = political_advisor
+				idea_token = RAJ_mahatma_mohandas_gandhi
+				allowed = {
+					original_tag = RAJ
+				}
+				visible = {
+					
+					has_completed_focus = RAJ_mahatma
+				}
+				available = {
+					has_completed_focus = RAJ_mahatma
+				}
+				traits = {
+					independence_activist 
+				}
+			}	
+		
+	}
+
 RAJ_GOE_g_d_birla= { 
 		name=RAJ_GOE_g_d_birla
 		portraits={
@@ -250,22 +315,6 @@ RAJ_GOE_j_r_d_tata= {
 		}
 	}
 
-	RAJ_jawaharlal_nehru={
-		name="Jawaharlal Nehru"
-		portraits={
-			civilian={
-				large="gfx/leaders/RAJ/r56_idea_RAJ_Jawaharlal_Nehru.dds"
-			}
-		}
-		country_leader={
-			desc="POLITICS_B_P_SITARAMAYYA_DESC"
-			ideology=socialism
-			traits={  }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	
 	RAJ_b._p._sitaramayya={
 		name="B. P. Sitaramayya"
 		portraits={
@@ -629,30 +678,7 @@ RAJ_GOE_j_r_d_tata= {
 			}
 		}
 	}
-	RAJ_mahatma_mohandas_gandhi={
-		advisor={
-			slot = political_advisor
-			idea_token = RAJ_mahatma_mohandas_gandhi
-			removal_cost = -1
-			allowed  = {
-					original_tag  = RAJ
-				}
-				traits  = {
-					independence_agitator 
-				}
-				available = {
-					not =  { has_completed_focus = RAJ_arrest_gandhi 
-					}
-				}
-		}
-			
-		name="RAJ_mahatma_mohandas_gandhi"
-		portraits={
-			army={
-				small="GFX_idea_raj_quit_india_movement"
-			}
-		}
-	}
+
 	RAJ_subroto_mukherjee={
 		advisor={
 			slot = air_chief

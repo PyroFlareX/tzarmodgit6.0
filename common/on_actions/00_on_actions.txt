@@ -458,40 +458,6 @@ on_actions = {
 		}
 	}
 	
-on_subject_autonomy_level_change = {
-		effect = {
-			if = {
-				limit = {
-					OR = {
-						has_autonomy_state = autonomy_colony
-						has_autonomy_state = autonomy_dominion
-					}
-					OVERLORD = { is_in_tech_sharing_group = commonwealth_research }
-				}
-				add_to_tech_sharing_group = commonwealth_research				
-			}
-
-			if = {
-				limit = {
-					tag = RAJ
-					has_autonomy_state = autonomy_dominion
-				}
-				set_politics = {
-					ruling_party = democratic
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = neutrality
-					popularity = -1
-				}
-				add_popularity = {
-					ideology = democratic
-					popularity = 0.3
-				}
-			}
-		}
-	}	
-
 
 	#ROOT is winner #FROM gets annexed - This will also fire on_annex
 	on_civil_war_end = {

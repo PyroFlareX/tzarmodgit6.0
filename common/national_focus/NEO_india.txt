@@ -831,6 +831,9 @@ focus = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
+            439 = {
+				add_extra_state_shared_building_slots = 2
+			}
             438 = {
 				add_extra_state_shared_building_slots = 2
 			}
@@ -1021,6 +1024,9 @@ focus = {
 					instant_build = yes
 				}
 			}
+            custom_effect_tooltip = generic_skip_one_line_tt 
+            custom_effect_tooltip = idea_RAJ_independence_movement_tt
+            add_to_variable = { RAJ_independence_movement_factory_efficiency_gain_factor = 0.25 tooltip = production_factory_efficiency_gain_factor_tt }
         }
     }
 	
@@ -1843,6 +1849,11 @@ focus = {
 
         completion_reward = {
            remove_ideas = RAJ_quit_india_peaceful
+           custom_effect_tooltip = generic_skip_one_line_tt
+           add_popularity = {
+                ideology = democratic
+                popularity = 0.35
+            }
         }
     }
 
@@ -1879,8 +1890,19 @@ focus = {
         search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_TFV_AUTONOMY}
 
         completion_reward = {
-            custom_effect_tooltip = available_political_advisor
-        
+            retire_country_leader = yes
+			add_country_leader_role = {
+				character = RAJ_GOE_jawaharlal_nehru
+				promote_leader = yes
+				country_leader = {
+					ideology = liberalism
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
+            set_politics = {
+				ruling_party = democratic
+			}
         }
     }
 
@@ -3221,7 +3243,7 @@ focus = {
 		x = 3
 		y = 1
 		relative_position_id = RAJ_indian_states_force
-		mutually_exclusive = { focus = RAJ_nawabs }
+		#mutually_exclusive = { focus = RAJ_nawabs }
 		cost = 5
 
 		available = {
@@ -3637,7 +3659,7 @@ focus = {
 		x = -3
 		y = 1
 		relative_position_id = RAJ_indian_states_force
-		mutually_exclusive = { focus = RAJ_maharajas }
+		#mutually_exclusive = { focus = RAJ_maharajas }
 		cost = 5
 
 		available = {
