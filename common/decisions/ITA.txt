@@ -1,58 +1,37 @@
 foreign_politics = {
 
 	ITA_Mediterranean_Deployment = {
-			
-        icon = GFX_decision_category_border_war
-        
+		name = "Annex Vichy"
+		targets = { EFR }
+		
         ai_will_do = { factor = 0 }
         
         cost = 0
         fire_only_once = yes				
         available = {
-            has_manpower > 1060000 		
-            #date > 1938.1.1
-			#date < 1939.5.1 
-			NOT = { has_war_with = ENG }
+        	AND = {
+        	            EFR = {
+        	            	is_ai = yes
+        	            }
+        	            date > 1938.1.1}
         }				
         
         visible = { 
             tag = ITA
+            EFR = {
+            	is_ai = yes
+            }
         }
         
         complete_effect = {
-            add_manpower = -1584000
-            ITA = {		
-                load_oob = "ITA_MedGarrison_Deployment"
-            }
+        	ITA = {
+        		annex_country = {
+					target = EFR
+					transfer_troops = yes 
+				}
+        	}
         }
     }
-    #ITA_Libyan_Deployment = {
-        
-        #icon = GFX_decision_category_border_war
-        
-        #ai_will_do = { factor = 0 }
-        
-        #cost = 0
-        #fire_only_once = yes				
-        #available = { 		
-            #has_manpower > 339200
-            #date > 1938.1.1
-			#date < 1939.5.1 
-			#NOT = { has_war_with = ENG }
-			# NOT = { has_war_with = ETH }
-        #}				
-        
-        #visible = { 
-            #tag = ITA
-        #}
-        
-        #complete_effect = {
-            #add_manpower = -339200
-            #ITA = {		
-                #load_oob = "ITA_Libyan_Deployment"
-            #}
-        #}
-    #}
 
 	ITA_puppeted_by_GER = {
 
@@ -249,8 +228,7 @@ foreign_politics = {
 	}
 
 ITA_annex_bul = {
-	icon = generic_operation
-
+			targets = { BUL }
 	
 			available = {
 				is_ai = no
@@ -292,8 +270,7 @@ ITA_annex_bul = {
 	}
 
 	ITA_annex_cro = {
-		icon = generic_operation
-	
+				targets = { CRO }
 		
 				available = {
 					is_ai = no
@@ -338,8 +315,7 @@ ITA_annex_bul = {
 		}
 	
 	ITA_annex_bul_rom = {
-	icon = generic_operation
-
+			targets = { BUL }
 	
 			available = {
 				is_ai = no
@@ -381,7 +357,7 @@ ITA_annex_bul = {
 	
 	   ITA_annex_romania = {
 
-		icon = generic_operation
+		targets = { ROM }
 
 		allowed = {
 			original_tag = ITA

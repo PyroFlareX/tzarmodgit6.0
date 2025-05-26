@@ -4,6 +4,9 @@ state={
 	provinces={
 		5239 6728 7185 7782 9615 10585 10605 13182
 	}
+	resources={
+		chromium=70.000
+	}
 	history = {
 		owner = CAN
 		1936.1.1.13 = {

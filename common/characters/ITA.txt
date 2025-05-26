@@ -118,6 +118,18 @@ characters={
 					mobile_warfare_expert 
 				}
 		}
+		advisor={
+			slot = high_command
+			idea_token = giovanni_messe_hc
+			ledger  = army 
+				allowed  = {
+					original_tag  = ITA
+				}
+				traits  = {
+					army_armored_3 
+				}
+				cost = 150.000
+		}
 		portraits={
 			army={
 				small="GFX_idea_giovanni_messe"
@@ -656,26 +668,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_guiseppe_fioravanzo"
-			}
-		}
-	}
-	ITA_giovanni_messe_hc={
-		advisor={
-			slot = high_command
-			idea_token = giovanni_messe_hc
-			ledger  = army 
-				allowed  = {
-					original_tag  = ITA
-				}
-				traits  = {
-					army_armored_3 
-				}
-				cost = 150.000
-		}
-		name="giovanni_messe_hc"
-		portraits={
-			army={
-				small="GFX_idea_giovanni_messe"
 			}
 		}
 	}

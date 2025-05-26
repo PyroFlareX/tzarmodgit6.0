@@ -1,11 +1,12 @@
 state={
 	id=346
-	name="STATE_897"
+	name="STATE_346"
 	manpower = 1386000
 	state_category = pastoral 
 
 	history={
-		owner = SWE
+		owner = POR
+		add_core_of = SWE 
 		buildings = {
 			infrastructure = 2
 			2123 = {

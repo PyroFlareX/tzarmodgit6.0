@@ -1,6 +1,6 @@
 state={
 	id=906
-	name="Southern Transylvania"
+	name="STATE_906"
 	provinces={
 		690 3665 3676 6679 6709 9619 
 	}

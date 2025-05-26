@@ -23,6 +23,8 @@
  desert_desc:0 ""
  deep_desert:0 "§ODeep Desert§!"
  deep_desert_desc:0 ""
+ village:0 "Village"
+ village_desc:0 ""
  water_fjords:0 "§RFjords and Archipelagos§!"
  water_fjords_desc:0 ""
  water_shallow_sea:0 "§CShallow Sea§!"

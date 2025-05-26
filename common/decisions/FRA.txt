@@ -481,7 +481,7 @@ operations = {
 
     FRA_annex_saf = {
 
-		icon = generic_operation
+		targets = { SAF }
 
 		allowed = {
 			original_tag = FRF

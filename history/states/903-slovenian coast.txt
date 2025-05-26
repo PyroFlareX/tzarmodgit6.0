@@ -1,6 +1,6 @@
 state={
 	id=903
-	name="Slovenian coast"
+	name="STATE_903"
 	provinces={
 		13252 
 	}

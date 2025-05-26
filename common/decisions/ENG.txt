@@ -726,7 +726,7 @@ foreign_politics = {
         }
 
         visible = {
-		#has_game_rule = {  rule = horst_vichy_france    option = HORST_ENABLE_VICHY_FRANCE   }
+			date>1942.6.6
         }
 
         cost = 0
@@ -737,7 +737,6 @@ foreign_politics = {
 			EFR = { owns_state = 26 }
 			NOT = { has_global_flag = operation_torch_flag }
 			OR = { NOT = { ITA = { controls_state = 448 controls_state = 450 controls_state = 451 }   }
-			date > 1941.12.1
 			
 			}
 		}
@@ -778,7 +777,8 @@ foreign_politics = {
 		}	
 	}
 	ENG_annex_frf = {
-		icon = generic_operation
+		targets = { FRF }
+
 
 		allowed = {
 			original_tag = ENG
@@ -842,7 +842,7 @@ foreign_politics = {
 	
 	
 		ENG_annex_saf = {
-		icon = generic_operation
+		targets = { SAF }
 
 		allowed = {
 			original_tag = ENG
@@ -891,8 +891,8 @@ foreign_politics = {
 		}
 
 		ENG_annex_saf_into_canada = {
-			icon = generic_operation
-	
+			targets = { SAF }
+			
 			allowed = {
 				original_tag = ENG
 			}
@@ -938,7 +938,7 @@ foreign_politics = {
 		}
 
 		ENG_annex_raj = {
-			icon = generic_operation
+			targets = { RAJ }
 	
 			allowed = {
 				original_tag = ENG
@@ -982,7 +982,7 @@ foreign_politics = {
 
 	    ENG_annex_canada = {
 
-		icon = generic_operation
+		targets = { CAN }
 
 		allowed = {
 			original_tag = ENG

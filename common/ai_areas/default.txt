@@ -256,11 +256,10 @@ areas = {
 
 	winter_war_front = {
 		strategic_regions = {
-			195
-			928
-			111
-			930
-			926
+			148
+			265
+			13
+			132
 		}
 	}
 }
