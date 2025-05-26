@@ -110,7 +110,7 @@ technologies = {
 		coordination_bonus = 0.01
 		
 		path = {
-			leads_to_tech = decimetric_radar 
+			leads_to_tech = cavity_magnatron
 			research_cost_coeff = 1
 		}
 		
@@ -135,7 +135,7 @@ technologies = {
 		}
 	}
 	
-	decimetric_radar = {
+	 cavity_magnatron = { #was decimetric radar
 				special_project_specialization = { specialization_naval }
 		special_project_specialization = { specialization_land }
 		special_project_specialization = { specialization_air }
@@ -143,7 +143,7 @@ technologies = {
 		# can build radars/radar boost in air/sea combat depends on radar level
 
 		path = {
-			leads_to_tech = improved_decimetric_radar 
+			leads_to_tech = improved_cavity_magnatron
 			research_cost_coeff = 1
 		}
 		coordination_bonus = 0.01
@@ -185,7 +185,7 @@ technologies = {
 		}
 	}
 	
-	improved_decimetric_radar = {
+	improved_cavity_magnatron = {
 		special_project_specialization = { specialization_naval }
 		special_project_specialization = { specialization_land }
 		special_project_specialization = { specialization_air }
@@ -256,7 +256,7 @@ technologies = {
 		static_anti_air_hit_chance_factor = 0.2
 		
 		path = {
-			leads_to_tech = improved_centimetric_radar 
+			leads_to_tech = phased_array
 			research_cost_coeff = 1
 		}
 		
@@ -289,7 +289,8 @@ technologies = {
 		}
 	}
 	
-	improved_centimetric_radar = {
+	
+	phased_array = {
 		special_project_specialization = { specialization_naval }
 		special_project_specialization = { specialization_land }
 		special_project_specialization = { specialization_air }
@@ -305,7 +306,7 @@ technologies = {
 		static_anti_air_hit_chance_factor = 0.2
 		
 		path = {
-			leads_to_tech = advanced_centimetric_radar 
+			leads_to_tech = monopulse_radar
 			research_cost_coeff = 1
 		}
 		
@@ -338,7 +339,7 @@ technologies = {
 		}
 	}
 	
-	advanced_centimetric_radar = {
+	monopulse_radar = {
 		special_project_specialization = { specialization_naval }
 		special_project_specialization = { specialization_land }
 		special_project_specialization = { specialization_air }

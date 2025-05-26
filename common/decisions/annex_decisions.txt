@@ -1,7 +1,8 @@
 nigger = {
 	annex_nzl = {
 
-		icon = generic_operation
+
+		targets = { NZL }
 
 		allowed = {
 			original_tag = AST

@@ -19,6 +19,22 @@ add_ideas = {
 	CHI_years
 	CHI_war_of_resistance_2
 }
+add_opinion_modifier = {
+    target = MON
+    modifier = huge_increase 
+}
+add_opinion_modifier = {
+    target = MON
+    modifier = huge_increase 
+}
+add_opinion_modifier = {
+    target = MON
+    modifier = huge_increase 
+}
+add_opinion_modifier = {
+    target = MON
+    modifier = huge_increase 
+}
 set_technology = { #WARNING: Do not just remove techs from here -> It can impact a lot of stuff. Before removing, double check that content does not count on these techs being researched
 	shocktroops = 1
 	tech_logistics_company = 1

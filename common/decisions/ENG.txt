@@ -777,7 +777,8 @@ foreign_politics = {
 		}	
 	}
 	ENG_annex_frf = {
-		icon = generic_operation
+		targets = { FRF }
+
 
 		allowed = {
 			original_tag = ENG
@@ -841,7 +842,7 @@ foreign_politics = {
 	
 	
 		ENG_annex_saf = {
-		icon = generic_operation
+		targets = { SAF }
 
 		allowed = {
 			original_tag = ENG
@@ -890,8 +891,8 @@ foreign_politics = {
 		}
 
 		ENG_annex_saf_into_canada = {
-			icon = generic_operation
-	
+			targets = { SAF }
+			
 			allowed = {
 				original_tag = ENG
 			}
@@ -937,7 +938,7 @@ foreign_politics = {
 		}
 
 		ENG_annex_raj = {
-			icon = generic_operation
+			targets = { RAJ }
 	
 			allowed = {
 				original_tag = ENG

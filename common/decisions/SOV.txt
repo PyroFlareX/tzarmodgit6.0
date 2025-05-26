@@ -65,7 +65,7 @@ SOV_mrp = {
  	}
 	
 	SOV_annex_Mongolia = {
-			icon = generic_operation
+			targets = { MON }
 
 			allowed = {
 				original_tag = SOV

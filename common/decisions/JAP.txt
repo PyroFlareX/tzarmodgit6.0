@@ -166,7 +166,7 @@ foreign_politics = {
 
 JAP_annex_siam = {
 
-			icon = generic_operation
+			targets = { SIA }
 
 			allowed = {
 				original_tag = JAP
@@ -205,7 +205,7 @@ JAP_annex_siam = {
 	}
     JAP_annex_manchukuo = {
 
-		icon = generic_operation
+		targets = { MAN }
 
 		allowed = {
 			tag = JAP

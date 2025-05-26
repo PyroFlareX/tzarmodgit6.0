@@ -600,8 +600,8 @@ operations = {
 
 	GER_invade_iran = {
 
-			icon = GFX_decision_GER_claim_yugo_4
-			
+			targets = { PER }
+		
 			allowed = { tag = GER }
 
 			fire_only_once = yes
@@ -1716,7 +1716,7 @@ GER_case_anton = {
 	}
 	    GER_annex_vichy = {
 
-		icon = generic_operation
+		targets = { EFR }
 
 		allowed = {
 			original_tag = GER
@@ -1749,7 +1749,7 @@ GER_case_anton = {
 	
     GER_annex_hungary = {
 
-		icon = generic_operation
+		targets = { HUN }
 
 		allowed = {
 			original_tag = GER
@@ -2652,7 +2652,7 @@ special_projects = {
 
 	GER_add_chromium = { 
 		
-	    icon = GFX_decision_spa_garrison_control_total
+		targets = { SPR }
 		
 		cost = 0
 		
@@ -2685,8 +2685,8 @@ special_projects = {
 
 	GER_remove_chromium = { 
 		
-	    icon = GFX_decision_spa_garrison_control_total
-		
+		targets = { SPR }
+
 		cost = 0
 		
 		allowed = { original_tag = GER }
