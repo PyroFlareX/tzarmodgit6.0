@@ -982,7 +982,7 @@ foreign_politics = {
 
 	    ENG_annex_canada = {
 
-		icon = generic_operation
+		targets = { CAN }
 
 		allowed = {
 			original_tag = ENG

@@ -1,18 +1,3 @@
-# befriend
-# conquer
-# antagonize
-# build_ship
-# build_army
-# unit_ratio
-# build_building
-	}
-
-
-	ai_strategy = {
-# research_tech
-# garrison
-# protect
-# influence
 
 CHI_unit_production = {
 	allowed = { original_original_tag = CHI }
