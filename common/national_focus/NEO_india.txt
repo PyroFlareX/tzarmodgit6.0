@@ -730,78 +730,6 @@ focus = {
         }
     }
 
-        focus = {
-        id = RAJ_punjab_autonomy
-        icon = GFX_focus_RAJ_punjab_autonomy
-        prerequisite = { focus = RAJ_indo_centric_curriculum }
-        x = 0
-        y = 1
-        relative_position_id = RAJ_indo_centric_curriculum
-        
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-
-        }
-        
-        bypass = {
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_POLITICAL}
-        search_filters = {FOCUS_FILTER_INDUSTRY}
-
-        completion_reward = {
-
-            if = {
-                limit = {
-                    440 = {
-                        is_controlled_by_ROOT_or_subject = yes
-                    }
-                }
-
-                440 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_dynamic_modifier = {
-                        modifier = idea_RAJ_sikh_approval
-                    }
-                }
-            }
-
-            custom_effect_tooltip = generic_skip_one_line_tt
-
-            if = {
-                limit = {
-                    433 = {
-                        is_controlled_by_ROOT_or_subject = yes
-                    }
-                }
-
-                433 = {
-                    add_extra_state_shared_building_slots = 2
-                    add_dynamic_modifier = {
-                        modifier = idea_RAJ_sikh_approval
-                    }
-                }
-            }
-
-
-           # unlock_decision_tooltip = {
-            #    decision = RAJ_GOE_sikh_recruitment
-
-            #}
-            
-
-        }
-    }
-
     focus = {
         id = RAJ_tenancy_reforms
         icon = GFX_focus_generic_low_cost_housing
@@ -1890,7 +1818,7 @@ focus = {
         search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_TFV_AUTONOMY}
 
         completion_reward = {
-            retire_country_leader = yes
+            #retire_country_leader = yes
 			add_country_leader_role = {
 				character = RAJ_GOE_jawaharlal_nehru
 				promote_leader = yes
@@ -1939,8 +1867,16 @@ focus = {
         search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_TFV_AUTONOMY}
 
         completion_reward = {
+
+            set_country_leader_portrait = {
+                portrait = GFX_portrait_RAJ_mohandas_gandi_nuclear
+            }
             
-        
+            set_politics = {
+                ruling_party = democratic
+                elections_allowed = no
+                #election_frequency = 48
+            }
         }
     }
 
