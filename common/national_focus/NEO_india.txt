@@ -1868,9 +1868,9 @@ focus = {
 
         completion_reward = {
 
-            set_country_leader_portrait = {
-                portrait = GFX_portrait_RAJ_mohandas_gandi_nuclear
-            }
+            #set_country_leader_portrait = {
+             #   portrait = GFX_portrait_RAJ_mohandas_gandi_nuclear
+            #}
             
             set_politics = {
                 ruling_party = democratic
@@ -1880,6 +1880,54 @@ focus = {
         }
     }
 
+	focus = {
+        id = RAJ_destroyer_of_worlds
+        icon = GFX_focus_wonderweapons
+        prerequisite = { focus = RAJ_assassination_attempt }
+        x = 1
+        y = 1
+        relative_position_id = RAJ_assassination_attempt
+        
+        cost = 10
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+
+        }
+        
+        bypass = {
+
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = {FOCUS_FILTER_RESEARCH}
+        search_filters = {FOCUS_FILTER_MILITARY_CHARACTER}
+
+        complete_tooltip = {
+
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                technology  = atomic_research # optional
+            }
+
+           add_breakthrough_points = {
+                specialization = specialization_nuclear 
+                value = 1
+            }
+
+            add_country_leader_trait = destroyer_of_worlds
+        }
+    }
 	########### mill cels.... ##################
 	
 	focus = {

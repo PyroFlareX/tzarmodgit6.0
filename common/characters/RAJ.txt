@@ -33,8 +33,8 @@ characters={
 			name=RAJ_mahatma_mohandas_gandhi
 			portraits={
 				civilian = {
-					small = GFX_portrait_RAJ_mohandas_gandi_small 
-					large = GFX_portrait_RAJ_mohandas_gandi
+					small = GFX_portrait_RAJ_mohandas_gandi_nuclear_small
+					large = GFX_portrait_RAJ_mohandas_gandi_nuclear
 					# Also GFX_portrait_RAJ_mohandas_gandi_nuclear_small
 					# Also GFX_portrait_RAJ_mohandas_gandi_nuclear
 				}
@@ -54,13 +54,13 @@ characters={
 				}
 				visible = {
 					
-					has_completed_focus = RAJ_mahatma
+					#has_completed_focus = RAJ_mahatma
 				}
 				available = {
-					has_completed_focus = RAJ_mahatma
+					#has_completed_focus = RAJ_mahatma
 				}
 				traits = {
-					death
+					
 				}
 			}	
 		
