@@ -9,7 +9,7 @@ state={
 		steel=48		# was: 104
 	}	
 	
-	state_category = urban
+	state_category = metropolis
 
 	history={
 		add_core_of = SWE

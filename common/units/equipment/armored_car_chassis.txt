@@ -76,10 +76,10 @@ equipments = {
 			module = sloped_armor
 			count < 2
 		}	
-		module_count_limit = {
-			category = 
-			count < 2
-		}
+		#module_count_limit = {
+		#	category = 
+		#	count < 2
+		#}
 		module_count_limit = {
 			category = tank_radio_module
 			count < 2
@@ -88,10 +88,10 @@ equipments = {
 			module = stabilizer
 			count < 2
 		}
-		module_count_limit = {
-			category = 
-			count < 2 #one secondary turrets only
-		}
+		#module_count_limit = {
+		#	category = 
+		#	count < 2 #one secondary turrets only
+		#}
 		# module_count_limit = {
 		# 	module = smoke_launchers
 		# 	count < 3

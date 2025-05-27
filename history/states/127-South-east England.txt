@@ -23,7 +23,7 @@ state={
 				coastal_bunker = 3
 			}
 			9458 = {
-				naval_base = 20
+				naval_base = 15
 			}
 			13070 = {
 				# HM Dockyard, Chatham

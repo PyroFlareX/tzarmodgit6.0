@@ -409,9 +409,9 @@ SOV_morozov_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
-			NOT = {
-				has_country_flag = SOV_merge_plant_no_174_flag
-			}
+			#NOT = {
+			#	has_country_flag = SOV_merge_plant_no_174_flag
+			#}
 		}
 
 		on_complete = {
@@ -447,7 +447,7 @@ SOV_morozov_design_bureau_organization = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
+				#has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -484,7 +484,7 @@ SOV_morozov_design_bureau_organization = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
+				#has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -559,7 +559,7 @@ SOV_astrov_design_bureau_organization = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
+				#has_country_flag = SOV_merge_plant_no_112_flag
 			}
 			
 		}
@@ -597,7 +597,7 @@ SOV_astrov_design_bureau_organization = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
+				#has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -700,7 +700,7 @@ SOV_okmo_organization = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
+				#has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -737,7 +737,7 @@ SOV_okmo_organization = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
+				#has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -834,9 +834,9 @@ SOV_mytishchy_machine_building_plant_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
-			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
-			}
+			#NOT = {
+			#	has_country_flag = SOV_merge_plant_no_112_flag
+			#}
 		}
 
 		on_complete = {
@@ -871,9 +871,9 @@ SOV_mytishchy_machine_building_plant_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
-			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
-			}
+			#NOT = {
+			#	has_country_flag = SOV_merge_plant_no_112_flag
+			#}
 		}
 
 		on_complete = {
@@ -952,9 +952,9 @@ SOV_kirov_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
-			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
-			}
+			#NOT = {
+			#	has_country_flag = SOV_merge_plant_no_112_flag
+			#}
 		}
 
 		on_complete = {
@@ -989,9 +989,9 @@ SOV_kirov_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
-			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
-			}
+			#NOT = {
+			#	has_country_flag = SOV_merge_plant_no_112_flag
+			#}
 		}
 
 		on_complete = {
@@ -2463,7 +2463,7 @@ SOV_grabin_design_bureau_organization = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
+				#has_country_flag = SOV_merge_plant_no_112_flag
 			}
 			#Only exists in this MIO
 		}
@@ -2494,7 +2494,7 @@ SOV_grabin_design_bureau_organization = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
+				#has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -2531,7 +2531,7 @@ SOV_grabin_design_bureau_organization = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
+				#has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -2607,9 +2607,9 @@ SOV_tula_arms_plant_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
-			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
-			}
+			#NOT = {
+			#	has_country_flag = SOV_merge_plant_no_112_flag
+			#}
 			#Only exists in this MIO
 		}
 
@@ -2638,9 +2638,9 @@ SOV_tula_arms_plant_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
-			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
-			}
+			#NOT = {
+			#	has_country_flag = SOV_merge_plant_no_112_flag
+			#}
 		}
 
 		on_complete = {
@@ -2675,9 +2675,9 @@ SOV_tula_arms_plant_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
-			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
-			}
+			#NOT = {
+			#	has_country_flag = SOV_merge_plant_no_112_flag
+			#}
 		}
 
 		on_complete = {
@@ -2752,7 +2752,7 @@ SOV_gaz_organization = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
+				#has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -2784,7 +2784,7 @@ SOV_gaz_organization = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
+				#has_country_flag = SOV_merge_plant_no_112_flag
 			}
 			#Only exists in this MIO
 		}
@@ -2815,7 +2815,7 @@ SOV_gaz_organization = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
+				#has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
@@ -2852,7 +2852,7 @@ SOV_gaz_organization = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
 			NOT = {
-				has_country_flag = SOV_merge_plant_no_112_flag
+				#has_country_flag = SOV_merge_plant_no_112_flag
 			}
 		}
 
