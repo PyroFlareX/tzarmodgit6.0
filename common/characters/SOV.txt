@@ -1300,31 +1300,6 @@ SOV_arseniy_golovko={
 		}
 	}
 
-	SOV_sergey_korolyov = {
-		name = SOV_sergey_korolyov
-		portraits = {
-			army = {
-				small = "GFX_idea_sergei_korolev"
-			}
-		}
-
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = sergei_korolev
-			ledger = air
-			allowed = {
-				original_tag = SOV
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
-			}
-		}		
-	}
-
 	SOV_pavel_zhigarev = {
 		name = SOV_pavel_zhigarev
 		portraits = {

@@ -720,53 +720,7 @@ characters={
 	
 	
 	
-	GER_von_braun={
-		name=GER_von_braun
-		portraits={
-			army={
-				small="GFX_idea_von_braun"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = von_braun
-			ledger = air
-			allowed = {
-				original_tag = GER
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
-			}
-		}
-	}
-
-	GER_heisenberg={
-		name=GER_heisenberg
-		portraits={
-			army={
-				small="GFX_idea_heisenberg"
-			}
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = heisenberg
-			ledger = army
-			allowed = {
-				original_tag = GER
-			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
-		}
-	}
+	
 
 	GER_wolfram_von_richthofen={
 		name=GER_wolfram_von_richthofen
@@ -1482,6 +1436,7 @@ characters={
 				specialization_nuclear = 2
 			}
 		}
+		
 	}
 
 	GER_peter_adolf_thiessen = {

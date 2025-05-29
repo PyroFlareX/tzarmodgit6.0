@@ -185,7 +185,8 @@ open_top_turret = {
 		multiply_stats = {
 			build_cost_ic = 0.05
 		}
-		low_armor = {
+	}
+	low_armor = {
 		abbreviation = "aim"
 		category = armor_mech
 		sfx = sfx_ui_sd_module_turret
@@ -207,4 +208,5 @@ open_top_turret = {
 		multiply_stats = {
 			build_cost_ic = 0.05
 		}
+	}
 }

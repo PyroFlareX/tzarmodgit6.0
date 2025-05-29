@@ -1,6 +1,6 @@
 
 CHI_unit_production = {
-	allowed = { original_original_tag = CHI }
+	allowed = { original_tag = CHI }
 	enable = {
 		always = yes
 	}
@@ -129,7 +129,7 @@ CHI_unit_production = {
 }
 
 CHI_dont_waste_on_offensive_air_early = {
-	allowed = { original_original_tag = CHI }
+	allowed = { original_tag = CHI }
 	enable = {
 		date < 1940.1.1
 	}
@@ -151,7 +151,7 @@ CHI_dont_waste_on_offensive_air_early = {
 }
 
 CHI_armored_production = {
-	allowed = { original_original_tag = CHI }
+	allowed = { original_tag = CHI }
 	enable = {
 		ai_wants_divisions > 0 #Decreasing the amount of tanks the AI wants
 	}
@@ -167,7 +167,7 @@ CHI_armored_production = {
 }
 
 CHI_highered_armored_production = {
-	allowed = { original_original_tag = CHI }
+	allowed = { original_tag = CHI }
 	enable = {
 		num_of_military_factories > 109
 	}
@@ -198,7 +198,7 @@ CHI_prio_military_even_at_peace = {
 	
 CHI_dont_mess_with_the_soviets = {
 
-	allowed = { original_original_tag = CHI }
+	allowed = { original_tag = CHI }
 	enable = {	
 		NOT = { has_war_with = SOV }
 	}
@@ -232,7 +232,7 @@ CHI_dont_mess_with_the_mon = {
 }
 CHI_dont_mess_with_the_b = {
 
-	allowed = { original_original_tag = CHI }
+	allowed = { original_tag = CHI }
 	enable = {	
 		NOT = { has_war_with = SOV }
 	}
@@ -254,7 +254,7 @@ CHI_dont_mess_with_the_b = {
 }
 CHI_dont_mess_with_the_b = {
 
-	allowed = { original_original_tag = CHI }
+	allowed = { original_tag = CHI }
 	enable = {	
 		NOT = { has_war_with = SOV }
 	}
@@ -276,7 +276,7 @@ CHI_dont_mess_with_the_b = {
 }
 
 CHI_some_safer_places_to_build = {
-	allowed = { original_original_tag = CHI }
+	allowed = { original_tag = CHI }
 	enable = {
 		always = yes
 	}
@@ -371,7 +371,7 @@ ai_strategy = {
 }
 CHI_hunker_down_now  = {
 	allowed = {
-		original_original_tag = CHI
+		original_tag = CHI
 	}
 
 	enable = {
