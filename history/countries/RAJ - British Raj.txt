@@ -269,11 +269,11 @@ recruit_character = RAJ_v._d._savarkar
 recruit_character = RAJ_p._krishna_pillai
 #recruit_character = RAJ_b._p._sitaramayya
 recruit_character = RAJ_noel_beresfordpeirse
-recruit_character = RAJ_frank_messervy
-recruit_character = RAJ_david_tennant_cowan
-recruit_character = RAJ_maharaja_rajendrasinhji_jadeja
-recruit_character = RAJ_thomas_wynford_rees
-recruit_character = RAJ_madras_thimayya
+#recruit_character = RAJ_frank_messervy
+#recruit_character = RAJ_david_tennant_cowan
+#recruit_character = RAJ_maharaja_rajendrasinhji_jadeja
+#recruit_character = RAJ_thomas_wynford_rees
+#recruit_character = RAJ_madras_thimayya
 #recruit_character = RAJ_syed_ahmed_el_edroos
 recruit_character = RAJ_douglas_gracey
 recruit_character = RAJ_herbert_fitzherbert
@@ -326,6 +326,12 @@ recruit_character = RAJ_GOE_j_r_d_tata
 recruit_character = RAJ_GOE_prescott_bush
 recruit_character = RAJ_GOE_jawaharlal_nehru
 recruit_character = RAJ_mahatma_mohandas_gandhi
+recruit_character = RAJ_GOE_montagu_stopford
+#recruit_character = RAJ_GOE_francis_tuker
+recruit_character = RAJ_GOE_parkash_singh
+
+
+
 
 set_variable = { RAJ_tyranny = 0}
 set_variable = { RAJ_air_superiority_bonus_in_combat = 0}
