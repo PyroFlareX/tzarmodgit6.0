@@ -3040,6 +3040,8 @@ technologies = {
 		motorized_rocket_brigade = {
 			max_organisation = 5
 			breakthrough = 0.20 
+			combat_width = -1.0
+		
 		}
 		
 		path = {
@@ -3087,7 +3089,7 @@ technologies = {
 			max_organisation = 3
 		}
 		motorized_rocket_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.25
 		}
 		
 		enable_tactic = tactic_backhand_blow
