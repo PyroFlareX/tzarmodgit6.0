@@ -30,11 +30,27 @@ characters={
 			civilian={
 				large=GFX_portrait_Jozef_Tiso
 			}
+			army={
+				small="GFX_idea_CZE_jozef_tiso"
+			}
 		}
 		country_leader={
 			ideology=fascism_ideology
 			expire="1965.1.1"
 			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CZE_jozef_tiso
+			allowed  = {
+				original_tag  = CZE
+			}
+			traits  = {
+				backroom_backstabber 
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
 		}
 	}
 
@@ -504,27 +520,27 @@ characters={
 		}
 	}
 
-	CZE_jozef_tiso={
-		name=CZE_jozef_tiso
-		portraits={
-			army={
-				small="GFX_idea_CZE_jozef_tiso"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = CZE_jozef_tiso
-			allowed  = {
-				original_tag  = CZE
-			}
-			traits  = {
-				backroom_backstabber 
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-		}	
-	}
+	#CZE_jozef_tiso={
+	#	name=CZE_jozef_tiso
+	#	portraits={
+	#		army={
+	#			small="GFX_idea_CZE_jozef_tiso"
+	#		}
+	#	}
+	#	advisor={
+	#		slot = political_advisor
+	#		idea_token = CZE_jozef_tiso
+	#		allowed  = {
+	#			original_tag  = CZE
+	#		}
+	#		traits  = {
+	#			backroom_backstabber 
+	#		}
+	#		ai_will_do  = {
+	#			factor  = 0.000
+	#		}
+	#	}	
+	#}
 
 	CZE_stefan_osusky={
 		name=CZE_stefan_osusky

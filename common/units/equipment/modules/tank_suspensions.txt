@@ -117,20 +117,7 @@ equipment_modules = {
 		}
 	}
 
-	tank_interleaved_suspension = {
-		abbreviation = "int"
-		category = tank_suspension_type
-		sfx = sfx_ui_sd_module_sonar
-
-		add_stats = {
-			build_cost_ic = 2.5
-			breakthrough = 1		
-		}
-		multiply_stats =  {	
-			reliability = -0.075
-			armor_value = 0.2
-		}
-	}
+	
 
 	tank_half_track_suspension = {
 		abbreviation = "htr"

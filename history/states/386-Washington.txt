@@ -7,7 +7,7 @@ state={
 	state_category = large_town
 	resources={
 		steel=72
-		aluminum=30
+		aluminium=30
 		tungsten=25
 		chromium=15
 	

@@ -8,7 +8,10 @@ spriteTypes = {
 	
 	
 	
-	
+	SpriteType = {
+		name = "GFX_improved_cavity_magnatron_medium"
+		texturefile = "gfx/interface/technologies/improved_decimetric_radar.dds"
+	}		
 	
 	
 	

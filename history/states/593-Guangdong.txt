@@ -27,9 +27,7 @@ state= {
 
 		1938.10.25 = {		
 			remove_core_of = SWE
-					1936.1.1.16 = {
-			owner = SWE 
-		}
+					
 		owner = CHI
 			JAP = {
 				set_province_controller = 1202
@@ -38,6 +36,10 @@ state= {
 				set_province_controller = 9938
 				set_province_controller = 12095
 			} 			
+		}
+		
+		1936.1.1.16 = {
+			owner = SWE 
 		}
 	}
 	provinces={

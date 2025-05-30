@@ -1,7 +1,7 @@
 
 state={
 	id=345
-	name="Adriatic Coast"
+	name="STATE_345"
 
 	history={
 		owner = YUG
@@ -12,9 +12,6 @@ state={
 		1936.1.1.16 = {
 			owner = YUG
 
-		}
-		victory_points = {
-			3868 1 
 		}
 		buildings = {
 			infrastructure = 3

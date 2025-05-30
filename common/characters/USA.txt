@@ -855,29 +855,7 @@ characters={
 	# 		}
 	# 	}
 	# }
-	USA_robert_goddard={
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = robert_goddard
-			ledger  = air 
-				allowed  = {
-					original_tag  = USA
-				}
-				research_bonus  = {
-					rocketry  = 0.150
-				}
-				traits  = {
-					rocket_scientist 
-				}
-		}
-		name="robert_goddard"
-		portraits={
-			army={
-				small="GFX_idea_robert_goddard"
-			}
-		}
-	}
+	
 	USA_henry_morgenthau={
 		advisor={
 			cost = 150
@@ -958,29 +936,7 @@ characters={
 			}
 		}
 	}
-	USA_robert_oppenheimer={
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = robert_oppenheimer
-			ledger  = army 
-				allowed  = {
-					original_tag  = USA
-				}
-				research_bonus  = {
-					nuclear  = 0.150
-				}
-				traits  = {
-					nuclear_scientist 
-				}
-		}
-		name="robert_oppenheimer"
-		portraits={
-			army={
-				small="GFX_idea_robert_oppenheimer"
-			}
-		}
-	}
+	
 	USA_harold_ickes={
 		advisor={
 			cost = 150

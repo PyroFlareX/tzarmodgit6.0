@@ -106,7 +106,7 @@ AST_Start_The_Papua_Campaign = {
 		}
 	}
 SAF_annex_CAN = {
-		icon = generic_operation
+			targets = { CAN }
 
 			allowed = {
 				tag = SAF
@@ -153,7 +153,7 @@ SAF_annex_CAN = {
 		}
 }
 CAN_annex_SAF = {
-		icon = generic_operation
+			targets = { SAF }
 
 			allowed = {
 				tag = CAN

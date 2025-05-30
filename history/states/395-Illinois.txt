@@ -6,7 +6,7 @@ state={
 	state_category = megalopolis
 	resources= {
 		steel=95
-		aluminum=60
+		aluminium=60
 	}
 	history={
 				1936.1.1.16 = {

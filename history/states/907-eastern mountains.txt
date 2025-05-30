@@ -1,6 +1,6 @@
 state={
 	id=907
-	name="Eastern Mountains"
+	name="STATE_907"
 	provinces={
 		711 3689 
 	}

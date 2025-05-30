@@ -1,6 +1,6 @@
 state={
 	id=901
-	name="Croatian Coast"
+	name="STATE_901"
 	provinces={
 		591 984 3601 6611 11901 
 	}

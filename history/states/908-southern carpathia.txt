@@ -1,6 +1,6 @@
 state={
 	id=908
-	name="Southern Carpathia"
+	name="STATE_908"
 	provinces={
 		5016 6571 8086 
 	}

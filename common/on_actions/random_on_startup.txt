@@ -65,7 +65,7 @@ on_startup = {
 				popup = no
 			}
 			add_timed_idea = {
-				idea = No_tradeback
+				idea = no_tradeback
 				days = 1200
 			}
 		}

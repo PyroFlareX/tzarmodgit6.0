@@ -7,7 +7,7 @@ state={
 	state_category = megalopolis
 	
 	resources={
-		aluminum=18
+		aluminium=18
 	}
 	
 	history={

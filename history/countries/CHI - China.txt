@@ -19,6 +19,22 @@ add_ideas = {
 	CHI_years
 	CHI_war_of_resistance_2
 }
+add_opinion_modifier = {
+    target = MON
+    modifier = huge_increase 
+}
+add_opinion_modifier = {
+    target = MON
+    modifier = huge_increase 
+}
+add_opinion_modifier = {
+    target = MON
+    modifier = huge_increase 
+}
+add_opinion_modifier = {
+    target = MON
+    modifier = huge_increase 
+}
 set_technology = { #WARNING: Do not just remove techs from here -> It can impact a lot of stuff. Before removing, double check that content does not count on these techs being researched
 	shocktroops = 1
 	tech_logistics_company = 1
@@ -55,7 +71,7 @@ starting_train_buffer = 3.0
 add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 20000 producer = CHI }  
 add_equipment_to_stockpile = { type = support_equipment amount = 2000 producer = CHI } 
 add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 60000 producer = CHI } 
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 5	7900 producer = CHI } 
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 7900 producer = CHI } 
 add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 1300 producer = CHI } 
 add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 6000 producer = CHI }
 set_research_slots = 3 
