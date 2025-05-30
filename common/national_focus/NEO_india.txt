@@ -1703,13 +1703,13 @@ focus = {
 focus = {
 	id = RAJ_the_jewel_becomes_the_crown
 	icon = GFX_focus_RAJ_the_jewel_becomes_the_crown
-	prerequisite = { focus = RAJ_defense_of_india_act }
-    prerequisite = { focus = RAJ_arrest_gandhi }
+	prerequisite = { focus = RAJ_gov_mountbatten focus = RAJ_gov_wavell }
+    
 
-	x = 1
+	x = 0
 	y = 2
-	relative_position_id = RAJ_defense_of_india_act
-	cost = 5
+	relative_position_id = RAJ_arrest_gandhi
+	cost = 1
 
 	available = {
 		ENG = {
@@ -1830,9 +1830,131 @@ focus = {
 					traits = {  }
 				}
 			}
+            custom_effect_tooltip = generic_skip_one_line_tt
             set_politics = {
 				ruling_party = democratic
 			}
+            custom_effect_tooltip = generic_skip_one_line_tt
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.15
+            }
+        }
+    }
+
+    focus = {
+        id = RAJ_haripura_session_of_the_indian_national_congress
+        icon = GFX_goal_generic_dangerous_deal
+        prerequisite = {  focus  = RAJ_mahatma focus = RAJ_assassination_attempt }
+        x = 0
+        y = 2
+        relative_position_id = RAJ_a_congress_resurgent
+        
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+
+        }
+        
+        bypass = {
+            is_subject = no
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY}
+
+        completion_reward = {
+            add_autonomy_score = { 
+                value = 50
+                localization = RAJ_haripura_session_of_the_indian_national_congress
+            }
+        }
+    }
+
+    focus = {
+        id = RAJ_preamble_to_the_constitution_of_india
+        icon = GFX_focus_generic_the_giant_wakes
+        prerequisite = { focus = RAJ_mahatma }
+        prerequisite = { focus = RAJ_haripura_session_of_the_indian_national_congress }
+        x = 0
+        y = 2 
+        relative_position_id = RAJ_mahatma
+        
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+
+        }
+        
+        bypass = {
+
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = {FOCUS_FILTER_POLITICAL}
+
+        complete_tooltip = {
+
+        }
+
+        completion_reward = {
+            add_stability = 0.1
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.15
+            }
+        }
+    }
+
+    focus = {
+        id = RAJ_indian_socialism
+        
+        icon = GFX_focus_RAJ_seek_help_from_soviet 
+        prerequisite = { focus = RAJ_mahatma }
+        
+        x = 2
+        y = 1
+        relative_position_id = RAJ_mahatma
+
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+            has_dynamic_modifier = {
+                modifier = idea_RAJ_five_year_plan
+            }
+        }
+
+        bypass = {
+
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
+
+        completion_reward = {
+            
         }
     }
 
@@ -1882,11 +2004,45 @@ focus = {
         }
     }
 
+    focus = {
+        id = RAJ_arm_the_peasantry
+        icon = GFX_focus_generic_workers_and_farmers_rise
+        prerequisite = { focus = RAJ_haripura_session_of_the_indian_national_congress }
+        prerequisite = { focus = RAJ_assassination_attempt }
+        x = -1
+        y = 1
+        relative_position_id = RAJ_haripura_session_of_the_indian_national_congress
+
+
+        cost = 10
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+        }
+
+        bypass = {
+
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_MANPOWER }
+
+        completion_reward = {
+               
+        }
+    }
+
 	focus = {
         id = RAJ_destroyer_of_worlds
         icon = GFX_focus_wonderweapons
         prerequisite = { focus = RAJ_assassination_attempt }
-        x = -1
+        x = -2
         y = 1
         relative_position_id = RAJ_assassination_attempt
         
@@ -1930,6 +2086,158 @@ focus = {
             add_country_leader_trait = destroyer_of_worlds
         }
     }
+
+    focus = {
+        id = RAJ_uranium_tipped_bullets
+        icon = GFX_focus_RAJ_uranium_tipped_bullets
+        prerequisite = { focus = RAJ_destroyer_of_worlds }
+        x = 0
+        y = 1
+        relative_position_id = RAJ_destroyer_of_worlds 
+        
+        cost = 10
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+ 
+        }
+        
+        bypass = {
+
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = {FOCUS_FILTER_RESEARCH}
+
+        complete_tooltip = {
+            custom_effect_tooltip = RAJ_uranium_tipped_bullets_tt
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = RAJ_uranium_tipped_bullets_tt
+            hidden_effect = {
+                set_technology = {
+                    uranium_tipped_bullets = 1
+                    popup = no
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = RAJ_rolling_nuke_barrages
+        icon = GFX_focus_GER_wunderwaffe
+        prerequisite = { focus = RAJ_uranium_tipped_bullets }
+        x = 0
+        y = 1
+        relative_position_id = RAJ_uranium_tipped_bullets
+        
+        cost = 10
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+
+        }
+        
+        bypass = {
+
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        complete_tooltip = {
+
+        }
+
+        completion_reward = {
+            add_ideas = idea_RAJ_rolling_nuke_barrages
+        }
+    }
+
+    focus = {
+        id = RAJ_to_shake_the_world
+        icon = GFX_focus_RAJ_to_shake_the_world
+        prerequisite = { focus =  RAJ_arm_the_peasantry }
+        prerequisite = { focus = RAJ_rolling_nuke_barrages }
+        
+        x = 0
+        y = 2
+        relative_position_id = RAJ_arm_the_peasantry
+        
+        cost = 10
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+            has_idea = tot_economic_mobilisation
+        }
+        
+        bypass = {
+
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = {FOCUS_FILTER_INDUSTRY}
+
+
+
+        completion_reward = {
+           
+        }
+    }
+
+    ############ CHYNA ##################
+
+    focus = {
+        id = RAJ_chinese_x_force
+        icon = GFX_focus_GER_ally_chiang_kai_shek
+        prerequisite = { focus = RAJ_defense_of_india_act }
+        
+        x = 0
+        y = 1
+        relative_position_id = RAJ_defense_of_india_act
+       
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+
+        }
+        
+        bypass = {
+            is_subject = no
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY}
+
+        completion_reward = {
+           
+        }
+    }
+
 	########### mill cels.... ##################
 	
 	focus = {
