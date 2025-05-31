@@ -10,20 +10,28 @@ set_technology = { basic_train = 1
 	iw_small_airframe = 1	
 	motorised_infantry = 1
 	gwtank_chassis = 1
-	#winter_warfare = 1
 	basic_light_tank_chassis = 1
-		interwar_antiair = 1
-	
-	
-	
+	interwar_antiair = 1
 }
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 80
+	communism = 20
+}
+
 
 add_timed_idea = { idea = france_production_regrowth days = 30 }
 
 recruit_character = MAN_hesehn_tiemei
 recruit_character = MAN_kyoiji_tomonaga
 recruit_character = MAN_yonimitsu_kasahara
-recruit_character = MAN_guan_xingde
+#recruit_character = MAN_guan_xingde
 recruit_character = MAN_zhang_haipeng
 recruit_character = MAN_shigeru_honjo
 recruit_character = MAN_masatane_kanda
@@ -85,22 +93,3 @@ add_ideas = {
 add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 8000 }
 
 set_convoys = 15
-
-set_politics = {
-	ruling_party = fascism
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	fascism = 100
-	neutrality = 0
-}
-
-# create_country_leader = {
-# 	name = "Aisin Gioro Puyi"
-# 	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
-# 	expire = "1960.1.1"
-# 	ideology = rexism
-# 	traits = {	}
-# }
