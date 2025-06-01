@@ -81,7 +81,7 @@ focus_tree = {
 
 focus = {
 	id = RAJ_concessions_to_the_industrialists
-	icon = GFX_focus_generic_industrialists
+	icon = GFX_focus_RAJ_appoint_a_c_suite
 	prerequisite = { focus = RAJ_expand_the_zamindari_system }
 	
 	x = 1
@@ -392,7 +392,7 @@ focus = {
 	cost = 5
 
 	available = {
-		is_ally_with = ENG
+		
 	}
 
 	bypass_if_unavailable = yes
@@ -605,9 +605,33 @@ focus = {
             add_autonomy_ratio = { 
                 value = 0.05 
             }
-           custom_effect_tooltip = idea_RAJ_independence_movement_tt
+            custom_effect_tooltip = idea_RAJ_independence_movement_tt
             add_to_variable = { RAJ_independence_movement_infra = 0.2 tooltip = production_speed_infrastructure_factor_tt }
-            
+            custom_effect_tooltip = generic_skip_one_line_tt
+            439 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+			438 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+			435 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				
+			}
         }
     }
 
@@ -864,42 +888,6 @@ focus = {
 					instant_build = yes
 				}
 			}
-        }
-    }
-
-    focus = {
-        id = RAJ_boycott_british_made_goods
-        icon = GFX_focus_eng_decolonization
-        prerequisite = { focus = RAJ_khadi_movement }
-        x = 0
-        y = 1
-        relative_position_id = RAJ_khadi_movement
-       
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-
-        }
-        
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_TFV_AUTONOMY}
-
-        completion_reward = {
-            add_timed_idea = {
-                idea = idea_RAJ_boycott_british_made_goods
-                days = 400
-            }
         }
     }
 
@@ -1518,7 +1506,7 @@ focus = {
         y = 6
         relative_position_id = RAJ_provincial_elections
        
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -1550,7 +1538,7 @@ focus = {
 		icon = GFX_focus_SOV_penal_battalions
 		prerequisite = { focus = RAJ_defense_of_india_act }
 		prerequisite = { focus = RAJ_the_empires_workshop }
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = RAJ_defense_of_india_act
 		cost = 5
@@ -1618,6 +1606,259 @@ focus = {
 	}
 
     
+focus = {
+	id = RAJ_assume_eastern_naval_responsibilities
+	icon = GFX_goal_generic_construct_naval_dockyard
+	prerequisite = { focus = RAJ_gov_mountbatten }
+	
+	x = 0
+	y = 2
+	relative_position_id = RAJ_gov_mountbatten
+	cost = 5
+
+	available = {
+		
+	}
+
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
+	completion_reward = {
+		if = { 
+			limit = { has_dlc = "Man the Guns" }
+			set_technology = { coastal_defense_ships = 1 } 
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_equipment_to_stockpile = { 
+			type = convoy
+			amount = 50 
+			producer = ROOT
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		unlock_decision_category_tooltip = generic_refit_civilian_ships_category
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_country_flag = refit_convoy_ships_flag #Necessary flag for unlocking Refit Civilian Ships decs 
+		#The variants created here replace the variants that can be created via decisions
+		set_country_flag = refit_to_destroyer_flag
+		set_country_flag = refit_to_cruiser_flag
+
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			# DESTROYER
+			create_equipment_variant = { #Made-up
+				name = "Refitted Destroyer Class" 		
+				type = ship_hull_light_1
+				name_group = "RAJ_DD_HISTORICAL" #Note: Doesn't matter if ROOT is not DEN, the effect will grab the appropriate country-specific name list anyways
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_light_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = light_ship_engine_1
+					fixed_ship_torpedo_slot = ship_torpedo_1
+					mid_1_custom_slot = empty
+					rear_1_custom_slot = empty
+				}
+				obsolete = yes
+				design_team = mio:RAJ_garden_reach_shipbuilders_organization
+			}
+			#Line Production
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_1
+					creator = "RAJ"
+					version_name = "Refitted Destroyer Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 3
+				industrial_manufacturer = mio:RAJ_garden_reach_shipbuilders_organization
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			# Light Cruiser
+			create_equipment_variant = { #Made-up
+				name = "Refitted Cruiser Class"				
+				type = ship_hull_cruiser_1
+				name_group = RAJ_CL_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_light_medium_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = cruiser_ship_engine_1
+					fixed_ship_armor_slot = ship_armor_cruiser_1
+					fixed_ship_secondaries_slot = dp_ship_secondaries_1
+					mid_1_custom_slot = empty
+					mid_2_custom_slot = empty
+					rear_1_custom_slot = empty
+				}
+				obsolete = yes
+				design_team = mio:RAJ_garden_reach_shipbuilders_organization
+			}
+			#Line Production
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_1
+					creator = "RAJ"
+					version_name = "Refitted Cruiser Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+				industrial_manufacturer = mio:RAJ_garden_reach_shipbuilders_organization
+			}
+		}
+		#NO MTG
+		else = {
+			# DESTROYER	
+			create_equipment_variant = { #Made-up
+				name = "Refitted Destroyer Class"
+				type = destroyer_1
+				upgrades = {
+					ship_torpedo_upgrade = 0
+					destroyer_engine_upgrade = 0
+					ship_ASW_upgrade = 0
+					ship_anti_air_upgrade = 0
+				}
+				obsolete = yes
+				design_team = mio:RAJ_garden_reach_shipbuilders_organization
+			}	
+			#Line Production
+			add_equipment_production = {
+				equipment = {
+					type = destroyer_1
+					creator = "RAJ"
+					version_name = "Refitted Destroyer Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 3
+				industrial_manufacturer = mio:RAJ_garden_reach_shipbuilders_organization
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = { has_tech = early_light_cruiser }
+				}
+				hidden_effect = {
+					set_technology = {
+						early_light_cruiser = 1
+					}
+				}
+			}
+			# CRUISER
+			create_equipment_variant = { #Made-up
+				name = "Refitted Cruiser Class"
+				type = light_cruiser_1
+				upgrades = {
+					ship_reliability_upgrade = 0
+					ship_engine_upgrade = 0
+					ship_gun_upgrade = 0
+					ship_anti_air_upgrade = 0
+				}
+				obsolete = yes
+				design_team = mio:RAJ_garden_reach_shipbuilders_organization
+			}
+			#Line Production
+			add_equipment_production = {
+				equipment = {
+					type = light_cruiser_1
+					creator = "RAJ"
+					version_name = "Refitted Cruiser Class"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 1
+				industrial_manufacturer = mio:RAJ_garden_reach_shipbuilders_organization
+			}
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		# COASTAL DEFENSE SHIP
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			create_equipment_variant = { #Made-up
+				name = "Refitted Coastal Defense Ship"
+				type = ship_hull_cruiser_coastal_defense_ship
+				name_group = RAJ_BC_HISTORICAL
+				parent_version = 0
+				allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
+				modules = {
+					front_1_custom_slot = ship_anti_air_1
+					mid_1_custom_slot = ship_anti_air_1
+					#mid_2_custom_slot = ship_anti_air_1
+					rear_1_custom_slot = ship_light_medium_battery_1
+					fixed_ship_battery_slot = ship_light_medium_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = cruiser_ship_engine_1
+					fixed_ship_secondaries_slot = ship_secondaries_1
+					fixed_ship_armor_slot = ship_armor_cruiser_1
+				}
+				design_team = mio:RAJ_garden_reach_shipbuilders_organization
+			}
+			#Line Production
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_coastal_defense_ship
+					creator = "RAJ"
+					version_name = "Refitted Coastal Defense Ship"
+				}
+				requested_factories = 1
+				progress = 0.75
+				amount = 3
+				industrial_manufacturer = mio:RAJ_garden_reach_shipbuilders_organization
+			}
+		}
+	}
+}
+
+
+focus = {
+	id = RAJ_support_naval_invasions
+	icon = GFX_focus_generic_naval_invasion
+	prerequisite = { focus = RAJ_gov_mountbatten }
+	
+	x = 1
+	y = 1
+	relative_position_id = RAJ_gov_mountbatten
+	cost = 10
+
+	available = {
+		
+	}
+
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = RAJ_support_naval_invasions
+			bonus = 2
+			uses = 2
+			#category = marine_tech
+			category = tp_tech
+		}
+        custom_effect_tooltip = generic_skip_one_line_tt
+        custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
+        add_to_variable = { RAJ_modifier_army_sub_unit_marine_attack_factor = 0.15 tooltip = modifier_army_sub_unit_marine_attack_factor_tt }
+	}
+}
+
 	focus = {
 		id = RAJ_gov_wavell
 		icon = GFX_goal_generic_forceful_treaty
@@ -1658,7 +1899,56 @@ focus = {
 		}
 	}
     
-    
+    focus = {
+		id = RAJ_western_desert_force
+		icon = GFX_goal_tfv_saf_secure_interests_in_africa
+		prerequisite = { focus = RAJ_gov_wavell }
+		
+		x = -1
+		y = 1
+		relative_position_id = RAJ_gov_wavell
+		
+		cost = 5
+
+		available = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
+			add_to_variable = { RAJ_army_speed_factor = 0.10 tooltip = army_speed_factor_tt }
+			add_to_variable = { RAJ_planning_speed_factor = 0.20 tooltip = planning_speed_factor_tt }
+		}
+	}
+
+    focus = {
+		id = RAJ_filler_idk
+		icon = GFX_focus_GER_schutztruppe
+		prerequisite = { focus = RAJ_gov_wavell }
+		
+		x = 0
+		y = 2
+		relative_position_id = RAJ_gov_wavell
+		
+		cost = 5
+
+		available = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
 focus = {
 	id = RAJ_the_jewel_becomes_the_crown
 	icon = GFX_focus_RAJ_the_jewel_becomes_the_crown
@@ -1674,7 +1964,7 @@ focus = {
 		ENG = {
 			OR = {
 				has_capitulated = yes
-				surrender_progress > 0.05
+				surrender_progress > 0.1
 			}
 			is_ally_with = ROOT
 		}
@@ -1700,8 +1990,53 @@ focus = {
 		#		}
 		#	}
 		#}
-		set_major = yes
+		#set_major = yes
 
+	}
+}
+
+    focus = {
+	id = RAJ_holding_the_gates_of_india
+	icon = GFX_focus_SWE_hedgehog_defense
+	prerequisite = { focus = RAJ_assume_eastern_naval_responsibilities focus = RAJ_filler_idk }
+	
+	x = 0
+	y = 2
+	relative_position_id = RAJ_the_jewel_becomes_the_crown
+	cost = 10
+
+	available = {
+		
+	}
+
+	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+
+	completion_reward = {
+	
+	}
+}
+
+    
+focus = {
+	id = RAJ_the_dominion_of_india
+	icon = GFX_focus_RAJ_the_dominion_of_india
+	prerequisite = { focus = RAJ_holding_the_gates_of_india }
+
+	x = 0
+	y = 1
+	relative_position_id = RAJ_holding_the_gates_of_india
+	cost = 5
+
+	available = {
+		has_autonomy_state = autonomy_dominion
+	}
+
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_TFV_AUTONOMY }
+
+	completion_reward = {
+		custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
+        add_to_variable = { RAJ_core_attack_factor = 0.05 tooltip = army_core_attack_factor_tt }
+		add_to_variable = { RAJ_army_core_defence_factor = 0.05 tooltip = army_core_defence_factor_tt }
 	}
 }
 
@@ -1712,7 +2047,7 @@ focus = {
         icon = GFX_focus_RAJ_a_congress_resurgent
         prerequisite = { focus = RAJ_defense_of_india_act }
         prerequisite = { focus = RAJ_cottage_industries }
-        x = -4
+        x = -3
         y = 1
         relative_position_id = RAJ_defense_of_india_act
        
@@ -1897,9 +2232,7 @@ focus = {
         }
 
         available = {
-            has_dynamic_modifier = {
-                modifier = idea_RAJ_five_year_plan
-            }
+            
         }
 
         bypass = {
@@ -1919,7 +2252,7 @@ focus = {
 
     focus = {
         id = RAJ_assassination_attempt
-        icon = GFX_focus_RAJ_mahatma
+        icon = GFX_focus_RAJ_i_am_death
         prerequisite = { focus = RAJ_a_congress_resurgent }
         x = -1
         y = 1
@@ -2104,14 +2437,14 @@ focus = {
         relative_position_id = RAJ_indian_independence_act
         
 
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
         }
 
         available = {
-            
+            has_autonomy_state = autonomy_free
         }
         
         bypass = {
@@ -2129,50 +2462,13 @@ focus = {
         }
 
         completion_reward = {
-            add_popularity = {
-                ideology = democratic
-                popularity = 0.15
-            }
-
-            add_ideas = idea_RAJ_tryst_with_destiny
+            custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
+            add_to_variable = { RAJ_core_attack_factor = 0.2 tooltip = army_core_attack_factor_tt }
+			add_to_variable = { RAJ_army_core_defence_factor = 0.1 tooltip = army_core_defence_factor_tt }
         }
     }
 
     ############ CHYNA ##################
-
-    focus = {
-        id = RAJ_chinese_x_force
-        icon = GFX_focus_GER_ally_chiang_kai_shek
-        prerequisite = { focus = RAJ_defense_of_india_act }
-        
-        x = 0
-        y = 1
-        relative_position_id = RAJ_defense_of_india_act
-       
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-
-        }
-        
-        bypass = {
-            is_subject = no
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY}
-
-        completion_reward = {
-           
-        }
-    }
 
 	########### mill cels.... ##################
 	
@@ -2944,11 +3240,7 @@ focus = {
             RAJ_GOE_ishar_singh = {
                 custom_effect_tooltip = unlock_general_tt
             }
-            RAJ_GOE_parkash_singh = {
-                custom_effect_tooltip = unlock_general_tt
-            }
-
-
+            
         }
     }
 
@@ -3056,7 +3348,7 @@ focus = {
         id = RAJ_frontier_corps
         icon = GFX_focus_generic_military_academy
         prerequisite = { focus = RAJ_indianize_the_army }
-        x = -6
+        x = -5
         y = 1
         relative_position_id = RAJ_indianize_the_army
         
@@ -3098,7 +3390,7 @@ focus = {
         relative_position_id = RAJ_frontier_corps
         
 
-        cost = 5
+        cost = 10
 
         ai_will_do = {
             factor = 1
@@ -3109,7 +3401,7 @@ focus = {
         }
         
         bypass = {
-            NOT = { has_dynamic_modifier = { modifier = idea_RAJ_agrarian_society } }
+           
         }
 
         cancel_if_invalid = yes
@@ -3121,58 +3413,13 @@ focus = {
         completion_reward = {
             
             army_experience = 50
-           
+            custom_effect_tooltip = generic_skip_one_line_tt
+            custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
+            add_to_variable = { RAJ_peoples_army_militia_attack = 0.05 tooltip = modifier_army_sub_unit_militia_attack_factor_tt }
+            add_to_variable = { RAJ_peoples_army_militia_defence = 0.05 tooltip = modifier_army_sub_unit_militia_defence_factor_tt }
         }
     }
     
-
-    focus = {
-        id = RAJ_help_from_the_nagas
-        icon = GFX_goal_generic_military_deal
-        prerequisite = { focus = RAJ_indian_territorial_force  }
-        x = 2
-        y = 1
-        relative_position_id = RAJ_indian_territorial_force
-        
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-
-        }
-        
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_RESEARCH}
-
-        completion_reward = {
-            add_tech_bonus = {
-                name = RAJ_help_from_the_nagas
-                ahead_reduction = 1
-                uses = 1
-                category = recon_tech # optional 
-            }
-            hidden_effect = {
-                set_technology = {
-                    tech_recon_focus_bonus = 1
-                    popup = no
-                }
-            }
-            custom_effect_tooltip = tech_recon_focus_bonus_tt
-
-        }
-    }
-    
-
     focus = {
         id = RAJ_re_establish_the_khyber_rifles
         icon = GFX_focus_ETH_freedom_at_gunpoint
@@ -3202,7 +3449,8 @@ focus = {
         search_filters = {FOCUS_FILTER_MILITARY_CHARACTER}
 
         completion_reward = {
-           
+            custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
+            add_to_variable = { RAJ_special_forces_defence_factor = 0.05 tooltip = special_forces_defence_factor_tt }
 
         }
     }
@@ -3797,19 +4045,7 @@ focus = {
 		}
 		
 		completion_reward = { 
-			425 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					
-						add_building_construction = {
-							type = bunker
-							level = 10
-							province = 8011
-							instant_build = yes
-						}
-					
-				}
-			}
+			
             custom_effect_tooltip = generic_skip_one_line_tt
             
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
@@ -4320,6 +4556,30 @@ focus = {
 				}
 		}
 	}
+
+    focus = {
+		id = RAJ_one_last_ride
+		icon = GFX_focus_BEL_the_french_horse_and_the_red_rider
+		prerequisite = { focus = RAJ_khairpur_mounted_rifle_2 }
+        prerequisite = { focus = RAJ_Mysore_lancers }
+		relative_position_id = RAJ_indian_states_force
+		x = 0
+		y = 4
+
+		cost = 1
+
+		available = {
+            surrender_progress > 0.5
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
 	#################################
 	
     focus = {
@@ -4638,7 +4898,7 @@ focus = {
 
     focus = {
         id = RAJ_mass_moobers
-        icon = GFX_focus_SOV_mobilization_plan
+        icon = GFX_focus_SOV_builder_of_the_red_army
         prerequisite = { focus = RAJ_model_after_soviet }
         
         x = -1
@@ -4678,7 +4938,7 @@ focus = {
 	
     focus = {
         id = RAJ_hero_city
-        icon = GFX_focus_chi_british_cooperation
+        icon = GFX_focus_SOV_approach_semyonov
         prerequisite = { focus = RAJ_model_after_soviet }
         
         x = 1
@@ -4702,7 +4962,9 @@ focus = {
         search_filters = {FOCUS_FILTER_ARMY_XP}
 
         completion_reward = {
-            
+            custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
+            add_to_variable = { RAJ_cav_attack = 0.1 tooltip = cavalry_attack_factor_tt }
+            add_to_variable = { RAJ_modifier_army_sub_unit_cavalry_speed_factor = 0.1 tooltip = modifier_army_sub_unit_cavalry_speed_factor_tt }
         }
     }
 
@@ -4777,7 +5039,7 @@ focus = {
     ### training
     focus = {
         id = RAJ_prussian_professional
-        icon = GFX_focus_chi_british_cooperation
+        icon = GFX_focus_GER_prussian_legacy
         prerequisite = { focus = RAJ_model_after_germany }
         
         x = -1
@@ -4841,7 +5103,7 @@ focus = {
 	
     focus = {
         id = RAJ_stormtroppers
-        icon = GFX_focus_chi_british_cooperation
+        icon = GFX_focus_GER_wunderwaffe
         prerequisite = { focus = RAJ_foward focus = RAJ_prussian_professional}
         
         x = 0
@@ -4865,7 +5127,18 @@ focus = {
         search_filters = {FOCUS_FILTER_ARMY_XP}
 
         completion_reward = {
-            
+            add_breakthrough_points = {
+                specialization = specialization_land
+                value = 2
+            }
+            add_breakthrough_points = {
+                specialization = specialization_air
+                value = 2
+            }
+            add_breakthrough_points = {
+                specialization = specialization_naval
+                value = 1
+            }
         }
     }
 

@@ -229,24 +229,6 @@ characters={
 				id=-1
 			}
 			
-			advisor={
-				slot = political_advisor
-				idea_token = RAJ_mahatma_mohandas_gandhi
-				allowed = {
-					original_tag = RAJ
-				}
-				visible = {
-					
-					#has_completed_focus = RAJ_mahatma
-				}
-				available = {
-					#has_completed_focus = RAJ_mahatma
-				}
-				traits = {
-					
-				}
-			}	
-		
 	}
 
 RAJ_GOE_g_d_birla= { 
@@ -1022,10 +1004,8 @@ RAJ_GOE_j_r_d_tata= {
 		name="RAJ_louis_mountbatten"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_europe_2"
-			}
-			civilian={
-				large="gfx/leaders/RAJ/r56_portrait_RAJ_Luis_Mountbatten.dds"
+				large = GFX_portrait_RAJ_louis_mountbatten
+				small = GFX_portrait_RAJ_louis_mountbatten_small #small="GFX_idea_generic_navy_europe_2"
 			}
 		}
 	}
