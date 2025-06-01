@@ -200,8 +200,9 @@ ideas = {
 
 			modifier = {
 				experience_gain_army = 0.2
-				war_support_weekly = 0.002	
+				#war_support_weekly = 0.002	
 				#army_org_factor = 0.05
+				
 			}
 		}
 

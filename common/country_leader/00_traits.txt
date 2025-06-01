@@ -7853,4 +7853,10 @@ tank_refurbishment_plant = { #NSB
 		research_speed_factor = 0.1
 	}
 
+	president_of_the_hindu_mahasabha = {
+		sprite = 13
+		
+		war_support_factor = 0.15
+		war_support_weekly = 0.002	
+	}
 }

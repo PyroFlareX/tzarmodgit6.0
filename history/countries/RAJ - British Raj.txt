@@ -289,14 +289,14 @@ recruit_character = RAJ_subroto_mukherjee
 recruit_character = RAJ_bhaskar_soman
 recruit_character = RAJ_rajendra_prasad
 recruit_character = RAJ_ravindra_darshan_singh
-recruit_character = RAJ_bhimrao_ramji_ambedkar
+#recruit_character = RAJ_bhimrao_ramji_ambedkar
 recruit_character = RAJ_ram_dass_katari
 recruit_character = RAJ_louis_mountbatten
 recruit_character = RAJ_kodandera_cariappa
 recruit_character = RAJ_agha_khan_iii
 recruit_character = RAJ_ram_singh_thakur
 recruit_character = RAJ_sir_mohammed_iqbal
-#recruit_character = RAJ_john_mathai
+recruit_character = RAJ_john_mathai
 
 recruit_character = RAJ_kodandera_madappa_cariappa
 recruit_character = RAJ_kodendera_subayya_thimayya
@@ -378,6 +378,7 @@ set_variable = { RAJ_no_supply_grace = 0 }
 set_variable = { RAJ_modifier_army_sub_unit_camelry_attack_factor = 0 }
 set_variable = { RAJ_breakthrough_factor = 0 } 
 set_variable = { RAJ_modifier_army_sub_unit_marine_attack_factor = 0 }
+
 
 add_dynamic_modifier = { modifier = RAJ_army_dynamic_modifier }
 

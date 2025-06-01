@@ -106,7 +106,7 @@ RAJ_deep_battle:0 "Deep Battle Theory"
 RAJ_deep_battle_desc:0 "Tukhachevsky was cookin, we should adpot his theories of Deep operation."
 RAJ_hero_city:0 "Cossack Legacy"
 RAJ_hero_city_desc:0 " "
-RAJ_prussian_professional:0 "Prussian Leagacy"
+RAJ_prussian_professional:0 "Prussian Legacy"
 RAJ_prussian_professional_desc:0 " "
 RAJ_stormtroppers:0 "Wunder-Waffle"
 RAJ_stormtroppers_desc:0 " "
@@ -120,3 +120,5 @@ coastal_bunker_effectiveness_factor_tt:0 "Coastal Fort Effectiviness: §G+15.00%
 RAJ_stability_weekly_tt:0 "Weekly Stablitiy Gain: §G+0.10%§!"
 
 expand_tata_steel:0 "Expand Tata Steel Forge"
+
+president_of_the_hindu_mahasabha:0 "President of the Hindu Mahasabha"

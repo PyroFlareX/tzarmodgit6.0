@@ -78,13 +78,11 @@ division_template = {
 					camelry = { x = 1 y = 1 }
                     camelry = { x = 1 y = 2 }
                     camelry = { x = 1 y = 3 }
-					camelry = { x = 1 y = 4 }
 					camelry = { x = 2 y = 0 }
 					camelry = { x = 2 y = 1 }
                     camelry = { x = 2 y = 2 }
                     camelry = { x = 2 y = 3 }
-					camelry = { x = 2 y = 4 }
-					camelry = { x = 2 y = 5}
+
 					artillery_brigade = { x = 3 y = 0 }
 					artillery_brigade = { x = 3 y = 1 }
                     artillery_brigade = { x = 3 y = 2 }

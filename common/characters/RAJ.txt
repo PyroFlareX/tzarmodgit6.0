@@ -438,17 +438,39 @@ RAJ_GOE_j_r_d_tata= {
 		}
 	}
 	RAJ_v._d._savarkar={
-		name="V. D. Savarkar"
+		name = "V.D Savarkar"
 		portraits={
 			civilian={
 				large="GFX_RAJ_veer_savarkar"
 			}
+			army={
+				small="GFX_portrait_RAJ_sarat_bose_small"
+			}
+			
 		}
 		country_leader={
 			desc="POLITICS_VD_SAVARKAR_DESC"
 			ideology=falangism
 			expire="1965.1.1.1"
 			id=-1
+		}
+		
+		advisor={
+				slot = political_advisor
+				idea_token = RAJ_v._d._savarkar
+				allowed = {
+				original_tag = RAJ
+				
+				}
+				visible = {
+					has_completed_focus = RAJ_all_india_hindu
+				}
+				available = {
+					has_completed_focus = RAJ_all_india_hindu
+				}
+				traits = {
+					president_of_the_hindu_mahasabha
+				}
 		}
 	}
 	RAJ_p._krishna_pillai={

@@ -933,10 +933,10 @@ focus = {
                 # technology  = technology_id # optional
             #}
             437 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -975,9 +975,11 @@ focus = {
 
         completion_reward = {
             
-
-
+            custom_effect_tooltip = available_political_advisor
+            show_ideas_tooltip = RAJ_v._d._savarkar
             custom_effect_tooltip = generic_skip_one_line_tt
+
+            
             add_popularity = {
                 ideology = fascism
                 popularity = 0.05
@@ -3495,53 +3497,11 @@ focus = {
         }
     }
     
-	
-    focus = {
-        id = RAJ_mountain_tanks
-        icon = GFX_focus_generic_army_tanks2
-        prerequisite = { focus = RAJ_mountain_guns }
-        x = 0
-        y = 1
-        relative_position_id = RAJ_mountain_guns
-        
-        cost = 10
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-
-        }
-        
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_RESEARCH}
-
-        completion_reward = {
-
-            custom_effect_tooltip = mountain_tanks_tt
-           # hidden_effect = {
-                set_technology = {
-                    mountain_tanks = 1
-                    popup = yes
-                }
-           # }
-        }
-    }
-    
-	
     focus = {
         id = RAJ_gurkhas
         icon = GFX_focus_RAJ_indian_gurkhas
         prerequisite = { focus = RAJ_frontier_corps  }
-        x = -3
+        x = -2
         y = 1
         relative_position_id = RAJ_frontier_corps
         
