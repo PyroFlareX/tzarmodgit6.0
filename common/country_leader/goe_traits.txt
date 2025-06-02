@@ -480,9 +480,9 @@ leader_traits = {
 	}
 
 	RAJ_GOE_wealthy_philantrophist = {
-		special_project_speed_factor = 0.1
-		research_speed_factor = 0.08
-		military_industrial_organization_funds_gain = 0.1
+		special_project_speed_factor = 0.15
+		research_speed_factor = 0.1
+		military_industrial_organization_funds_gain = 0.15
 		#consumer_goods_factor = -0.1
 		sprite = 13
 	}
@@ -612,8 +612,8 @@ leader_traits = {
 		sprite = 10
 		#consumer_goods_factor = 0.08
 		#production_factory_efficiency_gain_factor = 0.06
-		production_factory_max_efficiency_factor = 0.08
-		communism_drift = 0.03
+		production_factory_max_efficiency_factor = 0.05
+		#communism_drift = 0.05
 	}
 
 	RAJ_social_reformer = {

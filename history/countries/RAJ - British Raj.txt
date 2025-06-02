@@ -329,6 +329,7 @@ recruit_character = RAJ_mahatma_mohandas_gandhi
 recruit_character = RAJ_GOE_montagu_stopford
 #recruit_character = RAJ_GOE_francis_tuker
 recruit_character = RAJ_GOE_parkash_singh
+#recruit_character = RAJ_puran_chand_joshi
 
 
 

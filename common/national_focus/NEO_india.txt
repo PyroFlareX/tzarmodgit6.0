@@ -107,6 +107,7 @@ focus = {
         custom_effect_tooltip = available_political_advisor
         show_ideas_tooltip = RAJ_GOE_prescott_bush
         custom_effect_tooltip = generic_skip_one_line_tt
+        add_political_power = 50
 	}
 }
 
@@ -830,8 +831,12 @@ focus = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
+            
             custom_effect_tooltip = idea_RAJ_independence_movement_tt
             add_to_variable = { RAJ_independence_movement_civ = 0.15 tooltip = production_speed_industrial_complex_factor_tt }
+            custom_effect_tooltip = generic_skip_one_line_tt
+            438 = { set_state_category = town }
+            435 = { set_state_category = town }
             
         }
     }
@@ -1064,7 +1069,7 @@ focus = {
         prerequisite = { focus = RAJ_his_majestys_loyal_government focus = RAJ_purna_swaraj }
         x = 3
         y = 2
-       mutually_exclusive = { focus = RAJ_all_princes_of_india }
+       #mutually_exclusive = { focus = RAJ_all_princes_of_india }
 	   relative_position_id =  RAJ_provincial_elections
 		
         cost = 1
@@ -1101,7 +1106,7 @@ focus = {
         prerequisite = { focus = RAJ_all_india_communist_party }
         x = 0
         y = 1
-        #mutually_exclusive = {  }
+        mutually_exclusive = {  focus =  RAJ_court_the_princes }
         relative_position_id = RAJ_all_india_communist_party
 
         cost = 5
@@ -1355,7 +1360,7 @@ focus = {
         id = RAJ_all_princes_of_india
         icon = GFX_focus_RAJ_the_legacy_of_babur
         prerequisite = { focus = RAJ_his_majestys_loyal_government focus = RAJ_purna_swaraj }
-        mutually_exclusive = { focus = RAJ_all_india_communist_party }
+        #mutually_exclusive = { focus = RAJ_all_india_communist_party }
 		x = 5
         y = 2
         relative_position_id =  RAJ_provincial_elections
@@ -1400,7 +1405,7 @@ focus = {
 		relative_position_id = RAJ_all_princes_of_india
 		cost = 5
 
-		mutually_exclusive = { focus = RAJ_favor_the_muslim_league }
+		mutually_exclusive = { focus = RAJ_comrades_of_the_city }
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 
@@ -1496,6 +1501,70 @@ focus = {
 		}
 	}
   
+    focus = {
+        id = RAJ_punjab_autonomy
+        icon = GFX_focus_RAJ_punjab_autonomy
+        prerequisite = { focus = RAJ_indian_institute_of_science }
+        x = 0
+        y = 1
+        relative_position_id = RAJ_indian_institute_of_science
+        
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+
+        }
+        
+        bypass = {
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        search_filters = {FOCUS_FILTER_INDUSTRY}
+
+        completion_reward = {
+
+            if = {
+                limit = {
+                    440 = {
+                        is_controlled_by_ROOT = yes
+                    }
+                }
+
+                440 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_dynamic_modifier = {
+                        modifier = idea_RAJ_sikh_approval
+                    }
+                }
+            }
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+
+            if = {
+                limit = {
+                    433 = {
+                        is_controlled_by_ROOT = yes
+                    }
+                }
+
+                433 = {
+                    add_extra_state_shared_building_slots = 2
+                    add_dynamic_modifier = {
+                        modifier = idea_RAJ_sikh_approval
+                    }
+                }
+            }
+            
+        }
+    }
 
     ########### BOTTOM TEXT CEL ##################
 
@@ -1947,7 +2016,9 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
+            add_to_variable = { RAJ_infantry_attack = 0.05 tooltip = army_infantry_attack_factor_tt }
+            add_to_variable = { RAJ_infantry_defence = 0.05 tooltip = army_infantry_defence_factor_tt }
 		}
 	}
 
@@ -2008,13 +2079,84 @@ focus = {
 	cost = 10
 
 	available = {
-		
+		430 = { is_fully_controlled_by = ROOT }
+        432 = { is_fully_controlled_by = ROOT }
+        434 = { is_fully_controlled_by = ROOT }
 	}
+
+    bypass = {
+
+    }
 
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 
 	completion_reward = {
-	
+        430 = {
+			add_building_construction = {
+				type = bunker
+				level = 10
+				province = 9991
+				instant_build = yes
+			}						
+		}
+        432 = {
+			add_building_construction = {
+				type = bunker
+				level = 10
+				province = 997
+				instant_build = yes
+			}
+            add_building_construction = {
+				type = bunker
+				level = 10
+				province = 10090
+				instant_build = yes
+			}
+            add_building_construction = {
+				type = bunker
+				level = 10
+				province = 2013
+				instant_build = yes
+			}
+            add_building_construction = {
+				type = bunker
+				level = 10
+				province = 1119
+				instant_build = yes
+			}		
+            add_building_construction = {
+				type = bunker
+				level = 10
+				province = 3907
+				instant_build = yes
+			}	
+            add_building_construction = {
+				type = bunker
+				level = 10
+				province = 1553
+				instant_build = yes
+			}	
+            add_building_construction = {
+				type = bunker
+				level = 10
+				province = 1525
+				instant_build = yes
+			}		
+		}
+        434 = {
+            add_building_construction = {
+				type = bunker
+				level = 10
+				province = 12322
+				instant_build = yes
+			}
+            add_building_construction = {
+				type = bunker
+				level = 10
+				province = 1996
+				instant_build = yes
+			}
+        }
 	}
 }
 
@@ -2074,7 +2216,7 @@ focus = {
         search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY}
 
         completion_reward = {
-           remove_ideas = RAJ_quit_india_peaceful
+           
            custom_effect_tooltip = generic_skip_one_line_tt
            add_popularity = {
                 ideology = democratic
@@ -2135,6 +2277,11 @@ focus = {
                 ideology = democratic
                 popularity = 0.15
             }
+            custom_effect_tooltip = generic_skip_one_line_tt 
+            swap_ideas = {
+                remove_idea = RAJ_quit_india_peaceful
+                add_idea = RAJ_quit_india_greatsoul
+            }
         }
     }
 
@@ -2157,7 +2304,7 @@ focus = {
         }
         
         bypass = {
-            is_subject = no
+            
         }
 
         cancel_if_invalid = yes
@@ -2167,10 +2314,12 @@ focus = {
         search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY}
 
         completion_reward = {
+            
             add_autonomy_score = { 
                 value = 50
                 localization = RAJ_haripura_session_of_the_indian_national_congress
             }
+
         }
     }
 
@@ -2190,7 +2339,7 @@ focus = {
         }
 
         available = {
-
+            has_autonomy_state = autonomy_dominion
         }
         
         bypass = {
@@ -2208,47 +2357,16 @@ focus = {
         }
 
         completion_reward = {
+            custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
+            add_to_variable = { RAJ_core_attack_factor = 0.05 tooltip = army_core_attack_factor_tt }
+			add_to_variable = { RAJ_army_core_defence_factor = 0.05 tooltip = army_core_defence_factor_tt }
+            custom_effect_tooltip = generic_skip_one_line_tt
             add_stability = 0.1
+            custom_effect_tooltip = generic_skip_one_line_tt
             add_popularity = {
                 ideology = democratic
                 popularity = 0.15
             }
-        }
-    }
-
-    focus = {
-        id = RAJ_indian_socialism
-        
-        icon = GFX_focus_RAJ_seek_help_from_soviet 
-        prerequisite = { focus = RAJ_mahatma }
-        
-        x = 1
-        y = 1
-        relative_position_id = RAJ_mahatma
-
-
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-
-        available = {
-            
-        }
-
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
-
-        completion_reward = {
-            
         }
     }
 
@@ -2285,7 +2403,7 @@ focus = {
         search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_TFV_AUTONOMY}
 
         completion_reward = {
-
+            remove_ideas = RAJ_quit_india_peaceful
             #set_country_leader_portrait = {
              #   portrait = GFX_portrait_RAJ_mohandas_gandi_nuclear
             #}
@@ -2306,7 +2424,7 @@ focus = {
         y = 1
         relative_position_id = RAJ_assassination_attempt
         
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -2333,7 +2451,7 @@ focus = {
 
         completion_reward = {
             add_tech_bonus = {
-                bonus = 1
+                bonus = 3
                 uses = 1
                 technology  = atomic_research # optional
             }
@@ -2380,7 +2498,8 @@ focus = {
 
 
         completion_reward = {
-           
+            custom_effect_tooltip = idea_RAJ_independence_movement_tt
+            add_to_variable = { RAJ_independence_movement_industrial_capacity_factory = 0.15 tooltip = industrial_capacity_factory_tt }
         }
     }
 
@@ -2392,7 +2511,7 @@ focus = {
         y = 2
         relative_position_id = RAJ_haripura_session_of_the_indian_national_congress
         
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -2439,14 +2558,15 @@ focus = {
         relative_position_id = RAJ_indian_independence_act
         
 
-        cost = 5
+        cost = 10
 
         ai_will_do = {
             factor = 1
         }
 
         available = {
-            has_autonomy_state = autonomy_free
+            #has_autonomy_state = autonomy_free
+            date>1943.1.1
         }
         
         bypass = {
@@ -2465,8 +2585,8 @@ focus = {
 
         completion_reward = {
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_core_attack_factor = 0.2 tooltip = army_core_attack_factor_tt }
-			add_to_variable = { RAJ_army_core_defence_factor = 0.1 tooltip = army_core_defence_factor_tt }
+            add_to_variable = { RAJ_core_attack_factor = 0.3 tooltip = army_core_attack_factor_tt }
+			add_to_variable = { RAJ_army_core_defence_factor = 0.3 tooltip = army_core_defence_factor_tt }
         }
     }
 
@@ -3392,7 +3512,7 @@ focus = {
         relative_position_id = RAJ_frontier_corps
         
 
-        cost = 10
+        cost = 5
 
         ai_will_do = {
             factor = 1
@@ -4734,6 +4854,15 @@ focus = {
         completion_reward = {
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
             add_to_variable = { RAJ_air_superiority_bonus_in_combat = 0.1 tooltip = air_superiority_bonus_in_combat_tt }
+            custom_effect_tooltip = generic_skip_one_line_tt 
+            add_tech_bonus = {
+				name = bomber_command_focus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 2
+				technology = improved_large_airframe
+				technology = improved_medium_airframe
+			}
         }
     }
 
@@ -4763,17 +4892,18 @@ focus = {
         search_filters = {FOCUS_FILTER_ARMY_XP}
 
         completion_reward = {
-             add_tech_bonus = {
+            
+            custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
+            add_to_variable = { RAJ_supply_consumption_factor = -0.06 tooltip = supply_consumption_factor_tt }
+            custom_effect_tooltip = generic_skip_one_line_tt 
+            add_tech_bonus = {
                 bonus = 1
                 uses = 1
                 category = logistics_tech # optional 
                 ahead_reduction = 2
                 # technology  = technology_id # optional
             }
-            custom_effect_tooltip = generic_skip_one_line_tt 
-            custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_out_of_supply = -0.2 tooltip = out_of_supply_factor_tt }
-            add_to_variable = { RAJ_supply_consumption_factor = -0.1 tooltip = supply_consumption_factor_tt }
+            
 
             
         }
@@ -4805,7 +4935,7 @@ focus = {
         search_filters = {FOCUS_FILTER_ARMY_XP}
 
         completion_reward = {
-            
+            add_ideas = idea_RAJ_mass_production
         }
     }
 	#####################################
@@ -5023,7 +5153,8 @@ focus = {
         search_filters = {FOCUS_FILTER_ARMY_XP}
 
         completion_reward = {
-            
+            custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
+            add_to_variable = { RAJ_army_org_factor = 0.04 tooltip = army_org_factor_tt }
         }
     }
 
