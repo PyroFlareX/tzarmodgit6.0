@@ -155,6 +155,7 @@ RAJ_a_loyal_government = {
 	local_resources_factor = RAJ_loyal_government_local_resources_factor
 	production_speed_rail_way_factor = RAJ_loyal_government_production_speed_rail_way_factor 
 	production_speed_supply_node_factor = RAJ_loyal_government_production_speed_supply_node_factor
+	autonomy_gain = RAJ_loyal_government_autonomy_gain
 	
 }
 

@@ -409,6 +409,7 @@ add_ideas = {
 	set_variable = { RAJ_loyal_government_local_resources_factor = 0 }
 	set_variable = { RAJ_loyal_government_production_speed_rail_way_factor = 0 }
 	set_variable = { RAJ_loyal_government_production_speed_supply_node_factor = 0 }
+	set_variable = { RAJ_loyal_government_autonomy_gain = 0 }
 	
 	
 	set_variable = { RAJ_autonomy_gain_independence_movement = 0.3 }

@@ -1695,7 +1695,7 @@ generic_refit_civilian_ships_category = {
 				has_tech = early_destroyer
 			}
 		}
-		days_remove = 50
+		days_remove = 15
 
 		complete_effect = {
 			add_equipment_to_stockpile = { 
@@ -1726,9 +1726,9 @@ generic_refit_civilian_ships_category = {
 							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 							fixed_ship_radar_slot = empty
 							fixed_ship_engine_slot = light_ship_engine_1
-							fixed_ship_torpedo_slot = ship_torpedo_1
-							mid_1_custom_slot = empty
-							rear_1_custom_slot = empty
+							fixed_ship_torpedo_slot = empty
+							mid_1_custom_slot = ship_torpedo_1
+							rear_1_custom_slot = ship_torpedo_1
 						}
 						obsolete = yes
 					}
@@ -1790,7 +1790,7 @@ generic_refit_civilian_ships_category = {
 				has_tech = early_light_cruiser
 			}
 		}
-		days_remove = 100
+		days_remove = 30
 
 		complete_effect = {
 			add_equipment_to_stockpile = { 
@@ -1821,10 +1821,10 @@ generic_refit_civilian_ships_category = {
 							fixed_ship_radar_slot = empty
 							fixed_ship_engine_slot = cruiser_ship_engine_1
 							fixed_ship_armor_slot = ship_armor_cruiser_1
-							fixed_ship_secondaries_slot = dp_ship_secondaries_1
-							mid_1_custom_slot = empty
-							mid_2_custom_slot = empty
-							rear_1_custom_slot = empty
+							fixed_ship_secondaries_slot = ship_secondaries_1
+							mid_1_custom_slot = ship_light_medium_battery_1
+							mid_2_custom_slot = ship_light_medium_battery_1
+							rear_1_custom_slot = ship_light_medium_battery_1
 						}
 						obsolete = yes
 					}

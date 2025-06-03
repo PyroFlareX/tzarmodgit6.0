@@ -66,6 +66,22 @@ ideas = {
 	}
 
 	country = {
+		
+		idea_RAJ_one_last_ride = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = HABSBURG_cavalry
+			
+			modifier = {
+				cavalry_attack_factor = 0.95
+			}
+		}
+		
 		idea_RAJ_mass_production = {
 			picture = generic_license_production
 			equipment_bonus = {

@@ -142,7 +142,7 @@ characters={
 			}
 			available = { }
 			traits = {
-				special_operations_specialist 
+				army_commando_1
 			}
 
 			visible = {

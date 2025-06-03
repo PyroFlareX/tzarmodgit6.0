@@ -5,6 +5,20 @@
 add_namespace = news
 
 news_event = {
+	id = news.1008
+	title = news.1008.t
+	desc = news.1008.d
+	picture = GFX_news_event_quit_india_movement
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "news.1008.a"
+	}
+}
+
+news_event = {
 	id = news.1007
 	title = news.1007.t
 	desc = news.1007.d

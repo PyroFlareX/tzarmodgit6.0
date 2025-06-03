@@ -145,7 +145,9 @@ focus = {
 	search_filters = { FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 
 	completion_reward = {
-		
+		custom_effect_tooltip = RAJ_a_loyal_government_tt
+        add_to_variable = { RAJ_loyal_government_autonomy_gain = 0.02 tooltip = autonomy_gain_tt }
+        custom_effect_tooltip = generic_skip_one_line_tt
 		random_core_state = {
 			limit = {
 				is_fully_controlled_by = ROOT
@@ -172,14 +174,14 @@ focus = {
 			#event_option_tooltip = GOE_RAJ_loyalist.01.a
 			
 				ENG = {
-					#country_event = { id = GOE_RAJ_loyalist.01 hours = 8 random_hours = 4 }
+					country_event = { id = GOE_RAJ_loyalist.01  hours = 8 }
 					add_ideas = RAJ_exports_for_the_empire
 					every_subject_country = {
 						limit = {
 							NOT = { tag = ROOT }
 						}
 						add_ideas = RAJ_exports_for_the_empire
-						#country_event = { id = GOE_RAJ_loyalist.01 hours = 8 random_hours = 4 }
+						country_event = { id = GOE_RAJ_loyalist.01 hours = 8 }
 					}
 				}
 			
@@ -282,6 +284,7 @@ focus = {
                     level = 2
                     instant_build = yes
                 }
+                #set_compliance = 100
             }
         }
     }
@@ -354,6 +357,7 @@ focus = {
                     level = 1
                     instant_build = yes
                 }
+                add_core_of = ROOT
             }
         }
     }
@@ -525,7 +529,19 @@ focus = {
 				        instant_build = yes
 			        }
                 }
-			}
+			
+                ENG = {
+					country_event = { id = GOE_RAJ_loyalist.02  hours = 8 }
+					add_ideas = RAJ_exports_for_the_empire
+					every_subject_country = {
+						limit = {
+							NOT = { tag = ROOT }
+						}
+						
+						country_event = { id = GOE_RAJ_loyalist.02 hours = 8 }
+					}
+				}
+            }
 		}
 	}
 }
@@ -1632,7 +1648,9 @@ focus = {
 			custom_effect_tooltip = "This move will anger many people."
 			
 			remove_ideas = RAJ_quit_india_active
-			
+			hidden_effect = {
+                news_event = { hours = 6 id = news.1008 }
+            }
 		}
 	}
 
@@ -1734,9 +1752,9 @@ focus = {
 					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 					fixed_ship_radar_slot = empty
 					fixed_ship_engine_slot = light_ship_engine_1
-					fixed_ship_torpedo_slot = ship_torpedo_1
-					mid_1_custom_slot = empty
-					rear_1_custom_slot = empty
+					fixed_ship_torpedo_slot = empty
+					mid_1_custom_slot = ship_torpedo_1
+					rear_1_custom_slot = ship_torpedo_1
 				}
 				obsolete = yes
 				design_team = mio:RAJ_garden_reach_shipbuilders_organization
@@ -1768,10 +1786,10 @@ focus = {
 					fixed_ship_radar_slot = empty
 					fixed_ship_engine_slot = cruiser_ship_engine_1
 					fixed_ship_armor_slot = ship_armor_cruiser_1
-					fixed_ship_secondaries_slot = dp_ship_secondaries_1
-					mid_1_custom_slot = empty
-					mid_2_custom_slot = empty
-					rear_1_custom_slot = empty
+					fixed_ship_secondaries_slot = ship_secondaries_1
+					mid_1_custom_slot = ship_light_medium_battery_1
+					mid_2_custom_slot = ship_light_medium_battery_1
+					rear_1_custom_slot = ship_light_medium_battery_1
 				}
 				obsolete = yes
 				design_team = mio:RAJ_garden_reach_shipbuilders_organization
@@ -2358,8 +2376,8 @@ focus = {
 
         completion_reward = {
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_core_attack_factor = 0.05 tooltip = army_core_attack_factor_tt }
-			add_to_variable = { RAJ_army_core_defence_factor = 0.05 tooltip = army_core_defence_factor_tt }
+            add_to_variable = { RAJ_core_attack_factor = 0.1 tooltip = army_core_attack_factor_tt }
+			add_to_variable = { RAJ_army_core_defence_factor = 0.1 tooltip = army_core_defence_factor_tt }
             custom_effect_tooltip = generic_skip_one_line_tt
             add_stability = 0.1
             custom_effect_tooltip = generic_skip_one_line_tt
@@ -2372,7 +2390,7 @@ focus = {
 
     focus = {
         id = RAJ_assassination_attempt
-        icon = GFX_focus_RAJ_i_am_death
+        icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
         prerequisite = { focus = RAJ_a_congress_resurgent }
         x = -1
         y = 1
@@ -4657,7 +4675,19 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_timed_idea = {
+                idea = idea_RAJ_one_last_ride
+                days = 30
+            }
+            hidden_effect = {
+                every_country = {
+						limit = {
+							NOT = { tag = ROOT }
+						}
+						
+						country_event = { id = srevents.808 hours = 8 }
+				}
+            }
 		}
 	}
 	#################################

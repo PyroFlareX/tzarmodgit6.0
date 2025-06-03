@@ -605,3 +605,26 @@ country_event = {
 		country_event = { id = srevents.806 }
 	}
  }
+
+country_event = { 
+	id = srevents.808
+	title = srevents.808.t
+	desc = srevents.808.d 
+	picture = GFX_report_event_yugoslavian_cavalry 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.808.a 
+		
+		effect_tooltip = {
+			RAJ = { 
+				add_timed_idea = {
+					idea = idea_RAJ_one_last_ride days = 30
+				}
+			}
+		}
+
+	}
+	
+}
