@@ -1070,7 +1070,7 @@ RAJ_GOE_j_r_d_tata= {
 				original_tag = RAJ
 			}
 			traits = {
-				ideological_crusader 
+				well_mannered_iman
 			}
 		}
 	}
@@ -1314,10 +1314,10 @@ RAJ_GOE_j_r_d_tata= {
 		corps_commander={
 		 	traits = { infantry_leader infantry_expert organizer skilled_staffer career_officer  trait_reckless harsh_leader hill_fighter trait_engineer}
 		 	skill = 5
-		 	attack_skill = 5
+		 	attack_skill = 4
 		 	defense_skill = 4
 		 	planning_skill = 4
-		 	logistics_skill = 3
+		 	logistics_skill = 4
 		 	legacy_id=-1
 		 }
 	}

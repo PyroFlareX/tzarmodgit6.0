@@ -109,6 +109,24 @@ ideas = {
 					#reliability = -0.25
 					instant = yes
 				}
+				
+				medium_plane_airframe = {
+					build_cost_ic = -0.1
+					reliability = -0.25
+					instant = yes
+				}
+
+				large_plane_airframe = {
+					build_cost_ic = -0.1
+					reliability = -0.25
+					instant = yes
+				}
+				
+				armor = {
+					build_cost_ic = -0.03
+					reliability = -0.1
+					instant = yes
+				}
 			}
 		}
 		idea_RAJ_tryst_with_destiny = {
@@ -1776,7 +1794,7 @@ ideas = {
 
 	industrial_concern = {
 		company_tata = {
-			picture = GFX_r56_idea_RAJ_Tata_Steel
+			picture = raj_metal_and_steel_factory_ishapore
 			allowed = {
 				original_tag = RAJ
 			}
@@ -1797,7 +1815,7 @@ ideas = {
 		}
 	
 		company_burmah_oil = {
-			picture = GFX_idea_company_burmah_oil
+			picture = PER_anglo_iranian_oil_ns
 			allowed = {
 				original_tag = RAJ
 			}
@@ -1820,28 +1838,7 @@ ideas = {
 			}
 		}
 	
-		idea_RAJ_the_reserve_bank_of_india = { 
-			picture = raj_reserve_bank_of_india
-			allowed = {
-				
-				original_tag = RAJ
-			}
-			available = {
-				#has_completed_focus = RAJ_establish_the_reserve_bank_of_india 
-			}
-			visible = {
-				
-			}
-			cost = 100
-			removal_cost = -1
-			research_bonus = {
-			}
-			traits = { central_bank } 
-			modifier = {
-				production_speed_industrial_complex_factor = 0.05
-				#consumer_goods_factor = -0.05		
-			}
-		}
+		
 	}
 
 }

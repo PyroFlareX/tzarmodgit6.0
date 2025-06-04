@@ -1712,11 +1712,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 
 	completion_reward = {
-		if = { 
-			limit = { has_dlc = "Man the Guns" }
-			set_technology = { coastal_defense_ships = 1 } 
-		}
-
+		
 		custom_effect_tooltip = generic_skip_one_line_tt
 
 		add_equipment_to_stockpile = { 
@@ -1869,48 +1865,6 @@ focus = {
 				requested_factories = 1
 				progress = 0.75
 				amount = 1
-				industrial_manufacturer = mio:RAJ_garden_reach_shipbuilders_organization
-			}
-		}
-
-		custom_effect_tooltip = generic_skip_one_line_tt
-
-		# COASTAL DEFENSE SHIP
-		if = {
-			limit = {
-				has_dlc = "Man the Guns"
-			}
-			create_equipment_variant = { #Made-up
-				name = "Refitted Coastal Defense Ship"
-				type = ship_hull_cruiser_coastal_defense_ship
-				name_group = RAJ_BC_HISTORICAL
-				parent_version = 0
-				allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
-				modules = {
-					front_1_custom_slot = ship_anti_air_1
-					mid_1_custom_slot = ship_anti_air_1
-					#mid_2_custom_slot = ship_anti_air_1
-					rear_1_custom_slot = ship_light_medium_battery_1
-					fixed_ship_battery_slot = ship_light_medium_battery_1
-					fixed_ship_anti_air_slot = ship_anti_air_1
-					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-					fixed_ship_radar_slot = empty
-					fixed_ship_engine_slot = cruiser_ship_engine_1
-					fixed_ship_secondaries_slot = ship_secondaries_1
-					fixed_ship_armor_slot = ship_armor_cruiser_1
-				}
-				design_team = mio:RAJ_garden_reach_shipbuilders_organization
-			}
-			#Line Production
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_cruiser_coastal_defense_ship
-					creator = "RAJ"
-					version_name = "Refitted Coastal Defense Ship"
-				}
-				requested_factories = 1
-				progress = 0.75
-				amount = 3
 				industrial_manufacturer = mio:RAJ_garden_reach_shipbuilders_organization
 			}
 		}
@@ -2197,8 +2151,8 @@ focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-        add_to_variable = { RAJ_core_attack_factor = 0.05 tooltip = army_core_attack_factor_tt }
-		add_to_variable = { RAJ_army_core_defence_factor = 0.05 tooltip = army_core_defence_factor_tt }
+        add_to_variable = { RAJ_core_attack_factor = 0.1 tooltip = army_core_attack_factor_tt }
+		add_to_variable = { RAJ_army_core_defence_factor = 0.1 tooltip = army_core_defence_factor_tt }
 	}
 }
 
@@ -2337,7 +2291,54 @@ focus = {
                 value = 50
                 localization = RAJ_haripura_session_of_the_indian_national_congress
             }
+            custom_effect_tooltip = generic_skip_one_line_tt
+            add_political_power = 100
+        }
+    }
 
+    focus = {
+        id = RAJ_agrarian_socialism
+        icon = GFX_focus_SOV_breadbasket_of_the_union
+        prerequisite = { focus = RAJ_mahatma }
+        x = 1
+        y = 1
+       
+        relative_position_id = RAJ_mahatma
+
+        cost = 5
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+            
+        }
+        
+        bypass = {
+
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
+
+        completion_reward = {
+            custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
+            add_to_variable = { RAJ_supply_combat_penalties_on_core_factor = -0.2 tooltip = supply_combat_penalties_on_core_factor_tt }
+            add_to_variable = { RAJ_out_of_supply = -0.2 tooltip = out_of_supply_factor_tt }
+
+            custom_effect_tooltip = generic_skip_one_line_tt
+            436 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
         }
     }
 
@@ -2517,7 +2518,7 @@ focus = {
 
         completion_reward = {
             custom_effect_tooltip = idea_RAJ_independence_movement_tt
-            add_to_variable = { RAJ_independence_movement_industrial_capacity_factory = 0.15 tooltip = industrial_capacity_factory_tt }
+            add_to_variable = { RAJ_independence_movement_industrial_capacity_factory = 0.25 tooltip = industrial_capacity_factory_tt }
         }
     }
 
@@ -2583,7 +2584,7 @@ focus = {
         }
 
         available = {
-            #has_autonomy_state = autonomy_free
+            has_autonomy_state = autonomy_dominion
             date>1943.1.1
         }
         
@@ -2605,6 +2606,20 @@ focus = {
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
             add_to_variable = { RAJ_core_attack_factor = 0.3 tooltip = army_core_attack_factor_tt }
 			add_to_variable = { RAJ_army_core_defence_factor = 0.3 tooltip = army_core_defence_factor_tt }
+            custom_effect_tooltip = generic_skip_one_line_tt
+            if = {
+			        limit = {
+				        is_subject_of = ENG
+			        }
+			    ENG = {
+				    set_autonomy = {
+					target = ROOT
+					autonomy_state = autonomy_free
+				    }
+			    }
+		    }
+            drop_cosmetic_tag = yes
+			set_cosmetic_tag  = RAJ_FREE
         }
     }
 
@@ -3701,8 +3716,16 @@ focus = {
 
             #custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
             #add_to_variable = { RAJ_no_supply_grace = 72 tooltip = no_supply_grace_tt }
-
+        
             add_ideas = idea_RAJ_chindits
+            custom_effect_tooltip = generic_skip_one_line_tt
+            add_tech_bonus = {
+				name = RAJ_chindits
+				bonus = 2.0
+				uses = 2
+				category = special_forces
+			}
+            
         }
     }
     
@@ -3751,6 +3774,13 @@ focus = {
             #}
 
             add_ideas = idea_RAJ_a_tiger_unchained
+            custom_effect_tooltip = generic_skip_one_line_tt
+            add_tech_bonus = {
+				name = ROM_raffi_rat_fur_skin
+				bonus = 2.0
+				uses = 1
+				technology = elite_forces
+			}
         }
     }
 
@@ -4497,47 +4527,6 @@ focus = {
             custom_effect_tooltip = generic_skip_one_line_tt
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
             add_to_variable = { RAJ_modifier_army_sub_unit_camelry_attack_factor = 0.2 tooltip = RAJ_modifier_army_sub_unit_camelry_attack_factor_tt}
-            
-            division_template = {
-                name = "Unt Swar"
-                is_locked = no
-                #division_names_group = NAMELIST_ID # optional
-                priority = 1 # optional 
-                #template_counter = 108 # optional
-                regiments = {
-                    camelry = { x = 0 y = 0 }
-                    camelry = { x = 0 y = 1 }
-                    camelry = { x = 0 y = 2 }
-                    camelry = { x = 0 y = 3 }
-					camelry = { x = 0 y = 4 }
-					camelry = { x = 1 y = 0 }
-					camelry = { x = 1 y = 1 }
-                    camelry = { x = 1 y = 2 }
-                    camelry = { x = 1 y = 3 }
-					camelry = { x = 1 y = 4 }
-					camelry = { x = 2 y = 0 }
-					camelry = { x = 2 y = 1 }
-                    camelry = { x = 2 y = 2 }
-                    camelry = { x = 2 y = 3 }
-					camelry = { x = 2 y = 4 }
-					camelry = { x = 3 y = 0 }
-					camelry = { x = 3 y = 1 }
-                    camelry = { x = 3 y = 2 }
-                    camelry = { x = 3 y = 3 }
-					camelry = { x = 3 y = 4 }
-                }
-                #support = {
-                #    artillery = { x = 0 y = 0 }
-                #}
-            }
-            capital_scope = {
-                create_unit = {
-                    division = "name = \"Unt Swar\" division_template = \"Unt Swar\" start_experience_factor = 1.0 start_equipment_factor = 1 start_manpower_factor = 1"
-                    owner = ROOT
-                    allow_spawning_on_enemy_provs = yes 
-                    count = 2
-                }
-            }
 
 		}
 	}
@@ -4791,7 +4780,7 @@ focus = {
         completion_reward = {
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
             add_to_variable = { RAJ_army_artillery_attack_factor = 0.1 tooltip = army_artillery_attack_factor_tt }
-            add_to_variable = { RAJ_military_coordination_bonus = 0.15 tooltip = coordination_bonus_tt }
+            add_to_variable = { RAJ_military_coordination_bonus = 0.2 tooltip = coordination_bonus_tt }
         }
     }
 
@@ -4845,7 +4834,12 @@ focus = {
         search_filters = {FOCUS_FILTER_POLITICAL}
 
         completion_reward = {
-            army_experience = 25
+            add_tech_bonus = {
+				name = RAJ_model_usa_tech
+				bonus = 1
+				uses = 3
+				category = electronics
+			}
             custom_effect_tooltip = generic_skip_one_line_tt
             add_popularity = {
                 ideology = democratic
@@ -5083,8 +5077,9 @@ focus = {
 
         completion_reward = {
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_cav_attack = 0.1 tooltip = cavalry_attack_factor_tt }
-            add_to_variable = { RAJ_modifier_army_sub_unit_cavalry_speed_factor = 0.1 tooltip = modifier_army_sub_unit_cavalry_speed_factor_tt }
+            add_to_variable = { RAJ_cav_attack = 0.15 tooltip = cavalry_attack_factor_tt }
+            add_to_variable = { RAJ_cav_defence = 0.15 tooltip = cavalry_defence_factor_tt }
+            add_to_variable = { RAJ_modifier_army_sub_unit_cavalry_speed_factor = 0.15 tooltip = modifier_army_sub_unit_cavalry_speed_factor_tt }
         }
     }
 
@@ -5184,7 +5179,7 @@ focus = {
 
         completion_reward = {
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_army_org_factor = 0.04 tooltip = army_org_factor_tt }
+            add_to_variable = { RAJ_army_org_factor = 0.05 tooltip = army_org_factor_tt }
         }
     }
 

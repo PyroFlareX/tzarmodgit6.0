@@ -46,6 +46,7 @@ RAJ_army_dynamic_modifier = {
 	coastal_bunker_effectiveness_factor = RAJ_coastal_bunker_effectiveness_factor
 	no_supply_grace = RAJ_no_supply_grace
 	breakthrough_factor = RAJ_breakthrough_factor
+	supply_combat_penalties_on_core_factor = RAJ_supply_combat_penalties_on_core_factor
 	
 	modifier_army_sub_unit_camelry_speed_factor = RAJ_modifier_army_sub_unit_camelry_speed_factor
 	modifier_army_sub_unit_camelry_attack_factor = RAJ_modifier_army_sub_unit_camelry_attack_factor

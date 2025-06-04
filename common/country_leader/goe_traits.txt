@@ -311,7 +311,7 @@ leader_traits = {
 	well_mannered_iman = {
 		sprite = 13
 		research_speed_factor = 0.06
-		consumer_goods_factor = -0.1
+		consumer_goods_expected_value = -0.03
 	}
 
 	muslim_scholar = {

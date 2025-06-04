@@ -2359,7 +2359,11 @@ technologies = {
 		
 		conscription = 0.02
 		infantry = {
-			combat_width = -0.2
+			combat_width = -0.4
+		}
+		
+		militia = {
+			combat_width = -0.4
 		}
 
 	}
