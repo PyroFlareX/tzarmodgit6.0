@@ -27,7 +27,7 @@ ideas = {
 		
 		COOM_volunteers_minors = {
 
-			picture = volunteer_only
+			picture = chi_warlord_integration5
 
 			removal_cost = -1
 			
@@ -46,7 +46,7 @@ ideas = {
 		
 		COOM_volunteers_majors = {
 
-			picture = volunteer_only
+			picture = chi_warlord_integration5
 
 			removal_cost = -1
 			

@@ -1,40 +1,113 @@
 characters={
-	HUN_miklos_horthy={
-		name="Miklós Horthy"
-		portraits={
-			navy={
-				large="GFX_Portrait_hungary_miklos_horthy_admiral"
-				small="GFX_idea_HUN_miklos_horthy_admiral"
-			}
-			civilian={
-				large="GFX_Portrait_hungary_miklos_horthy"
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=5000
-		}
-		country_leader={
-			ideology=oligarchism
-			expire="1965.1.1.1"
-			id=500
-		}
-	}
+	HUN_miklos_horthy = {
 
-	HUN_albert_aulich={
-		name="Albert Aulich"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_8"
+			name = HUN_miklos_horthy
+			portraits = {
+				navy = { #Can become Navy leader and therefore navy advisor
+					large = "GFX_Portrait_hungary_miklos_horthy_admiral"
+					small = "GFX_idea_HUN_miklos_horthy_admiral"
+				}
+				civilian = {
+					large = "GFX_Portrait_hungary_miklos_horthy"
+				}
 			}
-		}
-		country_leader={
-			ideology=socialism
-			traits={ reluctant_interventionist hawk }
-			expire="1943.1.1.12"
-			id=-1
-		}
+			country_leader = {
+				ideology = oligarchism
+				traits = { fascist_sympathies anti_communist }
+				expire = "1965.1.1.1"
+				id = 500
+			}
+			country_leader = {
+				ideology = fascism_ideology
+				traits = { anti_communist }
+				expire = "1965.1.1.1"
+				id = 503
+			}
+		
+		
+		
+
+			name = HUN_miklos_horthy
+
+			portraits = {
+				navy = { #Can become Navy leader and therefore navy advisor
+					large = "GFX_Portrait_hungary_miklos_horthy_admiral"
+					small = "GFX_idea_HUN_miklos_horthy_admiral"
+				}
+				civilian = {
+					large = GFX_portrait_HUN_miklos_horthy
+					small = GFX_portrait_HUN_miklos_horthy_small
+				}
+			}
+
+			country_leader = {
+				ideology = oligarchism
+				traits = { fascist_sympathies anti_communist HUN_the_regent }
+				expire = "1965.1.1.1"
+				id = 500
+			}
+
+			#field_marshal = {
+			#	traits = { politically_connected inflexible_strategist media_personality }
+			#	skill = 2
+			#	attack_skill = 1
+			#	defense_skill = 1
+			#	planning_skill = 2
+			#	logistics_skill = 2
+			#	legacy_id = -1 
+			#	visible = {
+			#		#has_country_leader = {
+			#		#	ruling_only = yes
+			#		#	character = HUN_miklos_horthy
+			#		#}
+			#		has_completed_focus = wuw_HUN_pass_statute_xix
+			#	}
+			#}
+
+			navy_leader = {
+				traits = { gunnery_expert navy_media_personality superior_tactician }
+				skill = 3
+				legacy_id = 556 #Navy Miklos
+				attack_skill = 2
+				defense_skill = 2
+				maneuvering_skill = 2
+				coordination_skill = 4		
+				visible = {
+					OR = {
+						has_completed_focus = wuw_HUN_strengthen_horthys_reign
+						has_completed_focus = wuw_HUN_end_the_regency
+					}
+				}		
+			}
+
+			advisor = {
+
+				slot = navy_chief
+
+				idea_token = HUN_miklos_horthy
+
+				allowed = {
+					original_tag = HUN
+				}
+
+				available = {
+					has_completed_focus = wuw_HUN_reinstate_the_navy
+					
+				}
+
+				traits = {
+					navy_chief_reform_2
+				}
+
+				cost = 100
+
+				ai_will_do = {
+					factor = 2
+				}
+
+			}
+
+		
 	}
 
 	HUN_ferenc_szombathelyi={

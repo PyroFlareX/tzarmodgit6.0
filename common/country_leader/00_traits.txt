@@ -7859,4 +7859,413 @@ tank_refurbishment_plant = { #NSB
 		war_support_factor = 0.15
 		war_support_weekly = 0.002	
 	}
+	
+	
+	### HUNGARY ###
+	HUN_the_regent = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		political_power_factor = -0.15
+	}
+
+	HUN_the_regent_2 = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		political_power_factor = -0.05
+		neutrality_drift = 0.01
+	}
+
+	HUN_the_regent_3 = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+		war_support_factor = 0.1
+		neutrality_drift = 0.02
+		justify_war_goal_time = -0.1
+	}
+
+	HUN_the_regent_undermined = {
+		random = no
+		sprite = 13
+		stability_factor = -0.05
+		war_support_factor = -0.05
+		political_power_factor = -0.1
+		drift_defence_factor = -0.25
+	}
+
+	HUN_the_apostolic_king = {
+		random = no
+		sprite = 13
+		war_support_factor = 0.05
+		army_core_defence_factor = 0.1
+		neutrality_drift = 0.05
+	}
+
+	HUN_the_habsburg_prince = {
+		random = no
+		sprite = 13
+		conscription = 0.005
+		political_power_factor = 0.1
+	}
+
+	HUN_ardent_stalinist = {
+		random = no
+		sprite = 13
+		drift_defence_factor = 0.5
+		army_core_defence_factor = 0.1
+		communism_drift = 0.02
+	}
+
+	HUN_revolutionary_internationalist_trait = {
+		random = no
+		sprite = 13
+		non_core_manpower = 0.02
+		justify_war_goal_time = -0.15
+		compliance_gain = 0.01
+	}
+
+	GEO_vengeful_stalinist = {
+		random = no
+		sprite = 13
+		army_attack_factor = 0.1
+		army_defence_factor = 0.05
+		communism_drift = 0.15
+		political_power_factor = 0.05
+	}
+
+	HUN_socialist_bulwark = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.05
+		army_core_defence_factor = 0.15
+		communism_drift = 0.02
+		democratic_drift = 0.02
+	}
+
+	HUN_archbishop_of_esztergom = {
+		random = no
+		sprite = 13
+		research_speed_factor = -0.02
+		political_power_factor = 0.15
+		stability_factor = 0.05
+	}
+
+	HUN_arpads_successor_trait = {
+		random = no
+		sprite = 13
+		army_attack_against_major_factor = 0.05
+		army_defence_against_major_factor = 0.1
+	}
+
+	HUN_arpads_mathhias_and_andrews_successor_trait = {
+		random = no
+		sprite = 13
+		army_attack_against_major_factor = 0.1
+		army_defence_against_major_factor = 0.1
+		war_support_factor = 0.1
+	}
+
+	HUN_irredentist_foreign_minister = {
+		random = no
+		sprite = 13
+		trade_opinion_factor = 0.2
+		join_faction_tension = -0.3
+		justify_war_goal_time = -0.25
+	}
+
+	HUN_moderate_authoritarian = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.1
+		stability_factor = 0.05
+		neutrality_drift = 0.03
+	}
+
+	HUN_fascist_prime_minister = {
+		random = no
+		sprite = 13
+		political_power_factor = -0.05
+		war_support_factor = 0.05
+		neutrality_drift = 0.02
+		fascism_drift = 0.03
+	}
+
+	CRO_poglavnik_trait = {
+		random = no
+		sprite = 13
+		political_power_factor = -0.05
+		stability_factor = -0.05
+		war_support_factor = 0.1
+		conscription_factor = 0.05
+	}
+
+	HUN_popular_among_paramilitaries = {
+		random = no
+		sprite = 13
+		fascism_drift = 0.02
+		conscription_factor = 0.1
+		army_core_defence_factor = 0.15
+	}
+
+	volksgruppenfurher_der_volksbund = {
+		random = no
+		sprite = 13
+		fascism_drift = 0.1
+		conscription_factor = 0.05
+		modifier_army_sub_unit_militia_attack_factor = 0.05
+	}
+
+	HUN_the_hungarian_lenin = {
+		random = no
+		sprite = 13
+		conscription_factor = 0.05
+		consumer_goods_factor = -0.05
+		communism_drift = 0.03
+	}
+
+	HUN_duke_and_king_of_mecklenburg = {
+		random = no
+		sprite = 13
+		fascism_acceptance = 75
+		resistance_growth = -0.1
+		political_power_factor = 0.15
+	}
+
+	HUN_the_old_warden = {
+		random = no
+		sprite = 13
+		conscription = 0.005
+		army_core_defence_factor = 0.1
+	}
+
+	HUN_popular_aviator = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+		experience_gain_air_factor = 0.1
+		air_doctrine_cost_factor = -0.15
+	}
+
+	HUN_national_socialist_irredentist = {
+		random = no
+		sprite = 13
+		fascism_drift = 0.05
+		war_support_factor = 0.1
+		justify_war_goal_time = -0.15
+	}
+
+	HUN_veteran_president = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.15
+		stability_factor = 0.1
+	}
+
+	HUN_christian_academic = {
+		random = no
+		sprite = 13
+		research_speed_factor = 0.05
+		stability_factor = 0.1
+	}
+
+	HUN_duke_of_sormland_king_of_hungarians = {
+		random = no
+		sprite = 13
+		democratic_drift = 0.03
+		neutrality_drift = 0.05
+		stability_factor = 0.1
+		war_support_factor = 0.1
+	}
+
+	ban_of_croatia_slavonia = {
+		random = no
+		sprite = 13
+		stability_factor = -0.1
+		war_support_factor = 0.1
+		army_core_defence_factor = 0.05
+	}
+
+	archduke_of_austria_este = {
+		random = no
+		sprite = 13
+		stability_factor = -0.05
+		war_support_factor = 0.05
+		army_core_defence_factor = 0.1
+	}
+
+	blessed_monarch_trait = {
+		random = no
+		sprite = 13
+		stability_factor = 0.15
+		conscription_factor = 0.05
+	}
+
+	HUN_magyar_nemzeti_bank_president = {
+		random = no
+		sprite = 13
+		production_speed_buildings_factor = 0.05
+		consumer_goods_factor = -0.1
+	}
+
+	HUN_scholary_politician = {
+		random = no
+		sprite = 13
+		research_speed_factor = 0.1
+		drift_defence_factor = 0.15
+		custom_modifier_tooltip = will_be_removed_upon_offensive_war_tt
+	}
+
+	HUN_moderate_lawyer = {
+		random = no
+		sprite = 13
+		drift_defence_factor = 0.2
+		political_power_factor = 0.1
+		stability_factor = 0.05
+	}
+
+	HUN_stalinist_agent = {
+		random = no
+		sprite = 13
+		intelligence_agency_defense = 0.1
+		operative_slot = 2
+	}
+
+	HUN_her_serene_highness = {
+		random = no
+		sprite = 13
+		stability_factor = 0.15
+	}
+
+	socialist_economist = {
+		sprite = 10
+		random = no
+		consumer_goods_factor = -0.1
+		production_factory_max_efficiency_factor = 0.05
+	}
+
+	socialist_economist_upgraded = {
+		sprite = 10
+		random = no
+		consumer_goods_factor = -0.15
+		production_factory_max_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.05
+	}
+
+	HUN_popular_liberal = {
+		random = no
+		sprite = 13
+		stability_factor = 0.1
+		political_power_factor = 0.1
+		democratic_drift = 0.05
+	}
+
+	HUN_nemzetvezeto_trait = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.1
+		weekly_casualties_war_support = 0.001
+		ai_desired_divisions_factor = 0.15
+		stability_factor = 0.05
+	}
+
+	HUN_the_national_socialist_count = {
+		random = no
+		sprite = 13
+		fascism_drift = 0.1
+		opinion_gain_monthly_same_ideology_factor = 0.75
+		political_power_factor = 0.1
+	}
+
+	HUN_military_intelligence_officer = {
+		random = no
+		sprite = 15
+		operative_slot = 1
+		army_intel_to_others = -10.0
+		army_intel_factor = 0.15
+	}
+
+	HUN_internationalist_marxist = {
+		random = no
+		sprite = 13
+		communism_drift = 0.05
+		send_volunteer_divisions_required = -0.25
+		send_volunteer_size = 5
+		send_volunteers_tension = -0.5
+	}
+
+	HUN_apostolic_king_of_hungary_fascist_trait = {
+		random = no
+		sprite = 13
+		fascism_drift = 0.05
+		war_support_factor = 0.05
+		experience_gain_air = 0.1
+		political_power_factor = -0.15
+	}
+
+	HUN_innovative_weapons_designer = {
+		random = no
+		sprite = 13
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.15
+			}
+		}
+	}
+
+	HUN_goulash_communist = {
+		random = no
+		sprite = 13
+		consumer_goods_factor = -0.05
+		stability_weekly = 0.002
+	}
+
+	HUN_filmmaker = {
+		random = no
+		sprite = 13
+		war_support_factor = 0.05
+		stability_factor = 0.1
+	}
+
+	peoples_commisar_of_heavy_industries = {
+		random = no
+		sprite = 10
+		production_speed_buildings_factor = 0.05
+		industrial_capacity_factory = 0.1 
+		communism_drift = 0.03
+	}
+
+
+	#Hess
+	amateur_aviator_hess = {
+		sprite = 1
+		political_power_factor = 0.15
+		equipment_bonus = {
+			medium_plane_fighter_airframe = {
+				build_cost_ic = -0.025
+			}
+		}
+	}
+	
+	industrial_steel_mills_trait = {
+
+		country_resource_steel = 10 
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	oil_extraction_company_trait = {
+
+		country_resource_oil = 20 
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }
