@@ -16,9 +16,9 @@ sub_units = {
 			category_line_artillery
 			category_artillery
 		}
-		combat_width = 3
+		combat_width = 2
 		transport = mechanized_equipment		
-		manpower = 500
+		manpower = 750
 		need = {
 			artillery_equipment = 24
 			mechanized_equipment = 36
@@ -95,7 +95,7 @@ sub_units = {
 			category_line_artillery
 			category_artillery
 		}		
-		combat_width = 3
+		combat_width = 2
 		transport = mechanized_equipment
 		need = {
 			rocket_artillery_equipment = 24
@@ -104,7 +104,7 @@ sub_units = {
 		essential = {
 			mechanized_equipment
 		}		
-		manpower = 500
+		manpower = 750
 		max_organisation = 10
 		default_morale = 0.1
 		max_strength = 20
@@ -178,9 +178,9 @@ sub_units = {
 			category_artillery
 		}
 
-		combat_width = 3
+		combat_width = 2
 
-		manpower = 500
+		manpower = 750
 		need = {
 			artillery_equipment = 36
 		}
@@ -248,9 +248,9 @@ sub_units = {
 			category_artillery
 		}
 
-		combat_width = 3
+		combat_width = 2
 		transport = motorized_equipment
-		manpower = 500
+		manpower = 750
 		need = {
 			artillery_equipment = 50
 			motorized_equipment = 55
@@ -328,13 +328,13 @@ sub_units = {
 			category_artillery
 		}		
 
-		combat_width = 3
+		combat_width = 2
 
 		need = {
 			rocket_artillery_equipment = 36
 		}
 		
-		manpower = 500
+		manpower = 5750
 		max_strength = 2
 		max_organisation = 25		
 		default_morale = 0.1
@@ -403,14 +403,14 @@ sub_units = {
 			category_artillery
 		}		
 
-		combat_width = 3
+		combat_width = 2
 
 		need = {
 			motorized_rocket_equipment = 26
 			#motorized_equipment = 15
 		}
 		
-		manpower = 500
+		manpower = 750
 		max_organisation = 25		default_morale = 0.1
 		max_strength = 4
 		training_time = 120
@@ -495,14 +495,14 @@ mot_rocket_artillery_brigade = {
 		category_artillery
 	}		
 
-	combat_width = 3
+	combat_width = 2
 	transport = motorized_equipment
 	need = {
 		rocket_artillery_equipment = 40
 		motorized_equipment = 50
 	}
 	soft_attack = 0.15
-	manpower = 500
+	manpower = 780
 	max_organisation = 25	default_morale = 0.1
 	max_strength = 4
 	training_time = 120
